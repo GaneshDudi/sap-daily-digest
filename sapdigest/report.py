@@ -81,6 +81,11 @@ footer{color:var(--muted);font-size:.9rem;padding:3rem 0 2.5rem}
 .archive{padding:0}.archive a{font-family:"IBM Plex Serif",Georgia,serif;font-size:1.2rem}
 .archive p{margin:.25rem 0 0;color:var(--muted)}
 .empty{color:var(--muted);font-style:italic}
+details.qa{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:.8rem 1.1rem;margin:0 0 .8rem}
+details.qa summary{font-weight:600;line-height:1.45}
+details.qa summary .prio{margin-right:.4rem}
+details.qa[open] summary{margin-bottom:.4rem}
+.outline{margin:.6rem 0;padding-left:1.4rem}.outline li{margin:.25rem 0}
 @media (prefers-reduced-motion:no-preference){.story,.dive{scroll-margin-top:4rem}}
 """
 
@@ -136,7 +141,7 @@ def render_daily(date_iso, date_label, digest, items, triage, deep_refs, generat
 </div></header>
 <nav class="toc" aria-label="Sections"><div class="wrap">
 <a href="#overview">Overview</a><a href="#top">Top stories</a><a href="#releases">Releases</a>
-<a href="#dives">Deep dives</a><a href="#problems">Developer problems</a><a href="#drafts">Post drafts</a><a href="#all">Everything</a>
+<a href="#dives">Deep dives</a><a href="#problems">Developer problems</a><a href="#interview">Interview questions</a><a href="#class">Class idea</a><a href="#drafts">Post drafts</a><a href="#all">Everything</a>
 </div></nav><main class="wrap">""")
 
     parts.append(f'<section id="overview"><h2>The day in one minute</h2>{rich(digest.get("overview"))}</section>')
@@ -174,6 +179,26 @@ def render_daily(date_iso, date_label, digest, items, triage, deep_refs, generat
 <p><strong>Teaching tip:</strong> {e(p.get("teaching_tip"))}</p>{sources(p.get("refs"), items)}</div>""")
     if not probs:
         parts.append('<p class="empty">No clear patterns in today\'s questions.</p>')
+    parts.append("</section>")
+
+    parts.append('<section id="interview"><h2>Interview questions</h2>'
+                 '<p class="sub">Grounded in today\'s material. Open each one to see a model answer.</p>')
+    qs = digest.get("interview_questions") or []
+    for q in qs:
+        parts.append(f"""<details class="qa"><summary><span class="prio">{e(q.get("level", ""))}</span> {e(q.get("question"))}</summary>
+{rich(q.get("answer"))}{sources(q.get("refs"), items)}</details>""")
+    if not qs:
+        parts.append('<p class="empty">No interview questions today.</p>')
+    parts.append("</section>")
+
+    ci = digest.get("class_idea")
+    parts.append('<section id="class"><h2>Class idea</h2>')
+    if ci:
+        steps = "".join(f"<li>{e(x)}</li>" for x in ci.get("outline", []))
+        parts.append(f"""<article class="story"><h3>{e(ci.get("title"))}</h3>{rich(ci.get("why_now"))}
+<ol class="outline">{steps}</ol><p><strong>Hands-on exercise:</strong> {e(ci.get("exercise"))}</p>{sources(ci.get("refs"), items)}</article>""")
+    else:
+        parts.append('<p class="empty">No class idea today.</p>')
     parts.append("</section>")
 
     parts.append('<section id="drafts"><h2>Post drafts for your community</h2>'

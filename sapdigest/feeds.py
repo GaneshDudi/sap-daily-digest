@@ -93,7 +93,7 @@ def fetch_full_text(url):
     """Used when a feed only gave a short excerpt."""
     try:
         import trafilatura
-        r = requests.get(url, headers={"User-Agent": UA}, timeout=25)
+        r = requests.get(url, headers={"User-Agent": UA}, timeout=12)
         if r.ok:
             return (trafilatura.extract(r.text, include_tables=True) or "")[:12000]
     except Exception as exc:  # network or parsing problem: fall back to the excerpt

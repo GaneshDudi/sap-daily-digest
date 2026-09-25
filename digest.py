@@ -100,11 +100,23 @@ SYNTH_SCHEMA = {
             "title": {"type": "string"},
             "text": {"type": "string", "description": "WhatsApp-ready post. *bold* for emphasis, short lines, source link at the end"}},
             "required": ["title", "text"]}},
+        "interview_questions": {"type": "array", "maxItems": 3, "items": {"type": "object", "properties": {
+            "question": {"type": "string"}, "answer": {"type": "string"},
+            "level": {"type": "string", "enum": ["Mid-level", "Senior", "Architect"]}, "refs": REFS},
+            "required": ["question", "answer", "level", "refs"]}},
+        "class_idea": {"type": "object", "properties": {
+            "title": {"type": "string"},
+            "why_now": {"type": "string", "description": "Why this topic is timely, based on today's material"},
+            "outline": {"type": "array", "items": {"type": "string"}, "maxItems": 8},
+            "exercise": {"type": "string", "description": "One hands-on exercise students can do in ADT"},
+            "refs": REFS},
+            "required": ["title", "why_now", "outline", "exercise", "refs"]},
         "whatsapp_highlights": {"type": "string",
                                 "description": "Top 3-4 stories on ONE line, separated by ' | ', max 600 characters"},
     },
     "required": ["headline", "overview", "top_stories", "releases", "deep_dives",
-                 "trending_problems", "post_drafts", "whatsapp_highlights"],
+                 "trending_problems", "post_drafts", "interview_questions", "class_idea",
+                 "whatsapp_highlights"],
 }
 
 
@@ -121,9 +133,24 @@ def triage(items, cfg):
     system = (
         "You screen SAP Community content for this reader:\n" + cfg["audience"] +
         "\nTheir focus areas:\n" + focus_text(cfg) +
-        "\nClassify every item you are given. Judge importance by real technical value to ABAP developers: "
-        "new features, breaking changes, deprecations, security issues, deep how-tos and common hard problems "
-        "rank high; marketing, event promos, vague or duplicate questions rank low. Never skip an item."
+        "\nClassify every item you are given. Never skip an item.\n\n"
+        "in_scope rules (be strict): true ONLY when the item is about building, extending, debugging, "
+        "testing or tuning software: ABAP code, RAP, CDS, OData/API development, integration development, "
+        "Fiori/UI5 development, BTP/CAP development, developer tools, SQL/performance, or AI used by developers. "
+        "false for functional configuration, customizing, master data, business process questions, migration "
+        "planning, HR/finance/logistics setup, licensing, events, marketing and career posts, even when they "
+        "appear in a technical forum or mention S/4HANA.\n\n"
+        "Importance: new features, breaking changes, deprecations, security issues, deep how-tos with real code "
+        "and common hard problems rank high; marketing, event promos, vague or duplicate questions rank low.\n\n"
+        "Category guide: 'ABAP & Clean Code' = ABAP language, classic reports, forms, enhancements, TMG. "
+        "'RAP' = behavior definitions, actions, draft, BO implementation. 'CDS & Data Modeling' = CDS views, "
+        "annotations, VDM, access control (not Datasphere or BW). 'S/4HANA Development & Extensibility' = BAdIs, "
+        "custom fields, key-user and developer extensibility, clean core (not functional S/4 questions). "
+        "'BTP & ABAP Cloud' = BTP ABAP environment, CAP, Cloud Foundry, ABAP Cloud rules. "
+        "'OData, APIs & Integration' = OData, Gateway, APIs, CPI, Integration Suite. 'HANA, AMDP & Performance' = "
+        "SQL, AMDP, runtime and DB performance. 'Security & Basis' = authorizations, SSO, system admin, EarlyWatch. "
+        "'Analytics & Data' = BW, Datasphere, SAC, BDC. 'Functional & Business Processes' = configuration and "
+        "business process questions of any module."
     )
     size = cfg["limits"]["triage_batch_size"]
     batches = [list(range(s, min(s + size, len(items)))) for s in range(0, len(items), size)]
@@ -170,15 +197,18 @@ def deep_read(items, tri, cfg):
         "Do not invent details that are not in the text."
     )
 
+    # Fetch full pages for short excerpts all at once, in parallel, before Claude starts reading.
+    texts = {i: items[i]["text"] for i in chosen}
+    short = [i for i in chosen if len(texts[i]) < 800 and items[i].get("link")]
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        for i, fuller in zip(short, pool.map(lambda i: feeds.fetch_full_text(items[i]["link"]), short)):
+            if len(fuller) > len(texts[i]):
+                texts[i] = fuller
+
     def post_text(i):
         it = items[i]
-        text = it["text"]
-        if len(text) < 800 and it.get("link"):
-            fuller = feeds.fetch_full_text(it["link"])
-            if len(fuller) > len(text):
-                text = fuller
         return (f"=== POST ref={i} ===\nType: {it['kind']}\nTitle: {it['title']}\n"
-                f"Tags: {', '.join(it['tags'])}\n\n{text[:6000]}\n")
+                f"Tags: {', '.join(it['tags'])}\n\n{texts[i][:6000]}\n")
 
     def run(batch):
         user = f"Analyse these {len(batch)} posts:\n\n" + "\n".join(post_text(i) for i in batch)
@@ -213,7 +243,14 @@ def synthesize(items, tri, deep, cfg, date_label):
         "no filler, no marketing tone. Every claim must come from the material provided; cite sources "
         "using their ref numbers. Group related items into one story instead of repeating them. "
         "Post drafts are for the reader's WhatsApp developer community: practical, accurate, "
-        "5-12 short lines, one clear takeaway, *bold* for emphasis, and the source link at the end."
+        "5-12 short lines, one clear takeaway, *bold* for emphasis, and the source link at the end.\n\n"
+        "Deep dives: at least two of the three must cover the core ABAP stack (ABAP language, RAP, CDS, "
+        "SQL/AMDP/performance, enhancements, ADT). Prefer posts with concrete code or patterns over conceptual, "
+        "marketing or vendor-announcement posts.\n\n"
+        "Interview questions: write 3 questions an interviewer could ask an experienced ABAP developer, each "
+        "grounded in today's material, with a model answer of 4-8 sentences that is technically precise.\n\n"
+        "Class idea: propose one ready-to-teach topic for experienced ABAP developers based on today's material, "
+        "preferably from what developers are struggling with, with a short outline and a hands-on exercise."
     )
     links = {i: items[i]["link"] for i in deep}
     user = (f"Date: {date_label}\nTotal items collected today: {len(items)}\n\n"
@@ -239,6 +276,7 @@ def fallback_digest(items, tri):
                          "why_it_matters": f"Ranked {t['importance']}/5 in screening.",
                          "priority": 1 if t["importance"] >= 4 else 2, "refs": [t["i"]]} for t in top],
         "releases": [], "deep_dives": [], "trending_problems": [], "post_drafts": [],
+        "interview_questions": [], "class_idea": None,
         "whatsapp_highlights": " | ".join(items[t["i"]]["title"] for t in top[:4]),
     }
 
