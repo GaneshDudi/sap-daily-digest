@@ -636,5 +636,16 @@
   "feed": "SAP Community questions",
   "kind": "question",
   "text": "Hello, My customer would like to enable SuccessFactors/Microsoft365 integration, but there is concern from their IT team. From IT: The Required Permission from Required Permissions for Microsoft Outlook and Teams Online Meetings | SAP Help Portal are they working with the Role Based Access Control for Applications in Exchange Online ( https://learn.microsoft.com/en-us/exchange/permissions-exo/application-rbac )? Could you please help answer the question? Kind regards, Céline"
+ },
+ {
+  "key": "317bc650ad9fbb09",
+  "title": "19 Actions to Prepare for Peak Traffic, Peak Sales, and Peak Customer Expectations",
+  "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/19-actions-to-prepare-for-peak-traffic-peak-sales-and-peak-customer/ba-p/14492494",
+  "published": "2026-09-25T20:44:55+00:00",
+  "author": "ManuelNajera",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "E-commerce is evolving fast, and the past holiday seasons have shown that peak readiness is no longer just about handling traffic spikes. It is about delivering reliable, intelligent, and seamless shopping experiences at scale. \n 2025 SAP Commerce Cloud Holiday Season Performance: \n 2025 Cyber Week: US$12.2 billion in GMV with 100% uptime. Cyber Monday alone delivered a 71.8% year-over-year GMV increase. Global online holiday sales reached US$1.2 trillion. \n 2025 Full Holiday Season (HSRP reporting): 100% infrastructure uptime, US$17.8 billion in GMV, and 40% year-over-year growth, with AI- and agent-assisted experiences increasing influence. \n SAP's Holiday Season Readiness Program (HSRP) 2026 is a free, structured, multi-phase program designed to assess your current infrastructure, communicate sizing outcomes, and scale your environment ahead of the busiest trading weeks of the year. The program supports customers with proactive planning, environment analysis, scaling recommendations, readiness guidance, and cross-team coordination ahead of major holiday events. \n However, HSRP is not a substitute for your own preparation. SAP can support infrastructure scaling and proactive monitoring - but your custom code, integrations, storefront performance, payment flows, security posture, and operational readiness are your responsibility. \n This checklist covers the 19 actions you should consider completing to ensure your SAP Commerce Cloud environment is truly ready for peak. A comprehensive preparation guide for SAP Commerce Cloud customers enrolled in or preparing alongside the Holiday Season Readiness Program (HSRP) 2026. \n Read more: \n Holiday Season Readiness Program — Proactively Preparing for Peak \n HSRP 2026 Key Dates and What to Expect"
  }
 ]
