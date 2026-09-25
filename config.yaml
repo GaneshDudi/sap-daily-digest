@@ -66,3 +66,48 @@ whatsapp:
 report:
   # Leave empty to use https://<github-user>.github.io/<repo-name> automatically
   site_url: ""
+
+# ─────────────────────────────────────────────────────────────
+#  SAP job market agent (jobs.py)
+# ─────────────────────────────────────────────────────────────
+jobs:
+  # Used to score how well each job matches you. Edit freely.
+  profile: >
+    SAP ABAP technical consultant and trainer based in Bangalore. Strong in modern ABAP,
+    RAP, CDS, OData, S/4HANA 2023 (ABAP Platform 2023, Eclipse/ADT) and hands-on ECC EHP7
+    development, including Indian GST e-invoicing. Prefers Bangalore or remote roles.
+
+  # Keyword searches sent to Adzuna's India job index (one request each).
+  adzuna_searches:
+    - SAP ABAP
+    - ABAP developer
+    - SAP ABAP HANA
+    - SAP RAP
+    - SAP BTP ABAP
+    - SAP S/4HANA technical
+    - SAP OData Fiori
+  max_days_old: 2
+
+  # Job alert emails in your Gmail are read from these senders (last ~30 hours).
+  email_senders:
+    - naukri.com
+    - linkedin.com
+    - foundit.in
+    - instahyre.com
+    - cutshort.io
+    - iimjobs.com
+    - hirist.tech
+    - indeed.com
+
+  # Company careers sites. Added one by one after checking they work.
+  # type successfactors: SAP SuccessFactors career sites (RSS search, up to 20 jobs per search)
+  # type workday: Workday career sites (host, tenant and site come from the careers URL)
+  careers:
+    - name: SAP
+      type: successfactors
+      base_url: https://jobs.sap.com
+      keywords: [abap]
+
+  # Posts Claude analyses in detail per run (keeps your Pro usage modest).
+  max_jobs_analysed: 150
+  analysis_batch_size: 40

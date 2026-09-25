@@ -247,7 +247,7 @@ def render_index(manifest):
 <header class="mast"><div class="wrap"><p class="kicker">Archive</p><h1>SAP Community daily digest</h1>
 <p class="lead">A daily deep read of everything new in SAP Community, written for ABAP developers.</p></div></header>
 <main class="wrap"><ul class="archive">{rows or '<li class="empty">The first report will appear after tomorrow morning\'s run.</li>'}</ul></main>
-<footer><div class="wrap">Updated automatically every morning.</div></footer></body></html>"""
+<footer><div class="wrap">Updated automatically every morning. <a href="jobs/index.html">SAP job market reports</a></div></footer></body></html>"""
     DOCS.mkdir(parents=True, exist_ok=True)
     (DOCS / "index.html").write_text(page, encoding="utf-8")
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")

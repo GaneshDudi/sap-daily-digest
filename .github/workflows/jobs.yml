@@ -1,0 +1,48 @@
+name: Daily SAP job market
+
+on:
+  schedule:
+    - cron: "30 2 * * *"   # 02:30 UTC = 08:00 IST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sap-digest-data
+  cancel-in-progress: false
+
+jobs:
+  jobs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+      ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+      GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+      GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Install Claude Code
+        run: |
+          curl -fsSL https://claude.ai/install.sh | bash || npm install -g @anthropic-ai/claude-code
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Find and analyse new SAP jobs
+        run: python jobs.py
+
+      - name: Publish report
+        run: |
+          git config user.name "sap-digest-bot"
+          git config user.email "sap-digest-bot@users.noreply.github.com"
+          git add data docs
+          git diff --cached --quiet || git commit -m "Jobs $(date -u +%Y-%m-%d)"
+          git pull --rebase
+          git push
