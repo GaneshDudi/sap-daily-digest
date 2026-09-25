@@ -1,0 +1,65 @@
+# ─────────────────────────────────────────────────────────────
+#  SAP Community Daily Digest — configuration
+#  Edit this file on GitHub; changes apply from the next run.
+# ─────────────────────────────────────────────────────────────
+
+timezone: Asia/Kolkata
+
+# Who the digest is written for. Claude uses this to judge relevance
+# and to write the post drafts in the right voice.
+audience: >
+  An SAP ABAP technical consultant and live trainer based in Bangalore.
+  Teaches experienced ABAP developers (S/4HANA 2023, ABAP Platform 2023,
+  Eclipse/ADT, CDS, RAP) and runs a WhatsApp community for SAP developers.
+  Wants practical, technically precise insight, not marketing fluff.
+
+# Every item from every feed is collected and listed in the report.
+# "technical" = only developer/technical items get a deep read.
+# "everything" = every item is eligible for a deep read (costs more).
+scope:
+  mode: technical
+  focus_areas:
+    - ABAP (classic, modern syntax, Clean ABAP, performance)
+    - RAP (managed, unmanaged, draft, behavior definitions)
+    - CDS views, VDM, annotations, access control
+    - S/4HANA development and extensibility (key user, developer, clean core)
+    - BTP ABAP Environment / ABAP Cloud / Tier 1-2-3
+    - OData V2/V4, Gateway, APIs, Integration Suite
+    - Fiori elements / UI5
+    - HANA, AMDP, SQL performance
+    - Developer tools (ADT, abapGit, ATC, gCTS)
+    - SAP AI for developers (Joule for developers, generative AI in ABAP)
+
+feeds:
+  - name: SAP Community blog posts
+    url: https://community.sap.com/khhcw49343/rss/Community?interaction.style=blog&count=100
+    kind: blog
+  - name: SAP Community questions
+    url: https://community.sap.com/khhcw49343/rss/Community?interaction.style=qanda&count=100
+    kind: question
+  - name: SAP Community discussions
+    url: https://community.sap.com/khhcw49343/rss/Community?interaction.style=forum&count=50
+    kind: discussion
+  - name: SAP News Center
+    url: https://news.sap.com/feed/
+    kind: news
+  - name: abapGit releases
+    url: https://github.com/abapGit/abapGit/releases.atom
+    kind: release
+
+limits:
+  max_deep_reads: 60        # items Claude reads fully each day
+  triage_batch_size: 40     # items per quick-classification call
+
+models:
+  fast: claude-haiku-4-5-20251001   # screens and reads individual posts
+  deep: claude-sonnet-5             # writes the final daily analysis
+
+whatsapp:
+  template_name: sap_daily_digest
+  template_language: en
+  graph_api_version: v23.0
+
+report:
+  # Leave empty to use https://<github-user>.github.io/<repo-name> automatically
+  site_url: ""

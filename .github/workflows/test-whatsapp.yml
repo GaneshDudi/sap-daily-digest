@@ -1,0 +1,19 @@
+name: Test WhatsApp connection
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      WA_TOKEN: ${{ secrets.WA_TOKEN }}
+      WA_PHONE_NUMBER_ID: ${{ secrets.WA_PHONE_NUMBER_ID }}
+      WA_TO: ${{ secrets.WA_TO }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python digest.py --test-whatsapp
