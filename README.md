@@ -4,14 +4,14 @@ Every morning at 7:00 IST this robot:
 
 1. Collects **every** new blog post, question, discussion and news item from SAP Community. It checks every 3 hours, so nothing slips past on busy days.
 2. Has Claude **screen every item** and sort it by area and importance.
-3. Has Claude **read the most important ones in full**. By default that's up to 60 a day.
+3. Has Claude **read the most important ones in full**. By default that's up to 30 a day.
 4. Has Claude write a **deep daily report**: top stories, releases, deep dives, what developers are struggling with, and ready-to-post drafts for your community.
 5. Publishes the report as a web page and **sends the highlights plus the link to your WhatsApp**.
 
 Only official services are involved:
 
 - **SAP Community's own feeds:** the source of all content.
-- **Anthropic's Claude API:** does the reading and writing.
+- **Claude Code on your Claude Pro subscription:** does the reading and writing, with no separate API bill.
 - **Meta's WhatsApp Cloud API:** delivers the message.
 - **GitHub:** runs the schedule and hosts the report.
 
@@ -19,12 +19,30 @@ Report archive: https://ganeshdudi.github.io/sap-daily-digest
 
 ---
 
-## Part A: Claude API key (5 minutes)
+## Part A: Connect your Claude subscription (10 minutes, once)
 
-1. Go to **console.anthropic.com** and sign up.
-2. Open **Billing** and add credit. $10 is plenty to start.
-3. Optional but recommended: open **Limits** and set a monthly spend limit, such as $30.
-4. Open **API Keys**, click **Create Key**, and copy it somewhere safe. It is only shown once.
+1. On your laptop, open **PowerShell**. Press the Windows key, type `PowerShell`, and press Enter.
+2. Install Claude Code by pasting this and pressing Enter:
+
+```
+irm https://claude.ai/install.ps1 | iex
+```
+
+3. **Close PowerShell and open it again**, so it picks up the new `claude` command.
+4. Run this command:
+
+```
+claude setup-token
+```
+
+5. A browser opens. Log in with your Claude account (the one with Pro) and approve.
+6. PowerShell prints a long token starting with `sk-ant-oat`. **Copy it right away.** It is shown only once. Don't paste it into any chat; it goes straight into GitHub as a secret.
+7. In GitHub, go to **Settings**, then **Secrets and variables**, then **Actions**, then **New repository secret**:
+   - **Name:** `CLAUDE_CODE_OAUTH_TOKEN`
+   - **Secret:** paste the token.
+8. Open the **Actions** tab and run **Test Claude connection**. The log should end with "Claude is connected to the SAP digest."
+
+**About your usage.** The daily run uses part of your normal Pro usage allowance, the same one you use in chat. It runs at 7 AM and is kept light (about 11 requests a day), so most of it has reset by the time your workday starts. If your limit is ever reached mid-run, you still get a report of the screened items, with a note explaining why the deep analysis was skipped.
 
 ---
 
@@ -86,33 +104,19 @@ The token shown on API Setup expires in 24 hours, so you need a permanent one.
    - Tick `whatsapp_business_messaging` and `whatsapp_business_management`.
 4. Copy the token and keep it safe.
 
----
+### B5. Save the WhatsApp secrets
 
-## Part C: GitHub settings
+In GitHub, go to **Settings**, then **Secrets and variables**, then **Actions**, then **New repository secret**. Add these three:
 
-### C1. Add your secrets
-
-Go to **Settings**, then **Secrets and variables**, then **Actions**, then **New repository secret**. Add these four:
-
-- `ANTHROPIC_API_KEY`: your Claude key from Part A.
 - `WA_TOKEN`: the permanent token from step B4.
 - `WA_PHONE_NUMBER_ID`: the Phone number ID from step B2.
 - `WA_TO`: your WhatsApp number with the country code and no plus sign, for example `919876543210`.
 
-### C2. Allow the robot to save reports
+---
 
-1. Go to **Settings**, then **Actions**, then **General**.
-2. Under **Workflow permissions**, choose **Read and write permissions** and click **Save**.
+## Part C: Test everything
 
-### C3. Turn on the report website
-
-1. Go to **Settings**, then **Pages**.
-2. Under **Source**, choose **Deploy from a branch**.
-3. Set **Branch** to `main` and the folder to `/docs`, then click **Save**.
-
-### C4. Test everything
-
-Open the **Actions** tab. Enable workflows if GitHub asks.
+Open the **Actions** tab.
 
 1. Run **Test WhatsApp connection**. You should get Meta's Hello World message on WhatsApp.
 2. Run **Collect SAP Community posts**. It should finish green.
@@ -128,11 +132,11 @@ From tomorrow, everything runs by itself.
 
 **Deep-read every SAP area, not just technical ones.** In `config.yaml`, set `mode: everything`. Every item is already listed in the report either way. This setting only controls which items get the full read.
 
-**Read more or fewer posts in full.** Change `max_deep_reads` in `config.yaml`.
+**Read more or fewer posts in full.** Change `max_deep_reads` in `config.yaml`. More posts means more of your Pro usage each morning.
 
 **Adjust your interests.** Edit `focus_areas` and `audience` in `config.yaml`.
 
-**Check costs.** Every run prints the exact token usage at the end of its log on GitHub, under Actions. Expect roughly $10–30 a month, depending on how busy SAP Community is. Your spend limit from Part A caps it.
+**See how much it used.** The end of each run's log on GitHub (Actions) shows how many requests and tokens the run used. It is covered by your subscription, not billed separately.
 
 **Scheduled runs are late.** GitHub sometimes starts scheduled jobs 5–30 minutes late during busy periods. This is normal.
 
@@ -142,9 +146,11 @@ From tomorrow, everything runs by itself.
 
 Open **Actions**, click the red run, and read the last lines of the log.
 
+- **"Missing secret CLAUDE_CODE_OAUTH_TOKEN":** the secret name is misspelled or missing. Redo Part A, step 7.
+- **Claude login or 401 errors:** the token has expired or was revoked. Run `claude setup-token` again and replace the secret.
+- **"usage limit reached":** your Pro allowance ran out during the run. Lower `max_deep_reads` in `config.yaml`, or move the run to an earlier time.
 - **Feeds fail with 403 or 429:** SAP Community is blocking GitHub's servers. Share the log and the fetch method can be adjusted.
 - **WhatsApp error `132001`:** the template isn't approved yet, or the name or language code doesn't match `config.yaml`.
 - **WhatsApp error `131030`:** your number isn't in the test recipient list. Redo step B2.
-- **WhatsApp error `190`:** the token expired. You probably used the 24-hour token; redo step B4.
-- **Claude error `401`:** the API key is wrong. Error `400` mentioning credit means you need to add billing credit.
-- **The report link shows 404:** GitHub Pages isn't on (step C3), or the page needs a minute more to go live.
+- **WhatsApp error `190`:** the WhatsApp token expired. You probably used the 24-hour token; redo step B4.
+- **The report link shows 404:** GitHub Pages isn't on, or the page needs a minute more to go live.

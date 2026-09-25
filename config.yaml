@@ -15,7 +15,7 @@ audience: >
 
 # Every item from every feed is collected and listed in the report.
 # "technical" = only developer/technical items get a deep read.
-# "everything" = every item is eligible for a deep read (costs more).
+# "everything" = every item is eligible for a deep read (uses more of your plan).
 scope:
   mode: technical
   focus_areas:
@@ -47,13 +47,16 @@ feeds:
     url: https://github.com/abapGit/abapGit/releases.atom
     kind: release
 
+# Runs on your Claude Pro subscription, so these are kept modest to leave
+# plenty of your daily usage for your own work.
 limits:
-  max_deep_reads: 60        # items Claude reads fully each day
-  triage_batch_size: 40     # items per quick-classification call
+  max_deep_reads: 30        # posts Claude reads fully each day
+  deep_batch_size: 6        # posts read together in one request
+  triage_batch_size: 60     # items screened together in one request
 
 models:
-  fast: claude-haiku-4-5-20251001   # screens and reads individual posts
-  deep: claude-sonnet-5             # writes the final daily analysis
+  fast: haiku    # screens and reads posts
+  deep: sonnet   # writes the final daily analysis
 
 whatsapp:
   template_name: sap_daily_digest

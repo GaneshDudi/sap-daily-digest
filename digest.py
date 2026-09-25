@@ -6,6 +6,8 @@ Stage 2  Deep read:  Claude (fast model) reads the most important items in full.
 Stage 3  Synthesis:  Claude (deep model) writes the day's analysis.
 Then:    HTML report is written to docs/, and the highlights go to WhatsApp.
 
+Claude runs through Claude Code on your Claude subscription (see sapdigest/llm.py).
+
 Usage:
   python digest.py                  full run
   python digest.py --no-whatsapp    build the report only
@@ -51,23 +53,25 @@ TRIAGE_SCHEMA = {
     "required": ["items"],
 }
 
+ANALYSIS_FIELDS = {
+    "ref": {"type": "integer", "description": "The post's ref number exactly as given"},
+    "summary": {"type": "string", "description": "3-5 sentences on what the post actually says"},
+    "key_points": {"type": "array", "items": {"type": "string"}, "maxItems": 6},
+    "technical_details": {"type": "array", "items": {"type": "string"}, "maxItems": 8,
+                          "description": "Concrete objects, syntax, annotations, releases, SAP notes, versions"},
+    "why_it_matters": {"type": "string"},
+    "is_release_or_announcement": {"type": "boolean"},
+    "developer_problem": {"type": "string",
+                          "description": "For questions: the underlying problem in one sentence. Empty otherwise."},
+    "teaching_angle": {"type": "string", "description": "How a trainer could use this in a class or interview prep"},
+    "quality": {"type": "integer", "minimum": 1, "maximum": 5,
+                "description": "Technical depth and accuracy of the source itself"},
+}
 DEEP_SCHEMA = {
     "type": "object",
-    "properties": {
-        "summary": {"type": "string", "description": "3-5 sentences on what the post actually says"},
-        "key_points": {"type": "array", "items": {"type": "string"}, "maxItems": 6},
-        "technical_details": {"type": "array", "items": {"type": "string"}, "maxItems": 8,
-                              "description": "Concrete objects, syntax, annotations, releases, SAP notes, versions"},
-        "why_it_matters": {"type": "string"},
-        "is_release_or_announcement": {"type": "boolean"},
-        "developer_problem": {"type": "string",
-                              "description": "For questions: the underlying problem in one sentence. Empty otherwise."},
-        "teaching_angle": {"type": "string", "description": "How a trainer could use this in a class or interview prep"},
-        "quality": {"type": "integer", "minimum": 1, "maximum": 5,
-                    "description": "Technical depth and accuracy of the source itself"},
-    },
-    "required": ["summary", "key_points", "technical_details", "why_it_matters",
-                 "is_release_or_announcement", "developer_problem", "teaching_angle", "quality"],
+    "properties": {"analyses": {"type": "array", "items": {
+        "type": "object", "properties": ANALYSIS_FIELDS, "required": list(ANALYSIS_FIELDS)}}},
+    "required": ["analyses"],
 }
 
 REFS = {"type": "array", "items": {"type": "integer"}, "description": "ref numbers of the source items"}
@@ -126,19 +130,19 @@ def triage(items, cfg):
 
     def run(batch):
         lines = [json.dumps({"i": i, "type": items[i]["kind"], "title": items[i]["title"],
-                             "tags": items[i]["tags"][:8], "excerpt": items[i]["text"][:450]},
+                             "tags": items[i]["tags"][:6], "excerpt": items[i]["text"][:350]},
                             ensure_ascii=False) for i in batch]
         try:
             out = llm.call_tool(cfg["models"]["fast"], system,
                                 f"Classify these {len(batch)} items:\n" + "\n".join(lines),
-                                "record_triage", TRIAGE_SCHEMA, max_tokens=8000)
+                                "record_triage", TRIAGE_SCHEMA)
             return out.get("items", [])
         except Exception as exc:
             print(f"Triage batch starting at {batch[0]} failed: {exc}")
             return []
 
     results = {}
-    with ThreadPoolExecutor(max_workers=4) as pool:
+    with ThreadPoolExecutor(max_workers=2) as pool:
         for rows in pool.map(run, batches):
             for r in rows:
                 if isinstance(r.get("i"), int) and 0 <= r["i"] < len(items):
@@ -156,31 +160,42 @@ def deep_read(items, tri, cfg):
     candidates = [i for i, t in tri.items() if t["in_scope"]]
     candidates.sort(key=lambda i: (-tri[i]["importance"], items[i]["kind"] == "question"))
     chosen = candidates[: cfg["limits"]["max_deep_reads"]]
+    size = cfg["limits"].get("deep_batch_size", 6)
+    batches = [chosen[s:s + size] for s in range(0, len(chosen), size)]
     system = (
         "You are a senior SAP ABAP architect reading SAP Community content for this reader:\n" + cfg["audience"] +
-        "\nExtract what is genuinely useful. Be concrete: name the objects, syntax, annotations, "
-        "releases and versions involved. If the post is shallow or wrong, say so plainly. "
+        "\nYou will get several posts. Analyse EACH one separately and return one analysis per post, "
+        "using its ref number. Extract what is genuinely useful. Be concrete: name the objects, syntax, "
+        "annotations, releases and versions involved. If a post is shallow or wrong, say so plainly. "
         "Do not invent details that are not in the text."
     )
 
-    def run(i):
+    def post_text(i):
         it = items[i]
         text = it["text"]
         if len(text) < 800 and it.get("link"):
             fuller = feeds.fetch_full_text(it["link"])
             if len(fuller) > len(text):
                 text = fuller
-        user = (f"Type: {it['kind']}\nTitle: {it['title']}\nSource: {it['feed']}\n"
-                f"Tags: {', '.join(it['tags'])}\n\nContent:\n{text[:12000]}")
-        try:
-            return i, llm.call_tool(cfg["models"]["fast"], system, user,
-                                    "record_analysis", DEEP_SCHEMA, max_tokens=2500)
-        except Exception as exc:
-            print(f"Deep read failed for item {i}: {exc}")
-            return i, None
+        return (f"=== POST ref={i} ===\nType: {it['kind']}\nTitle: {it['title']}\n"
+                f"Tags: {', '.join(it['tags'])}\n\n{text[:6000]}\n")
 
-    with ThreadPoolExecutor(max_workers=6) as pool:
-        results = dict(r for r in pool.map(run, chosen) if r[1])
+    def run(batch):
+        user = f"Analyse these {len(batch)} posts:\n\n" + "\n".join(post_text(i) for i in batch)
+        try:
+            out = llm.call_tool(cfg["models"]["fast"], system, user, "record_analysis", DEEP_SCHEMA)
+            return out.get("analyses", [])
+        except Exception as exc:
+            print(f"Deep read batch {batch} failed: {exc}")
+            return []
+
+    results = {}
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        for rows in pool.map(run, batches):
+            for a in rows:
+                ref = a.pop("ref", None)
+                if isinstance(ref, int) and ref in chosen:
+                    results[ref] = a
     return results
 
 
@@ -205,17 +220,21 @@ def synthesize(items, tri, deep, cfg, date_label):
             f"ITEMS READ IN FULL:\n{json.dumps(read, ensure_ascii=False)}\n\n"
             f"OTHER RELEVANT ITEMS (headline only):\n{json.dumps(others, ensure_ascii=False)}\n\n"
             f"Links by ref for post drafts:\n{json.dumps(links)}\n\nWrite today's briefing.")
-    return llm.call_tool(cfg["models"]["deep"], system, user, "publish_digest",
-                         SYNTH_SCHEMA, max_tokens=16000)
+    return llm.call_tool(cfg["models"]["deep"], system, user, "publish_digest", SYNTH_SCHEMA)
 
 
 def fallback_digest(items, tri):
     """Used if the synthesis call fails, so a report still goes out."""
     top = sorted(tri.values(), key=lambda t: -t["importance"])[:8]
+    if llm.limit_reached():
+        reason = ("Your Claude plan's usage limit was reached during this morning's run, so the full analysis "
+                  "was skipped. Below are the highest-ranked items that were screened before the limit.")
+    else:
+        reason = ("The detailed analysis step failed today, so this report lists the highest-ranked items "
+                  "from the quick screening. Check the workflow log on GitHub for the error.")
     return {
-        "headline": "Today's items, ranked (automatic analysis was unavailable)",
-        "overview": "The detailed analysis step failed today, so this report lists the highest-ranked items "
-                    "from the quick screening. Check the workflow log on GitHub for the error.",
+        "headline": "Today's items, ranked (the full analysis could not run)",
+        "overview": reason,
         "top_stories": [{"title": items[t["i"]]["title"], "summary": t["one_liner"],
                          "why_it_matters": f"Ranked {t['importance']}/5 in screening.",
                          "priority": 1 if t["importance"] >= 4 else 2, "refs": [t["i"]]} for t in top],
@@ -282,7 +301,7 @@ def main():
                     {"items": items, "triage": {str(k): v for k, v in tri.items()},
                      "deep": {str(k): v for k, v in deep.items()}, "digest": digest})
     feeds.save_json(feeds.QUEUE, [])
-    print("API usage:\n" + llm.usage_summary())
+    print("Claude usage:\n" + llm.usage_summary())
 
     if not args.no_whatsapp:
         whatsapp.send_digest(cfg, date_label, digest.get("whatsapp_highlights", ""), url)

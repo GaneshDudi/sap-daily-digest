@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
       WA_TOKEN: ${{ secrets.WA_TOKEN }}
       WA_PHONE_NUMBER_ID: ${{ secrets.WA_PHONE_NUMBER_ID }}
       WA_TO: ${{ secrets.WA_TO }}
@@ -33,6 +33,16 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
+
+      - name: Install Claude Code
+        run: |
+          curl -fsSL https://claude.ai/install.sh | bash || npm install -g @anthropic-ai/claude-code
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Check Claude login
+        run: |
+          claude --version
+          if [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ]; then echo "Missing secret CLAUDE_CODE_OAUTH_TOKEN"; exit 1; fi
 
       - name: Research and build today's report
         run: python digest.py --no-whatsapp
