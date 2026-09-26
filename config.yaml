@@ -102,25 +102,14 @@ jobs:
   # Company careers sites. Added one by one after checking they work.
   # type successfactors: SAP SuccessFactors career sites (RSS search, up to 20 jobs per search)
   # type workday: Workday career sites (host, tenant and site come from the careers URL)
+  # Every entry here was live-tested with an "SAP ABAP" search AND checked against
+  # its site's robots.txt / terms of use before being added. See README for the
+  # full list of companies that were tried and why they didn't make the cut.
   careers:
     - name: SAP
       type: successfactors
       base_url: https://jobs.sap.com
       keywords: [abap]
-    # ── DRAFT, not yet live-tested (see session notes) ──
-    - {name: Wipro, type: successfactors, base_url: https://careers.wipro.com, keywords: [abap]}
-    - {name: HCLTech, type: successfactors, base_url: https://careers.hcltech.com, keywords: [abap]}
-    - {name: EY, type: successfactors, base_url: https://careers.ey.com, keywords: [abap]}
-    - {name: Deloitte India, type: successfactors, base_url: https://southasiacareers.deloitte.com, keywords: [abap]}
-    - {name: NTT DATA, type: successfactors, base_url: https://careers-inc.nttdata.com, keywords: [abap]}
-    - {name: Accenture, type: workday, host: accenture.wd103.myworkdayjobs.com, tenant: accenture, site: AccentureCareers, keywords: [SAP ABAP]}
-    - {name: PwC, type: workday, host: pwc.wd3.myworkdayjobs.com, tenant: pwc, site: Global_Experienced_Careers, keywords: [SAP ABAP]}
-    - {name: Shell, type: workday, host: shell.wd3.myworkdayjobs.com, tenant: shell, site: ShellCareers, keywords: [SAP ABAP]}
-    - {name: 3M, type: workday, host: 3m.wd1.myworkdayjobs.com, tenant: 3m, site: Search, keywords: [SAP ABAP]}
-    - {name: ZEISS, type: workday, host: zeissgroup.wd3.myworkdayjobs.com, tenant: zeissgroup, site: External, keywords: [SAP ABAP]}
-    - {name: Mitel, type: workday, host: mitel.wd3.myworkdayjobs.com, tenant: mitel, site: mitelcareers, keywords: [SAP ABAP]}
-    - {name: Momentive, type: workday, host: momentive.wd1.myworkdayjobs.com, tenant: momentive, site: MC, keywords: [SAP ABAP]}
-    - {name: Dentsu, type: workday, host: dentsuaegis.wd3.myworkdayjobs.com, tenant: dentsuaegis, site: DAN_GLOBAL, keywords: [SAP ABAP]}
 
   # Posts Claude analyses in detail per run (keeps your Pro usage modest).
   max_jobs_analysed: 150
