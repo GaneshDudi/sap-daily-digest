@@ -647,5 +647,16 @@
   "feed": "SAP Community blog posts",
   "kind": "blog",
   "text": "E-commerce is evolving fast, and the past holiday seasons have shown that peak readiness is no longer just about handling traffic spikes. It is about delivering reliable, intelligent, and seamless shopping experiences at scale. \n 2025 SAP Commerce Cloud Holiday Season Performance: \n 2025 Cyber Week: US$12.2 billion in GMV with 100% uptime. Cyber Monday alone delivered a 71.8% year-over-year GMV increase. Global online holiday sales reached US$1.2 trillion. \n 2025 Full Holiday Season (HSRP reporting): 100% infrastructure uptime, US$17.8 billion in GMV, and 40% year-over-year growth, with AI- and agent-assisted experiences increasing influence. \n SAP's Holiday Season Readiness Program (HSRP) 2026 is a free, structured, multi-phase program designed to assess your current infrastructure, communicate sizing outcomes, and scale your environment ahead of the busiest trading weeks of the year. The program supports customers with proactive planning, environment analysis, scaling recommendations, readiness guidance, and cross-team coordination ahead of major holiday events. \n However, HSRP is not a substitute for your own preparation. SAP can support infrastructure scaling and proactive monitoring - but your custom code, integrations, storefront performance, payment flows, security posture, and operational readiness are your responsibility. \n This checklist covers the 19 actions you should consider completing to ensure your SAP Commerce Cloud environment is truly ready for peak. A comprehensive preparation guide for SAP Commerce Cloud customers enrolled in or preparing alongside the Holiday Season Readiness Program (HSRP) 2026. \n Read more: \n Holiday Season Readiness Program — Proactively Preparing for Peak \n HSRP 2026 Key Dates and What to Expect"
+ },
+ {
+  "key": "348d5c6b29e810c4",
+  "title": "The specified hostname is not valid , error during install SLD",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/the-specified-hostname-is-not-valid-error-during-install-sld/qaq-p/14492572",
+  "published": "2026-09-26T04:35:46+00:00",
+  "author": "mat_mat1",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear SAP expert, \n I did face error (The specified hostname is not valid) during install SLD on one of two new HP laptop which is using Windows 11 Home Single Language. Only one laptop successful install SLD and all others components. I setup this laptop for testing purpose. \n I install from Components Wizards install.exe. \n The two laptop is not join any domain. \n If anyone know or got idea what to check, really appreciate it. \n Thanks and regards, \n Mat"
  }
 ]
