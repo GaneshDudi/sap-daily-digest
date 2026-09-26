@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-09-26",
+  "label": "Saturday, 26 September 2026",
+  "headline": "RAP's draft data has a DCL security gap, an Eclipse update can silently break your IDE, and HANA Cloud QRC3 pushes LLM calls straight into SQL.",
+  "items": 60,
+  "deep": 16
+ },
+ {
   "date": "2026-09-25",
   "label": "Friday, 25 September 2026",
   "headline": "Joule for Developers' free tier ends in 5 days, while a CL_ABAP_PARALLEL case study turns a 9-minute QM screen into 30 seconds.",
