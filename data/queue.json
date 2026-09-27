@@ -53,5 +53,60 @@
   "feed": "SAP Community questions",
   "kind": "question",
   "text": "Hi Experts \n Start and Record Time buttons are not visible in the system. \n\n I enabled Confirm Jobs Without Assignment in the app configuration. However, the Start and Record Time buttons are still unavailable. \n\n I also noticed a difference from Private Cloud: the Perform Jobs and Record Time Without Personnel Number setting is available there, but I cannot find it in SAP S/4HANA Cloud Public Edition 2608. \n 1. Could you please confirm whether this setting is supported in Public Cloud and advise what is required to enable these buttons? \n 2. In a phase based maintenance process, are operations required to be dispatched before they appear in the Perform Maintenance Jobs? In my test, the operation appeared only after dispatching. However, I remember that in Private Cloud, the operations appeared in this app even before they weren't dispatched. \n The documentation in the link included information about this; \n https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/e72f747389b340229f7fa343975bfa57/3da57072a73444f18b5ad8785bc2900e.html \n *A job is a maintenance order operation or suboperation that is ready for execution. This means that the relevant operations or suboperations are in the Ready for Execution, Work in Execution, Work Paused, or Work Finished subphase. The list also includes jobs that do not support the phase model. In this case, the corresponding orders must be released. For such jobs, subphase details are not available.* \n Thank you!"
+ },
+ {
+  "key": "f22948cd8175d5b7",
+  "title": "When Customer Demand Changes: How Standard SAP Handles It — and Where PP/DS Fits",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/when-customer-demand-changes-how-standard-sap-handles-it-and-where-pp-ds/ba-p/14492997",
+  "published": "2026-09-27T19:53:00+00:00",
+  "author": "abhishekashish15",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Customer demand changes after MRP has already planned procurement and production. This article compares five standard SAP responses to demand volatility and explains when embedded PP/DS becomes relevant."
+ },
+ {
+  "key": "a4fed7415bed9890",
+  "title": "SAP Inside Track Porto 2026 — Comunidade, Conhecimento, IA e muita energia no Porto!",
+  "link": "https://community.sap.com/t5/porto-blog-posts/sap-inside-track-porto-2026-comunidade-conhecimento-ia-e-muita-energia-no/ba-p/14492988",
+  "published": "2026-09-27T19:25:42+00:00",
+  "author": "MRobalinho",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Ontem, 26 de setembro, realizámos a 3.ª edição do SAP Inside Track Porto , em Vila Nova de Gaia. \n Mais uma vez, conseguimos reunir a SAP Community para um dia inteiro de partilha de conhecimento, networking, demonstrações práticas, troca de experiências e, acima de tudo, comunidade ."
+ },
+ {
+  "key": "2ff5be9d4581903f",
+  "title": "SAP Business Application Studio Integration with SAP S/4HANA Cloud Public Edition",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-application-studio-integration-with-sap-s-4hana-cloud-public/ba-p/14492976",
+  "published": "2026-09-27T19:00:32+00:00",
+  "author": "Pooja_Hadagali1",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Learn how to integrate SAP Business Application Studio with SAP S/4HANA Cloud Public Edition. This blog provides a step-by-step guide covering trust configuration, BAS setup, connectivity with the SAP S/4HANA Cloud tenant, and creation of a Dev Space for SAP Fiori application development."
+ },
+ {
+  "key": "d0c02fb0026c4392",
+  "title": "How to Create an RAP Based Custom UI5 App and Deploy it to SAP S/4HANA Public Cloud",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-create-an-rap-based-custom-ui5-app-and-deploy-it-to-sap-s-4hana/ba-p/14492962",
+  "published": "2026-09-27T17:30:40+00:00",
+  "author": "Pooja_Hadagali1",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Learn how to build an end-to-end RAP-based custom UI5 application and deploy it to SAP S/4HANA Cloud Public Edition. This guide walks through the key development steps, from creating the RAP business object and exposing the service to developing the UI5 application and deploying it to the SAP S/4HANA Public Cloud environment."
+ },
+ {
+  "key": "359c4b459e39b4bf",
+  "title": "ADT for VS Code - Get an app to open this 'adt' link",
+  "link": "https://community.sap.com/t5/technology-q-a/adt-for-vs-code-get-an-app-to-open-this-adt-link/qaq-p/14492965",
+  "published": "2026-09-27T17:44:06+00:00",
+  "author": "FabioPagoti",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "I'm using ADT for VS Code following ABAP Basic Features for Visual Studio Code | SAP Developer Center connected with the ABAP environment on BTP trial. \n When using option \" ABAP: Open with ADT for Eclipse \". However, I do have eclipse installed and the error does not show much how to fix it. \n\n Apparently there is no settings where I can specify where eclipse is installed and the system is not recognizing it. I don't know is there is a fix but at least this question should help others anyway. \n Thanks"
  }
 ]
