@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-09-27",
+  "label": "Sunday, 27 September 2026",
+  "headline": "SAP formalizes Clean Core into a graded A-D classification, while two more blogs show AI-agent-to-SAP authentication is still held together by manual workarounds.",
+  "items": 9,
+  "deep": 4
+ },
+ {
   "date": "2026-09-26",
   "label": "Saturday, 26 September 2026",
   "headline": "RAP's draft data has a DCL security gap, an Eclipse update can silently break your IDE, and HANA Cloud QRC3 pushes LLM calls straight into SQL.",

@@ -1,0 +1,434 @@
+{
+ "items": [
+  {
+   "key": "476787ecf33d9198",
+   "title": "Understanding Form Templates in SAP Sales & Service Cloud V2",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/understanding-form-templates-in-sap-sales-amp-service-cloud-v2/ba-p/14492282",
+   "published": "2026-09-26T11:08:01+00:00",
+   "author": "pvsbprasad",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Understanding Output Management in SAP Sales and Service Cloud: Main Templates, Form Templates and Rules \n Introduction \n Document output is an important part of many business processes in SAP Sales and Service Cloud . Business documents such as invoices, sales documents, service documents, and other forms may need to be generated as PDFs, printed, emailed, or sent to business partners. \n SAP provides Output Management capabilities to control how these documents are generated and formatted. \n In this blog, we will look at the key concepts involved in Output Management: \n Form Main Templates \n Form Templates \n Language Variants \n Form Template Rules \n Adobe LiveCycle Designer \n\n How the system determines which template to use \n Understanding the relationship between these components is important when implementing customer-specific document layouts. \n 1. What is Output Management? \n Output Management comprises the activities required to generate and distribute business documents. \n Form-based documents can be generated: \n On an ad hoc basis \n As part of a business process \n As PDF documents \n As email attachments \n For printing \n For faxing, where supported \n The overall output process can be understood using three important components: \n Main Template → Form Template → Form Template Rule \n The Main Template provides common branding and organizational information. \n The Form Template defines the actual document structure and content. \n The Form Template Rule determines which form template should be used for a particular business document and under which conditions . \n\n 2. Form Main Templates \n A Form Main Template is used to define common elements that can be reused across multiple form templates. \n For example, a company may want the same: \n Company logo \n Header \n Sender address \n Footer \n Language-dependent footer \n across Quotes , opp, and other business forms. \n Instead of maintaining these elements separately in every form, you can maintain them centrally in a Main Template. \n\n 3. How Does the System Determine the Main Template? \n When a business document is generated, the system follows a hierarchy to determine which Main Template should be used. \n The basic logic is: \n Business Document → Company/Org Unit → Parent Org Unit → Default Main Template \n Step 1: Check the assigned organizational unit \n The system first checks whether a Main Template is assigned to the company or organizational unit where the business document was created. \n The system first searches for a Main Template assigned to Sales US West Coast . \n Step 2: Search higher in the organizational structure \n If no matching Main Template is found, the system searches upward through the organizational hierarchy. \n Step 3: Use the default Main Template \n If no matching Main Template is found anywhere in the organizational hierarchy, the system uses the default Main Template . \n This allows organizations to have both global and company-specific branding. \n\n 4. Creating a Main Template \n To create a Main Template, navigate to: \n User Menu → System Settings → All Settings → Output Management → Maintain Main Template \n Choose Create . \n Enter: \n\n Main Template Name \n\n Organizational Unit, if applicable \n You can also enable the Is Default option if the template should be used as the default. \n\n Designing the Main Template \n The Main Template provides options for defining the common header and footer information. \n Header \n You can: \n Upload a company logo \n Adjust logo size and alignment \n Enable a header divider \n Maintain the sender address \n Supported logo formats include: \n .gif \n .bmp \n .jpg \n .png \n .tif \n The logo should be within the supported size limits. If the uploaded graphic exceeds the supported dimensions, the system automatically resizes it. \n Footer \n You can configure the number of footer columns and maintain footer information. \n Up to four footer blocks can be maintained, with a maximum of 10 lines per footer . \n The footer blocks are divided equally across the available space. \n\n 5. Form Templates \n While the Main Template provides common branding elements, the Form Template defines the actual layout and content of a business document. \n Form templates are used to generate print forms, which are generally produced as PDF documents. \n These forms can then be: \n Printed \n Sent as email attachments \n Sent to business partners \n Used as part of business processes \n The Main Template can then provide the common company logo, sender address, and footer. \n 6. SAP-Delivered vs Custom Form Templates \n SAP provides predefined form templates for many business scenarios. \n Although you can create new templates, SAP recommends using and adapting the templates provided by SAP or partners where possible. \n A typical approach is: \n SAP-Delivered Template → Copy Template → Customize → Publish → Use in Output Rules \n This approach has an important advantage: existing output settings can be reused instead of configuring everything from scratch. \n\n 7. Why Should You Copy the SAP Template? \n Suppose SAP provides a standard Customer Invoice template. \n Instead of creating a completely new form, you can: \n Select the SAP-delivered template. \n Choose Copy Template . \n Enter a custom name and description. \n Select the required language. \n Enable the Form Main Template option if required. \n Save and publish the template. \n Your organization can then customize the copied template without directly modifying the SAP-delivered version. \n This is particularly useful when SAP delivers a newer version of the standard template. \n 8. Editing Form Templates with Adobe LiveCycle Designer \n For more advanced layout changes, SAP supports downloading the form template and modifying it using Adobe LiveCycle Designer . \n The required environment includes Adobe LiveCycle Designer along with the relevant SAP support components. \n Navigate to: \n User Menu → System Settings → All Settings → Output Management → Maintain Form Template \n Select the required template and choose Edit . \n Depending on the scenario, you can download the template and modify the .xdp file using Adobe LiveCycle Designer. \n\n 9. What Can Be Changed in Adobe LiveCycle Designer? \n Using Adobe LiveCycle Designer, you can make several layout and formatting changes. \n For example: \n Layout \n You can: \n Change the position of fields \n Change the position of the title \n Change the position of the logo \n Change field alignment \n Change the sequence of fields \n Formatting \n You can: \n Change fonts \n Change font sizes \n Change line styles \n Add borders \n Change alignment \n Fields and Columns \n You can: \n Show or hide fields \n Change field labels \n Change column order \n Change column headers \n Show or hide columns \n However, if a required field is not available in the form data structure, additional extensibility or SAP support may be required. \n 10. Language Variants \n A business may operate across multiple countries and languages. \n For example: \n English \n German \n French \n Spanish \n SAP supports language variants of form templates. \n A language variant is essentially a version of an existing form template maintained for another language. \n To create one: \n User Menu → System Settings → All Settings → Output Management → Maintain Form Template \n Select the required template and choose: \n Copy Variant \n Then select the required language. \n 11. Downloading Form Template Variants \n A form template variant can also be downloaded for offline editing or testing. \n Navigate to: \n User Menu → Settings → All Settings → Output Management → Maintain Form Template \n Select the required template and choose Download . \n The downloaded ZIP package can contain: \n XDP file \n XSD file \n Sample XML data, if available \n The XDP contains the form template definition. \n The XSD describes the XML data structure and is useful when editing the form offline. \n Sample XML data can be used to preview the output. \n If sample data is not available, XML data can also be obtained from the document's output history where supported. \n 12. Form Template Rules \n Now we come to one of the most important parts of Output Management: \n Form Template Rules \n Imagine you have two invoice templates: \n Template A \n\n Domestic Quote \n Template B \n\n International Quote \n How does the system know which template to use? \n This is where a Form Template Rule is required. \n A Form Template Rule defines the conditions under which a particular form template should be selected. \n\n 13. Main Template + Form Template + Rule: Putting Everything Together \n The complete flow can be visualized as: \n Business Transaction \n ↓ \n Output Management \n ↓ \n Form Template Rule \n ↓ \n Select Form Template \n ↓ \n Apply Main Template \n ↓ \n Generate PDF \n ↓ \n Print / Email / Other Output Channel \n 14. Key Takeaways \n Here are the key concepts to remember: \n 1. Main Template \n Used for common branding such as: \n Logo + Header + Sender Address + Footer \n 2. Form Template \n Defines the actual business document layout and content. \n 3. Language Variant \n Provides the same form in another language. \n 4. Form Template Rule \n Determines which form template should be selected based on defined conditions. \n 5. Rule Sequence \n Specific rules should generally be evaluated before generic rules. \n 6. SAP-Delivered Templates \n Where possible, copy and adapt SAP-delivered templates rather than creating everything from scratch. \n 7. Adobe LiveCycle Designer \n Can be used for advanced layout and form customization where supported. \n\n Conclusion \n SAP Output Management provides a structured way to manage business document output without having to maintain every document independently. \n The most important relationship to understand is: \n Main Template → Common Branding \n Form Template → Document Layout and Content \n Form Template Rule → Template Selection Logic \n Once these three concepts are understood, scenarios such as country-specific invoices, company-specific branding, multilingual forms, and different document layouts become easier to configure and manage. \n For administrators and implementation teams, paying particular attention to template inheritance, language variants, rule conditions, and rule sequence can help avoid unexpected document output and simplify long-term form maintenance."
+  },
+  {
+   "key": "a487b813292e3720",
+   "title": "From AI-Ready Data to Agent-Ready Data",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-ai-ready-data-to-agent-ready-data/ba-p/14492601",
+   "published": "2026-09-26T08:31:27+00:00",
+   "author": "MostafaElbarbary",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "For years, many data architecture conversations started with the same question: How do we bring data together so the business can report on it? \n With AI agents, I think we need to add another question: \n What does an agent need to understand before we allow it to recommend — or take — an action? \n A dashboard may tell us that overdue receivables have increased. An agent could go much further. It might be asked to identify the customers behind the increase, check disputed invoices, recommend the next step, and even create a follow-up task. \n That is a very different demand on the data foundation. Every one of those steps requires more than a clean table. \n What changes for the data foundation? \n An agent needs to understand the agreed meaning of a measure such as DSO. It needs to know the relationships between customers, invoices, and disputes. It needs to understand where each figure came from, how fresh it is, and which permissions apply to both the user and the agent. \n Just as importantly, there needs to be a clear boundary between explaining a situation and changing it . \n An AI response can sound completely convincing even when one of these foundations is missing. \n Gartner describes the move toward agent-ready data in terms of whether data is suitable for agentic use and whether the agent is using it in a valid way. McKinsey also emphasizes semantics, reusable data products, relationships, governance, and observability. \n I find both perspectives useful because they move the discussion away from a broad statement such as “our data is clean” and toward something much more specific: \n Is this data ready for this agent, this user, this decision, and this action? \n How I would approach this in an SAP landscape \n SAP Business Data Cloud and its data products can provide a governed starting point. \n SAP Datasphere can help model business meaning and make data easier to discover and consume. \n SAP Knowledge Graph also appears in SAP’s longer-term architecture vision as a semantic grounding layer for agents. I would treat that as architectural direction rather than assuming that every capability is already available in every customer landscape today. \n If I were starting a customer workshop, I would begin with five questions: \n What decision should the agent support? \n Which facts would an experienced employee check before making that decision? \n Who owns the definitions and quality checks behind those facts? \n What is the agent allowed to see and do? \n How will we trace its answer back to the supporting evidence? \n The answers to those questions tell us what data products, semantics, documents, and controls are actually required. \n For a first release, I would often start with an agent that explains a situation and cites the supporting records. \n If users can validate the answer consistently, we can then assess whether a controlled action makes sense. \n This is where I see the role of the data architect evolving. Our job is no longer only to deliver the right number. We also need to establish its meaning, reliability, context, and permitted use inside a business process. \n A practical way to make this real is to start small: one question, one user role, and one proposed action. \n That makes the architecture testable. \n If the answer changes when the role or proposed action changes, the underlying data product may still be valuable, but the agent design probably needs a more precise boundary. \n This also gives the architect an important role in adoption conversations. \n We can bring finance, process, security, and data teams around one concrete scenario and make their assumptions visible. If they disagree, that disagreement is useful evidence. It tells us where the design is still unclear. \n It is much cheaper to resolve those questions in a workshop than after an automated action has already been taken. \n\n What to read next \n\n Topic \n Why read it \n Link to read \n\n Agent readiness \n Understand why suitability and valid data use matter for agents. \n Open resource \n\n Architecture foundations \n Connect semantics, data products, permissions, governance, and observability. \n Open resource \n\n Business context for agents \n Explore how SAP positions data products and semantic grounding for AI agents. \n Open resource"
+  },
+  {
+   "key": "74c971e753b24b3e",
+   "title": "Olá SAP Community, Eu sou Moshe!",
+   "link": "https://community.sap.com/t5/porto-discussions/ol%C3%A1-sap-community-eu-sou-moshe/m-p/14492591#M20",
+   "published": "2026-09-26T07:34:52+00:00",
+   "author": "moshenaveh",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "Hello dear SAP Community of Porto! \n\n I'm really looking forward to meeting you all today in the SAP Inside Track event. \n\n My name is Moshe and I'm a proud member of the SAP Community team. \n\n I love long walks, hiking cooking and my favorite food is snacks from all over the world (and of course a good steak and fries!:)) \n\n I'm really interested in exploring how AI can help community members engage while keeping their authentic approach. \n\n Let's all connect and network today! \n\n It would be great if you could add a comment sharing a bit about yourself: Your SAP Topic, hobbies, favorite food and a cool picture from the event if you wish:). \n\n Can't wait to learn more about you all! \n\n See you!"
+  },
+  {
+   "key": "cf74d0d24619de87",
+   "title": "MCP Server with Integration Suite via API Centric Integration, S/4HANA API",
+   "link": "https://community.sap.com/t5/integration-blog-posts/mcp-server-with-integration-suite-via-api-centric-integration-s-4hana-api/ba-p/14491660",
+   "published": "2026-09-26T16:09:44+00:00",
+   "author": "ChingHong",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Introduction/Scenario This post continues from the previous article, MCP Server with Integration Suite, expose S/4HANA ... - SAP Community , and focuses on addressing the identified issues by using API Artifacts. \n Background: \n The previous post demonstrated how to set up an MCP server with SAP Integration Suite and connect it to S/4HANA Public Cloud using OAuth2SAMLBearerAssertion. This approach helps maintain governance by ensuring that S/4HANA APIs are consumed using a named user account, where access is restricted based on the authorizations and roles assigned to that user. \n When the MCP server is used for read-only scenarios, such as HTTP GET operations, it works well with clients such as GitHub Copilot and Claude. However, several issues were encountered when attempting to perform write operations against S/4HANA Public Cloud APIs, such as HTTP POST (create) and PATCH (update) requests through the MCP server. \n Therefore, the approach described in this post is optional and only relevant if your MCP server needs to support create or update operations on S/4HANA APIs. If your use case is limited to HTTP GET requests, you can continue to follow the implementation approach described in the previous blog without the additional steps covered here. \n Note : SAP may enhance Integration Suite in future releases to support these scenarios out of the box. As a result, the workaround described in this post may eventually become obsolete. Before implementing this approach, always refer to the latest SAP documentation available on SAP Help Portal to verify whether a native solution is available. \n\n Issue Count Issue Detail \n 1 \n Data type that interpreted as object as example below, where causing issue when calling the MCP server. \n Thanks @MioYasutake , shared the workaround to remove the \"anyOf\" in the OpenAPI specification with a plain type, that shall resolve this issue if direct expose the S/4HANA API via the MCP server. \n However, the approach shared in this blog does not need touch the OpenAPI specification. \n 2 \n Getting error as it is trying to convert the content before perform API call \n Current workaround : Remove all the SAP_Messages and SAP__Messages from the downloaded OpenAPI file and load into the integration suite MCP server again. But this is touching the OpenAPI file that downloaded from api.sap.com. Looks like there is no other option beside touching the specification file. \n\n 3 \n CSRF token issue when doing HTTP Post action, looks like there is no way to enhance the MCP to send access HTTP header and update the MCP server to handle this. \n\n This blog is demonstrating the possible option to resolve this. \n 4 \n ETag handling when doing HTTP patch action \n This blog is demonstrating the possible option to resolve this. \n 5 \n Other data type issues, for example \"Time\" don't seem working as expected in Postman, SAP return \"HH:MM:SS\", but \"Time\" data type is expecting \"HH:MM:SS{Z}\" instead if not mistaken. Will need to remove the \"Time Format\" in the API artifact or update the OpenAPI specification prior loaded into the API artifact. \n The response in the Postman console \n The MCP artifact/policies only allows limited API policies application (refer - Configure an MCP Server Created from an API Artifact | SAP Help Portal ), and no message transformation or additional HTTP called is allowed. Hence, this writing is demonstrating how to use the API Centric Artifact on solving some of the mentioned issued below and still supporting user principal propagation connection to the S/4HANA Public Cloud API. \n Note: \n As of the date of writing, the API-centric artifacts and policies in SAP Integration Suite do not support principal propagation. During Devtoberfest 2026 From APIs to Agent Tools: How MCP Gateway changes what Integration means - YouTube , SAP indicated that this capability is on the roadmap for a future release. Therefore, this blog demonstrates a possible workaround to achieve principal propagation until native support becomes available. \n In addition, the final section of this blog shows how principal propagation can be implemented when connecting to SAP S/4HANA Private Cloud or SAP S/4HANA On-Premise via SAP Cloud Connector. \n Flow: → Agent (Claude/Github Copilot/any AI Agent) \n → MCP server by Integration Suite (Authenticated via IAS)\n → API Artifact by Integration Suite (Authenticated via IAS)\n → BTP Destination Service (OAuth2SAMLBearerAssertion) \n → S/4HANA Public Cloud (executed as the authenticated user) \n\n Will leverage the BTP destination API to generate SAML bearer assertion token to access the S/4HANA public cloud to overcome the limitation that API artifact don't support OAuth2SAMLBearerAssertion. Reference \n Pre-requisite: \n SAP BTP with Cloud Foundry Enabled \n SAP Integration Suite with MCP server, Integration Cell runtime capability \n S/4HANA Public Cloud \n SAP Cloud Identity Services (IAS) \n AI Agent able to communicate with MCP server \n The BTP destination to S/4HANA Public Cloud already setup - refer previous blog \n Destination Service Instance Setup \n Goto BTP create an destination service instance \n Service: Destination Service \n Plan: lite \n Create a key and copy the Client ID, Client Secret and uri for later usage \n\n Create API Artifact \n Important: Remove all the SAP_Messages and SAP__Messages from the downloaded OpenAPI file. You may use AI assistant on helping this if not familiar on changing this. \n Create a new API Artifact - choose Integration Cell as the Runtime Profile \n\n Select URL or Specification \n\n Enter the information as below \n Filename: OpenAPI specification(downloaded from api.sap.com) and remove the SAP_Messages and SAP__Messages from the file \n URL: URL to access the S/4HANA public cloud sales order api \n Name: your prefer name \n ID: your prefer ID \n Service Type: REST \n API Base Path: your prefer path \n\n Update description if required \n\n The URL here will be come irrelevant to the policies as will overwrite the auto generated endpoint \n\n Resources are auto generated based on the uploaded API specification \n\n Policies \n Important here: delete the auto generated target HTTP channel, recreate a new HTTP channel to target or S/4HANA Public Cloud API, as the default generated target HTTP channel not allowing the \"Authorization\" header passing \n\n More information can refer to the blog Secure APIs: External OIDC-Based Authentication fo... - SAP Community \n The Well-known URL: https://<ias tenant>.accounts.ondemand.com/.well-known/openid-configuration \n Audience: Can leave empty unless restrict to certain client ID or target system only \n ClientID Key: standard using ${authn.oidc.jwt.azp}, where you can find out this when studying the JWT via any JWT decoder, for example: SuperTokens JWT Decoder \n User Info Key: standard using ${authn.oidc.jwt.email}, where you can find out this when studying the JWT via any JWT decoder, for example: SuperTokens JWT Decoder \n\n import com.sap.it.script.v2.api.Message;\nimport groovy.json.JsonOutput;\nimport groovy.json.JsonSlurper;\n\ndef Message storeInputInformation(Message message) {\n\n Map<String, Object> headers = message.getHeaders();\n\n // Convert to JSON string\n String headersJson = JsonOutput.prettyPrint(JsonOutput.toJson(headers))\n // Store in exchange property\n message.setProperty(\"OriHeaders\", headersJson);\n\n message.setProperty(\"OriBody\", message.getBody());\n\n // get token\n String authHeader = message.getHeader(\"Authorization\", String)\n String token = authHeader?.replaceFirst(/^Bearer\\s+/, \"\")\n message.setProperty(\"AccessToken\", token)\n\n // set token for destination fetch\n message.setHeader(\"x-user-token\", token)\n\n return message;\n} \n\n Request-Reply to Destination Service \n Address : <uri copy from the destination service instance key>/v1/destinations/<destination created in BTP>, for example: https://destination-configuration.cfapps.us10.hana.ondemand.com/destination-configuration/v1/destinations/S4_XBB_API \n Credential Name: The credential artifact the capture the OAuth2ClientCredential setup, this token URL, client ID and password refer to the Destination Service Instance key \n Request Headers: x-user-token \n\n Extract Token return from destination, where this Token can be used to call S/4HANA \n def Message extractTokenFromDestination(Message message) {\n\n // set back original headers\n String headersJson = message.getProperty(\"OriHeaders\")\n if (headersJson) {\n def headersMap = new JsonSlurper().parseText(headersJson)\n headersMap.each { key, value ->\n if (value != null) {\n message.setHeader(key.toString(), value.toString())\n }\n }\n }\n\n def json = new JsonSlurper().parseText(message.getBody(String))\n\n def bearerToken = json.authTokens?.find { it.type == \"Bearer\" }?.value\n message.setHeader(\"Authorization\", \"Bearer ${bearerToken}\")\n message.setProperty(\"SAMLBearerAssertionToken\", bearerToken);\n\n message.setBody(message.getProperty(\"OriBody\"));\n\n return message;\n} \n\n Router to decide fetch CSRF token \n\n Content Modifier: Set CSRF Token Fetch Header \n\n Request Reply - Fetch CSRF Token \n Address : <api URL> \n Proxy Type: Internet \n Method: GET \n Authentication: none (token already set in previous step, will be pass at request header) \n Request Headers: Authorization|x-csrf-token \n Response Headers: * \n\n Extract CSRF response cookie and set cookie def Message extractCSRFToken(Message message) {\n\n def cookies = message.getHeader(\"set-cookie\");\n message.setHeader(\"cookie\", String.join(\"; \", cookies));\n\n return message;\n} \n\n Router - set Etag header, set to * always also force update \n\n Set the original input header and body before perform the HTTP call to the actual target API URL def Message prepareInputPriorCall(Message message) {\n // keep a copy of the cookies as this is returned by the CSRF token fetch\n def cookies = message.getHeader(\"cookie\");\n\n // set back original headers\n String headersJson = message.getProperty(\"OriHeaders\")\n if (headersJson) {\n def headersMap = new JsonSlurper().parseText(headersJson)\n headersMap.each { key, value ->\n if (value != null) {\n message.setHeader(key.toString(), value.toString())\n }\n }\n }\n\n // pass the bearer token as authorization header\n def bearerToken = message.getProperty(\"SAMLBearerAssertionToken\");\n message.setHeader(\"Authorization\", \"Bearer ${bearerToken}\")\n\n message.setBody(message.getProperty(\"OriBody\"));\n\n // set back the CSRF token fetch cookie\n message.setHeader(\"cookie\", cookies);\n\n return message;\n} \n\n Actual Request-Reply to the API URL based on the input \n Address : <api URL>${header.camelhttppath} \n Query: ${header.camelhttpquery} \n Proxy Type: Internet \n Method: Dynamic \n Expression: ${header.camelhttpmethod} \n Send Body: checkbox ticked \n Authentication: none (token already set in previous step, will be pass at request header) \n Request Headers: * \n Response Headers: * \n Setup the MCP server in Integration Suite \n Information: Configure an MCP Server Created from an API Artifact | SAP Help Portal \n\n Create a new MCP server in Integration Suite \n Source Type - API \n\n Select the API, Enter name, ID, MCP Path, Version \n\n Select the tools and click Add \n\n Remain all auto generated item and deploy the MCP server \n\n Include the MCP server into the Product. Refer to the previous blog on how to setup product \n\n Test the new MCP server in Github Copilot \n Note: Refer to previous blog on how to setup connection to MCP server in VS Code \n Scenarios : \n Get order detail \n Create a new order \n Update order \n 1 \n Get order detail \n 2 \n Create new order via MCP \n\n The payload that used to call MCP server - there is no issue passing the quantity in integer format now. \n 3 \n Update the sales order reference \n Sample payload call MCP server \n\n Similar concepts communicate with S/4HANA Private Cloud or Onpremise via Cloud Connector (Principal Propagation) \n Note: \n The trial account used throughout this blog is not connected to a SAP Cloud Connector and therefore cannot access an SAP S/4HANA Private Cloud or SAP S/4HANA On-Premise system. For the demon"
+  },
+  {
+   "key": "ef855fb83d9bdf86",
+   "title": "103/105 & 107/109 Two-Step Goods Receipt in SAP EWM Using VL60",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/103-105-amp-107-109-two-step-goods-receipt-in-sap-ewm-using-vl60/ba-p/14492692",
+   "published": "2026-09-26T12:28:47+00:00",
+   "author": "Asmithaa",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Introduction \n Receiving materials from a vendor into inventory does not always follow a single process. Depending on the business requirement, different goods receipt processes may be used, and SAP provides various movement types to support these scenarios. The most used movement type for goods receipt is 101 , where the receipt is posted directly against the purchase order or inbound delivery. \n SAP also provides two-step goods receipt processes , namely 103/105 and 107/109 . In a classic Inventory Management (IM) storage location, these processes can be executed using transactions such as MIGO . However, when the receiving storage location is EWM-managed , the process differs because the goods receipt needs to be integrated with Extended Warehouse Management (EWM). \n In this blog, we will explore how the 103/105 and 107/109 two-step goods receipt processes work for EWM-managed storage locations, using transaction VL60. \n 107/109: \n The business utilizes the 107/109 movement types when they need to record the stock as valuated blocked stock in transit to pay the vendor (107), then verify it once the stock is received in the warehouse (109). The table below helps us understand the two movement types a bit better. \n\n The steps are a bit different from our normal flow as highlighted here: \n Create Purchase Order \n Create Inbound Delivery in VL60 (for 109 movement type) \n Go to MIGO to post GRN for 107 movement type. \n Process the Inbound delivery created in VL60 in EWM to post Goods Receipt. \n Let’s look into all these steps in detail. \n Step 1: Create Purchase Order in ME21N with the confirmation control key as 0004. \n\n Step 2: Go to VL60, select Inbound delivery, and click on Create. \n\n By default, SAP has already provided the Delivery type and item category mapped for movement type 109, so we will select the standard document type available in the transaction. \n Step 3: Click on the Administration tab and select the Delivery type as ELST to receive the Valuated stock in Transit. \n\n Step 4: In the Basic Data tab, enter the external identification data. Under Overview, enter the reference document as Purchase Order and the reference item number as the purchase order item number, then scroll left to enter the quantity. \n\n Step 5: Check and save. The Inbound delivery is created. \n\n Do not process this delivery yet. We must post the goods receipt against movement type 107 first, and then follow on by processing the delivery for movement type 109. \n Step 6: Now go to MIGO and post the goods receipt against the purchase order for movement type 107. \n\n The GRN is posted, and the accounting documents are also generated, since the stock is received as valuated blocked stock. \n\n In MMBE, we can see the stock listed under Valuated Stock in Transit. \n\n Step 7: Now we can take the Inbound delivery to process it in EWM to post the goods receipt. \n\n After posting the goods receipt in EWM, if we go back to ME23N and check the purchase order history, we can see the record of both movement types. \n\n Here the movement 109 doesn’t produce any financial documents. \n\n 103/105: \n After receiving the goods, the business sometimes holds them in a location to inspect or verify them before the stock is finally accepted and placed into inventory. This is done in two steps: first, the stock is received as GR blocked stock (103); then, during final receipt, the blocked stock is moved to unrestricted (105), where the financial postings are done. The table below provides a summary of both movement types. \n\n We don’t have a standard delivery type for this transaction, so let’s create a custom document type. The setup below helps us create the custom document type. \n Step 1: First define the Delivery type. \n Go to SPRO -> Logistics execution -> Shipping -> Deliveries -> Define Delivery types. \n I have taken a copy of the ELST delivery type and created a custom delivery type, ZGBS. \n\n Step 2: Create custom item category in VOV7 \n\n Step 3: Go to SPRO -> Logistics execution -> Shipping -> Deliveries -> Define Delivery item categories. \n I have taken a copy of the ELST item category as well and created a custom item category, ZGBS. \n\n Step 4: Now we map the delivery type and item category using the path below: \n SPRO -> Logistics execution -> Shipping -> Deliveries -> Define Item Category Determination in Deliveries. \n\n Step 5: Map the document type and item type from ERP to EWM so the delivery can be processed in EWM, using the paths below: \n Document type mapping: SCM -> EWM -> Interfaces -> ERP Integration -> Delivery Processing -> Map Document Types from ERP System to EWM \n\n Item type mapping : SCM -> EWM -> Interfaces -> ERP Integration -> Delivery Processing -> Map Item Types from ERP System to EWM \n\n Once the above steps are configured in the system, the same flow of 107/109 can be followed here as well by selecting the custom delivery type in the VL60 transaction. \n Conclusion: \n This blog covered the two-step goods receipt process for EWM-managed storage locations using the VL60 transaction, other than the standard 101 movement type still handled through VL31N. The business can now receive goods through either process, depending on what best fits its operational needs."
+  },
+  {
+   "key": "b42da6a2956a7676",
+   "title": "Teched2026-XP266 -- Ship your own sandboxed AI operations agent to Kyma in two hours",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/teched2026-xp266-ship-your-own-sandboxed-ai-operations-agent-to-kyma-in-two/ba-p/14492281",
+   "published": "2026-09-26T12:17:49+00:00",
+   "author": "quovadis",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "🎓 This community blog post is a teaser for the SAP TechEd 2026 hands-on workshop XP266 — Ship your own sandboxed AI operations agent to Kyma in two hours . \n Written end-first: we start with what it feels like from a laptop, then peel back the layers. \n\n In the room you'll deploy a reasoning agent into Kyma, wire it to SAP AI Core, break production on purpose, and let the agent diagnose it — everything below is the foundation you'll build on. \n Session details + schedule are at the end of this post ."
+  },
+  {
+   "key": "ce4d46f8100f4517",
+   "title": "Renovate or Re-Platform? A Strategic Roadmap for Modernising Custom ABAP Applications",
+   "link": "https://community.sap.com/t5/abap-blog-posts/renovate-or-re-platform-a-strategic-roadmap-for-modernising-custom-abap/ba-p/14492631",
+   "published": "2026-09-26T11:31:52+00:00",
+   "author": "IgorPrudnecionok",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "This blog walks through the full arc — from understanding the risk of legacy custom ABAP to making the renovate-or-re-platform decision and shaping a clean core strategy. \n\n Legacy Custom Code - Strategic Risk \n Across global enterprises, decades of classic ABAP custom code have accumulated in ECC and early S/4HANA implementations. This is not just a development concern — it is a strategic liability sitting at the heart of your business operations. \n Two patterns dominate the field today. The first is brownfield carry-over : classic ABAP developments migrated from ECC to S/4HANA “as-is”, never re-evaluated against modern extensibility options. The system runs, but the architecture has not evolved. The second is greenfield but not clean : new S/4HANA implementations built with classic ABAP because project teams were unaware of — or not yet trained on — Clean Core tools such as ABAP Cloud, Key User Extensibility, and the RESTful Application Programming Model (RAP). \n The cost of inaction compounds over time. Blocked upgrades. Rising maintenance spend. Incompatibility with cloud innovations — including embedded AI capabilities such as SAP Joule, which requires a clean, standard-aligned core to deliver its full value. With SAP’s continuous delivery model for S/4HANA Cloud and the end of mainstream maintenance for SAP Business Suite 7 approaching in 2027 (SAP Note 1648480), technical debt in custom ABAP is no longer a background risk — it is a front-line strategic concern. \n\n What \"Clean Core\" Actually Means for Custom Extensions \n “Clean Core” is one of the most frequently cited — and frequently misunderstood — concepts in the SAP ecosystem. Let us clarify: Clean Core is not about zero customisation. It is about smart, upgrade-stable customisation. \n A system has a clean core when its custom extensions are decoupled from SAP standard code and interact with SAP business objects exclusively through well-defined, released interfaces. Extensions can still be rich, sophisticated, and deeply integrated — but they must not break during upgrades, and the upgrade cycle must not be broken by them. \n SAP formalised this principle in August 2025 with the introduction of the Clean Core Level concept, classifying extensions into four maturity levels: \n Level A — the cleanest: built on-stack with ABAP Cloud or side-by-side on SAP BTP using SAP Build, CAP, or low-code/no-code tools. Fully upgrade-stable. \n Level B — classic ABAP extensions using recommended classic APIs and accepted development technologies. Still considered clean core. \n Level C — conditionally clean: extensions using internal SAP objects, acceptable only with additional governance checks (changelog for SAP objects) before upgrades. \n Level D — not clean core: modifications, not-recommended SAP objects, implicit enhancements. These create direct upgrade risk. \n This four-level model provides a practical maturity lens to classify the existing extension portfolio, define a clear target state, and proactively manage the risks associated with different clean core levels. The single source of truth for the classification criteria is SAP Note 3578329. \n Key Reference: \n • ABAP Extensibility Guide — Clean Core for SAP S/4HANA Cloud (August 2025) \n\n The Strategic Decision: Renovate vs. Re-Platform \n Here is one of the most persistent misconceptions in the field: Clean Core does not mean moving everything to SAP BTP. That oversimplification leads to poor architecture decisions, inflated costs, and unnecessary complexity. \n The correct framing is a hybrid model — two complementary modernisation paths selected based on architectural coupling: \n\n Approach \n When to Apply \n Target Platform \n\n Renovate \n Extension is tightly coupled to SAP standard processes, tables, or business objects \n SAP S/4HANA core — using ABAP Cloud, Key User Extensibility, released BAdIs and APIs \n\n Re-Platform \n Extension is loosely coupled: standalone UIs, independent workflows, cross-system orchestration \n SAP BTP — using CAP, BTP ABAP Environment, SAP Build, Event Mesh, Integration Suite \n\n Hybrid \n Most real-world scenarios \n Combination of both platforms \n Coupling is the decisive factor — not preference, convenience, or team familiarity. As a general principle, extensions that are tightly coupled to SAP standard business objects and data models tend to stay on the S/4HANA core, while standalone applications and cross-system integrations are natural candidates for SAP BTP. However, the right placement depends on the specific coupling characteristics of each extension — a structured assessment using AEM helps determine this for each use case. \n Getting this distinction right at the architectural level is where the real value lies — and it is exactly what the SAP Application Extension Methodology is designed to support. \n\n The SAP Application Extension Methodology (AEM): A Structured Decision Framework \n Making the renovate-vs-re-platform decision systematic and repeatable — rather than relying on tribal knowledge or ad-hoc judgment — requires a structured methodology. That is precisely what the SAP Application Extension Methodology (AEM) provides. \n AEM is a structured, technology-agnostic methodology for assessing extension use cases and defining a target clean solution architecture. It is available on the SAP Help Portal with downloadable templates and can be applied to individual use cases or as a broader governance framework. \n The methodology follows three phases, each producing documented, reusable outputs: \n Assess the Use Case — Align all stakeholders on the systems landscape, business context, and requirements before any technology decision is made. \n Classify Extension Tasks — Break the use case into technology-agnostic tasks by extension style (presentation, application, and data tier) and map each task to its natural domain. \n Define the Target Architecture — Map tasks to specific technologies and document the implementation roadmap. With AEM v2.4, each Technical Extension Building Block is tagged with a Clean Core Level (A–D), making the assessment directly traceable to SAP’s extensibility governance model. \n AEM creates a shared language across business, functional, and technical stakeholders. Its templates are reusable across multiple renovation projects, forming the basis for an enterprise-wide extension governance framework. \n Key References: \n • Introducing SAP Application Extension Methodology v2.4 — SAP Community Blog \n • SAP Help Portal — AEM Overview \n\n Key Pre-Conditions and Governance Concerns \n Before launching a renovation initiative, four prerequisites must be in place. Treat these as gates — not optional considerations. \n Prerequisite 1 — S/4HANA first. Renovation and re-platforming are S/4HANA concerns. Clean Core tools — ABAP Cloud, Key User Extensibility, RAP — are not available on ECC. An S/4HANA transformation project must be in place or completed before meaningful extension modernisation can begin. \n Prerequisite 2 — Fit-to-Standard before building. Confirm the requirement is a genuine gap. Never invest in renovating a custom extension that replicates functionality already delivered by SAP standard. Every renovation candidate must pass a fit-to-standard check first. \n Prerequisite 3 — One use case at a time. This is not a bulk “lift and shift” exercise. Each renovation effort should focus on a single, well-scoped business use case. System-wide custom code portfolio analysis is a separate — and equally important — exercise (see SAP Intelligent Custom Code Management). \n Prerequisite 4 — Build the knowledge baseline. Teams need a working understanding of S/4HANA extensibility options and BTP capabilities before architectural decisions can be made. SAP offers dedicated enablement workshops as a recommended starting point. \n Governance angle: \n AEM’s templates and decision rationale documentation serve as the foundation for an extension governance framework — ensuring consistent, auditable, and repeatable decisions across all renovation projects in an enterprise program. \n SAP Activate underpins a clean core journey by combining prescriptive methodology, standardized content, and governance-ready tooling to help customers adopt and run standard capabilities, minimize modifications, and guide compliant extensibility throughout the lifecycle. \n\n The Renovation Journey: Major Steps \n The following roadmap outlines the major milestones from initial knowledge-building to a production-ready clean architecture: \n Build the knowledge foundation — Understand Clean Core, ABAP Cloud, Key User Extensibility, RAP, and SAP BTP extension options. SAP offers enablement workshops to align all project stakeholders on the art of the possible. \n Analyse the custom code landscape — Use SAP Intelligent Custom Code Management (ICCM) to gain transparency over the existing portfolio and classify custom objects by business relevance, upgrade risk, and renovation potential. \n Prioritise use cases — Select renovation candidates based on business value, upgrade risk, and architectural complexity. Use the clustering results, which is an output of ICCM, as prioritisation input. \n Assess and design using AEM — SAP provides structured analysis and architecture design workshops using the Application Extension Methodology, delivering a validated target architecture and implementation roadmap. \n Validate the results — Review technology recommendations, decision rationale, and the target solution architecture with all stakeholders before proceeding to implementation. \n Build or commission the solution — Implementation of the clean target architecture, optionally supported by SAP advisory services including Proof-of-Concept (PoC) engagements for technically complex scenarios. \n\n What the Target Architecture Looks Like \n A renovated, Clean Core-compliant solution architecture typically follows a hybrid pattern: S/4HANA core and SAP BTP working in concert , with a clear separation of concerns and well-defined integration boundaries. \n On the S/4HANA core: \n Key User Extensibility — custom fields, custom logic, and custom business objects created through in-app tools, without writing code \n Developer Extensibility via ABAP Cloud / RAP — upgrade-stable extensions using only released APIs, BAdIs, and extension points \n Data model extensions through released CDS view extensions \n On SAP BTP: \n New SAP Fiori / SAPUI5 applications replacing legacy SAP GUI / ALV-based interfaces \n Loosely coupled business logic built with CAP on Cloud Foundry or in the BTP ABAP Environment using RAP \n Event-driven integrations using SAP Integration Suite and SAP (Advanced) Event Mesh \n Process automation and low-code scenarios using SAP Build \n What this architecture delivers: \n Upgrade stability — extensions survive SAP release upgrades without rework \n Independent “deployability” and scalability — BTP-based components follow their own release cycles and they use hardware resources that are scalable on-demand \n Innovation agility — a clean foundation ready to absorb SAP’s AI innovations, including embedded Joule capabilities, agentic AI, and the rapidly expanding landscape of SAP Business AI \n\n Why Act Now \n Technical debt in custom ABAP is a compounding liability. The longer it stays unaddressed, the harder and more expensive modernisation becomes — and the wider the gap grows between your organisation and the innovation frontier. \n Consider what is at stake: \n AI readiness. SAP’s most advanced AI capabilities — Joule’s autonomous agents, embedded AI in S/4HANA business processes, AI-assisted development with Joule for Developers — require a clean, standard-aligned core. A “dirty” core blocks the very innovations that deliver competitive differentiation. In 2026 and beyond, clean core is not just an architectural preference — it is the prerequisite for enterprise AI adoption. \n Continuous upgrade readiness. SAP’s delivery model for S/4HANA Cloud is built on frequent, continuous updates."
+  },
+  {
+   "key": "a3a26a3779b5ab10",
+   "title": "RecrutaTech 10 anos - Evento Sensacional !",
+   "link": "https://community.sap.com/t5/curitiba-blog-posts/recrutatech-10-anos-evento-sensacional/ba-p/14492809",
+   "published": "2026-09-27T01:23:37+00:00",
+   "author": "LuizSouza_cwb",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": ""
+  },
+  {
+   "key": "c215b778270beb8d",
+   "title": "Enabling SSO for SAP Joule Work Desktop with a Custom MCP Server and XSUAA — A Step-by-Step Guide",
+   "link": "https://community.sap.com/t5/tooling-sap-build-blog-posts/enabling-sso-for-sap-joule-work-desktop-with-a-custom-mcp-server-and-xsuaa/ba-p/14492819",
+   "published": "2026-09-27T06:39:22+00:00",
+   "author": "himavaishnavijidugu",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Building a custom MCP server is one thing — securing it so SAP Joule Work Desktop can log in with real user identity is another. In this post we break down exactly what your server needs to support, how the OAuth flow works end to end, and the one configuration change in XSUAA that makes it all possible. No shared technical users, no hardcoded credentials — just clean SSO."
+  }
+ ],
+ "triage": {
+  "0": {
+   "i": 0,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Form templates and document output management configuration in SAP Sales Cloud."
+  },
+  "1": {
+   "i": 1,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Data architecture strategies enabling AI agents to recommend business actions."
+  },
+  "2": {
+   "i": 2,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Personal introduction from SAP Community team member at Porto event."
+  },
+  "3": {
+   "i": 3,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Build MCP servers with SAP Integration Suite exposing S/4HANA APIs."
+  },
+  "4": {
+   "i": 4,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Two-step goods receipt processes in SAP EWM using movement types."
+  },
+  "5": {
+   "i": 5,
+   "category": "BTP & ABAP Cloud",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Deploy sandboxed AI operations agents to Kyma with SAP AI Core."
+  },
+  "6": {
+   "i": 6,
+   "category": "S/4HANA Development & Extensibility",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Modernization strategy framework: renovate-or-re-platform decision for legacy ABAP code."
+  },
+  "7": {
+   "i": 7,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "RecrutaTech 10-year anniversary event celebration announcement."
+  },
+  "8": {
+   "i": 8,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Enable SSO for SAP Joule Work Desktop with custom MCP server and XSUAA."
+  }
+ },
+ "deep": {
+  "3": {
+   "summary": "A technical workaround blog for using MCP servers with SAP Integration Suite to perform write operations (POST, PATCH) against S/4HANA Public Cloud APIs. Standard API Artifacts lack native OAuth2SAMLBearerAssertion support and have limited policy capabilities. The post walks through five specific issues (data type interpretation, SAP_Messages conversion errors, CSRF tokens, ETag handling, Time format problems) and demonstrates how to chain BTP Destination Service between the API Artifact and S/4HANA to generate SAML bearer tokens while preserving user principal propagation.",
+   "key_points": [
+    "Write operations (POST/PATCH) fail through MCP/API Artifacts due to missing OAuth2SAMLBearerAssertion and CSRF/ETag handling",
+    "Workaround uses BTP Destination Service (lite plan) to generate SAML bearer tokens, bypassing API Artifact limitations",
+    "Requires manual cleanup of OpenAPI specs: remove SAP_Messages and SAP__Messages before loading into Integration Suite",
+    "Five concrete issues documented: anyOf type interpretation, message conversion, CSRF tokens, ETag handling, Time format (HH:MM:SS vs HH:MM:SS{Z})",
+    "Principal propagation on API-centric artifacts is on SAP's roadmap post-Devtoberfest 2026; Cloud Connector workaround shown for private/on-premise",
+    "Flow: Agent → MCP server (IAS auth) → API Artifact (IAS auth) → BTP Destination → S/4HANA Public Cloud (user execution)"
+   ],
+   "technical_details": [
+    "OAuth2SAMLBearerAssertion authentication",
+    "SAP Integration Suite with MCP server and Integration Cell runtime",
+    "BTP Destination Service instance (lite plan) with Client ID/Secret/URI",
+    "OpenAPI specification file manipulation (SAP_Messages, SAP__Messages removal)",
+    "CSRF token handling for HTTP POST requests",
+    "ETag handling for HTTP PATCH requests",
+    "Time Format data type issues (HH:MM:SS{Z} expectation)",
+    "SAP Cloud Connector for private/on-premise scenarios"
+   ],
+   "why_it_matters": "Shows how AI agents integrate with SAP systems through multiple authentication layers. Identifies real blocking issues for MCP-based S/4HANA integration and provides immediate tactical workarounds. However, author explicitly notes these are temporary—SAP is addressing principal propagation natively. Essential context if teaching integration patterns between AI and SAP, but not core ABAP development.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Write operations against S/4HANA Public Cloud APIs through MCP servers fail because API Artifacts in Integration Suite do not natively support OAuth2SAMLBearerAssertion authentication and lack policies to handle CSRF tokens, ETags, and data type conversions.",
+   "teaching_angle": "Could frame a discussion on authentication layering, API gateway patterns, and integration architecture. Shows practical OAuth2 token flow management. However, more relevant to integration architects than core ABAP developers. Useful for showing why certain authentication patterns matter in distributed systems and why tooling limitations force workarounds.",
+   "quality": 3
+  },
+  "5": {
+   "summary": "A teaser announcement for SAP TechEd 2026 hands-on workshop XP266. Promises a two-hour session where attendees deploy a reasoning agent into Kyma, wire it to SAP AI Core, intentionally break production scenarios, and let the agent autonomously diagnose issues. Written in 'end-first' style (user experience before technical layers). Actual technical content and implementation details are deferred to the workshop itself.",
+   "key_points": [
+    "TechEd 2026 hands-on workshop (session XP266, 2-hour duration)",
+    "Participants deploy reasoning agents into Kyma (Kubernetes on BTP)",
+    "Integration with SAP AI Core for diagnosis and remediation",
+    "Production operations use case: intentional failure injection and autonomous diagnosis",
+    "End-first pedagogy: starts with user experience, then unpacks architecture",
+    "Teaser format—no implementation details provided"
+   ],
+   "technical_details": [
+    "Kyma (SAP BTP Kubernetes platform)",
+    "SAP AI Core",
+    "Reasoning agents",
+    "Production operations/chaos engineering scenarios"
+   ],
+   "why_it_matters": "Signals SAP's direction on autonomous operations and AI agent deployment. Interesting for practitioners interested in AI-driven incident response. However, the blog itself is purely promotional and contains zero actionable technical content. Value is as a calendar pointer only.",
+   "is_release_or_announcement": true,
+   "developer_problem": "",
+   "teaching_angle": "Could point advanced students to a TechEd session if available and relevant to their interests, but this blog teaches nothing concrete. Useful only as a 'see you at TechEd' message.",
+   "quality": 1
+  },
+  "6": {
+   "summary": "A strategic architecture blog on modernizing custom ABAP code in legacy systems. Frames the problem (brownfield carry-over, greenfield-but-not-clean patterns) and introduces SAP's formal Clean Core Level classification (A: ABAP Cloud/BTP; B: classic ABAP with recommended APIs; C: conditionally clean with governance; D: not clean core). Argues that the renovate-vs-re-platform decision must be driven by architectural coupling (tight = stay on core with ABAP Cloud/RAP; loose = move to BTP with CAP). Presents the SAP Application Extension Methodology (AEM) v2.4 as a structured decision framework with documented templates.",
+   "key_points": [
+    "Clean Core is not zero customization—it is upgrade-stable customization through well-defined released interfaces",
+    "Clean Core Levels (Aug 2025 formalization): Level A (ABAP Cloud/BTP), Level B (classic ABAP + recommended APIs), Level C (internal SAP objects + governance), Level D (modifications, not clean)",
+    "Coupling is the decisive architectural factor: tight coupling = renovate on S/4HANA core; loose coupling = re-platform to BTP",
+    "SAP Application Extension Methodology (AEM) v2.4 provides three-phase structured framework: assess use case, classify tasks, define target architecture",
+    "ABAP Cloud, RAP, Key User Extensibility, BAdIs, and released APIs are the on-core modernization toolkit",
+    "Technical debt in custom ABAP is now a front-line strategic concern, not background risk (Business Suite 7 mainstream support ends 2027)"
+   ],
+   "technical_details": [
+    "Clean Core Levels (A, B, C, D per SAP Note 3578329)",
+    "ABAP Cloud",
+    "RESTful Application Programming Model (RAP)",
+    "Key User Extensibility",
+    "Released BAdIs and APIs (classic)",
+    "CAP (Cloud Application Programming Model)",
+    "BTP ABAP Environment",
+    "SAP Build, Event Mesh, Integration Suite (BTP options)"
+   ],
+   "why_it_matters": "Directly aligns with SAP's official modernization strategy and provides a repeatable decision framework. Clean Core Levels are now formal classification criteria (SAP Note 3578329). This is not opinion—it is SAP's published extensibility architecture. Critical for architects deciding what to teach, what patterns to encourage, and how to guide enterprise migration. The coupling-driven decision model replaces vague 'cloud-first' rhetoric with concrete architectural criteria.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How to systematically modernize legacy custom ABAP code while avoiding technical debt, making sound architecture decisions between renovating on S/4HANA core versus re-platforming to SAP BTP, and achieving upgrade stability.",
+   "teaching_angle": "Excellent curriculum framework. Directly supports training on when to use ABAP Cloud vs classic ABAP, when to use RAP, when to use BTP/CAP, and why coupling matters. Can structure real-world extension reviews using AEM phases. Use Clean Core Levels to classify student exercises. References SAP's official guidance (ABAP Extensibility Guide Aug 2025, SAP Note 3578329). Aligns perfectly with teaching S/4HANA 2023 in a clean-core context.",
+   "quality": 4
+  },
+  "8": {
+   "summary": "A technical how-to blog (presented as incomplete) on securing custom MCP servers for SAP Joule Work Desktop using XSUAA-based OAuth SSO. The teaser promises to explain what a custom MCP server must support, how the OAuth flow works end-to-end, and one critical XSUAA configuration change. No actual implementation detail, code, or configuration steps are provided in the excerpt—only the introduction and promise of content to follow.",
+   "key_points": [
+    "Custom MCP servers can be secured with XSUAA OAuth SSO instead of shared technical users or hardcoded credentials",
+    "Real user identity propagation to SAP Joule Work Desktop",
+    "End-to-end OAuth flow explanation promised",
+    "Single XSUAA configuration change is the key enabler",
+    "Targets audit/compliance requirements: no shared credentials"
+   ],
+   "technical_details": [
+    "MCP server (Model Context Protocol)",
+    "SAP Joule Work Desktop",
+    "XSUAA (Extended Services User Account and Authentication)",
+    "OAuth 2.0 flow",
+    "SSO (Single Sign-On)"
+   ],
+   "why_it_matters": "Shows proper identity management for AI agent integrations with SAP systems. Prevents anti-pattern of shared technical user accounts. However, the blog content is incomplete—only title and introduction provided.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How to enable proper Single Sign-On for custom MCP servers connecting to SAP Joule Work Desktop using real user identity instead of shared technical users or hardcoded credentials.",
+   "teaching_angle": "Could demonstrate OAuth/XSUAA authentication patterns for MCP-based integrations and why proper identity propagation matters for audit trails. However, the blog provides no actionable content in its current form.",
+   "quality": 1
+  }
+ },
+ "digest": {
+  "class_idea": {
+   "title": "Clean Core Levels in Practice: Classifying and Refactoring Custom ABAP with ADT/ATC",
+   "why_now": "SAP formalized Clean Core Levels A-D in SAP Note 3578329 (Aug 2025), and the AEM v2.4 framework gives a repeatable method to classify existing custom code. Ref 6 turns this into concrete architecture criteria (coupling) rather than vague 'go cloud' advice — directly teachable with tools your students already use daily.",
+   "outline": [
+    "Recap: Clean Core is not zero customization — it's upgrade-stable customization via released interfaces (ref 6)",
+    "Walk through Levels A/B/C/D with real object examples for each (BAdI vs direct table access vs RAP vs SAP GUI screen exit)",
+    "Coupling as the decision axis: when tight coupling forces renovate-on-core (ABAP Cloud/RAP) vs when loose coupling enables re-platform to BTP/CAP",
+    "Introduce AEM v2.4 three-phase framework: assess use case → classify tasks → define target architecture",
+    "Live ATC run in ADT using a Clean Core / Custom Code Migration check variant against a legacy Z-program",
+    "Discuss remediation options per finding: released API substitution, BAdI, Key User extensibility, or RAP re-implementation"
+   ],
+   "exercise": "Give students a Z-report that reads MARA/MARC directly via SELECT and calls an unreleased function module. In ADT, run ATC with the 'Custom Code Migration' / clean-core check variant against it. For each finding, have them decide and justify: Level A/B/C/D classification, then refactor at least one finding by replacing the direct table read with a released CDS view or API, and document the coupling type (tight/loose) that drove their choice.",
+   "refs": [
+    6
+   ]
+  },
+  "deep_dives": [
+   {
+    "title": "Clean Core Levels A-D: A Real Decision Framework for RAP vs BTP Extensions",
+    "explanation": "SAP has moved Clean Core from marketing language to a formal classification system (SAP Note 3578329, Aug 2025). Level A means the extension lives entirely in `ABAP Cloud` or BTP with released interfaces only. Level B is classic ABAP restricted to recommended/released APIs. Level C uses internal SAP objects but under documented governance (an explicit debt with sign-off). Level D is unmanaged modification — the thing Clean Core exists to eliminate. This gives you a vocabulary to grade any custom object in a system, not just a philosophy to aspire to.",
+    "key_concepts": [
+     "Clean Core Levels A/B/C/D (SAP Note 3578329)",
+     "ABAP Cloud vs classic ABAP extensibility",
+     "RAP (RESTful Application Programming Model)",
+     "Key User Extensibility and released BAdIs"
+    ],
+    "refs": [
+     6
+    ]
+   },
+   {
+    "title": "Coupling Decides Renovate vs Re-Platform — Not 'Cloud-First'",
+    "explanation": "The blog's core architectural claim: the renovate-vs-re-platform choice should be driven by coupling strength, not by a blanket cloud-first mandate. Tightly coupled logic — code that depends heavily on core data models, table structures, or synchronous core transactions — should be renovated in place using `ABAP Cloud`, `RAP`, and released BAdIs, keeping it on the S/4HANA core where the coupling cost of moving it would exceed the benefit. Loosely coupled logic — event-driven, API-consuming, or UI-only extensions — is a good candidate to re-platform onto BTP using CAP, Event Mesh, or SAP Build, where it can evolve independently of core upgrades.",
+    "key_concepts": [
+     "Architectural coupling as decision criterion",
+     "RAP for on-core, upgrade-stable extensions",
+     "CAP/BTP for loosely coupled, independently deployable extensions",
+     "SAP Application Extension Methodology (AEM) v2.4"
+    ],
+    "refs": [
+     6
+    ]
+   },
+   {
+    "title": "ETags, CSRF Tokens, and Data Type Traps in OData Write Operations",
+    "explanation": "Ref 3 documents five concrete failure points when driving write operations (POST/PATCH) against S/4HANA OData services through an intermediary gateway (in this case, Integration Suite API Artifacts fronting an MCP server). Two of these are core `RAP`/OData concepts every ABAP developer should know cold: `CSRF tokens`, required before any state-changing HTTP call to prevent cross-site request forgery, and `ETags`, which implement optimistic concurrency control — the client must send back the `ETag` it last read so the service can detect whether the entity changed underneath it before applying a PATCH.",
+    "key_concepts": [
+     "CSRF token fetch-then-use pattern for OData writes",
+     "ETag-based optimistic concurrency control",
+     "OpenAPI spec cleanup: SAP_Messages/SAP__Messages removal",
+     "Time data type formatting mismatches (HH:MM:SS vs HH:MM:SS{Z})"
+    ],
+    "refs": [
+     3
+    ]
+   }
+  ],
+  "trending_problems": [
+   {
+    "theme": "Gateways in front of OData/RAP services don't understand RAP semantics",
+    "description": "Ref 3 shows that when a third-party layer (Integration Suite API Artifact, or any MCP proxy) sits between a client and an S/4HANA OData/RAP service, it frequently mishandles CSRF token fetch, ETag round-tripping, and OpenAPI type quirks (SAP_Messages structures, Time format) that the native Fiori/UI5 stack handles transparently.",
+    "teaching_tip": "Have students trace a POST/PATCH call to a RAP-generated OData service using browser dev tools or Postman, capturing the CSRF token fetch and the ETag returned on GET, then show what breaks when a naive proxy skips either step.",
+    "refs": [
+     3
+    ]
+   },
+   {
+    "theme": "Clean Core is being operationalized, not just preached",
+    "description": "Ref 6 shows SAP has published a formal A-D classification (SAP Note 3578329) and a structured method (AEM v2.4) to grade and plan custom code remediation, replacing the vague 'move everything to BTP' guidance many teams have been struggling to apply consistently.",
+    "teaching_tip": "Build a short in-class audit exercise: give a list of 10 real custom object types (Z-table direct read, released CDS consumption, classic BAdI, unreleased FM call, RAP behavior implementation) and have students classify each as A/B/C/D before discussing the answer.",
+    "refs": [
+     6
+    ]
+   },
+   {
+    "theme": "AI agent integration is currently held together by manual security workarounds",
+    "description": "Both ref 3 (MCP + SAML bearer via BTP Destination Service) and ref 8 (MCP + XSUAA SSO for Joule Work Desktop) describe hand-built authentication bridges because native tooling (API Artifacts, MCP servers) doesn't yet support principal propagation or proper OAuth SSO out of the box. SAP has flagged principal propagation as roadmap work post-Devtoberfest 2026.",
+    "teaching_tip": "Use this as a cautionary example when discussing AI-agent integration architecture: identity propagation is not solved by default and must be explicitly designed, tested, and documented as temporary until native support lands.",
+    "refs": [
+     3,
+     8
+    ]
+   }
+  ],
+  "post_drafts": [
+   {
+    "title": "Clean Core is now a graded system, not a slogan",
+    "text": "SAP has formalized *Clean Core Levels A-D* (SAP Note 3578329, Aug 2025):\n\n*Level A* — pure ABAP Cloud/BTP, released interfaces only\n*Level B* — classic ABAP, but only recommended/released APIs\n*Level C* — internal objects, but under documented governance\n*Level D* — modifications. Not clean. Full stop.\n\nThe real decision isn't \"cloud vs on-prem\" — it's *coupling*. Tightly coupled logic stays on core and gets renovated with RAP/ABAP Cloud. Loosely coupled logic re-platforms to BTP with CAP.\n\nSAP's Application Extension Methodology (AEM) v2.4 gives you the 3-phase process: assess → classify → target architecture.\n\nIf you're planning a modernization roadmap, grade your custom code A-D before you decide anything else.\n\nhttps://community.sap.com/t5/abap-blog-posts/renovate-or-re-platform-a-strategic-roadmap-for-modernising-custom-abap/ba-p/14492631"
+   },
+   {
+    "title": "Writing to S/4HANA through a proxy? Watch these 5 things",
+    "text": "If you're driving POST/PATCH calls to S/4HANA OData/RAP services through any gateway (Integration Suite, custom MCP server, whatever) — these will bite you:\n\n1. *CSRF tokens* — must be fetched via GET before every write\n2. *ETags* — required on PATCH for optimistic concurrency; skip it, get rejected\n3. *SAP_Messages/SAP__Messages* structures — strip from OpenAPI specs before loading, they break parsers\n4. *Time* fields — service expects `HH:MM:SS{Z}`, not `HH:MM:SS`\n5. Native Fiori/UI5 clients handle all of this for you silently — a custom proxy won't\n\nGood reminder that RAP's OData contract has real semantics baked in, even if your client library hides them.\n\nhttps://community.sap.com/t5/integration-blog-posts/mcp-server-with-integration-suite-via-api-centric-integration-s-4hana-api/ba-p/14491660"
+   },
+   {
+    "title": "AI agent auth to SAP: still hand-built",
+    "text": "Two blogs this week, same problem: getting an AI agent (MCP server) to talk to SAP systems *as the actual user*, not a shared technical account.\n\n- One rigs SAML bearer tokens through a BTP Destination Service to reach S/4HANA Public Cloud APIs\n- Another wires XSUAA OAuth SSO for Joule Work Desktop\n\nBoth are workarounds. SAP has principal propagation for API-centric MCP artifacts on the roadmap *post-Devtoberfest 2026* — meaning today, if you're building this, you're building on scaffolding, not a paved road.\n\nDocument it as temporary. Revisit when native support lands.\n\nhttps://community.sap.com/t5/integration-blog-posts/mcp-server-with-integration-suite-via-api-centric-integration-s-4hana-api/ba-p/14491660"
+   }
+  ],
+  "interview_questions": [
+   {
+    "question": "SAP now defines Clean Core Levels A through D. What distinguishes Level B from Level C, and why would you deliberately choose to leave something at Level C instead of pushing it to A or B?",
+    "answer": "Level B is classic ABAP restricted to SAP-recommended and released APIs — upgrade-safe because you're only calling stable, documented interfaces. Level C uses internal, unreleased SAP objects, but under explicit documented governance: someone has signed off that this is a known risk with a remediation plan. You'd deliberately leave something at Level C when there's no released API covering the required functionality yet, and re-platforming isn't justified by the coupling or business value — you accept the upgrade risk consciously rather than either hiding it (Level D) or forcing a premature, costly rewrite.",
+    "level": "Senior",
+    "refs": [
+     6
+    ]
+   },
+   {
+    "question": "A custom Z-program has tight, synchronous dependencies on core MM/FI tables and transactions. Business wants to modernize it. Do you renovate it on the S/4HANA core or re-platform it to BTP, and what's your reasoning?",
+    "answer": "Renovate on core, using ABAP Cloud, RAP, and released BAdIs/APIs. The deciding factor is coupling, not fashion: tight coupling to core data models and transactions means the extension's value depends on being close to the data and transactional context. Moving it to BTP would introduce latency, data replication complexity, and eventual-consistency problems for something that needs synchronous, transactional access. Re-platforming makes sense for loosely coupled, event-driven, or UI-only logic — not for something structurally welded to core business objects.",
+    "level": "Senior",
+    "refs": [
+     6
+    ]
+   },
+   {
+    "question": "You're building a client that PATCHes an S/4HANA OData/RAP service through a custom gateway and it keeps getting rejected. What are the two most likely OData-protocol causes, and how do you fix each?",
+    "answer": "First, missing or stale CSRF token: OData write requests require a token fetched via a preceding GET with an `X-CSRF-Token: Fetch` header, then echoed back on the POST/PATCH — without it the service rejects the call as a potential cross-site forgery. Second, missing or mismatched ETag: RAP services use ETags for optimistic concurrency control on updates, so the PATCH must include the `If-Match` header with the ETag value last read via GET; if it's missing or doesn't match the current entity state, the service returns a 412 Precondition Failed. Fix both by ensuring the gateway performs the GET-then-write sequence rather than firing PATCH directly, and by not caching or stripping these headers in the proxy layer.",
+    "level": "Mid-level",
+    "refs": [
+     3
+    ]
+   }
+  ],
+  "headline": "SAP formalizes Clean Core into a graded A-D classification, while two more blogs show AI-agent-to-SAP authentication is still held together by manual workarounds.",
+  "overview": "Today's collection is thin — only one of four fully-read items carries real architectural substance. That one, however, matters: SAP's Clean Core Levels (A-D, SAP Note 3578329) and the AEM v2.4 methodology turn \"clean core\" from a slogan into a graded, decision-driven framework for choosing between renovating custom ABAP on the S/4HANA core (via ABAP Cloud/RAP) versus re-platforming to BTP (via CAP), with architectural coupling as the deciding factor.\n\nThe remaining items cluster around a second theme: AI agent integration with SAP systems is currently secured through hand-built workarounds. One blog documents five concrete OData/RAP protocol issues (CSRF, ETags, data types) that break when a proxy sits between an MCP server and S/4HANA; another promises (but doesn't yet deliver) an XSUAA SSO pattern for Joule Work Desktop; a TechEd 2026 teaser points at future autonomous-agent tooling with no technical content yet. None of this is core ABAP coding material, but the RAP/OData concurrency mechanics buried in the integration blog are worth teaching regardless of the AI framing.",
+  "top_stories": [
+   {
+    "title": "Clean Core Levels A-D formalized — coupling decides renovate vs re-platform",
+    "summary": "SAP Note 3578329 (Aug 2025) formally classifies custom code into Levels A (ABAP Cloud/BTP, released interfaces), B (classic ABAP, recommended APIs), C (internal objects with governance), and D (modifications, not clean). The Application Extension Methodology (AEM) v2.4 gives a three-phase process — assess, classify, target architecture — with architectural coupling, not a blanket cloud-first rule, as the deciding factor between renovating on the S/4HANA core with ABAP Cloud/RAP or re-platforming to BTP with CAP.",
+    "why_it_matters": "This replaces vague 'go clean core' guidance with a concrete, repeatable classification any architect or trainer can apply to real custom code today, ahead of Business Suite 7 mainstream support ending in 2027.",
+    "priority": 1,
+    "refs": [
+     6
+    ]
+   },
+   {
+    "title": "MCP-to-S/4HANA write operations expose real OData/RAP protocol gaps",
+    "summary": "A detailed walkthrough of five concrete failures when routing POST/PATCH calls to S/4HANA Public Cloud APIs through Integration Suite API Artifacts for MCP agents: missing OAuth2SAMLBearerAssertion support, CSRF token handling, ETag/concurrency handling, SAP_Messages OpenAPI parsing errors, and Time format mismatches. The workaround chains a BTP Destination Service to generate SAML bearer tokens while preserving user principal propagation; native support is on SAP's roadmap post-Devtoberfest 2026.",
+    "why_it_matters": "Surfaces core OData/RAP write-operation semantics (CSRF, ETag concurrency) that any ABAP developer building or consuming these services needs to understand, independent of the AI framing.",
+    "priority": 2,
+    "refs": [
+     3
+    ]
+   },
+   {
+    "title": "XSUAA SSO for Joule Work Desktop and TechEd 2026 AI-agent workshop — both teasers",
+    "summary": "One blog promises a step-by-step guide for securing custom MCP servers with XSUAA OAuth SSO so Joule Work Desktop can use real user identity instead of shared technical accounts, but ships no implementation content yet. A separate TechEd 2026 session teaser (XP266) advertises a two-hour hands-on workshop deploying reasoning agents to Kyma wired to SAP AI Core for autonomous incident diagnosis — also content-free at this stage.",
+    "why_it_matters": "Both signal SAP's direction (proper identity propagation for AI agents; autonomous operations tooling) but provide nothing actionable yet — treat as calendar/watch-list items, not teaching material.",
+    "priority": 3,
+    "refs": [
+     8,
+     5
+    ]
+   }
+  ],
+  "releases": [
+   {
+    "title": "TechEd 2026 workshop XP266 announced",
+    "summary": "SAP TechEd 2026 will run a two-hour hands-on session (XP266) where attendees deploy a reasoning agent to Kyma, connect it to SAP AI Core, and let it autonomously diagnose intentionally-broken production scenarios. No technical content is available yet — this is a session announcement only.",
+    "refs": [
+     5
+    ]
+   }
+  ],
+  "whatsapp_highlights": "Clean Core Levels A-D now formalized (SAP Note 3578329) — coupling, not cloud-first dogma, decides renovate-vs-re-platform | MCP-to-S/4HANA write ops expose real CSRF/ETag/OData gaps developers should know regardless of AI framing | XSUAA SSO for Joule Work Desktop + TechEd 2026 Kyma/AI Core workshop — both announced, both content-free for now"
+ }
+}
