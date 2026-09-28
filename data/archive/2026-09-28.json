@@ -1,0 +1,1172 @@
+{
+ "items": [
+  {
+   "key": "784cb1963bda0bcd",
+   "title": "Need to Know: SAP Business Data Cloud",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/need-to-know-sap-business-data-cloud/ba-p/14492933",
+   "published": "2026-09-27T16:07:38+00:00",
+   "author": "DeanFarrow",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "A plain English guide for SAP customers of SAP Business Data Cloud - what it is, what it does, and why it matters"
+  },
+  {
+   "key": "e4befcff1aa0366a",
+   "title": "What’s new in Mobile development kit client 26.9",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/what-s-new-in-mobile-development-kit-client-26-9/ba-p/14484188",
+   "published": "2026-09-27T14:44:39+00:00",
+   "author": "Jitendra_Kansal",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Dear Community, \n I'm happy to announce that a new release of the Mobile development kit (MDK) is now available for all SAP Build and Mobile Services customers. You can download it from the SAP Software Center, or from the community download page . \n The SAP Mobile Services Client version 26.9.0 is available on Google Play and Apple App stores. \n SAP MDK enables developers and technical business users to build cross-platform mobile applications. It allows you to build your application once, in an integrated development environment (Visual Studio Code / SAP Business Application Studio) and run it natively on Mobile (iOS & Android). \n The following enhancements are available only on iOS and Android platforms: \n Supportability Enhancements \n\n Support Crash Reporting UI Enhancements \n Improved Sync Error Handling for Multi-User Switching \n Display Attachment Title and File Size in Attachment Form Cell \n Custom Search Icon Support for Text Input, List Picker, and Section Search \n Support Section page as Filter page \n Liquid Glass Testing MDK Editor Updates \n Automatic Dependencies Checks in MDK Editor VS Code Extension \n From MDK Genie to Agentic Development (Applicable in SAP Business Application Studio) \n Support Crash Reporting \n With this release, your MDK apps can now automatically capture and report crash data to SAP Mobile Services, giving administrators greater visibility into app stability issues in production. This enables teams to investigate crashes more efficiently. \n Key Benefits \n Faster troubleshooting: Crash logs are automatically uploaded to mobile services and provide valuable diagnostic information that can help developers and administrators investigate and resolve app crashes more efficiently. \n User privacy and control: Crash data is uploaded only after the user has provided consent, with the consent decision stored per user and device. \n Mobile Services controlled configuration: Administrators can enable or disable crash reporting through the mobile services admin UI without requiring changes to the app. \n\n In-app consent management: App developers can expose crash reporting preferences in the app settings, allowing users to view or change their consent. \n\n Improved app stability monitoring: Administrators can access crash information to better understand app stability and identify recurring issues. \n\n Client APIs: Three new client APIs allow apps to query and manage consent from within the app settings page. \n isCrashReportingEnabled(): Returns true when crash reporting is enabled in the mobile services and app is not in demo mode. let crashReportStatus = context.isCrashReportingEnabled();​ \n isCurrentCrashConsentAllowed() : Returns true if user has granted consent for crash reporting. let consentAllowedStatus = context.isCurrentCrashConsentAllowed();​ \n showCrashConsentDialog() : Programmatically displays the crash reporting consent dialog. App developers should expose the crash consent screen in the app settings so users can review or change their preference. An error apperas if crash reporting is not enabled in the mobile services or when running in demo mode. export default function CrashConsentDialog(context) {\n try {\n context.showCrashConsentDialog();\n } catch (error) {\n alert('Error showing crash consent dialog: ' + error.message);\n }\n}​ \n For more information, refer to this documentation. \n Improved Sync Error Handling for Multi-User Switching \n We have improved sync error handling for multi-user scenarios, particularly when a previous user leaves unresolved business data on a shared device. \n Previously, if a user made local changes, encountered a sync error, and logged off without resolving it, the next user could not continue using the app. On devices managed by MDM, where reinstalling the app may not be an option, this could leave the device unusable until the previous user returned to resolve the issue. \n By default, when offline conflict handling is not configured, the only available action is Return to Sign In Screen . The previous user must sign in again and resolve the transaction issue before another user can continue using the app. \n With MDK 26.9, configurable conflict handling allows the next user to resolve the previous user's pending transactions directly from the Transaction Issue screen and continue to the app without requiring the previous user to sign in again. \n Key Benefits \n Improved device availability: The next user can continue using the app even when the previous user is unavailable to resolve pending offline transactions. \n Simplified user switching: Users can resolve or discard the previous user's pending transactions directly from the Transaction Issue screen without requiring the previous user to sign in again. \n Administrator control: Administrators can enable offline conflict handling and select how pending transactions should be handled. \n Data recovery option: When configured, a snapshot of the previous user's pending offline data can be uploaded before the transactions are discarded, providing an option for administrator recovery. \n Configure Conflict Resolution in Mobile Services: To enable conflict resolution for multi-user mode: \n In the Mobile Services cockpit, navigate to your application. \n Under Shared Devices , enable Allow Upload of Pending Changes from Previous User . \n Enable Offline Conflict Handling in Multi-User Mode. \n\n Select the desired conflict resolution mode: \n Discard Pending Transactions : Discards the previous user's pending transactions immediately. \n Discard Pending Transactions After Upload : Uploads a snapshot of the previous user's offline data to the server for potential administrator recovery, and then discards the pending transactions. This requires: \n Enable the offline store upload policy in mobile services \n\n metadata changes using OfflineOptions.MultiUserConflictHandling in the .service file //Excerpt of a .service file \n \"OfflineOptions\": {\n \"StoreParameters\": {},\n \"MultiUserConflictHandling\": {\n \"UploadEncryptionKey\": \"/MyApp/Rules/GenKey.js\",\n \"UploadRequestQueueOnly\": true\n }\n },​ \n Runtime Behavior \n\n When offline conflict handling is enabled, a conflict-handling action is displayed alongside Return to Sign In Screen on the Transaction Issue screen. When the user selects the conflict-handling action, a confirmation dialog is displayed before the selected action is applied. After the user confirms: \n The configured conflict resolution policy is applied. \n The app proceeds directly to the new user's main page without requiring the previous user to sign in. \n If the user cancels the confirmation dialog or selects Return to Sign In Screen : \n No conflict resolution is performed. \n The previous user can sign in again and resolve the transaction issue manually. \n\n For more information, refer to this documentation. \n Display Attachment Title and File Size in Attachment Form Cell \n The MDK Attachment Form Cell now displays the attachment title (file name) and file size , making it easier for users to identify and review files before submission. This display is automatic and no metadata configuration changes are required. Previously, users could not see the file name or size of an attachment, making it difficult to distinguish between files or understand their size. \n Key Benefits \n Improved file identification: Users can quickly distinguish between multiple attachments by their file name. \n Better file awareness: Users can see the attachment size before submission or review. \n Fiori UX alignment: The Attachment Form Cell experience is more consistent with standard Fiori UX expectations. \n\n Custom Search Icon Support for Text Input, List Picker, and Section Search \n MDK now supports custom icon configuration for TextInput ( SimpleProperty ) , ListPicker , and Section controls, allowing app developers to replace default icons with custom images and provide a more tailored app experience. \n All supported icon properties can reference metadata image paths, resource images, SAP icons, and font icons . \n TextInput ( SimpleProperty ) : A new BarcodeIcon property allows developers to customize the barcode scanner button icon when AlternateInput is set to Barcode. A corresponding BarcodeIcon style class is available under Styles to customize the icon's color, font size, and background color. \n //Excerpt of a page\n{\n \"BarcodeIcon\": \"sap-icon://action\",\n \"_Type\": \"Control.Type.FormCell.SimpleProperty\",\n \"_Name\": \"BarcodeSapIcon\",\n \"Caption\": \"Barcode Field sap-icon://\",\n \"PlaceHolder\": \"Scan here\",\n \"AlternateInput\": \"Barcode\"\n}, \n\n ListPicker and Section Search : New Icons and Styles properties are available under Search for both ListPicker and Section controls with Expandable or Persistent search. \n\n //Excerpt of a page\n{\n \"_Type\": \"Control.Type.FormCell.ListPicker\",\n \"_Name\": \"ListPickerSapStyled\",\n \"AllowEmptySelection\": true,\n \"Caption\": \"sap-icon:// (Styled)\",\n \"IsEditable\": true,\n \"Search\": {\n \"Icons\": {\n \"Search\": \"sap-icon://show-edit\",\n \"Barcode\": \"/mdk269/Images/barcode.png\",\n \"Clear\": \"sap-icon://clear-all\",\n \"Styles\": {\n \"Search\": \"SearchAndSimplePropertyIconsStylesSmall\",\n \"Barcode\": \"SearchAndSimplePropertyIconsStylesSmall\",\n \"Clear\": \"SearchAndSimplePropertyIconsStylesSmall\"\n }\n },\n \"Placeholder\": \"Search items\",\n \"BarcodeScanner\": true\n },\n \"PickerItems\": [\n \"Apple\",\n \"Banana\",\n \"Cherry\",\n \"Date\",\n \"Elderberry\"\n ]\n},\n\n\"Search\": {\n \"Enabled\": true,\n \"Placeholder\": \"Search items\",\n \"BarcodeScanner\": true,\n \"Mode\": \"Persistent\",\n \"Icons\": {\n \"Search\": \"sap-icon://show-edit\",\n \"Back\": \"sap-icon://back-to-top\",\n \"Barcode\": \"sap-icon://qr-code\",\n \"Clear\": \"sap-icon://clear-all\"\n }\n},​ \n Support Section Page as Filter Page \n MDK now supports SectionedTable FormCellSection as a container for Filter pages, giving app developers a more structured and modern way to define filter controls while aligning with the latest recommended UI patterns. \n Key Benefits: \n Modern container structure: Use the consistent SectionedTable > FormCellSection > Form Cell Controls hierarchy, matching the rest of the application's page structure. \n Future-proof implementation: FormCellContainer is soon to be deprecated; migrating to SectionedTable FormCellSection ensures long-term compatibility. \n Unchanged filter logic: Target paths for accessing control values and the creation of filter criteria objects remain fully compatible — no changes needed to existing filter business logic. \n Migration Notes: \n When upgrading to MDK 26.9, you need to manually migrate existing filter pages from FormCellContainer to SectionedTable FormCellSection . The following changes are required: \n Container definition structure: Update the page definition from FormCellContainer > Sections > Controls to SectionedTable > FormCellSection > Form Cell Controls. \n Container retrieval rules: Update any rules that reference the container to reflect the new SectionedTable FormCellSection structure. \n For more information, refer to this documentation. \n Automatic Dependencies Checks in MDK Editor VS Code Extension \n\n The MDK Editor extension now checks for all required prerequisites the moment it activates. If anything is missing, you're greeted with a Setup panel — not an error message. \n\n The setup experience handles everything: \n Missing VS Code extensions (Cloud Foundry Tools, Application Wizard) are installed with a single click using the VS Code Extensions API. \n @SAP /generator-mdk is installed automatically via an integrated terminal task running npm install -g @SAP /generator-mdk. \n CF CLI guidance is tailored to your operating system — no hunting for the right installer for Windows vs. macOS. \n After installation, the extension re-validates your environment automatically. \n A Clear Signal When You're Ready \n Once all prerequisites are in place, the Setup panel gives you a full status summary: each prerequisite, its installed version, and whether updates are available. The \"MDK Ready\" checkmark in the VS Code status bar confirm"
+  },
+  {
+   "key": "737b0cda2c612a5b",
+   "title": "Need to Know - The SAP Business AI Platform Overview Guide",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/need-to-know-the-sap-business-ai-platform-overview-guide/ba-p/14492885",
+   "published": "2026-09-27T14:36:55+00:00",
+   "author": "DeanFarrow",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Today, most enterprises operate through fragmented systems and reactive processes. Disruptions are addressed after the fact. Leaders reconstruct reality from disconnected data — long after the moment to act has passed. \n SAP's answer is The Autonomous Suite or Enterprise — a vision where AI assistants and agents execute end-to-end processes, and people focus on the decisions that create real impact. Work runs across one connected, adaptive, real-time system. A signal in one area triggers an immediate, coordinated response across all affected domains. \n This is not about removing humans from the loop. People set the direction. Agents execute within defined boundaries. Humans stay accountable. \n The SAP Business AI Platform (BAIP) is SAP's next evolution of its unified platform — and a significant step beyond SAP Business Technology Platform (BTP). \n Where BTP provided the foundation for building, integrating, and extending business applications, the SAP Business AI Platform goes further. It brings together SAP BTP and AI Foundation, SAP Business Data Cloud, SAP HANA Cloud, and the Business Transformation Management Suite into one unified platform — purpose-built for the age of AI agents. \n For existing SAP customers, this matters because it eliminates the need to stitch together scattered platform components. BAIP provides a single environment where business applications and AI agents co-exist, grounded in real business context, with governance built in from the start. \n It is structured around three pillars: Build , Contextualise & Reason , and Govern — which we cover in the next three parts."
+  },
+  {
+   "key": "0511fe3099434e3d",
+   "title": "SAP Joule Agent for S4HANA Asset Management:Predictive Maintenance & Measurement Document Operations",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-joule-agent-for-s4hana-asset-management-predictive-maintenance-amp/ba-p/14488033",
+   "published": "2026-09-27T14:08:38+00:00",
+   "author": "Pardhasaradhi_Reddy_Chelikam",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "This blog outlines how SAP Joule Agent enables Plant Maintenance teams to use natural language to manage \"Measurement Document Operations\" and automatically create a \"Predictive Maintenance Notification\" if the measured reading breaches defined threshold value by using Low-Code and No-Code approach."
+  },
+  {
+   "key": "81d3b702b3b21499",
+   "title": "Record Time Option Is Not Displayed in the Perform Maintenance Jobs App",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/record-time-option-is-not-displayed-in-the-perform-maintenance-jobs-app/qaq-p/14492875",
+   "published": "2026-09-27T13:49:19+00:00",
+   "author": "MuratTnrkt",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Experts \n Start and Record Time buttons are not visible in the system. \n\n I enabled Confirm Jobs Without Assignment in the app configuration. However, the Start and Record Time buttons are still unavailable. \n\n I also noticed a difference from Private Cloud: the Perform Jobs and Record Time Without Personnel Number setting is available there, but I cannot find it in SAP S/4HANA Cloud Public Edition 2608. \n 1. Could you please confirm whether this setting is supported in Public Cloud and advise what is required to enable these buttons? \n 2. In a phase based maintenance process, are operations required to be dispatched before they appear in the Perform Maintenance Jobs? In my test, the operation appeared only after dispatching. However, I remember that in Private Cloud, the operations appeared in this app even before they weren't dispatched. \n The documentation in the link included information about this; \n https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/e72f747389b340229f7fa343975bfa57/3da57072a73444f18b5ad8785bc2900e.html \n *A job is a maintenance order operation or suboperation that is ready for execution. This means that the relevant operations or suboperations are in the Ready for Execution, Work in Execution, Work Paused, or Work Finished subphase. The list also includes jobs that do not support the phase model. In this case, the corresponding orders must be released. For such jobs, subphase details are not available.* \n Thank you!"
+  },
+  {
+   "key": "f22948cd8175d5b7",
+   "title": "When Customer Demand Changes: How Standard SAP Handles It — and Where PP/DS Fits",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/when-customer-demand-changes-how-standard-sap-handles-it-and-where-pp-ds/ba-p/14492997",
+   "published": "2026-09-27T19:53:00+00:00",
+   "author": "abhishekashish15",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Customer demand changes after MRP has already planned procurement and production. This article compares five standard SAP responses to demand volatility and explains when embedded PP/DS becomes relevant."
+  },
+  {
+   "key": "a4fed7415bed9890",
+   "title": "SAP Inside Track Porto 2026 — Comunidade, Conhecimento, IA e muita energia no Porto!",
+   "link": "https://community.sap.com/t5/porto-blog-posts/sap-inside-track-porto-2026-comunidade-conhecimento-ia-e-muita-energia-no/ba-p/14492988",
+   "published": "2026-09-27T19:25:42+00:00",
+   "author": "MRobalinho",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Ontem, 26 de setembro, realizámos a 3.ª edição do SAP Inside Track Porto , em Vila Nova de Gaia. \n Mais uma vez, conseguimos reunir a SAP Community para um dia inteiro de partilha de conhecimento, networking, demonstrações práticas, troca de experiências e, acima de tudo, comunidade ."
+  },
+  {
+   "key": "2ff5be9d4581903f",
+   "title": "SAP Business Application Studio Integration with SAP S/4HANA Cloud Public Edition",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-application-studio-integration-with-sap-s-4hana-cloud-public/ba-p/14492976",
+   "published": "2026-09-27T19:00:32+00:00",
+   "author": "Pooja_Hadagali1",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Learn how to integrate SAP Business Application Studio with SAP S/4HANA Cloud Public Edition. This blog provides a step-by-step guide covering trust configuration, BAS setup, connectivity with the SAP S/4HANA Cloud tenant, and creation of a Dev Space for SAP Fiori application development."
+  },
+  {
+   "key": "d0c02fb0026c4392",
+   "title": "How to Create an RAP Based Custom UI5 App and Deploy it to SAP S/4HANA Public Cloud",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-create-an-rap-based-custom-ui5-app-and-deploy-it-to-sap-s-4hana/ba-p/14492962",
+   "published": "2026-09-27T17:30:40+00:00",
+   "author": "Pooja_Hadagali1",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Learn how to build an end-to-end RAP-based custom UI5 application and deploy it to SAP S/4HANA Cloud Public Edition. This guide walks through the key development steps, from creating the RAP business object and exposing the service to developing the UI5 application and deploying it to the SAP S/4HANA Public Cloud environment."
+  },
+  {
+   "key": "359c4b459e39b4bf",
+   "title": "ADT for VS Code - Get an app to open this 'adt' link",
+   "link": "https://community.sap.com/t5/technology-q-a/adt-for-vs-code-get-an-app-to-open-this-adt-link/qaq-p/14492965",
+   "published": "2026-09-27T17:44:06+00:00",
+   "author": "FabioPagoti",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "I'm using ADT for VS Code following ABAP Basic Features for Visual Studio Code | SAP Developer Center connected with the ABAP environment on BTP trial. \n When using option \" ABAP: Open with ADT for Eclipse \". However, I do have eclipse installed and the error does not show much how to fix it. \n\n Apparently there is no settings where I can specify where eclipse is installed and the system is not recognizing it. I don't know is there is a fix but at least this question should help others anyway. \n Thanks"
+  },
+  {
+   "key": "5ae6c7b22f59a8ee",
+   "title": "Blueprinting SAP Agentic AI: MCP & A2A",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/blueprinting-sap-agentic-ai-mcp-amp-a2a/ba-p/14493036",
+   "published": "2026-09-28T02:36:43+00:00",
+   "author": "SridharKarra",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "As organizations shift from static, retrieval-augmented generation (RAG) chatbots to autonomous workflows, SAP has laid out a definitive blueprint for the future of enterprise automation. The newly released SAP Reference Architecture for Agentic AI & AI Agents fundamentally rewrites the rules for how intelligent systems interact with corporate data and enterprise systems. For enterprise architects, this architecture represents a shift away from hardcoded integrations toward a dynamic ecosystem of autonomous agents, structured discovery pathways, and vendor-agnostic protocols. This post provides a technical deep dive into the core pillars of the SAP Agentic AI architecture—focusing on where the Model Context Protocol (MCP) resides, how Agent-to-Agent (A2A) connectivity operates, and how governance is enforced. 1. The Core Architectural Pillars The SAP Reference Architecture bifurcates the agentic lifecycle into highly managed platform services and flexible, customer-governed extensions. \n [ SAP-MANAGED: BUSINESS AI PLATFORM ]\n+-------------------------------------------------+\n\n| [SAP Signavio / LeanIX] -> [AI Agent Hub] |\n| [Joule Work] -----------> [MCP Builder] |\n| [Agent Gateway] --------> [Managed Runtimes] |\n+-------------------------------------------------+\n |\n v\n [ CUSTOMER-MANAGED: SAP BTP SUBACCOUNT ]\n+-------------------------------------------------+\n\n| [Generative AI Hub] ----> Custom LLM Runtimes |\n| [SAP Integration Suite] |\n| ├── [MCP Gateway] --> (OData/REST Wrappers) |\n| └── [A2A Engine] --> (Cross-Agent Bus) |\n+-------------------------------------------------+ The Business AI Platform (BAIP) This SAP-managed environment handles core orchestration and optimization: \n Process-Driven Discovery: SAP Signavio and SAP LeanIX drive \"Agent Mining\" and continuous optimization. These systems identify process bottlenecks ripe for autonomous handling and catalog active deployments in a central AI Agent Hub . \n Orchestration Layer: User intent is ingested via Joule Work . Within this layer, intent is evaluated by Joule Studio , developed via the MCP Builder , and bound to optimized managed runtimes. \n Ingress Control: The Agent Gateway serves as the security perimeter, processing inbound and outbound agent actions against corporate boundaries. Customer-Managed Subaccounts (SAP BTP) This is where custom development and extension occur: \n Custom Agents: Developers use the Generative AI Hub to bring custom large language models (LLMs) and custom code actions into the ecosystem. \n SAP Integration Suite: The structural foundation for agent tooling and messaging. It houses the critical protocol adapters required to expose SAP core systems safely to autonomous clients. 2. Unpacking the MCP Setup: Where Does it Reside? A common misconception is that the Model Context Protocol (MCP) framework sits natively inside traditional API Management. Within the SAP reference architecture, MCP is a specialized structural framework split into two layers: The Data & Tool Layer: The MCP Gateway The backend implementation of MCP resides within the SAP Integration Suite as the MCP Gateway . Standard API Management is designed to govern traditional REST, SOAP, and OData endpoints for human developers or deterministic applications. The MCP Gateway acts as a translation layer sitting right alongside these standard interfaces. It takes your highly structured business objects, ABAP functions, and OData schemas and wraps them into standardized, semantic MCP Tools . This allows an AI agent to dynamically discover, inspect, and safely execute backend logic without custom, hardcoded integration code. \n\n The Design & Execution Layer: Joule Work On the SAP-managed side, the consumer mechanics of MCP live inside the Joule Work block: \n MCP Builder: An embedded tool within Joule Studio used by configuration teams to map, bind, and permission specific MCP servers. \n Managed Runtimes: Houses the active execution state of MCP Servers , which dynamically serve schema definitions, prompt templates, and data tools up to the core Agent Gateway. 3. Demystifying A2A (Agent-to-Agent) Connectivity While MCP defines the communication standard between an agent and a static tool , Agent-to-Agent (A2A) Connectivity defines how independent agents talk to each other . \n [ User Prompt ] ──> [ SAP Joule (Orchestrator) ]\n │\n ┌────────────────┴────────────────┐\n ▼ (A2A Client) ▼ (A2A Client)\n[SuccessFactors Agent] [Custom BTP Finance Agent]\n (Exposes HR Rosters) (Exposes Custom Ledgers) In a true enterprise scenario, no single agent can manage every transaction. A2A connectivity establishes the protocol layer needed for multi-agent orchestration and cross-vendor interoperability. Key Capabilities of the A2A Engine \n Dynamic Task Delegation: A primary digital assistant—such as SAP Joule—acts as an A2A client. When a multi-step user prompt arrives (e.g., \"Onboard a new vendor and reconcile their initial deposit\" ), the orchestrator decomposes the prompt and delegates sub-tasks to downstream domain-specific agents (e.g., an Ariba Spend agent and a specialized S/4HANA Finance agent). \n \"Bring Your Own Agent\" (BYOA): Because A2A is built on open enterprise messaging standards, it provides a strict communication contract. You can build a highly customized agent on an external framework (such as LangGraph, CrewAI, or AG2 ), deploy it inside an SAP BTP subaccount, and expose it via an A2A server endpoint. The primary SAP orchestrator can interact with it natively. \n Context and State Management: Enterprise transactions are rarely completed in a single interaction. A2A handles synchronous requests, long-running asynchronous callbacks, and state propagation, ensuring that down-stream sub-agents maintain context without losing data integrity mid-transaction. Corporate-Grade Governance To ensure that autonomous agent interactions do not compromise compliance, A2A messaging is routed through the SAP Integration Suite . This layer adds strict enterprise-grade qualities to autonomous agent traffic: \n Agent Identity Verification: Utilizing SAP Cloud Identity Services (IAS) to enforce auditable principal propagation. \n Operational Guardrails: Request throttling, cost-centric token metering, and immutable audit logging to track exactly which agent executed a transaction and why. The Path Forward for Enterprise Architects The SAP Reference Architecture for Agentic AI transforms the ERP from a system of record into a platform of dynamic, cooperating intelligences. By separating data tools ( MCP Gateway ) from coordination channels ( A2A Connectivity ), SAP provides the blueprint required to scale AI safely, securely, and cleanly. When designing your next-generation extensions on SAP BTP, ensure your teams design with clean core principles: encapsulate your business logic as discrete services, expose them semantically via the MCP Gateway, and prepare your orchestration layers to support a multi-agent, collaborative future."
+  },
+  {
+   "key": "6e71c7f4ab43af27",
+   "title": "Using SAP HANA Native Storage Extension (NSE) with SAP BW 7.5 - Part 3",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/using-sap-hana-native-storage-extension-nse-with-sap-bw-7-5-part-3/ba-p/14493031",
+   "published": "2026-09-28T02:47:12+00:00",
+   "author": "Tanuj_G",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "In Parts 1 and 2, we covered the fundamentals of SAP HANA Native Storage Extension (NSE), how to enable it with BW 7.5, and how to configure and monitor it in production. \n In Part 3 , we take the next step, what happens when you move from a PoC to implementation at scale? \n NSE can reduce the HANA memory footprint of large BW objects, but achieving sustainable savings requires more than simply converting large tables to page-loadable storage. \n This part covers: \n Implementation at scale: partitioning considerations, workload pressure, delta merges, and production concurrency \n Realistic memory savings: why theoretical storage-to-memory ratios should not be used as sizing assumptions \n NSE candidate selection: understanding data age, access patterns, workload, and business criticality \n Operational considerations: ongoing monitoring, data growth, and what happens when NSE needs to be reverted \n RISE & BDC sizing: why NSE-based memory savings need to be considered carefully when right-sizing HANA infrastructure \n SAP Diet Strategy: looking beyond NSE to combine hot, warm, cold, and retirement strategies for a sustainable BW data lifecycle"
+  },
+  {
+   "key": "eacc8e0c747fb43f",
+   "title": "Using SAP HANA Native Storage Extension (NSE) with SAP BW 7.5 - Part 2",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/using-sap-hana-native-storage-extension-nse-with-sap-bw-7-5-part-2/ba-p/14493014",
+   "published": "2026-09-28T02:46:45+00:00",
+   "author": "Tanuj_G",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP HANA NSE with BW 7.5: Part 2 is here! \n Moving large BW tables to SAP HANA Native Storage Extension (NSE) can significantly reduce the memory footprint, but enabling NSE is only the first step. \n In Part 2, we focus on what happens after NSE is enabled : \n • NSE buffer cache configuration and automatic management \n • Monitoring cache utilization, hit ratio, misses, and out-of-buffer events \n • Understanding NSE I/O and cache pressure \n • Delta merge considerations for large BW tables \n • Savepoints and persistence activity \n • Practical monitoring and alerting guidelines for production \n The goal is simple: make NSE practical and operationally manageable in a BW 7.5 production environment."
+  },
+  {
+   "key": "778ffc1f3e03e285",
+   "title": "Beyond LLMs, Are We Hallucinating About AI Concepts?",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/beyond-llms-are-we-hallucinating-about-ai-concepts/ba-p/14492742",
+   "published": "2026-09-26T19:44:11+00:00",
+   "author": "sunny_kapoor",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "We spend a lot of time worrying about AI hallucinations. The model confidently says something that is not true. We add guardrails, evaluation loops, grounding pipelines. We are very serious about this problem. \n Meanwhile, we are doing the exact same thing with AI concepts. \n Every few weeks, a new idea arrives. We confidently pivot to it. We abandon the last one. We repeat. If an LLM did this, we would call it hallucinating. When we do it, we call it staying current. \n Speed of AI adoption is not the competitive advantage. Quality of understanding is. \n A couple of words about me: \n I am Sunny, Lead Product Manager for Cloud Integration at SAP Integration Suite, based at SAP Labs India. I have spent 16+ years at SAP, starting as an intern to developer in Java, JavaScript, UI5, etc. before moving into product management. \n The views expressed in this post are my own, based on observations and patterns I have seen in this space. They do not represent the official position of SAP. \n The AI Concept Treadmill: \n\n Figure 1 - Running hard on every new AI concept. Never quite arriving. \n It started, as most things do, with a paper. In 2020, researchers at Facebook AI Research formalized Retrieval-Augmented Generation (RAG). The idea was elegant: instead of baking all knowledge into a model at training time, retrieve relevant context at inference time, then generate. Enterprises picked this up seriously around 2023, when the ChatGPT adoption wave made connecting AI to internal data a boardroom priority overnight. \n Then came the fine-tuning wave of mid-2023. Why retrieve external knowledge when you could train the model on your data directly? Enterprises started debating: fine-tune or RAG? It was a legitimate question and many teams were still working through it when the next wave hit. \n Then came a one-two punch on context windows. In November 2023, OpenAI's GPT-4 Turbo arrived with a 128k token context window. Three months later, in February 2024, Gemini 1.5 raised that to one million tokens. Together, they triggered a genuine question: if you can fit an entire corpus into a single prompt, do you still need a retrieval pipeline? Teams that had invested months in RAG found themselves revisiting their assumptions which, honestly, is exactly the right thing to do when the landscape shifts. \n Simultaneously, the autonomous agent thread was already running. AutoGPT launched in March 2023 and became the top trending GitHub repository within days and the collapse was nearly as fast when it could not reliably complete real-world tasks. In 2024, improved tool-calling revived the conversation, this time with more structure. \n Late 2024 brought reasoning models: OpenAI's o1, then DeepSeek R1 in early 2025. A different kind of intelligence -- slower, more deliberate, trained to think through steps before answering. \n Then Anthropic released the Model Context Protocol (MCP) in November 2024. A standard for how AI agents call tools and data sources. Within weeks: Isn't this just JSON-RPC? Just REST APIs with extra steps? The debate was real, heated, and productively confused. \n Then, in April 2025, Google introduced Agent-to-Agent protocol (A2A). Understandably, the community asked: how does this relate to MCP? Do we need both? Which one should we build on? These are exactly the right questions, the problem is when we try to answer them before we have read either spec carefully. \n And now, in 2025, the enterprise conversation is settling slowly, carefully on agentic workflows: structured, observable, policy-enforced multi-step AI, with human oversight where it matters. Governed autonomy. \n Sound familiar? That feeling of perpetual catch-up -- of never quite finishing one thing before the next arrives -- that is the treadmill. And the problem is not the pace of AI innovation. The problem is our reaction to it. \n Eight distinct concepts across five years. The last four arrived in eighteen months. The AI Concept Tradmill is not slowing down. \n Where the Real Confusion Lives: \n\n Figure 2 - Four pairs that confuses us. \n 1. RAG vs. Long Context Windows \n The 'RAG is dead' conclusion spread quickly and understandably so. A one-million-token context window sounds like it renders retrieval pipelines redundant. But RAG and long context windows solve overlapping problems in fundamentally different ways. The context window is static at inference time: you load it once, it does not update mid-conversation. RAG is dynamic, it retrieves only what is relevant, at query time, from a corpus that can be updated continuously. The context window is also expensive and slow to process at scale. For an enterprise with millions of product records and transaction histories, retrieval is not optional -- it is the only practical path. RAG is not dead. It is complementary. \n A well-designed enterprise AI system often uses long context for deep reasoning over a curated set of documents, and RAG for real-time retrieval from a live, updating corpus. The question is not which one, it is understanding when to use which, and at what cost. \n 2. MCP vs. APIs \n The 'isn't this just APIs?' reaction is understandable, but it conflates two fundamentally different things. A REST or OData API is a static contract: you define endpoints, methods, and payloads, and a caller that already knows the interface invokes it. MCP is a dynamic capability protocol designed specifically for AI agents: a model can discover what tools exist, understand what each one does from its description, decide which one to call based on the task at hand, invoke it, and handle the result, all at runtime, without any hardcoded knowledge of the interface. The difference is not syntax. It is intent. APIs were designed for developers integrating systems. MCP was designed for AI agents acting autonomously. \n In fact, APIs are often what fuel MCP tools under the hood. An MCP Server wraps existing API capabilities and exposes them in a way that AI agents can discover and invoke natively. It is not APIs vs MCP. It is APIs plus MCP. \n Did You Know: SAP Integration Suite's MCP Gateway which acts as a governed entry point across MCP Servers that provides governance, observability, and policy enforcement built in, making AI agents truly enterprise-ready. \n 3. Autonomous Agents vs. Agentic Workflows \n AutoGPT's rise and fall is the clearest case study we have. The promise was full autonomy: set the goal, let the agent run . Real-world tasks require judgment calls and error recovery that fully autonomous agents in 2023 simply could not handle reliably. What enterprises are deploying successfully in 2025 is agentic workflows: structured, multi-step AI processes with defined scope, human-in-the-loop checkpoints, and full observability. \n Agentic workflows are how enterprises deploy agent capabilities today. Fully autonomous agents are where the space is heading. Understanding the difference tells you what to build now versus what to watch and that is a much more useful frame than 'autonomous agents don't work.' \n 4. A2A vs. MCP \n These two protocols operate at different layers of the same architecture, not in competition with each other. MCP governs how an AI agent calls a tool or data source, the agent-to-tool layer. A2A governs how AI agents communicate with each other, the agent-to-agent layer. In a mature multi-agent enterprise architecture, you will likely need both. \n Think of it this way: A2A handles how agents coordinate, and MCP handles what each agent can do. One governs the conversation between agents, the other governs the capability each agent brings to it. The question is not which one wins, it is understanding what problem each one solves so you can use them together. \n What This Pattern Costs Enterprises \n This is not abstract. The reactive adoption pattern has real business consequences, and I have seen them described consistently across enterprise AI discussions throughout 2024 and 2025. \n I have seen this pattern play out consistently across enterprise AI discussions throughout 2024 and 2025 and I include myself in it. Teams that invested in RAG pipelines, revisited them when long-context windows arrived, rebuilt with a different approach, and then realized their original use case actually needed retrieval dynamics -- those teams lost months and budget. More significantly: they lost momentum and stakeholder confidence at exactly the point when they needed both. \n A common pattern in 2024 was AI initiatives stuck in pilot purgatory -- proofs of concept that could not graduate to production because the underlying approach kept shifting before it stabilized. \n There is also the subtler cost: opportunity cost. While the organization is chasing the new concept, the previous one, which was actually the right fit, sits unimplemented. The enterprise that patiently built a well-governed RAG pipeline in 2023 and refined it through 2024 is often in a stronger position today than the one that pivoted three times chasing the frontier. \n Chasing every new wave is itself a kind of hallucination. \n The Grounded Adoption Framework \n\n Figure 3 - Five steps from reactive adoption to grounded decision-making. \n Understand. Go back to the source -- the original spec, paper, or announcement. Not because summaries are bad, but because the design intent rarely survives the translation to a headline. The MCP specification is publicly available and readable in under an hour. That hour is worth it. \n Correlate. Map the new concept against what you already know. Is this net new? An evolution? A specialization? A renaming? Most new AI concepts are roughly 70% familiar and 30% genuinely new. Your job is to find that 30%, that is where the real learning is. \n Unlearn deliberately. Identify what prior assumption this new concept actually invalidates, if any. Not every new concept requires discarding something old. 'MCP provides a standardized invocation layer that replaces ad-hoc direct API calls for agent tool use' is a legitimate unlearn. 'RAG is dead' is a false unlearn. Do not do it. \n Relearn properly. Update your mental model with the new concept correctly placed. Resist the temptation to layer it on top of the old one without resolving the overlap, that is how well-intentioned explanations like 'MCP is basically just APIs' take root, and once they do they are hard to correct in a room full of stakeholders. \n Decide consciously. Now and only now, evaluate whether this concept is relevant to your enterprise context, your maturity level, your specific use case. Understanding a concept deeply and concluding it is not right for you today is a completely valid, intelligent, professional outcome. \n Important Points to Consider \n Not every new concept requires a decision. Understanding is not the same as adopting. You can understand A2A deeply and conclude it is not relevant to your enterprise today. That is a valid, informed, professional outcome, not a missed opportunity. \n The AI Concept Treadmill will not slow down. The right response is not to wait for AI to stabilize, it will not. The right response is to build the muscle of grounded evaluation so you can process new concepts faster and more accurately over time. \n Your integration layer is your grounding layer. For enterprise AI, governed, real-time access to business context via secured APIs, event streams, and integration middleware with proper security, monitoring, audit, and policy enforcement is what separates reliable enterprise AI from hallucinating enterprise AI. Ground your systems. Ground yourself. \n Conclusion \n The enterprises that will lead with AI are not the ones who adopted the most concepts. They are the ones who understood the right ones well enough to implement them well. \n The LLMs are getting better at not hallucinating. The question is: are we? \n\n Now let's hear from you: \n I'd love to hear your thoughts on navigating the AI adoption landscape. Share your insights by answering these questions in the comments "
+  },
+  {
+   "key": "a3bee304f3c70a06",
+   "title": "Delivery Costs for Damaged Goods",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/delivery-costs-for-damaged-goods/qaq-p/14493067",
+   "published": "2026-09-28T05:15:30+00:00",
+   "author": "Dinesh_158",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear Experts, \n In a Purchase Order, there are 10 quantities of an item, out of which 1 quantity is damaged. \n While posting the supplier invoice, the invoice will be posted only for the 9 good quantities received from the actual supplier. However, there are additional costs such as Transportation and Customs charges associated with the PO. These charges need to be posted separately using Subsequent Debit, and the Transportation and Customs invoices need to be accounted for the full 10 quantities. \n In this scenario, how can we handle the damaged 1 quantity during Goods Receipt (GR) so that: \n The supplier invoice is posted only for the 9 good quantities. \n Transportation and Customs charges can still be posted for all 10 quantities. \n The damaged 1 quantity remains open against the same PO and can be received in the next delivery from the same supplier. \n The subsequent delivery should be linked to the same PO without creating a new PO. \n Also Delivery Costs of that 1 Damaged Quantity should go for Expense GL while posting Subsequent debit \n Please advise on the standard SAP approach to handle this scenario."
+  },
+  {
+   "key": "8990a37e675bbcb7",
+   "title": "SAP S/4HANA Public Cloud | Why can some IAM apps be deactivated while others cannot?",
+   "link": "https://community.sap.com/t5/technology-q-a/sap-s-4hana-public-cloud-why-can-some-iam-apps-be-deactivated-while-others/qaq-p/14493057",
+   "published": "2026-09-28T04:40:34+00:00",
+   "author": "quocdt5",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear SAP Community, \n I'm working on SAP S/4HANA Public Cloud and maintaining a business role in the Maintain Business Roles app. However, the Deactivate button is enabled for some apps and greyed out for others. \n App that CAN be deactivated: \n IAM App: Display Spoolrequests \n IAM App ID: SP01_SIMPLE_TRAN \n Business Catalog: Logistics Execution - Outbound Deliveries \n Business Catalog ID: SAP_LE_BC_ODLV_PROC_MC \n\n App that CANNOT be deactivated (button greyed out): \n IAM App: Create Group \n IAM App ID: VG01_TRAN \n Business Catalog: Logistics Execution - Outbound Delivery Processing \n Business Catalog ID: SAP_LE_BC_OD_PROC_MC \n\n My questions: \n Why can some IAM apps be deactivated in a business role while others cannot? \n If an app cannot be deactivated, what is the recommended way to exclude it from the role? I do not want to remove the business catalog that contains the app, because that catalog also includes other apps the role still needs. \n Thank you in advance for your help. \n QuocDT5"
+  },
+  {
+   "key": "9207db6a3dc7f466",
+   "title": "Assistance from SAP Learning Hub Escalation Team Required",
+   "link": "https://community.sap.com/t5/sap-learning-q-a/assistance-from-sap-learning-hub-escalation-team-required/qaq-p/14493043",
+   "published": "2026-09-28T04:00:05+00:00",
+   "author": "kc2023",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello: \n Could someone from the SAP Learning Hub Escalation Team help the SAP Store team to resolve a problem assigning a SAP learning hub license to a wrong / deleted S-iD? \n\n I subscribed the SAP Learning Hub license on September 6, 2026. It is almost 20 days and I still don't have access. \n Thanks."
+  },
+  {
+   "key": "69ab188bcc9cba85",
+   "title": "Asset has no values in fiscal year 2026 for area: 20 Message No. AA024",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/asset-has-no-values-in-fiscal-year-2026-for-area-20-message-no-aa024/qaq-p/14492778",
+   "published": "2026-09-26T18:54:05+00:00",
+   "author": "paida_chisango59e1c6",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "When I tried to run the TCODE: CJ88, I have the following issue: Asset has no values in fiscal year 2026 for area: 20 Message No. AA024 in PRD System."
+  },
+  {
+   "key": "75d3ce138749ab1a",
+   "title": "C_LCNC_2601 System based failure",
+   "link": "https://community.sap.com/t5/technology-q-a/c-lcnc-2601-system-based-failure/qaq-p/14492777",
+   "published": "2026-09-26T18:37:41+00:00",
+   "author": "pepoloco",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello, \n\n Today for 3rd time I am failing the C_LCNC_2601 with score 66.67% score (cut score: 83%). It doesn't make sesne for me as the last time I even checked everything step by step with Joule and it confirmed that everything is correct. \n\n I've followed the PDF file step by step and it just doesn't make sense. It's super demotivating for failing it as everything is working and the automated System Based Assesment it's not valuating it correctly. \n\n I have opened ticket with the support, but no reply yet. I would appreciate if anybody has the same issues with the C_LCNC_2601 exam. \n\n Thanks."
+  },
+  {
+   "key": "07a0a8b854118df6",
+   "title": "Sign-Triggered Reclassification - returns No Data for Balancing per characteristic",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/sign-triggered-reclassification-returns-no-data-for-balancing-per/qaq-p/14492770",
+   "published": "2026-09-26T17:53:12+00:00",
+   "author": "tranngoc",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi SAP Community, \n I am working on S/4HANA 2023 and configuring a Debit/Credit Reclassification Method . \n My configuration setup is as follows: \n Balance per Characteristic : Consolidation Unit, FS Item, and Partner Unit \n Trigger Condition : Net value >= 0 \n I have verified that all selections for the trigger are correct, and the data in the Group Data Analysis app matches my configuration criteria. However, when I execute the task, it terminates/completes with \" No Data \". \n Could anyone suggest what might be missing in the configuration or troubleshooting steps to identify why data is not being picked up? \n Thank you for your help!"
+  },
+  {
+   "key": "864c54e1a62f5724",
+   "title": "Profit Center Not Populated for Cleared Items (Document Type AB) in FBL5N",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/profit-center-not-populated-for-cleared-items-document-type-ab-in-fbl5n/qaq-p/14492763",
+   "published": "2026-09-26T17:10:29+00:00",
+   "author": "Krishna2198",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "While displaying customer line items in transaction FBL5N (Customer Line Item Display), for \n cleared items with Document Type AB \n the Profit Center (PRCTR) field is not populated / triggered for some line items. \n Observation: \n In FBL5N, when filtering or displaying cleared items, certain line items of Document Type AB show a blank Profit Center. \n Other line items of the same document type (or other document types) correctly display the Profit Center. \n The issue appears only for some cleared items; open items or other document types may not be affected. \n Screenshots of FBL5N display and the missing Profit Center are attached for reference."
+  },
+  {
+   "key": "518c1f25b72bf12a",
+   "title": "CO-PA Characteristics Not Getting Copied from Sales Contract to Sales Order",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/co-pa-characteristics-not-getting-copied-from-sales-contract-to-sales-order/qaq-p/14492762",
+   "published": "2026-09-26T17:05:29+00:00",
+   "author": "TCS",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "CO-PA Characteristics Not Getting Copied from Sales Contract to Sales Order. \n QAS-Quality Instance. \n\n Sales Contract- 2100000057 \n We have updated Manually profit Segment assignment of Nature of service for line Item 20 as CCN. \n This is updated in Sales Contract but not getting copied in Sales order. \n\n Sales Order- Due to incompletion log order is not getting saved but Nature of service not getting copied from Sales Contract to Sales Order."
+  },
+  {
+   "key": "0454f569bb002562",
+   "title": "Need Guidance on US tax setup in SAP S4/HANA",
+   "link": "https://community.sap.com/t5/supply-chain-management-q-a/need-guidance-on-us-tax-setup-in-sap-s4-hana/qaq-p/14492690",
+   "published": "2026-09-26T12:13:04+00:00",
+   "author": "Shivaji_mane-1995",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi SAP Community, \n I am seeking guidance on US taxation configuration in SAP SD (S/4HANA). \n Our requirement is to calculate and show two separate taxes: \n State Sales Tax \n Local Sales Tax – City / County / Special District \n I am looking for information/references on the following: \n Tax condition types, condition tables, and access sequences for State and Local taxes \n Tax jurisdiction configuration and determination \n Tax procedure and pricing procedure \n Customer and Material Tax Classification \n Tax determination logic / place of supply \n Nexus determination \n Tax-exempt handling and exemption certificates in BP \n FI-SD integration and tax account determination \n Condition records and tax rate maintenance \n Tax calculation and display at sales order and billing level \n I am looking for a standard SAP S/4HANA internal tax solution without an external tax engine. \n If anyone has implemented a US Tax scenario, please share any SAP Help links, SAP Notes, configuration guides, or SAP Community references. \n Any guidance or implementation references would be highly appreciated. \n Thank you, \n Shiva"
+  },
+  {
+   "key": "2c706524475447a8",
+   "title": "Rel Upg Stuck - Severe error(s) occurred in phase MAIN_SHDPREPUT/START_SHDI_PREPUT!",
+   "link": "https://community.sap.com/t5/technology-q-a/rel-upg-stuck-severe-error-s-occurred-in-phase-main-shdpreput-start-shdi/qaq-p/14492636",
+   "published": "2026-09-26T11:41:34+00:00",
+   "author": "Raj_Joshi21",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "SAP SUM - Rel Upg Stuck - Severe error(s) occurred in phase MAIN_SHDPREPUT/START_SHDI_PREPUT! \n Source - S4HANA ON PREMISE 2022 02 (05/2023) FPS sap.com SAP S/4HANA 2022 \n Target - S4HANA ON PREMISE 2025 01 (02/2026) FPS sap.com SAP S/4HANA 2025 \n Already follow 3643645 - shadow instance startup issue during database migration option (DMO) with system move in software update manager (SUM) - without success. \n With DDIC user ( same pass ) able to login to 00 original and 01 shadow instance. \n Connection test for RFC SAP_UPGRADE_SHADOW_SYSTEM is working fine. \n At the same time RFC authorization test is failing with ERROR Details - 00024Error during logon - (Nothing More) \n Also if I test the REMOTE LOGON - NOTHING HAPPENS"
+  },
+  {
+   "key": "642aa6493a1d7219",
+   "title": "Material Mismatch in Sales Order Stock – SO 262730109",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/material-mismatch-in-sales-order-stock-so-262730109/qaq-p/14492606",
+   "published": "2026-09-26T08:52:00+00:00",
+   "author": "SurendraSingh_Jadon",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "In the Sales Order, Item 1220 currently has material 500413 . However, when we check the Sales Order Stock in MMBE , the Special Stock E (Sales Order Stock) is showing material 203767 with quantity -2,500 ."
+  },
+  {
+   "key": "608589790307141d",
+   "title": "POS Sales Transaction Error – UOM PC for Material 10000010",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/pos-sales-transaction-error-uom-pc-for-material-10000010/qaq-p/14492588",
+   "published": "2026-09-26T07:04:20+00:00",
+   "author": "kuldeep_vishwakarmad06fc9",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "We have created material 10000010 with UOM PC (Pieces) . When posting the POS Sales Transaction through the POS Sales Transaction API using TotalQuantity unitCode = PC , the transaction is rejected with an error, even though the material UOM and the API unit code are both maintained as PC . \n Please check and confirm the reason for the rejection and whether any additional UOM configuration or mapping is required for the PC UOM in the POS Sales Transaction integration."
+  },
+  {
+   "key": "ab432d7159b41a31",
+   "title": "Constructive Feedback regarding \"Tag the Cat\" 100-point Cap vs. Event Duration",
+   "link": "https://community.sap.com/t5/devtoberfest-discussions/constructive-feedback-regarding-quot-tag-the-cat-quot-100-point-cap-vs/m-p/14492874#M1944",
+   "published": "2026-09-27T13:32:19+00:00",
+   "author": "GunaSampath",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "Hi Devtoberfest Team, \n I'd like to share a suggestion regarding the \"Tag the Cat\" mini-game scoring to better reward daily consistency. \n The Current Setup: \n Devtoberfest runs for four full weeks, spanning roughly twenty-nine days, and awards points daily, including weekends. Catching Kasimir awards five points a day, meaning participants only need twenty days to hit the one hundred-point cap. \n The Issue: \n Dedicated participants who catch Kasimir daily from Day One will reach the cap by October tenth. For the remaining nine days, catching the cat yields no further points. This means latecomers starting on or after October eleventh can earn up to fifty points, whereas daily early adopters receive no additional reward during the final stretch. \n Proposed Solutions: \n One: Increase the Total Point Cap. Adjust the cap to align with the full duration of the event (e.g., twenty-nine days times five points) to reward daily consistency. \n Two: End Point Earning Upon Reaching the Cap. Stop point-earning for the arcade game once the limit is reached(by Oct 10th), ensuring a balanced leaderboard. \n Conclusion: \n This adjustment would greatly motivate participants to stay active throughout the whole month. Thank you for organizing a great event! \n\n What do you think? \n @thomas_jung"
+  },
+  {
+   "key": "650051b49ce477e8",
+   "title": "Partner Learning Accelerator: SAP Certified - Positioning SAP Business AI Platform",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/partner-learning-accelerator-sap-certified-positioning-sap-business-ai/ba-p/14493030",
+   "published": "2026-09-28T07:00:00+00:00",
+   "author": "JoseBastidas",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Building confidence for positioning the SAP Business AI Platform certification starts with knowing how to connect technology to business value. \n Join our 90-minute Partner Learning Accelerator for a focused, live review of the key concepts behind SAP Business AI Platform. We’ll explore its three strategic pillars, the role of SAP Business Technology Platform, and how AI agents contribute to the Autonomous Enterprise. \n You’ll also practice how to position these capabilities in conversations with customers. Think of it as a focused checkpoint before certification, helping you connect the dots and sharpen your message. \n The session is designed for SAP partner sales and presales professionals with foundational SAP knowledge. Completing the Positioning SAP Business AI Platform Learning Journey is strongly recommended. \n Ready to strengthen your certification readiness? \n Register now. https://partneredge.sap.com/en/library/education/psd/2026/jul/e_oe_te_w_PSD_WEB_00014790.html \n #SAP #SAPBusinessAIPlatform #SAPBTP #SAPPartners #SAPEcosystem #SAPCertification #PartnerEnablement"
+  },
+  {
+   "key": "832084a363375d13",
+   "title": "Why n8n Workflows Will Not Replace Solid SAP Integration Suite iFlow Development",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/why-n8n-workflows-will-not-replace-solid-sap-integration-suite-iflow/ba-p/14493100",
+   "published": "2026-09-28T06:40:12+00:00",
+   "author": "Yogananda",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Disclaimer: \n The views expressed in this article are entirely my own and are based on my experience working extensively with SAP Integration Suite (formerly CPI) and more recently experimenting with n8n . This is not an official SAP or n8n comparison, but rather a practitioner's perspective on where each platform shines and where each has limitations. As with any technology decision, the best choice depends on the specific use case, enterprise requirements, and long-term architecture strategy. \n\n There is growing excitement around low-code automation platforms such as n8n , especially with the rise of AI agents, workflow orchestration, and citizen development. Many organizations are successfully using n8n to connect APIs, automate repetitive tasks, and build lightweight integrations quickly. \n However, claiming that n8n will replace well-designed SAP Integration Suite iFlows is an oversimplification. The reality is that both tools serve different purposes and excel in different scenarios. \n Rather than viewing them as competitors, enterprises should see them as complementary technologies. \n\n Understanding the Two Platforms \n n8n \n n8n is an open-source workflow automation platform focused on: \n Rapid automation development \n API integrations \n AI agent orchestration \n Event-driven workflows \n Low-code development \n Self-hosted deployments \n Typical use cases: \n Slack notifications \n CRM synchronization \n ChatGPT integrations \n Webhook processing \n Internal productivity automation \n AI-powered workflows \n SAP Integration Suite (Cloud Integration iFlows) \n SAP Integration Suite is an enterprise-grade integration platform designed for: \n Business-critical integrations \n SAP-to-SAP connectivity \n SAP-to-third-party integrations \n B2B/EDI processing \n Secure message transformation \n Enterprise governance \n Monitoring and compliance \n Typical use cases: \n SuccessFactors ↔ S/4HANA integrations \n Ariba integrations \n Concur integrations \n Vendor onboarding \n Master data synchronization \n Financial transactions \n Why n8n Will Not Replace SAP Integration Suite \n 1. Enterprise Reliability Matters \n An integration handling millions of euros worth of business transactions requires: \n Guaranteed delivery \n Retry mechanisms \n Queuing \n Error handling \n Transaction management \n High availability \n SAP Integration Suite provides enterprise-grade messaging patterns that have been proven in large enterprises for years. \n n8n is excellent for automation but is not primarily designed as a mission-critical ERP integration backbone. \n Example \n If an employee creation fails: \n n8n may need custom handling. \n SAP iFlows provide structured exception handling, alerts, retries, and monitoring out of the box. \n 2. Deep SAP Connectivity \n SAP Integration Suite comes with: \n SAP adapters \n IDoc support \n RFC connectivity \n OData integration \n SOAP services \n SuccessFactors connectors \n Ariba connectors \n n8n mostly interacts through: \n REST APIs \n Generic HTTP calls \n Custom API integrations \n When integrating deeply into SAP landscapes, SAP-native capabilities significantly reduce complexity. \n 3. Governance and Compliance \n Large enterprises demand: \n Audit trails \n Security policies \n Identity management \n Role-based access control \n Compliance reporting \n SAP Integration Suite integrates naturally with enterprise governance processes. \n n8n can be secured well, but much of the governance framework must be designed and maintained by customers. \n 4. Complex Message Transformations \n Enterprise integration often involves: \n XML mapping \n XSLT transformations \n EDI standards \n Canonical models \n Partner-specific mappings \n SAP iFlows provide mature tooling specifically for these integration patterns. \n n8n excels at workflow automation but complex enterprise mappings can become challenging to maintain. \n 5. SAP Support and Accountability \n With SAP Integration Suite, organizations receive: \n Vendor support \n Product roadmaps \n Service-level commitments \n SAP expertise \n For critical business processes, many enterprises prefer the accountability of a strategic platform vendor. \n The Real Future: Co-Existence \n The most successful enterprises will likely use both. \n Use SAP Integration Suite for: Use n8n for: \n S/4HANA integrations AI agents \n SuccessFactors integrations Productivity automation \n Employee master data Slack/Teams workflows \n Finance interfaces Knowledge retrieval \n Supply chain integrations Rapid prototypes \n B2B scenarios Citizen developer use cases \n Compliance-driven processes Experimental integrations \n\n Comparison \n\n Area n8n SAP Integration Suite \n Development Speed Excellent Good \n AI Workflows Excellent Growing \n SAP Connectivity Limited Excellent \n Enterprise Governance Basic Excellent \n Monitoring Good Excellent \n B2B/EDI Weak Strong \n Complex Transformations Moderate Excellent \n Cost for Small Teams Low Higher \n ERP Integration Moderate Excellent \n Mission Critical Processes Moderate Excellent \n Final Thoughts \n The question is not whether n8n will replace SAP Integration Suite. \n The better question is: \n \"Which platform is the right tool for the right integration?\" \n n8n is an outstanding workflow automation and AI orchestration platform. It enables rapid innovation, experimentation, and lightweight integrations. \n SAP Integration Suite remains the stronger choice for enterprise-grade, mission-critical SAP integrations where reliability, governance, security, monitoring, and SAP-native connectivity are essential. \n In the coming years, many organizations will likely run n8n beside SAP Integration Suite, not instead of it . The winning architecture will combine n8n's agility with SAP Integration Suite's enterprise robustness."
+  },
+  {
+   "key": "2adf98fcff7e4f62",
+   "title": "Manage RFQ",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/manage-rfq/qaq-p/14493101",
+   "published": "2026-09-28T06:30:12+00:00",
+   "author": "Dinesh_158",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear Experts, \n I Created RFQ using Manage RFQ's, but after publishing the document, it show's status as \"In Approval\". When i checked in the Manage workflows for RFQ's no Approval workflow has been set for the RFQ's. Because of this I can't able to proceed futher like creating Quotations using Bidders option. What could be possible cause for this. I have attached the Screenshot of both RFQ document and Manage Workflows. \n\n Best Regards, \n Dinesh U"
+  },
+  {
+   "key": "db860aa884c39391",
+   "title": "Triggering PI Count Workflow After BIDF in SAP Public Cloud WM",
+   "link": "https://community.sap.com/t5/supply-chain-management-q-a/triggering-pi-count-workflow-after-bidf-in-sap-public-cloud-wm/qaq-p/14493063",
+   "published": "2026-09-28T04:56:40+00:00",
+   "author": "James_10",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Experts, \n Is it possible to trigger a PI count workflow after using BIDF in SAP Public Cloud WM? \n If so, could you please advise how this can be configured or triggered? \n Kind regards, \n James"
+  },
+  {
+   "key": "f9eed277fa8ce03c",
+   "title": "SAC: Balance Control for CAPEX Project Planning",
+   "link": "https://community.sap.com/t5/technology-q-a/sac-balance-control-for-capex-project-planning/qaq-p/14493061",
+   "published": "2026-09-28T04:55:34+00:00",
+   "author": "bi_lead",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Client requires a Balance Control feature in SAC story which can give an error message so that Planned Budget does not crosses the limit of Project Cost - Actual Spent. We have proposed a solution by calculating a Balance Cost (= Project Cost - Spent till date) and added a conditional Formatting/Threshold so that in case of negative budget it gets highlighted. Is there any standard feature available to achieve the results?"
+  },
+  {
+   "key": "f8fcea6e68b1711a",
+   "title": "ReportDocument.Export() failing after Crystal Report Runtime was upgraded to 13.0.26.3348",
+   "link": "https://community.sap.com/t5/technology-q-a/reportdocument-export-failing-after-crystal-report-runtime-was-upgraded-to/qaq-p/14493052",
+   "published": "2026-09-28T04:37:18+00:00",
+   "author": "inderps",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Issue: \n After upgrading to Crystal Reports 13.0.26.3348 runtime, ReportDocument.Export() is failing with 'Failed to Open Connection', even though same DB access credentials work in rest of the application and also worked with previous Crystal Report Runtime versions with same code. \n\n Error: \n System.Runtime.InteropServices.COMException (0x800002F4): Failed to open the connection. SampleReport.rpt \n at Crystal Decisions. ReportAppServer.Controllers: DatabaseControllerClass.SetTableLocation (ISCRTable CurTable, ISCRTable NewTable) \n at CrystalDecisions.Crystal Reports.Engine.Table.set_Location (String value) \n at Ecstra. ReportGenerator.ReportGenerator.SetConnectionInfo (ConnectionInfo connectionInfo, Table table) \n at Ecstra. ReportGenerator. ReportGenerator. Export Report (Report Info report Info, ReportDocument doc) \n System.Runtime.InteropServices.COMException (0x8004100F): Error in File SampleReport.гpt: \n Unable to connect incorrect log on parameters. \n Details: [Database Vendor Code: 30156] \n at Crystal Decisions. ReportAppServer.Controllers.DatabaseControllerClass.SetTableLocation (ISCRTable CurTable, ISCRTable NewTable) \n at Crystal Decisions. Crystal Reports.Engine.Table.set Location (String value) \n at Ecstra. ReportGenerator. ReportGenerator.SetConnectionInfo (ConnectionInfo connectionInfo, Table table) \n at Ecstra. ReportGenerator.ReportGenerator.ExportReport (ReportInfo reportInfo, Report Document doc) \n\n Code: \n void ExportReport (ReportInfo report Info, Report Document doc) \n { \n var kerberos ConnectionInfo = new Crystal Decisions.Shared.ConnectionInfo(); \n kerberosConnectionInfo.ServerName = connectionInfo.ServerName; // DSN \n kerberosConnectionInfo.DatabaseName = connectionInfo.DatabaseName; \n kerberosConnectionInfo.IntegratedSecurity = true; \n kerberosConnectionInfo.UserID = \"\"; \n kerberosConnectionInfo.Password = \"\"; \n ApplyConnectionInfoSafely (doc, kerberosConnectionInfo, false); \n doc.VerifyDatabase(); //FAILS connection validation at export time rejects it. If we don't add this line, it fails in next line in 'Export' \n\n doc.Export(); \n } \n void ApplyConnectionInfoToTable (Table table, Connection Info connectionInfo, ...) \n { \n var logonInfo= table.LogOnInfo; \n logonInfo.ConnectionInfo.ServerName = connectionInfo.ServerName; \n logonInfo.ConnectionInfo.DatabaseName = connectionInfo.DatabaseName; \n logonInfo.ConnectionInfo.IntegratedSecurity = connectionInfo. IntegratedSecurity; \n logonInfo.ConnectionInfo.UserID = connectionInfo.UserID; \n logonInfo.ConnectionInfo.Password = connectionInfo.Password; \n table.ApplyLogon Info (logonInfo); //SUCCEEDS connection info is accepted and stored \n } \n\n Environment details: \n Crystal Reports Version - 13,0.25.3158 (SAP Crystal Reports 2020) \n Target Database - Sybase (SQL) \n Authentication Method - Kerberos (MIT Kerberos) \n DSN Configuration - DSN created with Kerberos on client machine \n Framework - .NET with Crystal Report assemblies"
+  },
+  {
+   "key": "03a4d5966ef1fd43",
+   "title": "CJIC- WBS Settlement Issue",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/cjic-wbs-settlement-issue/qaq-p/14493049",
+   "published": "2026-09-28T04:35:45+00:00",
+   "author": "SupportJKIT",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "CJIC – T code \n 1st Step \n Relevant WBS - TR/243921/NU/DGC/001/DGC \n Execute. \n 2nd Step \n Select the line item - 14,324,249.04 \n Then click final settlement. \n Put the relevant Assets and amount. \n Back and select the green color line, and save."
+  },
+  {
+   "key": "500075049ce41fda",
+   "title": "Is one CRD license sufficient for multiple production and test systems hosted on the same server?",
+   "link": "https://community.sap.com/t5/technology-q-a/is-one-crd-license-sufficient-for-multiple-production-and-test-systems/qaq-p/14493046",
+   "published": "2026-09-28T04:26:52+00:00",
+   "author": "RY0727_",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "https://community.sap.com/t5/technology-q-a/sap-crystal-reports-version-for-visual-studio-%E3%81%AE%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9/qaq-p/14455748#M4947118 \n 以前の質問に関連する追加確認をさせてください。以前の質問は上記リンクです。 \n 必要なCrystal Reportsのライセンス数について確認させてください。 \n 同一顧客の同一サーバー上に、本番用のWebシステムが2つあり、それぞれでCrystal Reportsを使用しています。 \n さらに、同じサーバー上に各Webシステムの検証用システムもあり、合計4システムでCrystal Reportsを使用します。 \n 同一の物理サーバー上で稼働する、すべての本番システムおよび検証用システムについて、SAP Crystal Reports Designer（CRD）は1ライセンスで足りますでしょうか。 \n つまり、システムごとに個別のライセンスを購入する必要はない、という理解でよろしいでしょうか。 \n よろしくお願いいたします。 \n I would like to ask an additional question related to my previous question. The link above refers to the previous question. \n I would like to confirm the number of Crystal Reports licenses required. \n On the same server at the same customer site, there are two production web applications, and each application uses Crystal Reports. \n The same server also hosts a test environment for each web application, so Crystal Reports is used by a total of four systems. \n Is one SAP Crystal Reports Designer (CRD) license sufficient for all production and test systems hosted on the same physical server? \n In other words, is our understanding correct that a separate license is not required for each system? \n Thank you in advance for your clarification."
+  },
+  {
+   "key": "06f8a392e3690f45",
+   "title": "How to retrieve required parameters for SAP Cloud ALM Test Automation API?",
+   "link": "https://community.sap.com/t5/technology-q-a/how-to-retrieve-required-parameters-for-sap-cloud-alm-test-automation-api/qaq-p/14493041",
+   "published": "2026-09-28T03:52:42+00:00",
+   "author": "igor_brandaobb223b",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi SAP Community, \n I am currently exploring the SAP Cloud ALM Test Automation API with the objective of retrieving automated test execution information for external reporting (Power BI). \n We are using SAP Cloud ALM with the SAP Test Automation Tool (TAT), and I am looking at the Test Case Execution API available in the SAP Business Accelerator Hub. \n In particular, I am interested in using the execution history and job status endpoints. \n From the API documentation ( API Reference | SAP Cloud ALM Test Automation | SAP Business Accelerator Hub) , I understand that parameters such as projectId, scopeId and jobIds are required for some of these requests. However, I am struggling to understand how these values should be retrieved in practice, particularly the jobId for executions that have already taken place in TAT/Cloud ALM. \n My understanding is that a jobId can be returned when an execution is initiated through the API. However, my use case is primarily reporting on executions that may already have been triggered through SAP Cloud ALM/TAT , rather than initiating the execution myself. \n Could someone please clarify: \n How can I retrieve the required projectId and scopeId for an existing Cloud ALM project? \n Is there an API or supported method to retrieve the jobId(s) for existing TAT automated test executions? \n Can the Test Case Execution API be used to retrieve execution history for executions initiated from Cloud ALM/TAT, rather than only executions initiated through POST /testcases/execute ? \n Is there another SAP Cloud ALM API recommended for retrieving TAT execution results/status/history for external reporting? \n The end goal is to retrieve execution information programmatically and use it in a Power BI dashboard, rather than relying only on the reporting available in the UI. \n Any example requests or guidance on how these IDs can be obtained would be greatly appreciated. \n\n APIs: API Reference | SAP Cloud ALM Test Automation | SAP Business Accelerator Hub \n Thanks!"
+  },
+  {
+   "key": "7386b8a8207d702c",
+   "title": "Confirmation of APIs for Fixed Asset Retirement and Transfer",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/confirmation-of-apis-for-fixed-asset-retirement-and-transfer/qaq-p/14493022",
+   "published": "2026-09-28T00:19:11+00:00",
+   "author": "S0028102716",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello SAP Support, \n We would like to confirm the availability of standard APIs for Fixed Asset Management in SAP S/4HANA Cloud Public Edition. \n Based on the following SAP Community Blog, we understand that standard APIs are available for Fixed Asset retrieval and deletion. \n However, we could not find clear information regarding Fixed Asset retirement and transfer processes. \n Could you please confirm whether standard APIs are available for the following business processes? \n Fixed Asset Retirement \n Fixed Asset Transfer \n If available, please provide the corresponding API names and relevant documentation. \n Thank you for your support. \n Best regards, Manae."
+  },
+  {
+   "key": "c77d2b75a14e352f",
+   "title": "SAP CERTIFICATION",
+   "link": "https://community.sap.com/t5/sap-learning-q-a/sap-certification/qaq-p/14493015",
+   "published": "2026-09-27T23:42:16+00:00",
+   "author": "Mr_Blow",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello everyone, I am a student in Germany \n I am studying materials engineering. I started learning SAP S/4HANA QM but discovered there is no certification for it \n I need a certification to boost my job opportunities \n What do I do? \n\n Which certification can I start studying"
+  },
+  {
+   "key": "e346bbcda1b2663d",
+   "title": "New to SAP Learning – Looking for Guidance on Getting Started",
+   "link": "https://community.sap.com/t5/supply-chain-management-q-a/new-to-sap-learning-looking-for-guidance-on-getting-started/qaq-p/14492984",
+   "published": "2026-09-27T19:16:12+00:00",
+   "author": "Gideon_123",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello everyone, \n I’m new to the SAP Learning platform and would appreciate some guidance on how to get started. I would like to understand how to choose the right learning path or course, navigate the platform, track my progress, and make the best use of the available learning resources. \n If you are experienced with SAP Learning, I would be grateful for any tips or recommendations on where a beginner should start and how to plan their learning journey effectively. \n Thank you in advance for your advice and support."
+  },
+  {
+   "key": "0b83e2179037b0fc",
+   "title": "New learner",
+   "link": "https://community.sap.com/t5/financial-management-q-a/new-learner/qaq-p/14492934",
+   "published": "2026-09-27T16:09:17+00:00",
+   "author": "BHAVYA_51",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello SAP Community, I'm new to SAP and exploring the Financial Management track, specifically Autonomous Finance, Joule for Finance, and S/4HANA Finance. My background is in Wealth Management / Finance. I have a good understanding of financial processes, but I am new to SAP implementation. I would love guidance from the community on: 1. What is the best Learning Journey to start for Autonomous Finance? 2. Which certifications / courses are most valued for beginners in Finance? 3. Which groups or mentors should I follow here for Finance updates? Thank you for welcoming new learners. Looking forward to learning and contributing. #AutonomousFinance #S4HANA Finance #Joule"
+  },
+  {
+   "key": "308501c3764548d2",
+   "title": "Settlement Rules for 22252 & 22253",
+   "link": "https://community.sap.com/t5/crm-and-cx-q-a/settlement-rules-for-22252-amp-22253/qaq-p/14492891",
+   "published": "2026-09-27T15:13:15+00:00",
+   "author": "Somanagouda",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "We are attempting to update a couple of order numbers Settlement Rules (22252 & 22253). Using 22253 as an example when we attempted to add a new rule, we noticed that rule #1 did not have a start date so we added that and it saved. However, when we went to add rule #2 it allowed us to add it but then when we attempt to Save it attempts the save process then the rule we added disappears and only shows Rule #1. We have got out of the screen and come back in only to fine Rule #1 only. We also attempted to Create the Rule #2 by using the Create button along with trying the Copy Rule #1 option both did the same once saved the rule disappears. \n\n Could you please provide me the solution here. \n SAP S4HANA 2023 Fiori"
+  },
+  {
+   "key": "f66bdc00805c76b5",
+   "title": "Sap logon pad v800 is not able to use landscape file generated by v700",
+   "link": "https://community.sap.com/t5/technology-q-a/sap-logon-pad-v800-is-not-able-to-use-landscape-file-generated-by-v700/qaq-p/14492860",
+   "published": "2026-09-27T10:30:40+00:00",
+   "author": "Shubh23",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi \n Recently we have created new AVD windows 11 machine and in that we are using SAP logon pad v800. Earlier we had windows 10 machine and logon pad v700 something. In windows 11 when user is login with same fslogix profile he is not able to see the system details which he added manually. I'm suspecting this because of landscape file containing header like genarted by v770. We have one common landscape file also for all users that was containing the same text genearted by v770 and we were getting the error message whenever we try to open the log on pad as soon as we remove that genarted by v700 line that error was resolved. \n Do we have any solution for this?"
+  },
+  {
+   "key": "3bf62960c46c1e30",
+   "title": "Deleting the Inactive Success Factors users from IAS",
+   "link": "https://community.sap.com/t5/technology-q-a/deleting-the-inactive-success-factors-users-from-ias/qaq-p/14492859",
+   "published": "2026-09-27T10:21:14+00:00",
+   "author": "Hari_Bhaskar03",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear All, \n We are in the process of implementing IAS based login method for our onboardees as SAP is going to deprecate the Basic Authentication method of onboarding from November-2026 \n After configuring the setup, we noticed that only new hire onboardees were receiving welcome email notifications from IAS, but the rehire onboardees were not receiving any welcome email notifications. \n Upon further checking ( https://me.sap.com/notes/3582841 ), we understand that IAS considers rehire onboardees as an update to the existing employee, as in IAS these records are still present as active, though it is inactive in SuccessFactors (Terminated). \n We then come across the following KBA and accordingly configured the system, which resulted in the deletion of records from IAS (Inactive records in SF were deleted in IAS) \n https://me.sap.com/notes/0003017663 \n However, the steps mentioned in the KBA seems to be a manual activity. Each time, when we want to delete an entry in IAS, we have to follow the KBA. \n We want the user record to be deleted from IAS, the moment, employee is terminated in SuccessFactors. Is there any automation / background job that we can build on it. \n Will this property- ips.delete.existedbefore.entities is set to true in the Target system handle the automation going forward ? \n Morever, we always use \"re-hire with old employment\". \n Kindly advice. \n Thanks \n Hari"
+  },
+  {
+   "key": "cf2aefec1231d919",
+   "title": "#certification system based assessment frequent error",
+   "link": "https://community.sap.com/t5/technology-q-a/certification-system-based-assessment-frequent-error/qaq-p/14492847",
+   "published": "2026-09-27T08:03:48+00:00",
+   "author": "zerihun",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "I am posting to raise awareness and ask if anyone else has experienced a technical issue with the SAP Certified Application Associate – Sourcing and Procurement (C_TS452) System-Based Assessment (SyBA). The Issue During recent attempts on the same day, after making extensive corrections to task-level activities (master data configuration, purchasing setups, and transactional postings like GR/MIRO), the assessment repeatedly returned an identical score of 72.86%. Even more concerning, a colleague from our organization completed an independent attempt with different workflow corrections, and received the exact same score percentage (72.86%) down to the decimal point. Why This Indicates a Systemic / Platform Issue Given that the task execution differed significantly across these attempts, receiving the exact same score strongly points toward a backend platform defect rather than a candidate error. Specifically: Cached Tenant Snapshots: The evaluation engine may be pulling from a frozen, cached snapshot instead of querying live database updates. Script Execution Exceptions: The background automated grading script may be hitting an uncaught exception on specific user profiles, halting early and defaulting to a static baseline score. Environment Caching: Same-day re-attempts might not be refreshing dynamic tenant namespaces properly between sessions. Current Status & Questions for the Community We have logged an official support ticket and escalated via the Customer Interaction Center (CIC) to request a technical log audit for our P-IDs. Has anyone in the community encountered static/identical scores across different attempts on S/4HANA system-based exams recently? How long did SAP Certification Operations take to audit backend evaluation scripts and restore affected attempt credits in your case? Any insights from community mentors, SAP Education representatives, or fellow candidates who faced similar SyBA evaluation glitches would be greatly appreciated. Thank you!"
+  },
+  {
+   "key": "def0a250062a2aa1",
+   "title": "Hello, I am new to SAP & will be giving THR81 - SF exam. Has anybody given ? Any tips?",
+   "link": "https://community.sap.com/t5/sap-learning-q-a/hello-i-am-new-to-sap-amp-will-be-giving-thr81-sf-exam-has-anybody-given/qaq-p/14492632",
+   "published": "2026-09-26T11:18:05+00:00",
+   "author": "SagarikaKakria",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello, I am new to SAP & will be giving THR81 - SF exam. Has anybody given ? Any tips please? Thank you!"
+  }
+ ],
+ "triage": {
+  "0": {
+   "i": 0,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Product overview of SAP Business Data Cloud capabilities and benefits."
+  },
+  "1": {
+   "i": 1,
+   "category": "Developer Tools & DevOps",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "MDK 26.9 release announcement without technical development guidance."
+  },
+  "2": {
+   "i": 2,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Marketing overview of SAP Business AI Platform autonomous suite vision."
+  },
+  "3": {
+   "i": 3,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Joule Agent functional use case for Plant Maintenance natural language operations."
+  },
+  "4": {
+   "i": 4,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "App configuration issue with Record Time option in Perform Maintenance Jobs."
+  },
+  "5": {
+   "i": 5,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Business process comparison of demand change handling in standard SAP systems."
+  },
+  "6": {
+   "i": 6,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "SAP Inside Track Porto 2026 event announcement with community networking."
+  },
+  "7": {
+   "i": 7,
+   "category": "Fiori & UI5",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Step-by-step guide integrating BAS with S/4HANA Cloud for Fiori development."
+  },
+  "8": {
+   "i": 8,
+   "category": "RAP",
+   "in_scope": true,
+   "importance": 5,
+   "one_liner": "End-to-end RAP business object and UI5 app development with S/4HANA deployment."
+  },
+  "9": {
+   "i": 9,
+   "category": "Developer Tools & DevOps",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Troubleshooting ADT for VS Code Eclipse link integration on BTP ABAP environment."
+  },
+  "10": {
+   "i": 10,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "SAP Reference Architecture for Agentic AI with MCP and A2A agent patterns."
+  },
+  "11": {
+   "i": 11,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "HANA Native Storage Extension production implementation at scale with BW."
+  },
+  "12": {
+   "i": 12,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "NSE configuration, buffer cache management, and monitoring for BW systems."
+  },
+  "13": {
+   "i": 13,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Conceptual discussion on AI hallucinations in enterprise technology adoption."
+  },
+  "14": {
+   "i": 14,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Cost allocation strategy for delivery charges on damaged goods in procurement."
+  },
+  "15": {
+   "i": 15,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Business role app deactivation constraints in S/4HANA Public Cloud IAM."
+  },
+  "16": {
+   "i": 16,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "SAP Learning Hub license assignment issue for deleted S-ID."
+  },
+  "17": {
+   "i": 17,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Fixed asset depreciation configuration error for fiscal year 2026."
+  },
+  "18": {
+   "i": 18,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Repeated failure on SAP Certification C_LCNC_2601 system-based assessment exam."
+  },
+  "19": {
+   "i": 19,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Consolidation reclassification method configuration returning no data."
+  },
+  "20": {
+   "i": 20,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Profit center missing for cleared items in customer line item display transaction."
+  },
+  "21": {
+   "i": 21,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "CO-PA characteristics not copying from sales contract to sales order documents."
+  },
+  "22": {
+   "i": 22,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "US state and local sales tax configuration in S/4HANA SD module."
+  },
+  "23": {
+   "i": 23,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "S/4HANA upgrade failure during shadow instance database migration phase."
+  },
+  "24": {
+   "i": 24,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Material data inconsistency between sales order and inventory management records."
+  },
+  "25": {
+   "i": 25,
+   "category": "OData, APIs & Integration",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "POS Sales Transaction API unit of measure rejection error troubleshooting."
+  },
+  "26": {
+   "i": 26,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Devtoberfest gamification feedback on point caps and daily consistency rewards."
+  },
+  "27": {
+   "i": 27,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Certification training for SAP Business AI Platform positioning and concepts."
+  },
+  "28": {
+   "i": 28,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Practitioner comparison of n8n vs Integration Suite for enterprise workflows."
+  },
+  "29": {
+   "i": 29,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "RFQ approval workflow configuration issue blocking quotation creation."
+  },
+  "30": {
+   "i": 30,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Warehouse management physical inventory count workflow after bulk document creation."
+  },
+  "31": {
+   "i": 31,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "SAC story balance control for CAPEX budget validation and threshold alerts."
+  },
+  "32": {
+   "i": 32,
+   "category": "Developer Tools & DevOps",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Crystal Reports export method failure after runtime upgrade to 13.0.26.3348."
+  },
+  "33": {
+   "i": 33,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "WBS settlement and asset assignment in project accounting configuration."
+  },
+  "34": {
+   "i": 34,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Crystal Reports licensing requirements for multiple production and test systems."
+  },
+  "35": {
+   "i": 35,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Retrieve parameters from Cloud ALM Test Automation API for external reporting."
+  },
+  "36": {
+   "i": 36,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Confirm availability of standard APIs for fixed asset retirement and transfer operations."
+  },
+  "37": {
+   "i": 37,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Student seeking SAP certification recommendation for S/4HANA QM specialization."
+  },
+  "38": {
+   "i": 38,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Guidance on navigating SAP Learning platform for new learners."
+  },
+  "39": {
+   "i": 39,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Career guidance for new learner on Autonomous Finance and Joule in S/4HANA."
+  },
+  "40": {
+   "i": 40,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Settlement rules configuration and save issue for order cost allocation."
+  },
+  "41": {
+   "i": 41,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "SAP Logon Pad v800 landscape file compatibility issue with v700 profiles."
+  },
+  "42": {
+   "i": 42,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "IAS configuration for removing inactive SuccessFactors user accounts."
+  },
+  "43": {
+   "i": 43,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "SAP Certification C_TS452 system-based assessment technical error reporting."
+  },
+  "44": {
+   "i": 44,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Exam preparation advice for THR81 SuccessFactors certification exam."
+  }
+ },
+ "deep": {
+  "8": {
+   "summary": "This blog promises an end-to-end guide to building and deploying RAP-based UI5 applications to SAP S/4HANA Cloud Public Edition. It covers the RAP business object creation, service exposure, UI5 development, and cloud deployment steps. However, the excerpt provided contains only the high-level outline—no concrete code, object names, or specific technical patterns are shown.",
+   "key_points": [
+    "RAP business object creation and design",
+    "Service exposure via OData/REST",
+    "UI5 application development workflow",
+    "S/4HANA Cloud Public Edition deployment",
+    "End-to-end development lifecycle",
+    "Cloud-first development patterns"
+   ],
+   "technical_details": [
+    "RAP (Restful Application Programming)",
+    "UI5 (SAPUI5/OpenUI5)",
+    "S/4HANA Cloud Public Edition",
+    "Service exposure (OData/REST)",
+    "Business object composition"
+   ],
+   "why_it_matters": "RAP is the modern way to expose business logic in S/4HANA 2023+. This covers the full cycle from backend to deployed cloud app, which your trainees need to understand for production work.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How to develop and deploy a RAP-based custom UI5 application to SAP S/4HANA Cloud Public Edition",
+   "teaching_angle": "Use as a reference outline for a workshop on cloud-native S/4HANA development, but supplement with live coding. Ask trainees to identify where service authoring, data binding, and security configuration fit into each step.",
+   "quality": 2
+  },
+  "7": {
+   "summary": "A procedural guide to connecting SAP Business Application Studio (BAS) to SAP S/4HANA Cloud Public Edition for Fiori development. Covers trust configuration, BAS setup, cloud connectivity, and creating Dev Spaces. The excerpt provides only the scope statement and does not show configuration steps, trust certificate exchange details, or specific BAS/Eclipse settings.",
+   "key_points": [
+    "Trust configuration between BAS and S/4HANA Cloud",
+    "BAS setup and initialization",
+    "Cloud tenant connectivity",
+    "Dev Space creation for Fiori",
+    "Infrastructure prerequisites",
+    "Connectivity validation"
+   ],
+   "technical_details": [
+    "SAP Business Application Studio (BAS)",
+    "SAP S/4HANA Cloud Public Edition",
+    "Dev Space (project workspace)",
+    "Trust configuration",
+    "SAP Fiori tools",
+    "Cloud identity and access"
+   ],
+   "why_it_matters": "BAS is the standard IDE for cloud-based SAP development. Understanding trust and connectivity is essential for teams moving to S/4HANA Cloud, but this guide lacks the granular detail your advanced trainees need.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How to establish trusted connectivity between SAP Business Application Studio and S/4HANA Cloud Public Edition for remote Fiori development",
+   "teaching_angle": "Walk through trust certificate exchange and OAuth flows during this lesson. Have trainees explain why trust is needed and how it differs from on-premise authentication. Use this as a checkpoint for environment readiness.",
+   "quality": 2
+  },
+  "10": {
+   "summary": "A technical deep dive into SAP's Reference Architecture for Agentic AI, explaining the split between SAP-managed Business AI Platform (Joule Work, Signavio, LeanIX, AI Agent Hub) and customer-managed SAP BTP subaccounts (Generative AI Hub, Integration Suite). The post clarifies that the Model Context Protocol (MCP) Gateway resides within SAP Integration Suite as a translation layer wrapping business objects into semantic tools for agents. It also explains Agent-to-Agent (A2A) connectivity for multi-agent orchestration, dynamic task delegation, and Bring Your Own Agent (BYOA) patterns.",
+   "key_points": [
+    "MCP Gateway is housed within SAP Integration Suite, not API Management",
+    "MCP wraps business objects, ABAP functions, and OData schemas as semantic tools",
+    "A2A enables multi-agent orchestration and dynamic task delegation",
+    "Business AI Platform (SAP-managed) vs customer-managed BTP subaccount split",
+    "Joule Work as the execution orchestrator with Joule Studio for MCP mapping",
+    "BYOA (Bring Your Own Agent) capability via open enterprise messaging standards"
+   ],
+   "technical_details": [
+    "Model Context Protocol (MCP) Gateway",
+    "SAP Integration Suite (formerly CPI)",
+    "Joule Work and Joule Studio",
+    "AI Agent Hub",
+    "Agent-to-Agent (A2A) Engine",
+    "Generative AI Hub",
+    "SAP Signavio, SAP LeanIX",
+    "OData/REST adapter wrapping"
+   ],
+   "why_it_matters": "This defines where AI agent tooling sits in SAP's architecture. For your community and trainees, this is essential reading to understand how autonomous workflows will interact with S/4HANA going forward—a shift from static APIs to dynamic, agent-driven integration.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Where does the Model Context Protocol (MCP) reside in SAP architecture and how does Agent-to-Agent connectivity enable enterprise automation?",
+   "teaching_angle": "Use this to teach the architectural shift from request-response patterns to autonomous agent patterns. Have trainees map existing iFlow logic to MCP tool definitions and A2A message flows. Discuss governance implications when agents act without human validation.",
+   "quality": 4
+  },
+  "28": {
+   "summary": "A practitioner's comparison of n8n (open-source, low-code automation platform) versus SAP Integration Suite, arguing they are complementary, not competitive. The post shows that SAP Integration Suite excels at enterprise reliability, deep SAP connectivity (IDoc, RFC, OData, SuccessFactors/Ariba adapters), governance, complex transformations (XML, XSLT, EDI), and B2B scenarios, while n8n excels at rapid prototyping, AI workflows, webhook processing, and lightweight automation. The author concludes enterprises will run both platforms for different purposes.",
+   "key_points": [
+    "SAP Integration Suite is mission-critical for enterprise SAP and B2B integrations",
+    "n8n is optimal for AI workflows, rapid prototyping, and citizen development",
+    "Enterprise reliability, governance, and compliance favor SAP Integration Suite",
+    "Complex XML/XSLT/EDI transformations are SAP Integration Suite strengths",
+    "n8n weak on deep SAP connectivity and B2B/EDI standards",
+    "Co-existence strategy is the winning architecture"
+   ],
+   "technical_details": [
+    "SAP Integration Suite (formerly CPI / Cloud Integration)",
+    "n8n (open-source workflow platform)",
+    "IDoc connectivity",
+    "RFC connectivity",
+    "OData integration",
+    "XML mapping and XSLT transformations",
+    "EDI standards processing",
+    "SuccessFactors and Ariba adapters"
+   ],
+   "why_it_matters": "Clarifies that integration platform selection is use-case driven. For your enterprise-focused trainees, this is practical ammunition for architecture decisions: when to use SAP's native platform vs when to experiment with lighter tools. Prevents false positioning of n8n as a replacement.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Should organizations use n8n to replace SAP Integration Suite iFlows for enterprise integrations?",
+   "teaching_angle": "Use this for decision-making workshops. Have trainees map their current iFlow use cases to the comparison matrix—which ones are mission-critical vs experimental? Discuss trade-offs: speed to market (n8n) vs. governance maturity (SAP). This is a live architecture decision your WhatsApp community faces.",
+   "quality": 4
+  },
+  "9": {
+   "summary": "A developer reports a technical issue: ADT for VS Code's 'Open with ADT for Eclipse' feature fails because the system cannot find the Eclipse installation. There is no visible configuration option to specify the Eclipse path. The error message is unclear. This is a support question seeking either a solution or confirmation that others face the same problem.",
+   "key_points": [
+    "ADT for VS Code Eclipse integration broken",
+    "No configuration UI for Eclipse path specification",
+    "ADT link protocol handler cannot locate Eclipse",
+    "Error messaging unhelpful",
+    "Affects ABAP BTP trial developers",
+    "Environment PATH or registry issue suspected"
+   ],
+   "technical_details": [
+    "ADT for VS Code",
+    "ABAP environment on BTP trial",
+    "Eclipse IDE",
+    "adt:// link protocol handler",
+    "VS Code settings/configuration"
+   ],
+   "why_it_matters": "ADT for VS Code is the modern development environment for your trainees. This gap between VS Code and Eclipse indicates an incomplete IDE integration that could frustrate learners in your workshops.",
+   "is_release_or_announcement": false,
+   "developer_problem": "ADT for VS Code cannot locate or launch Eclipse when using the 'Open with ADT for Eclipse' feature",
+   "teaching_angle": "This is a troubleshooting case study waiting to be resolved. Once answered, it becomes valuable documentation. For now, use it to teach environment configuration debugging and link handler troubleshooting.",
+   "quality": 1
+  },
+  "35": {
+   "summary": "A developer seeking to extract SAP Cloud ALM Test Automation API data for Power BI reporting asks how to retrieve required parameters (projectId, scopeId, jobId) for existing test executions. Their use case is to retrieve historical execution data from tests already run via the SAP Test Automation Tool (TAT) UI, not executions initiated via API. They ask whether the Test Case Execution API supports this or if another Cloud ALM API is recommended.",
+   "key_points": [
+    "Parameter discovery for Cloud ALM APIs is not documented",
+    "Need to retrieve historical execution data, not just trigger new runs",
+    "Distinction between API-initiated vs UI-initiated test runs unclear",
+    "Power BI integration for test execution reporting",
+    "Job status and execution history endpoints exist but parameter source unclear",
+    "Gap in API documentation for reporting use cases"
+   ],
+   "technical_details": [
+    "SAP Cloud ALM Test Automation API",
+    "Test Case Execution API",
+    "projectId, scopeId, jobId parameters",
+    "Execution history endpoints",
+    "Job status endpoints",
+    "SAP Test Automation Tool (TAT)",
+    "Cloud ALM test result reporting"
+   ],
+   "why_it_matters": "Cloud ALM is SAP's cloud-native quality management solution. Extracting test data programmatically for dashboards is a real-world use case, but the API documentation appears to have gaps. This affects your trainees' ability to integrate test reporting into BI tools.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How to retrieve historical test execution data and required API parameters from SAP Cloud ALM for external BI reporting?",
+   "teaching_angle": "This exposes API discovery and parameter mapping challenges. Use it to teach API documentation navigation and how to reverse-engineer required parameters when docs are incomplete. Have trainees discuss where parameters are typically sourced (metadata endpoints, UI inspection, support channels).",
+   "quality": 2
+  },
+  "36": {
+   "summary": "A consultant asks SAP Support whether standard APIs are available for Fixed Asset retirement and transfer processes in S/4HANA Cloud Public Edition. The questioner references a prior SAP Community blog mentioning APIs for retrieval and deletion but explicitly states they cannot find clear documentation on retirement and transfer APIs. They request confirmation of availability, specific API names, and relevant documentation links.",
+   "key_points": [
+    "Asking about standard API availability for specific Fixed Asset business processes (retirement, transfer)",
+    "Platform context: S/4HANA Cloud Public Edition (not on-premise)",
+    "Aware that some Fixed Asset APIs exist (retrieval, deletion) but retirement/transfer unclear",
+    "Explicitly seeking API names and documentation references",
+    "Integration and API-driven architecture concern for cloud adoption",
+    "Highlights potential gap between available and required standard APIs"
+   ],
+   "technical_details": [
+    "S/4HANA Cloud Public Edition",
+    "Fixed Asset Management (FA/FI module)",
+    "API types: retrieval, deletion, retirement, transfer",
+    "No specific API names mentioned in post (that is the gap being asked about)"
+   ],
+   "why_it_matters": "This is a real architectural decision point: when modernizing to cloud or integrating with S/4HANA, developers must know which business processes have standard APIs and which require custom development. The Fixed Asset retirement/transfer gap is a legitimate concern because these are common transactional flows. For trainers, this exposes how API coverage shapes integration strategy and when RAP or OData custom services become necessary.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Determining whether standard APIs exist for Fixed Asset retirement and transfer operations in S/4HANA Cloud Public Edition, and if not, what alternatives to use.",
+   "teaching_angle": "Use this to discuss API research methodology: how to navigate SAP Help Portal, SAP API Hub, and community resources to confirm feature availability. Also teaches architects to map business processes against available APIs during requirements analysis and to budget custom development early when gaps are identified. Good case study for 'what do you do when the standard API doesn't exist?'",
+   "quality": 2
+  }
+ },
+ "digest": {
+  "class_idea": {
+   "title": "From RAP Business Object to Deployed Fiori Elements App on S/4HANA Cloud Public Edition",
+   "why_now": "Two SAP-authored blogs today (refs 8, 7) sketch this exact pipeline - RAP BO to UI5 to cloud deployment, and BAS-to-tenant trust setup - but both stop at outline level with no concrete steps, annotations, or trust configuration shown. Your trainees need the gaps filled with a real, tested walkthrough.",
+   "outline": [
+    "Recap RAP BO anatomy: interface CDS view, behavior definition, projection view - what each layer is responsible for",
+    "Service definition and OData V4 exposure - why this is a separate step from the BO itself",
+    "BAS Dev Space creation and trust configuration to a Cloud Public Edition tenant (the gap in ref 7)",
+    "SAPUI5/Fiori Elements app scaffold via Fiori tools, binding to the exposed service",
+    "Deployment via mta.yaml/BAS to the cloud tenant (the gap in ref 8)",
+    "Common failure points: service activation, authorization defaults, business catalog assignment, trust certificate mismatches"
+   ],
+   "exercise": "Build a minimal RAP BO on a Z-table (single entity, no associations), expose it via OData V4, then use BAS to establish trust with a trial S/4HANA Cloud Public Edition tenant and deploy a bare Fiori Elements list report end-to-end. Document every configuration or trust step that SAP's blogs (refs 8, 7) omitted, and compare notes as a group.",
+   "refs": [
+    8,
+    7
+   ]
+  },
+  "deep_dives": [
+   {
+    "title": "RAP-Based UI5 Apps on S/4HANA Cloud Public Edition: What the Guide Shows and What It Skips",
+    "explanation": "Ref 8 lays out the standard sequence for shipping a custom app on S/4HANA Cloud Public Edition: build the RAP business object, expose it as a service, build the UI5 frontend, and deploy to the cloud tenant. Ref 7 covers the prerequisite most teams underestimate - getting SAP Business Application Studio (BAS) trusted and connected to the target tenant in the first place, including Dev Space creation and cloud connectivity validation. Together they describe a coherent lifecycle, but as published, both stop at the scope statement. Neither post, per the material reviewed, shows the actual CDS annotations, behavior definition syntax, service binding configuration, or the trust certificate exchange steps that make the difference between a working deployment and a stuck one.\n\nThis matters because the RAP-to-Fiori pipeline has several handoff points where things commonly break: the service definition/binding step decouples the business object from any single consumer, which is why the same BO can back a UI5 app, an OData API, and a Fiori Elements list report simultaneously - but that decoupling also means a missing or misconfigured service binding is a very common failure mode that a pure `outline` doesn't help you debug. Similarly, BAS-to-cloud trust setup (ref 7) is an OAuth/certificate-based handshake distinct from on-premise Eclipse-to-backend RFC trust, and skipping the detail here is exactly where teams new to cloud development get stuck for hours.\n\nFor training purposes, treat both blogs as a checklist of milestones, not as executable instructions. Before presenting this to trainees, walk the full BO-to-deployed-app path yourself on a trial tenant, capture the actual `@AccessControl`, `@ObjectModel` annotations and the `mta.yaml` deployment descriptor, and layer that onto the outline. The value of these two posts is in sequencing the work correctly - business object first, service exposure second, trust and Dev Space third, UI5 binding fourth, deployment last - not in providing copy-paste code.\n\nThe practical takeaway for consultants: when a client asks 'can we build a custom UI5 app on Cloud Public Edition,' the answer's complexity lives almost entirely in the parts these two posts don't show - trust configuration and service exposure edge cases - not in the RAP business object itself, which most experienced ABAP developers can already build.",
+    "key_concepts": [
+     "RAP business object composition",
+     "Service definition and OData V4 binding",
+     "BAS Dev Space and trust configuration",
+     "UI5 data binding to a RAP-exposed service",
+     "Cloud deployment via BAS/mta.yaml"
+    ],
+    "refs": [
+     8,
+     7
+    ]
+   },
+   {
+    "title": "ADT for VS Code Can't Hand Off to Eclipse - What's Actually Failing",
+    "explanation": "Ref 9 describes a specific, reproducible problem on an ABAP BTP trial system: when a developer uses ADT for VS Code and triggers an `adt://` link that's meant to open in ADT for Eclipse, VS Code fails to locate the Eclipse installation, and there is no visible settings field to point it at one. The error message doesn't explain what's missing. This is a small but telling gap in what is otherwise SAP's push to make VS Code a first-class ABAP IDE.\n\nThe underlying mechanism is worth understanding even without a fix confirmed: `adt://` is a custom URI protocol handler. On Eclipse-based ADT, the IDE itself registers as the handler for that protocol at the OS level. ADT for VS Code, being a separate extension built on a different platform, needs either its own handler registration or a way to shell out to a locally installed Eclipse. If Eclipse was installed after VS Code, or is in a non-standard path, or the OS-level protocol registration was never created, the handoff has nothing to find - and because this is an OS/registry-level dependency rather than a VS Code setting, there's no obvious in-app fix to expose.\n\nThis also surfaces a broader point for teams standardizing tooling: ADT for VS Code and ADT for Eclipse are not yet fully interchangeable. Certain artifacts or workflows apparently still assume an Eclipse target is reachable, meaning teams can't yet treat VS Code as a complete Eclipse replacement for every scenario - some features route through Eclipse regardless of which IDE the developer started in.\n\nFor a workshop, this is a good live troubleshooting exercise precisely because it's unresolved: have trainees check whether Eclipse is installed and on PATH, inspect OS-level protocol handler registrations for `adt://`, and document what VS Code's extension actually needs to make the redirect work. Whether or not they find a fix, the exercise teaches systematic IDE-integration debugging rather than guesswork.",
+    "key_concepts": [
+     "adt:// custom protocol handler",
+     "ADT for VS Code vs ADT for Eclipse feature parity",
+     "OS-level URI handler registration",
+     "IDE interoperability troubleshooting"
+    ],
+    "refs": [
+     9
+    ]
+   },
+   {
+    "title": "SAP's Agentic AI Blueprint: Where MCP and A2A Actually Sit",
+    "explanation": "Ref 10 gives the clearest architectural statement so far on how SAP's agentic AI stack maps onto existing BTP components. The key clarification: the Model Context Protocol (MCP) Gateway is not a new standalone service or part of API Management - it lives inside SAP Integration Suite. Its job is to wrap existing business objects, ABAP function modules, and OData schemas as 'semantic tools' that an AI agent can discover and call, essentially translating your existing RFC/OData interfaces into a format an LLM-driven agent can reason about and invoke.\n\nThe post also draws a line between SAP-managed and customer-managed territory. Business AI Platform capabilities - Joule Work, Signavio, LeanIX, AI Agent Hub - are SAP-managed. Generative AI Hub and Integration Suite sit in the customer's own BTP subaccount, meaning the MCP wrapping work happens in infrastructure the customer configures and owns, not in a black box. Joule Work is described as the execution orchestrator, while Joule Studio is where the actual mapping of business objects to MCP tools happens - this is the console where an integration developer would define which OData service or function module becomes an agent-callable tool.\n\nAgent-to-Agent (A2A) connectivity is the second pillar: it enables multiple agents to communicate, delegate tasks dynamically, and coordinate multi-step workflows rather than each agent operating in isolation against a single API. The post also mentions Bring Your Own Agent (BYOA) - the ability to plug a non-SAP agent into this architecture via open enterprise messaging standards, rather than being locked into SAP-built agents only.\n\nThe practical implication for integration developers: the skill of writing an iFlow to expose an OData service doesn't disappear - it becomes the prerequisite for making that service agent-discoverable via MCP. The governance question worth raising with any team building on this is: what happens when an A2A-orchestrated agent chain triggers a write operation in S/4HANA without a human in the loop at any step - the post raises the pattern but the governance model for validation isn't detailed here and needs to be worked out per landscape.",
+    "key_concepts": [
+     "MCP Gateway hosted in SAP Integration Suite",
+     "Semantic tool wrapping of OData/ABAP function modules",
+     "A2A multi-agent orchestration and task delegation",
+     "Joule Work (orchestrator) vs Joule Studio (mapping console)",
+     "BYOA via open enterprise messaging standards",
+     "SAP-managed Business AI Platform vs customer-managed BTP subaccount"
+    ],
+    "refs": [
+     10
+    ]
+   }
+  ],
+  "headline": "A quiet day for core ABAP code - the real news is architectural: SAP places MCP inside Integration Suite, and community questions expose real API and tooling gaps.",
+  "interview_questions": [
+   {
+    "question": "In a RAP-based UI5 app, why is 'service exposure' treated as a distinct step from building the business object itself, and what breaks if you skip it or misconfigure it?",
+    "answer": "The RAP business object is the data and behavior layer - entity structure, associations, determinations, validations - but it has no consumer-facing contract on its own. A service definition and binding are what turn that BO into something an OData V4 client, like a UI5 app or an external API consumer, can actually call. This decoupling is intentional: the same BO can back a UI5 transactional app, a read-only Fiori Elements report, and an external OData API simultaneously, each through its own service binding. If the service definition is missing entities, or the binding isn't activated, the UI5 app will fail at metadata load or show missing fields, even though the underlying BO is perfectly correct - so this handoff point is one of the most common places a RAP deployment breaks.",
+    "level": "Mid-level",
+    "refs": [
+     8
+    ]
+   },
+   {
+    "question": "Where does SAP's Model Context Protocol Gateway sit in the BTP architecture, and what does that mean for how you'd expose an existing OData service to an AI agent?",
+    "answer": "The MCP Gateway is hosted inside SAP Integration Suite, not SAP API Management and not as a separate standalone agent service. It works by wrapping existing business objects, ABAP function modules, and OData schemas as 'semantic tools' that an agent can discover and invoke, with the actual tool mapping done in Joule Studio. Practically, this means exposing an OData service to an agent isn't a new integration pattern from scratch - it's an extension of Integration Suite work you're already doing, following the same governance and versioning discipline as any other iFlow. It also means the customer retains control of this mapping layer inside their own BTP subaccount, rather than it being managed entirely by SAP.",
+    "level": "Senior",
+    "refs": [
+     10
+    ]
+   },
+   {
+    "question": "A client is evaluating n8n as a replacement for their SAP Integration Suite iFlows to cut licensing cost. How would you frame the architectural trade-off?",
+    "answer": "Frame it by use-case criticality rather than cost alone. Integration Suite is built for deep native SAP connectivity - IDoc, RFC, OData to S/4HANA - plus complex XML/XSLT transformations, EDI/B2B standards, and enterprise governance and compliance controls that regulated processes need. n8n is strong for rapid prototyping, AI-driven workflow automation, and lightweight webhook-based integrations where governance overhead would slow delivery unnecessarily. The right architecture typically runs both: n8n for experimentation and non-critical automation, Integration Suite for anything that touches core transactional SAP data or has compliance requirements. Recommending a wholesale replacement of Integration Suite with n8n for mission-critical flows would trade governance and reliability for short-term cost savings, which is usually the wrong trade at enterprise scale.",
+    "level": "Architect",
+    "refs": [
+     28
+    ]
+   }
+  ],
+  "overview": "Today's material is light on core ABAP code or RAP/CDS patterns - the strongest technical content is architectural. SAP's Agentic AI reference architecture blog (ref 10) is the clearest statement yet on where the Model Context Protocol Gateway and Agent-to-Agent connectivity actually live in BTP: inside Integration Suite, not as a new standalone service. A separate practitioner post (ref 28) gives a grounded, non-hype comparison of n8n against SAP Integration Suite for integration architecture decisions.\n\nTwo SAP-authored blogs (refs 8, 7) sketch the RAP-to-UI5-to-cloud-deployment pipeline and the BAS-to-tenant trust setup needed to build on it, but both stay at outline level without showing concrete configuration or code. Three unresolved community questions round out the day: ADT for VS Code's broken handoff to Eclipse (ref 9), missing parameter-discovery documentation for the Cloud ALM Test Automation API (ref 35), and unconfirmed standard API coverage for Fixed Asset retirement and transfer in S/4HANA Cloud Public Edition (ref 36). None of today's items are finished guidance - treat them as starting points to validate, not standalone tutorials.",
+  "post_drafts": [
+   {
+    "title": "Where does MCP actually live in SAP's architecture?",
+    "text": "*MCP Gateway is NOT part of API Management.*\nIt lives inside SAP Integration Suite.\n\nSAP's Agentic AI blueprint clarifies:\n- MCP wraps your OData services, ABAP function modules & business objects as *semantic tools* for AI agents\n- A2A (Agent-to-Agent) handles multi-agent orchestration & task delegation\n- Joule Studio is where you map those tools\n- BYOA (bring your own agent) works via open enterprise messaging standards\n\nIf you're writing iFlows today, this is where agent integration plugs in tomorrow.\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/blueprinting-sap-agentic-ai-mcp-amp-a2a/ba-p/14493036"
+   },
+   {
+    "title": "n8n won't replace your Integration Suite",
+    "text": "*n8n ≠ a drop-in replacement for SAP Integration Suite.*\nThey solve different problems.\n\nIntegration Suite wins on:\n- IDoc, RFC, OData connectivity to S/4\n- EDI, XSLT, complex B2B mapping\n- Governance & compliance\n\nn8n wins on:\n- Rapid prototyping\n- AI-driven workflows\n- Lightweight webhook automation\n\n*Verdict: run both.* n8n for experimentation, Integration Suite for anything touching core SAP data at scale.\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/why-n8n-workflows-will-not-replace-solid-sap-integration-suite-iflow/ba-p/14493100"
+   },
+   {
+    "title": "Three gaps devs are hitting this week",
+    "text": "Three unresolved issues worth knowing before you hit them yourself:\n\n1️⃣ *ADT for VS Code* can't find Eclipse for 'Open with ADT for Eclipse' links - no setting to point it at one.\n\n2️⃣ *Cloud ALM Test Automation API* - no clear doc on getting projectId/scopeId/jobId for *existing* test runs (only for triggering new ones).\n\n3️⃣ *S/4HANA Cloud Public Edition* - still no confirmed standard API for Fixed Asset retirement & transfer.\n\nIf you've cracked any of these, share it in the group.\n\nhttps://community.sap.com/t5/technology-q-a/adt-for-vs-code-get-an-app-to-open-this-adt-link/qaq-p/14492965"
+   }
+  ],
+  "releases": [],
+  "top_stories": [
+   {
+    "title": "SAP Clarifies: MCP Gateway Lives Inside Integration Suite, Not API Management",
+    "summary": "A technical deep dive into SAP's Agentic AI reference architecture explains that the Model Context Protocol Gateway sits within SAP Integration Suite, wrapping business objects, ABAP function modules, and OData schemas as semantic tools for AI agents. Agent-to-Agent (A2A) connectivity handles multi-agent orchestration and dynamic task delegation, with Joule Work as orchestrator and Joule Studio as the tool-mapping console. Business AI Platform components (Joule Work, Signavio, LeanIX, AI Agent Hub) are SAP-managed; Generative AI Hub and Integration Suite remain in the customer's own BTP subaccount.",
+    "why_it_matters": "This is the architectural anchor point for anyone building agent-facing integrations: exposing a service to an AI agent will run through the same Integration Suite governance you already use for iFlows, not a separate new platform.",
+    "priority": 1,
+    "refs": [
+     10
+    ]
+   },
+   {
+    "title": "n8n vs SAP Integration Suite: A Practitioner's Case for Coexistence",
+    "summary": "A comparison post argues n8n and SAP Integration Suite are complementary rather than competitive. Integration Suite is positioned for mission-critical enterprise and B2B integration - IDoc, RFC, OData connectivity, complex XML/XSLT/EDI transformations, and governance - while n8n suits rapid prototyping, AI-driven workflows, and lightweight webhook automation. The author's conclusion: enterprises should run both, matched to use-case criticality.",
+    "why_it_matters": "Gives a concrete decision framework for teams under pressure to adopt low-code automation tools without abandoning governance on core SAP integration flows.",
+    "priority": 2,
+    "refs": [
+     28
+    ]
+   },
+   {
+    "title": "RAP + BAS Cloud Tooling Guides Published - Scope-Level Only, No Implementation Detail",
+    "summary": "Two SAP-authored blogs outline the pipeline for building and deploying a RAP-based custom UI5 app to S/4HANA Cloud Public Edition, and for establishing trusted BAS-to-cloud connectivity beforehand. Both describe the sequence of steps - business object creation, service exposure, UI5 development, deployment; trust configuration, Dev Space setup, connectivity validation - without showing concrete code, annotations, or trust certificate exchange details in the material reviewed.",
+    "why_it_matters": "Signals SAP is documenting the cloud dev-to-deploy pipeline end to end, but consultants will need to test and fill gaps themselves before using either post as standalone training material.",
+    "priority": 2,
+    "refs": [
+     8,
+     7
+    ]
+   },
+   {
+    "title": "Community Flags Three Documentation and Tooling Gaps",
+    "summary": "Three unresolved questions surfaced this week: ADT for VS Code fails to locate Eclipse for its 'Open with ADT for Eclipse' feature with no path-configuration option; the SAP Cloud ALM Test Automation API lacks documentation on retrieving parameters (projectId, scopeId, jobId) for historical, UI-triggered test executions rather than newly initiated ones; and a consultant is seeking confirmation of standard APIs for Fixed Asset retirement and transfer in S/4HANA Cloud Public Edition, beyond the known retrieval/deletion APIs.",
+    "why_it_matters": "Each is a small but real blocker - IDE integration reliability, BI reporting integration, and cloud API-driven architecture decisions all depend on documentation SAP hasn't clearly published yet.",
+    "priority": 3,
+    "refs": [
+     9,
+     35,
+     36
+    ]
+   }
+  ],
+  "trending_problems": [
+   {
+    "theme": "API Documentation Doesn't Cover Discovery or Less-Common Processes",
+    "description": "Both the Cloud ALM Test Automation API question (ref 35) and the Fixed Asset retirement/transfer API question (ref 36) show the same pattern: SAP documents how to trigger or create standard actions, but leaves parameter discovery for existing/historical data, and coverage of less common business processes, unclear.",
+    "teaching_tip": "Teach a documentation-triage method: check SAP API Business Hub first, then community blogs, then raise an official incident - don't guess parameter names or assume an API doesn't exist without checking all three sources.",
+    "refs": [
+     35,
+     36
+    ]
+   },
+   {
+    "theme": "ADT Cross-IDE Interop Is Still Fragile",
+    "description": "The ADT for VS Code to Eclipse handoff fails silently via the adt:// link, with no visible path-configuration option, showing VS Code and Eclipse-based ADT are not yet fully interchangeable for every workflow.",
+    "teaching_tip": "Have trainees test the same task in both IDEs and document which features still force a redirect to Eclipse, then check OS-level protocol handler registration for adt://.",
+    "refs": [
+     9
+    ]
+   },
+   {
+    "theme": "SAP How-To Blogs Are Increasingly Outline-Only",
+    "description": "Both the RAP UI5 deployment guide (ref 8) and the BAS-to-cloud trust setup guide (ref 7) describe scope and step sequence at a high level, without showing actual configuration screens, CDS annotations, or trust certificate exchange details.",
+    "teaching_tip": "When using SAP community blogs as teaching material, walk the steps yourself first on a trial tenant - treat them as checklists, not scripts your trainees can follow verbatim.",
+    "refs": [
+     8,
+     7
+    ]
+   },
+   {
+    "theme": "Low-Code vs Enterprise Integration Positioning Confusion",
+    "description": "Teams evaluating n8n risk treating it as a drop-in Integration Suite replacement; ref 28 argues the real dividing line is governance/reliability requirements versus prototyping speed, not feature parity.",
+    "teaching_tip": "Run a decision-matrix exercise: list ten real iFlow use cases and have trainees classify each as n8n-suitable or Integration-Suite-mandatory, with justification tied to governance and connectivity needs.",
+    "refs": [
+     28
+    ]
+   }
+  ],
+  "whatsapp_highlights": "MCP Gateway lives inside SAP Integration Suite, not API Management - new Agentic AI blueprint (ref10) | n8n won't replace Integration Suite - run both, matched to use-case (ref28) | RAP+BAS cloud deployment guides published but scope-only, no code shown (refs8,7) | Community flags ADT-VSCode Eclipse bug, Cloud ALM API gaps, Fixed Asset API gaps (refs9,35,36)"
+ }
+}

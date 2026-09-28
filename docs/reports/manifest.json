@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-09-28",
+  "label": "Monday, 28 September 2026",
+  "headline": "A quiet day for core ABAP code - the real news is architectural: SAP places MCP inside Integration Suite, and community questions expose real API and tooling gaps.",
+  "items": 45,
+  "deep": 7
+ },
+ {
   "date": "2026-09-27",
   "label": "Sunday, 27 September 2026",
   "headline": "SAP formalizes Clean Core into a graded A-D classification, while two more blogs show AI-agent-to-SAP authentication is still held together by manual workarounds.",
