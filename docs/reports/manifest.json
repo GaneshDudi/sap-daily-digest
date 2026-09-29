@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-09-29",
+  "label": "Tuesday, 29 September 2026",
+  "headline": "Thin day for core ABAP: CONVERT_CURRENCY in SQLScript, Word generation from ABAP Cloud, two CSRF 403 threads, and MCP/agent tooling around RFC and BTP.",
+  "items": 94,
+  "deep": 23
+ },
+ {
   "date": "2026-09-28",
   "label": "Monday, 28 September 2026",
   "headline": "A quiet day for core ABAP code - the real news is architectural: SAP places MCP inside Integration Suite, and community questions expose real API and tooling gaps.",
