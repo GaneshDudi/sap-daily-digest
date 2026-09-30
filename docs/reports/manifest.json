@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-09-30",
+  "label": "Wednesday, 30 September 2026",
+  "headline": "A quiet day: HANA HEX rollout guidance, Database Explorer deprecation, a product rename, and RAP file-upload and Fiori-to-batch questions.",
+  "items": 79,
+  "deep": 14
+ },
+ {
   "date": "2026-09-29",
   "label": "Tuesday, 29 September 2026",
   "headline": "Thin day for core ABAP: CONVERT_CURRENCY in SQLScript, Word generation from ABAP Cloud, two CSRF 403 threads, and MCP/agent tooling around RFC and BTP.",
