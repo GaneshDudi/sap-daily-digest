@@ -1,1 +1,222 @@
-[]
+[
+ {
+  "key": "13ead6b7eab21f50",
+  "title": "An Engineering Manifesto for AI-Assisted SAP Development — Let's Build It Together",
+  "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/an-engineering-manifesto-for-ai-assisted-sap-development-let-s-build-it/ba-p/14494605",
+  "published": "2026-09-30T09:24:40+00:00",
+  "author": "deiamolina",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "AI helps us learn and write code. We have been shipping code faster than ever. Someone with no IT background can create software now. But software is not just code. It is structure, security, governance and much more. We deal with sensitive data. An error, a security breach can break a company. \n How can we make AI help us while keeping your company's standards and quality criteria? How can we make sure that all developers, including 3rd-party companies, are using the same naming conventions, the same logic — thinking about governance, quality, and owning their work? \n I created an Engineering Manifesto for AI-assisted SAP development and a naming convention file too. Both are markdowns files. I'm only sharing 19 of the principles here since many things are company-specific. I'm certain there's much more to add — and that's exactly why I'm here. \n I'm sharing this for multiple reasons: to help you if you don't have AI rules yet, to learn from you since some of these technologies are new and still evolving for all of us, and we'd love a human-in-the-loop from the community \n So get ready — read it, challenge it, and let's build something the whole SAP community can use."
+ },
+ {
+  "key": "14f64ca0e1f09dd2",
+  "title": "Target Server Selection in SAP Readiness Check Data Collection",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/target-server-selection-in-sap-readiness-check-data-collection/ba-p/14494581",
+  "published": "2026-09-30T09:00:19+00:00",
+  "author": "astridtschense",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "We are excited to announce a significant improvement to the data collection process for SAP Readiness Check analyses. The SAP Readiness Check data collection report now includes a Target Server/Server Group selection field on the analysis selection screen. Users can choose a specific application server or server group from the available batch infrastructure, and all applicable background jobs triggered by the analysis run will be submitted to that target. Also, when a target is selected, the Financial Data Quality (FDQ) sub-check automatically recalculates its recommended parallel job count based on the work processes available on that server or group, helping users configure an optimal setup before scheduling. \n Please note that certain data collectors require prerequisite SAP Note versions or software component patch levels in order for the target server functionality to work: \n Financial Data Quality (FDQ): SAP Note 2972792 , version 83 or higher \n HANA Sizing: SAP Note 3675084 \n Data Volume Management (DVM): ST-PI 740 SP 33 or higher, and St-A/PI 01X_731 SP 1 or higher These requirements are also captured within the change log of SAP Note 2758146 . This enhancement gives Basis teams and project administrators greater control over where the Readiness Check analysis jobs execute, making it easy to dedicate a specific server or batch group to the collection workload and avoid resource contention during productive hours. \n As always, we look forward to receiving your feedback. \n Your SAP Readiness Check Team"
+ },
+ {
+  "key": "e297eb0f3ee626ed",
+  "title": "SAP PaPM Cloud Standard Model – Joule AI Agent: Environment and Process Management Capabilities",
+  "link": "https://community.sap.com/t5/financial-management-blog-posts-by-sap/sap-papm-cloud-standard-model-joule-ai-agent-environment-and-process/ba-p/14494554",
+  "published": "2026-09-30T08:35:13+00:00",
+  "author": "Milan_Mladenovic",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Hello, SAP Community members! \n We are excited to announce that Joule, the AI assistant embedded in SAP Profitability and Performance Management Cloud Standard Model (SAP PaPM Cloud SM), is now available in two additional applications: Environment and Process Management . \n In previous releases, Joule was available in Report Management , where it helped you analyze report data and generate insights. With this expansion, Joule is now your AI assistant in two additional applications, making it faster and more intuitive to navigate and accomplish tasks in Environment and Process Management. \n This blog post walks you through all Joule capabilities available on these two applications. If you are looking for the technical integration and setup steps (SAP AI Core, SAP Launchpad, BTP Destination), please refer to our previous blog post: \n SAP PaPM Cloud SM: Joule Setup Guide – BTP Configuration and Application \n General Joule Features \n Joule in Environment and Process Management is the same Joule available in Report Management — the conversation panel , its features, and the underlying AI are shared across all three applications . The following general features are available wherever Joule is enabled: \n Conversation History Sidebar – Browse, rename, delete, and resume past conversations; start a new one at any time. \n File Upload – Upload external files (up to 5 files, 5 MB each) and ask Joule to analyze them alongside your application data. \n Web Search – When activated by your administrator, Joule can search the internet and return cited results. \n Conversation Controls – Stop an ongoing response, switch to fullscreen mode, and use follow-up question suggestions. \n Your Joule Rules – Set personal instructions in the Joule settings — such as preferred language, response style, or level of detail — and Joule applies them automatically to every new conversation. \n Guided Help - When needed, Joule consults the official SAP PaPM Cloud Standard Model documentation on the SAP Help Portal to answer your questions — giving you accurate, up-to-date guidance directly in the conversation, without leaving the application. \n For detailed descriptions of all these features, see: SAP PaPM Cloud Standard Model: Joule AI – Features and Capabilities in Report Management . \n Opening Joule and Choosing a Mode \n To open Joule in any Joule-enabled application, choose the Joule icon in the header toolbar. The Joule conversation panel opens on the right side of the screen. \n Before sending your first message, choose how Joule operates using the Ask / Act toggle in the message input area: \n Ask – Read-only mode. Joule answers your questions and retrieves information, but does not make any changes to your data. \n Act – Action mode. Joule can perform operations on your behalf, such as creating, editing, or deleting records. \n You can switch between Ask and Act at any point in the conversation. \n Notes: \n All actions performed by Joule in Act mode are bound by your existing user authorizations. Joule does not elevate your permissions — if you do not have access to a resource, Joule cannot act on it either. \n Actions performed in Act mode are done in the background. The screen does not refresh automatically, so refresh the Environment or Process Management screen to see the changes reflected in the list \n Joule Across Applications \n Joule is a single, unified AI assistant shared across all Joule-enabled applications in SAP Profitability and Performance Management Cloud Standard Model. Two capabilities highlight this: \n Shared conversation history – Every conversation you start in Joule is accessible from any Joule-enabled application. A conversation you began in Report Management can be continued from Environment or Process Management without losing context — and vice versa. \n Cross-application actions – You can ask Joule to perform actions on a different screen than the one you are currently on. For example, while working in Environment, you can ask Joule to create a process instance in Process Management — without navigating away from the current screen. \n Joule in the Environment Application \n The Environment screen displays the full list of available environments in SAP Profitability and Performance Management Cloud Standard Model, organized in a tree structure of nodes and environments. With Joule, you can explore, create, and manage both nodes and environments through natural language conversation. \n Asking Questions (Ask Mode) \n In Ask mode, Joule helps you explore and understand your environments and nodes. Ask it to list, filter, or describe environments based on any criteria. \n Example questions: \n \"List all private environments.\" \n \"Show me all environments in the RMS node.\" \n \"List environments containing reports.\" \n \"What actions can I perform in the Environment application?\" \n The last example is particularly useful: ask Joule what it can do in the current application, and it will describe all available capabilities in full. \n\n Taking Actions (Act Mode) \n In Act mode, Joule can perform the following operations in the Environment application: \n Create environment/node – Specify the name, description, and other properties. You can create up to 50 environments in a single request; for larger quantities, Joule executes in multiple batches, each requiring your approval. \n Edit environment/node – Update the description of an environment or node. \n Move environment/node – Relocate an environment or node to a different parent node in the tree. \n Copy environment – Create a copy of an existing environment with a new ID and version. \n Mark as private or public – Change the access level between Public (visible to all users) and Private (restricted to authorized teams only). \n Assign a team – Set or update which teams are authorized to access a private environment. \n Delete environment/node – Remove an environment or an empty node. Because this is a destructive action, Joule lists exactly what will be deleted and asks for your explicit confirmation before proceeding. \n Note : Joule inherits your role assignments. For example, if you hold the ENVIRONMENTS_READ role only, Joule can view environments but cannot create, edit, or delete them. \n\n Joule in the Process Management Application \n The Process Management screen displays all process instances in a table, along with a Gantt diagram for visualizing timelines. With Joule, you can explore your process data and manage instances and activities through natural language conversation. \n Asking Questions (Ask Mode) \n In Ask mode, Joule helps you navigate and understand your process data. You can ask about templates, instances, activities, parameters, states, assigned teams, or any other process-related information. \n Example questions: \n \"List all deployed process instances in the BAC environment, version 0001.\" \n \"What is the current state of the Monthly_Close_May process?\" \n \"Show me all activities assigned to Team_A.\" \n \"What are the parameters configured for process instance PROC06?\" \n\n Taking Actions (Act Mode) \n In Act mode, Joule can perform the following operations on your process instances and activities: \n Create process instance from a template – Specify the template, process ID, description, type (Run or Simulation), and start date. You can create up to 50 instances at once; for larger quantities, Joule executes in multiple batches, each requiring your approval. \n Create process instance from an existing instance – Clone an existing process instance as the starting point for the new one, inheriting its configuration. \n Create process instance with adjusted selections and parameters – Fine-tune selections and parameter values when creating a new instance, without having to edit each field afterward through the UI. \n Edit an activity – Update the state, performer team, reviewer team, start date, or end date of an activity. \n Edit a process instance – Update the description, state, type (Run or Simulation), or start date of a process instance. \n Note: Joule inherits your role assignments. For example, if you hold the PROCESSES_OWN role only, Joule can manage only your own process instances. \n\n Closing Thoughts \n Joule in SAP Profitability and Performance Management Cloud Standard Model is now available across Report Management , Environment and Process Management applications . All capabilities are authorization-aware and operate within your existing user permissions. \n Whether you are setting up new environments for a planning cycle, managing process instance activities, or analyzing report data, Joule is there to help you work faster and more confidently — all through natural language. \n Useful Links \n Blog Posts: \n SAP PaPM Cloud SM: Joule Setup Guide – BTP Configuration and Application Settings \n SAP PaPM Cloud Standard Model: Joule AI – Features and Capabilities in Report Management \n SAP PaPM Cloud Standard Model: Introducing the AI Conversation Monitor \n Help Portal: \n Joule in Standard Model \n Joule in Environment \n Joule in Process Management \n Joule in Report Management \n Stay tuned — we will continue expanding Joule capabilities across SAP Profitability and Performance Management Cloud Standard Model. Thank you for reading!"
+ },
+ {
+  "key": "d2650c54a8df6825",
+  "title": "Stop Overengineering Document Links Unlocking GOS as the Situation Handling Speed Layer",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/stop-overengineering-document-links-unlocking-gos-as-the-situation-handling/ba-p/14488220",
+  "published": "2026-09-30T08:31:30+00:00",
+  "author": "RAHUL-MANYAT01",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "A truck seal is broken. The operator takes a photo. Does that photo need a full document-management layer — or just a direct link from the notification to the evidence? A design perspective on GOS, Situation Handling, and knowing when NOT to add another SAP layer."
+ },
+ {
+  "key": "7e8af728f58ac9a8",
+  "title": "CDS Performance Analysis Understanding Dependencies and Complexity Metrics",
+  "link": "https://community.sap.com/t5/abap-blog-posts/cds-performance-analysis-understanding-dependencies-and-complexity-metrics/ba-p/14486002",
+  "published": "2026-09-30T08:29:28+00:00",
+  "author": "Prabhat_A",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "CDS Performance Analysis – Understanding Dependencies and Complexity \n ABAP CDS enables powerful Code Pushdown , but using CDS does not automatically guarantee optimal performance. In real-world scenarios, complex CDS stacks can contain multiple layers, joins, associations, calculations, and database sources, making performance issues difficult to identify. \n In this article, we take a practical Sales Order Analytics example and explore how to analyze a CDS using the Dependency Analyzer in ADT . We will look at the SQL Dependency Tree, SQL Dependency Graph, and Complexity Metrics to understand what happens behind the scenes and identify potential areas for optimization. \n This is the first part of a practical CDS Performance Tuning series, where we build the foundation for analyzing the generated SQL and execution plan in the upcoming articles."
+ },
+ {
+  "key": "f36e6ef64c6692d3",
+  "title": "SAP HANA Cloud: Enabling AI with a custom knowledge layer in SAP Business Data Cloud",
+  "link": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sap-hana-cloud-enabling-ai-with-a-custom-knowledge-layer-in-sap-business/ba-p/14494073",
+  "published": "2026-09-30T08:27:52+00:00",
+  "author": "JoseBastidas",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "AI is only as useful as the business knowledge behind it. \n That’s where SAP HANA Cloud enters the conversation. \n In our upcoming webinar for SAP Partners, we’ll unpack how SAP HANA Cloud works within SAP Business Data Cloud and how partners can position it for modern AI scenarios. \n Think of it as a custom knowledge layer that helps connect AI models with the data that matters to each business. We’ll look at vector embeddings, semantic search, SAP Datasphere, and SAP AI Core, then bring the concepts to life with use cases across supply chain, customer engagement, and finance. \n The thing is, knowing the technology is one part of the story. Knowing when it fits a customer’s architecture is what makes the conversation useful. \n Join us and explore where SAP HANA Cloud fits. \n Register now. https://partneredge.sap.com/en/library/education/psd/2026/aug/e_oe_te_w_PSD_WEB_00015533.html \n #SAP #SAPBusinessAIPlatform #SAPBTP #SAPPartners #SAPEcosystem #SAPHANACloud #GenerativeAI #EnterpriseAI"
+ },
+ {
+  "key": "77492ade789e9493",
+  "title": "From CSM's AI Center of Excellence to SAP Innoweeks Champions: SAP Labs Latin America's Historic Win",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-csm-s-ai-center-of-excellence-to-sap-innoweeks-champions-sap-labs/ba-p/14493381",
+  "published": "2026-09-30T08:23:57+00:00",
+  "author": "Kolja_Hanke",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "A two-person team from Monterrey just made Mexican history at SAP Innoweeks, sweeping all three awards with an AI platform that fixed a 14-year workflow problem in five weeks and delivered $3.9M in annual savings to one of Mexico's top universities. Read the full story to see how they did it."
+ },
+ {
+  "key": "2ef5fad01e10624e",
+  "title": "What may the future of learning SAP look like? Share your feedback!",
+  "link": "https://community.sap.com/t5/beginner-corner-blog-posts/what-may-the-future-of-learning-sap-look-like-share-your-feedback/ba-p/14494015",
+  "published": "2026-09-30T07:19:37+00:00",
+  "author": "Jgaydoul",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Earlier this year, SAP launched the SAP Learning Advisory Board to discuss how the future of learning SAP might look like in times of AI and a new generation of learners. Over the past several months, the team explored some of the most important trends and developed a set of potential recommendations for next steps.-"
+ },
+ {
+  "key": "c14f8342aa3aed57",
+  "title": "The Evolution of SAP Master Data Governance with SAP Business Data Cloud",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/the-evolution-of-sap-master-data-governance-with-sap-business-data-cloud/ba-p/14492236",
+  "published": "2026-09-30T07:02:23+00:00",
+  "author": "AndreasSeifried",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP's master data management strategy has reached an inflection point. With SAP Business Data Cloud (BDC) as the trusted data foundation for the Business AI Platform, SAP is reflecting its master data management (MDM) capabilities within two complementary solutions: SAP Master Data Governance (MDG) for central governance at the SAP source, and SAP Reltio for enterprise-wide data unification."
+ },
+ {
+  "key": "ff99b3950f8b1050",
+  "title": "Approve With Context: How AI Process Comparison Closes the Process Review Gap",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/approve-with-context-how-ai-process-comparison-closes-the-process-review/ba-p/14490169",
+  "published": "2026-09-30T07:00:00+00:00",
+  "author": "amitsharma19",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Approve With Context: How AI Process Comparison Closes the Process Review Gap \n There is a moment every process owner knows. \n You receive a change request. The updated diagram is attached. You open it, open the previous version in another tab, and spend the next hour squinting at lanes, switching back and forth, hoping you notice every difference before you sign off. \n Sometimes you catch everything. Sometimes you don't. Either way, you spent three hours on something that should have taken ten minutes. \n That gap between what approval requires and what is actually possible in a reasonable time is exactly what the new AI Process Comparison action in SAP Signavio Process Governance is designed to close. \n The Problem With Reviewing Process Changes \n Process diagrams are not documents. They are networks. A change in one lane can ripple into responsibilities, system handoffs, compliance controls, and SLA commitments in ways that a quick visual scan will not catch. \n Ask anyone who has signed off on a process update without fully understanding it. The risk is not that they approved intentionally. The risk is that they approved without knowing what they were approving. \n And the effort is real. Based on SAP expert estimation, a typical process owner spends 3 hours per change request review . For a team of five owners handling two requests each per month, that adds up fast, and most of that time is spent not on judgment, but on information gathering: what actually changed? \n Introducing AI Process Comparison \n We now have AI Process Comparison as a built-in external action in SAP Signavio Process Governance, and we have been adding it to governance workflows wherever change review matters. \n You configure it like any other step. Point it at two process IDs, or two revisions of the same process, and when that step runs, the AI analyzes both diagrams and returns a structured report covering: \n What was added to the second process \n What was removed from the first \n The business impact of those changes \n The approver does not need to open the diagram editor. They do not need to compare versions manually. By the time the task reaches their queue, the work of understanding what changed is already done. \n Seeing It Work \n We wired up a full end-to-end flow using the Order to Deliver process to show what this looks like in practice. Here is exactly what happened: \n 1. A process modeler submitted an updated version of the Order to Deliver process for approval, triggering a governance workflow in SAP Signavio Process Governance. \n\n 2. The workflow created a new approval case and routed it to the approver's queue \n\n 3. The approver opened the task and saw the inputs: the current revision ID and the revision it was being compared against. \n\n 4. In the background, the AI began analyzing both diagram versions automatically, with no manual trigger and no waiting. \n 5. Within moments, the comparison result appeared in the task. Here is what the AI produced: \n Added: Tasks related to strategic planning, including \"Draft Go-to-market tactics\", \"Organize SC/PC Planning meetings\", and \"Review, validate and activate SC annual plan\", introducing a complex strategic management workflow. Collaboration between Sales Center and Product Center participants enabling cross-departmental alignment on market tactics. Multiple start events triggered by market changes or strategy updates, allowing for dynamic process initiation. \n Removed: Tasks \"Receive order\", \"Forward order to sales\", \"Notify seller\", \"Pack order\", \"Transfer package to operations\", and \"Hand over to delivery personnel\", which managed the physical order fulfillment flow. The Customer Service, Operations Team, Sales Department, and Seller lanes, removing the operational fulfillment structure entirely. \n Impact: The process has shifted from a linear order fulfillment workflow to a complex strategic planning and go-to-market management process, replacing operational tasks with strategic coordination and planning activities. \n\n 6. The output is clearly marked as AI-generated, prompting the reviewer to verify before approving. That label keeps the human in the loop without slowing the process down the AI does the reading, the approver does the judging. \n 7. The approver read the report, had everything they needed, and selected approve \n End-to-end. Submission to decision in minutes, not hours. Zero manual comparison steps. \n What the Numbers Say \n The impact is not subtle. AI Process Comparison reduces time spent reviewing process diagram change requests by 70% , from 3 hours to 54 minutes per review per process owner FTE. \n For a consumer products company with €1 billion in revenue and five process owner FTEs, that translates to approximately €7k in annual savings from review time alone, based on SAP benchmark assumptions. \n The more significant number, though, is not the time saved. It is the risk reduced. Faster reviews done with AI-generated context are more accurate than slower reviews done without it. \n How to Set It Up \n We configure AI Process Comparison under Organization Settings > Actions > AI Process Comparison . \n Prerequisites: \n AI terms and conditions accepted under Workspace Settings > AI Services \n Modeling - Joule: Generate Process Description enabled under Workspace Settings > Feature Access \n\n Full setup guide for org admins: Enabling Compare Diagrams \n Configuration: \n Once enabled, you add it to your governance workflow through the External Actions menu ( full reference ). The action takes two inputs: \n Input Description \n First Process ID The baseline, the version you're comparing from \n Second Process ID The new version, or a specific revision ID \n\n It returns two outputs: an operation success confirmation, and the Comparison Result text, which is the structured report of additions, removals, and impact that flows into the approver's task view. \n No custom middleware. No export step. No manual document to prepare. It runs as part of the governance workflow itself. \n More Than Approval Workflows \n Approval is the obvious starting point, but we see process comparison adding value at any governance checkpoint where understanding change matters: \n Compliance audits: generate a documented diff between as-is and to-be diagrams as evidence \n Post-change review: compare before and after an SAP implementation or process transformation \n Onboarding: help new team members understand how a process evolved \n Change communication: use the AI-generated summary as the basis for stakeholder notifications \n Process governance has always been about making the right decisions at the right time. AI Process Comparison makes sure those decisions are informed ones. \n Give it a shot \n AI Process Comparison is available now in SAP Signavio Process Governance. Enable it in your Organization Settings and add it to any approval workflow where change clarity matters. \n If you want to explore how this fits into your governance setup, reach out. And if you want to see the full flow first, we have a short end-to-end demo showing submission to approval in under two minutes. \n\n Check out our post on BPMN Export a feature we released last month that automatically exports your process diagrams in XML, PNG, SVG, or PDF the moment a governance milestone is reached. We wired it up to a full AI translation pipeline with n8n and SAP AI Core to show what it can drive."
+ },
+ {
+  "key": "5e6f18407d6fcf9c",
+  "title": "SAP Business AI Platform, ABAP environment - Customer & Partner Roundtable on October 6, 2026",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-ai-platform-abap-environment-customer-amp-partner-roundtable/ba-p/14494323",
+  "published": "2026-09-30T07:25:03+00:00",
+  "author": "Burcu_Karlidag",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Dear customers, partners, and SAP Community members, \n You may have noticed the new name: SAP BTP ABAP Environment is now SAP Business AI Platform, ABAP environment . Read more about the name change in this blog post . \n Join our next Customer & Partner Roundtable on October 6, 2026, from 10:00 - 11:00 CEST . \n This month, we’ll share the latest product updates and take a closer look at upgrade planning. Alexey Romanov will walk us through adjusting the upgrade downtime start in the Manage SAP System Upgrade app and the pre-upgrade registration. \n As always, bring your questions and use the opportunity to exchange with the product team and fellow customers and partners. \n\n Agenda \n\n Product Updates – Frank Jentsch \n\n Adjusting the Upgrade Downtime Start in the Manage SAP System Upgrade App and Pre-Upgrade Registration – Alexey Romanov \n\n Join the session \n 📅 Date: October 6, 2026 \n ⏰ Time: 10:00–11:00 CEST \n 💻 Location: Microsoft Teams \n\n General information \n The roundtable is a monthly series taking place on the first Tuesday of every month (10:00–11:00 CEST) . \n 👉 Download the .ics calendar file for the full 2026 series and import it into your calendar. Each calendar entry includes the Microsoft Teams meeting link. \n You can also join directly via Microsoft Teams . This meeting link is valid for the entire 2026 series. \n All agendas, slides, recordings, and updates are available on our Customer & Partner Roundtable page . \n We’re looking forward to seeing you there! \n SAP Business AI Platform, ABAP environment team"
+ },
+ {
+  "key": "f02d71bc1291f59b",
+  "title": "Create Technical Object App User Status and Asset Field Missing",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/create-technical-object-app-user-status-and-asset-field-missing/qaq-p/14494547",
+  "published": "2026-09-30T08:26:12+00:00",
+  "author": "MuratTnrkt",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Experts! \n While creating equipment using the Create Technical Object app in SAP S/4HANA Cloud Public Edition, I noticed two differences compared with the Private Edition version of the same app. \n 1. User Status field is visible but disabled \n The User Status field is displayed, but it is disabled. I also could not find the configuration for a user status profile. \n Public 2608; \n\n Private 2023; \n\n Is equipment user status supported in Public Edition? If so, how can I assign the relevant status profile and enable user status maintenance? Is there another configuration step or prerequisite? \n 2. Asset field is missing \n I cannot find a field where I can enter the asset number and link the equipment to an Asset Accounting master record. When I checked the Private Edition version of the app, field is enabled. \n\n If it is not available in Create Technical Object, what is the standard process for establishing the fixed asset–equipment relationship for Public Cloud? Should fields such as Inventory Number or Sort Field be used only as references, or is there a standard solution that provides an actual link between these master records? \n Thank you."
+ },
+ {
+  "key": "85bf69340cfd28fb",
+  "title": "Unable to Access/Provision Kyma Cluster in SAP BTP Trial Account",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/unable-to-access-provision-kyma-cluster-in-sap-btp-trial-account/qaq-p/14494529",
+  "published": "2026-09-30T08:02:06+00:00",
+  "author": "Basavaraju_GS99",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "I am facing an issue after creating a Kyma cluster in my SAP BTP Trial account. The cluster creation process appears to have completed, but I am encountering an error when accessing or using the Kyma environment. Account details: \n Global Account ID: b30bd2c2trial \n Subaccount ID: trial I have attached a screenshot of the error message for your reference. Could you please investigate the issue and advise on the required resolution steps? If any additional logs, screenshots, or configuration details are needed, I will be happy to provide them. Your assistance in resolving this issue would be greatly appreciated. Thank you for your support. Kind regards, Basavaraju G S"
+ },
+ {
+  "key": "0efb1b5acdf48d52",
+  "title": "Deleting empty solution orders",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/deleting-empty-solution-orders/qaq-p/14494515",
+  "published": "2026-09-30T07:40:02+00:00",
+  "author": "F-Schmidt_67",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Community, Empty Solution Order remains in lifecycle status Open. No Sold-To Party, no positions, net value 0.00. Solution Order cannot be processed or completed. Can somebody advise how to set the document to completed/cancelled or remove the inconsistent record? thanks Frank"
+ },
+ {
+  "key": "d946d1919f40cc85",
+  "title": "Manufacturing Over/Under Consumption Controls",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/manufacturing-over-under-consumption-controls/qaq-p/14494476",
+  "published": "2026-09-30T07:12:54+00:00",
+  "author": "Phil028",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "We are seeking clarification on what appears to be a potential control gap within the standard SAP S/4HANA production consumption process. \n During implementation and subsequent discussions with our implementation partner, we identified that production operators can post material consumption transactions with significant over-consumption, under-consumption, or even zero consumption without any warning, exception message, or system intervention. \n This behaviour has been observed within the following applications: \n Manage Process Order Operations \n Manage Production Operations \n Post Consumption for Production \n From a manufacturing controls perspective, we are struggling to understand the rationale behind this design. The absence of any warning or tolerance check means that potentially significant consumption variances can be posted and completed without visibility to the user or management team. \n The consequence is that discrepancies may remain undetected until financial reconciliation activities are performed, potentially weeks after production has been completed. By that stage, investigating the root cause can be difficult, particularly where there are mul"
+ },
+ {
+  "key": "76ab533f8ccf509b",
+  "title": "Offset Account Not Displayed Correctly in Display Line Items - General Ledger Report",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/offset-account-not-displayed-correctly-in-display-line-items-general-ledger/qaq-p/14494464",
+  "published": "2026-09-30T06:52:03+00:00",
+  "author": "ShashankSinha1",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear SAP Support Team, \n We have observed an issue in the Display Line Items in General Ledger report when exporting data to Excel. \n Scenario: A document contains three line items: \n Dr Bank Account \n Cr Exchange Rate Gain Account \n Cr Customer Account \n When viewing/exporting the General Ledger line item report, the Offset Account field displays only the account with account type S (G/L Account) , i.e., the Exchange Rate Gain account. \n The Customer Account (Account Type D) is not shown in the Offset Account field, making it difficult to identify the customer against whom the payment was posted."
+ },
+ {
+  "key": "45607b418bb025f2",
+  "title": "Migration of actual PS data to the new company?",
+  "link": "https://community.sap.com/t5/sap-learning-q-a/migration-of-actual-ps-data-to-the-new-company/qaq-p/14494460",
+  "published": "2026-09-30T06:39:08+00:00",
+  "author": "maourar1",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Lors de la création d'une deuxième société, comment migrer les données PS réelles de la société existante (1000) vers la nouvelle société (2000) ?"
+ },
+ {
+  "key": "2e491ec05e9cf0d7",
+  "title": "GRDC setup in BTP",
+  "link": "https://community.sap.com/t5/financial-management-q-a/grdc-setup-in-btp/qaq-p/14494447",
+  "published": "2026-09-30T06:01:28+00:00",
+  "author": "Keisuke-Hirokawa_01",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear experts, I am about to start a project using GRDC. \n I need to begin by setting up GRDC on BTP; are there any manuals or guidelines available for this?"
+ },
+ {
+  "key": "93f916d406d58ff5",
+  "title": "F110 Netting Issue",
+  "link": "https://community.sap.com/t5/financial-management-q-a/f110-netting-issue/qaq-p/14494071",
+  "published": "2026-09-29T13:05:22+00:00",
+  "author": "AKOLA10",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello SAP Community, \n I need your help please. At my customer, they are testing netting process (customer/vendor clearing) in F110 . But we have an issue in our production environment, the vendor invoices are getting cleared and in the customer invoices there is a following message error : No pymt possible because items with a debit bal.still exist; see job log. \n Customer and vendor are created with same number in same company code and clear with vendor/customer is also checked. \n The amount of vendor invoices is higher than the customer invoices. \n In the beginning there was a payment method in the vendor invoices but we deleted it and still not working. \n Can you please help me because i don't have this behavior in quality system? \n I have checked customizing at FBZP level and all seems good. \n Thanks in advance for your help. \n AK"
+ },
+ {
+  "key": "0de3539d57973eac",
+  "title": "Any workaround for configuring overtime on non-working days AND holidays falling on a working day to",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/any-workaround-for-configuring-overtime-on-non-working-days-and-holidays/qaq-p/14494058",
+  "published": "2026-09-29T12:28:13+00:00",
+  "author": "AMIT_SHARMA01",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Experts, \n We need to configure attendance quota so employees can record overtime in two scenarios: \n On weekends (non-working days) \n On a public holiday that happens to fall on what would normally be a working day \n Based on what we've found, this combination currently can't be configured together in standard Time Tracking, and SAP has logged it as a known issue with product engineering investigating, with no workaround documented yet. \n Since our go-live can't wait on a fix timeline, I wanted to check with the community: \n Has anyone found a practical interim workaround even a partial one for either of these two OT scenarios individually, if not both together? \n Is anyone handling this through a custom time valuation rule instead of relying on standard attendance quota configuration? \n Has SAP given any indication of a target release for a fix, beyond \"under investigation\"? \n For those who hit this: did you end up processing holiday-that-falls-on-a-working-day overtime through payroll adjustments outside the system instead? \n Thanks in advance for any real-world experience here!"
+ }
+]
