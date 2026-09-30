@@ -500,5 +500,49 @@
   "feed": "SAP Community discussions",
   "kind": "discussion",
   "text": "Hello everyone, I am a student in Germany \n I am studying materials engineering. I started learning SAP S/4HANA QM but discovered there is no certification for it \n I need a certification to boost my job opportunities \n What do I do? \n\n Which certification can I start studying"
+ },
+ {
+  "key": "c9a3885c964752e5",
+  "title": "#sitMUC26 - Everything You Need to Know",
+  "link": "https://community.sap.com/t5/m%C3%BCnchen-blog-posts/sitmuc26-everything-you-need-to-know/ba-p/14494329",
+  "published": "2026-09-29T23:00:59+00:00",
+  "author": "Khaled_Elghali",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Planning to join #sitMUC2 ? Here you’ll find the latest updates on registration, agenda, check-in, food and practical event details for October 9 - 10 in Munich ..."
+ },
+ {
+  "key": "ec37c382c7a8f99e",
+  "title": "SAP HANA Cloud, SAP HANA Database Explorer Deprecation",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-hana-cloud-sap-hana-database-explorer-deprecation/ba-p/14483279",
+  "published": "2026-09-29T21:23:18+00:00",
+  "author": "Dan_vL",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "The SAP HANA database explorer for SAP HANA Cloud is now deprecated, which means that no further innovations or feature development are planned and that the tool has been marked for future removal. When you open the SAP HANA database explorer, you will see a notification highlighting this. \n\n If you are still using the database explorer to access SAP HANA Cloud instances, it is time to switch to using SAP HANA Cloud Central or the SAP HANA database explorer extension for Visual Studio Code and the SAP Business Application Studio. Note this does not apply to the SAP HANA database explorer that is part of the SAP HANA Platform 2.0 (on-premise). \n SAP HANA Cloud Central is the leading tool for SAP HANA Cloud administration. Since its release, we have steadily added new apps and functionality . Key features from the SAP HANA database explorer include the SQL Console app (2023 Q3), the Database Objects app (2024 Q2), the Data Lake Files app (2025 Q1), Schemas and HDI Containers app (2025 Q4), and the Import and Export app (2026 Q2). \n\n The SAP HANA Database Explorer extension for Visual Studio Code and the SAP Business Application Studio have also added new features such as the ability to view objects in a dependency viewer (1.17), the ability to view trace files (1.34), the ability to debug SQLScript (1.39), and the ability to edit table rows (1.39). \n\n You have two options when you wish to run SQL or explore schema objects depending on how you work: \n SAP HANA Cloud Central – The leading tool for database administration. In addition to much of the functionality in the SAP HANA database explorer, it includes additional features including: \n GenAI in the SQL Console enables natural language to be converted to SQL queries and selected statements can be explained or optimized using GenAI \n The messages and history tabs have been combined and now include a download option \n Options to customize the format of the results such as changing the display of date columns \n Additional theming options are available including SAP morning and evening horizon \n An analysis option in the results view enables quick visualization options \n Support for knowledge graphs is available in the database objects app \n The ability to search across tabs \n The SAP HANA database explorer extension for Visual Studio Code or the SAP Business Application Studio – These tools are aimed at developers. If you prefer working locally, Visual Studio Code enables this option while SAP Business Application Studio provides a browser-based experience. It is also possible in Visual Studio Code to maintain a list of local database connections. \n To help get you up to speed, we’ve created this set of tutorials . \n If there is a feature that you would like to see added, please let us know by creating a feature request in the Customer Influence Portal ."
+ },
+ {
+  "key": "734c746da4cd13fb",
+  "title": "SAP BTP ABAP Environment Customer & Partner Roundtable – October 6, 2026",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-abap-environment-customer-amp-partner-roundtable-october-6-2026/ba-p/14494323",
+  "published": "2026-09-29T21:22:23+00:00",
+  "author": "Burcu_Karlidag",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Dear customers, partners, and SAP Community members, \n You may have noticed the new name: SAP BTP ABAP Environment is now SAP Business AI Platform, ABAP environment . Read more about the name change in this blog post . \n Join our next Customer & Partner Roundtable for SAP Business AI Platform, ABAP environment on October 6, 2026, from 10:00–11:00 CEST . \n This month, we’ll share the latest product updates and take a closer look at upgrade planning. Alexey Romanov will walk us through adjusting the upgrade downtime start in the Manage SAP System Upgrade app and pre-upgrade registration. \n As always, bring your questions and use the opportunity to exchange with the product team and fellow customers and partners. \n Agenda \n\n Product Updates – Frank Jentsch \n\n Adjusting the Upgrade Downtime Start in the Manage SAP System Upgrade App and Pre-Upgrade Registration – Alexey Romanov \n Join the session \n 📅 Date: October 6, 2026 \n ⏰ Time: 10:00–11:00 CEST \n 💻 Location: Microsoft Teams \n The roundtable is a monthly series taking place on the first Tuesday of every month (10:00–11:00 CEST) . \n 👉 Download the .ics calendar file for the full 2026 series and import it into your calendar. Each calendar entry includes the Microsoft Teams meeting link. \n You can also join directly via Microsoft Teams . This meeting link is valid for the entire 2026 series. \n All agendas, slides, recordings, and updates are available on our Customer & Partner Roundtable page . \n We’re looking forward to seeing you there! \n SAP Business AI Platform, ABAP environment Team"
+ },
+ {
+  "key": "a69cb14b42bfa8da",
+  "title": "Learn, Engage, and Innovate with AI: SAP Connect 2026 Can't-Miss Logistics Sessions",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/learn-engage-and-innovate-with-ai-sap-connect-2026-can-t-miss-logistics/ba-p/14492218",
+  "published": "2026-09-29T21:16:47+00:00",
+  "author": "Bill_King",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Join us at Supply Chain Connect in Las Vegas, October 5 – 7, 2026, and be among the first to experience the latest AI innovations in Autonomous Logistics and connect with peers across every function."
  }
 ]
