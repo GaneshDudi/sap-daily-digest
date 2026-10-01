@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-01",
+  "label": "Thursday, 1 October 2026",
+  "headline": "Light day for core ABAP: a CDS performance series begins in ADT, a BAdI+CTE pattern appears, and AI and BTP integration items dominate.",
+  "items": 116,
+  "deep": 21
+ },
+ {
   "date": "2026-09-30",
   "label": "Wednesday, 30 September 2026",
   "headline": "A quiet day: HANA HEX rollout guidance, Database Explorer deprecation, a product rename, and RAP file-upload and Fiori-to-batch questions.",
