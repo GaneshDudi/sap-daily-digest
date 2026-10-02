@@ -592,5 +592,16 @@
   "feed": "SAP Community questions",
   "kind": "question",
   "text": "Hello Team, \n Im configuring auto packing in EWM outbound S4CORE 108 SP01 and I get this critical error: \n Impl. for BAdI /scwm/ex_hu_appl_huident, appl. is missing - critical error Message No. /SCWM/HUGENERAL001. \n No HUs are created. \n When i click on the pack automatically button in work center after /SCWM/PACK for picking. I believe all the configuration is in place but I'm stuck in this error. \n The PS, UPB profile and document type are configured as described in Note 3301323, and creating case and pallet HUs manually works. KBA 3660537 says the application (IV_APPL) must be WME. Please confirm whether this is a defect in this release or it needs a correction from SAP,"
+ },
+ {
+  "key": "30c682c11b554a72",
+  "title": "Default DP document type in Open text VIM",
+  "link": "https://community.sap.com/t5/financial-management-q-a/default-dp-document-type-in-open-text-vim/qaq-p/14495822",
+  "published": "2026-10-01T23:35:55+00:00",
+  "author": "vivek_srivastava12",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello Everyone, \n I am new to Open text VIM, my question is how to dynamically derive DP document based on certain field on PDF, in my system I have not PO DP document type setup in /PTGWFI/Z_CONST. \n Please help. \n Br,Vivek"
  }
 ]
