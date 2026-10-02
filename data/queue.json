@@ -229,5 +229,60 @@
   "feed": "SAP Community discussions",
   "kind": "discussion",
   "text": "Obsolete Specification of Spool Parameters - ABAP Keyword Documentation \n \"flag expects a single-character text field, where a blank character activates the parameter and any other character deactivates the parameter.\" \n I think it should be the opposite: \n \"flag expects a single-character text field, where a blank character deactivates the parameter and any other character activates the parameter.\" \n For instance, the following means that the spool is sent immediately to the output device: NEW-PAGE PRINT ON DESTINATION 'LOCL' IMMEDIATELY 'X' KEEP IN SPOOL 'X' NO DIALOG. \n For information, in German it's the same assertion as English: \"Für flag muss ein einstelliges Textfeld angegeben werden, wobei ein Leerzeichen den Parameter ein- und ein anderes Zeichen den Parameter ausschaltet.\" \n I posted a feedback to SAP, I'll update this thread when I get an answer. \n Thanks. \n Sandra"
+ },
+ {
+  "key": "12c314809b29cdbc",
+  "title": "List of Employee Central & Employee Central Payroll Guide Updates for the 2H 2026 Release",
+  "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-sap/list-of-employee-central-amp-employee-central-payroll-guide-updates-for-the/ba-p/14494933",
+  "published": "2026-10-02T21:00:00+00:00",
+  "author": "JenniferKroner",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "In SAP SuccessFactors User Assistance, we’ve been working on improving your information experience."
+ },
+ {
+  "key": "640e19849677db0a",
+  "title": "Curiosity, Resilience and AI: What Leading CPOs Are Building Now",
+  "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/curiosity-resilience-and-ai-what-leading-cpos-are-building-now/ba-p/14496582",
+  "published": "2026-10-02T19:05:50+00:00",
+  "author": "MelBowling",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "🎙 ️ Procurement’s future is not waiting on the horizon. It is taking shape in today’s decisions about artificial intelligence, supply resilience, talent, and business value. In a special episode of The Future of Procurement, Gordon Donovan, Vice President Research – Procurement & External Workforce at SAP, brings together perspectives from the chief procurement leaders of Nestlé, Kraft Heinz and Heineken. Their organizations face different category dynamics, yet their messages converge around a powerful idea: procurement can turn disruption into advantage when technology is paired with judgment, curiosity and commercial confidence."
+ },
+ {
+  "key": "823153d3fc7f9a5d",
+  "title": "New Live Sessions: From Answers to Action — Agentic AI Fundamentals with SAP",
+  "link": "https://community.sap.com/t5/artificial-intelligence-learning-group-blog-posts/new-live-sessions-from-answers-to-action-agentic-ai-fundamentals-with-sap/ba-p/14496567",
+  "published": "2026-10-02T18:10:02+00:00",
+  "author": "Geoffrey_Fu",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "From Answers to Action: Agentic AI Fundamentals with SAP is a free, 30-minute live session designed for business professionals at every level. No technical background required."
+ },
+ {
+  "key": "76ee737b5426ece3",
+  "title": "How can I populate the Applications column in Solution Process Analysis?",
+  "link": "https://community.sap.com/t5/technology-q-a/how-can-i-populate-the-applications-column-in-solution-process-analysis/qaq-p/14496598",
+  "published": "2026-10-02T20:25:49+00:00",
+  "author": "davi3",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello SAP Community, \n In the Solution Process Analysis app, there is an Applications column. However, this column always displays 0 for all solution processes. \n The processes in our project are standard processes associated with SAP scope items. I could not find an option to assign applications directly to these standard processes. \n We need to populate our scope items or solution processes with their corresponding applications so that this information is displayed correctly in the Solution Process Analysis app. \n Could you please clarify: \n\n How is the Applications column populated? \n\n Is this information automatically derived from SAP Best Practices content or from the applications associated with each scope item? \n\n Is it possible to assign applications to standard solution processes? \n\n If direct assignment is not possible, do we need to copy the standard process and create a custom process? \n\n Are there any prerequisites or configurations required for the applications to appear in this analysis? \n Thank you in advance for your support."
+ },
+ {
+  "key": "154dcd01695708be",
+  "title": "Onboarding additional data - How does HR review after it's entered",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/onboarding-additional-data-how-does-hr-review-after-it-s-entered/qaq-p/14496589",
+  "published": "2026-10-02T19:30:16+00:00",
+  "author": "Jen_Cooper",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi \n In our process the onboardee needs to show proof of education information and upload a document that shows proof of their education. Where can an HR user review that information before manage pending hires is performed? \n Do they need to go to the onboarding dashboard look up the employee and review the information there ? \n Is there any best practice to use so it's recorded HR has reviewed this document? \n Just want to make sure this is as streamlined as possible for our users."
  }
 ]
