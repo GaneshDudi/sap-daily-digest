@@ -1,1 +1,46 @@
-[]
+[
+ {
+  "key": "0d6aef66d2d75a96",
+  "title": "End of the Black Box for SAP Cloud ALM ITSM API",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/end-of-the-black-box-for-sap-cloud-alm-itsm-api/ba-p/14495666",
+  "published": "2026-10-02T09:31:47+00:00",
+  "author": "FredericOzon",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "The new External API Management – ITSM Console gives you full visibility into every HTTP call exchanged between SAP Cloud ALM and your ITSM back-end: request, response, headers, correlation IDs, and timings — all in one place."
+ },
+ {
+  "key": "dce983356cace149",
+  "title": "SAP Joule for Consultants: Transforming the Future of SAP Project Delivery with Generative AI",
+  "link": "https://community.sap.com/t5/data-and-analytics-learning-group-blog-posts/sap-joule-for-consultants-transforming-the-future-of-sap-project-delivery/ba-p/14495203",
+  "published": "2026-10-02T09:29:53+00:00",
+  "author": "LuisRaposo",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP Joule for Consultants it gives consultants fast, reliable, expert-level answers grounded in SAP's most comprehensive and exclusive knowledge base, which is available on demand, around the clock, in eight languages."
+ },
+ {
+  "key": "f3cad1a203dd1399",
+  "title": "Digital Adoption Is No Longer Just About Helping People Use Software",
+  "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-sap/digital-adoption-is-no-longer-just-about-helping-people-use-software/ba-p/14495931",
+  "published": "2026-10-02T08:00:49+00:00",
+  "author": "Klaus_Kampen",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "As organizations move from employee self-service toward AI-assisted and increasingly agentic ways of working, digital adoption has a new role to play: helping people turn transformation into everyday behavior."
+ },
+ {
+  "key": "e33d25afe3922130",
+  "title": "Install smarter with selective installation for Value Accelerators",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/install-smarter-with-selective-installation-for-value-accelerators/ba-p/14494898",
+  "published": "2026-10-02T07:57:32+00:00",
+  "author": "TillT",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Great news! \n Selective installation in the Signavio Value Accelerator Library now lets you pick exactly the content you need from a Value Accelerator, and SAP Signavio takes care of the rest. Here is how to run one and make sense of your results. \n\n If you have installed a Value Accelerator and found yourself scrolling through hundreds of diagrams, value chains, and dictionary entries that simply don't apply to your project, this post is for you. \n Value Accelerators in SAP Signavio Process Manager are packed with pre-built, expert-curated content. But a full installation isn't always the right move. When your team is focused on a specific industry or process area, bringing in everything at once adds noise, slows adoption, and clutters the workspace your teams depend on. \n Selective installation solves that problem. You choose the content that matters, and SAP Signavio automatically pulls in everything the selected content depends cleanly, efficiently, and with full transparency afterward. \n\n To learn more about the the importance of selective installation of Value Accelerators, also check this short video . \n\n Who can use selective installation? \n Selective installation is currently available for SAP Signavio Process Manager Value Accelerators only. \n\n Your three-step installation \n Open the Value Accelerator Library, find the accelerator you want, and click Install in the top right corner. The wizard opens at step one. \n\n Step 1 — Content Selection \n Choose Install selection to activate the content browser. Use the search bar to filter by keyword, then click the plus icon next to any item to add it to your selection. You will see confirmation each time. Switch to the Selected tab to review your choices before moving on. \n Note that, at this stage you will not get to know these dependencies. This content will be detected by the system only during installation run. \n\n Step 2 — Customization \n Select the content that is most relevant at the highest level and run the installation without the dictionary first. If the result meets your needs, you can delete it and redo with the dictionary included. This iterative approach saves rework and helps you validate scope before committing to a larger import. The full list of dependency-resolved content, everything the system pulled in to support your selections becomes visible after installation in the Installed content overview, so you will always have a clear picture of what landed. But first, continue. \n\n Step 3 — Review and confirm \n The final step shows a summary of what will be installed. Review it, confirm, and the system gets to work. You can track progress in real time on the Installed Accelerators screen. \n In just a few clicks, you have scoped your content, let SAP Signavio resolve all dependencies, and track the installation through to completion. \n\n Looking for more details? Check the step-by-step installation video . \n\n Making sense of what is in your workspace \n Once the installation completes, open the Value Accelerator Library and navigate to the Installation Log . You will see distinct status columns for each installation: one showing the result Completed, Failed, or Cancelled and one showing the type, either Full or Selective and one more for whether the dictionary categories and entries were included during the installation. Keeping these separate makes it easy to understand installations made within your workspace. \n\n Click on any entry and a side panel opens on the right. From there, open the Installed Content Details overview to see every piece of content brought into your workspace, organized by type value chains, business process diagrams and more. within main content, or additional supplementing content such as custom attributes, and more. Critically, main content distinguishes between content you explicitly selected and content the system detected as a dependency. That transparency means you always know exactly what is in your workspace and why it is there. The view uses lazy loading and pagination to keep performance smooth even for large installations. \n Folder-level visibility within this overview is planned for a future release. \n\n This short video summarizes how to best work with selectively installed Value Accelerators. \n You have now seen how to run a selective installation, navigate the results, and read the status columns briefly. Selective installation is one of the most effective ways to deploy accelerator content with precision, and your workspace stays exactly as focused as your project needs it to be. \n Brought to you by the SAP Signavio Value Accelerator team."
+ }
+]
