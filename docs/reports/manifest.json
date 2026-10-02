@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-02",
+  "label": "Friday, 2 October 2026",
+  "headline": "abap2xlsx runs clean on ABAP Cloud, a CTE refactoring guide appears, and forum threads show extensibility questions still dominate.",
+  "items": 59,
+  "deep": 13
+ },
+ {
   "date": "2026-10-01",
   "label": "Thursday, 1 October 2026",
   "headline": "Light day for core ABAP: a CDS performance series begins in ADT, a BAdI+CTE pattern appears, and AI and BTP integration items dominate.",
