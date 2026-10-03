@@ -1,1 +1,24 @@
-[]
+[
+ {
+  "key": "3e31abca017ce4d0",
+  "title": "Tabular Orchestration for SAP-RPT, hands-on: from zero to a governed context in HDLFS",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/tabular-orchestration-for-sap-rpt-hands-on-from-zero-to-a-governed-context/ba-p/14495251",
+  "published": "2026-10-03T09:43:18+00:00",
+  "author": "Antonio_leites",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "A hands-on walkthrough of SAP Tabular Orchestration: from deploying the service and registering a context in HANA Cloud data lake Files to the first prediction, including the behaviour not yet in the documentation. Moving the reference context out of the client preserved 519 of 520 SAP-RPT-1.5 predictions, and a comparison with SAP-RPT-1.6 and TabPFN-3.5-Plus shows where the model version matters."
+ },
+ {
+  "key": "d2755940843bb918",
+  "title": "Enter Acct Assgt Cat. Message No. ME083 While Creating Purchase Requisition",
+  "link": "https://community.sap.com/t5/supply-chain-management-q-a/enter-acct-assgt-cat-message-no-me083-while-creating-purchase-requisition/qaq-p/14496630",
+  "published": "2026-10-03T08:36:18+00:00",
+  "author": "nandha",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "I expect to create a normal PR without entering an Account Assignment Category, where the material is procured as a standard stock/material requirement. \n I am facing an issue while creating a Purchase Requisition (PR) in SAP. \n Transaction Code: ME51N \n Message No.: ME083 \n Error Message: Enter Acct Assgt Cat."
+ }
+]
