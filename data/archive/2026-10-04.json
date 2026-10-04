@@ -1,0 +1,63 @@
+{
+ "items": [
+  {
+   "key": "8a6a378c6b8e87a9",
+   "title": "SIT Porto 2026: A first time, and why I'll be back",
+   "link": "https://community.sap.com/t5/porto-blog-posts/sit-porto-2026-a-first-time-and-why-i-ll-be-back/ba-p/14496807",
+   "published": "2026-10-04T06:41:00+00:00",
+   "author": "deiamolina",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Hello everyone, I'm Andrea. I've been working with SAP for over 20 years, across Brazil, Ireland and Portugal. And until this year, I had never heard of SIT or of a CodeJam, for that matter. \n The DOM of the post (nerdy joke in a technical blog, why not? 😂 ) \n The DOM (Document Object Model) is how a browser sees a web page: a tree where every title, paragraph and image is a branch. Here's the tree of this post: \n <post> \n ├── 1. So how did I find out about SIT \n │ ├── The hesitation about SIT \n │ ├── The day before: another CodeJam \n │ └── So, what is SIT? \n ├── 2. How SIT can matter for you and your career \n │ ├── If you're new to SAP \n │ ├── If you come from classic ABAP and you're on the move to the new world \n │ └── If you're already an expert \n ├── 3. The investment \n ├── 4. The talks, and where to watch them \n │ ├── Before we jump into the talks: A challenge! \n │ ├── Where my notes will live \n │ └── The talks \n │ ├── At the venue \n │ └── On the replay \n └── 5. What's next \n\n 1. So how did I find out about SIT \n A few months back, I was checking the community when I saw the post for the CodeJam Getting started with Generative AI Hub on SAP AI Core , happening in June 2026, and signed up. The event was already full, so I put my name down anyway, sure I wouldn't get in. A few days before the event, I got an email saying I was in. So I took a day off to go, bought a personal laptop the day before (yes, really), got bus tickets (the trains were already sold out) and went. On the way back I had to run, literally until I couldn't run anymore, to catch my bus home. \n All worth. The CodeJam was excellent. I saw a great value on it and that's how I started getting involved in SAP events in Portugal and becoming more active in the community. The hesitation about SIT \n So when SIT Porto came around, I hesitated. I was anxious about walking into a room full of deep experts in tools I'm still learning, not being able to keep up, or finding people who kept to their own bubbles. Maybe it was a bit of impostor syndrome talking very loudly (yes, even after 20 years). \n I went anyway. There were a few familiar faces from the CodeJams and one from my time in Brazil, and it was nice to see them again. And I was indeed surrounded by deep experts who kept it simple. \n The atmosphere was incredibly welcoming: people at different career levels and with different levels of knowledge, all open to talking and exchanging ideas. And not just with their own colleagues, everyone was talking to everyone. The speakers stayed for the whole event, ready to chat and answer questions. It really was an event made for anyone in the SAP community, at any stage of their career. The day before: another CodeJam \n I also took part in the CodeJam AI-enabled integrations with SAP Integration Suite on September 25, at the same venue as SIT. But that's a story for another post 🙂 A tip for next year: check if there are other events scheduled around SIT. So, what is SIT? \n SIT is where people with fascinating topics get together to share their experience, and where everybody is open to new connections and to seeing the world \"beyond their own box.\" It's a fantastic way to keep up to date and to extend your SAP network. \n\n 2. How SIT can matter for you and your career If you're new to SAP \n You will leave with a lot of new terms and technologies to learn. Also a lot of names that you can reaach out for help. Think of it as a map that you can then go deeper into. Watching demos of the newest SAP products at the start of your journey can shape your career. If you come from classic ABAP and you're on the move to the new world \n It's a chance to update your knowledge, and not only through the talks: the conversations show you where your peers are heading, what worked, what didn't, and the vocabulary of the moment. If you are really intentional about it, you can considerably extend your network. If you're already an expert \n Nobody is an expert in everything. SIT is a chance to sharpen what you know and to learn other sides of your bubble of knowledge. After 20+ years working with SAP, and a lot of studying of the new ecosystem, I left SIT (and every CodeJam, for that matter) with my head full of new terms, new tools and a long list of things to get deeper into. \n 3. The investment \n One Saturday and €5. SIT happens every year around September, always on a Saturday, and this year's 3rd edition took place on September 26, 2026, at the Forte de Gaia hotel (Autograph Collection), right next to the postcard bridges of Porto. It is absolutely worth it. \n More info: https://sitporto.com/ \n 4. The talks, and where to watch them \n Fátima Linhares, Business Unit Manager at Valantic , opened the day as our host and welcomed everyone. \n The talks were varied, but all of them touched the same topic, and you won't believe which one: AI. Hahaha. Before we jump into the talks: A challenge! \n Before you jump to the summaries, I want to leave you with a challenge from António Andrade, who spoke about sovereignty: think about sovereignty in every talk. I accepted it, so at the end of each post I share my own take. I'd love to hear yours, so we can all grow by sharing ideas and find more ways to mature on this topic, which is so urgent today. Where my notes will live \n I love studying and learning, so I make notes on everything I learn about SAP. It's such a vast ecosystem, with so many concepts and tools, and it's so easy to forget things. So I'll be sharing my notes with you here. To stay updated, bookmark this post and leave a comment: I'll reply to it every time a new post goes live, so you'll know when it's out. And you're very welcome to follow me too! \n A tip: today I use Obsidian to keep my notes. I love to see the Graph mode and how all things converge. Have you ever used it? Any other suggestions? The talks \n You can watch the whole event here: https://www.youtube.com/live/grU_TdxhjNY At the venue \n The power of the SAP Community: Simplified Blogging and Personal Branding in the era of AI, Moshe Naveh (0:31). Staying authentic in the AI era is a real challenge. Moshe shares tips on getting more out of the SAP Community, and a simplified blogging workflow: template, recorded notes with transcript, a prompt to draft, then review, validate and publish. Watch it if you've always wanted to become more active in the community and build a personal brand in the SAP community. \n Sovereign Cloud in SAP: Innovation, Control and Trust in the Era of AI , António Andrade (1:00). Sovereignty broken into four layers (data, operational, technical and legal) and the options SAP presents: hyperscalers, SAP cloud infrastructure, sovereign cloud on-site and regional partners. Watch it if you're concerned about where your company's data is going and want to learn more about governance and sovereignty. \n From Sapphire Vision to the Autonomous Enterprise: What's Real, What's Next , Mustafa Bensan (1:36). Maps the Sapphire announcements onto the new SAP ecosystem, and shows how the startup LiveKit makes voice interaction with SAP possible. Watch it if Sapphire left you with puzzle pieces and no picture, and you want to see how the future sounds (pun intended) for SAP users. \n What's in Business Data Cloud today, and what will it be called tomorrow , Tim Koster (2:12). The evolution of SAP solutions into Business Data Cloud and SAP's data analytics strategy. Watch it if you've lost track of what everything is called, and want to know what's a real change to the tool and what's just a new fancy name. \n Event-driven architectures in the age of AI , António Maradiaga (2:46). Why event-driven architecture is reliable and how it works, with a real example from the previous day's CodeJam combining Joule, Integration Suite and MCP. Watch it if \"event-driven\" still sounds like a buzzword, and to see how the cool things work in the background. \n Then we went to lunch, and I got to meet a lot of new people. I heard so many interesting views on how people are experiencing all these changes, and even learned where companies are right now and how they are handling this new era of autonomous enterprise and agentic AI. \n Unfortunately I had to leave after lunch, because the train timetable in Portugal wasn't on my side (the train was 40 minutes late, and a trip that usually takes 1h took 4h30m 😒 ), so António Maradiaga's was the last talk I watched at the venue. I'm rewatching all of them on the replay to make my notes, which is why some summaries are still coming. On the replay \n Autonomous Asset Management , Tiago Fernandes (5:10). Pairs with Mustafa's talk: the future of SAP is conversational, but Tiago argues agents change how we work without replacing people. Watch it if you've wondered what this means for our jobs and what the future might look like for companies. \n What Happens When You Give AI an SAP Data Migration Project? Paul Major (5:45). Real-world lessons from applying generative AI to an S/4HANA data migration. Coming soon. \n OriseX: From data to knowledge in just a few seconds , Afonso Ungaro. Coming soon. \n AI in SuccessFactors: From Copilot to document grounding , Hugo Ferreira. Coming soon. \n 5. What's next \n I'm so excited for the next CodeJams and SITs! \n More info: https://sitporto.com/ \n A note on how I write: I'm bilingual, so I mix languages when writing, because some things are funnier in one language than another 😂 . I also use AI to help me translate it all and polish my posts, but the experiences, opinions and notes are mine."
+  },
+  {
+   "key": "ddfc8dc2071174b4",
+   "title": "Share a Pic of Your Pet for Devtoberfest🦉😸🙊🦝🐯🐩🦓🐮🐷🐗🐫🦣🐭🦛🐰🐓🐔🦘🐥🦆🦅🦜🦚",
+   "link": "https://community.sap.com/t5/devtoberfest-blog-posts/share-a-pic-of-your-pet-for-devtoberfest/ba-p/14494961",
+   "published": "2026-10-04T06:45:10+00:00",
+   "author": "Dan_Wroblewski",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Announcing Petoberfest, your chance to show off your pet, or your pet rock, or your chia pet, or your stuffed animal companion."
+  }
+ ],
+ "triage": {
+  "0": {
+   "i": 0,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Personal account of attending SIT Porto 2026 conference as a first-time attendee."
+  },
+  "1": {
+   "i": 1,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Pet photo sharing campaign for Devtoberfest community event engagement."
+  }
+ },
+ "deep": {},
+ "digest": {
+  "headline": "No source material arrived today: two items were counted, but none had readable content, so there is nothing to report.",
+  "overview": "The collection count shows 2 items, but no full-text items and no headlines were passed to me. There are no ref numbers and no links. I cannot cite anything, so I have not written any news, releases or technical claims.\n\nFor the reader, today is a gap day. Nothing here should be posted to the community. The suggested action is to check why the two collected items came through empty (a fetch or parsing failure is the likely cause) and to rerun the briefing once content is available.",
+  "top_stories": [],
+  "releases": [],
+  "deep_dives": [],
+  "trending_problems": [],
+  "post_drafts": [],
+  "interview_questions": [],
+  "class_idea": {
+   "title": "No class idea today: no source material",
+   "why_now": "No items were provided, so there is no developer problem from today's material to build a class around.",
+   "outline": [
+    "Rerun the briefing once source items are available"
+   ],
+   "exercise": "None proposed today, because nothing in the source material supports one.",
+   "refs": []
+  },
+  "whatsapp_highlights": "No SAP developer news today: the collection returned no readable items. Briefing will resume once source content is available."
+ }
+}
