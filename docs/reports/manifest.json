@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-05",
+  "label": "Monday, 5 October 2026",
+  "headline": "Today's SAP material is all agentic AI on BTP: MCP servers on Integration Suite, workflow-based agent chaining, and CAP's multi-agent support. There is no core ABAP content.",
+  "items": 24,
+  "deep": 3
+ },
+ {
   "date": "2026-10-04",
   "label": "Sunday, 4 October 2026",
   "headline": "No source material arrived today: two items were counted, but none had readable content, so there is nothing to report.",
