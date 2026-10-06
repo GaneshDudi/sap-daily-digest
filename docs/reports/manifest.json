@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-06",
+  "label": "Tuesday, 6 October 2026",
+  "headline": "Thin day for ABAP: one solid RAP change-log tutorial, an email-template post, and mostly forum questions plus Joule Studio coverage.",
+  "items": 115,
+  "deep": 15
+ },
+ {
   "date": "2026-10-05",
   "label": "Monday, 5 October 2026",
   "headline": "Today's SAP material is all agentic AI on BTP: MCP servers on Integration Suite, workflow-based agent chaining, and CAP's multi-agent support. There is no core ABAP content.",
