@@ -1,0 +1,9 @@
+{
+ "jobs": [],
+ "coverage": {
+  "Adzuna (India job index)": "failed: ADZUNA_APP_ID / ADZUNA_APP_KEY secrets are not set",
+  "Job alert emails": "failed: GMAIL_ADDRESS / GMAIL_APP_PASSWORD secrets are not set",
+  "SAP careers": "failed: 404 Client Error: Not Found for url: https://jobs.sap.com/en/services/rss/job/?locale=en_US&keywords=%28abap%29"
+ },
+ "summary": null
+}
