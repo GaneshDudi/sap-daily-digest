@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-08",
+  "label": "Thursday, 8 October 2026",
+  "headline": "A thin day for core ABAP: dump-isolation and BAPI questions from the forums, CAP error and message localization bugs, and BTP connectivity internals.",
+  "items": 110,
+  "deep": 24
+ },
+ {
   "date": "2026-10-07",
   "label": "Wednesday, 7 October 2026",
   "headline": "Thin day: RAP hybrid managed/unmanaged-save PO question, a BAPI silent-failure case, and Public Cloud extensibility gaps dominate community questions.",
