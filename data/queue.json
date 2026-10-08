@@ -1,1 +1,244 @@
-[]
+[
+ {
+  "key": "0328c7da708bd954",
+  "title": "SNP's Experience with SAP's Max Success Plan",
+  "link": "https://community.sap.com/t5/sap-learning-adoption-business-transfomation-blog/snp-s-experience-with-sap-s-max-success-plan/ba-p/14499486",
+  "published": "2026-10-08T10:22:31+00:00",
+  "author": "ThomasJenewein",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Discover how SNP used SAP’s Max Success Plan to accelerate ots SAP S/4HANA transformation, unblock decisions, and build a future-ready foundation for AI and automation."
+ },
+ {
+  "key": "003ce4930080b0fc",
+  "title": "SAP HANA Cloud: Provisioning and administration",
+  "link": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sap-hana-cloud-provisioning-and-administration/ba-p/14499173",
+  "published": "2026-10-08T08:57:37+00:00",
+  "author": "JoseBastidas",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP HANA Cloud administration starts with the right decisions. \n For SAP Partners, understanding how to provision, configure, monitor, and maintain HANA Cloud is key when helping customers build reliable cloud environments. \n In this session, we’ll walk through the SAP HANA Cloud lifecycle, from provisioning options and setup decisions to day-to-day administration using SAP HANA Cloud Central. \n You’ll also see how sizing and scaling, backup policies, monitoring, upgrades, and operational events fit together. Plus, demos will bring these concepts closer to the situations you may encounter when supporting customers. \n Whether you work in consulting, architecture, technical delivery, or customer success, this session will give you a practical foundation for guiding customers with greater confidence. \n Register now and strengthen your SAP HANA Cloud expertise. https://partneredge.sap.com/en/library/education/psd/2026/sep/e_oe_te_w_PSD_WEB_00015536.html \n #SAP #SAPBusinessAIPlatform #SAPBTP #SAPPartners #SAPEcosystem #SAPHANACloud #CloudAdministration"
+ },
+ {
+  "key": "cf7578a3d930cb76",
+  "title": "From Fabric to Cloud: Modernizing a 15-Year-Old ERP with S/4HANA Fashion",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/from-fabric-to-cloud-modernizing-a-15-year-old-erp-with-s-4hana-fashion/ba-p/14499372",
+  "published": "2026-10-08T08:41:58+00:00",
+  "author": "SarhanP",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Moving from a 15-year-old SAP ECC system to RISE with SAP S/4HANA Cloud Private Edition is a major step for a garment manufacturing company. Here is a simple and clear guide to the biggest challenges you will face and how to solve them: 1. The Industry System Change (Moving to Modern Fashion ERP) \n The Challenge: In your old system, you probably use old SAP apparel tools (like AFS or FMS) to manage colors, sizes, and fits. S/4HANA does not support these old tools anymore. It uses a brand-new, modern system called S/4HANA Fashion and Vertical Business . \n The Solution: Do not just copy your old system. It is much better to start fresh ( Greenfield approach ) or choose a Selective Data Transition . This allows you to redesign your color and size processes using SAP’s newest fashion standards. 2. 15 Years of \"Data Garbage\" \n The Challenge: Operating for 15 years means your database is full of old, unused information (like old fabric codes, closed orders, and past customers). S/4HANA runs on a very fast but expensive memory database (HANA). The more data you move, the higher your monthly cloud subscription bill will be. \n The Solution: Data Cleaning & Archiving. Before you move to the cloud, delete what you do not need and archive the rest. Only move active data—like current stocks, open orders, and active suppliers—to the new bulut (cloud) system. 3. Too Many Custom Codes (Z-Transactions) \n The Challenge: Over the past 15 years, your team has likely written a lot of custom ABAP codes (Z-codes) for specific tasks like fabric cutting plans or outsourcing tracking. Many of these custom codes will not work on S/4HANA because the underlying database structure has completely changed. \n The Solution: Keep the Core Clean. Use a tool called SAP Readiness Check to see which custom codes you actually need. You will find that S/4HANA now does many of these things automatically. For the custom features you absolutely must keep, build them outside the main ERP using the SAP Business Technology Platform (BTP) . 4. Tracking Outsourced Production (Fason) \n The Challenge: In garment manufacturing, outsourcing work (like sewing, cutting, or embroidery) is critical. Your team is used to old ECC screens to track these sub-contractors. Switching to S/4HANA changes how production planning and stock tracking look and feel. \n The Solution: Adopt SAP Fiori. Replace the old, complicated SAP desktop screens with modern, user-friendly SAP Fiori web applications . Fiori makes tracking outsourced production much easier on phones, tablets, and modern web browsers. 5. Employee Resistance to Change \n The Challenge: Your employees have been clicking the exact same buttons for 15 years. When you change their system, they will naturally complain that the new system is \"too difficult\" or \"too different.\" \n The Solution: Change Management & Training. Do not wait until the system is finished to show it to your team. Involve your key users on day one. Show them how new AI features (like the Joule assistant) will save them time, and provide plenty of hands-on training. 📋 Quick Summary Roadmap \n Step 1: Scan: Run SAP Readiness Check to find your old codes and data size. \n Step 2: Clean: Delete 15 years of old data before moving. \n Step 3: Standardize: Stop using old custom codes; use modern SAP Fashion features instead. \n Step 4: Train: Teach your team how to use the new Fiori screens early."
+ },
+ {
+  "key": "298ace8dcfa2947d",
+  "title": "SAP ALV Grid : Trigger DATA_CHANGED event manually on any custom function code 'ZSAVE' or 'SAVE'",
+  "link": "https://community.sap.com/t5/abap-blog-posts/sap-alv-grid-trigger-data-changed-event-manually-on-any-custom-function/ba-p/14499362",
+  "published": "2026-10-08T08:26:35+00:00",
+  "author": "Surendra_Karma",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "As we know, when we change any entry in the ALV grid from CL_GUI_ALV_GRID, event DATA_CHANGED will be triggered, and we can do some custom validation checks there. \n However, you may have faced this situation, after you change the ALV and push on some user command, like 'ZSAVE' or 'SAVE', the DATA_CHANGED event will not be triggered again, because no cell is changed in ALV grid. And actually, you want to trigger it and do same check or other validations. \n\n This blog will show you how to do it with real-time example."
+ },
+ {
+  "key": "4af3241993a11fe7",
+  "title": "Beat the Single Exclusive Queue Bottleneck : Key-Based JMS Partitioning in SAP Cloud Integration",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/beat-the-single-exclusive-queue-bottleneck-key-based-jms-partitioning-in/ba-p/14498361",
+  "published": "2026-10-08T08:17:01+00:00",
+  "author": "Aman_V",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Beat the Single Exclusive Queue Bottleneck \n Key-based JMS partitioning in SAP Cloud Integration — stay in order and process fast \n Every integration developer meets this wall sooner or later: \"these messages must be processed in order.\" The easy fix — a single exclusive queue: one consumer, one message at a time — works perfectly and scales terribly. The moment volume rises, that single ordered lane becomes the bottleneck everything queues behind. \n Sound familiar? How many times have you \"solved\" ordering by throttling everything down to one-at-a-time, then watched the backlog grow? \n Here's the good news: you almost never need global order. You need order per key . Once you see that, you can keep strict ordering and run in parallel — on plain JMS, no premium add-ons. Let's build the idea up from scratch."
+ },
+ {
+  "key": "acc90c4422bae48f",
+  "title": "Consolidated Invoice getting split due to Credit Account change in Business Partner",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/consolidated-invoice-getting-split-due-to-credit-account-change-in-business/ba-p/14485936",
+  "published": "2026-10-08T07:43:16+00:00",
+  "author": "Nayab",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Learn why a Credit Account change on the Business Partner can cause consolidated invoices to split unexpectedly, and how to fix and automate the correction using program UKM_RFDKLI20."
+ },
+ {
+  "key": "d432d376a5fb93e3",
+  "title": "[AUTOMOTIVE] Accelerate to Impact - Rapid Value Prototyping for Automotive",
+  "link": "https://community.sap.com/t5/industries-learning-group-blog-posts/automotive-accelerate-to-impact-rapid-value-prototyping-for-automotive/ba-p/14498946",
+  "published": "2026-10-08T08:58:51+00:00",
+  "author": "Grzegorz",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "The future of automotive transformation is not about choosing between standardization and innovation. It's about leveraging both. \n Discover how SAP Automotive Golden Client templates and AI-powered rapid prototyping help organizations accelerate value realization and turn real business challenges into working solutions. Join us live and see it in action. \n 🚀 Ready to accelerate from idea to impact? Register: Accelerate to impact - rapid value prototyping for automotive \n #SAPCommunity #Automotive #Joule #AIInnovation"
+ },
+ {
+  "key": "52731f65a357e782",
+  "title": "[UTILITIES] Live Session: Explore SAP Distributed Energy Resources, measurement concept management",
+  "link": "https://community.sap.com/t5/industries-learning-group-blog-posts/utilities-live-session-explore-sap-distributed-energy-resources-measurement/ba-p/14498064",
+  "published": "2026-10-08T09:29:24+00:00",
+  "author": "Grzegorz",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Since Distributed Energy Resources (DER) and prosumer business models are rapidly reshaping the utilities landscape, staying ahead of the technology enabling this transformation is becoming increasingly important for consultants, business users, architects, and industry experts. SAP's upcoming live session offers a concise and practical introduction to how SAP supports SAP Distributed Energy Resources, measurement concept management component . \n 📅 Date: November 5, 2026 ⏱ ️ Duration: 45 minutes 🌍 Format: Online Live Session \n Available sessions: 09:00 – 09:45 (Europe/Berlin) or 16:00 – 16:45 (Europe/Berlin) Register https://learning.sap.com/live-sessions/introducing-sap-distributed-energy-resources-der-and-measurement-concept-management-mcm"
+ },
+ {
+  "key": "e659f26206e66078",
+  "title": "SAP Cloud ERP - KDM exchange rate difference leaves temporary balance on WRX/GR-IR at month-end",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/sap-cloud-erp-kdm-exchange-rate-difference-leaves-temporary-balance-on-wrx/qaq-p/14499482",
+  "published": "2026-10-08T10:06:52+00:00",
+  "author": "edoymaner",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear Community, \n We are using SAP S/4HANA Cloud Public Edition with Material Ledger / Actual Costing. \n We are currently performing the August 2026 month-end closing and have observed an issue with our GR/IR (WRX) account for foreign currency purchase orders. Our purchase orders (PO) can have multiple line items, and the dates of goods receipt and invoice receipt are not always in the same month. \n For example, a purchase order may have the following situation: \n Purchase order start: August 2026 \n Purchase order end: September 2026 \n Some items have both Goods Receipt (GR) and Invoice Receipt (IR) in August \n Some other items have GR in August but IR in September \n Some items have both GR and IR in September \n The issue is that even for an individual item where the GR and IR quantities are completely matched within August, a balance still remains on the GR/IR (WRX) account at the end of August. \n We have identified that this remaining balance is related to the KDM transaction/event key (exchange rate difference). \n For example, for one item: \n Goods Receipt \n WRX: Credit 1,484,178.26 TRY \n Invoice Receipt \n WRX: Debit 1,480,263.76 TRY \n KDM (exchange rate difference): Debit 3,914.50 TRY \n Therefore, the remaining WRX balance is: \n 1,484,178.26 – 1,480,263.76 = 3,914.50 TRY \n This amount is exactly the KDM amount. There is also no situation that would cause KDM to operate. \n The GR and IR quantities are fully matched, so there is no quantity difference for this item. \n However, when we look at the subsequent periods, we observe that this WRX balance automatically becomes zero in September without any manual clearing for that item. \n Therefore, our understanding is that this may be a temporary balance caused by the exchange rate difference (KDM) and the fact that different items within the same purchase order are processed in different periods. \n Is this standard behavior in S/4HANA Cloud Public Edition when KDM is posted due to exchange rate differences? \n Why does the KDM-related amount temporarily remain as a balance on WRX/GR-IR, even when the GR and IR quantities are fully matched for the item? \n Is it expected that this balance is automatically cleared in a subsequent period (September)? \n For the August month-end closing, should we leave these KDM-related WRX balances open and allow the subsequent GR/IR process to clear them? \n Should MR11 / GR-IR clearing be used for these balances, or should we not clear them manually? \n Could manually clearing these balances have any impact on Material Ledger / Actual Costing / CKMLCP? \n Also, w e do not want this behavior in our month-end closing process. Our expectation is that when the GR and IR quantities are fully matched within the same item, the KDM-related difference should not remain as a balance on the WRX/GR/IR account at period end. Is there any standard configuration or BAdI, key-user extensibility option, developer extensibility option, SAP Note/KBA. \n BR \n fyi @ozarpacienes"
+ },
+ {
+  "key": "9ddacd5f60a9181c",
+  "title": "S/4HANA Public Cloud – Standard Business Partner Address Validation Rules",
+  "link": "https://community.sap.com/t5/technology-q-a/s-4hana-public-cloud-standard-business-partner-address-validation-rules/qaq-p/14499460",
+  "published": "2026-10-08T09:41:37+00:00",
+  "author": "Rohit1105",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi SAP Experts, \n We are currently using SAP S/4HANA Public Cloud and have integrations in place for Customer and Supplier master data creation and updates from Microsoft CRM and OneTrust . We also have an order integration with our Visit platform , from which we receive addresses for one-time customers. \n We are currently facing significant challenges with the standard address validations performed by SAP when creating or updating Business Partners . \n Our source systems are relatively flexible when it comes to address-related fields such as Street, City, Postal Code, Country, Region/State, etc. However, when these Business Partner records are sent to SAP, they can fail because of SAP's standard address validations. \n For example, we have encountered cases where a US postal code such as: \n TX78729 \n is rejected by SAP, while: \n 78729 \n is accepted, with an error indicating that the postal code must have a specific length/format. \n We have already implemented a number of validations on the source-system side based on the errors we have encountered so far and our knowledge of SAP's address requirements. However, we continue to receive new address-related validation errors, particularly when dealing with different countries and regions. \n The challenge \n When an address fails validation in SAP, the correction process is currently quite manual and lengthy: \n\n The source/admin team receives the SAP error. \n\n They contact the SAP team to understand the reason for the failure. \n\n The SAP team investigates the error and determines which address rule is being applied. \n\n The source/admin team then corrects the address in the source system. \n\n The record is resubmitted to SAP. \n This results in additional manual effort as well as delays in customer/supplier creation or order processing. \n The situation is expected to become more challenging as we are planning to onboard additional companies, regions and countries onto S/4HANA Public Cloud . As the number of countries and Business Partners increases, we expect the number of address validation issues and the associated manual effort to increase as well. \n What we are looking for \n We would like to understand whether SAP provides any documentation, configuration object, table, CDS view, API, standard code reference, or other repository that contains or exposes the standard address validation rules used by S/4HANA Public Cloud. \n In particular, we would like to understand the rules applied for fields such as: \n\n Postal Code \n\n City \n\n Street \n\n House Number \n\n Region/State \n\n Country \n\n Country-specific address formats \n\n Mandatory/optional address fields \n\n Country-specific formatting or pattern validations \n Our objective is to obtain the complete set of standard SAP rules for all countries , so that we can implement equivalent validations in our source systems and prevent the records from reaching SAP only to fail during Business Partner creation/update. \n We are not looking for a custom validation solution or guidance on implementing a BAdI. We are specifically trying to understand the standard validation logic already applied by SAP . \n We have reviewed the available SAP documentation around Business Partner address validation and Business Address Services, but so far we have not been able to find a single source that provides the complete set of country-specific standard validation rules. \n Could you please advise: \n\n Where are the standard Business Partner address validation rules defined in S/4HANA Public Cloud? \n\n Is there a SAP-delivered table, CDS view, API, configuration object, or repository from which we can determine these rules? \n\n Is there a complete SAP-maintained list of country-specific postal code/address validation rules? \n\n Are some of these validations implemented in standard SAP application logic rather than configuration? \n\n Is there any SAP-supported API or service that we can use to validate an address using the same rules that SAP applies during Business Partner creation/update ? \n\n If SAP does not expose the complete rules, what is the recommended approach for customers who need to validate large volumes of address data in source systems before sending it to S/4HANA Public Cloud? \n We would greatly appreciate any guidance or references to the specific SAP objects or documentation where these rules are maintained. \n Our main objective is to avoid repeatedly resolving address validation errors manually and to establish a sustainable validation process that can scale as we onboard additional companies and countries onto S/4HANA Public Cloud. \n Thank you in advance for your help."
+ },
+ {
+  "key": "3e7bc016b393e139",
+  "title": "Capture reversal reason for outbound delivery goods issue reversal (VL09 / EWM)",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/capture-reversal-reason-for-outbound-delivery-goods-issue-reversal-vl09-ewm/qaq-p/14499450",
+  "published": "2026-10-08T09:34:20+00:00",
+  "author": "than_huynhc98fac",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Business requirement \n We must record a reason/note every time goods issue for an outbound delivery is reversed (audit and internal control). There is currently no way to capture this in the reversal process. \n Current situation (verified in our tenant) \n 1. App \"Reverse GI\" (VL09, #OutboundDelivery-reverseInWebGUI): no field to enter a reason or text. The reversal material document (movement types 602, 688, Y14, Y41) copies MaterialDocumentHeaderText from the original GI document, so reversals carry no reason and cannot be distinguished by header text. \n 2. App \"Manage Outbound Delivery Orders\" (EWM, OData V4 service UI_WHSEOUTBOUNDDELIVERYORDER): action ReverseGoodsIssue has no input parameters (no reason, text or posting date – see also KBA 3779334). No Notes/Texts entity and no custom fields are exposed. \n 3. App \"Manage Outbound Deliveries\" (#OutboundDelivery-manage): object page is display-only and shows no custom fields. Notes can only be entered in \"Change Outbound Delivery\" (VL02N) via the Custom Fields tab (business context LE_SHP_DELIVERY) or the Texts tab. \n Planned workaround (Clean Core) \n The user enters the reversal reason in a delivery hea"
+ },
+ {
+  "key": "aab76b94e3e9e576",
+  "title": "BTP Environment: Buffering Type is initial but Delivery Class Is \"C\"",
+  "link": "https://community.sap.com/t5/technology-q-a/btp-environment-buffering-type-is-initial-but-delivery-class-is-quot-c-quot/qaq-p/14499408",
+  "published": "2026-10-08T09:01:17+00:00",
+  "author": "mvoros",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi, \n we have an app on SAP BTP ABAP environment that has some customizing tables. All these tables are being flagged by ATC check with the following info level message : Buffering Type is initial but Delivery Class Is \"C\" I understand the message. On on-premise system, there are annotations for defining buffering directly on the table. But these annotations are not available in ABAP Cloud. There are buffer configuration objects but those are available for CDS views only. \n\n What's the correct approach to get rid of these ATC messages? Turn them off in ATC profile, ask for exception or something else? Thanks for any suggestions."
+ },
+ {
+  "key": "94e199d459f97615",
+  "title": "Automatic GR Booking for Dropshipments",
+  "link": "https://community.sap.com/t5/supply-chain-management-q-a/automatic-gr-booking-for-dropshipments/qaq-p/14499386",
+  "published": "2026-10-08T08:51:20+00:00",
+  "author": "pascaltra9",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Community, \n\n I am looking for a way to trigger the distribution of a JSON file during intercompany sales. \n Background: \n\n Sales Entity orders Material in Supplying Plant as Dropshipment -> Supplying plant delivers directly to customer per dropshipment -> GI booking from Supplying Plant should trigger and automatic GR in the Sales Entity for the PO. (JSON file should be sent to Sales Entity after GI) \n\n Does anyone have an idea on how to resolve it or what trigger could send the JSON file to the Sales Entity and post an automatic GR?"
+ },
+ {
+  "key": "e0818bd447cb81bc",
+  "title": "Masking goods receipt and invoice documents in purchasing flow",
+  "link": "https://community.sap.com/t5/supply-chain-management-q-a/masking-goods-receipt-and-invoice-documents-in-purchasing-flow/qaq-p/14499374",
+  "published": "2026-10-08T08:44:42+00:00",
+  "author": "tejasrisurthi",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Our client has a business requirement to mask purchasing documents related to a particular purchasing group. We have fulfilled this requirement for purchase requisition and purchase order using S&A. However, we could not attain the same for GR and IR documents. \n Could you please help us with this scenario?"
+ },
+ {
+  "key": "9f08b66d244ee755",
+  "title": "Exchange sale rate for sales volume flexible",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/exchange-sale-rate-for-sales-volume-flexible/qaq-p/14499366",
+  "published": "2026-10-08T08:31:18+00:00",
+  "author": "baiju_jacob",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear Team, \n\n After configuring Exchange Rate Type B (Standard translation at bank selling rate) for USD, the rate is reflecting correctly in general, but it is not appearing in the sales volume flexible report for sales order billing. \n\n Best regards, \n Kiran Raj"
+ },
+ {
+  "key": "124c185b892627b6",
+  "title": "Maintenance Order Operation Time Confirmation - Auto Fill Actual Work Field",
+  "link": "https://community.sap.com/t5/product-lifecycle-management-q-a/maintenance-order-operation-time-confirmation-auto-fill-actual-work-field/qaq-p/14499308",
+  "published": "2026-10-08T07:46:50+00:00",
+  "author": "atulp87",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Experts, \n Need your help on below mentioned case. \n When a user selects an operation in Find Maintenance Orders and Operations → Add Time Confirmation , the Actual Work field should be prefilled with the operation's planned work, and the user then saves the confirmation. \n\n Any clarification, SAP Notes or documentation references would be greatly appreciated. \n Thanks in advance."
+ },
+ {
+  "key": "8d235719b2d852b1",
+  "title": "SAP HCM EXAM GUIDANCE",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/sap-hcm-exam-guidance/qaq-p/14499024",
+  "published": "2026-10-07T18:00:21+00:00",
+  "author": "VANSHIKA_09",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello SAP Community, \n I am preparing for an SAP certification exam and need some guidance. \n My question: \n SAP shares official preparation material before the exam, such as the exam topic areas, sample questions and the candidate guide PDF Just after we choose exam slot. Where can I find these, and does anyone have experience using them? \n Details: \n Exam: SAP HCM Payroll for S/4 HANA (C_HCMP) \n Background: MBA (Finance and HR) student, beginner in SAP \n Preparing through: SAP Learning Hub / SAP Learning Journey / self-study \n What I need help with: \n Where can I find the official exam preparation PDFs on the SAP website or Learning Hub? \n Is the topic area and weightage document available for download? \n Are there official sample questions for practice? \n Can anyone suggest the best way to prepare for this exam? \n I am only looking for official, legitimate study material, not actual exam questions. \n Thank you in advance for your help! \n Regards, \n Vanshika Gupta"
+ },
+ {
+  "key": "50a03b06bfbeea0e",
+  "title": "Beyond the Universal Journal: What Really Changes for FI Consultant During an S/4HANA Transformation",
+  "link": "https://community.sap.com/t5/financial-management-q-a/beyond-the-universal-journal-what-really-changes-for-fi-consultant-during/qaq-p/14498995",
+  "published": "2026-10-07T16:42:56+00:00",
+  "author": "divagaran6",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi SAP Community, \n As SAP customers continue to move from ECC to SAP S/4HANA, a lot of discussions focus on the technical differences, simplified data models, and new applications. However, I’ve been wondering about something from a more practical FI consultant perspective : \n How does an FI consultant’s approach to troubleshooting actually change after an S/4HANA transformation? \n In a traditional ECC environment, an FI consultant may be used to checking individual transactions, tables, reconciliation reports, configuration settings, and integration points separately. In S/4HANA, concepts such as the Universal Journal, Business Partner approach, new Asset Accounting, Fiori applications, and embedded analytics change the way financial data is created, stored, and analyzed. \n For example, consider a situation where a user reports: \n “The amount in my financial report doesn't match what I expected.” \n In an S/4HANA system, the issue could potentially involve several areas: \n The original accounting document and document flow \n G/L account and company code configuration \n Universal Journal (ACDOCA) \n Cost center or profit center assignments \n Currency and valuation \n Subledger integration \n Fiori application behavior \n CDS-based reporting \n Data or configuration differences between systems \n This made me think that S/4HANA FI troubleshooting is becoming less about checking one transaction and more about understanding the complete financial data flow. \n My questions to experienced S/4HANA Finance consultants: \n When troubleshooting an FI posting/reporting issue in S/4HANA, what is your usual first point of investigation ? \n How do you decide whether an issue is related to configuration, master data, transactional data, integration, or reporting logic ? \n Which Fiori apps, CDS views, or analytical tools have become particularly useful in your day-to-day FI troubleshooting? \n For consultants transitioning from ECC to S/4HANA, what is one troubleshooting habit that they should unlearn , and what should they learn instead? \n Are there any real-world S/4HANA FI issues that initially looked like configuration problems but ultimately turned out to be data, integration, or reporting-related ? \n I would really appreciate hearing practical experiences from consultants who have worked on ECC-to-S/4HANA transformations, brownfield conversions, or S/4HANA AMS/support projects . \n Looking forward to learning from the community! \n Thanks in advance."
+ },
+ {
+  "key": "6d2b5c1714db492e",
+  "title": "Looking for free or low-cost hands-on practice for SAP Vendor Invoice Management (OpenText VIM)",
+  "link": "https://community.sap.com/t5/questions-about-sap-websites/looking-for-free-or-low-cost-hands-on-practice-for-sap-vendor-invoice/qaq-p/14498941",
+  "published": "2026-10-07T15:18:53+00:00",
+  "author": "Gokul_Thirumurthy",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Community, \n I'm a presales consultant working on enterprise bids and I'm trying to build practical, hands-on knowledge of SAP Vendor Invoice Management (VIM by OpenText). I've gone through the basics of the invoice flow (DP documents, invoice approval workflow, exception handling) from the documentation, but I haven't been able to find any environment to practise in. \n I've checked the SAP Learning site, openSAP and the SAP BTP trial, and none of them seem to include VIM. \n Could anyone share: \n Is there any free or trial environment (SAP, OpenText or a partner) where VIM can be practised? \n Are there low-cost options, such as a preconfigured SAP CAL appliance with VIM installed, or a training provider with lab access? \n Any recommended learning paths, hands-on tutorials or blog series that walk through the VIM configuration and the invoice processing scenarios? \n How are others getting hands-on exposure when they don't have a project system? \n Any pointers would be appreciated. Thanks in advance! \n #SAP VIM Module #SAP Vendor Invoice Management"
+ },
+ {
+  "key": "2c85128bd50f2785",
+  "title": "falha ao iniciar o ambiente minisap para treinar abap",
+  "link": "https://community.sap.com/t5/technology-q-a/falha-ao-iniciar-o-ambiente-minisap-para-treinar-abap/qaq-p/14498922",
+  "published": "2026-10-07T14:50:39+00:00",
+  "author": "Luiz-Rangel_195",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Olá, \n tentando iniciar o ambiente minisap para treinar abap. porém sempre recebo o mesmo erro quando tento iniciar o sap. \n vhcalnplci:npladm 19> startsap all \n Checking syb Database \n Database is not available via R3trans \n ------------------------------------------- \n starting database NPL ... \n Log file: /sybase/NPL/startdb.log \n startdb completed successfully \n Starting Startup Agent sapstartsrv \n OK \n Instance Service on host vhcalnplci started \n ------------------------------------------- \n starting SAP Instance ASCS01 \n Startup-Log is written to /home/npladm/startsap_ASCS01.log \n ------------------------------------------- \n /usr/sap/NPL/ASCS01/exe/sapcontrol -prot NI_HTTP -nr 01 -function Start \n Instance on host vhcalnplci started \n Starting Startup Agent sapstartsrv \n FAIL: Timeout \n Startup of Instance Service failed \n See /home/npladm/startsap_D00.log for details \n ---------------------------------------------------------------------------------------------- \n o arquivo de log acima só me diz para olhar ele mesmo. \n Trace of system startup/check of SAP System NPL on ter 06 out 2026 10:46:03 -03 \n Called command: /usr/sap/NPL/SYS/exe/uc/linuxx86_64/startsap start \n ------------------------------------------- \n 10:46:05 \n Starting Startup Agent sapstartsrv \n ------------------------------------------- \n 10:48:05 \n Startup of Instance Service failed \n ------------------------------------------- \n 10:48:05 \n See /home/npladm/startsap_D00.log for details \n ------------------------------------------------------------------------------------------------------------------------ \n o final do arquivo startupap.trc é esse: \n\n _PROFILES=/usr/sap/NPL/SYS/profile/NPL_V??_00 \n _nrProfiles=1 \n _Iset_instance=V \n {11:13:26 ## pushProfiles() início: @=V /usr/sap/NPL/SYS/profile/NPL_V??_00 \n _TEMPINST=V?? \n }11:13:26 ## pushProfiles() concluído \n NINST= \n INSTFOUND=0 \n NINSTFOUND=0 \n hasABAP=0 \n hasJava=0 \n hasSpecial=0 \n }11:13:27 ## set_instance() concluído \n Nenhum perfil de instância encontrado \n Código de saída 8 \n\n Sou bem leigo em linux, e não consigo resolver, mesmo depois de tentar várias buscas no google. \n Agradeço pela ajuda."
+ },
+ {
+  "key": "c1d273455f7a1ba9",
+  "title": "ChaRM handling for multiple parallel CTMS/BTP subaccounts",
+  "link": "https://community.sap.com/t5/technology-q-a/charm-handling-for-multiple-parallel-ctms-btp-subaccounts/qaq-p/14498917",
+  "published": "2026-10-07T14:43:28+00:00",
+  "author": "mkjha1985",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "We currently have the BTP CPI service integrated with the SAP Solution Manager system and Charm is being used for transport movement across the Consolidation, Quality, and Production subaccounts. \n The key change in our proposed architecture for the CTM track is that a single transport originating from the M4D_DEV subaccount needs to be moved to both M4Y_CON1 and M4Y_CON2 in parallel. After successful movement to both Consolidation subaccounts, the content will proceed to the common M4Z_QA1 and subsequently to M4P_PRD. \n 1 Recommended approach for structuring and managing the Consolidation, Quality and Production BTP subaccounts. \n 2 SAP Best Pratice for BTP CPI with Charm for TR Movement. \n 3 Recommended approach for handling a single transport movement from M4D_DEV to multiple Consolidation subaccounts (M4Y_CON1 and M4Y_CON2) in parallel. \n 4 Known limitations or constraints of SAP Solution Manager/ChaRM when handling BTP services and multiple BTP subaccounts."
+ },
+ {
+  "key": "3ad12a49ccfeefc6",
+  "title": "Anyone using AI coding tools for ABAP?",
+  "link": "https://community.sap.com/t5/abap-forum/anyone-using-ai-coding-tools-for-abap/m-p/14499354#M1329",
+  "published": "2026-10-08T08:13:22+00:00",
+  "author": "henryleeflow",
+  "tags": [],
+  "feed": "SAP Community discussions",
+  "kind": "discussion",
+  "text": "I've been experimenting with a small harness for AI coding agents to see if I can make them better at ABAP. \n On my current eval tests i got these accuracy gains: \n Claude Fable 5 92.2% -> 97.7%\nMiniMax M3 88.5% -> 93.5% \n I'm curious how people are actually using AI with ABAP today. \n Is anyone using Claude Code, Codex, Copilot, etc. for ABAP? \n In real SAP environments, can you normally use cloud models, or does everything need to stay on-prem? \n Would something like this be more useful as a skill/plugin for an existing coding agent, or as its own ABAP agent? \n Is there a natural place in the ABAP workflow/tooling where something like this should hook in? \n I'm thinking about putting the ABAP-specific parts on GitHub if they're useful. Mostly looking for advice from people who work with ABAP regularly."
+ }
+]
