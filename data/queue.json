@@ -696,5 +696,49 @@
   "feed": "SAP Community discussions",
   "kind": "discussion",
   "text": "Hi Friends, \n Good day, \n I hope someone can share if this is possible, a simple alv report with hierarchy formatting attached in an email in PDF format. \n I created before a program sending excel as attachment using the table used in ALV but with no formatting. I'm just curious if it's possible to preserve the format when you attach it in PDF? Perhaps a sample code will be very helpful as reference. \n\n Thank you. \n Geoff"
+ },
+ {
+  "key": "6b5a7cea46044c09",
+  "title": "Will SAP Functional Consultants Survive the Rise of AI and Joule? (Or Should They Start Farming?)",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/will-sap-functional-consultants-survive-the-rise-of-ai-and-joule-or-should/ba-p/14499082",
+  "published": "2026-10-07T22:09:49+00:00",
+  "author": "jiteshmehta",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Future of Mr. Traditional FC \n AI assistants such as SAP Joule are changing how functional consultants research, document, configure, and support SAP solutions but they are not eliminating the need for human judgment. Through the humorous contrast between Mr Traditional FC, the traditional consultant, and Mr NextGen FC, the AI-aware consultant, this article explores how SAP professionals can move beyond repetitive work and become business transformation advisors who combine SAP expertise, industry knowledge, and AI."
+ },
+ {
+  "key": "555af62d92f1316b",
+  "title": "Usage for AFL and VCH Component",
+  "link": "https://community.sap.com/t5/technology-q-a/usage-for-afl-and-vch-component/qaq-p/14499111",
+  "published": "2026-10-08T00:05:21+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello SAP, \n Could you please share details on the usage, functionality, and business relevance of the AFL and VCH components? This information will help us assess their current utilization within the landscape. \n\n Thank you \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+ },
+ {
+  "key": "955321d60f9dfb01",
+  "title": "Initialize depreciation area values?",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/initialize-depreciation-area-values/qaq-p/14499106",
+  "published": "2026-10-07T23:30:43+00:00",
+  "author": "djwafelap",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi SAP experts, \n My customer is using SAP S/4HANA Public Cloud Asset Accounting with the following depreciation areas: \n - Area 01 (Ledger 0L) as the leading valuation \n - Area 15 (Ledger 0L) \n - Area 32 (Ledger 2L) \n Areas 15 and 32 were configured in the past but were not actually used for their intended purposes. They currently contain incorrect depreciation keys, useful lives, and therefore incorrect asset values. The values in these areas have not been relevant for statutory reporting so far. \n My customer would now like to start using: \n - Area 15 for local tax valuation \n - Area 32 for IFRS valuation \n The plan is to maintain the correct depreciation keys and useful lives in these areas going forward. \n Our question is: \n Is there a supported way in SAP S/4HANA Public Cloud to initialize depreciation areas 15 and 32 with the values from depreciation area 01 at the beginning of a new fiscal year? \n Ideally, the acquisition values and accumulated depreciation as of the opening balance date should be aligned with depreciation area 01, after which the new valuation rules in areas 15 and 32 would apply. \n Has anyone implemented a similar scenario in Public Cloud? If so, what is the recommended approach? \n Thanks in advance for your advice. \n Best regards \n Rado"
+ },
+ {
+  "key": "4c526d97a2fd459c",
+  "title": "Temp tables created in a stored proc, called in a transaction are not allowed?",
+  "link": "https://community.sap.com/t5/technology-q-a/temp-tables-created-in-a-stored-proc-called-in-a-transaction-are-not/qaq-p/14499087",
+  "published": "2026-10-07T22:13:02+00:00",
+  "author": "sladebe",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "It turns out, if you set 'ddl in tran' on tempdb and you create a stored proc like: \n -- Formatting lost after this web page asked me to choose where to post this question \n create procedure foo as begin create table #t (id int, f1 datetime) insert #t values (1, getdate()) select * from #t drop table #t end \n It runs fine. \n As per Temp Tables in Stored Procedures , the #temp table created in the stored proc gets auto-dropped with the stored proc exits. \n But if it is called in a transaction, you get this spew (line wrapping added): \n -- Formatting lost after this web page asked me to choose where to post this question \n > begin transaction; > exec foo; id f1 ----------- ------------------- 1 Oct 7 2026 5:53PM (1 row affected, return status = 0) Msg 277, Level 16, State 1 Server 'MY_SYBSERVER', Procedure 'foo', Line 7 There was a transaction active when exiting the stored procedure 'foo'. The temporary table '#t' was dropped in this transaction either explicitly or implicitly. This transaction has been aborted to prevent database corruption. Transaction count after EXECUTE indicates that a COMMIT or ROLLBACK TRAN is missing. Previous count = 1, Current count = 0. \n It also turns out the web page: \n https://help.sap.com/docs/SAP_ASE/b65d6a040c4a4709afd93068071b2a76/aaa360ccbc2b10148386eee0c5fc9442.html?version=LATEST&locale=en-US \n says not to use \"ddl in tran\" on tempdb because of performance issues. But we were looking at using it in a test environment so performance wasn't an issue. \n But it looks like it's not allowed. Any trace flag to allow creating a #temp table, in a stored proc, called in a transaction?"
  }
 ]
