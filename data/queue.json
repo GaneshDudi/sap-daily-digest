@@ -1,1 +1,112 @@
-[]
+[
+ {
+  "key": "22d625fac033acb0",
+  "title": "Smarter Quote Submissions: Configurable Email Attachments in SAP Sales Cloud V2",
+  "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/smarter-quote-submissions-configurable-email-attachments-in-sap-sales-cloud/ba-p/14500317",
+  "published": "2026-10-09T10:25:04+00:00",
+  "author": "ashwin_shetty2",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP Sales CloudV2 now gives sales administrators separate control over what gets attached to quote emails , depending on whether the email is triggered by the Submit action or created manually by a sales rep. And with a bit of integration work, this opens a powerful door: automatically sending S/4HANA generated quote PDFs to customers, without the sales rep ever touching the backend system \n Quote Submission \n There are two separate workflows to submit a Sales Quote. The Submit action and a manually created email from a quote are treated as distinct events, each with its own attachment configuration. \n\n Trigger Configured In Options \n Submit action Document Types → Email Attachment None / Generated Quote PDF / Quote Email Attachment \n Manual email from quote General →Defaults Email Attachment None / Generated Quote PDF / Quote Email Attachment \n This separation matters because the intent behind each action is different. A submission is a formal, often automated step where you want consistency enforced. A manually created email might be a follow-up, a revision note, or a relationship touchpoint , where the default might differ by business context. \n Submit Sales Quote PDF from S/4 Hana \n In many organisations, the main quote PDF lives in S/4HANA, it carries pricing, legal terms, and output determined by S/4 output management. Sales reps working in Sales Cloud shouldn't have to switch systems just to retrieve and attach that PDF. They dont have to if you follow the below steps \n 1 . Upload the S/4 PDF via the Document Service API \n exposes adocument-service API that allows external systems to upload documents directly into the tenant. Using a custom enhancement or integration (e.g. triggered when the S/4 quote is released or output is generated), the S/4 PDF can be pushed into the Sales Cloud tenant automatically. \n You can also refer to this blog for details on how to work with document -service API https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/how-to-use-document-service-api-to-upload-documents-into-sales-amp-service/ba-p/13719891 \n Make sure the document is linked to the corresponding sales quote using the attachment type \"Email Attachment\" . This is the key this attachment type is what the new Email Attachment configuration recognises and acts on. \n 2. c onfigure the Document Type \n In the Document Types settings, set the Email Attachment dropdown to Quote Email Attachment for the relevant document type. Ensure Email on Submit is enabled. \n 3 . Submit \n When the sales rep hits Submit, the system picks up the linked \"Email Attachment\" type document attached to the sales quote , which is the S/4-generated PDF, and includes it in the outbound email. \n Configuration Summary \n Document Types (for Submit behaviour): \n User Menu → System Settings → All Settings → Sales Quotes → Document Types \n Enable Email on Submit \n Set Email Attachment to Quote Email Attachment \n General (for manually created emails): \n User Menu → System Settings → All Settings → Sales Quotes → General \n Under Default Email Attachment, select Quote Email Attachment (or whichever default fits your process) \n Integration side: \n On S/4 quote release or output generation, call the document-service API in Sales & Service Cloud v2 to upload the PDF \n Link the uploaded document to the sales quote with attachment type Email Attachment \n\n What looks like a simple configuration addition delivers two meaningful improvements. First, administrators can now separately define what gets attached when a quote is submitted versus when a sales rep manually sends an email from a quote giving precise control over two distinct customer touchpoints. Second, the \"Quote Email Attachment\" type opens the door to richer integration scenarios"
+ },
+ {
+  "key": "98a7fc1c23ed0d43",
+  "title": "SAP Continuous Influence for SAP S/4HANA Cloud Public Edition: Feedback Session Overview",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/sap-continuous-influence-for-sap-s-4hana-cloud-public-edition-feedback/ba-p/14500219",
+  "published": "2026-10-09T09:57:26+00:00",
+  "author": "DoreenBaseler",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP Continuous Influence provides customers and partners with a direct channel to share product improvement requests and influence the future direction of SAP S/4HANA Cloud Public Edition. This article provides a comprehensive overview of all currently available SAP S/4HANA Cloud Public Edition feedback sessions, helping you quickly identify the correct session for submitting requests or voting on existing requests. \n What Is a Feedback Session? \n A feedback session is a product area or topic-specific campaign within SAP Continuous Influence where customers can: \n Submit improvement requests \n Vote on existing requests \n Collaborate with the SAP product team on future innovations \n Please note that not every product topic has a dedicated feedback session. \n SAP reserves the right to open, extend, consolidate, scale down, or close feedback sessions at any time. \n Voting thresholds and processing times apply to all sessions and may vary slightly between standard sessions and dedicated Integration and Extensibility sessions. \n Before You Submit a Request \n To ensure efficient processing and avoid duplicate requests, please follow these steps: \n Search for an existing request related to your topic. \n If a similar request already exists, support it by voting. \n If no similar request exists, submit a new request in the appropriate feedback session. \n Standard Session (Multiple-Vote Principle) \n\n Requests in standard sessions are prioritized through community voting and are typically reviewed in greater detail only after the required voting threshold has been achieved: \n SAP Central Business Configuration for SAP S/4HANA Cloud Public Edition SAP S/4HANA Cloud Public Edition and Private Edition, Advanced Variant Configuration SAP S/4HANA Cloud Public Edition and Private Edition, Environment, Health, and Safety Management \n SAP S/4HANA Cloud Public Edition and Private Edition, Group Reporting \n\n SAP S/4HANA Cloud Public Edition and Private Edition, Product Compliance \n\n SAP S/4HANA Cloud Public Edition, Asset Management \n\n SAP S/4HANA Cloud Public Edition, Data Management and Data Migration SAP S/4HANA Cloud Public Edition, Discrete Industries \n\n SAP S/4HANA Cloud Public Edition, Enterprise Portfolio and Project Management \n\n SAP S/4HANA Cloud Public Edition, Finance \n\n SAP S/4HANA Cloud Public Edition, Localization \n\n SAP S/4HANA Cloud Public Edition, Manufacturing \n\n SAP S/4HANA Cloud Public Edition, Master Data Maintenance \n\n SAP S/4HANA Cloud Public Edition, Professional Services Automation \n\n SAP S/4HANA Cloud Public Edition, Service SAP S/4HANA Cloud Public Edition, Sales SAP S/4HANA Cloud Public Edition, Sourcing and Procurement \n\n SAP S/4HANA Cloud Public Edition, Supply Chain Logistics \n\n SAP S/4HANA Cloud Public Edition, User Experience and Cross-Topics \n\n Integration and Extensibility Sessions ( One-Vote Principle) \n In Integration and Extensibility sessions, every submitted enhancement request is individually assessed by SAP and receives a qualified response, independent of voting results: \n SAP S/4HANA Cloud Public Edition, Key User and Developer Extensibility \n SAP S/4HANA Cloud Public Edition, APIs for Integration \n Alternatively, you can access SAP Continuous Influence by signing in to your SAP for Me account and navigating to Portfolio & Products → Customer Influence . \n Get Involved \n Your feedback helps shape future innovations in SAP S/4HANA Cloud Public Edition. Whether you submit a new idea or vote for an existing enhancement request, your participation directly contributes to product evolution and prioritization. \n Visit the relevant session, review existing requests, and make your voice heard through SAP Continuous Influence."
+ },
+ {
+  "key": "0eaa0c532a7bbcb2",
+  "title": "Score Report for System-Based Certification Exams Is Here",
+  "link": "https://community.sap.com/t5/blog-posts-about-sap-websites/score-report-for-system-based-certification-exams-is-here/ba-p/14500265",
+  "published": "2026-10-09T09:45:44+00:00",
+  "author": "JenniferHauck",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP certification just got more transparent. With the new score report for system-based certification exams, you now get a topic-level breakdown of your performance."
+ },
+ {
+  "key": "a31ef048121c5500",
+  "title": "Activation and Authorization of AI-Assisted Analytical Business Insights",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/activation-and-authorization-of-ai-assisted-analytical-business-insights/ba-p/14500230",
+  "published": "2026-10-09T09:13:27+00:00",
+  "author": "AliciaLee",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "AI-assisted analytical business insights can help teams get more from their data. Before you can use this feature, two steps are required: activation and authorization. This post walks you through both. Knowing the right settings upfront can save time and prevent access issues later."
+ },
+ {
+  "key": "8c5b4348b9aa0ec0",
+  "title": "Dynamic header text refresh issue",
+  "link": "https://community.sap.com/t5/technology-q-a/dynamic-header-text-refresh-issue/qaq-p/14500264",
+  "published": "2026-10-09T09:42:20+00:00",
+  "author": "PreetiTiwari2608",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "We are creating dynamic header text based on date field. \n The date in the input control updates to the current date as expected. However, when the input control measure is used within a calculated measure, the date does not update dynamically."
+ },
+ {
+  "key": "ead203a58c68370e",
+  "title": "FBL5H field Risk class is Blank",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/fbl5h-field-risk-class-is-blank/qaq-p/14500260",
+  "published": "2026-10-09T09:40:35+00:00",
+  "author": "cunchit",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear SAP, \n On t-code FBL5H, we have field Risk class but the value is Blank. \n How to derive the Risk class value from Business partner to show on FBL5H. \n Please recommend. \n Best regards, \n Duangdao"
+ },
+ {
+  "key": "1dfc759d4ad0ae30",
+  "title": "Can finite heuristic regenerate only delta's rather than all supply objects?",
+  "link": "https://community.sap.com/t5/supply-chain-management-q-a/can-finite-heuristic-regenerate-only-delta-s-rather-than-all-supply-objects/qaq-p/14500227",
+  "published": "2026-10-09T08:58:55+00:00",
+  "author": "NadineBeeren",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Within Order-based planning: supply planning run, the finite heuristic regenerates all supply objects such as purchase requisitions, even though they did not change in date/quantity. In S/4 you can use a setting where MRP only adjusts a purchase requisitions, rather than delete and recreate. Is this also possible within SAP IBP SAP7F?"
+ },
+ {
+  "key": "6fab080dc73ee083",
+  "title": "KBA 3781174",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/kba-3781174/qaq-p/14500220",
+  "published": "2026-10-09T08:47:48+00:00",
+  "author": "Jorgei3s",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello, SAP; \n\n We are reviewing KBA 3781174 and in teh resolution it send us to SPRO path Financial Accounting > Asset Accounting > Integration with General Ledger > Post Depreciation to G/L > Define Document Summarization for Posting to G/L. \n We are in a S/4HANA 2025 system. \n\n Here you have the products and the components installed \n Product Release SP / FP STACKS Vendor Description \n S4HANA ON PREMISE 2025 01 (02/2026) FPS sap.com SAP S/4HANA 2025 \n ABAP PLATFORM 2025 01 (02/2026) sap.com ABAP PLATFORM 2025 \n SAP S/4HANA FOUNDATION 2025 01 (02/2026) FPS sap.com SAP S/4HANA FOUNDATION 2025 \n SAP S/4HANA PRIVATE CLOUD 2025 01 (02/2026) FPS sap.com SAP S/4HANA PRIVATE CLOUD 2025 \n\n Component Release Level Support Package \n SAP_BASIS 816 1 SAPK-81601INSAPBASIS SAP Basis Component \n SAP_ABA 816 1 SAPK-81601INSAPABA Cross-Application Component \n SAP_GWFND 816 1 SAPK-81601INSAPGWFND SAP Gateway Foundation \n SAP_UI 816 1 SAPK-81601INSAPUI User Interface Technology \n ST-PI 758 1 SAPK-75801INSTPI SAP Solution Tools Plug-In \n SAP_BW 816 1 SAPK-81601INSAPBW SAP Business Warehouse \n MDG_FND 809 1 SAPK-80901INMDGFND S/4HANA MDG Foundation \n S4FND 109 1 SAPK-10901INS4FND S/4HANA Foundation \n MDG_APPL 809 1 SAPK-80901INMDGAPPL S/4HANA MDG Applications \n S4CEXT 109 1 SAPK-10901INS4CEXT S/4HANA Applications EXT \n S4CORE 109 1 SAPK-10901INS4CORE S/4HANA Core Applications 1 \n S4HCM 102 3 SAPK-10203INS4HCM Human Resources \n S4HCMCAE 102 3 SAPK-10203INS4HCMCAE Sub component S4HCMCAE of S4HCM \n S4HCMCAR 102 3 SAPK-10203INS4HCMCAR Subcomponent S4HCMCAR of S4HCM \n S4HCMCAT 102 3 SAPK-10203INS4HCMCAT Subcomponent S4HCMCAT of S4HCM \n S4HCMCAU 102 3 SAPK-10203INS4HCMCAU Subcomponent S4HCMCAU of S4HCM \n S4HCMCBE 102 3 SAPK-10203INS4HCMCBE Subcomponent S4HCMCBE of S4HCM \n S4HCMCBG 102 3 SAPK-10203INS4HCMCBG Sub component S4HCMCBG of S4HCM \n S4HCMCBR 102 3 SAPK-10203INS4HCMCBR Subcomponent S4HCMCBR of S4HCM \n S4HCMCCA 102 3 SAPK-10203INS4HCMCCA Subcomponent S4HCMCCA of S4HCM \n S4HCMCCH 102 3 SAPK-10203INS4HCMCCH Subcomponent S4HCMCCH of S4HCM \n S4HCMCCL 102 3 SAPK-10203INS4HCMCCL Subcomponent S4HCMCCL of S4HCM \n S4HCMCCN 102 3 SAPK-10203INS4HCMCCN Subcomponent S4HCMCCN of S4HCM \n S4HCMCCO 102 3 SAPK-10203INS4HCMCCO Sub component S4HCMCCO of S4HCM \n S4HCMCCZ 102 3 SAPK-10203INS4HCMCCZ Sub component S4HCMCCZ of S4HCM \n S4HCMCDE 102 3 SAPK-10203INS4HCMCDE Subcomponent S4HCMCDE of S4HCM \n S4HCMCDK 102 3 SAPK-10203INS4HCMCDK Subcomponent S4HCMCDK of S4HCM \n S4HCMCEG 102 3 SAPK-10203INS4HCMCEG Sub component S4HCMCEG of S4HCM \n S4HCMCES 102 3 SAPK-10203INS4HCMCES Subcomponent S4HCMCES of S4HCM \n S4HCMCFI 102 3 SAPK-10203INS4HCMCFI Subcomponent S4HCMCFI of S4HCM \n S4HCMCFR 102 3 SAPK-10203INS4HCMCFR Subcomponent S4HCMCFR of S4HCM \n S4HCMCGB 102 3 SAPK-10203INS4HCMCGB Subcomponent S4HCMCGB of S4HCM \n S4HCMCGR 102 3 SAPK-10203INS4HCMCGR Sub component S4HCMCGR of S4HCM \n S4HCMCHK 102 3 SAPK-10203INS4HCMCHK Subcomponent S4HCMCHK of S4HCM \n S4HCMCHR 102 3 SAPK-10203INS4HCMCHR Sub component S4HCMCHR of S4HCM \n S4HCMCHU 102 3 SAPK-10203INS4HCMCHU Sub component S4HCMCHU of S4HCM \n S4HCMCID 102 3 SAPK-10203INS4HCMCID Subcomponent S4HCMCID of S4HCM \n S4HCMCIE 102 3 SAPK-10203INS4HCMCIE Subcomponent S4HCMCIE of S4HCM \n S4HCMCIN 102 3 SAPK-10203INS4HCMCIN Subcomponent S4HCMCIN of S4HCM \n S4HCMCIT 102 3 SAPK-10203INS4HCMCIT Subcomponent S4HCMCIT of S4HCM \n S4HCMCJP 102 3 SAPK-10203INS4HCMCJP Subcomponent S4HCMCJP of S4HCM \n S4HCMCKR 102 3 SAPK-10203INS4HCMCKR Subcomponent S4HCMCKR of S4HCM \n S4HCMCKW 102 3 SAPK-10203INS4HCMCKW Subcomponent S4HCMCKW of S4HCM \n S4HCMCKZ 102 3 SAPK-10203INS4HCMCKZ Subcomponent S4HCMCKZ of S4HCM \n S4HCMCMX 102 3 SAPK-10203INS4HCMCMX Subcomponent S4HCMCMX of S4HCM \n S4HCMCMY 102 3 SAPK-10203INS4HCMCMY Subcomponent S4HCMCMY of S4HCM \n S4HCMCNL 102 3 SAPK-10203INS4HCMCNL Subcomponent S4HCMCNL of S4HCM \n S4HCMCNO 102 3 SAPK-10203INS4HCMCNO Subcomponent S4HCMCNO of S4HCM \n S4HCMCNZ 102 3 SAPK-10203INS4HCMCNZ Subcomponent S4HCMCNZ of S4HCM \n S4HCMCOM 102 3 SAPK-10203INS4HCMCOM Subcomponent S4HCMCOM of S4HCM \n S4HCMCPH 102 3 SAPK-10203INS4HCMCPH Subcomponent S4HCMCPH of S4HCM \n S4HCMCPL 102 3 SAPK-10203INS4HCMCPL Sub component S4HCMCPL of S4HCM \n S4HCMCPT 102 3 SAPK-10203INS4HCMCPT Subcomponent S4HCMCPT of S4HCM \n S4HCMCQA 102 3 SAPK-10203INS4HCMCQA Subcomponent S4HCMCQA of S4HCM \n S4HCMCRO 102 3 SAPK-10203INS4HCMCRO Sub component S4HCMCRO of S4HCM \n S4HCMCRU 102 3 SAPK-10203INS4HCMCRU Subcomponent S4HCMCRU of S4HCM \n S4HCMCSA 102 3 SAPK-10203INS4HCMCSA Sub component S4HCMCSA of S4HCM \n S4HCMCSE 102 3 SAPK-10203INS4HCMCSE Subcomponent S4HCMCSE of S4HCM \n S4HCMCSG 102 3 SAPK-10203INS4HCMCSG Subcomponent S4HCMCSG of S4HCM \n S4HCMCSI 102 3 SAPK-10203INS4HCMCSI Sub component S4HCMCSI of S4HCM \n S4HCMCSK 102 3 SAPK-10203INS4HCMCSK Sub component S4HCMCSK of S4HCM \n S4HCMCTH 102 3 SAPK-10203INS4HCMCTH Subcomponent S4HCMCTH of S4HCM \n S4HCMCTR 102 3 SAPK-10203INS4HCMCTR Sub component S4HCMCTR of S4HCM \n S4HCMCTW 102 3 SAPK-10203INS4HCMCTW Subcomponent S4HCMCTW of S4HCM \n S4HCMCUA 102 3 SAPK-10203INS4HCMCUA Sub component S4HCMCUA of S4HCM \n S4HCMCUN 102 3 SAPK-10203INS4HCMCUN Subcomponent S4HCMCUN of S4HCM \n S4HCMCUS 102 3 SAPK-10203INS4HCMCUS Subcomponent S4HCMCUS of S4HCM \n S4HCMCVE 102 3 SAPK-10203INS4HCMCVE Subcomponent S4HCMCVE of S4HCM \n S4HCMCZA 102 3 SAPK-10203INS4HCMCZA Subcomponent S4HCMCZA of S4HCM \n S4HCMGXX 102 3 SAPK-10203INS4HCMGXX Subcomponent S4HCMGXX of S4HCM \n S4HCMRXX 102 3 SAPK-10203INS4HCMRXX Subcomponent S4HCMRXX of S4HCM \n EA-DFPS 809 1 SAPK-80901INEADFPS S/4HANA DFPS \n EA-PS 809 1 SAPK-80901INEAPS S/4HANA PS \n FI-CAX 809 1 SAPK-80901INFICAX S/4HANA FI-CA Extended \n IS-OIL 809 1 SAPK-80901INISOIL S/4HANA IS-OIL \n IS-PRA 809 1 SAPK-80901INISPRA S/4HANA IS-PRA \n IS-PS-CA 809 1 SAPK-80901INISPSCA S/4HANA IS-PS-CA \n IS-UT 809 1 SAPK-80901INISUT S/4HANA IS-UT \n PCAI_ENT 100 0 - PCAI_ENT 100 \n S4COREOP 109 1 SAPK-10901INS4COREOP S/4HANA Core Applications 2 \n S4DEPREC 109 1 SAPK-10901INS4DEPREC S/4HANA Core Applications 3 \n GBX01HR5 605 34 SAPK-60534INGBX01HR5 FIORI X1 HCM \n S4PEXT 109 1 SAPK-10901INS4PEXT S/4HANA Private Cloud EXT \n ST-A/PI 01X_731 0 - Servicetools for SAP Basis 731 and higher \n HOME DEV 0 - Customer Development (Standard) \n LOCAL DEV 0 - System Local Development (Standard) \n Could you tell us whether that KBA is incorrect or whether we need to enable any business function? \n\n Best regards"
+ },
+ {
+  "key": "bc4915789026a500",
+  "title": "migrating of SF-CPI interface from basic to oauth2.0 saml bearer assertion",
+  "link": "https://community.sap.com/t5/technology-q-a/migrating-of-sf-cpi-interface-from-basic-to-oauth2-0-saml-bearer-assertion/qaq-p/14500202",
+  "published": "2026-10-09T07:52:45+00:00",
+  "author": "S0026390782",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "hi team, please help in providing detail steps for migrating of SAP SF- SAP CPI interface from basic to oauth2.0 saml bearer assertion"
+ },
+ {
+  "key": "b57f100b9d2cfb00",
+  "title": "FBL5H field risk class is blank",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/fbl5h-field-risk-class-is-blank/qaq-p/14500160",
+  "published": "2026-10-09T07:13:09+00:00",
+  "author": "cunchit",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear SAP \n On t-code FBL5H, field 'risk class' value is blank. \n while business partner master already have risk class value. \n How to do to show that value on FBL5H? \n best regards, \n Duangdao N."
+ }
+]
