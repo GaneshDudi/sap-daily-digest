@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-09",
+  "label": "Friday, 9 October 2026",
+  "headline": "A thin day: community questions on extracting standard ALV data, ADT refactoring limits and CPI CSRF handling matter more than the mostly truncated blog posts.",
+  "items": 121,
+  "deep": 28
+ },
+ {
   "date": "2026-10-08",
   "label": "Thursday, 8 October 2026",
   "headline": "A thin day for core ABAP: dump-isolation and BAPI questions from the forums, CAP error and message localization bugs, and BTP connectivity internals.",
