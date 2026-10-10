@@ -20,5 +20,16 @@
   "feed": "SAP Community blog posts",
   "kind": "blog",
   "text": "My personal point of view regarding Agentic AI."
+ },
+ {
+  "key": "4ebda306a27778a9",
+  "title": "How to find out the BRF+ calling program?",
+  "link": "https://community.sap.com/t5/technology-q-a/how-to-find-out-the-brf-calling-program/qaq-p/14501030",
+  "published": "2026-10-10T18:36:25+00:00",
+  "author": "ricky_shaw",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Experts, \n I have GUID for an existing ZBRF+ FM in a Z*BRF application. \n I am unable to find which Z* program is using this BRF+ FM ? \n I tried various ways to do this like : \n i) Executing the program RS_ABAP_SOURCE_SCAN passing the GUID as string. \n ii) using CL_FDT_FUNCTION=>PROCESS( ) \n How to find out the BRF+ calling program? \n\n Can some one please suggest ? \n Thanks Ricky"
  }
 ]
