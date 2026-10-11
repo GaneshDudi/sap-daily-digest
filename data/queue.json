@@ -1,1 +1,57 @@
-[]
+[
+ {
+  "key": "e6cb34c187359d23",
+  "title": "SAP NetWeaver 7.5 SP35 Upgrade: JDBC DataSources Unavailable Due to TLS Protocol Changes",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-netweaver-7-5-sp35-upgrade-jdbc-datasources-unavailable-due-to-tls/ba-p/14501135",
+  "published": "2026-10-11T12:11:04+00:00",
+  "author": "AbhinavMitra",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "As part of an SAP ME landscape upgrade, we upgraded SAP NetWeaver 7.5 from SP13 to SP35. Although the upgrade completed successfully, post-upgrade validation revealed that all JDBC Custom DataSources were in a Not Available (red) state. \n This impacted critical ME functionality, including the CTC (Confirmations to Components) task, which relies on database connectivity."
+ },
+ {
+  "key": "f27d0ef4900c0d7c",
+  "title": "Jesienny SAP Stammtisch w Katowicach - spotkanie w październiku 2026",
+  "link": "https://community.sap.com/t5/katowice-blog-posts/jesienny-sap-stammtisch-w-katowicach-spotkanie-w-pa%C5%BAdzierniku-2026/ba-p/14501042",
+  "published": "2026-10-11T07:50:51+00:00",
+  "author": "Ewelina",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Za nami kolejny SAP Stammtisch w Katowicach! 7 października spotkaliśmy się w Cafe Kattowitz, żeby porozmawiać, wymienić się doświadczeniami i spędzić czas w gronie osób, które łączy zainteresowanie światem SAP."
+ },
+ {
+  "key": "9852af4b4bb970d9",
+  "title": "Handling Unit Number Ranges in SAP Logistics Management",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/handling-unit-number-ranges-in-sap-logistics-management/ba-p/14500752",
+  "published": "2026-10-09T17:17:31+00:00",
+  "author": "AdorjanSzasz",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Handling units now get the right number for your landscape, including GS1 SSCC. Here is what that means and how you set it up."
+ },
+ {
+  "key": "87e4c233d5108a3a",
+  "title": "\"Requests for Information\" in Pending workflows - what does that mean? SAP SuccessFactors",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/quot-requests-for-information-quot-in-pending-workflows-what-does-that-mean/qaq-p/14501133",
+  "published": "2026-10-11T12:06:36+00:00",
+  "author": "karthik1gobburu",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello Everyone- \n Customer has below questions in SAP SuccessFactors- \n Q1- What is the use of Request for information\" in her Pending workflows? \n Q2- If this section shows only those workflows where login user in in CC in a Workflow then this information should be removed once it's no longer Pending / after sometime but it doesn't disappear. - can you please check why it doesn't? \n Any way as how login user can remove unwanted \"Requests for Information\""
+ },
+ {
+  "key": "e47ae54f7f419c54",
+  "title": "Custom Rules in TPM (BTP-IS) : PD lookup failure due to mismatch in Activity Plain ID (PID)",
+  "link": "https://community.sap.com/t5/technology-q-a/custom-rules-in-tpm-btp-is-pd-lookup-failure-due-to-mismatch-in-activity/qaq-p/14501019",
+  "published": "2026-10-10T15:45:57+00:00",
+  "author": "aditya_20",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi All, \n Can anyone guide me on how to create and configure custom rules in SAP CPI TPM? I would appreciate it if you could share the steps involved in creating and using a custom rule. \n I tried creating a custom rule and adding it to the Agreement. However, after adding the rule, the Activity Plan ID is changing and I have attached the screenshot for the new Activity Plan ID after configuring custom rule in Agreement, and standard iFlow, Step 2 – Interchange Processing Flow V2, is failing at the PD Lookup – since the Activity Plan ID generated from the IDoc payload is not matching with the Agreement configured Plain ID. \n Additionally, I want to identify the B2B Agreement based on the WERKS field in the IDoc instead of RCVPRN. The WERKS field is available at the following XPath: \n /DELVRY07/IDOC/E1EDL20/E1EDL24/WERKS \n Is it possible to configure a custom rule in SAP CPI TPM to identify the B2B Agreement using this field? If yes, could you please share the configuration steps and explain how to avoid the Activity Plan ID change and the standard iFlow failure? \n Please find the two Activity Plain ID: \n Plain ID generated from payload: IDOC-SAP_IDoc--758-DS4CLNT-----L600-----DESADV.DELVRY07 \n Plain ID in Partner Directory after configuring Custom Rule: IDOC-SAP_IDoc--758-DS4CLNT-----L600-----DESADV.DELVRY07-PlantKey-L300 \n Has anyone implemented a similar scenario or faced the same issue? \n Any guidance would be greatly appreciated. \n Thanks in advance! \n\n Regards, \n Aditya"
+ }
+]
