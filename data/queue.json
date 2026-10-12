@@ -1,1 +1,255 @@
-[]
+[
+ {
+  "key": "e1315e65c5be02ef",
+  "title": "How to Implement the On-Demand E-Verify Status Change Report in SAP SuccessFactors Onboarding",
+  "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-sap/how-to-implement-the-on-demand-e-verify-status-change-report-in-sap/ba-p/14500694",
+  "published": "2026-10-12T10:02:27+00:00",
+  "author": "akarshn",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "This blog provides partners and customers with an end-to-end guide to configuring the On-Demand E-Verify Status Change Report in SAP SuccessFactors Onboarding correctly the first time."
+ },
+ {
+  "key": "f1ec04208c7369d3",
+  "title": "Role-Based Document Visibility for Onboarding Documents in Employee Profile",
+  "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-sap/role-based-document-visibility-for-onboarding-documents-in-employee-profile/ba-p/14500749",
+  "published": "2026-10-12T10:01:01+00:00",
+  "author": "akarshn",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP SuccessFactors is delivering a unified employee file experience — a single consolidated Documents view in the People Profile that brings together documents including the documents collected during Onboarding."
+ },
+ {
+  "key": "e73c1b040b74596a",
+  "title": "How to Implement Form I-9 Task Delegation in SAP SuccessFactors Onboarding",
+  "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-sap/how-to-implement-form-i-9-task-delegation-in-sap-successfactors-onboarding/ba-p/14500784",
+  "published": "2026-10-12T09:58:47+00:00",
+  "author": "akarshn",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "This blog provides an end-to-end guide to implementing Delegate My Compliance Tasks in SAP SuccessFactors Onboarding, enabling Hiring Managers to securely delegate Form I-9 tasks while maintaining compliance, audit traceability, and accountability."
+ },
+ {
+  "key": "5bb8d205ea2218eb",
+  "title": "Calling Azure from ABAP Cloud Just Got Easier",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/calling-azure-from-abap-cloud-just-got-easier/ba-p/14501394",
+  "published": "2026-10-12T09:54:10+00:00",
+  "author": "DivyaBalakrishna",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "The challenge every ABAP-on-Azure integration team faces \n Developers who have called an Azure REST API from ABAP Cloud will find this familiar. Something simple, like archiving a document to Blob storage or querying the resource estate, means the same plumbing: hand built ` if_web_http_client ` requests, hand joined URLs, manual OAuth tokens, inline parsing, and retry, logging, and error handling rewritten each time. \n In classic ABAP environments, teams relied on the established ABAP SDK for Azure . ABAP Cloud is different: a restricted, released API only model behind SAP Business AI Platform, ABAP environment and S/4HANA Cloud, where many classic patterns are gone, so teams fall back to hand rolled HTTP. That is repetitive, error prone, and hard to unit test, which is the gap this SDK closes. \n Introducing the ABAP Cloud SDK for Azure \n The ABAP Cloud SDK for Azure is a new open source client library for SAP Business AI Platform, ABAP environment and S/4HANA Cloud. In place of boilerplate, developers get a layered HTTP pipeline, Microsoft Entra ID credentials, typed exceptions, and typed service clients, so developers can write what they mean: \n DATA(lo_blob) = NEW zcl_az_blob_client( \n iv_account_name = 'mystorageacct' \n io_credential = lo_credential ). \n DATA(lo_blobs) = lo_blob->list_blobs( iv_container = 'my-container' ). \n No manual HTTP, URL building, or token handling. The runtime handles it. \n Built for ABAP Cloud \n The project stays within ABAP Cloud's constraints: written entirely in ABAP for Cloud Development and using only released APIs, so it activates cleanly. \n How it fits together \n The SDK is layered. Each concern stays isolated, testable, and reused across every client. \n HTTP pipeline: an ordered chain of policies for retry, authentication, logging, and transport. \n Credentials: one interface for every credential type, with a token cache for valid tokens. \n Typed exceptions: meaningful SDK errors, not raw status codes. \n Typed models: responses map into ABAP structures, so developers work with fields, not strings. \n Injection seam: every client accepts an optional transport, so tests swap in a double and run offline. \n A service client stays thin, and the shape mirrors the official Azure SDKs, so it feels familiar. \n Authentication: Entra ID first \n Authentication is built around Microsoft Entra ID. Every credential implements the same interface: client secret (service principal), managed identity, an environment credential that reads configuration from a table, and a default credential that chains the available providers. \n For Storage Blob access, prefer a User Delegation SAS, a short lived token signed by an Entra ID identity with no account key, then a direct Entra ID credential. Plain SAS and Shared Key stay supported, but not recommended. \n Recommended: Blob access with a User Delegation SAS \n An Entra ID identity signs the SAS, and the blob client uses it with no account key: \n DATA(lo_credential) = NEW zcl_az_client_secret_cred( \" a Microsoft Entra ID identity \n iv_client_id = '<client-id>' \n iv_client_secret = '<client-secret>' \n iv_tenant_id = '<tenant-id>' ). \n DATA(lo_udk) = NEW zcl_az_blob_udk_sas( \n iv_account_name = '<storage-account>' \n io_credential = lo_credential ). \n DATA(lo_blob) = lo_udk->create_blob_client( \n iv_container = '<container>' \n iv_permissions = 'rl' \n iv_start = '2026-07-24T00:00:00Z' \n iv_expiry = '2026-07-25T00:00:00Z' ). \n DATA(lo_result) = lo_blob->list_blobs( iv_container = '<container>' ). \n What is included in the first release? \n Three service clients ship: \n Storage Blob: list containers and blobs, upload, and download, binary safe. \n Compute: virtual machines, scale sets, images, and hosts, with actions like start, deallocate, and restart. \n Resource Graph: run KQL queries, typed result back. \n DATA(lo_rg) = NEW zcl_az_resourcegraph_client( io_credential = lo_credential ). \n DATA(lo_result) = lo_rg->query_resources( \n iv_query = `Resources | project name, type, location | limit 5` \n it_subscriptions = VALUE #( ( '<subscription-id>' ) ) ). \n Getting started \n Developers will need an SAP Business AI Platform, ABAP environment or S/4HANA Cloud system with ABAP for Cloud Development, a Microsoft Entra ID identity (for example a service principal) with the right Azure RBAC roles, and access to the target Azure resources. Clone and import with abapGit: the code sits under a hierarchy rooted at ` ZABAP_SDK_AZURE `. Assign the root package to the parent package, then activate. \n The ` ZABAP_AZ_DEMO ` package adds three self contained demo classes, one per service, each an ` if_oo_adt_classrun ` class developers run with F9. Swap in the relevant values and run it; the blob demo shows the whole stack. Real credentials should be kept out of commits. \n Built with testing in mind \n The SDK ships with ABAP Unit test methods, all ` RISK LEVEL HARMLESS DURATION SHORT ` (no network), plus self skipping integration tests for live verification. Clients accept a test double, so each test checks the exact request on the wire and how a canned response is parsed. Core and every service client are covered. \n What this means for SAP teams \n Less boilerplate, faster delivery: Development teams can connect ABAP Cloud applications to Azure services more quickly and spend less time building infrastructure code from scratch. \n Familiar developer experience: The SDK follows the same concepts used across the official Azure SDK ecosystem. \n Cloud-ready and compliant: The SDK is ABAP Cloud compliant and designed for SAP Business AI Platform, ABAP environment and SAP S/4HANA Cloud, making it a natural companion to the classic ABAP SDK for Azure. \n Secure by default: Microsoft Entra ID is the preferred authentication model, with User Delegation SAS recommended for Azure Storage scenarios. \n Looking ahead \n This is just the beginning. The runtime is ready to grow to more Azure services, and which come next depends on community needs. \n The SDK was created to help ABAP developers and integration teams build secure, maintainable connections between SAP and Azure with less effort. As more teams adopt it, community feedback and real-world business scenarios will help shape future service support and capabilities. \n If there is an Azure service or integration scenario that matters to your team, we would love to hear from you. Open an issue, start a discussion on GitHub, and help influence the roadmap. \n Repository: https://github.com/Azure/ABAP-Cloud-SDK-for-Azure"
+ },
+ {
+  "key": "304fb7a36efe43e8",
+  "title": "Enhancements to the Rehire Process in SuccessFactors Onboarding",
+  "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-sap/enhancements-to-the-rehire-process-in-successfactors-onboarding/ba-p/14501155",
+  "published": "2026-10-12T09:53:53+00:00",
+  "author": "akarshn",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP SuccessFactors Onboarding 2H 2026 delivers eight targeted improvements to the rehire experience — from data integrity fixes and contingent worker handling to full Service Layer modernization. Here is everything you need to implement them correctly, in one place."
+ },
+ {
+  "key": "a1bf1261f939f10b",
+  "title": "Good to know: Compatibility views in the context of SAP HANA (S/4HANA)",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/good-to-know-compatibility-views-in-the-context-of-sap-hana-s-4hana/ba-p/14500325",
+  "published": "2026-10-12T09:15:09+00:00",
+  "author": "Laszlo_Thoma",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "last updated: 2026-10-12 \n Why was this blog post created? \n One of the cornerstone of the transition from ECC to S/4HANA is the change in the database structure. This change entails consequences, an understanding of which is essential for operations. \n Which documentation contains all the relevant details? \n The following documentation examines the given topic in detail. \n 📕 3523400 - Overview of the compatibility view topic in the context of SAP HANA (SAP S/4HANA) \n\n Other articles \n 📚 List of My Articles (Laszlo_Thoma) - SAP HANA \n Do you have further questions? \n Please do not hesitate to contact me if you have question or observation regarding the article. \n Q&A link for SAP HANA: https://answers.sap.com/tags/73554900100700000996 \n Contribution \n If you find any missing information belongs to the topic, please let me know. I am happy to add the new content. My intention is to maintain the content continuously to keep the info up-to-date. \n Release Information \n Release Date Description \n 2026.10.12 First/initial Release of the SAP Blog Post documentation (Technical Article)."
+ },
+ {
+  "key": "a5f8626123c63841",
+  "title": "Driving Operational Excellence in Waste and Recycling : SAP S/4HANA 2025 FPS02",
+  "link": "https://community.sap.com/t5/sap-for-utilities-blog-posts/driving-operational-excellence-in-waste-and-recycling-sap-s-4hana-2025/ba-p/14437877",
+  "published": "2026-10-12T09:06:30+00:00",
+  "author": "SomikSarkar",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP S/4HANA 2025 FPS2 introduces three targeted innovations designed to address critical operational challenges in the Waste & Recycling industry. From AI-powered contract creation to modernized weighbridge operations, this feature pack stack focuses on accuracy, efficiency, and user experience. \n AI-Assisted Contract Creation in Waste and Recycling \n Errors in product configurations during contract creation can have a cascading impact on downstream processes such as planning, collections, and billing. This innovation brings artificial intelligence directly into the contract creation process to help waste and recycling customers avoid such errors. \n What it does: \n The solution leverages machine learning and intelligent scenario lifecycle management for SAP S/4HANA to recommend the most suitable waste materials based on historical waste contracts. By analyzing patterns in existing contract data, the system suggests material configurations that are consistent with proven combinations, helping to ensure accuracy from the outset. Since majority of the issues are related to an incorrect waste material assignment, the system triggers the AI model to propose the most suitable waste material based on the other customer attributes available. \n Why it matters: \n Reduces costly rework caused by incorrect product configurations \n Prevents issues in downstream processes including planning, waste collection scheduling, and billing \n Increases operational efficiency \n This is a significant step in SAP's broader strategy of embedding AI capabilities into industry-specific business processes and application, bringing intelligent automation where it can deliver tangible operational value. \n Change of Transaction Control for Business Transaction WA15 \n Operational flexibility in managing waste disposal orders is essential, particularly when standard system settings do not align with specific customer requirements. This innovation addresses that gap. \n What it does: \n It provides configurable flexibility for customers to add specific rules that override the standard settings maintained in transaction BS22 for waste disposal orders. Specifically, it allows the deletion of waste disposal orders to be governed by settings defined at the individual customer level, rather than being restricted solely by the default system-wide configuration. \n Why it matters: \n Empowers customers to define their own business rules with regards to deletion of waste disposal orders. \n Reduces the need for custom development or workarounds to achieve desired transaction behaviors \n New SAP Fiori App for Multi-Item Weighing \n Weighbridge operations are at the heart of waste management logistics. This innovation introduces a new SAP Fiori application with a leaner and lighter interface purpose-built for weighbridge operators handling multi-item weighing scenarios. \n What it does: \n The new application supports the main weighing processes through a modern, intuitive user interface: \n Internal delivery \n External delivery \n Internal outbound \n External outbound \n Why it matters: \n Provides a streamlined, responsive user experience that reduces time spent per transaction at the weighbridge \n Replaces complex legacy interfaces with a modern SAP Fiori design \n Supports faster processing during peak hours when queue management is critical \n Mobile compatible, allowing greater flexibility to capture data especially when the operators are on the move within the waste disposal facility. \n\n Looking Ahead \n These three innovations in SAP S/4HANA for Waste and Recycling 2025 FPS02 reflect SAP's continued commitment in making waste management operations smarter, more flexible, and easier to use. By combining AI-driven intelligence in back-office processes, configurable transaction control for operational flexibility, and a modern Fiori-based weighing application for frontline users, SAP is addressing the full spectrum of needs across the waste and recycling value chain. \n For the latest details and updates, refer to the SAP Roadmap Explorer ."
+ },
+ {
+  "key": "17466f01123761bf",
+  "title": "Clearing SE16N Buffer After Table Structure Changes",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/clearing-se16n-buffer-after-table-structure-changes/ba-p/14500139",
+  "published": "2026-10-12T08:48:44+00:00",
+  "author": "Pooja_HM",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Introduction \n While working on custom developments, we often modify database tables after they have already been used in transactions such as SE16N. In one of my recent developments, I increased the length of a field in a custom table. Although the table was activated successfully and the database adjustment was completed, SE16N continued to display the old field length. \n This blog explains why this behavior occurs and how it can be resolved using a standard SAP program. \n\n I created a custom database table ZPOOJ_DB_BLOG_TB in SE11 with three fields. The Email field was initially defined with a length of 5 . \n Initial Table Definition \n Custom table with Email field length 5 \n At this stage, the table was activated and some test data was maintained. \n To allow future enhancements, I changed the Enhancement Category to \"Can be Enhanced (Deep)\" and activated the table. \n After that, I used SE16N to maintain table entries. \n Data Maintenance in SE16N \n SE16N allowing only 5 characters for Email field \n\n As expected, the Email field allowed only five characters. \n Requirement Change \n Later, a requirement came in to increase the Email field length from 5 to 25 characters. \n I modified the corresponding domain in SE11 and activated the changes. \n Modified Field Length \n Email field length changed to 25 \n After activation, I adjusted the database table through SE14 to ensure the database structure was updated. \n To verify the change, I maintained table contents using Utilities → Table Contents . \n Verification Through Table Contents \n Email field accepting 25 characters \n The updated field length was working correctly. \n Issue Observed \n However, when I returned to SE16N and tried to create or modify entries, the Email field still allowed only five characters. \n Issue in SE16N \n SE16N still showing old field length \n At first glance, it appeared as though the field length change had not been applied. However, the database table was already updated correctly. \n The reason for this behavior is that SE16N stores table metadata in its buffer . Since the table was accessed before the modification, SE16N continued to use the buffered information instead of reading the latest table definition. \n Solution \n SAP provides a standard report called BALVBUFDEL that clears the ALV buffer information. \n Execute the report using transaction SE38 . \n Execute Standard Program BALVBUFDEL \n Running BALVBUFDEL report \n After executing the report, return to SE16N and test the table again. \n Result After Buffer Refresh \n Email field now accepting 25 characters in SE16N \n The updated field length is now correctly reflected in SE16N. \n\n Conclusion \n When changes are made to the structure of a database table, such as increasing the length of a field, the changes may not immediately appear in SE16N even though the table has been activated and adjusted successfully. \n In such situations, the issue is often caused by buffered metadata used by SE16N. Executing the standard SAP report BALVBUFDEL clears the buffer and forces SE16N to read the latest table definition. \n This simple check can save significant troubleshooting time when table structure changes do not seem to be reflected in SE16N."
+ },
+ {
+  "key": "d152ac0aca64c979",
+  "title": "SNC with Kerberos after migration, Part 3: how I proved it, and the dead ends",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/snc-with-kerberos-after-migration-part-3-how-i-proved-it-and-the-dead-ends/ba-p/14500801",
+  "published": "2026-10-12T08:25:01+00:00",
+  "author": "AkumaryafirAk",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Part 3 of my series on SNC with Kerberos after a migration. Parts 1 and 2 explained what was wrong. This short post shows how I found it: five checks in order, the commands that proved it, and the dead ends that cost the most time."
+ },
+ {
+  "key": "257d56b5eee862d8",
+  "title": "Explore What's New in the SAP Fieldglass November 2026 Release",
+  "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/explore-what-s-new-in-the-sap-fieldglass-november-2026-release/ba-p/14501390",
+  "published": "2026-10-12T08:14:38+00:00",
+  "author": "Sian_Thompson",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "The What's New Viewer on the SAP Help Portal offers an interactive and customizable experience to discover all new features and enhancements included in the upcoming release. The Viewer allows you to browse content at your own pace, filter information relevant to your role, and quickly move from high-level summaries to detailed feature documentation. These enhancements are highlighted through some visual examples and supporting information designed to help you understand their potential impact on your business. \n Using the What's New Viewer , you can: \n Identify the updates most relevant to your organization \n Understand new capabilities before they become available \n Access detailed documentation \n Plan adoption activities and stakeholder communications more effectively \n Taking time to review the upcoming changes can help ensure a smooth transition and enable your teams to maximize the value of the November 2026 Release. \n If you need assistance with the What's New Viewer or the release content, submit a case through SAP for Me or the SAP Fieldglass Help Center ."
+ },
+ {
+  "key": "6a681bc25b7efcd0",
+  "title": "Outbound Delivery is not visible in LGM",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/outbound-delivery-is-not-visible-in-lgm/qaq-p/14501453",
+  "published": "2026-10-12T09:35:21+00:00",
+  "author": "shivangbhatt",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello \n We are trying to process outbound delivery in newly created LGM system. As per the variant in LGM all criteria matched related to shipping point, shipping condition, delivery type and other details , yet the outbound delivery is not distributed and not displayed on LGM outbound tile to proceed further. \n Kindly guide us if we are missing any configuration or any setup in newly created LGM system. \n Thanks"
+ },
+ {
+  "key": "4bda4580c983b5f3",
+  "title": "What content is scanned by Application Vulnerability Report?",
+  "link": "https://community.sap.com/t5/technology-q-a/what-content-is-scanned-by-application-vulnerability-report/qaq-p/14501432",
+  "published": "2026-10-12T09:00:28+00:00",
+  "author": "Dinu",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi, \n Application Vulnerability Report documentation says it scans application in a space. \n Could someone elaborate on what are the applications scanned? Are all applications in the space irrespective of the build pack used scanned? Are the HTML5 applications deployed to html5 repository scanned? \n Thanks you. \n @Fabian_Richter"
+ },
+ {
+  "key": "e2f4ff4e05881778",
+  "title": "Cawa to Datasphere job scheduling",
+  "link": "https://community.sap.com/t5/technology-q-a/cawa-to-datasphere-job-scheduling/qaq-p/14501421",
+  "published": "2026-10-12T08:46:21+00:00",
+  "author": "pavan1d28",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi all, \n We want to schedule SAP Datasphere task chains from CA Workload Automation (CAWA). I haven't found a step-by-step guide for this combination. \n Our requirement \n Three task chains: Sales (source: S/4HANA), Delivery (source: Oracle), and Billing (source: S/4HANA). \n Run order: Sales → Delivery → Billing. Each starts only if the previous one succeeds. \n Sales and Delivery run daily. Billing runs only on Fridays and at month-end. If month-end falls on a weekend, it runs the preceding Friday. \n My understanding so far \n A CAWA agent on a server runs a script on a schedule. \n The script uses the Datasphere CLI (@sap/datasphere-cli) to run the task chain and checks its status. \n The script returns an exit code (0 for success, non-zero for failure) that CAWA uses for dependencies and alerts. \n A Datasphere admin creates an OAuth client for the CLI login. \n My questions \n Is this the recommended approach, or is there a better way (for example the REST API)? \n What are the exact CLI commands to run a task chain and read its final status in a script? \n Is there a reliable way to get the final status of a task chain run, rather than just whether it was triggered? \n Has anyone done this with CAWA (DE or AE edition)? Any pitfalls with OAuth setup, token expiry, or network access? \n Thank you"
+ },
+ {
+  "key": "3a623a1abe6d9eff",
+  "title": "Sender details for PDF based Form (FBZP) for Payment advice not available on form PDF",
+  "link": "https://community.sap.com/t5/financial-management-q-a/sender-details-for-pdf-based-form-fbzp-for-payment-advice-not-available-on/qaq-p/14501414",
+  "published": "2026-10-12T08:38:15+00:00",
+  "author": "GODSON_SAP",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello Experts \n\n Signature details added in FBZP , but are not available in Payment advice PDF form. \n Payment advice is configured using new S4 Hana Output Management \n\n 1)Signature maintained in FBZP \n Form - FIN_FO_PAYM_ADVICE \n\n 2)Form PDF is send via email and can be seen in Fiori App Manage Automatic Payments=>Output Items \n\n The Problem - It's just displaying the name ZFI_SIGNATURE*** on form, instead of reading/Displaying content of text module."
+ },
+ {
+  "key": "7d6e8c3927c3657a",
+  "title": "Mandatory Margin analysis field",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/mandatory-margin-analysis-field/qaq-p/14501396",
+  "published": "2026-10-12T08:20:17+00:00",
+  "author": "giusy1",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear SAP, \n we have created a custom field in margin analysis context that need to be mandatory to fill. We have tried to create a validation in market segment context but does not work. In \"steps to reproduce\" I have described all the steps related to the creation of Validations. \n Can you help us to understand why the validation with market segment is not working? How can we solve? \n Thanks"
+ },
+ {
+  "key": "405f3dfb3fb756ee",
+  "title": "Copy Control Configuration in SAP S/4HANA Public Cloud",
+  "link": "https://community.sap.com/t5/technology-q-a/copy-control-configuration-in-sap-s-4hana-public-cloud/qaq-p/14501385",
+  "published": "2026-10-12T08:04:02+00:00",
+  "author": "xuqi_fangaf39f1",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Experts, We are working on SAP ES. The system prevents us from adding new sales-document-to-sales-document copy control entries in VTAA. Our business requirement is to create standard sales orders **OR** with reference to scheduling agreements to offset requirements: 1. Source: Scheduling Agreement **LKJ (JIT scheduling agreement with CNE)** → Target: Standard Order **OR** 2. Source: Scheduling Agreement **LZ (Scheduling agreement with approval)** → Target: Standard Order **OR** May I ask what is the correct approach to enable this copy scenario in SAP ES? Is there any limitation on VTAA for scheduling agreement to OR? Are there alternative configuration or enhancement options? Thanks in advance,"
+ },
+ {
+  "key": "90eb0748caff5051",
+  "title": "Stopping Post Processing for Mail Send Adapter",
+  "link": "https://community.sap.com/t5/technology-q-a/stopping-post-processing-for-mail-send-adapter/qaq-p/14501383",
+  "published": "2026-10-12T07:58:45+00:00",
+  "author": "andrewpage",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Is there a way of stopping the Post-Processing for mails that do not match a specific title."
+ },
+ {
+  "key": "f21ca98915503cc6",
+  "title": "SAP Cloud ALM Reactivation: Central Monitoring Option Missing in Landscape Management",
+  "link": "https://community.sap.com/t5/technology-q-a/sap-cloud-alm-reactivation-central-monitoring-option-missing-in-landscape/qaq-p/14501381",
+  "published": "2026-10-12T07:55:18+00:00",
+  "author": "Vedi888",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "We need assistance with the reactivation of SAP Cloud ALM by activating Central Monitoring. \n The monitoring activation was completed previously for SAP S/4HANA Public Cloud. The system currently shows an Active status, and the Operations Monitoring applications are accessible. However, the Central Monitoring icon is not visible in the Landscape Management app. \n Please advise how to reactivate CALM by enabling Central Monitoring, as the option is currently unavailable in Landscape Management."
+ },
+ {
+  "key": "18ff17f1935e0422",
+  "title": "FBL5H field Risk class is Blank",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/fbl5h-field-risk-class-is-blank/qaq-p/14501379",
+  "published": "2026-10-12T07:53:03+00:00",
+  "author": "cunchit",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear SAP, \n On t-code FBL5H, we have field Risk class but the value is Blank. \n How to derive the Risk class value from Business partner to show on FBL5H. \n Please recommend. \n Best regards, \n Duangdao"
+ },
+ {
+  "key": "43dcc66581508a3f",
+  "title": "Building an ATC-Based Transport Release Assistant with AI Code Suggestions in SAP GUI (ECC)?",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/building-an-atc-based-transport-release-assistant-with-ai-code-suggestions/qaq-p/14501245",
+  "published": "2026-10-11T19:45:27+00:00",
+  "author": "Kishan1",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi SAP ABAP Community, \n I'm currently developing a custom ABAP tool and would appreciate feedback from experienced SAP developers on whether this solution is useful, whether similar functionality already exists in SAP ECC, and whether my proposed UI architecture is technically feasible. \n Background \n I've heard that in SAP S/4HANA Cloud, Public Edition, certain development and transport processes can enforce ATC checks before changes are released or deployed. \n This made me wonder: \n Is there any standard functionality in SAP ECC / SAP GUI that prevents a transport request from being released until specific ATC or Code Inspector findings are resolved? \n If such functionality already exists, I'd like to understand it before continuing with a custom solution. \n What I've developed so far \n I'm currently testing this on an SAP_BASIS 740 system using SAP GUI. \n My prototype can: \n Read an ABAP program and check whether it has opted in for review. \n Execute Code Inspector checks programmatically using ABAP classes. \n Extract findings, including severity, check description, source line, and surrounding source-code context. \n Store the execution results in custom database tables (ZOKG_LOG_HDR and ZOKG_LOG_ITEM). \n Identify a program with findings and automatically open it in the standard SE38 ABAP Editor in Change mode. \n Display a separate AI Code Review screen using CL_GUI_CUSTOM_CONTAINER and CL_GUI_TEXTEDIT, with a Copy Code button. \n Currently, the AI code is sample output. Integration with an LLM to generate actual corrections is planned. \n The longer-term goal is to integrate this with the CTS transport-release process using IF_EX_CTS_REQUEST_CHECK~CHECK_BEFORE_RELEASE, so that relevant findings can be reviewed before releasing a transport request. \n Current limitation: Two SAP GUI sessions \n At present, my tool opens two separate SAP GUI sessions: \n Session 1: The actual SE38 ABAP Editor, with the target program opened in Change mode. \n Session 2: My custom AI review screen displaying suggested code. \n This works, but I would prefer to provide the entire review experience within the SE38 window. \n What I want to achieve \n When my tool opens a program in SE38, I would like a dialog box to open automatically within that same SAP GUI session. \n The dialog would contain a tabstrip with two tabs: \n Tab 1 — AI Suggested Code \n Display the AI-generated corrected ABAP code in a read-only editor, with an option to copy the suggested code. The developer can review the suggestion and manually apply the changes in SE38. \n Tab 2 — ATC / Code Inspector Findings \n Display the findings for the current program, including severity, description, line number, and relevant source-code context. \n I would also like to add a button to the SE38 toolbar, such as AI / ATC Review. \n The expected behavior would be: \n The review dialog opens automatically when the program is opened through my tool. \n The developer can close the dialog and continue working in SE38. \n The SE38 editor remains open. \n The developer can click the AI / ATC Review button at any time to reopen the dialog. \n My technical questions \n Existing functionality: Does SAP ECC already provide a standard ATC or Code Inspector-based transport-release gate? Are there established alternatives such as CTS checks or transport quality gates? \n SE38 enhancement: Is there any supported BAdI, customer exit, enhancement point, or API that allows a custom dialog and toolbar button to be integrated into the standard SE38 ABAP Editor? \n GUI session handling: Since RS_TOOL_ACCESS with IN_NEW_WINDOW = 'X' opens the editor in another SAP GUI session, is there a supported way to initialize and reopen a custom dialog from within that editor session? \n Architecture: Would you recommend extending the standard SE38 interface, developing a custom editor/review transaction, or keeping the current two-session approach? \n Project value: Do you think a tool combining pre-release ATC checks, source-code context, AI suggestions, and developer-controlled corrections would be useful in an ECC development environment? \n I'm trying to keep the implementation maintainable and avoid modifications to SAP standard objects. \n I'd appreciate any suggestions, relevant SAP documentation, existing tools, or alternative approaches. \n Thanks in advance!"
+ },
+ {
+  "key": "70a18d0c8cc9fd9e",
+  "title": "Migration Cockpit: PRODUCT - FM: CMD_MIG_PROD_MAINTAIN - To use Z field in MARA and Migrate Data",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/migration-cockpit-product-fm-cmd-mig-prod-maintain-to-use-z-field-in-mara/qaq-p/14501229",
+  "published": "2026-10-12T07:07:51+00:00",
+  "author": "SankarBABU",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello Experts, \n Before posting here, I searched any relevant threads similar to this but except the link shared below, none has the detailed or the solution which I am expecting. Therefore, kindly consider this request and expecting your valuable answers/solutions to achieve it. \n https://community.sap.com/t5/enterprise-resource-planning-q-a/migration-cockpit-product-gt-fm-cmd-mig-prod-maintain-gt-how-to-store-data/qaq-p/12552422 \n I have create a custom field (Appended) ZZMATNR in MARA and able to create/change/display the data to it using MM* transactions. \n Now, I want to use the ZZMATNR field to migrate the material master data using LTMOM. My version has Product as migration object (and no Material object exist) as we are in 2025 version. \n I want the blog or the detail steps to add the new custom field (FYI, I am aware of how to create a custom field using UI app but my requirement is to use the existing custom field and can be migrated and store the data into the same field 'ZZMATNR' and be viewed in GUI transactions of MM*) and migrate the Product object using LTMOM. \n If a new field to be created via UI (Extensibility Framework) and can be achieved, please do let me know the solutions to perform. \n Kindly help me out by sharing your valuable answers to assign the existing custom field and migrate the material master using LTMOM. I would really appreciate to that. \n Thanks. \n Kind Regards."
+ },
+ {
+  "key": "d4addfcbe192cb4d",
+  "title": "Hong Kong PROFITS TAX COMPUTATION Depreciation Allowances",
+  "link": "https://community.sap.com/t5/financial-management-q-a/hong-kong-profits-tax-computation-depreciation-allowances/qaq-p/14501208",
+  "published": "2026-10-11T17:10:23+00:00",
+  "author": "ChristopherWan",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "All group company codes are located in Hong Kong. Please refer to the detailed fixed-asset tax depreciation requirements below, based on Hong Kong Profits Tax treatment. \n Please advise on the standard SAP approach to fulfil these requirements. \n Tax depreciation of fixed assets Tax depreciation allowances / deductions are available for capital expenditure incurred on the construction of buildings or structures and in the provision of machinery and plant for trade or business purposes, as follows: \n 1. Industrial buildings and structures: An initial allowance of 20%, in addition to an annual allowance of 4%, of the cost of construction or cost of purchase from a developer is granted for an industrial building or structure occupied for the purpose of a qualifying trade. Provision is made for balancing allowance or charge in the year of assessment in which the building is disposed of to adjust the written-down value of the building to the disposal price. Balancing charges are restricted to the total of initial and annual allowances previously given. \n 2. Commercial buildings and structures: An annual allowance of 4% of the capital expenditure incurred on the construction is applicable. A balancing allowance or charge applies upon disposal. Balancing charges are restricted to the total annual allowances previously given. \n 3. Plant and machinery: An initial allowance of 60% of the capital expenditure on plant and machinery is given for the year of assessment during the basis period in which the expenditure is incurred. An annual allowance is also given for depreciation at three prescribed rates on the reducing value of each of the three depreciation rate ‘pools’. The three prescribed rates are 10%, 20%, and 30%, and the reducing value of each of the three depreciation rate pools is original cost less initial and annual allowances and sales proceeds. Provision is made for balancing charges when plant and machinery within one of the three depreciation rate pools is sold or disposed of and the reducing value of that pool is less than the sale price, which is capped at the original amount incurred in the pool. In addition, balancing allowances or charges may be applicable upon cessation of business. Otherwise, sales proceeds are deducted in calculating the reducing value on which the annual allowance is calculated."
+ },
+ {
+  "key": "2c0e899fc4588287",
+  "title": "How do you route low-confidence Document AI extraction results to human review in SAP Build Process?",
+  "link": "https://community.sap.com/t5/technology-q-a/how-do-you-route-low-confidence-document-ai-extraction-results-to-human/qaq-p/14501194",
+  "published": "2026-10-11T16:19:43+00:00",
+  "author": "adsiddhu69",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "I’m extracting invoice fields with SAP Document AI and passing them into a BPA workflow. I want fields below a confidence threshold to go to a human reviewer instead of auto-approving. What is the recommended pattern: a condition on the confidence score, a separate review form, or the Document Information Extraction approach inside the process? Has anyone implemented this in production, and how did you handle partially extracted line items?"
+ }
+]
