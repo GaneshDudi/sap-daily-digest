@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-13",
+  "label": "Tuesday, 13 October 2026",
+  "headline": "A thin day: an ABAP Cloud SDK for Azure, an OData V4 CSRF debugging post, and community questions on CDS exposure, VBPA joins and upgrade retrofits.",
+  "items": 117,
+  "deep": 25
+ },
+ {
   "date": "2026-10-12",
   "label": "Monday, 12 October 2026",
   "headline": "A thin day for core ABAP: a CDS table function pushdown test, a RAP comments design question, and mostly integration and BTP Q&A.",
