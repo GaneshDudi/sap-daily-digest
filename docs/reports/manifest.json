@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-14",
+  "label": "Wednesday, 14 October 2026",
+  "headline": "A quiet day: no releases, but practical developer questions on large SELECT lists, VA01 exits, HANA delta merge and BAdI duplicate calls.",
+  "items": 81,
+  "deep": 14
+ },
+ {
   "date": "2026-10-13",
   "label": "Tuesday, 13 October 2026",
   "headline": "A thin day: an ABAP Cloud SDK for Azure, an OData V4 CSRF debugging post, and community questions on CDS exposure, VBPA joins and upgrade retrofits.",
