@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-15",
+  "label": "Thursday, 15 October 2026",
+  "headline": "Thin day: a VALUE BASE trap, CDS join-pruning and ATC measurements (abstracts only), plus MCP-for-SAP patterns and open SD/Public Edition extensibility questions.",
+  "items": 110,
+  "deep": 30
+ },
+ {
   "date": "2026-10-14",
   "label": "Wednesday, 14 October 2026",
   "headline": "A quiet day: no releases, but practical developer questions on large SELECT lists, VA01 exits, HANA delta merge and BAdI duplicate calls.",
