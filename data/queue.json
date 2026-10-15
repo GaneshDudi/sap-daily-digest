@@ -666,5 +666,60 @@
   "feed": "SAP Community discussions",
   "kind": "discussion",
   "text": "Dear Community, \n We’re migrating attachments from SAP Business ByDesign to SAP S/4HANA Cloud Public Edition using an ABAP application built with ABAP Development Tools (ADT) and developer extensibility. \n We retrieve attachment content from ByD using the API `/sap/bc/srt/scs/doc/manageattachmentfolderin` and parse the `BinaryObject` node. Here is a sample ByD response: <soap-env:Envelope xmlns:soap-env=\"http://schemas.xmlsoap.org/soap/envelope/\">\n <soap-env:Header/>\n <soap-env:Body>\n <n0:AttachmentFolderDocumentsFileContentByIDResponse_sync\n xmlns:n0=\"http://sap.com/xi/SAPGlobal20/Global\"\n xmlns:prx=\"urn:sap.com:proxy:HD3:/1SAI/TAS443E8909F47F876ABE5F:804\">\n <AttachmentFolderDocumentFileContent>\n <DocumentUUID>fa163e37-0408-1fe1-aca6-ad4ddda00a67</DocumentUUID>\n <BinaryObject mimeCode=\"application/pdf\">JVBERi0xLjQKJeLjz9MKNiAwIG9iago8PAovVHlwZSAvWE9iamVjdAovU3VidHlwZSAvWE1hZ2UKL1dpZHRoIDEyNzUKL0hlaWdodCAxNjUwCi9Db2xvclNwYWNlIC9EZXZpY2VSR0IKL0JpdHNQZXJDb21wb25lbnQgOAovRmlsdGVyIC9EQ1REZWNvZGUKL0xlbmd0aCAyODE5MzUKPj4Kc3RyZWFtCv/...\n </BinaryObject>\n </AttachmentFolderDocumentFileContent>\n </n0:AttachmentFolderDocumentsFileContentByIDResponse_sync>\n </soap-env:Body>\n</soap-env:Envelope> \n This is the ABAP code we use to parse the XML: METHOD byd_attachment_parse.\n\n DATA(some_xml) = cl_abap_conv_codepage=>create_out( )->convert( iBody ).\n DATA(ixml_pa) = cl_ixml_core=>create( ).\n DATA(stream_factory_pa) = ixml_pa->create_stream_factory( ).\n DATA(document_pa) = ixml_pa->create_document( ).\n DATA(parser_pa) = ixml_pa->create_parser(\n istream = stream_factory_pa->create_istream_xstring( string = some_xml )\n document = document_pa\n stream_factory = stream_factory_pa ).\n\n DATA(parsing_check) = parser_pa->parse( ).\n IF parsing_check = 0.\n\n FINAL(file_content) = document_pa->find_from_name_ns( name = 'AttachmentFolderDocumentFileContent' ).\n IF file_content IS NOT INITIAL.\n DATA(childs) = file_content->get_children( ).\n DO childs->get_length( ) TIMES.\n FINAL(child) = childs->get_item( sy-index - 1 ).\n CASE child->get_name( ).\n WHEN 'BinaryObject'.\n\n eContent = cl_web_http_utility=>decode_x_base64( child->get_value( ) ).\n\n \"eContent = xco_cp=>string( cl_web_http_utility=>decode_base64( child->get_value( ) ) )->as_xstring( xco_cp_character=>code_page->utf_8 )->value.\n\n RETURN.\n ENDCASE.\n ENDDO.\n ENDIF.\n ENDIF.\n\n ENDMETHOD. \n The `BinaryObject` node returned by the ByD service is Base64-encoded. We decode it into an `xstring` to use as the document content when uploading it to S/4HANA: eContent = cl_web_http_utility=>decode_x_base64( child->get_value( ) ). \n We also tried the following approach, although we believe the Base64 data should be decoded directly into binary (`xstring`) data: eContent = xco_cp=>string(\n cl_web_http_utility=>decode_base64( child->get_value( ) )\n)->as_xstring( xco_cp_character=>code_page->utf_8 )->value. \n To upload the attachment to S/4HANA, we use the API `/sap/opu/odata/sap/API_CV_ATTACHMENT_SRV/AttachmentContentSet`. Here is the ABAP code used to post the file: METHOD attachment_content_set.\n\n IF x_csrf_token IS INITIAL.\n fetch_X_CSRF_Token_and_cookies( ).\n ENDIF.\n\n DATA(lv_relative_path) = |/sap/opu/odata/sap/API_CV_ATTACHMENT_SRV/AttachmentContentSet|.\n\n TRY.\n DATA(lo_dest) = cl_http_destination_provider=>create_by_comm_arrangement(\n comm_scenario = 'Z_DAM_S4_ATTACHMENT_CS'\n service_id = 'Z_DAM_S4_API_ATTCHMENT_OUT_REST' ).\n\n DATA(lo_client) = cl_web_http_client_manager=>create_by_http_destination( lo_dest ).\n\n DATA(lo_request) = lo_client->get_http_request( ).\n\n LOOP AT cookies INTO DATA(ls_cookie).\n lo_request->set_cookie( i_name = ls_cookie-name i_value = ls_cookie-value ).\n ENDLOOP.\n\n lo_request->set_header_field( i_name = 'Slug' i_value = iFileName ).\n lo_request->set_header_field( i_name = 'Content-Type' i_value = iContentType ).\n lo_request->set_header_field( i_name = 'BusinessObjectTypeName' i_value = iBusinessObjectTypeName ).\n lo_request->set_header_field( i_name = 'LinkedSAPObjectKey' i_value = iLinkedSAPObjectKey ).\n lo_request->set_header_field( i_name = 'X-CSRF-Token' i_value = x_csrf_token ).\n\n lo_request->set_uri_path( lv_relative_path ).\n lo_request->set_content_type( iContentType ).\n lo_request->set_binary( iAttachmentContent ).\n\n DATA(lo_response) = lo_client->execute( if_web_http_client=>post ).\n\n DATA(lv_status) = lo_response->get_status( ).\n DATA(lv_text_ok) = lo_response->get_text( ).\n\n CATCH cx_http_dest_provider_error INTO DATA(lx_http).\n RAISE SHORTDUMP lx_http.\n eMessage = lx_http->get_text( ).\n\n CATCH /iwbep/cx_cp_remote INTO DATA(lx_remote).\n RAISE SHORTDUMP lx_remote.\n eMessage = lx_remote->get_text( ).\n\n CATCH /iwbep/cx_gateway INTO DATA(lx_gateway).\n RAISE SHORTDUMP lx_gateway.\n eMessage = lx_gateway->get_text( ).\n\n CATCH cx_web_http_client_error INTO DATA(lx_web_http_client_error).\n RAISE SHORTDUMP lx_web_http_client_error.\n eMessage = lx_web_http_client_error->get_text( ).\n ENDTRY.\n\n ENDMETHOD. \n The issue is that attachments with MIME types such as `application/pdf` or `image/jpeg` are created in S/4HANA, but they cannot be opened because they appear to be damaged or corrupted . \n For attachments with the MIME type `message/rfc822`, the service returns the error `CX_ODATA_CV_ATTACH_EXCEPTION: F ile is either corrupted or file format not supported for upload. ` \n Attachments with MIME types such as `text/plain`, however, upload successfully. \n We suspect the problem lies in how the binary content is generated from ByD before it is passed to the S/4HANA API. We have tried several approaches to decode the Base64 string and create the `xstring`, using both `cl_web_http_utility` and the XCO libraries. \n Has anyone encountered a similar issue or found a solution? \n Thanks and kind regards, \n Óscar"
+ },
+ {
+  "key": "7ed580d946e9b613",
+  "title": "No process stands alone: explore your connections using the SAP Signavio Relation Explorer",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/no-process-stands-alone-explore-your-connections-using-the-sap-signavio/ba-p/14504880",
+  "published": "2026-10-15T19:47:41+00:00",
+  "author": "MarvinSchoenwaelder",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Processes do not exist in isolation. Before you change one, you want to see what it depends on and what depends on it. Since the latest release in September, you can view those dependencies directly on the process itself in the new SAP Signavio Relation Explorer. \n Open a process, and its connections are right there: the processes it feeds, the ones it draws from, and the wider landscape it sits in. Read them as a quick list or discover them through a graph and follow them outward as far as they go. This article walks through what you can explore today and how to get started."
+ },
+ {
+  "key": "0f3ca554e88d3290",
+  "title": "SAP Developer News, October 15th, 2026",
+  "link": "https://community.sap.com/t5/developer-news/sap-developer-news-october-15th-2026/ba-p/14504782",
+  "published": "2026-10-15T19:10:00+00:00",
+  "author": "thomas_jung",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "In this week's SAP Developer News: SAP TechEd 2026, SAP AI Core Skills, and SAP Developer Center Nominated for a DevPortal Award"
+ },
+ {
+  "key": "3830114e66836c72",
+  "title": "Best Practices Pipeline for Cloud Integration: How to deal with slash in the interface name",
+  "link": "https://community.sap.com/t5/integration-blog-posts/best-practices-pipeline-for-cloud-integration-how-to-deal-with-slash-in-the/ba-p/14504769",
+  "published": "2026-10-15T17:16:27+00:00",
+  "author": "alex_bundschuh",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "This blog post provides best practices when it comes to configuring the pipeline when your interface name contains a slash."
+ },
+ {
+  "key": "06134f8318a45bb7",
+  "title": "Writing CSS for Web Intelligence Documents in BI2025",
+  "link": "https://community.sap.com/t5/technology-q-a/writing-css-for-web-intelligence-documents-in-bi2025/qaq-p/14504910",
+  "published": "2026-10-15T21:04:03+00:00",
+  "author": "MichaelGrackin",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "I am having a lot of trouble identifying elements to which to apply formatting using CSS via the Web Intelligence CSS Editor on report elements. I am experimenting with applying CSS to the scrollable table report element (via the CSS Editor) since it has very limited formatting options. I cannot seem to find the correct syntax and keywords/element identifiers to apply the formatting. For example, I am trying to format the column headers with a blue background and white text. \n Any assistance or information would be greatly appreciated. Thanks!"
+ },
+ {
+  "key": "9db32966df492c4b",
+  "title": "Adding fields to structures SAP_PS_PROJECT1–5",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/adding-fields-to-structures-sap-ps-project1-5/qaq-p/14504814",
+  "published": "2026-10-15T17:26:04+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "We just want to see if more columns can be added in existing view for standard info store SAP_PS_PROJECT 4. \n\n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
  }
 ]
