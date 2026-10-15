@@ -938,5 +938,170 @@
   "feed": "SAP Community questions",
   "kind": "question",
   "text": "HI community! \n When I accept the terms and conditions for the trial of SAP S/4HANA 2025 FPS01, Fully-Activated Appliance , I get the error \"We are sorry, we are not able to provide the requested solution at this time. Try again later or contact the SAP Cloud Appliance Library operators.\" It has happened consistently since last night (Oct 13), across several attempts. My AWS account is registered in CAL and the connection test succeeds. Could the CAL team check whether there's a trial activation issue or an eligibility check? Thank you."
+ },
+ {
+  "key": "4718948172028134",
+  "title": "MCP Server with Integration Suite, expose CAP API (SCI) via OAuth2JWTBearer Principal Propagation",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/mcp-server-with-integration-suite-expose-cap-api-sci-via-oauth2jwtbearer/ba-p/14503174",
+  "published": "2026-10-15T03:53:14+00:00",
+  "author": "ChingHong",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Introduction/Scenario \n This post explains how to configure an MCP server through SAP Integration Suite to securely communicate with CAP API services using OAuth2JWTBearer Assertion. This approach ensures that API access is governed through individual user identities rather than a shared API/technical user, this approach provides better governance, traceability, and compliance. \n Important reference: For a detailed explanation of the JWT Bearer Flow App-to-App Authentication setup \n SAP Help Portal | SAP Online Help \n Consuming APIs from Other Applications | SAP Help Portal \n Previous similar posts \n MCP Server with Integration Suite, expose S/4HANA ... - SAP Community \n MCP Server with Integration Suite via API Centric ... - SAP Community \n For example, when a user interacts with an AI agent that is connected to the MCP server and accesses CAP APIs, the user should only be able to view and manage data that they are authorized to access. This access is controlled by the user's assigned policies/group under Cloud Identity, ensuring that existing security and governance policies are enforced. \n Thanks @MCZL on helping and provide insight on Cloud Identity Services and BAIP/BTP Destination setup. \n Flow: → Agent (Claude/Github Copilot/any AI Agent) \n → MCP server by Integration Suite (Authenticated via IAS)\n → BTP Destination Service (OAuth2JWTBearer) \n → CAP Service APIs (executed as the authenticated user) \n\n Note: \n The MCP server uses SAP Cloud Identity Services (IAS) as its authentication provider instead of the default XSUAA , as the target APIs are also protected by SAP Cloud Identity Services. Directly accessing an IAS-protected resource through an XSUAA-based authentication flow don't seem feasible. \n This approach limits to a single client ID allowed to access the MCP server access This restriction exists because the BAIP/BTP destination configuration requires the consumer's client ID to be specified rather than the provider's client ID. In this scenario, the consumer is the Integration Suite MCP server, while the provider is the CAP service. \n OAuth2SAMLBearerAssertion can also be used in this scenario. However, this authentication flow is typically designed for communication between Cloud Foundry applications - SAML Bearer Assertion Flow between Cloud Foundry Applications | SAP Help Portal \n Pre-requisite: \n SAP BAIP/BTP with Cloud Foundry Enabled \n SAP Integration Suite with MCP server, Integration Cell runtime capability \n SAP Cloud Identity Services (IAS) \n AI Agent able to communicate with MCP server \n 1. CAP Services creation and deploy \n This demo is using a CAP bookshop sample (without the UI deployment) as the MCP server will only access the CAP API services. \n Note: You may use any AI Model to assist on CAP app generation, ensure you connect to the CAP MCP server for more accurate response. \n Navigate to the project folder in terminal and execute the commands below cds init --nodejs --add sample\ncds add ams\ncds add hana\nnpm install\ncds build --for ams\ncds add mta \n Update the MTA file - to include the additional grant type and binding options resources:\n - name: capServiceDemo-ias\n type: org.cloudfoundry.managed-service\n parameters:\n service: identity\n service-name: capServiceDemo-ias\n service-plan: application\n config:\n provided-apis:\n - name: capServiceDemo-ias-api\n description: API exposed by the application\n display-name: capServiceDemo\n oauth2-configuration:\n token-policy:\n access-token-format: \"jwt\"\n grant-types: \n - client_credentials\n - authorization_code\n - refresh_token\n - urn:ietf:params:oauth:grant-type:jwt-bearer\n - urn:ietf:params:oauth:grant-type:saml2-bearer\n redirect-uris:\n - https://oauth.pstmn.io/v1/callback\n credential-types:\n - binding-secret\n - x509 \n authorization:\n enabled: true\n xsuaa-cross-consumption: true \n Generate the MTA file and deploy to CF npm install\nmbt build\ncf login -a http://<cf api>\ncf deploy ./mta_archives/<mta file> \n The App should be successfully deployed. Please make use of any AI on assisting any error during deployment. \n Copy down the services API URL \n\n Create a service key to test the CAP API service from Postman \n Copy down the information below to test the service in Postman \n clientid \n clientsecret \n authorization_endpoint \n\n Test in Postman \n Authentication setup \n Auth URL: <from previous step>, example https://<ias host>/oauth2/authorize \n Access Token URL: <from previous step>, example https://<ias host>/oauth2/token \n Client ID: <from previous step - provider client ID> \n Client Secret: <from previous step - provider client secret> \n scope: openid \n callback URL: https://oauth.pstmn.io/v1/callback <this is redirect-uris for the cloud identity service instance included in the MTA file> \n Test Catalog service \n\n Test Admin service where you should be getting authorization error if missing policy 'Admin' assign to your user ID in Cloud Identity Services \n\n Go to SAP Cloud Identity Services and assign the required policy to your user ID and retry after 1 minutes. A short delay is expected because the authorization changes need time to be synchronized in the background. \n\n 2. Setup Consumer and Provider in Cloud Identity Services \n Reference: JWT Bearer Flow between Two Applications in SAP Cloud Identity Services (App to App) | SAP Help Portal \n For this Demo - Consumer: Integration Suite - MCP Server\n * Create a separate Cloud Identity service instance with different client ID as the consumer\n- Provider: CAP Services \n Create new instance \n Service: Cloud Identity Services \n Plan: application \n Instance Name: <any name> \n Redirect-uris: <include any AI Agent callback URL> {\n \"authorization\": {\n \"enabled\": true\n },\n \"display-name\": \"IntegrationSuiteMCPConsumer\",\n \"oauth2-configuration\": {\n \"public-client\": true,\n \"redirect-uris\": [\n \"https://oauth.pstmn.io/v1/callback\",\n \"https://claude.ai/api/mcp/auth_callback\",\n \"https://claude.com/api/mcp/auth_callback\",\n \"http://127.0.0.1:*/callback\",\n \"http://localhost:*/oauth/callback\",\n \"http://127.0.0.1:33418\",\n \"https://vscode.dev/redirect\"\n ],\n \"token-policy\": {\n \"access-token-format\": \"jwt\"\n }\n },\n \"provided-apis\": [\n {\n \"description\": \"IS MCP Server Consumer\",\n \"name\": \"IS MCP Server Consumer\"\n }\n ],\n \"xsuaa-cross-consumption\": true\n} \n\n Create a service key and take note of the client id, client secret and url \n clientid \n clientsecret \n url \n Navigate to SAP Cloud Identity Services and configure the dependency. Add a new entry as shown in screenshot. \n Dependency Name: <any name, but important when setting up the destination> \n Application: capServiceDemo \n API Name: capServiceDemo-ias-api \n\n 3. Setup BAIP/BTP Destination \n Property Value \n Name <Any> \n Authentication OAuth2JWTBearer \n Type HTTP \n Client ID <Consumer Client ID from previous step> \n Client Secret <Consumer Client secret from previous step> \n URL <base URL to CAP Services> \n Token Service URL https://<ias tenant>/oauth2/token \n x_user_token.jwks_uri (Additional Properties) https://<ias tenant>/oauth2/certs \n tokenService.body.resource (Additional Properties) \n urn:sap:identity:application:provider:name:<Dependency created in previous step> \n IntegrationCell.Include (Label) true \n\n 4. Create MCP Server in Integration Suite Retrieve the metadata for both the Catalog and Admin services using Postman. \n Convert the metadata into an OpenAPI specification using the online tool - OData Transformer 🦋 \n Download the generated OpenAPI specification file and add a version number in the content before using it in the subsequent steps. \n\n Goto Integration Suite -> Create new MCP Server \n\n Select the tools and click Add \n Note: maximum 30 tools per MCP server - Create an MCP Server from an HTTP Endpoint | SAP Help Portal \n\n The MCP Server will be created as below \n\n Click Edit -> to update the policies \n For the Authentication, choosing the SAP IAS for the authenticate. \n More information can refer to the blog Secure APIs: External OIDC-Based Authentication fo... - SAP Community \n The Well-known URL: https://<ias tenant>.accounts.ondemand.com/.well-known/openid-configuration \n Audience: Can leave empty unless restrict to certain client ID or target system only \n ClientID Key: standard using ${authn.oidc.jwt.azp}, where you can find out this when studying the JWT via any JWT decoder, for example: SuperTokens JWT Decoder \n User Info Key: standard using ${authn.oidc.jwt.email}, where you can find out this when studying the JWT via any JWT decoder, for example: SuperTokens JWT Decoder \n\n Authorization, default using API.invoke. Ensure create a role collection on this role and assign to the user, or either map it to IAS group and assign group to user in IAS \n\n The connection(except timeout), you will not able to change anything here as the URL is derive from the BTP destination. \n\n Deploy the MCP server. \n Perform the same steps for Catalog MCP server \n\n Goto Developer Hub \n Create Product \n Navigate \"Admin Center\" -> Content \n\n Select the MCP Servers and click \"Create Product\" \n\n Enter Name, Short Text and Click Publish \n\n Create Subscription \n Create \"Subscription for Agent\" \n\n Select the created product in previous step \n\n Client ID: <Consumer client ID generated in previous step> \n\n click Save \n\n 5. Role Connection Setup in BAIP/BTP to allow user to invoke the MCP server \n 2 options here for using Cloud Identity Services/IAS as authentication for MCP server \n Create role collection to include the API.Invoke role and assign to user (The example below demonstrates this approach). \n Map the role collection contains API.Invoke to IAS group and assign IAS group to user \n\n 6. Test the MCP Server via Postman \n Authentication setup \n Auth URL: <from previous step>, example https://<ias tenant >/oauth2/authorize \n Access Token URL: <from previous step>, example https://<ias tenant>/oauth2/token \n Client ID: <Consumer client ID from previous step> \n Client Secret: <Consumer client secret from previous step> \n scope: openid \n callback URL: https://oauth.pstmn.io/v1/callback <this is redirect-uris for the Consumer SAP cloud identity service instance> \n\n Use the tool to create a new Author, can notice the createdBy my user ID, that validate that the principal propagation is working as expected. \n\n Reference: \n SAP Help Portal | SAP Online Help \n Principal Authentication from BTP Webapp to S/4HANA (private cloud/on premise \n Named-User calling S4 Public Cloud API via Cloud I... - SAP Community \n Building MCP Servers with SAP Integration Suite: W... - SAP Community \n MCP Server | SAP Help Portal \n Secure APIs: External OIDC-Based Authentication fo... - SAP Community \n MCP Server with Integration Suite via API Centric ... - SAP Community"
+ },
+ {
+  "key": "c5f777ec4e61d578",
+  "title": "How to easily switch from SQL Anywhere 17 Developer to Edge Edition",
+  "link": "https://community.sap.com/t5/technology-q-a/how-to-easily-switch-from-sql-anywhere-17-developer-to-edge-edition/qaq-p/14504221",
+  "published": "2026-10-15T03:57:17+00:00",
+  "author": "tope316",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "I have an existing SQL Anywhere 17 Developer Edition installation and I want to upgrade to Edge Edition. Can I switch editions simply by entering a license key?"
+ },
+ {
+  "key": "19f0b690af8a944e",
+  "title": "material staging date, loading date in PO delivery schedule",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/material-staging-date-loading-date-in-po-delivery-schedule/qaq-p/14504061",
+  "published": "2026-10-14T17:50:10+00:00",
+  "author": "Satya42",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi SAP Team, \n For inter-company PO: 7000688455 the material staging date, transportation date, loading date and goods issue date was not coming in delivery schedule tab but from 2026 we are getting the material staging date, transportation date, loading date and goods issue date in delivery schedule tab PO: 7003559552. Please check how all these dates are getting displayed? \n Best Regards, \n Dattu Kumar."
+ },
+ {
+  "key": "dc44489513263556",
+  "title": "Material staging, transportation and loading date display in Delivery schedule tab",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/material-staging-transportation-and-loading-date-display-in-delivery/qaq-p/14504052",
+  "published": "2026-10-14T17:38:19+00:00",
+  "author": "Satya42",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi SAP Team, \n For inter-company PO: 7000688455 the material staging date, transportation date, loading date and goods issue date was not coming in delivery schdule tab but from 2026 we are getting the material staging date, transportation date, loading date and goods issue date in delivery schdule tab PO: 7003559552. Please check how all these dates are getting displayed? \n Best Regards, \n Dattu Kumar."
+ },
+ {
+  "key": "73e30445151a4e77",
+  "title": "SAP CIS User Provisioning",
+  "link": "https://community.sap.com/t5/technology-q-a/sap-cis-user-provisioning/qaq-p/14504045",
+  "published": "2026-10-14T17:33:10+00:00",
+  "author": "Sisi2",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Community, \n While doing user provisioning from EntraID via SAP CIS to AS ABAP CUA system. Is it possible to assign roles to receiving/child system? If so what is the transformation to be used for this? \n\n Thanks,"
+ },
+ {
+  "key": "a8bbb0d4c4a5fc52",
+  "title": "How to Identify the Total Number of Selected Items in the Create Billing Documents App",
+  "link": "https://community.sap.com/t5/technology-q-a/how-to-identify-the-total-number-of-selected-items-in-the-create-billing/qaq-p/14504002",
+  "published": "2026-10-14T16:27:42+00:00",
+  "author": "LiyaAjayan",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello Everyone, \n In SAP S/4HANA Cloud Public Edition, we have a requirement to split billing documents based on the number of rows selected by the user in the Create Billing Documents app. \n We are exploring the BAdI \"SD_BIL_DATA_TRANSFER \" to implement this logic, but we face the following challenges: \n The BAdI is triggered individually for each selected row/item rather than receiving all selected items in a single call. \n The item numbers displayed in the result screen (e.g., 10, 11, 12, 13, etc.) are not available in the BAdI parameters. \n Therefore, we are unable to determine the total number of items selected by the user. \n Is there any way to determine the total number of selected items within this BAdI, or is there an alternative supported approach to achieve this requirement? \n Any suggestions or guidance would be greatly appreciated. \n Thank you!"
+ },
+ {
+  "key": "f6485a4a09d5cb50",
+  "title": "In S4HANA Public Cloud, How to set up a punchout catalog for Purchase Order ?",
+  "link": "https://community.sap.com/t5/supply-chain-management-q-a/in-s4hana-public-cloud-how-to-set-up-a-punchout-catalog-for-purchase-order/qaq-p/14503952",
+  "published": "2026-10-14T15:40:51+00:00",
+  "author": "arnaudf",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "In sourcing and Procurement process, we would like to set up a punchout catalog when using 'Manage purchase order' tile F0842A. \n --> Supplier is using CxML \n --> there is no set up neither licences for ARIBA \n We already set up (for an other client) the punchout catalog for Purchase Requisition."
+ },
+ {
+  "key": "3e458d18f1859824",
+  "title": "SAP TM 9.6 SP11 – Standard API/BAPI/FM to Create Rate Values and New Validity Periods Programmatical",
+  "link": "https://community.sap.com/t5/supply-chain-management-q-a/sap-tm-9-6-sp11-standard-api-bapi-fm-to-create-rate-values-and-new-validity/qaq-p/14503950",
+  "published": "2026-10-14T15:39:32+00:00",
+  "author": "Hitesh_Khemnar",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello SAP Community, \n I am working on a custom ABAP report in SAP Transportation Management (SAP TM 9.6 SP11) to automate the upload of linehaul rates from an Excel file provided by carriers. \n The requirement is to update existing rate tables by creating new validity periods and adding the corresponding rate values. \n The expected functionality includes: \n\n Identifying the existing active validity period for a rate table. \n\n Updating the existing Valid To date to one day before the new Valid From date. \n\n Creating a new validity period with the required Valid From and Valid To dates. \n\n Adding the required calculation rule and rate values. \n\n Saving and releasing the rate table. \n\n Implementing error handling and delta-run functionality to reprocess failed records. \n I have investigated the standard report /SCMTMS/TCC_RATES_EXCEL_NEW and the function module /SCMTMS/WRITE_RATE_RFC , but I have not yet identified a suitable, supported API for implementing the complete requirement directly from my custom report. \n I would appreciate guidance on the following questions: \n\n Is there a standard BAPI, function module, or class available in SAP TM 9.6 SP11 to create or update rate values and validity periods programmatically? \n\n Can the /scmtms/tc_rates BOPF business object be used for this requirement? If so, which nodes, actions, or APIs should be investigated? \n\n Is there a supported way to reuse the standard Excel upload processing without manually reproducing its logic? \n\n Can /SCMTMS/RATE_MASS_UPDATE h andle this scenario, or is it intended for a different use case? \n\n Are there any relevant SAP Notes, documentation, or working implementation examples available? \n My preference is to use standard SAP functionality wherever possible rather than directly updating database tables or implementing unsupported persistence logic. \n Any technical guidance or examples specific to SAP TM 9.6 would be greatly appreciated. \n Thank you."
+ },
+ {
+  "key": "23bf1d94fe7b3be8",
+  "title": "how to record a voice over to content in SAP Enable Now in 2026?",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/how-to-record-a-voice-over-to-content-in-sap-enable-now-in-2026/qaq-p/14503902",
+  "published": "2026-10-14T15:09:35+00:00",
+  "author": "alam_ansari",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi my client would like to record voice over with default setting selected. Where can I find the step-by-step on how to record content with SAP Enable voice over feature? thanks"
+ },
+ {
+  "key": "88aca679b22250e1",
+  "title": "Guidance Required on SAP DM Network Connectivity and Performance Requirements",
+  "link": "https://community.sap.com/t5/supply-chain-management-q-a/guidance-required-on-sap-dm-network-connectivity-and-performance/qaq-p/14503875",
+  "published": "2026-10-14T14:36:42+00:00",
+  "author": "Pandidivya_Ganesh",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello Experts, \n We are currently evaluating SAP Digital Manufacturing for deployment across multiple manufacturing sites and would like to better understand the network readiness requirements for a production environment. \n As part of our solution assessment, we are looking for Expert recommendations and best practices related to connectivity, performance, and resiliency. \n Specifically, could you please provide guidance on the following \n Is there any SAP guidance on the minimum and recommended bandwidth, latency, and network resiliency requirements for running SAP Digital Manufacturing in a production environment? \n\n In addition, are there any best practices for sizing WAN/Internet connectivity and validating performance for manufacturing sites connecting to SAP DM cloud tenants? \n\n Thanks, \n Divya"
+ },
+ {
+  "key": "4516523a46987f4f",
+  "title": "Reporting hierarchy (CASHFLOW) cannot be transported",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/reporting-hierarchy-cashflow-cannot-be-transported/qaq-p/14503778",
+  "published": "2026-10-14T12:45:37+00:00",
+  "author": "BoazBBatelaan",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Description \n We are setting up a cash flow statement based on reporting rules, following the SAP Help documentation \"Cash Flow Statement Based on Reporting Rules\". The apps involved are Manage Reporting Rules (F9259), Manage Global Hierarchies (F2918) and the Financial Statements Review Booklet (F8587), Cash Flow Statement - Indirect Method page. \n In the source system we created a reporting hierarchy: \n - Hierarchy ID: CASHFLOW_V1 \n - Category: Reporting Hierarchy \n - Chart of accounts: YCOA \n - Purpose: CASHFLOW (Cash Flow Statement - Indirect Method) \n - Valid from 01.01.2025 to 31.12.9999 \n Problem 1 \n We cannot add this reporting hierarchy to a transport request, and it is not visible in the Export Software Collection app. We therefore cannot move it to the test system. \n Problem 2 \n Reporting rules created in Manage Reporting Rules also do not appear to be transported via a transport request or software collection. They seem to behave like master data that has to be created in each system. \n Questions \n 1. Is it supported to transport reporting hierarchies (category Reporting Hierarchy, purpose CASHFLOW) between tenants? If yes, how, and which app or transport type includes them? \n 2. Is it supported to transport reporting rules (Manage Reporting Rules)? If not, is this by design? \n 3. If neither is transportable, what is the recommended way to promote them from development to test and production (for example, spreadsheet export and import of the hierarchy, or another mechanism)? \n 4. Does the Cash Flow Statement - Indirect Method page in the Financial Statements Review Booklet require any further configuration for a reporting hierarchy to be selectable (for example, status Active, rules assigned, specific roles)? \n Steps to reproduce \n 1. Open Manage Global Hierarchies and create a reporting hierarchy with purpose CASHFLOW. \n 2. Create reporting rules with purpose CASHFLOW in Manage Reporting Rules and assign them to the hierarchy nodes. \n 3. Try to include the hierarchy in a transport request or the Export Software Collection app. It is not offered."
+ },
+ {
+  "key": "5941e0fc6abaa017",
+  "title": "Cannot change G/L account value '11122000' due to message AC476.",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/cannot-change-g-l-account-value-amp-39-11122000-amp-39-due-to-message-ac476/qaq-p/14503739",
+  "published": "2026-10-14T12:09:57+00:00",
+  "author": "Ec_Gm",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "In SAP S4 HANA - AO90 account determination, incorrect G/L accounts are assigned for revaluation postings in technical fields KTAUNB and KTAUNG. No revaluation postings have been made in the system so far. But same GL is assigned for Acc.Dep. also. However, when attempting to change the assigned G/L account, the system issues the following: Error. -'' You can no longer change the value '11122000' for the G/L account \n Message No. AC476''."
+ },
+ {
+  "key": "9f7cbebf41104d85",
+  "title": "Push purchase order data to a third-party portal Extensibility options",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/push-purchase-order-data-to-a-third-party-portal-extensibility-options/qaq-p/14503736",
+  "published": "2026-10-14T12:07:27+00:00",
+  "author": "jigyasaranawat02",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Expert, \n We have a requirement to push purchase order data to a third-party portal immediately after a purchase order is created. \n Could you please advise how this can be implemented in SAP S/4HANA Cloud Public Edition? Specifically, \n we would appreciate guidance on the appropriate extensibility options and points . \n\n Thanking You \n Best Regards, \n Lokendra"
+ },
+ {
+  "key": "2336f4f2e2e93bee",
+  "title": "Worklist plugin, how can I change the format of a datetime field to show the time as well",
+  "link": "https://community.sap.com/t5/technology-q-a/worklist-plugin-how-can-i-change-the-format-of-a-datetime-field-to-show-the/qaq-p/14503726",
+  "published": "2026-10-14T11:57:30+00:00",
+  "author": "Bjorn_Vanholme",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "In the default worklist plugin i can select the order scheduled start date, but by default this is only the date, while this is actually a datetime field. \n Is there a possibility to change the format? Without any custom plugin or use a custom data field ?"
+ },
+ {
+  "key": "f339f17623d8f4b9",
+  "title": "Transaction ME57 – Changing the default order type displayed",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/transaction-me57-changing-the-default-order-type-displayed/qaq-p/14503627",
+  "published": "2026-10-14T11:27:22+00:00",
+  "author": "dudu1",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "When reaching the output screen of transaction ME57, the displayed order type is FO. Users are forced to go through the list line by line and change it to a different order type. I understand that order type FO appears because it is the first entry in table T161A. I do not want to remove the other entries via Customizing just to make order type ZLCL the first one, as there is sometimes a need to create orders of the FO type based on the requisition."
  }
 ]
