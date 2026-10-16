@@ -721,5 +721,82 @@
   "feed": "SAP Community questions",
   "kind": "question",
   "text": "We just want to see if more columns can be added in existing view for standard info store SAP_PS_PROJECT 4. \n\n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+ },
+ {
+  "key": "5d94fa1c47895504",
+  "title": "Understanding SAP S/4HANA Order-to-Cash (O2C): From Sales Order to Billing",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/understanding-sap-s-4hana-order-to-cash-o2c-from-sales-order-to-billing/ba-p/14503852",
+  "published": "2026-10-16T02:57:37+00:00",
+  "author": "AswinKumar_K",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "In this blog, we will explore the SAP S/4HANA Order-to-Cash (O2C) process in SAP SD, from sales order creation to delivery, Post Goods Issue (PGI), and billing. We will also understand key concepts such as enterprise structure, sales areas, sales document types, item categories, schedule line categories, plant determination, shipping point determination, and pricing through simple explanations and illustrative examples."
+ },
+ {
+  "key": "4bb7f2eb5b0fd3a6",
+  "title": "Custom columns in VA05 on S/4HANA: what the code does with your BAdI",
+  "link": "https://community.sap.com/t5/abap-blog-posts/custom-columns-in-va05-on-s-4hana-what-the-code-does-with-your-badi/ba-p/14504965",
+  "published": "2026-10-16T01:28:52+00:00",
+  "author": "AlexandrePassarelli",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "VA05 in S/4HANA has its own BAdIs for custom columns. I read what the code does with them in S/4HANA 2020 and 2023: only visible columns are read, a column with a standard name is dropped, and two active implementations make both stop running without any message."
+ },
+ {
+  "key": "6471bd549baf36e6",
+  "title": "Connecting AI Agents to SAP Commerce Cloud with MCP",
+  "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/connecting-ai-agents-to-sap-commerce-cloud-with-mcp/ba-p/14504916",
+  "published": "2026-10-15T21:28:29+00:00",
+  "author": "cristiano-costa",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Why MCP Is the Missing Link in the AI Agent Era \n The way software systems expose their capabilities is undergoing a quiet but fundamental shift. For decades the standard contract was: a human opens a UI, reads it, clicks it. APIs came next — machines calling machines, but still with a human writing the glue code in between. Now a third actor has arrived: the AI agent, capable of reasoning, planning, and acting autonomously across tools it has never seen before. \n The challenge is that AI models know how to think but not how to reach . They have no standardised way to discover what a system can do, call it safely, or chain results into a goal. Every integration was bespoke — a custom prompt template here, a hand-rolled function schema there. The ecosystem was fragmented before it even started. \n Model Context Protocol (MCP) , published by Anthropic in late 2024 and now adopted across the industry, solves this. MCP is an open, transport-agnostic protocol that lets any AI client discover and call tools exposed by any MCP server — with a single, uniform interface. Think of it as USB-C for AI integrations: one connector, any device. \n For commerce, the implications are significant. A product catalogue, a shopping cart, a checkout flow — these are all structured, well-understood operations that an AI agent can now navigate, assist with, and automate end-to-end, without a human writing integration code for each new model or use case."
+ },
+ {
+  "key": "436850af1e914156",
+  "title": "Text Formatting Removed When Posted To External Job Boards",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/text-formatting-removed-when-posted-to-external-job-boards/qaq-p/14504961",
+  "published": "2026-10-16T00:51:35+00:00",
+  "author": "anncm",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi, \n The formatting in job description is removed when posting to external job boards through Recruiting Posting - \n\n * (asterisk) is originally in bullets. \n How do we retain the original formatting? Or is this the expected system behaviour?"
+ },
+ {
+  "key": "4468f15c3ab1ddcb",
+  "title": "Missing Apps F8376 and F8377 in S/4HANA Cloud 2608 - 7MA Collections and Dispute",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/missing-apps-f8376-and-f8377-in-s-4hana-cloud-2608-7ma-collections-and/qaq-p/14504589",
+  "published": "2026-10-15T11:41:20+00:00",
+  "author": "GeorgeL",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "We are configuring Collections and Dispute Automation in S/4HANA Cloud Public Edition 2608. Setup steps 15–16 require apps F8377 and F8376, but we cannot find them in our launchpad or the Fiori Apps Reference Library. \n Please confirm: \n - Are both apps released for Public Edition 2608 as presented? \n - Which business catalogs and scope prerequisites make them available? \n - If these IDs are incorrect or obsolete, how do we schedule “Transfer Receivable/Payable Items” and “Build Receivable Items”? \n Transfer Current Settings from Finance, from step 10 were added manually using Option 2."
+ },
+ {
+  "key": "7e2f028f1729bc46",
+  "title": "Asset Retirement Obligation Reversal issue",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/asset-retirement-obligation-reversal-issue/qaq-p/14504502",
+  "published": "2026-10-15T10:08:47+00:00",
+  "author": "dishika_anand12",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Team, \n We need reverse migrated released ARO in PH4, please let me know process steps to reverse the released ARO obligation. \n Kindly find attached test case from FH1 system. \n Thanks,"
+ },
+ {
+  "key": "1b3def7ce50b9759",
+  "title": "Processing Issue - Program RVV50R10C",
+  "link": "https://community.sap.com/t5/abap-forum/processing-issue-program-rvv50r10c/m-p/14504929#M1361",
+  "published": "2026-10-15T22:13:43+00:00",
+  "author": "akshatrander1990",
+  "tags": [],
+  "feed": "SAP Community discussions",
+  "kind": "discussion",
+  "text": "Hi, \n We have a background job scheduled for program RVV50R10C every 15 mins in PROD to create the outbound deliveries with a custom variant . There is custom logic implemented in USEREXIT_SAVE_DOCUMENT in include MV50AFZ1 which MODIFY a Z DB table entry for the delivery. \n The same variant is available in quality and other systems. We see a difference in the processing of the deliveries. In case the multiple deliveries are getting created for multiple sales orders, USEREXIT_SAVE_DOCUMENT is triggering once and XLIPS will have all the deliveries at once in PROD but in case of other test systems , USEREXIT_SAVE_DOCUMENT is triggering for each delivery and XLIPS will have that specific delivery. This difference is behavior is failing out custom logic. \n The custom logic is written keeping in mind, that USEREXIT_SAVE_DOCUMENT will trigger specifically for each delivery and XLIPS will have that specific delivery. \n is there any parameter in the variant configuration of this report which is causing this behavior difference ? \n Thanks"
  }
 ]
