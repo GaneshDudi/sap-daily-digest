@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-16",
+  "label": "Friday, 16 October 2026",
+  "headline": "A light day of mostly unanswered community questions; the useful threads cover binary corruption in an attachment upload, user-exit call counts, and ADT REST false-success signals.",
+  "items": 89,
+  "deep": 20
+ },
+ {
   "date": "2026-10-15",
   "label": "Thursday, 15 October 2026",
   "headline": "Thin day: a VALUE BASE trap, CDS join-pruning and ATC measurements (abstracts only), plus MCP-for-SAP patterns and open SD/Public Edition extensibility questions.",
