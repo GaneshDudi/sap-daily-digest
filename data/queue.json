@@ -1,1 +1,13 @@
-[]
+[
+ {
+  "key": "c8c416e75e8ef7b2",
+  "title": "Solving Multi-Instance OAuth for MCP on Cloud Foundry",
+  "link": "https://community.sap.com/t5/tooling-sap-build-blog-posts/solving-multi-instance-oauth-for-mcp-on-cloud-foundry/ba-p/14505926",
+  "published": "2026-10-17T10:15:08+00:00",
+  "author": "himavaishnavijidugu",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Handling OAuth authentication across multiple Cloud Foundry instances without relying on a shared database."
+ }
+]
