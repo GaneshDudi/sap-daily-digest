@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-17",
+  "label": "Saturday, 17 October 2026",
+  "headline": "A code-reading day for ABAP: BAPI sales order locks, VF04 selection, CDS SQL 305 and ADT object types, plus an OData paging pattern.",
+  "items": 88,
+  "deep": 19
+ },
+ {
   "date": "2026-10-16",
   "label": "Friday, 16 October 2026",
   "headline": "A light day of mostly unanswered community questions; the useful threads cover binary corruption in an attachment upload, user-exit call counts, and ADT REST false-success signals.",
