@@ -9,5 +9,82 @@
   "feed": "SAP Community blog posts",
   "kind": "blog",
   "text": "Handling OAuth authentication across multiple Cloud Foundry instances without relying on a shared database."
+ },
+ {
+  "key": "d1da008eb3a44419",
+  "title": "From Legacy to Future-Proof: Implementing SAP MDG Cloud Ready Mode and Go-live",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-legacy-to-future-proof-implementing-sap-mdg-cloud-ready-mode-and-go/ba-p/14499987",
+  "published": "2026-10-17T19:38:41+00:00",
+  "author": "steffen_ulmer",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Hi SAP Community \n I supported this project as SAP Trusted Advisor and Focus TQM: This is what we built, and what I took away from it: \n In September 2026, a leading retail group went live with SAP MDG (Cloud-Ready Mode) . Not a pilot, not a proof of concept!: A full production go-live , replacing a legacy system that had reached its limits. \n What made this project particularly interesting was the technology choice: the customer implemented SAP MDG in Cloud Ready Mode , the newest MDG innovation mode that bets fully on the latest SAP stack and Clean Core. The customer is among the early adopters of this Cloud Ready Mode. \n The decision wasn't just about replacing software. The customer had clear requirements around data quality, compliance, and long-term maintainability. As the Head of Master Data put it the real question was never \"Does it work?\" but \"Is it future-proof?\" . That framing shaped the entire project. \n The team was a mix of customer business stakeholders, the implementation partner, and SAP. I was involved on the SAP side as Trusted Advisor and/or Solution expert. The project ran on time and without major disruptions, which (...let's be honest..) is not always a given in this space. \n Key Innovations Introduced \n Beyond replacing the old system, the project introduced capabilities that deliver measurable value day-to-day: \n The Dun & Bradstreet integration stands out. Native enrichment directly in MDG means business partner data is cleaner from the start and the creation process is faster. Not a workaround, not a custom interface! - a standard integration that works. SAP MDG enables this through the Flexible Data Provider Integration , introduced with version 2025. The required CPI mappings were handled by a dedicated CPI expert. \n DQM derivations were another real win. Business rules automatically populate default values based on existing data, cutting down manual effort significantly. With a small enhancement on SAP BTP, the result of the derivations are visible to the requestor of the master data object as a task in his Inbox. \n Rule-based SAP BTP workflow with a rule-based agent and flow determination to support the requirements of the customer for a flexible approval/governance process. \n And from an architecture perspective: MDG co-deployed on the existing S/4HANA system keeps the landscape clean and reduces TCO considerably compared to a standalone setup. \n Where Things Could Go Next \n With Cloud Ready Mode now in place, the foundation is set for future enhancements. Possible directions include: \n AI-powered process automation to further increase process performance and user satisfaction \n Federated governance across a broader group structure, extending the model beyond the initial scope \n Continuous data quality improvements building on the existing DQM and D&B foundation \n What Was Achieved and What Was Learned \n The project showed that master data governance is far more than a software implementation: It is also organizational development . My key findings at a glance: \n Transparent, trustworthy business partner data as the foundation for quality and compliance \n Improved data quality and processes: not just \"get clean\" , but \"stay clean\" \n Reduced complexity through standardization and Clean Core (direct reduction in operating costs) \n Native D&B enrichment is a real, measurable added value \n Centralization does not automatically solve governance: What matters is the right mix of centralization and federation \n \"Keep it simple\" - complexity is the greatest enemy of sustainable master data governance \n MDG Cloud Ready Mode is production-ready. It's more flexible and extensible than many people think.. \n The customer is very satisfied with the project and the SAP software — and has chosen to present it as a success story at the DSAG Annual Congress 2026 . (see https://lnkd.in/p/eBTGCC5i ) \n best regards \n Steffen"
+ },
+ {
+  "key": "ed58e6411d2fa450",
+  "title": "Beyond Configuration. Built for Decisions. | Rethinking SAP IBP vs. S/4HANA",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/beyond-configuration-built-for-decisions-rethinking-sap-ibp-vs-s-4hana/ba-p/14506004",
+  "published": "2026-10-17T17:46:41+00:00",
+  "author": "rahulmohnot",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "S/4HANA powers execution. SAP IBP helps shape the decisions behind it. A perspective on what this means for implementation leaders. \n\n THOUGHT LEADERSHIP / SAP IBP \n\n Beyond Configuration. \n Built for Decisions. \n Why SAP IBP should be approached as a decision-modeling discipline, not simply another configuration project. \n\n A well-run business needs both a reliable system of execution and a sound way to decide what to execute. \n That is the subtle but consequential difference between the implementation emphasis of SAP S/4HANA and SAP Integrated Business Planning (IBP) . \n\n SAP S/4HANA \n Design for execution \n Structures business processes, transactions and controls for reliable day-to-day operations. \n SAP IBP \n Design for decisions \n Models assumptions, constraints and trade-offs to evaluate future plans before execution. \n\n A configured planning system is not necessarily a trustworthy planning model. \n A single SAP IBP key figure can require decisions about calculation levels, aggregation logic, business assumptions and scenario behavior. The formula may be simple. Proving the answer is right across the enterprise is not. \n My white paper explores why that distinction changes how we scope, staff, validate and govern an IBP implementation. \n\n “S/4HANA helps execute business decisions. SAP IBP helps determine which decisions make business sense before they are executed.” \n\n If you are leading an enterprise planning transformation, I invite you to read the attached paper: \n Beyond Configuration. Built for Decisions. \n The Hidden Complexity of SAP IBP: Why Enterprise Planning Is Modeled, Not Selected from a Menu \n\n Rahul Mohnot \n Senior SAP IBP Supply Chain Consultant & Solution Architect \n A perspective on typical implementation emphasis; both SAP platforms remain complementary and require rigorous architecture."
+ },
+ {
+  "key": "6cf5c2a30b278e74",
+  "title": "I counted the released APIs in my S/4HANA 2023 lab. The BAPI numbers surprised me",
+  "link": "https://community.sap.com/t5/abap-blog-posts/i-counted-the-released-apis-in-my-s-4hana-2023-lab-the-bapi-numbers/ba-p/14505997",
+  "published": "2026-10-17T17:24:11+00:00",
+  "author": "AlexandrePassarelli",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "My students keep asking: can I use this in ABAP Cloud? So I counted every release state in my S/4HANA 2023 lab. Out of 5,487 BAPI function modules, 19 are released, 148 are explicitly \"not to be released\", and the other 5,320 have no entry at all. What that means in practice, and where SAP points you instead."
+ },
+ {
+  "key": "7645f39fd22ea743",
+  "title": "From Raw Data to Ready-to-Mine in Hours: Meet the New Process Data Modeling Agent",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-raw-data-to-ready-to-mine-in-hours-meet-the-new-process-data-modeling/ba-p/14505395",
+  "published": "2026-10-17T15:50:04+00:00",
+  "author": "Monsasa",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "If you've ever built a process mining data model, you've probably experienced the same frustration: while process analysis can begin in minutes, preparing the event log often takes days or weeks. Identifying business objects, joining tables, defining relationships, and validating results can consume most of a project timeline. \n Industry data puts the number at 40–70% of total project effort consumed by data preparation alone."
+ },
+ {
+  "key": "3784b1390460308c",
+  "title": "Troubleshooting a 404 on One Time Payment in Mass Data Management (2H 2026 Preview)",
+  "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-members/troubleshooting-a-404-on-one-time-payment-in-mass-data-management-2h-2026/ba-p/14505982",
+  "published": "2026-10-17T15:33:48+00:00",
+  "author": "muralidharansrinivasan",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Exploring One Time Payment in Mass Data Management on a 2H 2026 preview tenant: what the new feature looks like, and the 404 I hit along the way."
+ },
+ {
+  "key": "351acdd1ecfa0a78",
+  "title": "Fluid API for Abapsmith: breaking ADT limits",
+  "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/fluid-api-for-abapsmith-breaking-adt-limits/ba-p/14505974",
+  "published": "2026-10-17T15:29:25+00:00",
+  "author": "Artsemi",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": ""
+ },
+ {
+  "key": "4400be8be69df812",
+  "title": "SAC version dimension values filter",
+  "link": "https://community.sap.com/t5/technology-q-a/sac-version-dimension-values-filter/qaq-p/14506003",
+  "published": "2026-10-17T17:17:33+00:00",
+  "author": "kiran_s611",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi All, \n I got a requirement like, i need to display the versions in input control except Actuals. This input was linked to a Data Action. \n\n I am not ble to filter out the Actuals value from the list. Getting all the versions in the list when running the data action. \n\n Is there any way to display the versions other than Actuals. \n Thanks in advance."
  }
 ]
