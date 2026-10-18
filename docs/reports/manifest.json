@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-18",
+  "label": "Sunday, 18 October 2026",
+  "headline": "Thin day: a BAPI release-state count for S/4HANA 2023 and an unanswered nested RAP header question; two other posts have no usable content.",
+  "items": 13,
+  "deep": 4
+ },
+ {
   "date": "2026-10-17",
   "label": "Saturday, 17 October 2026",
   "headline": "A code-reading day for ABAP: BAPI sales order locks, VF04 selection, CDS SQL 305 and ADT object types, plus an OData paging pattern.",

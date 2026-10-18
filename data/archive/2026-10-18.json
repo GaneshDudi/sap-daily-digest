@@ -1,0 +1,442 @@
+{
+ "items": [
+  {
+   "key": "c8c416e75e8ef7b2",
+   "title": "Solving Multi-Instance OAuth for MCP on Cloud Foundry",
+   "link": "https://community.sap.com/t5/tooling-sap-build-blog-posts/solving-multi-instance-oauth-for-mcp-on-cloud-foundry/ba-p/14505926",
+   "published": "2026-10-17T10:15:08+00:00",
+   "author": "himavaishnavijidugu",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Handling OAuth authentication across multiple Cloud Foundry instances without relying on a shared database."
+  },
+  {
+   "key": "d1da008eb3a44419",
+   "title": "From Legacy to Future-Proof: Implementing SAP MDG Cloud Ready Mode and Go-live",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-legacy-to-future-proof-implementing-sap-mdg-cloud-ready-mode-and-go/ba-p/14499987",
+   "published": "2026-10-17T19:38:41+00:00",
+   "author": "steffen_ulmer",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Hi SAP Community \n I supported this project as SAP Trusted Advisor and Focus TQM: This is what we built, and what I took away from it: \n In September 2026, a leading retail group went live with SAP MDG (Cloud-Ready Mode) . Not a pilot, not a proof of concept!: A full production go-live , replacing a legacy system that had reached its limits. \n What made this project particularly interesting was the technology choice: the customer implemented SAP MDG in Cloud Ready Mode , the newest MDG innovation mode that bets fully on the latest SAP stack and Clean Core. The customer is among the early adopters of this Cloud Ready Mode. \n The decision wasn't just about replacing software. The customer had clear requirements around data quality, compliance, and long-term maintainability. As the Head of Master Data put it the real question was never \"Does it work?\" but \"Is it future-proof?\" . That framing shaped the entire project. \n The team was a mix of customer business stakeholders, the implementation partner, and SAP. I was involved on the SAP side as Trusted Advisor and/or Solution expert. The project ran on time and without major disruptions, which (...let's be honest..) is not always a given in this space. \n Key Innovations Introduced \n Beyond replacing the old system, the project introduced capabilities that deliver measurable value day-to-day: \n The Dun & Bradstreet integration stands out. Native enrichment directly in MDG means business partner data is cleaner from the start and the creation process is faster. Not a workaround, not a custom interface! - a standard integration that works. SAP MDG enables this through the Flexible Data Provider Integration , introduced with version 2025. The required CPI mappings were handled by a dedicated CPI expert. \n DQM derivations were another real win. Business rules automatically populate default values based on existing data, cutting down manual effort significantly. With a small enhancement on SAP BTP, the result of the derivations are visible to the requestor of the master data object as a task in his Inbox. \n Rule-based SAP BTP workflow with a rule-based agent and flow determination to support the requirements of the customer for a flexible approval/governance process. \n And from an architecture perspective: MDG co-deployed on the existing S/4HANA system keeps the landscape clean and reduces TCO considerably compared to a standalone setup. \n Where Things Could Go Next \n With Cloud Ready Mode now in place, the foundation is set for future enhancements. Possible directions include: \n AI-powered process automation to further increase process performance and user satisfaction \n Federated governance across a broader group structure, extending the model beyond the initial scope \n Continuous data quality improvements building on the existing DQM and D&B foundation \n What Was Achieved and What Was Learned \n The project showed that master data governance is far more than a software implementation: It is also organizational development . My key findings at a glance: \n Transparent, trustworthy business partner data as the foundation for quality and compliance \n Improved data quality and processes: not just \"get clean\" , but \"stay clean\" \n Reduced complexity through standardization and Clean Core (direct reduction in operating costs) \n Native D&B enrichment is a real, measurable added value \n Centralization does not automatically solve governance: What matters is the right mix of centralization and federation \n \"Keep it simple\" - complexity is the greatest enemy of sustainable master data governance \n MDG Cloud Ready Mode is production-ready. It's more flexible and extensible than many people think.. \n The customer is very satisfied with the project and the SAP software — and has chosen to present it as a success story at the DSAG Annual Congress 2026 . (see https://lnkd.in/p/eBTGCC5i ) \n best regards \n Steffen"
+  },
+  {
+   "key": "ed58e6411d2fa450",
+   "title": "Beyond Configuration. Built for Decisions. | Rethinking SAP IBP vs. S/4HANA",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/beyond-configuration-built-for-decisions-rethinking-sap-ibp-vs-s-4hana/ba-p/14506004",
+   "published": "2026-10-17T17:46:41+00:00",
+   "author": "rahulmohnot",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "S/4HANA powers execution. SAP IBP helps shape the decisions behind it. A perspective on what this means for implementation leaders. \n\n THOUGHT LEADERSHIP / SAP IBP \n\n Beyond Configuration. \n Built for Decisions. \n Why SAP IBP should be approached as a decision-modeling discipline, not simply another configuration project. \n\n A well-run business needs both a reliable system of execution and a sound way to decide what to execute. \n That is the subtle but consequential difference between the implementation emphasis of SAP S/4HANA and SAP Integrated Business Planning (IBP) . \n\n SAP S/4HANA \n Design for execution \n Structures business processes, transactions and controls for reliable day-to-day operations. \n SAP IBP \n Design for decisions \n Models assumptions, constraints and trade-offs to evaluate future plans before execution. \n\n A configured planning system is not necessarily a trustworthy planning model. \n A single SAP IBP key figure can require decisions about calculation levels, aggregation logic, business assumptions and scenario behavior. The formula may be simple. Proving the answer is right across the enterprise is not. \n My white paper explores why that distinction changes how we scope, staff, validate and govern an IBP implementation. \n\n “S/4HANA helps execute business decisions. SAP IBP helps determine which decisions make business sense before they are executed.” \n\n If you are leading an enterprise planning transformation, I invite you to read the attached paper: \n Beyond Configuration. Built for Decisions. \n The Hidden Complexity of SAP IBP: Why Enterprise Planning Is Modeled, Not Selected from a Menu \n\n Rahul Mohnot \n Senior SAP IBP Supply Chain Consultant & Solution Architect \n A perspective on typical implementation emphasis; both SAP platforms remain complementary and require rigorous architecture."
+  },
+  {
+   "key": "6cf5c2a30b278e74",
+   "title": "I counted the released APIs in my S/4HANA 2023 lab. The BAPI numbers surprised me",
+   "link": "https://community.sap.com/t5/abap-blog-posts/i-counted-the-released-apis-in-my-s-4hana-2023-lab-the-bapi-numbers/ba-p/14505997",
+   "published": "2026-10-17T17:24:11+00:00",
+   "author": "AlexandrePassarelli",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "My students keep asking: can I use this in ABAP Cloud? So I counted every release state in my S/4HANA 2023 lab. Out of 5,487 BAPI function modules, 19 are released, 148 are explicitly \"not to be released\", and the other 5,320 have no entry at all. What that means in practice, and where SAP points you instead."
+  },
+  {
+   "key": "7645f39fd22ea743",
+   "title": "From Raw Data to Ready-to-Mine in Hours: Meet the New Process Data Modeling Agent",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-raw-data-to-ready-to-mine-in-hours-meet-the-new-process-data-modeling/ba-p/14505395",
+   "published": "2026-10-17T15:50:04+00:00",
+   "author": "Monsasa",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "If you've ever built a process mining data model, you've probably experienced the same frustration: while process analysis can begin in minutes, preparing the event log often takes days or weeks. Identifying business objects, joining tables, defining relationships, and validating results can consume most of a project timeline. \n Industry data puts the number at 40–70% of total project effort consumed by data preparation alone."
+  },
+  {
+   "key": "3784b1390460308c",
+   "title": "Troubleshooting a 404 on One Time Payment in Mass Data Management (2H 2026 Preview)",
+   "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-members/troubleshooting-a-404-on-one-time-payment-in-mass-data-management-2h-2026/ba-p/14505982",
+   "published": "2026-10-17T15:33:48+00:00",
+   "author": "muralidharansrinivasan",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Exploring One Time Payment in Mass Data Management on a 2H 2026 preview tenant: what the new feature looks like, and the 404 I hit along the way."
+  },
+  {
+   "key": "351acdd1ecfa0a78",
+   "title": "Fluid API for Abapsmith: breaking ADT limits",
+   "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/fluid-api-for-abapsmith-breaking-adt-limits/ba-p/14505974",
+   "published": "2026-10-17T15:29:25+00:00",
+   "author": "Artsemi",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": ""
+  },
+  {
+   "key": "4400be8be69df812",
+   "title": "SAC version dimension values filter",
+   "link": "https://community.sap.com/t5/technology-q-a/sac-version-dimension-values-filter/qaq-p/14506003",
+   "published": "2026-10-17T17:17:33+00:00",
+   "author": "kiran_s611",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi All, \n I got a requirement like, i need to display the versions in input control except Actuals. This input was linked to a Data Action. \n\n I am not ble to filter out the Actuals value from the list. Getting all the versions in the list when running the data action. \n\n Is there any way to display the versions other than Actuals. \n Thanks in advance."
+  },
+  {
+   "key": "49958a28fc38d633",
+   "title": "Use Existing Agents, Build New Ones, Connect to Others — All Securely with SAP Joule Work",
+   "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/use-existing-agents-build-new-ones-connect-to-others-all-securely-with-sap/ba-p/14506047",
+   "published": "2026-10-18T04:14:41+00:00",
+   "author": "Debdutt_Mondal",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Building a secure AI platform is a solved problem if you never let anyone use it. The hard part is what comes next. \n The second post in the Security Governance in Action series covers the practitioner layer — using agents, building custom extensions, and bridging third-party AI systems — and how the security posture holds across all three."
+  },
+  {
+   "key": "0d7cbcb4dea00ff4",
+   "title": "Before the First Prompt: How SAP Engineers Trust Before Agents Are Ever Invoked",
+   "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/before-the-first-prompt-how-sap-engineers-trust-before-agents-are-ever/ba-p/14506046",
+   "published": "2026-10-18T04:14:16+00:00",
+   "author": "Debdutt_Mondal",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Most enterprise AI conversations start at the prompt. This one starts earlier. \n The first post in the Security Governance in Action series covers the trust layer SAP engineers before a user sends a single message — agent validation, governed provisioning, three-layer authorization enforcement, and strict tenant isolation across the entire agentic AI stack."
+  },
+  {
+   "key": "40ffb566eb96dcc9",
+   "title": "Several e-mail addresses, one SAP user: CERTRULE instead of the gateway mapping table for BTP apps",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/several-e-mail-addresses-one-sap-user-certrule-instead-of-the-gateway/ba-p/14500734",
+   "published": "2026-10-18T04:22:31+00:00",
+   "author": "VikasSingh2",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Moving from ECC to S/4HANA, we replaced the per-user gateway mapping entries (USREXTID) with one CERTRULE rule and a short exception list for principal propagation from SAP BTP apps. Two tests, the three failures I hit on the way, and where each one shows up."
+  },
+  {
+   "key": "14a12abb552618a8",
+   "title": "The Agentic Glass Box: Observability and Governance at Enterprise Scale",
+   "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/the-agentic-glass-box-observability-and-governance-at-enterprise-scale/ba-p/14506023",
+   "published": "2026-10-18T04:44:37+00:00",
+   "author": "Debdutt_Mondal",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Your agents are running. But are they running right? The final post in the series covers the observability and governance layer that lets enterprise teams answer that question — continuously."
+  },
+  {
+   "key": "a907d73bfeba2a44",
+   "title": "Fiori Elements OData V2: Incorrect object-page header and navigation hierarchy in a nested RAP BO",
+   "link": "https://community.sap.com/t5/technology-q-a/fiori-elements-odata-v2-incorrect-object-page-header-and-navigation/qaq-p/14506128",
+   "published": "2026-10-18T04:28:20+00:00",
+   "author": "Shadab_Hussain67",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "I am developing a custom transactional application using the ABAP RESTful Application Programming Model (RAP) in SAP S/4HANA Cloud Public Edition. The application uses managed RAP business objects, CDS view entities, projection views, behavior definitions, and a Fiori Elements UI exposed through an OData V2 UI service. \n My business object has the following composition hierarchy: \n\n Customer — root entity \n\n Customer Role — child of Customer \n\n Customer Address — child of Customer \n\n Company Code — child of Customer \n\n Tax — child of Company Code \n The entities have technical UUID keys, and the child entities are connected through RAP compositions and parent associations. \n\n Issue \n The application displays object pages, but the navigation hierarchy and object-page header are not behaving as expected. \n For example, on the Customer Address object page, the header displays a slash-separated value resembling: \n 8001 / \n On the Tax object page, the header displays: \n 8001 / / \n The navigation/header behavior appears inconsistent across the composition hierarchy. I want to understand whether this is caused by the RAP composition and association definitions, CDS annotations, or the way Fiori Elements resolves object-page navigation context. \n\n Questions \n\n How does Fiori Elements determine the slash-separated header and navigation context for nested RAP composition entities? \n\n What could cause the object-page header or navigation hierarchy to display incomplete or unexpected values? \n\n Which RAP composition, parent-association, projection, or UI annotation settings should be checked to ensure navigation works correctly across multiple composition levels?"
+  }
+ ],
+ "triage": {
+  "0": {
+   "i": 0,
+   "category": "BTP & ABAP Cloud",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Explains handling OAuth across multiple Cloud Foundry instances of an MCP server without a shared database, a practical BTP build problem."
+  },
+  "1": {
+   "i": 1,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Project go-live story for SAP MDG Cloud-Ready Mode at a retail group; business and project perspective, not development."
+  },
+  "2": {
+   "i": 2,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Thought leadership on SAP IBP versus S/4HANA for implementation leaders; no developer content."
+  },
+  "3": {
+   "i": 3,
+   "category": "S/4HANA Development & Extensibility",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Counts release states of 5,487 BAPIs in S/4HANA 2023, showing few are ABAP Cloud released and pointing to successor APIs."
+  },
+  "4": {
+   "i": 4,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Announces an agent that speeds up process mining data model creation from raw data; aimed at process analysts, not developers."
+  },
+  "5": {
+   "i": 5,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Preview of One Time Payment in SAP MDG on a 2H 2026 tenant; mainly a functional feature overview with a 404 encountered."
+  },
+  "6": {
+   "i": 6,
+   "category": "Developer Tools & DevOps",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Introduces a fluid API for Abapsmith to work around ADT limits; excerpt is empty, so the technical details are unclear."
+  },
+  "7": {
+   "i": 7,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "SAC question on filtering the Actuals version out of an input control linked to a data action; planning content, not development."
+  },
+  "8": {
+   "i": 8,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Security governance overview for using and connecting AI agents in SAP Joule Work; focuses on enterprise governance rather than developer building."
+  },
+  "9": {
+   "i": 9,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Security governance post on agent validation, provisioning and authorization enforcement before prompts in SAP AI; not developer-focused."
+  },
+  "10": {
+   "i": 10,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 3,
+   "one_liner": "Replacing USREXTID gateway mappings with CERTRULE for BTP principal propagation; a configuration and SSO topic, not development."
+  },
+  "11": {
+   "i": 11,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Final post in an AI security series on observability and governance of enterprise agents; marketing-style overview with no code."
+  },
+  "12": {
+   "i": 12,
+   "category": "RAP",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Fiori Elements OData V2 object page header and navigation hierarchy wrong in a nested managed RAP business object on S/4HANA Cloud."
+  }
+ },
+ "deep": {
+  "3": {
+   "summary": "The author counted release states across 5,487 BAPI function modules in an S/4HANA 2023 lab system: 19 are released, 148 are explicitly marked 'not to be released', and 5,320 have no release entry at all. The post is written to answer a student question about whether these BAPIs can be used in ABAP Cloud. The excerpt promises guidance on where SAP points developers instead, but that part is not visible in the text provided. The method (how the release states were read and which objects were in scope) is not described.",
+   "key_points": [
+    "Counts: 19 released, 148 'not to be released', 5,320 with no entry, out of 5,487 BAPI FMs. The three buckets sum correctly to 5,487.",
+    "Roughly 97% of the BAPIs have no release entry, about 2.7% are explicitly not to be released, and about 0.3% are released.",
+    "The practical takeaway for ABAP Cloud is that a missing release entry should be read as 'not released for ABAP Cloud', not as 'safe to use'.",
+    "The excerpt does not show the data source, the extraction method, or the SAP replacement guidance the post promises."
+   ],
+   "technical_details": [
+    "Scope: BAPI function modules in an S/4HANA 2023 system (5,487 objects).",
+    "Release states named in the post: released, 'not to be released', and no entry.",
+    "The post does not name the exact repository or tool used to read release states."
+   ],
+   "why_it_matters": "Developers moving to ABAP Cloud often assume a BAPI is usable because it works on-premise. The numbers show how rare released BAPIs are, which is useful context for migration planning. The method is not described, so the figures should be treated as the author's lab count rather than an authoritative inventory.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use the counts to start a discussion on ABAP Cloud restrictions: check the release contract before reusing any BAPI, and pick the released successor API. Ask students to verify the release state of a BAPI in their own system (for example through ADT's API state information) and to explain why 'no entry' is not the same as 'released'.",
+   "quality": 2
+  },
+  "12": {
+   "summary": "A developer building a managed RAP business object in S/4HANA Cloud Public Edition reports that Fiori Elements OData V2 object pages show incomplete slash-separated header values. The hierarchy is Customer (root), with children Customer Role, Customer Address and Company Code, and Tax under Company Code. The Customer Address header shows '8001 /' and the Tax header shows '8001 / /'. The author asks how the header and navigation context is derived, what causes the incomplete values, and which RAP and annotation settings to check. The post gives no behavior definition, CDS annotations, or projection code, so the cause cannot be determined from the text.",
+   "key_points": [
+    "Managed RAP BO with CDS view entities, projection views, a behavior definition and an OData V2 UI service, all with UUID keys.",
+    "Symptoms: the Customer Address header shows '8001 /', and the Tax header shows '8001 / /', so the number of separators grows with depth.",
+    "The question mixes header title, description and navigation context. These are separate concepts, and the post does not show which one is failing.",
+    "No code, annotations, or BDEF excerpts are included, so the question cannot be answered precisely from the text."
+   ],
+   "technical_details": [
+    "ABAP RESTful Application Programming Model (managed BO), S/4HANA Cloud Public Edition.",
+    "CDS view entities and projection views, behavior definitions, OData V2 UI service for Fiori Elements.",
+    "Composition hierarchy: Customer -> Customer Role / Customer Address / Company Code; Company Code -> Tax.",
+    "Likely places to check (not shown in the post): @UI.headerInfo (typeName, typeNamePlural, title, description) in the projection view, the parent association and composition definitions in the BDEF, and the @UI.facet and @UI.lineItem annotations for the child entities."
+   ],
+   "why_it_matters": "Header and navigation problems in nested RAP objects are common in OData V2 Fiori apps. The separator pattern suggests header fields built from several values where some are empty for child entities. A clear diagnosis would help others with multi-level compositions, but this post does not provide enough evidence for one.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Object-page header and navigation context show incomplete slash-separated values across several composition levels in a nested managed RAP business object consumed by a Fiori Elements V2 UI.",
+   "teaching_angle": "Use this as a debugging exercise. Ask students to list the HeaderInfo title and description sources for each entity, check which fields are empty on child rows, and confirm that the parent association and composition chain in the BDEF and projection view match. Stress that the answer needs the actual BDEF, projection, and annotation code, which the post omits.",
+   "quality": 3
+  },
+  "0": {
+   "summary": "The post is a short blog about handling OAuth authentication across several Cloud Foundry application instances without a shared database, in the context of MCP. The excerpt is a single sentence and contains no architecture, code, library, or configuration details. It is not possible to judge how the problem is solved.",
+   "key_points": [
+    "Problem stated: OAuth across multiple Cloud Foundry instances without a shared database.",
+    "Context: MCP (Model Context Protocol) on Cloud Foundry, per the title.",
+    "No implementation details, token-handling approach, or code are given in the excerpt."
+   ],
+   "technical_details": [
+    "Platform: SAP BTP Cloud Foundry (named in title).",
+    "Protocol context: MCP (named in title).",
+    "No specific libraries, scopes, or XSUAA settings are mentioned in the text."
+   ],
+   "why_it_matters": "Token handling in horizontally scaled apps is a real design issue: if each instance holds its own state, login or refresh can fail when requests reach a different instance. The excerpt does not say whether the post addresses this well.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use the general problem as a discussion point: why shared state (such as a database-backed token store) is usually the first answer, and what alternatives exist for stateless or multi-instance OAuth flows. Do not present the post's specific solution as established without reading the full article.",
+   "quality": 1
+  },
+  "6": {
+   "summary": "The post's title is 'Fluid API for Abapsmith: breaking ADT limits', but the body is empty in the material provided. Nothing is known about what Abapsmith is, what the fluid API does, or which ADT limits it addresses. The post cannot be analysed beyond its title.",
+   "key_points": [
+    "Only the title is available: 'Fluid API for Abapsmith' and 'breaking ADT limits'.",
+    "No body text, code, API signatures, or version information is provided.",
+    "The title suggests a tool or API aimed at ABAP Development Tools limits, but this cannot be confirmed."
+   ],
+   "technical_details": [
+    "Named items in the title: Abapsmith, Fluid API, ADT (ABAP Development Tools)."
+   ],
+   "why_it_matters": "If the post describes a real way to work beyond ADT limitations, it would be relevant to Eclipse-based developers. Without the content, its value and accuracy cannot be assessed.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Not enough content to build a lesson. Revisit it once the full article is available, and check whether any approach it describes is supported by SAP or only by a third-party tool.",
+   "quality": 1
+  }
+ },
+ "digest": {
+  "headline": "Thin day: a BAPI release-state count for S/4HANA 2023 and an unanswered nested RAP header question; two other posts have no usable content.",
+  "overview": "Four items were collected, and only two have substance. A community blog counted release states across 5,487 BAPI function modules in an S/4HANA 2023 lab: 19 released, 148 marked 'not to be released', and 5,320 with no entry. A Q&A post asks why Fiori Elements OData V2 object pages show headers like '8001 /' and '8001 / /' in a nested managed RAP business object.\n\nThe other two items, an MCP OAuth post for Cloud Foundry and a 'Fluid API for Abapsmith' post, have only a title or a single sentence, so nothing can be concluded from them. The practical takeaways are to treat a missing release entry as 'not released for ABAP Cloud', and to debug nested RAP headers by checking `@UI.headerInfo` sources per entity. The BAPI figures are one author's lab count, and the method is not described.",
+  "top_stories": [
+   {
+    "title": "BAPI release states in S/4HANA 2023: only 19 of 5,487 are released",
+    "summary": "The author counted release states for 5,487 BAPI function modules in a lab system: 19 released, 148 'not to be released', 5,320 with no release entry. The buckets sum to 5,487. The data source and extraction method are not shown, and the SAP replacement guidance the post promises is not visible in the excerpt.",
+    "why_it_matters": "For ABAP Cloud, a missing release entry means the object is not released for use, not that it is safe. Roughly 97% of BAPIs have no entry, so check the release contract before reusing any BAPI and look for the released successor API. Treat the numbers as a lab count, not an official inventory.",
+    "priority": 1,
+    "refs": [
+     3
+    ]
+   },
+   {
+    "title": "Nested managed RAP BO shows incomplete header values on Fiori Elements V2 object pages",
+    "summary": "On S/4HANA Cloud Public Edition, a managed BO has Customer as root, with Customer Role, Customer Address and Company Code beneath it, and Tax under Company Code. The Address header shows '8001 /' and the Tax header shows '8001 / /'. The separator count grows with depth. The post includes no BDEF, projection or annotation code.",
+    "why_it_matters": "The pattern suggests header text is composed from several values, and the later ones are empty for child entities. Check `@UI.headerInfo` (typeName, title, description) on each projection view, and check the composition and parent associations. The cause cannot be confirmed without the code.",
+    "priority": 2,
+    "refs": [
+     12
+    ]
+   }
+  ],
+  "releases": [],
+  "deep_dives": [
+   {
+    "title": "Reading release states and what 'no entry' means in ABAP Cloud",
+    "explanation": "The BAPI count shows 19 released, 148 'not to be released' and 5,320 with no release entry among 5,487 function modules. In ABAP Cloud (language version 'ABAP for Cloud Development'), only objects with a C1 release contract for cloud use can be referenced. An object with no entry has no such contract, so it is not available.\n\nIn ADT, you can see an object's API state in the Properties view, on the API State tab. It shows the contracts, such as C0 for extensibility and C1 for system-internal use, and the release state of each. Also check whether SAP names a successor object. For a 'not to be released' object, the successor is usually a released CDS view, a RAP business object, or a released class.\n\nThe post does not say how the counts were read. A common way to read this data is through the release-state information in the system, but that is an assumption, not something the post states. Use the figures as a lab snapshot and verify in your own system.",
+    "key_concepts": [
+     "Release contract C1",
+     "API state in ADT",
+     "ABAP Cloud language version",
+     "Successor objects",
+     "No entry is not released"
+    ],
+    "refs": [
+     3
+    ]
+   },
+   {
+    "title": "Debugging header information in nested RAP projections",
+    "explanation": "The Fiori Elements object page header comes from `@UI.headerInfo` on the projection view of each entity. It has `typeName`, `typeNamePlural`, `title.value` and `description.value`. If these point to fields combined with separators, an empty child value leaves a trailing '/'. That matches '8001 /' and '8001 / /', although the post does not show the code.\n\nCheck these, entity by entity. First, which field each `title` and `description` references. Second, whether that field is populated on the child rows, or only on the root. Third, whether the parent association is exposed in the projection (`_Customer` with `redirected to parent`) and the composition is declared with `redirected to composition child` in the parent projection.\n\nIf you want parent values on a child page, add them to the child view through the parent association, for example `_Customer.CustomerNumber`. Do not rely on navigation context to supply them. This is a debugging approach, not a confirmed diagnosis for this case.",
+    "key_concepts": [
+     "@UI.headerInfo",
+     "Composition and parent association",
+     "Projection redirection",
+     "Empty child fields",
+     "OData V2 UI service"
+    ],
+    "refs": [
+     12
+    ]
+   }
+  ],
+  "trending_problems": [
+   {
+    "theme": "Reusing classic APIs in ABAP Cloud",
+    "description": "A student asked whether BAPIs can be used in ABAP Cloud. The count shows almost none are released.",
+    "teaching_tip": "Have students check the API state of five BAPIs in ADT and record the successor.",
+    "refs": [
+     3
+    ]
+   },
+   {
+    "theme": "Nested RAP object page headers",
+    "description": "Header values for child entities in a multi-level composition are incomplete in a Fiori Elements V2 app.",
+    "teaching_tip": "Teach students to post the BDEF, projection view and annotations when asking, since the cause is not visible without them.",
+    "refs": [
+     12
+    ]
+   }
+  ],
+  "post_drafts": [
+   {
+    "title": "BAPIs and ABAP Cloud",
+    "text": "*Can you use BAPIs in ABAP Cloud?* Mostly no.\n\nOne author counted 5,487 BAPI function modules in an S/4HANA 2023 lab:\n• 19 released\n• 148 explicitly 'not to be released'\n• 5,320 with no release entry\n\n*No entry does not mean safe.* It means not released.\n\nCheck the API state in ADT before reusing anything, and look for the released successor.\n\nThis is one lab count, not an official inventory.\n\nhttps://community.sap.com/t5/abap-blog-posts/i-counted-the-released-apis-in-my-s-4hana-2023-lab-the-bapi-numbers/ba-p/14505997"
+   },
+   {
+    "title": "Nested RAP header puzzle",
+    "text": "*Quick RAP debugging question:*\n\nA nested managed BO shows headers like '8001 /' and '8001 / /' on child object pages in Fiori Elements V2.\n\nThe separators grow with depth. That hints at header text built from several fields, with some empty on child rows.\n\nFirst check: `@UI.headerInfo` title and description on each projection view.\n\nThe post has no code, so this is a hypothesis, not a confirmed cause.\n\nhttps://community.sap.com/t5/technology-q-a/fiori-elements-odata-v2-incorrect-object-page-header-and-navigation/qaq-p/14506128"
+   }
+  ],
+  "interview_questions": [
+   {
+    "question": "A colleague wants to call a BAPI from a class written in ABAP Cloud development. How do you decide whether that is allowed?",
+    "answer": "ABAP Cloud only allows use of objects that have a release contract for cloud use (C1). I would open the BAPI in ADT and look at the API State in its properties. If it has no release entry, it is not released for ABAP Cloud, even though it works on-premise. The same is true if it is marked 'not to be released'. Only a small share of BAPIs are released: one lab count found 19 of 5,487. If it is not released, I would look for a released successor such as a released CDS view or RAP business object. If none exists, a wrapper in a classic-language-version class may be an option, called through a released interface. That keeps the cloud-ready code clean.",
+    "level": "Senior",
+    "refs": [
+     3
+    ]
+   },
+   {
+    "question": "What does 'no release entry' mean for an object, and how does it differ from 'not to be released'?",
+    "answer": "'Not to be released' is an explicit statement that SAP does not intend to release the object, so it should not be expected to become available. 'No entry' means no release state has been assigned. For ABAP Cloud the effect is the same: you cannot use either. The difference is in planning. A not-to-be-released object will not become usable, so you should plan a replacement. A no-entry object might be released later, but you cannot rely on that. In one lab count, about 97% of BAPIs had no entry and about 2.7% were explicitly not to be released.",
+    "level": "Mid-level",
+    "refs": [
+     3
+    ]
+   },
+   {
+    "question": "In a three-level managed RAP BO, child object pages show headers like '8001 / /'. How would you investigate?",
+    "answer": "I would start with the `@UI.headerInfo` annotation on the projection view of each affected entity. I would list which fields feed `title` and `description`. Then I would check whether those fields are populated for child rows, since an empty value leaves a trailing separator. Next I would check the composition and parent association definitions in the BDEF and the projection views, including redirection to the parent and child projections. I would also look at the facet and line item annotations for the children. If the parent value is needed on the child page, I would expose it as a field through the parent association. I would want the actual code before concluding, because the post gives none.",
+    "level": "Senior",
+    "refs": [
+     12
+    ]
+   }
+  ],
+  "class_idea": {
+   "title": "Release contracts and ABAP Cloud: auditing your own code for non-released APIs",
+   "why_now": "A BAPI release-state count shows about 97% of BAPI function modules have no release entry, which matches a student question about using BAPIs in ABAP Cloud.",
+   "outline": [
+    "Release contracts: C0, C1 and what each allows",
+    "ABAP language versions and what each permits",
+    "Reading API State in ADT",
+    "Meaning of 'no entry' and 'not to be released'",
+    "Finding successor objects",
+    "Wrapping classic code for cloud consumers",
+    "Review of a sample class and its findings"
+   ],
+   "exercise": "In ADT, pick five BAPIs and record their API state and successor. Then write a small class in the ABAP Cloud language version that tries to call each. Note which ones fail and why, and propose the replacement.",
+   "refs": [
+    3
+   ]
+  },
+  "whatsapp_highlights": "Only 19 of 5,487 BAPIs released in one S/4HANA 2023 lab count; no entry means not released for ABAP Cloud | Nested RAP BO shows headers like '8001 / /' in Fiori Elements V2; check @UI.headerInfo per entity | Two other posts had no usable content"
+ }
+}

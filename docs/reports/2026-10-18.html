@@ -1,0 +1,148 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SAP Community digest · Sunday, 18 October 2026</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Serif:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F5F7F9;--surface:#FFFFFF;--ink:#16202A;--muted:#57636F;--rule:#D5DCE3;
+--blue:#0B5FAE;--amber:#8F5A00;--amber-bg:#FFF1D6;--chip:#E8EEF4;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0F1720;--surface:#16212C;
+--ink:#E6EDF3;--muted:#9AA7B4;--rule:#2A3744;--blue:#7DBBF7;--amber:#F2B955;--amber-bg:#2F2610;--chip:#1F2C39}}
+:root[data-theme="dark"]{--paper:#0F1720;--surface:#16212C;--ink:#E6EDF3;--muted:#9AA7B4;--rule:#2A3744;
+--blue:#7DBBF7;--amber:#F2B955;--amber-bg:#2F2610;--chip:#1F2C39}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 4rem)}
+body{margin:0;background:var(--paper);color:var(--ink);
+font:1.0625rem/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+a{color:var(--blue)}a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+h1,h2,h3{font-family:"IBM Plex Serif",Georgia,"Times New Roman",serif;line-height:1.25}
+header.mast{padding:3rem 0 1.5rem}
+.kicker{color:var(--muted);margin:0 0 .25rem;font-size:.95rem}
+h1{font-size:clamp(2rem,6vw,3rem);margin:0 0 1rem;font-weight:600;letter-spacing:-.01em}
+.lead{font-family:"IBM Plex Serif",Georgia,serif;font-size:1.3rem;line-height:1.45;margin:0 0 1rem}
+.stats{color:var(--muted);margin:0}
+nav.toc{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);
+border-bottom:1px solid var(--rule);overflow-x:auto;white-space:nowrap}
+nav.toc .wrap{display:flex;gap:1.25rem;padding-top:.7rem;padding-bottom:.7rem}
+nav.toc a{text-decoration:none;color:var(--ink);font-size:.95rem}
+nav.toc a:hover{color:var(--blue)}
+section{padding:2.25rem 0 .5rem}
+h2{font-size:1.6rem;margin:0 0 .35rem}
+.sub{color:var(--muted);margin:0 0 1.25rem}
+.story{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:1.1rem 1.25rem;margin:0 0 1rem}
+.story h3{margin:.1rem 0 .5rem;font-size:1.2rem}
+.story p{margin:.5rem 0}
+.prio{display:inline-block;font-size:.8rem;font-weight:600;color:var(--amber);background:var(--amber-bg);
+border-radius:4px;padding:.1rem .45rem}
+.why{color:var(--ink)}.why strong{font-weight:600}
+.src{font-size:.9rem;color:var(--muted);margin-top:.6rem}
+.src a{display:inline-block;margin:0 .9rem .3rem 0}
+.plain{border-left:3px solid var(--rule);padding:.1rem 0 .1rem 1rem;margin:0 0 1.25rem}
+.plain h3{margin:0 0 .35rem;font-size:1.1rem}
+.plain p{margin:.35rem 0}
+.dive{margin:0 0 2rem}
+.dive h3{font-size:1.35rem;margin:0 0 .5rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.75rem 0 0;padding:0;list-style:none}
+.chips li{background:var(--chip);border-radius:4px;padding:.15rem .5rem;font-size:.88rem}
+code{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-size:.92em;background:var(--chip);
+padding:.05rem .3rem;border-radius:3px}
+.draft{background:var(--surface);border:1px solid var(--rule);border-radius:10px;margin:0 0 1.25rem;overflow:hidden}
+.draft-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.75rem 1rem;
+border-bottom:1px solid var(--rule)}
+.draft-head h3{margin:0;font-size:1.05rem}
+.draft pre{margin:0;padding:1rem;white-space:pre-wrap;word-wrap:break-word;font:inherit;line-height:1.55}
+button.copy{font:inherit;font-size:.9rem;background:var(--blue);color:#fff;border:0;border-radius:6px;
+padding:.4rem .85rem;cursor:pointer;flex:none}
+:root[data-theme="dark"] button.copy{color:#0F1720}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) button.copy{color:#0F1720}}
+details{border-top:1px solid var(--rule);padding:.6rem 0}
+details:last-of-type{border-bottom:1px solid var(--rule)}
+summary{cursor:pointer;font-weight:600}
+summary .n{color:var(--muted);font-weight:400}
+.idx{list-style:none;margin:.6rem 0 0;padding:0}
+.idx li{padding:.45rem 0;border-top:1px dashed var(--rule)}
+.idx li:first-child{border-top:0}
+.kind{color:var(--muted);font-size:.85rem;margin-right:.4rem}
+.one{display:block;color:var(--muted);font-size:.93rem}
+.oos{opacity:.8}
+footer{color:var(--muted);font-size:.9rem;padding:3rem 0 2.5rem}
+.archive li{padding:.9rem 0;border-bottom:1px solid var(--rule);list-style:none}
+.archive{padding:0}.archive a{font-family:"IBM Plex Serif",Georgia,serif;font-size:1.2rem}
+.archive p{margin:.25rem 0 0;color:var(--muted)}
+.empty{color:var(--muted);font-style:italic}
+details.qa{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:.8rem 1.1rem;margin:0 0 .8rem}
+details.qa summary{font-weight:600;line-height:1.45}
+details.qa summary .prio{margin-right:.4rem}
+details.qa[open] summary{margin-bottom:.4rem}
+.outline{margin:.6rem 0;padding-left:1.4rem}.outline li{margin:.25rem 0}
+@media (prefers-reduced-motion:no-preference){.story,.dive{scroll-margin-top:4rem}}
+</style></head><body><header class="mast"><div class="wrap">
+<p class="kicker">SAP Community daily digest</p><h1>Sunday, 18 October 2026</h1>
+<p class="lead">Thin day: a BAPI release-state count for S/4HANA 2023 and an unanswered nested RAP header question; two other posts have no usable content.</p>
+<p class="stats">Screened 13 new items from the last day. 4 were technical, and 4 were read in full.</p>
+</div></header>
+<nav class="toc" aria-label="Sections"><div class="wrap">
+<a href="#overview">Overview</a><a href="#top">Top stories</a><a href="#releases">Releases</a>
+<a href="#dives">Deep dives</a><a href="#problems">Developer problems</a><a href="#interview">Interview questions</a><a href="#class">Class idea</a><a href="#drafts">Post drafts</a><a href="#all">Everything</a>
+</div></nav><main class="wrap"><section id="overview"><h2>The day in one minute</h2><p>Four items were collected, and only two have substance. A community blog counted release states across 5,487 BAPI function modules in an S/4HANA 2023 lab: 19 released, 148 marked &#x27;not to be released&#x27;, and 5,320 with no entry. A Q&amp;A post asks why Fiori Elements OData V2 object pages show headers like &#x27;8001 /&#x27; and &#x27;8001 / /&#x27; in a nested managed RAP business object.</p><p>The other two items, an MCP OAuth post for Cloud Foundry and a &#x27;Fluid API for Abapsmith&#x27; post, have only a title or a single sentence, so nothing can be concluded from them. The practical takeaways are to treat a missing release entry as &#x27;not released for ABAP Cloud&#x27;, and to debug nested RAP headers by checking <code>@UI.headerInfo</code> sources per entity. The BAPI figures are one author&#x27;s lab count, and the method is not described.</p></section><section id="top"><h2>Top stories</h2><p class="sub">Ranked by how much they matter to ABAP developers.</p><article class="story"><span class="prio">Priority 1</span>
+<h3>BAPI release states in S/4HANA 2023: only 19 of 5,487 are released</h3><p>The author counted release states for 5,487 BAPI function modules in a lab system: 19 released, 148 &#x27;not to be released&#x27;, 5,320 with no release entry. The buckets sum to 5,487. The data source and extraction method are not shown, and the SAP replacement guidance the post promises is not visible in the excerpt.</p>
+<p class="why"><strong>Why it matters:</strong> For ABAP Cloud, a missing release entry means the object is not released for use, not that it is safe. Roughly 97% of BAPIs have no entry, so check the release contract before reusing any BAPI and look for the released successor API. Treat the numbers as a lab count, not an official inventory.</p><div class="src"><a href="https://community.sap.com/t5/abap-blog-posts/i-counted-the-released-apis-in-my-s-4hana-2023-lab-the-bapi-numbers/ba-p/14505997" title="I counted the released APIs in my S/4HANA 2023 lab. The BAPI numbers surprised me">Blog: I counted the released APIs in my S/4HANA 2023 lab. The BAPI</a></div></article><article class="story"><span class="prio">Priority 2</span>
+<h3>Nested managed RAP BO shows incomplete header values on Fiori Elements V2 object pages</h3><p>On S/4HANA Cloud Public Edition, a managed BO has Customer as root, with Customer Role, Customer Address and Company Code beneath it, and Tax under Company Code. The Address header shows &#x27;8001 /&#x27; and the Tax header shows &#x27;8001 / /&#x27;. The separator count grows with depth. The post includes no BDEF, projection or annotation code.</p>
+<p class="why"><strong>Why it matters:</strong> The pattern suggests header text is composed from several values, and the later ones are empty for child entities. Check `@UI.headerInfo` (typeName, title, description) on each projection view, and check the composition and parent associations. The cause cannot be confirmed without the code.</p><div class="src"><a href="https://community.sap.com/t5/technology-q-a/fiori-elements-odata-v2-incorrect-object-page-header-and-navigation/qaq-p/14506128" title="Fiori Elements OData V2: Incorrect object-page header and navigation hierarchy in a nested RAP BO">Question: Fiori Elements OData V2: Incorrect object-page header and na</a></div></article></section><section id="releases"><h2>Releases and announcements</h2><p class="empty">Nothing new was released or announced today.</p></section><section id="dives"><h2>Deep dives</h2><p class="sub">The most valuable technical posts, explained.</p><article class="dive"><h3>Reading release states and what &#x27;no entry&#x27; means in ABAP Cloud</h3><p>The BAPI count shows 19 released, 148 &#x27;not to be released&#x27; and 5,320 with no release entry among 5,487 function modules. In ABAP Cloud (language version &#x27;ABAP for Cloud Development&#x27;), only objects with a C1 release contract for cloud use can be referenced. An object with no entry has no such contract, so it is not available.</p><p>In ADT, you can see an object&#x27;s API state in the Properties view, on the API State tab. It shows the contracts, such as C0 for extensibility and C1 for system-internal use, and the release state of each. Also check whether SAP names a successor object. For a &#x27;not to be released&#x27; object, the successor is usually a released CDS view, a RAP business object, or a released class.</p><p>The post does not say how the counts were read. A common way to read this data is through the release-state information in the system, but that is an assumption, not something the post states. Use the figures as a lab snapshot and verify in your own system.</p>
+<ul class="chips" aria-label="Key concepts"><li>Release contract C1</li><li>API state in ADT</li><li>ABAP Cloud language version</li><li>Successor objects</li><li>No entry is not released</li></ul><div class="src"><a href="https://community.sap.com/t5/abap-blog-posts/i-counted-the-released-apis-in-my-s-4hana-2023-lab-the-bapi-numbers/ba-p/14505997" title="I counted the released APIs in my S/4HANA 2023 lab. The BAPI numbers surprised me">Blog: I counted the released APIs in my S/4HANA 2023 lab. The BAPI</a></div></article><article class="dive"><h3>Debugging header information in nested RAP projections</h3><p>The Fiori Elements object page header comes from <code>@UI.headerInfo</code> on the projection view of each entity. It has <code>typeName</code>, <code>typeNamePlural</code>, <code>title.value</code> and <code>description.value</code>. If these point to fields combined with separators, an empty child value leaves a trailing &#x27;/&#x27;. That matches &#x27;8001 /&#x27; and &#x27;8001 / /&#x27;, although the post does not show the code.</p><p>Check these, entity by entity. First, which field each <code>title</code> and <code>description</code> references. Second, whether that field is populated on the child rows, or only on the root. Third, whether the parent association is exposed in the projection (<code>_Customer</code> with <code>redirected to parent</code>) and the composition is declared with <code>redirected to composition child</code> in the parent projection.</p><p>If you want parent values on a child page, add them to the child view through the parent association, for example <code>_Customer.CustomerNumber</code>. Do not rely on navigation context to supply them. This is a debugging approach, not a confirmed diagnosis for this case.</p>
+<ul class="chips" aria-label="Key concepts"><li>@UI.headerInfo</li><li>Composition and parent association</li><li>Projection redirection</li><li>Empty child fields</li><li>OData V2 UI service</li></ul><div class="src"><a href="https://community.sap.com/t5/technology-q-a/fiori-elements-odata-v2-incorrect-object-page-header-and-navigation/qaq-p/14506128" title="Fiori Elements OData V2: Incorrect object-page header and navigation hierarchy in a nested RAP BO">Question: Fiori Elements OData V2: Incorrect object-page header and na</a></div></article></section><section id="problems"><h2>What developers are struggling with</h2><p class="sub">Patterns from today's questions. Useful for classes and interview prep.</p><div class="plain"><h3>Reusing classic APIs in ABAP Cloud</h3><p>A student asked whether BAPIs can be used in ABAP Cloud. The count shows almost none are released.</p>
+<p><strong>Teaching tip:</strong> Have students check the API state of five BAPIs in ADT and record the successor.</p><div class="src"><a href="https://community.sap.com/t5/abap-blog-posts/i-counted-the-released-apis-in-my-s-4hana-2023-lab-the-bapi-numbers/ba-p/14505997" title="I counted the released APIs in my S/4HANA 2023 lab. The BAPI numbers surprised me">Blog: I counted the released APIs in my S/4HANA 2023 lab. The BAPI</a></div></div><div class="plain"><h3>Nested RAP object page headers</h3><p>Header values for child entities in a multi-level composition are incomplete in a Fiori Elements V2 app.</p>
+<p><strong>Teaching tip:</strong> Teach students to post the BDEF, projection view and annotations when asking, since the cause is not visible without them.</p><div class="src"><a href="https://community.sap.com/t5/technology-q-a/fiori-elements-odata-v2-incorrect-object-page-header-and-navigation/qaq-p/14506128" title="Fiori Elements OData V2: Incorrect object-page header and navigation hierarchy in a nested RAP BO">Question: Fiori Elements OData V2: Incorrect object-page header and na</a></div></div></section><section id="interview"><h2>Interview questions</h2><p class="sub">Grounded in today's material. Open each one to see a model answer.</p><details class="qa"><summary><span class="prio">Senior</span> A colleague wants to call a BAPI from a class written in ABAP Cloud development. How do you decide whether that is allowed?</summary>
+<p>ABAP Cloud only allows use of objects that have a release contract for cloud use (C1). I would open the BAPI in ADT and look at the API State in its properties. If it has no release entry, it is not released for ABAP Cloud, even though it works on-premise. The same is true if it is marked &#x27;not to be released&#x27;. Only a small share of BAPIs are released: one lab count found 19 of 5,487. If it is not released, I would look for a released successor such as a released CDS view or RAP business object. If none exists, a wrapper in a classic-language-version class may be an option, called through a released interface. That keeps the cloud-ready code clean.</p><div class="src"><a href="https://community.sap.com/t5/abap-blog-posts/i-counted-the-released-apis-in-my-s-4hana-2023-lab-the-bapi-numbers/ba-p/14505997" title="I counted the released APIs in my S/4HANA 2023 lab. The BAPI numbers surprised me">Blog: I counted the released APIs in my S/4HANA 2023 lab. The BAPI</a></div></details><details class="qa"><summary><span class="prio">Mid-level</span> What does &#x27;no release entry&#x27; mean for an object, and how does it differ from &#x27;not to be released&#x27;?</summary>
+<p>&#x27;Not to be released&#x27; is an explicit statement that SAP does not intend to release the object, so it should not be expected to become available. &#x27;No entry&#x27; means no release state has been assigned. For ABAP Cloud the effect is the same: you cannot use either. The difference is in planning. A not-to-be-released object will not become usable, so you should plan a replacement. A no-entry object might be released later, but you cannot rely on that. In one lab count, about 97% of BAPIs had no entry and about 2.7% were explicitly not to be released.</p><div class="src"><a href="https://community.sap.com/t5/abap-blog-posts/i-counted-the-released-apis-in-my-s-4hana-2023-lab-the-bapi-numbers/ba-p/14505997" title="I counted the released APIs in my S/4HANA 2023 lab. The BAPI numbers surprised me">Blog: I counted the released APIs in my S/4HANA 2023 lab. The BAPI</a></div></details><details class="qa"><summary><span class="prio">Senior</span> In a three-level managed RAP BO, child object pages show headers like &#x27;8001 / /&#x27;. How would you investigate?</summary>
+<p>I would start with the <code>@UI.headerInfo</code> annotation on the projection view of each affected entity. I would list which fields feed <code>title</code> and <code>description</code>. Then I would check whether those fields are populated for child rows, since an empty value leaves a trailing separator. Next I would check the composition and parent association definitions in the BDEF and the projection views, including redirection to the parent and child projections. I would also look at the facet and line item annotations for the children. If the parent value is needed on the child page, I would expose it as a field through the parent association. I would want the actual code before concluding, because the post gives none.</p><div class="src"><a href="https://community.sap.com/t5/technology-q-a/fiori-elements-odata-v2-incorrect-object-page-header-and-navigation/qaq-p/14506128" title="Fiori Elements OData V2: Incorrect object-page header and navigation hierarchy in a nested RAP BO">Question: Fiori Elements OData V2: Incorrect object-page header and na</a></div></details></section><section id="class"><h2>Class idea</h2><article class="story"><h3>Release contracts and ABAP Cloud: auditing your own code for non-released APIs</h3><p>A BAPI release-state count shows about 97% of BAPI function modules have no release entry, which matches a student question about using BAPIs in ABAP Cloud.</p>
+<ol class="outline"><li>Release contracts: C0, C1 and what each allows</li><li>ABAP language versions and what each permits</li><li>Reading API State in ADT</li><li>Meaning of &#x27;no entry&#x27; and &#x27;not to be released&#x27;</li><li>Finding successor objects</li><li>Wrapping classic code for cloud consumers</li><li>Review of a sample class and its findings</li></ol><p><strong>Hands-on exercise:</strong> In ADT, pick five BAPIs and record their API state and successor. Then write a small class in the ABAP Cloud language version that tries to call each. Note which ones fail and why, and propose the replacement.</p><div class="src"><a href="https://community.sap.com/t5/abap-blog-posts/i-counted-the-released-apis-in-my-s-4hana-2023-lab-the-bapi-numbers/ba-p/14505997" title="I counted the released APIs in my S/4HANA 2023 lab. The BAPI numbers surprised me">Blog: I counted the released APIs in my S/4HANA 2023 lab. The BAPI</a></div></article></section><section id="drafts"><h2>Post drafts for your community</h2><p class="sub">Ready to copy into WhatsApp. Review before posting.</p><div class="draft"><div class="draft-head"><h3>BAPIs and ABAP Cloud</h3>
+<button class="copy" type="button" data-target="draft0">Copy text</button></div>
+<pre id="draft0">*Can you use BAPIs in ABAP Cloud?* Mostly no.
+
+One author counted 5,487 BAPI function modules in an S/4HANA 2023 lab:
+• 19 released
+• 148 explicitly &#x27;not to be released&#x27;
+• 5,320 with no release entry
+
+*No entry does not mean safe.* It means not released.
+
+Check the API state in ADT before reusing anything, and look for the released successor.
+
+This is one lab count, not an official inventory.
+
+https://community.sap.com/t5/abap-blog-posts/i-counted-the-released-apis-in-my-s-4hana-2023-lab-the-bapi-numbers/ba-p/14505997</pre></div><div class="draft"><div class="draft-head"><h3>Nested RAP header puzzle</h3>
+<button class="copy" type="button" data-target="draft1">Copy text</button></div>
+<pre id="draft1">*Quick RAP debugging question:*
+
+A nested managed BO shows headers like &#x27;8001 /&#x27; and &#x27;8001 / /&#x27; on child object pages in Fiori Elements V2.
+
+The separators grow with depth. That hints at header text built from several fields, with some empty on child rows.
+
+First check: `@UI.headerInfo` title and description on each projection view.
+
+The post has no code, so this is a hypothesis, not a confirmed cause.
+
+https://community.sap.com/t5/technology-q-a/fiori-elements-odata-v2-incorrect-object-page-header-and-navigation/qaq-p/14506128</pre></div></section><section id="all"><h2>Everything from today</h2><p class="sub">Every item collected, grouped by area. Items outside your focus areas are dimmed.</p><details><summary>Functional &amp; Business Processes <span class="n">(3)</span></summary><ul class="idx"><li class="oos"><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/human-capital-management-blog-posts-by-members/troubleshooting-a-404-on-one-time-payment-in-mass-data-management-2h-2026/ba-p/14505982">Troubleshooting a 404 on One Time Payment in Mass Data Management (2H 2026 Preview)</a><span class="one">Preview of One Time Payment in SAP MDG on a 2H 2026 tenant; mainly a functional feature overview with a 404 encountered.</span></li><li class="oos"><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/technology-blog-posts-by-sap/from-legacy-to-future-proof-implementing-sap-mdg-cloud-ready-mode-and-go/ba-p/14499987">From Legacy to Future-Proof: Implementing SAP MDG Cloud Ready Mode and Go-live</a><span class="one">Project go-live story for SAP MDG Cloud-Ready Mode at a retail group; business and project perspective, not development.</span></li><li class="oos"><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/beyond-configuration-built-for-decisions-rethinking-sap-ibp-vs-s-4hana/ba-p/14506004">Beyond Configuration. Built for Decisions. | Rethinking SAP IBP vs. S/4HANA</a><span class="one">Thought leadership on SAP IBP versus S/4HANA for implementation leaders; no developer content.</span></li></ul></details><details><summary>AI &amp; Joule <span class="n">(3)</span></summary><ul class="idx"><li class="oos"><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/artificial-intelligence-blogs-posts/use-existing-agents-build-new-ones-connect-to-others-all-securely-with-sap/ba-p/14506047">Use Existing Agents, Build New Ones, Connect to Others — All Securely with SAP Joule Work</a><span class="one">Security governance overview for using and connecting AI agents in SAP Joule Work; focuses on enterprise governance rather than developer building.</span></li><li class="oos"><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/artificial-intelligence-blogs-posts/before-the-first-prompt-how-sap-engineers-trust-before-agents-are-ever/ba-p/14506046">Before the First Prompt: How SAP Engineers Trust Before Agents Are Ever Invoked</a><span class="one">Security governance post on agent validation, provisioning and authorization enforcement before prompts in SAP AI; not developer-focused.</span></li><li class="oos"><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/artificial-intelligence-blogs-posts/the-agentic-glass-box-observability-and-governance-at-enterprise-scale/ba-p/14506023">The Agentic Glass Box: Observability and Governance at Enterprise Scale</a><span class="one">Final post in an AI security series on observability and governance of enterprise agents; marketing-style overview with no code.</span></li></ul></details><details><summary>Analytics &amp; Data <span class="n">(2)</span></summary><ul class="idx"><li class="oos"><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/technology-blog-posts-by-sap/from-raw-data-to-ready-to-mine-in-hours-meet-the-new-process-data-modeling/ba-p/14505395">From Raw Data to Ready-to-Mine in Hours: Meet the New Process Data Modeling Agent</a><span class="one">Announces an agent that speeds up process mining data model creation from raw data; aimed at process analysts, not developers.</span></li><li class="oos"><span class="kind">Question</span>
+<a href="https://community.sap.com/t5/technology-q-a/sac-version-dimension-values-filter/qaq-p/14506003">SAC version dimension values filter</a><span class="one">SAC question on filtering the Actuals version out of an input control linked to a data action; planning content, not development.</span></li></ul></details><details><summary>BTP &amp; ABAP Cloud <span class="n">(1)</span></summary><ul class="idx"><li><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/tooling-sap-build-blog-posts/solving-multi-instance-oauth-for-mcp-on-cloud-foundry/ba-p/14505926">Solving Multi-Instance OAuth for MCP on Cloud Foundry</a><span class="one">Explains handling OAuth across multiple Cloud Foundry instances of an MCP server without a shared database, a practical BTP build problem.</span></li></ul></details><details><summary>S/4HANA Development &amp; Extensibility <span class="n">(1)</span></summary><ul class="idx"><li><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/abap-blog-posts/i-counted-the-released-apis-in-my-s-4hana-2023-lab-the-bapi-numbers/ba-p/14505997">I counted the released APIs in my S/4HANA 2023 lab. The BAPI numbers surprised me</a><span class="one">Counts release states of 5,487 BAPIs in S/4HANA 2023, showing few are ABAP Cloud released and pointing to successor APIs.</span></li></ul></details><details><summary>Developer Tools &amp; DevOps <span class="n">(1)</span></summary><ul class="idx"><li><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/artificial-intelligence-blogs-posts/fluid-api-for-abapsmith-breaking-adt-limits/ba-p/14505974">Fluid API for Abapsmith: breaking ADT limits</a><span class="one">Introduces a fluid API for Abapsmith to work around ADT limits; excerpt is empty, so the technical details are unclear.</span></li></ul></details><details><summary>Security &amp; Basis <span class="n">(1)</span></summary><ul class="idx"><li class="oos"><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/technology-blog-posts-by-members/several-e-mail-addresses-one-sap-user-certrule-instead-of-the-gateway/ba-p/14500734">Several e-mail addresses, one SAP user: CERTRULE instead of the gateway mapping table for BTP apps</a><span class="one">Replacing USREXTID gateway mappings with CERTRULE for BTP principal propagation; a configuration and SSO topic, not development.</span></li></ul></details><details><summary>RAP <span class="n">(1)</span></summary><ul class="idx"><li><span class="kind">Question</span>
+<a href="https://community.sap.com/t5/technology-q-a/fiori-elements-odata-v2-incorrect-object-page-header-and-navigation/qaq-p/14506128">Fiori Elements OData V2: Incorrect object-page header and navigation hierarchy in a nested RAP BO</a><span class="one">Fiori Elements OData V2 object page header and navigation hierarchy wrong in a nested managed RAP business object on S/4HANA Cloud.</span></li></ul></details></section></main><footer><div class="wrap">Generated 18 Oct 2026, 11:41 IST. Summaries are written by Claude;
+check the original post before quoting or teaching from it. <a href="../index.html">All reports</a></div></footer><script>
+document.querySelectorAll('button.copy').forEach(function(b){b.addEventListener('click',function(){
+var t=document.getElementById(b.dataset.target).innerText;
+navigator.clipboard.writeText(t).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy text'},2000)},
+function(){b.textContent='Select and copy manually'})})});
+</script></body></html>
