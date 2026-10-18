@@ -86,5 +86,38 @@
   "feed": "SAP Community questions",
   "kind": "question",
   "text": "Hi All, \n I got a requirement like, i need to display the versions in input control except Actuals. This input was linked to a Data Action. \n\n I am not ble to filter out the Actuals value from the list. Getting all the versions in the list when running the data action. \n\n Is there any way to display the versions other than Actuals. \n Thanks in advance."
+ },
+ {
+  "key": "49958a28fc38d633",
+  "title": "Use Existing Agents, Build New Ones, Connect to Others — All Securely with SAP Joule Work",
+  "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/use-existing-agents-build-new-ones-connect-to-others-all-securely-with-sap/ba-p/14506047",
+  "published": "2026-10-18T04:14:41+00:00",
+  "author": "Debdutt_Mondal",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Building a secure AI platform is a solved problem if you never let anyone use it. The hard part is what comes next. \n The second post in the Security Governance in Action series covers the practitioner layer — using agents, building custom extensions, and bridging third-party AI systems — and how the security posture holds across all three."
+ },
+ {
+  "key": "0d7cbcb4dea00ff4",
+  "title": "Before the First Prompt: How SAP Engineers Trust Before Agents Are Ever Invoked",
+  "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/before-the-first-prompt-how-sap-engineers-trust-before-agents-are-ever/ba-p/14506046",
+  "published": "2026-10-18T04:14:16+00:00",
+  "author": "Debdutt_Mondal",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Most enterprise AI conversations start at the prompt. This one starts earlier. \n The first post in the Security Governance in Action series covers the trust layer SAP engineers before a user sends a single message — agent validation, governed provisioning, three-layer authorization enforcement, and strict tenant isolation across the entire agentic AI stack."
+ },
+ {
+  "key": "40ffb566eb96dcc9",
+  "title": "Several e-mail addresses, one SAP user: CERTRULE instead of the gateway mapping table for BTP apps",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/several-e-mail-addresses-one-sap-user-certrule-instead-of-the-gateway/ba-p/14500734",
+  "published": "2026-10-18T04:22:31+00:00",
+  "author": "VikasSingh2",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Moving from ECC to S/4HANA, we replaced the per-user gateway mapping entries (USREXTID) with one CERTRULE rule and a short exception list for principal propagation from SAP BTP apps. Two tests, the three failures I hit on the way, and where each one shows up."
  }
 ]
