@@ -1,0 +1,774 @@
+{
+ "items": [
+  {
+   "key": "15b8d5c47d43decc",
+   "title": "Custom header field not available in Mass Changes to Purchase Contracts app",
+   "link": "https://community.sap.com/t5/supply-chain-management-q-a/custom-header-field-not-available-in-mass-changes-to-purchase-contracts-app/qaq-p/14506159",
+   "published": "2026-10-18T10:23:07+00:00",
+   "author": "sai52",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Experts, \n I’m working on an SAP S/4HANA Cloud (Public Edition) project. My client wants to update a custom field on purchase contracts in bulk using the Mass Changes to Purchase Contracts functionality. I’m not able to get the field to show up there, and I’d appreciate your guidance. \n What I’ve done so far \n Created a custom field in the Custom Fields app with these details: \n Field Label: Contract Engineer \n Identifier: YY1_ContractEngineer \n Field Type: Text (12) \n Business Context: Procurement: Purchasing Document (MM_PURDOC_HEADER) \n Published the field successfully (status shows Published ). \n In the User Interfaces tab, under CDS Views, I can see the following mass change CDS views related to contracts. Their usage is Enabled : \n C_CNTRLPURCONTRHIERMASSUPDT (Mass Changes to Central Hierarchy Purchase Contracts) \n C_PURCNTRLCONTITMMASSUPDT (Mass Changes to Central Contract Items) \n C_PURCNTRLCONTRMASSUPDT (Mass Changes to Central Contracts) The two Purchase Orders views (C_PURCHASEORDERITEMMASSUPDATE and C_PURCHASEORDERMASSUPDATE) are currently disabled, which is expected since they aren’t relevant for contracts. \n Issue \n Even after the field was published and the CDS views were enabled, the custom field YY1_ContractEngineer is not available in the mass change app for purchase contracts. It doesn’t appear as a selectable field to update. \n What I’ve checked / questions \n Is the field supposed to be available for mass change only through the Central Contracts views, or is additional configuration needed (for example in the app’s field/personalization settings)? \n Does the Business Context MM_PURDOC_HEADER support mass updates for both central contracts and local purchase contracts , or do I need a different context for contracts? \n Are there restrictions on which custom field types or lengths can be updated through mass changes? \n Is there any additional step required after publishing, such as a refresh of the app, a wait for the extension to be activated, or a user role/authorization adjustment? \n Has anyone successfully enabled a custom field in the Mass Changes to Purchase Contracts app and can share the steps? \n System details \n SAP S/4HANA Cloud Public Edition (release: add your release, e.g. 2508) \n App: Mass Changes to Purchase Contracts \n Custom Fields app: field published, CDS views enabled \n I’ve attached a screenshot of the Custom Fields app showing the User Interfaces tab with the enabled CDS views. \n Any pointers, notes, or documentation links would be greatly appreciated. \n Thanks in advance, \n Sai."
+  },
+  {
+   "key": "aba65d371422c8ff",
+   "title": "A Battery Recall, a Graph, and an AI Agent",
+   "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/a-battery-recall-a-graph-and-an-ai-agent/ba-p/14506217",
+   "published": "2026-10-18T15:17:39+00:00",
+   "author": "kovakamo",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Tracing a battery recall with SAP HANA Graph and testing an AI agent’s remedy plan."
+  },
+  {
+   "key": "54ce84d962dd4859",
+   "title": "Adding XSUAA Security to a CAP Service on the BTP Trial",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/adding-xsuaa-security-to-a-cap-service-on-the-btp-trial/ba-p/14506224",
+   "published": "2026-10-18T14:54:08+00:00",
+   "author": "neilaspin",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "A CAP service on Cloud Foundry with “auth”: “none”, locked down with XSUAA, an approuter, and two role collections."
+  },
+  {
+   "key": "42108ee3376b4cab",
+   "title": "SAP SuccessFactors 2H 2026 Release: What’s New & What Matters",
+   "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-members/sap-successfactors-2h-2026-release-what-s-new-amp-what-matters/ba-p/14506168",
+   "published": "2026-10-18T15:11:27+00:00",
+   "author": "nageshpolu",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "A reorganisation to plan. An employee document to find. A business rule to maintain. A failed integration to investigate. \n These are the kinds of everyday tasks I look at when reviewing a SuccessFactors release. A feature becomes interesting when I can connect it to work that an HR team, manager or administrator actually needs to do. \n In my 2H 2025 release review blog , I focused on the foundations. My 1H 2026 review followed the progress in governance, skills and connected processes. \n For 2H 2026, my shortlist brings together bigger capabilities such as Organizational Modeling and smaller changes that deserve a place in the test plan. For each area, I have included the practical check I would make before adoption. \n First, the dates and availability \n The main SAP SuccessFactors 2H 2026 Preview release became available on 12 October 2026 . . Its release hub currently shows 13 to 14 November in the annual calendar and 13 to 15 November in the 2H update section. Confirm your tenant’s exact production window using the release upgrade schedule available thru SAP's product release & roadmap hub. \n There are also feature-specific dates and conditions: \n Item Published availability Planning implication \n Story page scope filters Preview: 20 October 2026. \n Production: 16 November 2026. Schedule testing against these dates. \n Effective-dated Time Valuation Restricted availability; valid from 13 November 2026. Requires an approved request and enablement. \n WalkMe Learning Arc integration First integration step announced for Q4 2026. Confirm availability and prerequisites for your landscape. \n 1. Employee Central: Organizational Modeling is worth a closer look \n This is one of my favourites in the release. \n SAP introduces a workspace to simulate organisational changes, review the proposed structure and submit changes to Employee Central. Supported objects include Legal Entity, Business Unit, Division, Department, Cost Center and Position. \n\n The solution runs on SAP BTP and SAP states that it is included in the Employee Central subscription at no additional cost. Adoption requires provisioning requests for Preview and Production, Position Management with position-to-job synchronisation, and access configured in both SuccessFactors RBP and SAP Cloud Identity Services. \n My practical check: Start with one department move in Preview. Compare the proposed changes, resulting object records, Job Information and downstream integration output. Define who may publish changes and how the business will approve them. \n 2. People Profile: documents, printing and fewer repeated entries \n A central place to find employee documents \n The new Documents category brings supported employee attachments into the latest People Profile. Existing permissions govern which documents a user can access. In-system preview is available for supported file formats, with downloading still available. \n\n Two details need attention: the category is enabled and available to all roles by default, while document access remains permission-controlled; and the initial scope excludes dependent documents and uncategorised attachments in MDF fields. \n Uploading, renaming and deleting still take place in the originating application or profile section. Customers using a partner document workspace should review whether both experiences should be visible. \n My practical check: Test with an employee, manager and HR role. Include someone outside the permitted target population. Verify both which categories are visible and which documents can actually be opened. \n Print Profile deserves its own check \n The 2H 2026 People Profile documentation adds printing and PDF export. Users can select the entire accessible profile or selected content, preview it and export it. The output follows viewing permissions, retains masking and reflects the selected effective date. SAP also states that administrators cannot deactivate the print option for all users. \n\n My practical check: Include PDF output in permission testing. Check sensitive fields, masking and historical dates, then update guidance for anyone still being told that printing is unavailable in the latest profile. \n Valid dependent values can stay in place \n When a primary field changes, supported dependent fields are now checked before being cleared. A value that remains valid is retained. This applies to Edit and History Create/Correct operations in the latest People Profile. The enhancement is automatically enabled. \n My practical check: Test a Business Unit change where the current Division remains valid, and another where it becomes invalid. Include the rules attached to those fields in the same regression test. \n 3. Business rules: easier maintenance and more useful performance controls \n Variables can be edited after they are used \n Used variables can now be edited within a business rule. Their data type must remain unchanged. SAP also improves warning visibility by highlighting variables that cause warnings. This is automatically enabled. \n For me, this is exactly the kind of small enhancement that deserves attention. It makes a familiar maintenance task easier to handle. \n My practical check: Update a variable in a representative rule in Preview, then test every branch that uses it. Include null values and boundary dates where relevant. \n Performance rules gain more context \n Performance Management rules gain support for section comments, text-length conditions and additional subject-user information. For example, a rule can require a section explanation when specified rating conditions are met. Text-length evaluation excludes rich-text HTML tags. \n The latest form experience and Performance Management business rules must be enabled. Subject-user information is also available without Employee Central, but the field selection is smaller. SAP clarified that distinction in its 9 October revision. The enhancement is customer-configured. \n My practical check: Agree one useful validation with the performance process owner, then test it through form routing. A minimum character count should support a meaningful explanation; it should not become the measure of feedback quality. \n 4. Time Management: effective dating could simplify policy changes \n Effective-dated Time Valuation allows different configuration slices within a valuation. This can reduce the need to clone time recording profiles and update employee assignments for policy changes. \n This feature has restricted availability. SAP requires request approval before enabling it through Upgrade Center. Valuation type and method cannot be changed when editing; slices cannot be made inactive. The Create Time Record valuation type does not support time slices. \n There is also a calculation distinction: daily methods use the relevant day, while whole-sheet or period valuation uses the slice effective at the period end. \n My practical check: If this fits your landscape, confirm eligibility first. Test a policy change inside a weekly period, including recalculation and payroll output. The result at the date boundary is more important than the appearance of the new configuration screen. \n 5. Recruiting and Onboarding: look at the specific process changes \n Career Site Builder \n Career Site Builder adds a Page Title component rendered as an H1 heading, limited to one per page. SmartRecruiters connection and Winston Chat settings move into a dedicated settings area. This is a customer-configured 2H enhancement. \n My practical check: Review career-page heading structure and update administrator instructions for the settings location. Where applicable, retest the candidate journey through the connected ATS and chat experience. \n For release tracking, keep the dates precise: the earlier SmartRecruiters mapping and prefill enhancements have a valid-from date of 15 June 2026 , even though their release entry also carries a 2H 2026 version tag. \n Onboarding document traceability \n For US Form I-9 processes, SAP adds attachment identifiers to the I9AuditTrail reporting schema for List A, B and C documents. These support tracing attachments to their I-9 records and identifying specific documents for targeted DMS purging. The same release item improves address mapping for E-Verify cases involving global assignments. It is automatically enabled. \n\n My practical check: Test document-to-record traceability and the global-assignment address scenario with the onboarding team. Have the records owner review any purge procedure before operational use. \n 6. Succession: keep nominations aligned when someone takes the role \n A new scheduled job can remove a successor from a position’s active nomination list when that person becomes its incumbent, and update the nomination history accordingly. \n It requires MDF position-based nominations, Employee Central Position Management and the existing setting that removes a successor upon becoming incumbent. It is customer-configured. \n Pay attention to the processing scope: the job handles changes effective on its execution date. \n My practical check: Test a future-dated appointment on the day it becomes effective. Verify both the active nomination and its history, and agree how the support team will handle a missed run. \n 7. Story reports: let the reader choose the relevant scope \n Scope filters can be placed on a story page so readers can adjust the reporting population at runtime. The relevant objects must first have scope filtering enabled in the query designer. Page-level selections take precedence over the query-level scope. \n Runtime selections are not retained when saving the story or a bookmark, and switching from viewing to editing discards them. The enhancement is automatically enabled, with the separate Preview and Production dates shown above. \n\n My practical check: Choose reports that currently differ mainly by population. Test whether one design can serve those use cases, and verify results with the intended manager and HR roles. Include the reset behaviour in user guidance. \n 8. Administration: make release decisions and transports easier to follow \n Release Center \n Release Center adds bulk actions, improved assignment filters, a status for items outside your interest, and downloads that include status and comments. These improvements are automatically enabled. \n My practical check: Assign an owner and record the adoption decision for each relevant item. Recheck revised articles before closing the release assessment. \n Configuration Transport Center \n For MDF data-based configuration, external codes are now displayed alongside labels during configuration selection, in source and target bundle views, and in validation and import reports. This helps distinguish objects with identical labels. The change is automatically enabled. \n My practical check: Include the external code in transport review evidence, especially where similar rule names exist across countries or processes. \n 9. AI for integrations: a clear support use case \n AI-assisted integration insights bring on-demand analysis into Execution Manager for failed Integration Center runs. The feature analyses event logs and provides a root-cause explanation with suggested corrective actions. \n\n It requires SAP AI Units, activation of Assisted Integration Insights, and the relevant administration, Execution Manager and AI-access permissions. This is a customer-configured feature. \n My practical check: Evaluate it against a known failure in Preview. Compare its explanation with the logs, validate the proposed correction and rerun the integration. I would measure diagnosis time and recommendation quality before expanding usage. \n 10. Learning and Joule Assistants: plan against the delivery detail \n SAP’s October release announcement describes Joule Assistants across hiring, HR operations, payroll, learning and career development. It explicitly covers innovations delivered through the remainder of 2026. That makes feature-level availability essenti"
+  },
+  {
+   "key": "b093b943c9c221ba",
+   "title": "SAP HANA Data Provisioning Agent 2.8.1.2 on SLES 15.6 Installation and Connection to SAP HANA Cloud",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-hana-data-provisioning-agent-2-8-1-2-on-sles-15-6-installation-and/ba-p/14506183",
+   "published": "2026-10-18T12:58:20+00:00",
+   "author": "yonatan",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The SAP HANA Data Provisioning Agent (DP Agent) is the on-premise component of SAP HANA smart data integration (SDI). It lets SAP HANA Cloud reach data sources inside your own network, for example to create virtual tables."
+  },
+  {
+   "key": "cc79744ad5ac1d2a",
+   "title": "Compliance Forms in Employee Central - All you need to know!",
+   "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-sap/compliance-forms-in-employee-central-all-you-need-to-know/ba-p/14506166",
+   "published": "2026-10-18T11:21:25+00:00",
+   "author": "akarshn",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Active EC employees can now generate and complete legally mandated compliance forms directly from their People Profile — using the same forms, configurations, and screens already set up during onboarding. No new onboarding process required."
+  },
+  {
+   "key": "9e5a0ffd678b643a",
+   "title": "Does anyone know how to disable the additional information option for FFID controllers?",
+   "link": "https://community.sap.com/t5/questions-about-sap-websites/does-anyone-know-how-to-disable-the-additional-information-option-for-ffid/qaq-p/14506206",
+   "published": "2026-10-18T12:51:09+00:00",
+   "author": "surya_appala",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Everyone, \n Does anyone know how to disable the additional information option for FFID controllers? the GRC? \n We are in GRC 12 V8100 SP29. Thanks. \n Regards, \n Surya"
+  },
+  {
+   "key": "cd2ff619754aba23",
+   "title": "calculate interest on loan less the full annuity (principal + interest) in SAP TRM",
+   "link": "https://community.sap.com/t5/financial-management-q-a/calculate-interest-on-loan-less-the-full-annuity-principal-interest-in-sap/qaq-p/14506182",
+   "published": "2026-10-18T12:23:03+00:00",
+   "author": "shady_elhefnawy",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear Experts., \n In the annuity repayment method, SAP calculates the interest on the loan less the principal portion of the installment. We need the system to calculate the interest on the loan less the full annuity amount, that is, principal plus interest. \n Example (product 55A, loan 1,000,000 EGP 10% act/360, quarterly installments paid at the start of each period, first installment 62,775.61): \n - Current SAP calculation: interest base = 1,000,000 - 38,196.18 (principal only) = 961,803.82, interest 24,579.43 \n - Required calculation: interest base = 1,000,000 - 62,775.61 (principal + interest) = 937,224.39, interest 23,951.29 \n\n Please advise whether this can be done through Customizing or an enhancement, and what you recommend. \n\n Best regards, \n Shady Osama"
+  },
+  {
+   "key": "9ee4032083783662",
+   "title": "One Click to a Clean Employee Record: Print and Export People Profile to PDF in 2H 2026",
+   "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-members/one-click-to-a-clean-employee-record-print-and-export-people-profile-to-pdf/ba-p/14506281",
+   "published": "2026-10-18T21:02:12+00:00",
+   "author": "shaktibarath",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The screenshot workaround ends \n From 13 November 2026, anyone who can view a latest People Profile can export it to a clean, dated PDF. It is switched on automatically and has no permission of its own. That makes it both a big productivity win and a governance item HR must review before go-live. \n Today, when a talent committee, an auditor or an executive needs an employee summary, HR improvises. Someone takes screenshots of profile cards, pastes them into a slide or Word file, and hopes nothing changed since. The output is inconsistent, undated and hard to trust. \n The new Print Profile action replaces that with a standard, as-of-dated document. The release note tags it \"Info only\". In my view, that undersells it: a feature that lets data leave the system deserves a deliberate decision. \n What SAP shipped in 2H 2026 \n Print Profile sits in the Actions menu of the latest People Profile and exports Spotlight and Full Profile data to PDF. You choose the whole profile or specific categories and cards, then preview and remove individual cards before exporting. \n\n What the PDF contains \n Details \n\n Timestamp \n Print time, in the logged-in user's locale \n\n As-of date \n Matches the date selected on the Full Profile, so effective-dated data reflects that date \n\n Header data \n Everything visible in the Full Profile header and Profile Preview, except self-descriptions and matrix managers \n\n Cards \n Full details page where one exists, otherwise the summary card; original order kept, Documents always last \n\n Empty fields \n Always included \n\n Status indicators \n Pending Workflow and future-change notices appear; so do error messages \n\n Attachments \n Shown as file names only \n\n Removed \n Action buttons and card help \n\n File name \n [DisplayName] Profile [Date].pdf \n\n Why it matters for HR \n The as-of date is what makes this more than a print button. Every PDF states exactly which date the effective-dated data reflects, so the document can stand as a record. Four HR situations benefit right away. \n Talent and succession reviews. Committees often include leaders who rarely log in. HR can prepare a consistent pack of candidate profiles, limited to the relevant categories, in minutes. \n Audits and compliance checks. An auditor asks what an employee's job and contract data looked like on a given date. Set the Full Profile date, export, and the PDF carries both the as-of date and the print timestamp. \n Employee relations and legal matters. Case files need a dated snapshot of the record at a point in time. A system-generated PDF is cleaner evidence than a screenshot. \n Transfers, mergers and offboarding. When a record must move to another entity, or be retained for a period, HR has a standard format instead of ad-hoc extracts. \n SAP positions it for talent managers, recruiters, compliance officers and executives who need profile data without direct system access. That last phrase is exactly why governance matters. \n Governance: the part not to skip \n Print appears for every user who can access the latest People Profile and view the data, with no separate permission to grant or withhold. In practice, your view permissions now also decide who can export profiles to a portable file. \n SAP has built in sensible protections: \n Data the user has no permission for is hidden in the PDF, as on screen. \n Fields masked in the data model stay masked; unmasking in print is not supported. \n The annualized salary chart is left out, and the amount field is always masked. \n What the system cannot control is what happens to the file afterwards. A PDF can be emailed, saved to a personal drive or printed and left on a desk. For HR, that raises questions worth answering before 13 November: \n Are our view permissions still right now that viewing also means exporting? Pay special attention to managers, matrix roles and broad \"view all\" HR groups. \n Which categories hold sensitive data, such as dependents, national IDs, payment details or health-related leave, and are they masked or restricted? \n Does our data retention and acceptable-use policy cover exported employee records? \n Do works councils or privacy officers in any country need to be informed? \n The annualized salary exclusion shows SAP thought about pay sensitivity. Your own sensitive custom fields need the same thought from you. \n Rollout steps, watch-outs and tests \n Because it switches on by itself, the work is a pre-release review rather than a configuration task. The steps and test ideas below are my suggestions. \n Review view permissions in preview. Treat \"can view\" as \"can export\" and adjust roles that are broader than they need to be. \n Check masking on sensitive fields. Confirm which fields are masked in the data model, because masking carries into the PDF. \n Brief privacy and legal. Agree how exported profiles may be stored, shared and deleted. \n Communicate to users. Tell HR, managers and executives what the feature is for, and what it is not for. \n Build use-case templates. For talent reviews, define which categories to include so packs look the same every time. \n\n Test \n What to check \n\n Manager vs HR admin export of the same employee \n Each PDF shows only what that role can see on screen \n\n Masked custom field \n Stays masked in the PDF \n\n Compensation category \n Salary chart absent, amount masked \n\n Past as-of date on Full Profile \n PDF data and as-of date match that date \n\n Record with a pending workflow \n Pending notice appears, so readers know data may change \n\n Documents category \n Prints last, with attachment file names only \n\n Long profile in different browsers \n Layout and page breaks are readable \n Closing thought \n Print Profile solves a real, everyday HR problem: getting a trustworthy, dated employee record to people who are not in the system. Its as-of date and built-in masking make it far better than any screenshot. \n But it arrives switched on, with no permission of its own. The HR teams that get the most from it will be the ones who spend an hour in preview checking who can view what. Do that, and you gain a clean record in one click without opening a new data risk. \n Sources \n SAP SuccessFactors What's New, 2H 2026 Platform release notes: \"Print and Export People Profile to PDF\" (ECT-268339, valid as of 13 November 2026). \n SAP Help: Configuring the Latest People Profile (Printing People Profile)"
+  },
+  {
+   "key": "44e9fdad03c10731",
+   "title": "Business AI in ABAP Cloud - Embedding AI with the ABAP AI SDK",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/business-ai-in-abap-cloud-embedding-ai-with-the-abap-ai-sdk/ba-p/14501649",
+   "published": "2026-10-19T04:00:00+00:00",
+   "author": "fabianfellhauer",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Business AI in ABAP Cloud - Embedding AI with the ABAP AI SDK \n Cheers ABAP Folks! \n In my last blog post , we discussed the high-level strategy for implementing business AI capabilities in ABAP Cloud. We looked at the two pillars, Embedded AI in ABAP and Agentic AI via Joule , and when to use which approach. If you haven't read it yet, I'd recommend starting there for the bigger picture. \n Today, we're going hands-on. This post dives into Embedded AI, the capabilities that run directly inside your ABAP application, powered by the ABAP AI SDK . We'll walk through the fundamentals, introduce the SDK, and then look at two concrete use cases using everyone's favorite business scenario: Trip & Expense Management . \n Yes, trip & expense management. We all love it, don't we? Nothing brings more joy to a business traveler than filling out expense reports after a long trip. So, let's see how AI can take some of that joy... I mean burden ... away. \n\n The Fundamentals: Connecting ABAP to AI \n Before you write a single line of AI-related ABAP code, you need to get the plumbing right. All embedded AI scenarios in ABAP Cloud require a connection to SAP AI Core , specifically to the Generative AI Hub that provides access to Large Language Models (LLMs) hosted by hyperscalers. \n This connection is established via Intelligent Scenario Lifecycle Management (ISLM) , a framework that allows you to manage and operate AI scenarios in a standardized, transportable way. Think of ISLM as the lifecycle backbone: it handles connectivity, model deployment, prompt management, and the runtime configuration that ties everything together. \n Setting Up the Connection \n The setup follows a straightforward pattern ( SAP Help, Set Up ABAP AI SDK powered by ISLM \n Subscribe to SAP AI Core in your SAP BTP subaccount and enable the required service plan. \n Create a service instance and service key for SAP AI Core in the BTP cockpit. \n Establish connectivity between SAP AI Core and your ABAP system by creating a communication arrangement based on communication scenario SAP_COM_0A69 . \n This is a customer-managed outbound integration, which means you own the connection setup. Once established, ISLM can create and activate model deployments, and the ABAP AI SDK can execute prompts against the deployed models. For a detailed step-by-step walkthrough, I recommend the tutorial Set Up SAP BTP and Integrate SAP AI Core with ISLM on SAP Developers. \n The ABAP AI SDK, Your AI Toolbox \n With the connection established, let's talk about the tool you'll actually use in your ABAP code: the ABAP AI SDK . It's a typed, ABAP-native reuse library that provides access to generative AI functionality via ISLM. It is available across the full ABAP Cloud landscape, covering: \n SAP S/4HANA Cloud Private Edition & On-Premise \n SAP S/4HANA Cloud Public Edition \n SAP Business AI Platform, ABAP environment (Steampunk) \n This means the same SDK, the same APIs, the same patterns, regardless of where your ABAP system runs. \n What's in for me? \n The ABAP AI SDK offers a set of APIs built around common LLM usage patterns: \n Completion API – Send a prompt to an LLM and receive a generated text response. This is the core building block for most embedded AI scenarios. \n Prompt Library API – Work with prompt templates predefined in ISLM, including parameterized prompts with runtime variable substitution. Very useful when you want to keep your prompts maintainable and out of your ABAP code. \n Connectivity management – The SDK handles the connection to the Generative AI Hub transparently. You reference an intelligent scenario by name, and the SDK resolves the rest. \n Exception handling – Typed ABAP exceptions, so you can integrate AI calls into your existing error handling patterns without reinventing the wheel. \n The APIs are vendor-neutral, meaning the same ABAP code works regardless of which underlying LLM provider is configured in SAP AI Core. If your organization switches from one model to another, you change the configuration in ISLM, not your ABAP code. Your CTO changes their mind about the AI vendor? No problem, no code change required – ok, to be honest with you: The prompting might be polished most probably a little. \n The Simplest Possible Call \n To give you a feel for the developer experience, here's the simplest possible AI call using the Completion API ( SAP ABAP Cheat Sheets, Generative AI 😞 \" Get a Completion API instance for your intelligent scenario\nDATA(ai_api) = cl_aic_islm_compl_api_factory=>get( )->create_instance( 'Z_MY_SCENARIO' ).\n\n\" Execute a prompt and get the result\nDATA(result) = ai_api->execute_for_string( `Classify this trip as customer-facing or internal.` ).\n\n\" Retrieve the generated text\nDATA(completion) = result->get_completion( ). \n Three lines of ABAP. That's it. The factory creates an instance tied to your intelligent scenario (which contains all the connection and model details), you execute a prompt, and you get back the LLM's response as a string. No HTTP client setup, no JSON parsing, no authentication handling. The SDK takes care of all of that. If you've ever tried calling a REST API from ABAP the \"old-fashioned way\", you'll know exactly how much boilerplate this saves you. \n Of course, real-world scenarios are a bit more involved. You'll use prompt templates with parameters, handle exceptions, and integrate the result into your business logic. But the fundamental pattern stays the same. \n Orchestration Capabilities \n For enterprise-grade AI scenarios, the ABAP AI SDK also supports orchestration through the SAP AI Core Orchestration Service . This adds capabilities that are critical for production use: \n Data Masking – Automatically redact sensitive information (personal data, financial details) before it reaches the LLM. Essential for data protection and GDPR compliance, and something your compliance team will thank you for. \n Document Grounding – Enrich your prompts with business-relevant context from documents, reducing hallucinations and improving response accuracy. Because an LLM that confidently makes things up is entertaining at dinner parties, but not in your ERP system. \n Content Filtering – Ensure that LLM responses are safe, appropriate, and compliant with your organisation's policies. \n These capabilities are configured at the orchestration level, so you don't need to implement masking or filtering logic yourself in ABAP. It's handled for you. \n\n Let’s get our hands dirty: Trip & Expense Management \n For the rest of this blog post, we'll use a Trip & Expense Management application as our running example. Picture a RAP-based Fiori application where employees create travel requests, and after the trip, submit expense reports. \n We'll tackle two concrete use cases: \n Data Prediction with Fiori Input Assistance : Automatically categorizing a trip as \"customer-facing\" or \"internal\" based on the trip description. \n Data Extraction from files : Extracting structured data (payment amounts, categories, etc.) from uploaded receipt documents. \n Both are real-world scenarios that demonstrate different facets of the ABAP AI SDK. And both address the same fundamental truth: nobody enjoys filling out forms manually when a machine could do it better and faster. Let's start. \n\n Use Case 1: Trip Categorization with RAP Recommendations \n The Problem \n When an employee creates a travel request, they need to fill out several fields: destination, purpose, cost center, and importantly, trip category (e.g. \"customer-facing\" or \"internal\"). This categorization drives downstream processes like approval workflows, budget allocation, and reporting. Today, users pick the category manually. They might get it wrong, or they pick whatever option is closest to the mouse cursor. What if the system could propose the right category automatically , based on the trip description? \n The Solution: Fiori Input Assistance \n This is exactly what Fiori Input Assistance implemented with RAP recommendations is designed for. RAP recommendations are a built-in input assistance feature in the ABAP RESTful Application Programming Model (RAP) that proposes field values for input fields on an SAP Fiori UI ( SAP Help, Defining RAP Recommendations ). Available since SAP BTP ABAP Environment 2602 and SAP S/4HANA Cloud 2602 , RAP Recommendations can be implemented using either deterministic rules or generative AI , and you can even mix both approaches in the same application. The key principles of RAP recommendations: \n They are exposed in SAP Fiori as a recommendation pattern of type input assistance, meaning the user sees suggested values directly in the input field. \n They are built on top of a value help, so you need an existing value help for the target field. \n They are triggered by side effects: when the user changes a source field (e.g. trip description), the recommendation function runs and proposes values for the target field (e.g. trip category). \n They integrate seamlessly with the RAP programming model. No custom UI development required. Zero. Nada. \n Figure 1: Fiori Input Assistance implemented with RAP recommendations \n How It Works: The Architecture \n The implementation involves three layers: \n Behavior Definition – Declare which fields receive recommendations and define the recommendation function. \n Behavior Implementation – Implement the recommendation logic in the behavior pool, using the ABAP AI SDK to call an LLM for intelligent categorization. \n Projection Behavior Definition – Expose the recommendations in the projection layer for the Fiori UI. \n If you've built a RAP Business Object before, this will feel very familiar. It's the same layered pattern, just with AI sprinkled on top. \n Step 1: Define Recommendations in the Behavior Definition \n In your behavior definition, you mark the target field as relevant for recommendations, declare a recommendation function and define a side effect on which the recommendation function should be triggered. This tells the RAP framework: whenever the user changes the “ title ” field, execute function GetRecommendedValuesFunction and propose values for attribute “ type ”. The user types \"Customer workshop in Berlin\" and the system immediately suggests \"Customer-facing\". It almost feels like the system is reading the user's mind, except it's reading their input field. define behavior for ZR_AITRIP alias Trip\n{\n //Define for which fields an recommendation output is generated\n field ( recommendations ) Type;\n\n //Define the recommendation function itself\n recommendation function GetRecommendedValuesFunction;\n\n //Define the trigger (e.g. other context field)\n side effects\n {\n recommendation function GetRecommendedValuesFunction \n executed on field Title;\n }\n} \n Step 2: Implement the Recommendation Logic \n In the behavior pool, you implement the recommendation function. This is where the ABAP AI SDK comes in. You use the completion API to ask an LLM to categorize the trip based on the available context: \n Read the current entity data (description, destination, etc.) \n Build a prompt with the trip context, based on your system's master data \n Call the ABAP AI SDK Completion API \n Parse the LLM response \n Return the recommended value(s) with scores \n The recommendation function returns a list of proposed values, each with a score and a flag indicating whether it's the suggested (top-ranked) value. The Fiori UI renders these as input assistance. The user can accept, modify, or override the suggestion. The AI proposes, the human decides. As it should be. \n The full implementation: class lhc_zr_aitrip definition inheriting from cl_abap_behavior_handler.\n\n private section.\n\n methods get_global_authorizations for global authorization\n importing\n request requested_authorizations for Trip\n result result.\n\n methods GetRecommendedValuesFunction for read\n keys for function Trip~GetRecommendedValuesFunction result result.\n\n methods build_recommendation_prompt\n importing title type string\n returning value(r"
+  },
+  {
+   "key": "59c40d2744b19895",
+   "title": "SAP SuccessFactors Role-Based Permissions — Designing Permission Roles Leading Practice for EC Core",
+   "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-sap/sap-successfactors-role-based-permissions-designing-permission-roles/ba-p/14497675",
+   "published": "2026-10-19T02:08:56+00:00",
+   "author": "dayna_carnino",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The SAP SuccessFactors 2H 2026 release introduces an updated reference for Designing Permission Roles , providing \n administrators and implementation consultants with a structured foundation for role design discussions and initial system \n configuration. The initial design focuses on the most common permission roles used across the SAP SuccessFactors Employee \n Central Core business scenario, covering each role's typical scope, purpose, and baseline permissions. This post walks through \n the key attributes that shape role design and the common roles that serve as a starting point for building a secure, scalable, and \n well-governed permission model. \n\n What This Reference Covers \n The Designing Permission Roles documentation serves as a practical starting point for role design discussions and initial system \n configuration. It describes the most common roles used across SAP SuccessFactors implementations — including their typical \n scope, purpose, and the permissions they generally include. Administrators and consultants can use it alongside SAP Best Practices \n for HCM to accelerate and standardize the design process. \n Role Design Attributes \n No two implementations are identical. SAP SuccessFactors role design is shaped by a combination of factors that must be \n evaluated before configuration begins: \n Company size and organizational structure — Larger organizations typically require more granular roles to \n reflect regional or departmental differences in data visibility and access \n Modules purchased — Only modules included in the customer's subscription require permission configuration; \n scope drives role count \n Business scenarios — Different processes within a single module may require separate roles or distinct permission sets \n Country-specific requirements — Data privacy laws and local HR practices may require country-specific role variants to \n remain compliant \n Company culture — Organizational norms — such as whether employees or managers initiate performance forms — \n directly affect which roles need which permissions \n To document and organize roles consistently, each role should be defined using the following attributes: \n Attribute Description Example \n Module The SAP SuccessFactors module the role applies to Employee Central \n Business Scenario The functional area or process within the module Employee Central Core \n Permission Role Name The name assigned to the role in the system Super Admin \n Role Description Plain-language description of the role's purpose and scope Provides full administrative access to all \n Employee Central configuration \n Permission Category The category of a group of permissions in Manage Permission Roles General User Permission \n Permission The name of a permission in Manage Permission Roles Proxy Rights \n Note: In larger organizations, a single role may be split into multiple region- or country-specific roles. For example, instead \n of one Manager role, a company may use separate Manager roles per region where different data visibility rules apply. \n Common Permission Roles \n The following roles appear across most SAP SuccessFactors implementations and serve as a baseline starting point for role design: \n Permission Role Role Description \n HRBP Acts as a strategic advisor to the business on HR-related matters \n HR Administrator \n Maintains employee master data and organizational assignments; initiates \n and monitors data replication; maintains and approves time off \n Manager on Direct Reports Receives notifications and views apprenticeship plans for direct reports \n Employee on Self Accesses personal data and self-service capabilities \n Super Admin Holds the highest level of system access across all modules and configurations \n Note: The permissions above reflect common baseline configuration for the Employee Central Core business \n scenario only. For country-specific fields — including Global Information, Job Information, and Pay Components — \n consult the relevant country-level Best Practice files. For other Employee Central scenarios, refer to \n SAP Best Practices for SAP SuccessFactors Employee Central . \n What You Should Learn \n Role design is not one-size-fits-all — Company size, modules purchased, business scenarios, \n country-specific requirements, and company culture all directly influence how permission roles are structured \n Document every role consistently — Using defined attributes (module, business scenario, role name, description, permission \n category, and permission) ensures roles are organized, auditable, and easier to maintain over time \n Start with the common baseline roles — HRBP, HR Administrator, Manager on Direct Reports, Employee on Self, and \n Super Admin provide the foundation for most Employee Central Core implementations \n Country-specific fields require additional steps — Global Information, Job Information, and Pay Components must be \n configured using the relevant country-level Best Practice files — the baseline roles do not cover these automatically \n Large organizations may need role variants — A single role such as Manager may need to be split into region or \n country-specific versions where different data visibility rules apply \n This reference covers Employee Central Core only — For other Employee Central business scenarios, consult \n SAP Best Practices for SAP SuccessFactors Employee Central for the appropriate role and permission guidance \n Conclusion \n Designing permission roles thoughtfully — accounting for organizational structure, module scope, business scenarios, and \n country-specific requirements — is essential to building a secure and maintainable SAP SuccessFactors implementation. \n The common roles covered here provide a consistent baseline, but each implementation will require adjustments based on the \n factors unique to that organization. For detailed permission descriptions and full role mapping guidance, refer to the \n SAP Help documentation: Implementing Role-Based Permissions — Designing Permission Roles ."
+  },
+  {
+   "key": "f32550cc04f096bb",
+   "title": "The Procurement Monthly - October 2026",
+   "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/the-procurement-monthly-october-2026/ba-p/14506311",
+   "published": "2026-10-19T02:02:51+00:00",
+   "author": "GordonDonovan",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Monthly summary of recent research into procurement!"
+  },
+  {
+   "key": "cf36d7e438cff383",
+   "title": "AI Product Management: Evals Are Not the Last Step",
+   "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/ai-product-management-evals-are-not-the-last-step/ba-p/14506297",
+   "published": "2026-10-19T00:18:03+00:00",
+   "author": "yoramfriedman",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Most development frameworks put evaluation at the end. For deterministic software, that was late but recoverable. For agentic AI built with coding agents, it is the wrong sequence - and the cost shows up in production, not in the review."
+  },
+  {
+   "key": "939bdb538818c97d",
+   "title": "Strengthening Internal Controls in Freight Accounting Through SAP Transportation Management",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/strengthening-internal-controls-in-freight-accounting-through-sap/ba-p/14506295",
+   "published": "2026-10-18T23:30:22+00:00",
+   "author": "Bimal_S",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP Transportation Management streamlines freight accounting by replacing manual, error‑prone processes with automated, audit‑ready controls. It delivers precise Material Ledger and CO‑PA postings that reinforce material accounting and support accurate profitability and margin analysis. Combined with system‑driven charge calculation, native three‑way matching, and real‑time accruals, SAP TM provides a robust, sustainable framework for preventing material weaknesses and strengthening ICFR (Internal Controls over Financial Reporting)."
+  },
+  {
+   "key": "7d20ad0cc61ea296",
+   "title": "That number on the SAP screen may not live in any table: a WB2R_SV story",
+   "link": "https://community.sap.com/t5/abap-blog-posts/that-number-on-the-sap-screen-may-not-live-in-any-table-a-wb2r-sv-story/ba-p/14505998",
+   "published": "2026-10-17T17:13:28+00:00",
+   "author": "AlexandrePassarelli",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "A forum question asked how to bring the Net Amount from WB2R_SV into a Fiori Elements report. I went looking for the table and found a structure that the settlement logic fills at run time. How I followed it from the list to the method, and the three questions I now ask before I promise anyone a report."
+  },
+  {
+   "key": "b7dac5705b623c0f",
+   "title": "how to cancel a production order via an API",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/how-to-cancel-a-production-order-via-an-api/qaq-p/14506312",
+   "published": "2026-10-19T02:04:35+00:00",
+   "author": "KTAWA",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "would you tell me the way we make production orders \"TECO\" via an API. \n now we use \"API_PRODUCTION_ORDER \" to create a production order and is it possible to change the status to \"TECO\" with the same API?"
+  },
+  {
+   "key": "c7d7df57e49091be",
+   "title": "When I ask Joule something, what actually happens behind the scenes?",
+   "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-sap/when-i-ask-joule-something-what-actually-happens-behind-the-scenes/ba-p/14429014",
+   "published": "2026-10-19T06:21:10+00:00",
+   "author": "GouthamiR",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "At first glance it may feel like you are simply chatting with an AI assistant. In reality there is an intelligent orchestration layer working behind the scenes to ensure every response is accurate, secure and connected to your business systems. Let's break it down. \n Step 1: Everything starts with the user - Every interaction begins with a person. There are two ways a user can interact with AI: \n Through Joule by asking a question (for example, \"Who hasn't completed their performance review?\") \n Directly inside SAP SuccessFactors (HCM) by clicking an action, such as approving leave or updating employee information. Both paths eventually lead to the same AI engine. \n Step 2: Joule or HCM sends the request to the Agent Runtime - The Agent Runtime acts like the brain or orchestrator. Instead of immediately generating an answer, it first plans the best way to fulfil the request. \n Its job is to understand the request and decide: What information is needed?, Which systems should be contacted?, Which tools should be used?, Is the user authorized to perform this action? \n Step 3: Agent Configuration decides how the request should be handled - Inside the Agent Runtime are three important components. \n Agent Config - This is the AI's instruction manual. It defines: which agent should respond, what workflow to follow and which business rules apply. \n A2A Client (Agent-to-Agent) - Sometimes one AI agent cannot complete the task alone. t may need help from another specialized agent. It defines: one agent understands HR policies, another specializes in recruiting and another handles payroll. \n MCP Client - The MCP Client connects AI with enterprise systems. Instead of creating separate integrations for every application MCP provides one standard way to communicate with: SAP applications, databases, APIs, documents, custom enterprise systems \n Step 4: Selecting the right tools - Once the runtime understands the request, it chooses the most suitable tool. The user never needs to choose these tools manually. Joule automatically selects the best one. \n It might use: Calculator, Web Search, SAP Joule Functions, Custom enterprise applications, MCP-connected enterprise tools \n Step 5: Large Language Models (LLM) do the reasoning - Once all the required information is collected, everything is sent to the Large Language Model (LLM). This is where AI actually thinks to generate an intelligent response. \n The LLM combines: your question, enterprise data, tool outputs, business context, \n Step 6: Agent Services keep everything secure - While all of this happens, another layer called Agent Services continuously monitors the process. It provides: \n Guardrails – ensures AI follows company policies. \n Metering – tracks resource usage. \n Tracing – records what happened during each request. \n Benchmarking – measures performance and quality. \n Extensibility – allows organizations to add new capabilities in the future. \n This architecture shows that Joule is much more than a chatbot. It acts as an intelligent coordinator that understands your request, connects to the right enterprise systems, collaborates with specialized AI agents, uses the appropriate tools, reasons with Large Language Models and delivers secure, governed and business-aware responses all within a unified AI framework."
+  },
+  {
+   "key": "d12cb3e64ca8ab38",
+   "title": "Agentic AI on BTP: Connecting Agents to SAP OData APIs without an MCP Server",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/agentic-ai-on-btp-connecting-agents-to-sap-odata-apis-without-an-mcp-server/ba-p/14506364",
+   "published": "2026-10-19T05:33:05+00:00",
+   "author": "WouterLemaire",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Fifth post in the series on my Pydantic AI multi-agent app on BTP. Agents now call SAP OData services directly through a curated catalogue, without an MCP server in between. Why I chose that and what it adds: one identity per service, only readable fields for the model and audited writes."
+  },
+  {
+   "key": "70beb46853293c70",
+   "title": "SAP Business Data Cloud: CSVファイルからカスタムデータプロダクトの作成",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-business-data-cloud-csv%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%8B%E3%82%89%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%87%E3%83%BC%E3%82%BF%E3%83%97%E3%83%AD%E3%83%80%E3%82%AF%E3%83%88%E3%81%AE%E4%BD%9C%E6%88%90/ba-p/14497022",
+   "published": "2026-10-19T05:24:58+00:00",
+   "author": "yuiyoshikawa",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "はじめに \n SAP Business Data Cloud（BDC）では、お客様独自のデータをカスタムデータプロダクトとして定義・公開することができます。 \n カスタムデータプロダクトの作成方法については、以下ブログで詳しく解説されています。 \n SAP Business Data Cloud: カスタムデータプロダクトの作成 \n 上記ブログでは、SAP S/4HANAからの複製フローを使ってデータをオブジェクトストア（SAP HDLFスペース）に取り込む方法が紹介されています。一方で、本ブログでは、CSVファイルをSAP Datasphereにアップロードするというよりシンプルな方法で、カスタムデータプロダクトの作成する手順をご紹介します。SAP Business Data Cloud Connectを活用したPoCや動作確認、学習目的でご活用いただくことを目的としています。 \n 全体の流れ \n カスタムデータプロダクトはオブジェクトストア（SAP HDLFスペース）に物理的に保持する必要があります。一方で、CSVファイルは直接オブジェクトストアにアップロードすることができない仕様となっているため、ワークアラウンドとして以下のフローでCSVファイルからカスタムデータプロダクトを作成します。 \n\n 以下の手順を始める前に、オブジェクトストア（SAP HDLFスペース）が作成済みである必要があります。作成手順は SAP Business Data Cloud: オブジェクトストア 入門編 を参照してください。 \n 手順 \n ① SAP HANA DBスペースにローカルテーブルを作成（CSVファイルをアップロード） \n HANAスペースのデータビルダーより「CSVファイルからローカルテーブルを作成」を使って、CSVファイルをアップロードします。アップロードが完了すると、CSVの内容がローカルテーブルとして作成されます。 \n ② SAP HANA DBスペースのローカルテーブルをSAP HDLFスペースに共有 \n カスタムデータプロダクトはオブジェクトストア（SAP HDLFスペース）に物理的に保持する必要があります。SAP HANAスペースから、①で作成したローカルテーブルをSAP HDLFスペースに共有設定します。 \n 2.1. SAP HANAスペースにて対象のローカルテーブルを選択し、共有ボタンをクリックします。ポップアップで共有先となるSAP HDLFスペースを選択します。 \n\n ③ SAP HDLFスペースにて変換フローでローカルテーブル(ファイル)に書き出す \n SAP HDLFスペースを開き、共有されたテーブルが表示されていることを確認します。その後、変換フローを作成し、共有テーブルをソースとして、ローカルテーブル（ファイル）に書き出します。 \n 3.1. データビルダをクリックし、SAP HDLFスペースを開きます。 \n\n 3.2. ローカルテーブルが共有されていることを確認します。新規変換フローをクリックします。 \n\n 3.3. 左の一覧より対象のローカルテーブルをSourceとしてドラッグ＆ドロップします。 \n\n 3.4. targetをクリックし、右側のプロパティで「新規ターゲットテーブルの作成」をクリックします。 \n\n 3.5. 書き出すローカルテーブル（ファイル）に名前をつけ、左上で、保存、デプロイ、実行をします。 \n\n ④ データ共有コックピットでデータプロダクトを定義して公開 \n SAP Business Data Cloud: カスタムデータプロダクトの作成 の「カスタムデータプロダクトの定義」の章をご覧ください。 \n まとめ \n\n CSVアップロードを使った方法は、カスタムデータプロダクトの仕組みを素早く体験するのに最適です。全体のフローを理解したうえで、本番運用では こちらのブログ の複製フローを使った方法に移行することをお勧めします。"
+  },
+  {
+   "key": "e5939610b03691b8",
+   "title": "Email Body Notification | S/4Hana Public Cloud",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/email-body-notification-s-4hana-public-cloud/qaq-p/14506365",
+   "published": "2026-10-19T05:34:54+00:00",
+   "author": "AnonymouslyM",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Experts, \n I am currently working with email notification for purchasing document. I noticed that the data fields are limited and there are fields that cannot be found. The email template used is SWF_CRT_NOTIFY_RECIPIENTS because this is supposed to be sent to the approvers when certain document is created. \n As I was checking, I cannot find the total amount or the net price, plant, and material to be procured and other fields that seemed necessary. \n Is this the standard behavior of the system? Is there a way to pick up other data fields that are not found in SWF_CRT_NOTIFY_RECIPIENTS? \n What can you suggest so that other data can be displayed and be part of email body. \n Thank you!"
+  },
+  {
+   "key": "6dfe1f74f9850911",
+   "title": "Sales Order Approval Workflow – Requirement: Allow Sales Order Creator to Approve Their Own Order",
+   "link": "https://community.sap.com/t5/technology-q-a/sales-order-approval-workflow-requirement-allow-sales-order-creator-to/qaq-p/14506346",
+   "published": "2026-10-19T05:11:01+00:00",
+   "author": "xuqi_fangaf39f1",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear SAP Team, We have configured the approval workflow, management team and responsibilities in the CBC system. However, after a sales order is created, the order creator is not allowed to approve the order they created. Business requirement: The second approval step shall be performed by the sales order creator for their own orders. Please help check whether this restriction is standard system behavior or caused by workflow/task responsibility configuration, and advise the adjustment solution."
+  },
+  {
+   "key": "184d148ae399e2f8",
+   "title": "Does anyone know how to disable the additional information option for FFID controllers?",
+   "link": "https://community.sap.com/t5/technology-q-a/does-anyone-know-how-to-disable-the-additional-information-option-for-ffid/qaq-p/14506206",
+   "published": "2026-10-18T12:51:09+00:00",
+   "author": "surya_appala",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Everyone, \n Does anyone know how to disable the additional information option for FFID controllers? the GRC? \n We are in GRC 12 V8100 SP29. Thanks. \n Regards, \n Surya"
+  }
+ ],
+ "triage": {
+  "0": {
+   "i": 0,
+   "category": "S/4HANA Development & Extensibility",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Key user asks why a custom header field is missing from the Mass Changes to Purchase Contracts app in S/4HANA Public Cloud."
+  },
+  "1": {
+   "i": 1,
+   "category": "HANA, AMDP & Performance",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "Use case tracing a battery recall with SAP HANA Graph and testing an AI agent's remedy plan; mostly a demo showcase."
+  },
+  "2": {
+   "i": 2,
+   "category": "BTP & ABAP Cloud",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Hands-on guide to securing a CAP service on Cloud Foundry with XSUAA, approuter, and role collections on BTP trial."
+  },
+  "3": {
+   "i": 3,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Overview of SuccessFactors 2H 2026 release features aimed at HR teams and administrators, not developers."
+  },
+  "4": {
+   "i": 4,
+   "category": "HANA, AMDP & Performance",
+   "in_scope": false,
+   "importance": 3,
+   "one_liner": "Installing the HANA Data Provisioning Agent 2.8.1.2 on SLES 15.6 and connecting it to HANA Cloud; mainly Basis setup."
+  },
+  "5": {
+   "i": 5,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Employee Central feature letting employees generate and complete compliance forms from their People Profile; functional HR."
+  },
+  "6": {
+   "i": 6,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks how to disable the additional information option for FFID controllers in SAP GRC 12 V8100 SP29; a configuration question."
+  },
+  "7": {
+   "i": 7,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Treasury question on changing SAP TRM annuity interest calculation to deduct full installment rather than principal only; functional config."
+  },
+  "8": {
+   "i": 8,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Announces People Profile PDF export in SuccessFactors from November 2026 and its governance implications for HR."
+  },
+  "9": {
+   "i": 9,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Walkthrough of embedding AI in ABAP Cloud using the ABAP AI SDK, following up on the Business AI strategy post."
+  },
+  "10": {
+   "i": 10,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "SuccessFactors 2H 2026 reference for designing permission roles for Employee Central administrators; not developer work."
+  },
+  "11": {
+   "i": 11,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Monthly newsletter summarising procurement research for October 2026."
+  },
+  "12": {
+   "i": 12,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "Argues evaluations should come early when building agentic AI with coding agents, not as a final step before production."
+  },
+  "13": {
+   "i": 13,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Describes SAP TM freight accounting controls with Material Ledger and CO-PA postings; functional finance content."
+  },
+  "14": {
+   "i": 14,
+   "category": "ABAP & Clean Code",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Traces where WB2R_SV net amount is computed at runtime in ABAP to source data for a Fiori Elements report."
+  },
+  "15": {
+   "i": 15,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Asks whether API_PRODUCTION_ORDER can set a production order to TECO, or whether another API is needed."
+  },
+  "16": {
+   "i": 16,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Conceptual explanation of Joule's orchestration layer for end users; not focused on developer tasks."
+  },
+  "17": {
+   "i": 17,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Pydantic AI agents on BTP calling SAP OData services directly via a curated catalogue, with no MCP server, plus audited writes."
+  },
+  "18": {
+   "i": 18,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Japanese guide to creating a custom data product in SAP Business Data Cloud by uploading a CSV file to Datasphere."
+  },
+  "19": {
+   "i": 19,
+   "category": "S/4HANA Development & Extensibility",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Asks why workflow email template SWF_CRT_NOTIFY_RECIPIENTS lacks fields for purchasing notifications in S/4HANA Public Cloud."
+  },
+  "20": {
+   "i": 20,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks how to let a sales order creator approve their own order in the approval workflow; a workflow configuration question."
+  },
+  "21": {
+   "i": 21,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Duplicate of item 6: disabling the additional information option for FFID controllers in SAP GRC 12."
+  }
+ },
+ "deep": {
+  "2": {
+   "summary": "A short blog describing a CAP service on Cloud Foundry (BTP trial) that is set to \"auth\": \"none\" and then secured with XSUAA, an approuter, and two role collections. The excerpt is only a one-line description, so the actual steps, xs-security.json contents, and role template design are not visible. Treat it as a pointer to the topic rather than a worked guide.",
+   "key_points": [
+    "Starts from a CAP service on Cloud Foundry with auth set to \"none\"",
+    "Adds XSUAA as the security layer",
+    "Uses an approuter as the entry point in front of the service",
+    "Defines two role collections for access control",
+    "Targets the BTP trial environment"
+   ],
+   "technical_details": [
+    "\"auth\": \"none\" (the starting state the post describes)",
+    "XSUAA (SAP Extended Services for Cloud Foundry authorization service)",
+    "Approuter",
+    "Role collections"
+   ],
+   "why_it_matters": "Securing CAP services with XSUAA, an approuter and role collections is a core BTP developer skill, and the trial setup makes it easy to practise. The excerpt, however, gives no concrete configuration to verify.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use it as a lab prompt: start with an unsecured CAP service, then have students add xs-security.json, bind XSUAA, route traffic through an approuter, and map scopes to two role collections. Check that the endpoints return 401/403 for users without the right role. The full post would be needed for the exact steps.",
+   "quality": 2
+  },
+  "9": {
+   "summary": "The post is part two of a series on Embedded AI in ABAP Cloud. It explains that ABAP AI SDK connects to SAP AI Core's Generative AI Hub through ISLM, using the communication scenario SAP_COM_0A69. It then shows a three-line Completion API call and lists orchestration features such as data masking and document grounding. The excerpt cuts off in the orchestration section, and the Trip & Expense use cases are not included in what was provided.",
+   "key_points": [
+    "Embedded AI in ABAP Cloud depends on SAP AI Core, reached through the Generative AI Hub",
+    "ISLM provides the lifecycle, connectivity, deployment, and prompt-management layer",
+    "Setup: subscribe to SAP AI Core, create a service instance and key, create a communication arrangement for SAP_COM_0A69 (customer-managed outbound)",
+    "Completion API: cl_aic_islm_compl_api_factory=>get( )->create_instance( scenario ), then execute_for_string, then get_completion( )",
+    "Prompt Library API uses ISLM-managed prompt templates with parameters",
+    "Orchestration adds data masking and document grounding through the SAP AI Core Orchestration Service"
+   ],
+   "technical_details": [
+    "Communication scenario SAP_COM_0A69 (customer-managed outbound)",
+    "ISLM (Intelligent Scenario Lifecycle Management)",
+    "cl_aic_islm_compl_api_factory=>get( )->create_instance( 'Z_MY_SCENARIO' )",
+    "ai_api->execute_for_string( ... )  and  result->get_completion( )",
+    "Prompt Library API",
+    "SAP AI Core Orchestration Service (data masking, document grounding)",
+    "Available on S/4HANA Cloud Private Edition/On-Premise, S/4HANA Cloud Public Edition, and ABAP environment (Steampunk)"
+   ],
+   "why_it_matters": "It gives ABAP developers a concrete path into LLM use without hand-written HTTP or JSON code, and it names the configuration objects that must exist first. The connection prerequisites are the part most likely to block a project.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use the setup steps as a checklist for a lab: the BTP subaccount entitlement, service key, communication arrangement, then ISLM scenario, then the three-line call. Ask learners to add error handling with the typed exceptions and to explain the difference between the Completion and Prompt Library APIs. Note the claim of vendor neutrality should be verified in the actual system.",
+   "quality": 3
+  },
+  "17": {
+   "summary": "The post is the fifth in a series about a Pydantic AI multi-agent app on BTP. Its design choice is that agents call SAP OData services directly through a curated catalogue, with no MCP server in between. The stated controls are one identity per service, read-only fields exposed to the model, and audited writes. Only the abstract is visible, so the implementation details are not available.",
+   "key_points": [
+    "Agents call SAP OData services directly, not through an MCP server",
+    "A curated catalogue defines which services are reachable",
+    "One identity per service",
+    "Only readable fields are exposed to the model",
+    "Writes are audited"
+   ],
+   "technical_details": [
+    "Pydantic AI (multi-agent app)",
+    "SAP BTP hosting",
+    "SAP OData services accessed through a curated catalogue",
+    "No MCP server in the call path"
+   ],
+   "why_it_matters": "Exposing SAP data to LLM agents is a real architecture question. Limiting the model to a curated, read-mostly surface with per-service identity and audited writes is a defensible pattern to compare against MCP-based approaches.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use it as a design discussion: compare direct OData calls through a catalogue with an MCP server. Ask students what the catalogue should contain, how field-level read restrictions are enforced, and how audit logs should record agent-initiated writes. Read the full series before drawing conclusions.",
+   "quality": 2
+  },
+  "14": {
+   "summary": "The author was asked how to bring the Net Amount from WB2R_SV into a Fiori Elements report. The table could not be found, because the value is held in a structure that the settlement logic fills at runtime. The post describes following that structure from the list to the method that populates it, and ends with three questions the author now asks before promising a report. Those three questions are not shown in the excerpt.",
+   "key_points": [
+    "The forum question concerned the Net Amount from WB2R_SV",
+    "No database table holds the value directly",
+    "A structure is populated by settlement logic at runtime",
+    "The author traced the path from the list down to the populating method",
+    "The post ends with three pre-report questions (not visible in the excerpt)"
+   ],
+   "technical_details": [
+    "WB2R_SV (named object in the title; its exact type is not described in the excerpt)",
+    "Fiori Elements report as the target",
+    "Runtime-filled structure",
+    "Method-level tracing"
+   ],
+   "why_it_matters": "Many business figures on screen are computed, not stored. Developers who look only for a table waste time or build reports on the wrong source. The approach of tracing from the UI to the filling method is a reusable debugging skill.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use it as a debugging exercise: give students a screen value with no obvious table, and have them find the populating code by breakpoints, where-used lists, and reading the structure's usage. Ask them to state the questions they would ask before committing to a report. The full post is needed for the three questions.",
+   "quality": 3
+  },
+  "0": {
+   "summary": "The author wants to add a custom field, YY1_ContractEngineer, to the Mass Changes to Purchase Contracts app on S/4HANA Cloud Public Edition. The field is published with business context MM_PURDOC_HEADER, and the relevant mass-change CDS views are enabled, but the field does not appear as selectable. The post asks whether extra configuration, a different business context, type or length limits, a refresh, or role changes are needed. No answer is included, and the release field was left as a template placeholder.",
+   "key_points": [
+    "Custom field YY1_ContractEngineer (Text, length 12) on business context MM_PURDOC_HEADER, published",
+    "Mass-change CDS views C_PURCNTRLCONTRMASSUPDT, C_PURCNTRLCONTITMMASSUPDT, C_PURCNTRLCONTRHIERMASSUPDT are enabled",
+    "Field still does not appear in the app",
+    "Open questions: extra app personalisation, business context suitability for central vs local contracts, type/length restrictions, refresh/activation, authorisation",
+    "Release is left as the template placeholder 'add your release'"
+   ],
+   "technical_details": [
+    "SAP S/4HANA Cloud Public Edition",
+    "Custom Fields app (Published status, User Interfaces tab)",
+    "Business context MM_PURDOC_HEADER",
+    "C_PURCNTRLCONTRMASSUPDT",
+    "C_PURCNTRLCONTITMMASSUPDT",
+    "C_PURCNTRLCONTRHIERMASSUPDT",
+    "Disabled PO views C_PURCHASEORDERMASSUPDATE and C_PURCHASEORDERITEMMASSUPDATE (stated as expected)"
+   ],
+   "why_it_matters": "Custom fields in Public Edition are only usable in standard apps when they are exposed through the app's CDS and UI configuration. Mass-change support is a separate step from publishing. The question covers this gap well.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Why a published custom header field on purchase contracts does not appear as an updatable field in the Mass Changes to Purchase Contracts app, and what extra configuration or conditions are required.",
+   "teaching_angle": "Use it to teach key-user extensibility in Public Edition: the difference between publishing a field, enabling a CDS view for an app, and the field actually being exposed by that app's mass-change view. Ask learners to check the view's extension and the app's field list step by step, and to explain why a Purchase Order view can be disabled while a contract view is enabled.",
+   "quality": 3
+  },
+  "15": {
+   "summary": "The question asks whether a production order can be set to TECO (technically complete) through the API_PRODUCTION_ORDER API, which is already used to create production orders. The title says \"cancel\", while the body asks about TECO, so the intent is unclear. No answer is included in the post.",
+   "key_points": [
+    "Current use: API_PRODUCTION_ORDER to create production orders",
+    "Goal: set status to TECO via API",
+    "Title says cancel, body says TECO, which is a mismatch",
+    "No answer or release information given"
+   ],
+   "technical_details": [
+    "API_PRODUCTION_ORDER (create use is stated; status change not confirmed)",
+    "System status TECO (technically complete)"
+   ],
+   "why_it_matters": "Confusing a status change with cancellation or deletion can cause real data problems in production planning. Teams need to confirm whether a given API exposes a status-change action at all, rather than assuming it does.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Whether the production order API can change a production order's status to TECO, and what the correct way is to close or cancel a production order programmatically.",
+   "teaching_angle": "Use it to teach checking API capabilities before design: read the API's actions and entity set in the API Hub or the service's metadata, and do not assume that create and status change are in the same service. Ask learners to separate TECO, cancel, and delete, and to state which standard transaction or BAPI covers each. The post gives no answer, so verify this in the system.",
+   "quality": 2
+  },
+  "19": {
+   "summary": "A user on S/4HANA Public Cloud asks why the email body for the purchasing approval notification (template SWF_CRT_NOTIFY_RECIPIENTS) lacks fields such as total amount, net price, plant and material. They ask whether this is standard behaviour and how other data can be added to the email body. The post contains no answer or replies, so it is a question only.",
+   "key_points": [
+    "Template in use is SWF_CRT_NOTIFY_RECIPIENTS, which is sent to approvers when a purchasing document is created.",
+    "Missing fields named: total amount, net price, plant, material.",
+    "Core question: is the limited data standard, and can additional fields be added to the email body?",
+    "The post does not say which workflow, task or container elements are currently passed to the notification."
+   ],
+   "technical_details": [
+    "SWF_CRT_NOTIFY_RECIPIENTS (email/notification template named in the post)",
+    "S/4HANA Public Cloud (deployment context stated)",
+    "Fields the user expects but cannot find: total amount, net price, plant, material"
+   ],
+   "why_it_matters": "Approval emails that lack amount, plant and material force approvers to log in to act, which defeats the purpose of notifications. The question touches a real limitation: the data available in a standard workflow notification depends on what the workflow container exposes, and Public Cloud restricts how standard content can be changed.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How do I get additional purchasing document data (amount, net price, plant, material) into the approver notification email, given that the standard template SWF_CRT_NOTIFY_RECIPIENTS does not provide it?",
+   "teaching_angle": "Use it to teach how SAP Business Workflow notifications get their data: template text uses placeholders that resolve against workflow container elements, so the data must be passed into the container at task start. Ask trainees to work out the options in a Public Cloud context (where modifying standard objects is restricted): extending the workflow container and binding it, using a custom notification or template via the side-by-side or in-app extensibility options, or building the mail body from a custom function module or class. Note that the post gives no answer, so trainees should verify these options against current SAP documentation before relying on them.",
+   "quality": 2
+  },
+  "1": {
+   "summary": "A short blog teaser about tracing a battery recall with SAP HANA Graph and testing an AI agent's remedy plan. The text provided is only the subtitle; the body is not included, so no graph model, queries, agent design or results can be assessed.",
+   "key_points": [
+    "Scenario: tracing a battery recall through a supply chain using SAP HANA Graph.",
+    "Second part: testing an AI agent's proposed remedy plan.",
+    "Only the summary line is given, so technical content cannot be verified."
+   ],
+   "technical_details": [
+    "SAP HANA Graph (named in the teaser)",
+    "AI agent (no framework, model or tooling named in the teaser)"
+   ],
+   "why_it_matters": "Graph traversal for recall tracing (which batches, which plants, which customers) is a practical HANA use case, and it is a good fit for showing graph queries next to ABAP-side data. But the teaser alone gives nothing concrete to act on.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Useful as a motivating example for teaching graph data models versus relational joins on supply-chain data (batch, plant, delivery, customer). Ask trainees to sketch the vertices and edges for a recall before reading the full post. Read the full article before using it in class, as the teaser does not show any code.",
+   "quality": 2
+  },
+  "12": {
+   "summary": "A blog introduction arguing that AI product or agent development should put evaluations (evals) early rather than at the end of the process. The claim is that deterministic software tolerates late testing, but agentic AI built with coding agents does not, and that the cost shows up in production. Only the opening paragraph is provided, so no specific eval method, tooling or example is shown.",
+   "key_points": [
+    "Thesis: evals are usually placed last in development frameworks, which is wrong for agentic AI.",
+    "Deterministic software can recover from late testing; agentic systems built with coding agents cannot as easily.",
+    "Claimed cost of late evals appears in production rather than in code review.",
+    "No concrete eval framework, metrics, or example is given in the provided text."
+   ],
+   "technical_details": [
+    "No specific tools, APIs, frameworks or SAP objects are named in the provided text.",
+    "Context implied: coding agents generating code for agentic AI systems."
+   ],
+   "why_it_matters": "The principle is sound and relevant to SAP teams building AI agents on BTP or in ABAP, where non-deterministic outputs make review-only validation weak. However, the provided text is a thesis statement with no evidence.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use as a discussion prompt: contrast a unit test on a deterministic ABAP method with an evaluation set for an LLM-based agent step (expected outcomes, scoring, regression runs). Ask trainees to define what an eval for an ABAP-triggered agent action would check before any code is written. Check the full post for actual eval examples before treating its advice as tested practice.",
+   "quality": 2
+  }
+ },
+ "digest": {
+  "headline": "Thin day: ABAP AI SDK setup details for ABAP Cloud, plus community questions on Public Cloud extensibility and APIs; most items are excerpts only.",
+  "overview": "The one item with concrete ABAP content is the ABAP AI SDK post (ref 9). It names the communication scenario SAP_COM_0A69, the ISLM layer, and a short Completion API call through cl_aic_islm_compl_api_factory. A second ABAP post (ref 14) covers tracing a screen value, the Net Amount in WB2R_SV, that is held in a runtime-filled structure and not in a table.\n\nThe rest is mostly excerpts or unanswered forum questions. Three of them concern S/4HANA Public Cloud: a published custom field that does not show in a mass-change app, an approval email with too little data, and whether the production order API can set TECO. None has an answer, so treat them as lab prompts and check the behaviour in a system. The BTP and AI posts (refs 2, 17, 1, 12) show only abstracts and cannot be assessed for technical detail.",
+  "top_stories": [
+   {
+    "title": "ABAP AI SDK: calling LLMs from ABAP Cloud via ISLM and SAP AI Core",
+    "summary": "Part two of a series on embedded AI in ABAP Cloud. The ABAP AI SDK reaches the Generative AI Hub in SAP AI Core through ISLM. Setup requires an SAP AI Core subscription, a service instance and key, and a communication arrangement for SAP_COM_0A69 (customer-managed outbound). The Completion API call is cl_aic_islm_compl_api_factory=>get( )->create_instance( scenario ), then execute_for_string, then get_completion( ). A Prompt Library API uses ISLM-managed prompt templates, and orchestration adds data masking and document grounding. It is listed for S/4HANA Cloud Private Edition/On-Premise, Public Edition and the ABAP environment. The excerpt ends mid-orchestration.",
+    "why_it_matters": "It shows the ABAP-side call pattern and the prerequisites that are most likely to block a project: entitlement, service key, communication arrangement and ISLM scenario.",
+    "priority": 1,
+    "refs": [
+     9
+    ]
+   },
+   {
+    "title": "Public Cloud extensibility gaps: custom field not in mass-change app, approval email lacks data",
+    "summary": "Two unanswered questions. First, custom field YY1_ContractEngineer (published on MM_PURDOC_HEADER) does not appear in Mass Changes to Purchase Contracts, although the three mass-change CDS views (C_PURCNTRLCONTRMASSUPDT, C_PURCNTRLCONTITMMASSUPDT, C_PURCNTRLCONTRHIERMASSUPDT) are enabled. Second, the approval email from SWF_CRT_NOTIFY_RECIPIENTS has no total amount, net price, plant or material.",
+    "why_it_matters": "Both show that in Public Cloud, publishing a field or using standard content does not mean an app or notification exposes the data. Neither post has an answer, so verify in a system.",
+    "priority": 2,
+    "refs": [
+     0,
+     19
+    ]
+   },
+   {
+    "title": "Tracing a value that is in no table: WB2R_SV",
+    "summary": "The author could not find a table behind the Net Amount in WB2R_SV. The value sits in a structure that settlement logic fills at runtime. The post follows it from the list to the populating method and ends with three questions to ask before promising a report; those are not in the excerpt.",
+    "why_it_matters": "Computed values are common in standard apps. Tracing from UI to populating method is a reusable debugging skill before building a Fiori Elements report.",
+    "priority": 2,
+    "refs": [
+     14
+    ]
+   },
+   {
+    "title": "Production order API: can it set TECO?",
+    "summary": "The asker uses API_PRODUCTION_ORDER to create orders and wants to set TECO. The title says cancel while the body says TECO. No answer, and the API's status-change support is not confirmed.",
+    "why_it_matters": "TECO, cancel and delete are different operations. Check the API's metadata before design.",
+    "priority": 3,
+    "refs": [
+     15
+    ]
+   },
+   {
+    "title": "BTP and AI posts: CAP with XSUAA, agents calling OData without MCP, evals early",
+    "summary": "Short excerpts: securing a CAP service with XSUAA, an approuter and two role collections on the BTP trial (ref 2); a Pydantic AI multi-agent app calling OData through a curated catalogue with read-only fields and audited writes (ref 17); an argument to put evals early for agentic AI (ref 12); and a HANA Graph battery-recall teaser (ref 1).",
+    "why_it_matters": "Useful as discussion topics, but no configuration, code or results are visible, so none can be verified.",
+    "priority": 3,
+    "refs": [
+     2,
+     17,
+     12,
+     1
+    ]
+   }
+  ],
+  "releases": [],
+  "deep_dives": [
+   {
+    "title": "Calling an LLM from ABAP Cloud with the ABAP AI SDK",
+    "explanation": "The post describes the ABAP AI SDK as a thin layer over ISLM (Intelligent Scenario Lifecycle Management), which manages lifecycle, connectivity, deployment and prompts. ISLM connects to the Generative AI Hub in SAP AI Core, so no hand-written HTTP or JSON is needed.\n\nPrerequisites come first: subscribe to SAP AI Core, create a service instance and service key, and create a communication arrangement for scenario `SAP_COM_0A69` (customer-managed outbound). Then an ISLM scenario, for example `Z_MY_SCENARIO`, must exist.\n\nThe call has three steps: `cl_aic_islm_compl_api_factory=>get( )->create_instance( 'Z_MY_SCENARIO' )` returns the API object, `execute_for_string( ... )` sends the prompt, and `get_completion( )` on the result returns the text. The excerpt does not show full signatures, so check them in ADT.\n\nThe Prompt Library API uses ISLM-managed prompt templates with parameters, which moves prompt text out of code. Orchestration through the SAP AI Core Orchestration Service adds data masking and document grounding. The post says the SDK is available in S/4HANA Cloud Private Edition/On-Premise, Public Edition and the ABAP environment; the post's vendor-neutrality claim should be tested in a real system.",
+    "key_concepts": [
+     "ABAP AI SDK",
+     "ISLM",
+     "SAP_COM_0A69",
+     "cl_aic_islm_compl_api_factory",
+     "Prompt Library API",
+     "Orchestration: data masking, grounding"
+    ],
+    "refs": [
+     9
+    ]
+   },
+   {
+    "title": "Finding the source of a computed screen value",
+    "explanation": "The WB2R_SV post shows that a number on screen need not be stored in any table. Here the Net Amount is held in a structure that the settlement logic fills at runtime, so a table search finds nothing.\n\nThe approach described is to start at the list and follow the data to the method that populates the structure. In practice this means debugging from the UI, setting breakpoints at the output, and using where-used on the structure. The excerpt does not name the specific tools used, so these are general techniques.\n\nFor a Fiori Elements report this matters: a CDS view over tables cannot reproduce the value unless the calculation is reproduced or the logic is called. The author's three pre-report questions are not in the excerpt, so read the full post for them.",
+    "key_concepts": [
+     "Runtime-filled structures",
+     "Tracing from UI to method",
+     "Where-used and debugging",
+     "Report source validation"
+    ],
+    "refs": [
+     14
+    ]
+   },
+   {
+    "title": "Why a published custom field is not exposed in a standard Public Cloud app",
+    "explanation": "The question describes field YY1_ContractEngineer (Text, 12) published on business context MM_PURDOC_HEADER. The mass-change views C_PURCNTRLCONTRMASSUPDT, C_PURCNTRLCONTITMMASSUPDT and C_PURCNTRLCONTRHIERMASSUPDT are enabled, yet the field is not selectable in Mass Changes to Purchase Contracts.\n\nThe post suggests that publication and exposure are separate steps. A field must be in the app's relevant CDS views and be offered by the app's own field configuration. The asker lists possible causes: business context fit for central versus local contracts, type or length limits, activation or refresh, and authorisations. No answer is given.\n\nA practical check is to confirm the field appears in the Custom Fields app's User Interfaces tab for the right app, then check whether the mass-change view lists it as an extension element. Treat this as a diagnostic plan, not a confirmed fix.",
+    "key_concepts": [
+     "Key-user extensibility",
+     "Business context",
+     "Mass-change CDS views",
+     "Publish vs expose"
+    ],
+    "refs": [
+     0
+    ]
+   }
+  ],
+  "trending_problems": [
+   {
+    "theme": "Public Cloud extensibility limits",
+    "description": "Developers hit cases where a published custom field is not usable in a standard app (ref 0) or where standard notification content is too sparse (ref 19).",
+    "teaching_tip": "Teach the chain: define the field, publish it, expose it in the right CDS views, then make the app or template consume it. Have learners check each link.",
+    "refs": [
+     0,
+     19
+    ]
+   },
+   {
+    "theme": "Unclear API capability",
+    "description": "The production order question mixes cancel and TECO and assumes the create API also changes status (ref 15).",
+    "teaching_tip": "Before design, read the service metadata for actions and entity sets, and name the exact status operation wanted.",
+    "refs": [
+     15
+    ]
+   },
+   {
+    "theme": "Values with no table behind them",
+    "description": "Screen figures can come from runtime structures, not tables (ref 14).",
+    "teaching_tip": "Run a tracing exercise from UI to the populating method.",
+    "refs": [
+     14
+    ]
+   }
+  ],
+  "post_drafts": [
+   {
+    "title": "ABAP AI SDK setup checklist",
+    "text": "*Calling an LLM from ABAP Cloud: what you need first*\n\nThe ABAP AI SDK goes through ISLM to SAP AI Core.\n\nPrerequisites:\n1. SAP AI Core subscription\n2. Service instance + key\n3. Communication arrangement for *SAP_COM_0A69*\n4. An ISLM scenario\n\nThen the call:\n`cl_aic_islm_compl_api_factory=>get( )->create_instance( 'Z_MY_SCENARIO' )`\n-> `execute_for_string` -> `get_completion( )`\n\nMost projects will stall at the setup, not the code.\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/business-ai-in-abap-cloud-embedding-ai-with-the-abap-ai-sdk/ba-p/14501649"
+   },
+   {
+    "title": "Number on screen, no table",
+    "text": "*Can't find the table for a value on screen? Maybe there isn't one.*\n\nThe Net Amount in WB2R_SV is held in a structure filled at runtime by settlement logic.\n\nSo before promising a Fiori Elements report:\n- trace from the UI to the method that fills the value\n- check whether it is stored or computed\n\nRead the author's three pre-report questions in the full post.\n\nhttps://community.sap.com/t5/abap-blog-posts/that-number-on-the-sap-screen-may-not-live-in-any-table-a-wb2r-sv-story/ba-p/14505998"
+   },
+   {
+    "title": "Published is not exposed",
+    "text": "*Custom field published but missing in a standard app?*\n\nOpen question: YY1_ContractEngineer is published on MM_PURDOC_HEADER and the mass-change CDS views are enabled, yet it does not show in Mass Changes to Purchase Contracts.\n\nNo answer yet. Worth checking:\n- the right business context\n- the app's own view/field exposure\n- activation and authorisations\n\nHave you seen this? Reply below.\n\nhttps://community.sap.com/t5/supply-chain-management-q-a/custom-header-field-not-available-in-mass-changes-to-purchase-contracts-app/qaq-p/14506159"
+   }
+  ],
+  "interview_questions": [
+   {
+    "question": "What do you need in place before an ABAP Cloud program can call an LLM through the ABAP AI SDK?",
+    "answer": "The SDK reaches the Generative AI Hub in SAP AI Core through ISLM. First, subscribe to SAP AI Core, create a service instance and a service key. Next, create a communication arrangement for scenario SAP_COM_0A69, which is customer-managed outbound. Then define an ISLM scenario. In code, cl_aic_islm_compl_api_factory=>get( )->create_instance( ) returns the completion API, execute_for_string sends the prompt and get_completion( ) reads the result. Because the setup spans BTP and the ABAP system, connectivity failures are the usual blocker, so error handling should be added around the call.",
+    "level": "Mid-level",
+    "refs": [
+     9
+    ]
+   },
+   {
+    "question": "A user asks for a Fiori Elements report on a screen value for which you find no table. How do you proceed?",
+    "answer": "I would not assume the value is stored. Many values are computed at runtime and held in structures filled by the application logic, as in the WB2R_SV Net Amount case. I would debug from the UI, find the structure behind the field, and use where-used to locate the method that fills it. Then I decide whether to reuse that logic, reproduce the calculation in a CDS view, or persist results. I would also confirm the calculation depends on context, such as settlement runs, before committing to a report. Only then do I estimate and promise the delivery.",
+    "level": "Senior",
+    "refs": [
+     14
+    ]
+   },
+   {
+    "question": "In S/4HANA Cloud Public Edition a published custom field does not appear in a standard mass-change app. How would you analyse it?",
+    "answer": "Publishing a field makes it available in the business context, but an app only shows it if its relevant CDS views and field configuration expose it. I would check the Custom Fields app, in particular the User Interfaces tab and the status. I would then check that the mass-change views (here for contracts C_PURCNTRLCONTRMASSUPDT and related) include the extension. I would also test the business context for central versus local contracts, and field type and length restrictions. Finally I would check activation and authorisation roles. The source question has no confirmed answer, so I would confirm with SAP documentation or a support incident.",
+    "level": "Architect",
+    "refs": [
+     0
+    ]
+   }
+  ],
+  "class_idea": {
+   "title": "Tracing and exposing data in Public Cloud and ABAP Cloud: from screen value to API",
+   "why_now": "Today's items show developers stuck on where a value comes from (ref 14), why a field is not exposed (ref 0), and what an API can do (ref 15), plus a new ABAP AI SDK path (ref 9).",
+   "outline": [
+    "Stored vs computed values: tracing from UI to populating method",
+    "Debugging and where-used techniques in ADT",
+    "Publishing a custom field vs exposing it in app CDS views",
+    "Reading API metadata: actions vs entity sets",
+    "ABAP AI SDK prerequisites and the three-step call",
+    "Writing the questions to ask before committing to a report"
+   ],
+   "exercise": "Give each student a screen value with no obvious table. In ADT, trace it to the method that fills it and document whether it is stored or computed. Then read the metadata of API_PRODUCTION_ORDER and write down which operations it exposes.",
+   "refs": [
+    14,
+    0,
+    15,
+    9
+   ]
+  },
+  "whatsapp_highlights": "ABAP AI SDK: SAP_COM_0A69 + ISLM + 3-step Completion call for ABAP Cloud | WB2R_SV Net Amount lives in a runtime structure, not a table | Published custom field missing in Purchase Contracts mass-change app (open question) | Can API_PRODUCTION_ORDER set TECO? Check metadata first"
+ }
+}
