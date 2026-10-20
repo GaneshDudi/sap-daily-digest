@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-20",
+  "label": "Tuesday, 20 October 2026",
+  "headline": "ADT gets deeper MCP and VS Code support, ABAP AI SDK shows a concrete ABAP Cloud LLM call, and a forum thread clarifies range copying versus FOR projection.",
+  "items": 77,
+  "deep": 21
+ },
+ {
   "date": "2026-10-19",
   "label": "Monday, 19 October 2026",
   "headline": "Thin day: ABAP AI SDK setup details for ABAP Cloud, plus community questions on Public Cloud extensibility and APIs; most items are excerpts only.",
