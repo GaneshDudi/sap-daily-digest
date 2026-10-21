@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-21",
+  "label": "Wednesday, 21 October 2026",
+  "headline": "A thin day: MCP-for-SAP posts dominate, with one open SD userexit ordering problem and one CAP draft-activation hang on HANA Cloud.",
+  "items": 54,
+  "deep": 10
+ },
+ {
   "date": "2026-10-20",
   "label": "Tuesday, 20 October 2026",
   "headline": "ADT gets deeper MCP and VS Code support, ABAP AI SDK shows a concrete ABAP Cloud LLM call, and a forum thread clarifies range copying versus FOR projection.",
