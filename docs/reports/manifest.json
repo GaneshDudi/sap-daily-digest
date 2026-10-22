@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-22",
+  "label": "Thursday, 22 October 2026",
+  "headline": "Quiet day for core ABAP: classic screen enhancement questions, eDocument BAdIs for Cloud Public Edition, and several AI/MCP posts with little technical detail.",
+  "items": 136,
+  "deep": 24
+ },
+ {
   "date": "2026-10-21",
   "label": "Wednesday, 21 October 2026",
   "headline": "A thin day: MCP-for-SAP posts dominate, with one open SD userexit ordering problem and one CAP draft-activation hang on HANA Cloud.",
