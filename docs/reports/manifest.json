@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-23",
+  "label": "Friday, 23 October 2026",
+  "headline": "A CDS UNION-in-LEFT-OUTER-JOIN performance trap, MCP-for-ABAP design lessons, and open RAP draft-takeover and CPI encoding questions.",
+  "items": 139,
+  "deep": 30
+ },
+ {
   "date": "2026-10-22",
   "label": "Thursday, 22 October 2026",
   "headline": "Quiet day for core ABAP: classic screen enhancement questions, eDocument BAdIs for Cloud Public Edition, and several AI/MCP posts with little technical detail.",
