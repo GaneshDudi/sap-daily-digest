@@ -1252,5 +1252,115 @@
   "feed": "SAP Community discussions",
   "kind": "discussion",
   "text": "In RAP with draft handling (similar to the standard Manage Purchase Orders app), how can a draft that is currently owned by one user be made editable by another user? e.g. when the draft owner got ill / left the organization etc.... \n By default, RAP draft instances are locked and owned by the user who created them. Is there a standard RAP mechanism, configuration, or extension pattern that allows another authorized user to take over, share, or continue editing an existing draft? Alternatively, how is this requirement handled in standard SAP Fiori apps such as Manage Purchase Orders ? \n As per the ABAP RAP documentation, in RAP (ABAP RESTful Application Programming Model), draft handling offers two main modes: exclusive drafts and collaborative drafts. \n\n Exclusive Draft Handling: Drafts are locked exclusively by the user who created them. Only the draft owner can modify, activate, or discard the draft. This means no other user can edit another user's drafts. \n\n Collaborative Draft Handling: Multiple users, once authorized and invited with the \"Share\" draft action, can concurrently edit the same draft. \n In the latter approach, its a real pain for End users to keep inviting other users. Is there an alternative to enable Draft-handling by multiple users like the way 'Manage Purchase Order' app does? \n\n Any guidance, best practices, or examples would be appreciated."
+ },
+ {
+  "key": "6dd509aecabf4c41",
+  "title": "SAP Dynamic Forms 2606 Now Available – What's New?",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/sap-dynamic-forms-2606-now-available-what-s-new/ba-p/14509488",
+  "published": "2026-10-22T21:50:25+00:00",
+  "author": "Alba_Montiel_Mi",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "The 2606 release of SAP Dynamic Forms is here — and it's packed with enhancements designed to help organizations deploy forms faster, support field teams offline, and integrate more deeply with SAP maintenance processes. From AI-powered PDF migration that eliminates manual form recreation, to fully offline attachment support for field technicians, to new GCP data center regions and enhanced notification creation from form data — this release moves the needle on both usability and reach. Read on to explore everything that's new in 2606."
+ },
+ {
+  "key": "16b81b3798d37dfe",
+  "title": "SAP Service and Asset Manager 2511.3 Now Available – What's New?",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/sap-service-and-asset-manager-2511-3-now-available-what-s-new/ba-p/14509482",
+  "published": "2026-10-22T21:50:17+00:00",
+  "author": "Alba_Montiel_Mi",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP Service and Asset Manager 2511.3 is now available. Real-time work progress tracking, technician briefing agents, AI enhancements and audit trails, long text in inspection checklists, Android walkthroughs, and more — here's what's new."
+ },
+ {
+  "key": "d6642065558d1796",
+  "title": "Request suport on SAP CALM with Dynatrace monitoring application Integration",
+  "link": "https://community.sap.com/t5/technology-q-a/request-suport-on-sap-calm-with-dynatrace-monitoring-application/qaq-p/14509580",
+  "published": "2026-10-23T01:16:00+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Team, \n We are currently using several SAP BTP applications integrated with SAP Cloud ALM (CALM) for monitoring purposes. As Dynatrace is our enterprise end-to-end observability platform, we need to route/forward CALM alerts (specifically for BTP services) into Dynatrace. \n Could you please confirm if there is a supported way to push CALM alerts or logs into Dynatrace, particularly via a Webhook integration? If this is possible, kindly share any documentation or setup guides to help us achieve this. Our objective is to centralize and view all CALM alert logs within the Dynatrace platform. \n Thanks！ \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+ },
+ {
+  "key": "5b80b7b8ddf4f107",
+  "title": "Cross-company stock transfer: Changed Condition P101 no copied to intercompany bill",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/cross-company-stock-transfer-changed-condition-p101-no-copied-to/qaq-p/14509564",
+  "published": "2026-10-22T21:44:12+00:00",
+  "author": "jens_feldkamp1",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Good evening \n we do cross company stock transfer orders (STO). The process works just fine, but we came along one strange thing: \n Condition type P101 is used in the STO and then copied to the intercompany bill. Great! \n BUT: If we change the P101-price in the STO after goods issue has been posted, the P101-condition in the bill will still contain the old price, not the changed one from the STO. \n Now, I would like to know: \n How exactly does SAP determine the price in P101 in the bill? Obviously it is NOT taken from the STO. \n How exactly can I make sure that the price from the STO is copied to the bill, not some old price? It would be highly appreciated if someone could point me to a fitting user exit. \n Any ideas? \n\n Thank you \n Jens"
+ },
+ {
+  "key": "972ec6b982db7de2",
+  "title": "Query regarding Intercompany (IC) Clearing Account opening balance changing month-on-month",
+  "link": "https://community.sap.com/t5/financial-management-q-a/query-regarding-intercompany-ic-clearing-account-opening-balance-changing/qaq-p/14509369",
+  "published": "2026-10-22T14:23:36+00:00",
+  "author": "Vishruthp",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear SAP Community, \n ​I have a question regarding Intercompany (IC) accounting and consolidation. \n ​In our consolidation unit, we noticed that the opening balance of the IC clearing account changes month-on-month . As per our understanding, once a balance carry-forward (BCF) is executed, the closing balance of the previous period should seamlessly roll over and remain consistent as the opening balance for the new period, unless a new posting or adjustment is made. \n ​Could you please help clarify: \n ​What typically causes an IC clearing account's opening balance to fluctuate or change across periods despite no new direct manual postings? \n ​Are there specific configurations or automated tasks in SAP/Consolidation tools (like group currency translation, automatic elimination entries, or delta calculations) that might cause these dynamic shifts during the carry-forward process? \n ​Any guidance or best practices to ensure consistency in our IC opening balances would be greatly appreciated."
+ },
+ {
+  "key": "0e1d27020ba7560f",
+  "title": "Is the integration with Korn Ferry available for use in SAP SuccessFactors via the Package Manager?",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/is-the-integration-with-korn-ferry-available-for-use-in-sap-successfactors/qaq-p/14508985",
+  "published": "2026-10-22T07:48:49+00:00",
+  "author": "capgeminivera",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Since Korn Ferry was partnering with Sap to have Korn Ferry contents as part of Job Profile Builder / Center of Capabilities. \n SAP SuccessFactors Job Profile Builder (JPB) is available as a Foundation tool to create and maintain job profiles associated to job roles. Job profile content can be used when creating job requisitions or considering future roles in Career Development Planning. \n It was announced in SAP Community (in July 2024) that there would be a certified integration of Korn Ferry content into SuccessFactors, and it should be possible to make use it by a productized import mechanism via the Package Manager. \n Is this feature now available for SuccessFactors? \n Thanks in advance for any response."
+ },
+ {
+  "key": "055da3135d97b59c",
+  "title": "Kritische Sicherheitslücke PHP2Shell / SAP CALM?",
+  "link": "https://community.sap.com/t5/product-lifecycle-management-q-a/kritische-sicherheitsl%C3%BCcke-php2shell-sap-calm/qaq-p/14508951",
+  "published": "2026-10-22T07:14:29+00:00",
+  "author": "LUZSTELLA_CHAVEZOSORIO",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Frage: Hat SAP Cloud ALM PHP Komponenten welche die PHP Sicherheitslücke PHP2Shell zugeordnet werden könnte?"
+ },
+ {
+  "key": "201bac9d11bc902d",
+  "title": "Standard FM not working to change entries in O4_TIGER transaction",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/standard-fm-not-working-to-change-entries-in-o4-tiger-transaction/qaq-p/14508300",
+  "published": "2026-10-21T12:13:13+00:00",
+  "author": "kiran-kk_2026",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "We are using this BAPI - OIIC_DIP_CREATE_TANKDIPS to change entries in O4_TIGER transaction. Though we are getting the success message (Please see the attached screenshot) but this FM is not working for change tank dip. which should be the correct change BAPI that needs to be used for updating entries in O4_TIGER?"
+ },
+ {
+  "key": "915f4ff2e512492e",
+  "title": "In SAP-Query (SQ00) funktioniert nach S4-Migration die Berichtsschnittstelle nicht mehr",
+  "link": "https://community.sap.com/t5/technology-q-a/in-sap-query-sq00-funktioniert-nach-s4-migration-die-berichtsschnittstelle/qaq-p/14508262",
+  "published": "2026-10-21T11:31:39+00:00",
+  "author": "michael_haueiss",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Es exisiert in SAP-Query eine Auswerung zu Anlagen (ANLA, ANLZ), die Ausgabe enthält neben weiteren Feldern auch den Buchungskreis Bukrs, die Anlagenhauptnummer ANLN1 und die Anlagenunternummer ANLN2. Über die Berichtszuordnung des Queries ist doe TA AS03 zugeordnet. Bei Doppelklick auf eine Listzeile wird die TA AS03 gestartet, aber nicht mehr die Werte o.g. 3 Felder - Felder sind leer. Vor S4-Migration wurden die Feldinhalte der Listzeile übergeben und die TA AS03 zur Anzeige der Anlage gebracht. Diese Erscheinung tritt auch im Entwicklungssystem TP1 auf."
+ },
+ {
+  "key": "a3482367f84c1694",
+  "title": "Change Encoding type for UTF-8 to ISO-8859-1 in Integration Suite",
+  "link": "https://community.sap.com/t5/integration-forum/change-encoding-type-for-utf-8-to-iso-8859-1-in-integration-suite/m-p/14509510#M369",
+  "published": "2026-10-22T17:55:32+00:00",
+  "author": "JohnColtrane",
+  "tags": [],
+  "feed": "SAP Community discussions",
+  "kind": "discussion",
+  "text": "Scenario is as follows: \n My company needs to SFTP a file with ISO-8859-1 encoding and character set to an external vendor. The SAP CPI produces the file with UTF-8 encoding and character set. I have researched various options to make this conversion. I have tried a groovy script step that changes the encoding to ISO-8859-1, but the output file is still UTF-8. In addition, I tried a XSL conversion step, but it did not work. I found the message board where another person had tried a similar approach, and unfortunately the same results. However, one person that responded to that particular post mentioned that any script step is not actually converting encoding, but reinterpreting the same string. This individual mentioned in CPI, encoding is handled at the adapter level. So I tried setting the header property in the SSF adapter - did not work, tried the same approach for the SFTP adapter - did not work. \n Is there a method that one can use in the SAP CPI to convert a message from UTF-8 to ISO-8859-1? \n Thanks in advance."
  }
 ]
