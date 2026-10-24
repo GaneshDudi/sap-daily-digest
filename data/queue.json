@@ -42,5 +42,16 @@
   "feed": "SAP Community questions",
   "kind": "question",
   "text": "Hi Expert, \n We activated the External sampling option in IOT4. System automatically split the QTy into sampling qty and non-sampling qty. \n As per client requirement, non-sampling qty, need to move to Identification area (Interim location) and then finally move to Final Bin. \n Sampling qty (HU) should move to QA sampling station. After UD it will be send to Final bin. I think this can be achieved by standard behavior. \n Can you please share your experience or guide to map this flow. \n Thanks \n Pavan"
+ },
+ {
+  "key": "76a123a6e6cb2560",
+  "title": "iFlow Transport with Git and CI/CD – Setting Externalized Parameters with Automation Pilot",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/iflow-transport-with-git-and-ci-cd-setting-externalized-parameters-with/ba-p/14510297",
+  "published": "2026-10-24T20:25:47+00:00",
+  "author": "MioYasutake",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "This is a proof of concept for transporting iFlows with Git and CI/CD, and then setting their externalized parameters with SAP Automation Pilot."
  }
 ]
