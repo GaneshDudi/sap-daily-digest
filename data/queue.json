@@ -130,5 +130,16 @@
   "feed": "SAP Community blog posts",
   "kind": "blog",
   "text": "The previous post used CERTRULE for users with several e-mail addresses. Maintaining the exception list was a two step manual job for Basis, a certificate from the Cloud Connector and an import in CERTRULE, and 500 users took more than 20 hours. This post asks whether both steps are essential and whether they can be automated, and ends with a simple BTP app that loads a CSV file in one step through principal propagation."
+ },
+ {
+  "key": "495f0479914a53c3",
+  "title": "Agentic AI on BTP: Calling an Agent from Your UI5 App",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/agentic-ai-on-btp-calling-an-agent-from-your-ui5-app/ba-p/14510571",
+  "published": "2026-10-25T22:05:56+00:00",
+  "author": "WouterLemaire",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Sixth post in the series on my Pydantic AI multi-agent app on BTP. A UI5 app can now call one of the configured agents with two API calls, as the signed-in user, with attachments and a structured result. No new CAP app needed. With code samples."
  }
 ]
