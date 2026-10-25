@@ -1,0 +1,155 @@
+{
+ "items": [
+  {
+   "key": "486d8aa56a40ff52",
+   "title": "SAP Developer News, October 22nd, 2026",
+   "link": "https://community.sap.com/t5/developer-news/sap-developer-news-october-22nd-2026/ba-p/14509149",
+   "published": "2026-10-24T08:21:35+00:00",
+   "author": "qmacro",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "ITEMS \n\n Devtoberfest Wrap Up \n\n Devtoberfest Site https://developers.sap.com/devtoberfest \n\n Wrap Up Blog Post https://www.linkedin.com/pulse/devtoberfest-2026-wrap-developerssapcom-updates-cw42-thomas-jung-0mycc/ \n\n ABAP Development Tools for VS Code update \n\n Tooling Blog Post https://community.sap.com/t5/technology-blog-posts-by-sap/abap-development-tools-for-visual-studio-code-version-1-2-released/ba-p/14496347 \n\n MCP Blog Post https://community.sap.com/t5/technology-blog-posts-by-sap/abap-development-tools-mcp-server-major-update-available/ba-p/14496064 \n\n Talk: InnerSource in the age of AI at the InnerSource Summit 2026 \n\n InnerSource Summit https://innersourcecommons.org/events/isc-2026/ \n\n Guilherme’s announcement https://www.linkedin.com/posts/dellagustin_hey-all-on-november-12th-ill-be-speaking-share-7511431674526617600-itoI/ \n\n CHAPTER TITLES \n\n 00:00 Intro \n 00:07 Devtoberfest 2026 Wrap Up \n 01:30 ABAP Development Tools for VS Code update \n 03:22 Talk: InnerSource in the age of AI at the InnerSource Summit 2026 \n\n TRANSCRIPT \n\n [Intro] \n This is the SAP Developer News for October the 22nd, 2026. \n\n [Shilpa] \n Hello, SAP community. Devtoberfest 2026 is wrapped up after four weeks of learning, coding, and community activities. This year was another huge success with 2932 participants, out of which 62 people achieved a full score, meaning you completed each and every activity, including tagging the Kasimir cat every day. we call as Nerdvana thus qualifying for the grand prize drawing 10 lucky winners will receive an all -expense paid trip to SAP TechEd next year which is happening in Spain. Community also liked the fun side of Devtoberfest by posting your favorite pets in the Petoverfest, trying out the scavenger hunt and learning a bit of CAP and MCP in the snake & ladder game. Thanks to each one of you for participating, completing the challenge, and thus making the Devtoberfest a huge success. If you have ever missed any session or you want to re-watch, all the sessions are available in SAP Developer's YouTube channel, and then the information is also available in the Devtoberfest page in the Developer Center. Now, Devtoberfest has been wrapped up, and now the attention turns into SAP TechEd, which brings a new opportunity to learn and connect with the SAP developer community. See you in Berlin. \n\n [Sheena] \n We have two exciting updates for ABAP developers, ABAP Development Tools for Visual Studio Code version 1.2 and a major update to the ABAP Development Tools MCP server. Let's start with version 1.2 of the VS Code extension. This release introduces support for 23 additional ABAP object types, expanding the range of development artifacts you can create and manage directly in VS Code. It also brings several familiar ADT capabilities to VS Code, including the Transport Organizer, ABAP Feeds, Object Version History, SQL Notebooks for executing ABAP SQL queries, and Enhanced Activation Log, and HANA Source Code Search. There's also an improved experience for configuring system destinations, making it easier to connect to your ABAP system. The second highlight is a major update to the official ABAP Development Tools MCP Server which is bundled with ADT for Eclipse and VS Code. What makes this more exciting is that the MCP Server exposes ABAP Development Tools to AI agents through the model context protocol. With the new tools, it can work with command line AI clients such as Claude Code, Github Copilot, CLI, Codex, and OpenCode without depending on external file reading and editing tools. Some additional security features included are server switchoff by default, support for system allowlist, and object editing disabled by default. In short, ABAP development is becoming more flexible by bringing modern IDE experiences and AI agents closer to the about developers' everyday workflow. Check out the latest SAP Community blog post by Thomas Ritter for more details. \n\n [DJ] \n I'd like to draw your attention to a talk from one of our colleagues here at SAP, Guillaume Dellagustin at the InnerSource Summit 2026, which is a fully virtual around the world event taking place on Thursday, the 12th of November. He is a seasoned InnerSource Officer and his session is titled Inner Source in the Age of AI Challenges and Opportunities. Now, the questions he's raising in this talk are ones I suspect a lot of us are already wrestling with. Everyone can generate their own solutions now, so does that mean reuse is dead? Well, the bar for contributions to other projects has been lowered, of course, But what does that mean for people maintaining those projects? Guilherme will cover how AI can impact the collaboration style that InnerSource prescribes and share ideas on how to navigate this terrain. The summit is free to attend and runs continuously across every time zone. So wherever you are in the world, there's no excuse to miss it. Link is in the description."
+  },
+  {
+   "key": "a64535eb927ca137",
+   "title": "Employee Network Groups (ENGs) Discovery & Registration Hub in SAP SuccessFactors",
+   "link": "https://community.sap.com/t5/human-capital-management-q-a/employee-network-groups-engs-discovery-amp-registration-hub-in-sap/qaq-p/14510173",
+   "published": "2026-10-24T10:29:17+00:00",
+   "author": "Xiaoying_Zhang",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "--- \n Background \n SAP has a rich ecosystem of Employee Network Groups (ENGs) — both globally recognized networks like Business Women's Network, and locally active communities. Currently, employees have no centralized, easy-to-find place \n within SuccessFactors to discover these groups, understand what they stand for, or join them. \n Likewise, ENG leaders have no standard channel to promote their community and attract interested \n members. \n The Ask \n We would like to propose a dedicated ENG Discovery & Engagement Hub integrated into \n SuccessFactors, where: \n 1. Employees can easily find communities they care about \n - Browse and search all available ENGs (global and local) \n - View each ENG's mission, focus area, and contact information \n - Express interest or join directly within the platform \n 2. ENG leaders can register and promote their community \n - Submit and manage their ENG profile (name, description, region, focus, contact) \n - Post upcoming events or calls-to-action to attract new members \n - Reach employees who may not otherwise discover them \n Why SuccessFactors \n SuccessFactors is where employees already go for career development, learning, and people-related \n actions. Embedding ENG discovery here creates a natural connection between professional growth \n and community belonging — making it easy for every employee to find their people, not just those \n who already know where to look. \n Expected Value \n - Increases visibility and reach of both global and local ENGs \n - Lowers the barrier for employees to find and join communities \n - Supports SAP's inclusion, belonging, and employee engagement goals \n - Gives ENG leaders a legitimate, supported channel to grow their communities \n Suggested Integration Approach \n A dedicated page or section within SuccessFactors (e.g., under the \"People\" or \"Opportunities\" \n navigation), with a searchable directory of ENGs, self-service registration for ENG leaders, and \n a simple expression-of-interest or join flow for employees."
+  },
+  {
+   "key": "5141f38579286ca4",
+   "title": "Quality Stock movement to another storage location",
+   "link": "https://community.sap.com/t5/supply-chain-management-q-a/quality-stock-movement-to-another-storage-location/qaq-p/14510170",
+   "published": "2026-10-24T09:35:41+00:00",
+   "author": "winpavan90",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Expert, \n We have Production Location (Building One) and Finished Goods location (Building Two) as EWM managed storage location. After production, Finished Goods with HU are going to move to Finished Goods location. Due to transport of goods by truck (documentation required), we are planning do the Stock transfer order but as inspection lot is not clear (means stock is still in Q3) and stock is moved to Finished Goods location, STO is not feasible solution. \n Can you please guide how to handle this case. \n Thank you in Advance. \n Thanks \n Pavan"
+  },
+  {
+   "key": "af467240add2f4ec",
+   "title": "EWM POSC issue with External Sampling QTY",
+   "link": "https://community.sap.com/t5/supply-chain-management-q-a/ewm-posc-issue-with-external-sampling-qty/qaq-p/14510168",
+   "published": "2026-10-24T09:30:01+00:00",
+   "author": "winpavan90",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Expert, \n We activated the External sampling option in IOT4. System automatically split the QTy into sampling qty and non-sampling qty. \n As per client requirement, non-sampling qty, need to move to Identification area (Interim location) and then finally move to Final Bin. \n Sampling qty (HU) should move to QA sampling station. After UD it will be send to Final bin. I think this can be achieved by standard behavior. \n Can you please share your experience or guide to map this flow. \n Thanks \n Pavan"
+  },
+  {
+   "key": "76a123a6e6cb2560",
+   "title": "iFlow Transport with Git and CI/CD – Setting Externalized Parameters with Automation Pilot",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/iflow-transport-with-git-and-ci-cd-setting-externalized-parameters-with/ba-p/14510297",
+   "published": "2026-10-24T20:25:47+00:00",
+   "author": "MioYasutake",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "This is a proof of concept for transporting iFlows with Git and CI/CD, and then setting their externalized parameters with SAP Automation Pilot."
+  }
+ ],
+ "triage": {
+  "0": {
+   "i": 0,
+   "category": "Other",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "SAP Developer News, October 22nd, 2026"
+  },
+  "1": {
+   "i": 1,
+   "category": "Other",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "Employee Network Groups (ENGs) Discovery & Registration Hub in SAP SuccessFactors"
+  },
+  "2": {
+   "i": 2,
+   "category": "Other",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "Quality Stock movement to another storage location"
+  },
+  "3": {
+   "i": 3,
+   "category": "Other",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "EWM POSC issue with External Sampling QTY"
+  },
+  "4": {
+   "i": 4,
+   "category": "Other",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "iFlow Transport with Git and CI/CD – Setting Externalized Parameters with Automation Pilot"
+  }
+ },
+ "deep": {},
+ "digest": {
+  "headline": "Today's items, ranked (the full analysis could not run)",
+  "overview": "Your Claude plan's usage limit was reached during this morning's run, so the full analysis was skipped. Below are the highest-ranked items that were screened before the limit.",
+  "top_stories": [
+   {
+    "title": "SAP Developer News, October 22nd, 2026",
+    "summary": "SAP Developer News, October 22nd, 2026",
+    "why_it_matters": "Ranked 2/5 in screening.",
+    "priority": 2,
+    "refs": [
+     0
+    ]
+   },
+   {
+    "title": "Employee Network Groups (ENGs) Discovery & Registration Hub in SAP SuccessFactors",
+    "summary": "Employee Network Groups (ENGs) Discovery & Registration Hub in SAP SuccessFactors",
+    "why_it_matters": "Ranked 2/5 in screening.",
+    "priority": 2,
+    "refs": [
+     1
+    ]
+   },
+   {
+    "title": "Quality Stock movement to another storage location",
+    "summary": "Quality Stock movement to another storage location",
+    "why_it_matters": "Ranked 2/5 in screening.",
+    "priority": 2,
+    "refs": [
+     2
+    ]
+   },
+   {
+    "title": "EWM POSC issue with External Sampling QTY",
+    "summary": "EWM POSC issue with External Sampling QTY",
+    "why_it_matters": "Ranked 2/5 in screening.",
+    "priority": 2,
+    "refs": [
+     3
+    ]
+   },
+   {
+    "title": "iFlow Transport with Git and CI/CD – Setting Externalized Parameters with Automation Pilot",
+    "summary": "iFlow Transport with Git and CI/CD – Setting Externalized Parameters with Automation Pilot",
+    "why_it_matters": "Ranked 2/5 in screening.",
+    "priority": 2,
+    "refs": [
+     4
+    ]
+   }
+  ],
+  "releases": [],
+  "deep_dives": [],
+  "trending_problems": [],
+  "post_drafts": [],
+  "interview_questions": [],
+  "class_idea": null,
+  "whatsapp_highlights": "SAP Developer News, October 22nd, 2026 | Employee Network Groups (ENGs) Discovery & Registration Hub in SAP SuccessFactors | Quality Stock movement to another storage location | EWM POSC issue with External Sampling QTY"
+ }
+}
