@@ -119,5 +119,16 @@
   "feed": "SAP Community blog posts",
   "kind": "blog",
   "text": "This article explains how to create a custom migration object using the Legacy Transfer Migration Object Modeler (LTMOM) in SAP S/4HANA . It covers the configuration of migration structures, source fields, mapping Structure, and migration steps, Specially for uploading a resources master data for sap TM using BAPI: BAPI_RSSRVSCMB_SAVEMULTI2."
+ },
+ {
+  "key": "f7a851d9b4c1bc52",
+  "title": "Automating CERTRULE exception maintenance in S/4HANA for BTP apps",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/automating-certrule-exception-maintenance-in-s-4hana-for-btp-apps/ba-p/14510184",
+  "published": "2026-10-25T18:50:10+00:00",
+  "author": "VikasSingh2",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "The previous post used CERTRULE for users with several e-mail addresses. Maintaining the exception list was a two step manual job for Basis, a certificate from the Cloud Connector and an import in CERTRULE, and 500 users took more than 20 hours. This post asks whether both steps are essential and whether they can be automated, and ends with a simple BTP app that loads a CSV file in one step through principal propagation."
  }
 ]
