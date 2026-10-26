@@ -141,5 +141,82 @@
   "feed": "SAP Community blog posts",
   "kind": "blog",
   "text": "Sixth post in the series on my Pydantic AI multi-agent app on BTP. A UI5 app can now call one of the configured agents with two API calls, as the signed-in user, with attachments and a structured result. No new CAP app needed. With code samples."
+ },
+ {
+  "key": "e2324a3c2f3f4532",
+  "title": "On my way to my third SAP TechEd",
+  "link": "https://community.sap.com/t5/community-corner-blog-posts/on-my-way-to-my-third-sap-teched/ba-p/14510542",
+  "published": "2026-10-26T03:14:19+00:00",
+  "author": "patty_1982",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Packing for my third SAP TechEd with a different spirit: a year of Joule, AI Core, Document Grounding and identity integration, and lots of lessons I’m happy to share."
+ },
+ {
+  "key": "7fc0ebbedd3306ed",
+  "title": "S4/HANA Cloud Private Edition (007) - SAP HANAデータベースアップデート",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/s4-hana-cloud-private-edition-007-sap-hana%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88/ba-p/14510586",
+  "published": "2026-10-26T01:39:53+00:00",
+  "author": "KevinYin",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP S/4HANA Cloud Private Editionにおいて、Service Request(以下SR)を利用してSAP HANAバージョンをアップデートする方法についてご紹介します。 \n ここでのアップデートとは、SAP HANA2.0内でのリリースへの更新(マイナーまたはインクリメンタルリリースへの更新)をリクエストすることを示しています。 \n SAP HANAアップデートに利用するSRテンプレートは下記となります。 \n SRテンプレート: Update Database Software \n\n SAP HANAバージョンアップデート \n\n SRを上げる際に、SAP HANAのSIDを選択してから、各パラメータを指定していただけますようお願いします。 \n 下記は、各パラメータ指定した後のイメージとなります。 \n\n パラメータTarget DB Version \n\n SAP HANAバージョンを決定する前に下記の点をご確認いただけますようお願いします。 \n 1. 該当バージョンに既知バグの有無をご確認願います。 \n 2. SAP HANAバージョンとOSバージョン間には依存関係があり、ターゲットDBバージョンを指定する前に現時点でのOSバージョンがサポートしているかどうかをご確認いただけますようお願いします。 \n 3. 該当HANAバージョンのサポート期限を確認願います。 \n 4. ターゲットバージョンにご希望のバージョンが表示されてない場合は、ASR(Assisted Service Request)を利用してSAP HANAのアップデートを依頼していただけますようお願いします。 \n\n SAP HANAがサポートしているOSバージョンは下記のSAP Notesをご確認願います。 \n 2235581 - SAP HANA: Supported Operating Systems \n\n なお、HANAバージョンアップデートを計画する前に、SRテンプレートを利用してOSアップデートの要否を事前にご確認いただけますようお願いします。列\"OS Update Required\"の値がYESになっている場合、該当ターゲットHANAバージョンへアップデートする前にOSアップデートが必要であることを示しております。 \n\n パラメータ Set system message (for ABAP systems) \n\n Set system message (for ABAP systems): ABAPシステムにおいて、メンテナンス期間中に表示するシステムメッセージを設定するかどうかを指定する項目です。 \n\n パラメータ Install SAP_AFL_SDK_APL Plugin \n\n 下記は、該当SRテンプレートのサービス説明からの抜粋となります。 \n SAP HANA バージョン 2.00.080.00 以上で稼働するSAP S/4HANA 2025のABAPシステムにおいては、SAP_AFL_SDK_APLプラグインが必須となり、最低限必要なバージョンは2405となります。 \n 上記の条件を満たしておらず、現状利用していない場合は、オプションNoを選択願います。それ以外の場合は、Yesを選択していただければと存じます。 \n No: Skips installation of plug-in, even if it is currently not installed \n Yes: Installs plug-in version 2405, if it is not already installed \n\n APL(Automated Predictive Library)につきましては、下記のSAP Notesもあわせてご確認願います。 \n 2868156 - Your versions of SAP HANA database, SAP NetWeaver, SAP HANA Automated Predictive Library, and SAP HANA Predictive Analysis Library are not compatible with your version of ISLM \n\n まとめ \n\n 本記事では、SAP S/4HANA Cloud Private Editionにおいて、Service Request(SR)テンプレート「Update Database Software」を利用してSAP HANA 2.0のリリース(マイナーまたはインクリメンタルリリース)をアップデートする方法をご紹介しました。 \n アップデートを計画する際は、事前に対象SAP HANAバージョンの前提条件とOSアップデートの要否を確認し、計画的に実施していただくことをおすすめします。"
+ },
+ {
+  "key": "b0aa9a1082bcd514",
+  "title": "Manage Purchase Orders: custom item field visibility via MM_PUR_S4_PO_FLDCNTRL_SIMPLE",
+  "link": "https://community.sap.com/t5/technology-q-a/manage-purchase-orders-custom-item-field-visibility-via-mm-pur-s4-po/qaq-p/14510647",
+  "published": "2026-10-26T04:11:07+00:00",
+  "author": "ragunath_1996",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello experts, \n System: SAP S/4HANA Cloud Public Edition \n App: Manage Purchase Orders (F0842A) \n Requirement: \n A custom checkbox on the product master (\"Trade Fields Mandatory\") controls \n 4 custom PO item fields (business context Procurement: Purchasing Document Item). \n - Indicator = Yes -> fields visible and mandatory \n - Indicator = No -> fields hidden \n Implementation (Custom Logic): \n - MM_PUR_S4_PO_FLDCNTRL_SIMPLE: reads the indicator from I_Product for \n purchaseorderitem-material and sets fieldstatus '+' or '-' for the 4 fields \n - MM_PUR_S4_PO_MODIFY_ITEM: clears the fields when indicator = No \n - BD_MMPUR_FINAL_CHECK_PO: blocks saving when indicator = Yes and fields are empty \n Issue: \n 1. PO with item 10 (product A, indicator Yes) and item 20 (product B, indicator No): \n the item object page keeps the visibility of the previously displayed item. \n 2. Changing the material of an existing item (B -> A or A -> B): the fields keep \n the visibility of the old material. \n 3. Browser refresh (F5 / Ctrl+F5) does not correct it. Only after opening \n Adapt UI and refreshing is the correct visibility shown. \n Checks done: \n - BAdI returns the correct field status per item (verified) \n - Only one published implementation per BAdI \n - Product saved (not in draft) before testing \n - Tested with new PO drafts after clearing browser cache \n - UI adaptation version created and activated \n Field control code (simplified): \n LOOP AT fieldselection_table ASSIGNING FIELD-SYMBOL(<fs>). \n IF to_upper( <fs>-field ) CS 'YY1_TRADEPROGRAM_PDI' \" + 3 more fields \n <fs>-fieldstatus = lv_status. \" '+' or '-' \n ENDIF. \n ENDLOOP. \n Questions: \n 1. Is this a known limitation of Manage Purchase Orders, i.e. dynamic field \n control for custom item fields is not re-evaluated per item or after a \n material change? \n 2. Is there a recommended way (side effect, setting or other BAdI) to force \n the item page to re-apply the field control? \n 3. Has anyone implemented product-dependent visibility of custom PO item \n fields successfully in Public Cloud? \n Screenshots attached. \n Thank you!"
+ },
+ {
+  "key": "7fb4011071d93231",
+  "title": "AI agent monitoring using cloud alm",
+  "link": "https://community.sap.com/t5/technology-q-a/ai-agent-monitoring-using-cloud-alm/qaq-p/14510615",
+  "published": "2026-10-26T02:07:19+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Team, \n I have built a custom AI agent in Joule and would like to know whether it is possible to monitor a custom agent in Cloud ALM. \n If this is supported, could you please share the relevant documentation and setup instructions? \n Thank you \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+ },
+ {
+  "key": "4994f6c0a4b29f5d",
+  "title": "SAP Cloud Connector HA – Master/Slave Disconnection and Alerting Mechanism",
+  "link": "https://community.sap.com/t5/technology-q-a/sap-cloud-connector-ha-master-slave-disconnection-and-alerting-mechanism/qaq-p/14510607",
+  "published": "2026-10-26T01:46:48+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear SAP PS Team, \n As part of our regular system monitoring activities, we would like to explore the available options for detecting and receiving notifications about connectivity interruptions between SAP Cloud Connector instances. \n Currently, we would like to understand whether an alerting mechanism can be configured to notify the support team whenever such connectivity issues occur. \n Could you please clarify whether this type of alert can be configured through SAP Focused Run (FRUN), or whether SAP Cloud Connector provides any built-in monitoring and notification capabilities for this purpose? \n We would appreciate your guidance on the available options and your recommendation for a suitable solution to ensure timely notification of potential connectivity interruptions. \n Thank you for your support. \n Best regards, \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+ },
+ {
+  "key": "46233e42432e0c09",
+  "title": "Unable to complete SAP BTP Trial phone verification: \"not allowed to request phone calls\"",
+  "link": "https://community.sap.com/t5/technology-q-a/unable-to-complete-sap-btp-trial-phone-verification-quot-not-allowed-to/qaq-p/14510189",
+  "published": "2026-10-24T14:24:59+00:00",
+  "author": "aminealouani",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello SAP Community Support, \n I am trying to provision an SAP BTP Trial account for my student email address. \n When I reach the telephone verification step and click \"Request Code\", I receive the following red error message: \n > \"We did not send you a code because you are not allowed to request phone calls. Please contact your system administrator.\" \n I have verified the phone number formatting, updated my profile details, cleared my browser cache, and attempted from a different network, but the system continues to block the request. \n Could a moderator or support administrator please review my backend profile status and clear the phone verification block so I can activate my trial environment? \n Thank you, \n Amine El Alouani"
+ },
+ {
+  "key": "dbf980d31c2872e1",
+  "title": "Hello SAP Community! I'm Tejas from India, Exploring SAP Integration Technologies",
+  "link": "https://community.sap.com/t5/welcome-corner-discussions/hello-sap-community-i-m-tejas-from-india-exploring-sap-integration/m-p/14510182#M10788",
+  "published": "2026-10-24T13:41:53+00:00",
+  "author": "Tejas_Bhati",
+  "tags": [],
+  "feed": "SAP Community discussions",
+  "kind": "discussion",
+  "text": "Hello SAP Community! 👋 \n My SAP journey started around two years ago with very little knowledge about Systems Applications and Products in Data Processing aka SAP. Today, adaptably working with SAP integration technologies such as SAP PI/PO, CPI, BTP. \n The journey is still going on... 😄 filled with everyday challenges, exciting opportunities, and full of continuous learning every day! \n\n Looking forward to learning, sharing knowledge, and growing together. \n Kind Regards, \n Tejas"
  }
 ]
