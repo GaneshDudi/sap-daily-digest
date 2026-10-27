@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-27",
+  "label": "Tuesday, 27 October 2026",
+  "headline": "A thin day for core ABAP: a BAPI delivery batch-split failure, a table-to-CDS mapper, a RAP learner series, and a Node.js CVE on BTP.",
+  "items": 78,
+  "deep": 21
+ },
+ {
   "date": "2026-10-26",
   "label": "Monday, 26 October 2026",
   "headline": "A thin day: unanswered community questions on PO field control, API_QUALITYNOTIFICATION and MBC routing, plus an ABAP Cloud API-count post without its breakdown.",
