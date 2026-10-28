@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-28",
+  "label": "Wednesday, 28 October 2026",
+  "headline": "TechEd brings SAP's agent stack (MCP, A2A, AI Gateway, Agent Memory) into focus; community ABAP questions cover background-job dumps, BAdI errors and RAP API calls.",
+  "items": 113,
+  "deep": 23
+ },
+ {
   "date": "2026-10-27",
   "label": "Tuesday, 27 October 2026",
   "headline": "A thin day for core ABAP: a BAPI delivery batch-split failure, a table-to-CDS mapper, a RAP learner series, and a Node.js CVE on BTP.",
