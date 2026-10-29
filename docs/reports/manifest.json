@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-29",
+  "label": "Thursday, 29 October 2026",
+  "headline": "A RAP unmanaged BO vs BAPI ROLLBACK problem leads a thin day, with ABAP MCP and agentic AI announcements light on detail.",
+  "items": 106,
+  "deep": 23
+ },
+ {
   "date": "2026-10-28",
   "label": "Wednesday, 28 October 2026",
   "headline": "TechEd brings SAP's agent stack (MCP, A2A, AI Gateway, Agent Memory) into focus; community ABAP questions cover background-job dumps, BAdI errors and RAP API calls.",
