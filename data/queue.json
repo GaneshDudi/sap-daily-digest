@@ -1,1 +1,189 @@
-[]
+[
+ {
+  "key": "736e57a2435a080c",
+  "title": "Extensibility Options for Third-Party Payments",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/extensibility-options-for-third-party-payments/ba-p/14445256",
+  "published": "2026-10-29T09:26:33+00:00",
+  "author": "AnetaChuda",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Introduction \n Please note that the feature of this blog post is only for SAP S/4HANA Cloud Public Edition. \n When importing third-party payment files or return files via the Manage Incoming Payment Files app (F1680) the system parses the file and maps the raw data to internal structures using the Map Format data app. However, the default mapping may not always fit your specific business requirements. \n Two Business Add-In (BAdI) extension points are delivered to adjust the mapped data at batch header and item level. Before the mapped data is written to the staging tables — you can change these values according to the business requirements. \n The adjusted staging data is then consumed in the second step by the Process Imported Third-Party Payments app, which creates the actual Contract Accounting payment lots and return lots. Any changes you have made in the BAdI are therefore reflected in the final posted lot. This blog post introduces the procedure of importing and processing the external files. You can also learn about how to adjust the mapped data using the BadIs. For more information about the related blog posts, see the following links: \n Payment Lot Data Import via Third-Party Payments - SAP Community \n Return Lot File Import via Third- Party Payments - SAP Community \n Where the Extension Point Runs \n The diagram below shows the flow after you get the external files to the posting lots in Contract Accounting: \n\n The external file is first uploaded via the Manage Incoming Payment Files app, where the Map Format Data for Third Party Payments app transform the bank/collector-specific (external) format into internal structures. \n After this mapping, the corresponding Badi is triggered, when you can adjust the data, before the data is written to the staging tables. \n Then you use the Process Imported Third-Party Payments app to pick up the staging data and create the final Payment Lot or Return Lot. \n Business Add-Ins \n BAdI for Payment Lot Import — BADI_FKKID_EXPC_PAYMENT_LOT \n\n This BAdI is called during the import of third-party payment files in Contract Accounting. It allows you to modify the mapped payment data before it is stored in the staging area; the adjusted data is subsequently used to create a Payment (Order) Lot in Contract Accounting. \n BAdI for Return Lot Import — BADI_FKKID_EXPC_RETURN_LOT \n\n This BAdI is called during the import of third-party return files in Contract Accounting. It allows you to modify the mapped return data before it is stored in the staging area; the adjusted data is subsequently used to create a Return Lot in Contract Accounting. \n Note: \n The BAdI is called once per imported batch. It receives the complete lot header and the full table of items for that batch as changing parameters. This means you can modify any field on any existing item , but you cannot add or remove items and item numbers cannot be changed . \n Implementation: Custom Logic App \n As a key user, you can use the cloud business add-in (BAdI) to implement your own logic. Before using the cloud BAdI, ensure that you have assigned the business role SAP_BR_EXTENSIBILITY_SPEC. \n Note: Regarding of extensibility options for developers, go to Business Accelerator Hub and search for Adjust Payment Data (for Customer). \n Open Custom Logic app. Select “ Create ”. \n In the search box, search for the BAdI name: \n For Payment Lot : BADI_FKKID_EXPC_PAYMENT_LOT \n For Return Lot : BADI_FKKID_EXPC_RETURN_LOT and search. \n The extension point appears in the list with its description. Select it using the radio button, then click Step 2. \n Click Add to add a filter row. Select “Add” in the pop-up window to apply filter condition. \n Set the connector THIRDPARTYPAYMENTFORMATTYPE equal to your format type value: \n For Payment Lot : THIRDPARTYPAYMENTFORMATTYPE = FICA-PAYMENT-LOT \n For Return Lot : THIRDPARTYPAYMENTFORMATTYPE = FICA-RETURN-LOT. Save the entries. \n After you save the condition, the filter with the format is visible. This ensures the BAdI is only triggered for files of the matching format type. Click Step3. \n Provide a meaningful description and a unique implementation ID (Create an implementation ID starting with YY1_): \n Click Review and Create. \n Select Publish. You can then Open Code Editor. \n You can select Show Sample Code and copy them to clipboard to better change the coding based on your business needs. \n Click Edit and write your implement the logic based on your business requirements, then select Save and Publish . \n The implementation takes effect immediately on the next file import. It is not required to restart the system or transport. \n Monitoring the Changes with Cloud BadIs \n\n Upload the files after the Cloud BAdI Implementation \n Open the Manage Incoming Payment Files (F1680) app. \n Select Import and choose Third-party Payment to upload the files \n Select Payment Lot Data (Contract Accounting) as format. \n Upload the file and process. \n\n View the changes in the Monitor Third-Party Payment app \n Open the Monitor Third-Party Payment app. \n Select row with imported file and here are results that are marked in yellow. \n Is this blog post useful to you? Leave your comments below to let us know your thoughts."
+ },
+ {
+  "key": "29708c0d5556ddca",
+  "title": "Sales Order Stock (E) in SAP Logistics Management",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/sales-order-stock-e-in-sap-logistics-management/ba-p/14505413",
+  "published": "2026-10-29T08:59:27+00:00",
+  "author": "marco_schaaf",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Introduction \n In make-to-order (MTO) and purchase-to-order (PTO) scenarios, goods are procured or produced exclusively for a specific customer and must only be supplied to that customer. Sales Order Stock, identified by special stock type “Sales Order Stock (E)”, ensures exactly this: a quantity of a product is reserved for one sales order and item, never available for any other sales order. \n We are pleased to announce that SAP Logistics Management now supports special stock type Sales Order Stock (E)."
+ },
+ {
+  "key": "412d5c11c17ca334",
+  "title": "SAP EWM Auto PGI after Loading with Multiple HUs – A PPF Configuration That Worked",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/sap-ewm-auto-pgi-after-loading-with-multiple-hus-a-ppf-configuration-that/ba-p/14511195",
+  "published": "2026-10-29T08:42:36+00:00",
+  "author": "wvillada",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "In this article, I describe how we implemented automatic PGI after loading using standard SAP EWM PPF functionality. I also explain how an SPPF016 issue was resolved when using /SCWM/DLV_CONF_ST as Start Condition, allowing PGI execution only after the delivery reached loading status DLO = 9."
+ },
+ {
+  "key": "a02f36d631c1a55f",
+  "title": "Preliminary What’s New Information for SAP S/4HANA Cloud Public Edition 2608.3",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/preliminary-what-s-new-information-for-sap-s-4hana-cloud-public-edition/ba-p/14510914",
+  "published": "2026-10-29T08:21:05+00:00",
+  "author": "Ben_Cooney",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Preliminary versions of What’s New information and of the Product Assistance are now available for customers and partners to get a preview on the upcoming new and changed features of SAP S/4HANA Cloud Public Edition 2608.3. \n You can find this preview on the current SAP Help Portal page SAP S/4HANA Cloud Public Edition (see What’s New section “Preview of SAP S/4HANA Cloud Public Edition 2608.3”). To access the Preliminary What’s New information, please use the What’s New Viewer or the Release Assessment and Scope Dependency (RASD) tool. \n The RASD tool provides you with a personalized and tailored view on What’s New information based on the activated and used scope within your system. The preliminary information for SAP S/4HANA Cloud Public Edition 2608.3 will be available in RASD within the next few days. We recommend using RASD to prepare for upgrades and updates of your system and to focus on the new and changed features that are relevant for you. A valid S-User ID is needed to use the RASD tool and to view all the preliminary content stated above. \n For any feedback you may have, try the Commenting Feature for What's New documentation in this release. See this blog for more information."
+ },
+ {
+  "key": "c7b38b2f2259e792",
+  "title": "Cost estimate issue",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/cost-estimate-issue/qaq-p/14512862",
+  "published": "2026-10-29T08:58:54+00:00",
+  "author": "SASMOS",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Team, \n We have implemented, MTO scenario and ETO scenario project based. RM Materials are created when costing is executing , system is considering RM material prices not GRN value, kindly check suggest same"
+ },
+ {
+  "key": "7ca0fcc6acf676fb",
+  "title": "Custom UIBBs not updating data after 2025 upgrade in MDG for BP governance App",
+  "link": "https://community.sap.com/t5/technology-q-a/custom-uibbs-not-updating-data-after-2025-upgrade-in-mdg-for-bp-governance/qaq-p/14512853",
+  "published": "2026-10-29T08:54:48+00:00",
+  "author": "Tanmoy_Chakraborty",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Custom UIBBs are not updating data after 2025 upgrade in MDG for BP governance App. We are deriving legacy purchase org and sales org which are both custom entities(type 4) based on purchase org and sales org which are standard entities. The derivation is done in cross entity Badi's through IF_USMD_DELTA_BUFFER_WRITE->->write_data. There are no errors thrown but the UIBB is not filled with data. Pls suggest."
+ },
+ {
+  "key": "32e111ccaa13550c",
+  "title": "SAP SuccessFactors OData API: \"Entity not deletable\" when trying to delete PerEmail record via CPI",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/sap-successfactors-odata-api-quot-entity-not-deletable-quot-when-trying-to/qaq-p/14512815",
+  "published": "2026-10-29T08:11:26+00:00",
+  "author": "klizak-99",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi everyone, \n I'm currently working on an integration scenario in SAP Cloud Integration (CPI) to automate a specific HR process. The goal is to clear/remove the business email address ( PerEmail ) for active employees who have lost their corporate email account for various reasons, but are still employed in the company. \n I've set up a simple integration flow, but when I try to execute the delete operation via the SuccessFactors OData API, the SF API Audit Log returns the following error: \n \"Entity not deletable\" \n However, when I log into the SuccessFactors UI and go to the employee's profile, I am able to manually delete the email address without any issues. \n Does anyone have an idea why this happens via the OData API and how to bypass or properly handle this restriction? Is there a specific permission, a business rule, or an alternative approach (like upserting with a blank/null value or using composite API) that I should use instead? \n Thanks in advance for your help and insights!"
+ },
+ {
+  "key": "b3c3a7c10274df2a",
+  "title": "Workflow going to error in QA but working fine in DEV",
+  "link": "https://community.sap.com/t5/technology-q-a/workflow-going-to-error-in-qa-but-working-fine-in-dev/qaq-p/14512813",
+  "published": "2026-10-29T08:09:11+00:00",
+  "author": "ved_nayakd06dd4",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Workflow Experts, \n Need your inputs here. \n I am facing a very weird issue in workflow as its going to error randomly in any levels in QA system, however its working fine in DVR. \n we have used /IWWRK/IF_WF_WI_BEFORE_UPD_IB~BEFORE_UPDATE to take the approval action and SAP_WAPI_CREATE_EVENT to trigger the terminating event. \n Please suggest."
+ },
+ {
+  "key": "f2867cc670a0e5d8",
+  "title": "MB51: Material Group field missing in S4hana Output as compared to ECC",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/mb51-material-group-field-missing-in-s4hana-output-as-compared-to-ecc/qaq-p/14512807",
+  "published": "2026-10-29T08:03:32+00:00",
+  "author": "pravin_daltile",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "In MB51 report, in ECC we had Material Group as an Output field, while in S4HANA it is missing. How can that field be brought in S4HANA MB51 output?"
+ },
+ {
+  "key": "38637888e04802f7",
+  "title": "Price Date Category in Info record is set as 6 GR/Doc date But not reflecting in GRN",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/price-date-category-in-info-record-is-set-as-6-gr-doc-date-but-not/qaq-p/14512804",
+  "published": "2026-10-29T07:54:33+00:00",
+  "author": "Vikranth_I",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "We have updated the Price date category in ME12 as 6 - GR/ Doc date. \n Post that We have created a new PO in ME21N. While doing the GRN now - system still picks the price which are valid on GRN Posting date instead of GRN Doc date."
+ },
+ {
+  "key": "aa2453e6cb94c2af",
+  "title": "Parallel crcy area (crcy type 40) missing for area 01 ch. of deprec. CD83",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/parallel-crcy-area-crcy-type-40-missing-for-area-01-ch-of-deprec-cd83/qaq-p/14512799",
+  "published": "2026-10-29T07:49:29+00:00",
+  "author": "Ramakrishna_Yaddula80",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "we are creating asset module for LE 830, ref LE given as 030, when chart of dep CDCN (LE 030) copied and named as CD83, we are unable to assign the chart of dep CD83 to LE 830. due to error - Parallel crcy area (crcy type 40) missing for area 01 ch. of deprec. CD83 \n Message no. ACC_AA116 \n we see new LE 830n has hard currencytype defined as 40, however ref LE 030 has no hard currency in OB22"
+ },
+ {
+  "key": "9532f149335bfecf",
+  "title": "Runtime Error",
+  "link": "https://community.sap.com/t5/supply-chain-management-q-a/runtime-error/qaq-p/14512797",
+  "published": "2026-10-29T07:42:13+00:00",
+  "author": "rejigeorge",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello Everyone, \n All integrations are in place and FU were getting created. All of a sudden started facing dump while creating Outbound Delivery \n\n appreciate some advice here \n regards \n Reji"
+ },
+ {
+  "key": "2f8a9c4a49b3b72c",
+  "title": "Sales Invoice Creation API",
+  "link": "https://community.sap.com/t5/financial-management-q-a/sales-invoice-creation-api/qaq-p/14512796",
+  "published": "2026-10-29T07:41:38+00:00",
+  "author": "xuqi_fangaf39f1",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "HI SAP , \n Could you advise which API can create a single sales invoice based on multiple delivery line items?"
+ },
+ {
+  "key": "6d935be240900c59",
+  "title": "Net Price in currency beocmes too large while creating PO",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/net-price-in-currency-beocmes-too-large-while-creating-po/qaq-p/14512794",
+  "published": "2026-10-29T07:33:33+00:00",
+  "author": "Udayaphaniganji",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear Team, \n We are creating an import PO with the following details: \n\n Account Assignment: F \n\n Quantity: 1 \n\n PO Currency: EUR \n\n Company Currency: NGN \n\n Exchange Rate: 1,663.8000 \n\n Net Price: EUR 760,000 \n After entering the net price, the system shows the error: “Net price in NGN becomes too large.” \n Kindly check and suggets alternate solution."
+ },
+ {
+  "key": "9e97737417eaef0f",
+  "title": "RFDOPR20 in SAP Public Cloud Editio",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/rfdopr20-in-sap-public-cloud-editio/qaq-p/14512793",
+  "published": "2026-10-29T07:29:40+00:00",
+  "author": "FabianSCC",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello, \n is there an existing alternative to transaction code RFDOPR20 in the SAP Public Cloud?"
+ },
+ {
+  "key": "33f3e01b5b3140ca",
+  "title": "Customer - 10001028 Credit limit not working",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/customer-10001028-credit-limit-not-working/qaq-p/14512791",
+  "published": "2026-10-29T07:22:06+00:00",
+  "author": "Prem123",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Customer - 10001028 Credit limit not working"
+ },
+ {
+  "key": "df41fc46c956774e",
+  "title": "How Are You Preparing for the SAP C_CPE Certification, and Which Topics Need the Most Practice?",
+  "link": "https://community.sap.com/t5/technology-q-a/how-are-you-preparing-for-the-sap-c-cpe-certification-and-which-topics-need/qaq-p/14512315",
+  "published": "2026-10-29T06:44:45+00:00",
+  "author": "elina-william427",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hey everyone, I am preparing for the SAP C_CPE certification and working through the topics in stages: SAP BTP fundamentals, SAP Business Application Studio and CAP, followed by Cloud Foundry, side-by-side extensions, Kyma, and the SAP Cloud SDK. \n I’m using SAP’s Exploring SAP Business Technology Platform course, the Business Application Studio learning journey , and the CAP documentation . I’m also following SAP’s learning journeys for Cloud Foundry , side-by-side extensions , Kyma Runtime , and the SAP Cloud SDK . \n At the moment, I’m trying to connect CAP fundamentals, such as CDS models and services, with the steps involved in deploying and extending an application on BTP. I’m also working out how to divide my practice between Cloud Foundry and Kyma, since they involve different runtime and deployment concepts. \n For those who have taken C_CPE or are preparing for it, which CAP tasks or concepts did you practise most? How did you approach the Cloud Foundry and Kyma topics? Were there particular areas, such as service configuration, deployment, or extension scenarios, that took more practice than you expected?"
+ }
+]
