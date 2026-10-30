@@ -605,5 +605,148 @@
   "feed": "SAP News Center",
   "kind": "news",
   "text": "This week at SAP TechEd, SAP introduced a range of solutions focused on AI governance. While the solutions address different dimensions of governance in the era of AI, they all reflect the same basic principles: \n\n Build on proven business controls: You already have governance standards and practices in place. AI governance should connect to and extend these controls. \n\n Adopt innovation with confidence: The approach to governance we advocate is the same publicly available and documented approach we use to develop, deploy, and govern the solutions and services we deliver. \n\n Stay in control as your business grows: The controls and standards you have in place should not only promote AI adoption, but also enable you to assess costs, risks, and value as adoption increases. \n\n SAP TechEd in 2026: The Autonomous Enterprise Becomes a Reality \n\n Read the innovation news guide \n\n Since the advent of this new world of autonomous technology, people have endeavored to identify the most impactful application of it. As the path to value realization has become clearer, a new challenge has emerged: ensuring both that AI usage does not lead to unintended and potentially harmful consequences and that this usage remains compliant with emerging regulatory regimes. \n\n By adhering to the principles outlined above, SAP makes it possible accomplish both ends. More importantly, as we showed at SAP TechEd, SAP also provides the solutions necessary to govern, control, and innovate now and into the future. \n\n AI governance announcements from SAP TechEd \n\n Here’s what we talked about at SAP TechEd on the AI governance front. \n\n True AI governance isn’t about figuring out if policies and rules have been followed after the fact; it should be about making sure governance is applied when it matters. SAP Enterprise AI Gateway ensures this kind of proactive governance by consolidating authentication, policy enforcement, and routing at runtime, while also allowing for continuous monitoring, usage tracking, and auditing. The gateway thus controls traffic across MCPs, APIs, agent-to-agent connections and LLMs. Building on SAP Integration Suite, the gateway consolidates and streamlines real-time oversight and control over AI in action. \n\n As a compliment to the gateway, we also announced customer access to curated SAP Sovereign Cloud LLMs directly through SAP AI Core . This allows customers to use these LLMs in critical processes while adhering to established governance standards. What’s more, by allowing direct access on SAP Sovereign Cloud , customers can reduce both cost and complexity in AI operations. \n\n Being able to provide agents with the architecture context they need to operate effectively is also essential to the control of agent behavior. At SAP TechEd, we described new features in the SAP LeanIX portfolio enabling enterprise architects to control the architecture data Joule Agents use to make and execute decisions. \n\n This architecture context feature relies on a knowledge intake agent to extract relevant information from security and architecture decision documents, as well as propose connections to the SAP LeanIX knowledge graph, and submit all data for human approval before making it available to agents. \n\n Finally, to support EU AI Act assessments directly in SAP AI Agent Hub , we also introduced our new AI Governance Assistant . The assistant audits and flags incomplete documentation in the agent inventory, pre-fills fields from completed assessments, identifies systems that appear high-risk but lack classification, and triggers reassessment when a fact sheet changes materially. \n\n And just as the architecture context feature depends on human approval, all outputs from the AI Governance Assistant appear as drafts for legal and compliance review. \n\n SAP and AI governance in depth \n\n The solutions and innovations around AI governance we discussed at SAP TechEd are part of a much broader story. That story is, to a degree, historical. SAP has long played a key role in the governance of core operational and financial functions. Our approach to AI governance is built on—and a logical extension of—this legacy. \n\n Of course, SAP is hardly new to this, having long ago established clear internal standards for AI governance while continuously introducing features and solutions devoted to AI governance. Among these solutions is SAP AI Agent Hub, itself an outgrowth of AI governance capabilities in SAP LeanIX. By allowing companies to quickly create and maintain a reliable inventory of agents, regardless of platform, MCP servers, and LLMs, the hub’s powerful discovery features are essential to comprehensive AI governance. \n\n The other part of the story is value. While governance of AI is crucial for myriad reasons, companies invest in AI to achieve measurable business goals. As it turns out,t he observability necessary for effective governance can be leveraged and augmented to serve the purpose of performance management and evaluation. \n\n With SAP Signavio agent mining capabilities, for example, you can monitor agent behavior within the context of your business processes. In this way, you can ensure agent compliance while capturing the business impact agents deliver. \n\n Governance should not be an afterthought \n\n The evolution of AI is not going to slow down, and neither will AI adoption. Unfortunately, while the focus here rightly falls on continuously discovering new ways to leverage AI for operational excellence and competitive advantage, this focus should not mean that governance takes a back seat. \n\n Governance, on the contrary, is the key to successful AI adoption. \n\n It is important to remember that governance in the era of AI is not simply a question of regulatory or corporate compliance. Because this technology involves varying degrees of autonomy, governance must be applied to the behavior of the technology itself, not just to the behavior of the humans managing it. This is one reason that we emphasize runtime enforcement of governance policies. \n\n The challenge we see today, however, is that no one has yet established clear industry benchmarks and standard practices for AI governance. There also seems to be a general lack of established platforms focused on governance. \n\n We say a “general lack” because, in point of fact, SAP offers precisely such a platform, one built on decades of governance expertise and experience. \n\n Governance has never been an afterthought for us. And when it comes to AI governance today, as the many innovations outline here show, it is absolutely top of mind. \n\n Dominik Rose is chief product officer for SAP LeanIX at SAP. \n SAP TechEd: Read the latest news, stories, and coverage from the event \n\n Learn more"
+ },
+ {
+  "key": "914782127fd9c166",
+  "title": "Agent Skills for SAP Commerce Cloud, Composable Storefront: teaching AI agents the right patterns",
+  "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/agent-skills-for-sap-commerce-cloud-composable-storefront-teaching-ai/ba-p/14511924",
+  "published": "2026-10-30T20:44:52+00:00",
+  "author": "steve_sisalith",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Ask an AI coding agent to build a Composable Storefront feature today and it will usually hand you generic Angular that compiles, runs, and quietly ignores the framework's architecture. The October release ships an Agent Skill that teaches AI coding agents to write correct Composable Storefront code by default."
+ },
+ {
+  "key": "1dca84de381ddba0",
+  "title": "SAP Commerce Cloud Q3 ‘26 Release Highlights",
+  "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/sap-commerce-cloud-q3-26-release-highlights/ba-p/14505833",
+  "published": "2026-10-30T20:04:39+00:00",
+  "author": "JeffBlucher",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": ""
+ },
+ {
+  "key": "191f23644283260f",
+  "title": "What's New in S/4HANA Transportation Management 2025 FPS02 - A Business Perspective",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/what-s-new-in-s-4hana-transportation-management-2025-fps02-a-business/ba-p/14504112",
+  "published": "2026-10-30T20:04:30+00:00",
+  "author": "Bill_King",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP S/4HANA Transportation Management 2025 FPS02 delivers improvements in planning, exception handling and extensibility - here's whats changed and why it matters."
+ },
+ {
+  "key": "6603e78e8d13922b",
+  "title": "Not Every Extra Hour Is Overtime!",
+  "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-members/not-every-extra-hour-is-overtime/ba-p/14514078",
+  "published": "2026-10-30T18:02:26+00:00",
+  "author": "RamyaRaja",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "If a part-time employee works beyond their scheduled hours, does that automatically mean overtime? Not quite. In this blog, we'll explore how to distinguish between additional hours and premium overtime in SAP SuccessFactors Time Tracking, using a layered valuation approach that is both scalable and easy to maintain."
+ },
+ {
+  "key": "dcec659bd1c86fdd",
+  "title": "Building and Deploying AI-Powered Applications on SAP BTP Using Claude Code",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/building-and-deploying-ai-powered-applications-on-sap-btp-using-claude-code/ba-p/14514077",
+  "published": "2026-10-30T18:21:06+00:00",
+  "author": "PM_iiits",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Author: Prabhat Mishra | SAP BTP Developer \n Tags: SAP BTP, AI Core, Claude Code, Cloud Foundry, MCP Server, Joule, Destinations"
+ },
+ {
+  "key": "b83c357e47957d4e",
+  "title": "Onboarding Bug Still Not Fixed -- 'Add' Button for Email Information Not Respecting RBP",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/onboarding-bug-still-not-fixed-add-button-for-email-information-not/qaq-p/14514139",
+  "published": "2026-10-30T21:33:45+00:00",
+  "author": "JulieMcSwain",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello fellow Onboarding customers and SAP Product Support, \n I tested this bug again, as per this KB this is supposed to be fixed in this software release 2H 2026, as it was supposed to be fixed in the last one. Unfortunately it has not been fixed. The 'Add' button is still appearing for an onboardee even though RBP is View only. \n 3694716: [Known Issue] \"Add\" button appearing in Email/Phone Information section in Personal Data Collection - Onboarding \n So I opened another support ticket to report my findings. And I received the loveliest of auto-replies of an AI- generated response -- saying that a KB article stated is was fixed in this release for 2H 2026. Hmm, no, sadly no, it has not been, and this is why I opened the ticket (if the bot had read my ticket and the attachment with print screens I included, it would have understood the issue). \n 3738161 - \"Add\" Button Visible for Onboardee in PDC Step Despite Missing Edit Permissions - Onboarding https://me.sap.com/notes/3738161/E \n How many software releases does it take to resolve a bug? I don't know! \n And the 'work around' is not acceptable in my opinion, as I cannot grant edit access and then risk an onboardee deleting the email that has been entered and verified by IAS on accident - how would that be resolved? No thanks. This has been a struggle for my company for over a year now. I'm afraid if it does not get resolved in this release, I will have mutiny on my hands with my onboarding users. \n Please SAP - please fix this bug. \n ~Julie \n Case: 1463322/2026 BUG NOT FIXED"
+ },
+ {
+  "key": "7911cc09969a332e",
+  "title": "Fresh install of BI 2025 and error at the step to configure CMS database",
+  "link": "https://community.sap.com/t5/technology-q-a/fresh-install-of-bi-2025-and-error-at-the-step-to-configure-cms-database/qaq-p/14514125",
+  "published": "2026-10-30T19:56:55+00:00",
+  "author": "sharon_smith3",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "I'm performing a fresh install of BI 2025 and at the step to configure CMS database, I get the error 'cannot verify database information [INS00104]' The logs indicate the following error: \n Error: Identifier not found in lookup: [ INS00104 ] \n Exit Code =2 \n I've confirmed the following: \n -correct versions of MS Sql Server ODBC 18, SQL Server DB version, etc. \n -dbo rights on CMS database for acct being configured at this step. \n -successful connection to CMS database via ODBC config setup \n Would anyone have other ideas on what to check for? \n Thank You, \n Sharon"
+ },
+ {
+  "key": "cbc0af3507c2dc67",
+  "title": "Time Off - Leave Balance Migration During a Mid-Year Implementation",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/time-off-leave-balance-migration-during-a-mid-year-implementation/qaq-p/14514114",
+  "published": "2026-10-30T19:34:03+00:00",
+  "author": "AMIT_SHARMA01",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Scenario: \n A customer is migrating from a legacy HR system to SAP SuccessFactors in October. \n Employees have different annual leave balances, including: \n\n Current-year entitlement. \n\n Leave already consumed. \n\n Carry-forward balances from previous years. \n\n Expired carry-forward balances. \n\n Approved future leave requests. \n The customer wants to migrate the balances without losing historical information or deducting approved future leave twice. \n Question: \n What is the recommended migration strategy for Time Off balances when implementing SAP SuccessFactors in the middle of a leave year? \n Should the project migrate only the available balance, or should separate time accounts be created for current entitlement, carry-forward, and historical adjustments? \n How should future-approved absences be handled to avoid duplicate deductions?"
+ },
+ {
+  "key": "0af2861175d9eb42",
+  "title": "Employee Central - Dynamic Role Approval After a Backdated Business Unit Transfer",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/employee-central-dynamic-role-approval-after-a-backdated-business-unit/qaq-p/14514111",
+  "published": "2026-10-30T19:10:53+00:00",
+  "author": "AMIT_SHARMA01",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Scenario: \n A customer uses Dynamic Roles to determine workflow approvers based on Business Unit. \n An employee belongs to Business Unit A and submits a workflow on October 10. The workflow is routed to the Business Unit A Head and remains pending. \n On October 15, HR enters a backdated Business Unit transfer effective October 1, moving the employee to Business Unit B. \n The customer expects the pending workflow to be automatically redirected to the Business Unit B Head because the employee's Business Unit has changed. \n Question: \n Does SAP SuccessFactors Employee Central automatically re-evaluate Dynamic Role approvers when an employee's Business Unit changes after a workflow has already been initiated? \n If the workflow remains assigned to the original approver, what is the recommended approach to handle such scenarios without compromising workflow history and audit requirements?"
+ },
+ {
+  "key": "c6096f741d0ee546",
+  "title": "How to Retrieve Processing Results for Asynchronous SOAP APIs in SAP S/4HANA Cloud Public Edition",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/how-to-retrieve-processing-results-for-asynchronous-soap-apis-in-sap-s/qaq-p/14514109",
+  "published": "2026-10-30T19:07:57+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "When using asynchronous SOAP APIs in SAP S/4HANA Cloud Public Edition, the initial response only acknowledges receipt of the request and does not provide the final business processing result. \n How can the final processing status, accounting document details and error messages be retrieved and correlated with the original request? \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+ },
+ {
+  "key": "b87baafc7b7711a6",
+  "title": "Multiple adresses for a single customer",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/multiple-adresses-for-a-single-customer/qaq-p/14514107",
+  "published": "2026-10-30T19:07:33+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello, \n I would like to understand how we can manage multiple addresses using the multiple address handling functionality in SAP S/4HANA Cloud Public Edition. Specifically, I would appreciate your guidance on the following: \n\n How can we create a single customer code with multiple addresses? \n\n How can we maintain different addresses against the same customer code? \n\n How can we use these different addresses as Ship-to Parties in sales orders? \n Any documentation would also be helpful. \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+ },
+ {
+  "key": "99f9c3b1fd523e2e",
+  "title": "Time Off – Accrual Recalculation After a Backdated Job Information Change",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/time-off-accrual-recalculation-after-a-backdated-job-information-change/qaq-p/14514106",
+  "published": "2026-10-30T19:07:11+00:00",
+  "author": "AMIT_SHARMA01",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Scenario: \n A customer calculates annual leave entitlement based on employee grade. \n Employees in Grade A receive 30 days annually, while Grade B employees receive 24 days. \n An employee was promoted from Grade B to Grade A effective July 1, but HR entered the promotion in Employee Central on October 15 with a backdated effective date. \n The accrual rule is configured correctly and works for normal grade changes. However, the employee's Time Account still reflects the previous entitlement after the backdated promotion. \n Question: \n What is the recommended way to trigger Time Off accrual recalculation for a backdated Job Information change when the accrual rule depends on employee grade? \n Can the recalculation be triggered automatically through a rule, or does it require a specific recalculation configuration or administrative process?"
+ },
+ {
+  "key": "d0c01b05f0815774",
+  "title": "SAC Data Action fails to write data when Account is specified",
+  "link": "https://community.sap.com/t5/financial-management-q-a/sac-data-action-fails-to-write-data-when-account-is-specified/qaq-p/14514086",
+  "published": "2026-10-30T18:22:04+00:00",
+  "author": "amrita_goswami",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi SAC Experts, \n I am facing an issue where data fails to get written to the Model when Account value is specified. Below is a simple logic. \n In Step 4 data is successfully written to the Variable member #JM. When I try to move this data to the Model measure Amount, nothing gets written. I have tried various iterations and also done a run where Account = 8999001 was hardcoded, but no record is written. \n I have verified that the values in Target GL match with the values in Account and the values are in the default hierarchy. \n MEMBERSET [d/Audit_Trail] = (\"WBS_ALLOC_IN\") \n MEMBERSET [d/Measures] = ( \"Amount\") \n VARIABLEMEMBER #JM OF [d/Measures] AS DECIMAL(7) \n DATA([d/Account_Generic] = [d/Target_GL] ,[d/Measures ]=#JM) = RESULTLOOKUP() \n DELETE([d/Audit_Trail]=\"WBS_ALLOC_IN\") \n DATA([d/Measures]=\"Amount\" )= RESULTLOOKUP([d/Measures ]=#JM) \n Please suggest what could be causing this issue. Are there any settings to be done on the Dimension? \n\n Thanks, \n AG"
  }
 ]
