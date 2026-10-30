@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-30",
+  "label": "Friday, 30 October 2026",
+  "headline": "A claim that 292 S/4HANA tables differ between ABAP SQL and native SQL leads a thin day, plus a CDS CDC problem on VBFA and ABAP AI SDK posts.",
+  "items": 91,
+  "deep": 27
+ },
+ {
   "date": "2026-10-29",
   "label": "Thursday, 29 October 2026",
   "headline": "A RAP unmanaged BO vs BAPI ROLLBACK problem leads a thin day, with ABAP MCP and agentic AI announcements light on detail.",
