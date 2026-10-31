@@ -1,1 +1,24 @@
-[]
+[
+ {
+  "key": "ea7032152f108b5c",
+  "title": "Known Issue: “Document Generation Usage Record” Missing from Base Object Selection When Configuring",
+  "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-members/known-issue-document-generation-usage-record-missing-from-base-object/ba-p/14514212",
+  "published": "2026-10-31T10:54:12+00:00",
+  "author": "muralidharansrinivasan",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Known issue: Document Generation Usage Record is missing from the Base Object selection for Trigger Workflows rules, which blocks workflow approval setup for Document Generation. Reported to SAP and currently under study by the SuccessFactors product team as a release defect. No fix or workaround yet; this post will be updated."
+ },
+ {
+  "key": "8233a7898e9eb9e7",
+  "title": "Managing Time-Dependent Hierarchies in SAP Sustainability Control Tower",
+  "link": "https://community.sap.com/t5/sustainability-learning-group-blog-posts/managing-time-dependent-hierarchies-in-sap-sustainability-control-tower/ba-p/14512875",
+  "published": "2026-10-31T07:31:39+00:00",
+  "author": "severinhussmann",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "How do you keep sustainability reporting consistent when your organization changes? This blogpost uses practical examples to explain how to manage reorganizations and divestitures in SAP Sustainability Control Tower, handle time-dependent nodes and links, and preserve historical reporting with snapshots."
+ }
+]
