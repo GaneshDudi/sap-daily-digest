@@ -20,5 +20,115 @@
   "feed": "SAP Community blog posts",
   "kind": "blog",
   "text": "How do you keep sustainability reporting consistent when your organization changes? This blogpost uses practical examples to explain how to manage reorganizations and divestitures in SAP Sustainability Control Tower, handle time-dependent nodes and links, and preserve historical reporting with snapshots."
+ },
+ {
+  "key": "f1bcff38029597dd",
+  "title": "What's Coming Up? Explore Upcoming SAP Fieldglass Live Sessions!",
+  "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/what-s-coming-up-explore-upcoming-sap-fieldglass-live-sessions/ba-p/14514058",
+  "published": "2026-10-31T17:20:00+00:00",
+  "author": "AlexaYJuarez",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "What's happening in SAP Fieldglass? Take a look at our upcoming Live Sessions and find a topic that interests you."
+ },
+ {
+  "key": "a323a7c663eed830",
+  "title": "Populating Purchase Requisition Descriptions from Maintenance Orders in SAP S/4HANA Cloud",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/populating-purchase-requisition-descriptions-from-maintenance-orders-in-sap/ba-p/14513558",
+  "published": "2026-10-31T16:00:00+00:00",
+  "author": "kumaribabita",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "A step-by-step guide for customer developers on how to populate Purchase Requisition header descriptions automatically when PRs are created from Maintenance Orders using the standard BAdI EAM_ORDER_MODIFY_PR_DATA. \n Who this is for: Customer developers and key users working in SAP S/4HANA Cloud who need to improve Purchase Requisition visibility by automatically populating PR descriptions from Maintenance Order data. This uses standard SAP extensibility — no custom tables or objects required . \n In this article \n The Business Problem \n Understanding the Solution \n Implement the BAdI \n Testing Your Implementation"
+ },
+ {
+  "key": "c1cc29b6473c2d58",
+  "title": "From CDS to A2A: Building a Production CAP Agent with @cap-js/agents and SAP AI Core",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-cds-to-a2a-building-a-production-cap-agent-with-cap-js-agents-and-sap/ba-p/14514274",
+  "published": "2026-10-31T15:29:08+00:00",
+  "author": "nidhish_vaidya_k94",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "From CDS to A2A: Building a Production CAP Agent with @cap-js/agents and SAP AI Core"
+ },
+ {
+  "key": "b602d295ff69e664",
+  "title": "Defining your Own Rules",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/defining-your-own-rules/ba-p/14514268",
+  "published": "2026-10-31T15:13:44+00:00",
+  "author": "Ari",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Dear SAP Business One community Today I want to talk about how you could leverage the user defined parameter query functionality within the web client. Let’s look at this video to learn more: \n\n You can find additional information in the SAP Business One Web client user guide and the Learning journey . \n Best wishes, Ari"
+ },
+ {
+  "key": "6d02c7e1a66968bf",
+  "title": "Beyond Data Silos: Powering the Autonomous Enterprise with SAP's Next-Generation Data Fabric and AI",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/beyond-data-silos-powering-the-autonomous-enterprise-with-sap-s-next/ba-p/14514265",
+  "published": "2026-10-31T14:16:02+00:00",
+  "author": "RanjeetKr",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "The next era of enterprise transformation is not just about making data available. It is about making data intelligent, contextual, trusted, and actionable. \n Artificial Intelligence is rapidly transforming how businesses operate. From demand forecasting and supply chain optimization to financial planning and customer engagement, AI agents are moving beyond generating insights to actively supporting business decisions and executing complex workflows. \n But there is one fundamental challenge: AI is only as intelligent as the business context it understands. \n Enterprise data is often scattered across applications, databases, data warehouses, and cloud platforms. Even when organizations have access to vast amounts of information, disconnected systems, inconsistent master data, and fragmented business definitions make it difficult for AI to understand how the business actually operates. \n At SAP TechEd Berlin 2026, SAP introduced a new wave of innovations in SAP Business Data Cloud (SAP BDC) to address this challenge and accelerate the journey toward the autonomous enterprise. \n With advancements in open lakehouse architecture, zero-copy data sharing, enterprise master data management, and business knowledge modeling, SAP is taking an important step toward creating an intelligent data foundation where AI agents can understand business operations, make informed decisions, and act with greater autonomy and confidence. \n Let's explore the innovations shaping this transformation. \n 1. Breaking Data Silos: An Open Lakehouse Built for the AI Era \n\n Enterprise data should not be restricted by platforms, storage locations, or technology boundaries. However, traditional data architectures often require organizations to replicate information across multiple systems, creating additional costs, operational complexity, and inconsistent data. \n SAP is addressing this challenge by strengthening its open lakehouse foundation through the completed acquisition of Dremio. \n The vision is simple: make enterprise data accessible wherever it resides, without constantly moving or duplicating it. \n Key innovations include: \n\n Open lakehouse architecture: Native Apache Iceberg support and a universal catalog powered by Apache Polaris provide an open foundation for discovering, governing, and sharing enterprise data. \n\n Zero-copy data sharing: SAP BDC Connect enables interoperability with platforms such as Databricks, Snowflake, Google Cloud, AWS, and Microsoft, minimizing unnecessary data duplication. \n\n Federated data access: Powered by Dremio's high-performance SQL query engine, organizations can query distributed data across SQL Server, MongoDB, Oracle, and PostgreSQL without physically moving it. \n\n Autonomous query optimization: Dremio Reflections intelligently optimize query performance by learning workload patterns and automatically precomputing frequently accessed results. \n An especially exciting development is the integration with Joule Work, allowing business users to ask complex questions in natural language and receive answers grounded in trusted enterprise data. \n The business impact: Less time managing data pipelines, fewer data silos, faster analytics, and a scalable data foundation for AI agents operating across enterprise environments. \n 2. SAP and Databricks: Accelerating the Next Generation of Data and AI Innovation \n The future of enterprise AI requires collaboration between business applications, data engineering platforms, and advanced AI technologies. \n SAP's expanded partnership with Databricks brings additional industry-leading capabilities into SAP Databricks within SAP Business Data Cloud. \n The expanded capabilities include: \n\n Lakeflow \n\n Agent Bricks \n\n Unity Gateway \n\n Lakebase \n Through SAP Application Data Foundation, organizations can access SAP application data directly within their preferred SAP BDC engine, including SAP Databricks. \n This creates an opportunity to combine the rich business semantics of SAP data with the advanced analytics and AI capabilities of Databricks. \n Consider a real-world manufacturing scenario. \n A manufacturer wants to predict future product demand, optimize inventory, and improve supply chain efficiency. \n Traditionally, this could involve extracting historical sales data, integrating inventory information, combining external market intelligence, and building complex data pipelines before developing forecasting models. \n With SAP Business Data Cloud and SAP Databricks, data professionals can access SAP data, enrich it with third-party information, and create custom data products on a semantically rich foundation. \n AI models can then generate forecasts that are aligned with the business logic and relationships already embedded in SAP systems. \n The business impact: Accelerated AI development, reduced integration complexity, lower total cost of ownership, and faster realization of business value from cloud transformation. \n 3. SAP Reltio: Turning Fragmented Master Data into a Trusted 360-Degree Business View \n One of the biggest barriers to enterprise AI adoption is inconsistent master data. \n Imagine an organization where the same customer exists in multiple systems with different customer IDs, addresses, names, and transaction histories. \n A human employee might recognize that these records represent the same customer. But an AI agent needs reliable entity resolution and connected business relationships to reach the same conclusion. \n This is where SAP Reltio becomes important. \n Following the completion of its acquisition, SAP Reltio is now generally available within SAP Business Data Cloud, bringing multi-domain Master Data Management (MDM) capabilities natively into the business data fabric. \n Its AI-based entity resolution capabilities help organizations: \n\n Identify and reconcile duplicate records across SAP and non-SAP systems. \n\n Harmonize inconsistent customer, supplier, and product information. \n\n Build unified 360-degree views of critical business entities. \n\n Connect business attributes, relationships, and interactions. \n\n Publish trusted entity profiles as governed data products. \n The significance goes beyond traditional master data management. \n When Joule and Joule Agents access unified business entity profiles, they gain a more complete understanding of customers, suppliers, products, and their relationships across the enterprise. \n For example, a customer service agent can potentially understand a customer's purchase history, outstanding invoices, service interactions, and business relationships through connected and trusted information. \n The business impact: Better data quality, improved decision-making, stronger customer intelligence, and a reliable foundation for context-aware enterprise AI. \n 4. SAP Knowledge Graph and Ontology Manager: Giving AI Agents the Context to Think and Act \n This is arguably one of the most important developments in SAP's journey toward the autonomous enterprise. \n AI agents do not simply need access to information. They need to understand what that information represents, how different business entities are connected, and which business rules govern their decisions. \n For example, knowing that an invoice is overdue is useful. But understanding the customer associated with that invoice, the agreed payment terms, the credit exposure, and the organization's collections policies is what enables meaningful business action. \n SAP Knowledge Graph provides this connected business understanding by linking enterprise entities, relationships, and business rules. \n At SAP TechEd Berlin 2026, SAP introduced SAP Business Data Cloud Ontology Manager , an AI-assisted experience that enables organizations to create domain-specific views of SAP Knowledge Graph. \n Rather than exposing an entire enterprise knowledge model to every AI agent, organizations can create curated views containing only the information relevant to a particular business scenario. \n Consider a collections AI agent. \n To support collections operations effectively, the agent needs to understand: \n\n Customer relationships. \n\n Outstanding invoices. \n\n Payment terms. \n\n Credit risk. \n\n Financial transactions. \n\n Relevant business rules and policies. \n Using Ontology Manager, organizations can create a dedicated collections domain view that connects these entities and relationships. \n Joule Agents can then use this context to generate more relevant answers, recommendations, and business actions. \n Even more importantly, these domain-specific views inherit business definitions and governance from SAP Knowledge Graph. \n This means organizations can reuse the same business semantics across collections, cash flow management, order management, and other business scenarios without repeatedly redefining the underlying concepts. \n The business impact: More intelligent AI agents, consistent business semantics, reusable enterprise knowledge, and decisions grounded in how the organization actually operates. \n 5. The Bigger Picture: SAP Is Moving Beyond Data Management Toward Business Intelligence for Autonomous Operations \n The real significance of these announcements is not any individual technology or product integration. It is how these capabilities come together to create a unified foundation for enterprise intelligence. \n Consider how the different innovations complement each other: SAP innovation Role in the autonomous enterprise \n\n Dremio Open Lakehouse \n Makes distributed enterprise data accessible \n\n Apache Iceberg and Polaris \n Enables open data management and discovery \n\n SAP BDC Connect \n Supports zero-copy data sharing \n\n SAP Databricks \n Accelerates advanced analytics and AI development \n\n SAP Reltio \n Establishes trusted, unified business entities \n\n SAP Knowledge Graph \n Connects enterprise data with business meaning \n\n Ontology Manager \n Creates reusable, domain-specific business context \n\n Joule and Joule Agents \n Turn business context into intelligent assistance and action \n Together, these capabilities establish a powerful foundation for the next generation of enterprise AI. \n The transformation can be understood through four interconnected layers: \n The foundation of an autonomous enterprise \n AI & Autonomous Actions \n Joule · Joule Agents · Intelligent business workflows \n Business Context & Semantics \n SAP Knowledge Graph · Ontology Manager · SAP Reltio \n Data Integration & Interoperability \n SAP BDC Connect · Zero-copy sharing · SAP Databricks \n Open Data Foundation \n Dremio · Apache Iceberg · Apache Polaris · Distributed data sources \n Conceptual representation of how the announced capabilities work together, not an official SAP reference architecture. \n This approach shifts the enterprise data strategy from simply collecting and processing information to creating a connected business intelligence ecosystem. \n 6. What Enterprises Should Take Away from These Announcements \n For business leaders, enterprise architects, data engineers, and AI transformation teams, these innovations highlight several important priorities: \n 1. Think beyond traditional data integration. Build open architectures that allow data to remain accessible across platforms without unnecessary duplication. \n 2. Treat business context as a strategic asset. High-quality data alone is not enough. Business definitions, relationships, policies, and semantics must also be available to AI. \n 3. Invest in trusted master data. AI-driven decisions require consistent customer, supplier, product, and financial information across systems. \n 4. Make enterprise knowledge reusable. Domain-specific ontologies can help organizations develop AI agents that understand individual business processes without rebuilding business semantics for every use case. \n 5. Move from AI experimentation to business execution. The ultimate objective is to enable AI agents to support real business workflows with the appropriate governance, context, and controls. \n Conclusion: The Future Belo"
+ },
+ {
+  "key": "2b1464bb88998891",
+  "title": "A Heartfelt Thank You to the SAP Community – SAP Stammtisch Gurugram 31-Oct-2026",
+  "link": "https://community.sap.com/t5/gurugram-blog-posts/a-heartfelt-thank-you-to-the-sap-community-sap-stammtisch-gurugram-31-oct/ba-p/14514260",
+  "published": "2026-10-31T14:02:26+00:00",
+  "author": "ravigrover",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP Stammtisch Gurugram | 31 October 2026 \n Another wonderful afternoon connecting with the SAP community at SAP Stammtisch Gurugram ! \n It was great to bring together SAP professionals from SAP, IBM, Accenture and across the wider SAP ecosystem for meaningful conversations, networking, and knowledge sharing. \n Our discussions covered three exciting areas: \n Upcoming SAP Inside Track Gurugram – Planning community engagement, knowledge-sharing sessions, and collaboration. \n SAP Joule – Exploring the evolving role of AI in the SAP ecosystem. \n Autonomous Enterprise – Discussing how AI agents, automation, and intelligent business processes are shaping the future of enterprises. \n A heartfelt thank you to everyone who joined, shared perspectives, and contributed to making this gathering meaningful. \n\n Let's continue connecting, collaborating, and growing the SAP community together. See you at SAP Inside Track Gurugram! \n #SAPCommunity #SAPStammtisch #Gurugram #SAPInsideTrack #SAPJoule #AutonomousEnterprise #SAP #Accenture #IBM"
+ },
+ {
+  "key": "768d1914b541dfa8",
+  "title": "EPIC: 界面里面没有处理银行余额的页签",
+  "link": "https://community.sap.com/t5/financial-management-q-a/epic-%E7%95%8C%E9%9D%A2%E9%87%8C%E9%9D%A2%E6%B2%A1%E6%9C%89%E5%A4%84%E7%90%86%E9%93%B6%E8%A1%8C%E4%BD%99%E9%A2%9D%E7%9A%84%E9%A1%B5%E7%AD%BE/qaq-p/14514255",
+  "published": "2026-10-31T13:12:26+00:00",
+  "author": "bin_wu2",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "hi， \n S4PCE版本，在EPIC_PROC里面没有处理银行对账的页签，请问是怎么回事？谢谢"
+ },
+ {
+  "key": "6b01d4e95272b6c7",
+  "title": "EPIC:看不到付款建议",
+  "link": "https://community.sap.com/t5/financial-management-q-a/epic-%E7%9C%8B%E4%B8%8D%E5%88%B0%E4%BB%98%E6%AC%BE%E5%BB%BA%E8%AE%AE/qaq-p/14514253",
+  "published": "2026-10-31T13:06:40+00:00",
+  "author": "bin_wu2",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "hi， \n 我在EPIC_PROC里创建付款建议后，JOB里显示建议被删除，但在表FPRL_ITEM里是存在的，在EPIC里看不到这个建议，也没法处理，请问各位专家是什么原因？谢谢 \n Ben"
+ },
+ {
+  "key": "81cda0d2378a8234",
+  "title": "Preview report options are not working in Plateau Report Designer tool",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/preview-report-options-are-not-working-in-plateau-report-designer-tool/qaq-p/14514250",
+  "published": "2026-10-31T12:46:38+00:00",
+  "author": "PTecnico",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear Experts \n After importing the custom report into the Plateau Report Designer tool (PRD), the user is unable to preview the report and encounters an error message: \n \" HTTP ERROR: 500. Problem accessing /viewer/frameset. Reason: Server Error. Powered by Jetty .\" \n Reproducing the Issue \n Access the Plateau Report Design tool > \n Import custom report > \n Select 'Run' > View Report > Choose the available options > \n Observe an error in the browser stating: \" HTTP ERROR: 500. Problem accessing /viewer/frameset. Reason: Server Error. Powered by Jetty \". \n\n The configuration for PlateauReportDesigner.ini file is: \n -startup \n plugins/org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar \n --launcher.library \n plugins/org.eclipse.equinox.launcher.win32.win32.x86_1.1.200.v20140603-1326 \n -vm \n C:\\Program Files (x86)\\Java\\jre1.8.0_501\\bin\\javaw.exe \n -data \n E:\\Plateau Report Designer\\Workspace \n -vmargs \n -Xms40m \n -Xmx256m \n -XX:MaxPermSize=128m \n What is the possible cause of this error: \n In the note 3657398. only say: \n https://me.sap.com/notes/3657398 \n Cause \n The issue is related to Java and occurs specifically with custom reports' preview in the browser from the PRD tool. \n Resolution \n This issue falls outside the scope of our support, as it pertains to a custom reports' preview in the browser from the PRD tool, rather than the Learning Management System application. \n To address this scenario, we recommend the following options: \n You can still build the report in PRD and import it into Learning Administration, even if the preview functionality does not work for reports. \n You may consider reaching out to your IT team to explore potential solutions. Alternatively, if you require further assistance from SAP, you can contact the Professional Services team for further assistance."
+ },
+ {
+  "key": "5d5aa2718bef00d8",
+  "title": "Devtoberfest 2026: when will the grand prize winners be announced?",
+  "link": "https://community.sap.com/t5/devtoberfest-discussions/devtoberfest-2026-when-will-the-grand-prize-winners-be-announced/m-p/14514266#M1997",
+  "published": "2026-10-31T14:23:44+00:00",
+  "author": "AkumaryafirAk",
+  "tags": [],
+  "feed": "SAP Community discussions",
+  "kind": "discussion",
+  "text": "Hi everyone, \n Devtoberfest 2026 has wrapped up, and what a ride! I finished at Level 4 (Nerdvana) and learned a lot from the sessions, tutorials and weekly activities along the way. \n Since the rules mention the grand prize draw happening around October 31st, I was wondering if there's an expected date for the winners announcement here on SAP Community, and whether winners hear by email first. It would be great to know so none of us miss it. \n Thanks to the organizers and speakers for another great Devtoberfest, and congratulations to everyone who took part! \n Abhishek"
  }
 ]
