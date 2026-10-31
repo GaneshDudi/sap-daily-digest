@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-10-31",
+  "label": "Saturday, 31 October 2026",
+  "headline": "ABAP AI agent posts dominate a thin day, while Q&A threads expose real gaps: unreleased CDS views, OData create restrictions, and async result retrieval.",
+  "items": 70,
+  "deep": 15
+ },
+ {
   "date": "2026-10-30",
   "label": "Friday, 30 October 2026",
   "headline": "A claim that 292 S/4HANA tables differ between ABAP SQL and native SQL leads a thin day, plus a CDS CDC problem on VBFA and ABAP AI SDK posts.",
