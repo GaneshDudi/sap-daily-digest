@@ -1,0 +1,509 @@
+{
+ "items": [
+  {
+   "key": "ea7032152f108b5c",
+   "title": "Known Issue: “Document Generation Usage Record” Missing from Base Object Selection When Configuring",
+   "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-members/known-issue-document-generation-usage-record-missing-from-base-object/ba-p/14514212",
+   "published": "2026-10-31T10:54:12+00:00",
+   "author": "muralidharansrinivasan",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Known issue: Document Generation Usage Record is missing from the Base Object selection for Trigger Workflows rules, which blocks workflow approval setup for Document Generation. Reported to SAP and currently under study by the SuccessFactors product team as a release defect. No fix or workaround yet; this post will be updated."
+  },
+  {
+   "key": "8233a7898e9eb9e7",
+   "title": "Managing Time-Dependent Hierarchies in SAP Sustainability Control Tower",
+   "link": "https://community.sap.com/t5/sustainability-learning-group-blog-posts/managing-time-dependent-hierarchies-in-sap-sustainability-control-tower/ba-p/14512875",
+   "published": "2026-10-31T07:31:39+00:00",
+   "author": "severinhussmann",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "How do you keep sustainability reporting consistent when your organization changes? This blogpost uses practical examples to explain how to manage reorganizations and divestitures in SAP Sustainability Control Tower, handle time-dependent nodes and links, and preserve historical reporting with snapshots."
+  },
+  {
+   "key": "f1bcff38029597dd",
+   "title": "What's Coming Up? Explore Upcoming SAP Fieldglass Live Sessions!",
+   "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/what-s-coming-up-explore-upcoming-sap-fieldglass-live-sessions/ba-p/14514058",
+   "published": "2026-10-31T17:20:00+00:00",
+   "author": "AlexaYJuarez",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "What's happening in SAP Fieldglass? Take a look at our upcoming Live Sessions and find a topic that interests you."
+  },
+  {
+   "key": "a323a7c663eed830",
+   "title": "Populating Purchase Requisition Descriptions from Maintenance Orders in SAP S/4HANA Cloud",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/populating-purchase-requisition-descriptions-from-maintenance-orders-in-sap/ba-p/14513558",
+   "published": "2026-10-31T16:00:00+00:00",
+   "author": "kumaribabita",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "A step-by-step guide for customer developers on how to populate Purchase Requisition header descriptions automatically when PRs are created from Maintenance Orders using the standard BAdI EAM_ORDER_MODIFY_PR_DATA. \n Who this is for: Customer developers and key users working in SAP S/4HANA Cloud who need to improve Purchase Requisition visibility by automatically populating PR descriptions from Maintenance Order data. This uses standard SAP extensibility — no custom tables or objects required . \n In this article \n The Business Problem \n Understanding the Solution \n Implement the BAdI \n Testing Your Implementation"
+  },
+  {
+   "key": "c1cc29b6473c2d58",
+   "title": "From CDS to A2A: Building a Production CAP Agent with @cap-js/agents and SAP AI Core",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-cds-to-a2a-building-a-production-cap-agent-with-cap-js-agents-and-sap/ba-p/14514274",
+   "published": "2026-10-31T15:29:08+00:00",
+   "author": "nidhish_vaidya_k94",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "From CDS to A2A: Building a Production CAP Agent with @cap-js/agents and SAP AI Core"
+  },
+  {
+   "key": "b602d295ff69e664",
+   "title": "Defining your Own Rules",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/defining-your-own-rules/ba-p/14514268",
+   "published": "2026-10-31T15:13:44+00:00",
+   "author": "Ari",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Dear SAP Business One community Today I want to talk about how you could leverage the user defined parameter query functionality within the web client. Let’s look at this video to learn more: \n\n You can find additional information in the SAP Business One Web client user guide and the Learning journey . \n Best wishes, Ari"
+  },
+  {
+   "key": "6d02c7e1a66968bf",
+   "title": "Beyond Data Silos: Powering the Autonomous Enterprise with SAP's Next-Generation Data Fabric and AI",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/beyond-data-silos-powering-the-autonomous-enterprise-with-sap-s-next/ba-p/14514265",
+   "published": "2026-10-31T14:16:02+00:00",
+   "author": "RanjeetKr",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The next era of enterprise transformation is not just about making data available. It is about making data intelligent, contextual, trusted, and actionable. \n Artificial Intelligence is rapidly transforming how businesses operate. From demand forecasting and supply chain optimization to financial planning and customer engagement, AI agents are moving beyond generating insights to actively supporting business decisions and executing complex workflows. \n But there is one fundamental challenge: AI is only as intelligent as the business context it understands. \n Enterprise data is often scattered across applications, databases, data warehouses, and cloud platforms. Even when organizations have access to vast amounts of information, disconnected systems, inconsistent master data, and fragmented business definitions make it difficult for AI to understand how the business actually operates. \n At SAP TechEd Berlin 2026, SAP introduced a new wave of innovations in SAP Business Data Cloud (SAP BDC) to address this challenge and accelerate the journey toward the autonomous enterprise. \n With advancements in open lakehouse architecture, zero-copy data sharing, enterprise master data management, and business knowledge modeling, SAP is taking an important step toward creating an intelligent data foundation where AI agents can understand business operations, make informed decisions, and act with greater autonomy and confidence. \n Let's explore the innovations shaping this transformation. \n 1. Breaking Data Silos: An Open Lakehouse Built for the AI Era \n\n Enterprise data should not be restricted by platforms, storage locations, or technology boundaries. However, traditional data architectures often require organizations to replicate information across multiple systems, creating additional costs, operational complexity, and inconsistent data. \n SAP is addressing this challenge by strengthening its open lakehouse foundation through the completed acquisition of Dremio. \n The vision is simple: make enterprise data accessible wherever it resides, without constantly moving or duplicating it. \n Key innovations include: \n\n Open lakehouse architecture: Native Apache Iceberg support and a universal catalog powered by Apache Polaris provide an open foundation for discovering, governing, and sharing enterprise data. \n\n Zero-copy data sharing: SAP BDC Connect enables interoperability with platforms such as Databricks, Snowflake, Google Cloud, AWS, and Microsoft, minimizing unnecessary data duplication. \n\n Federated data access: Powered by Dremio's high-performance SQL query engine, organizations can query distributed data across SQL Server, MongoDB, Oracle, and PostgreSQL without physically moving it. \n\n Autonomous query optimization: Dremio Reflections intelligently optimize query performance by learning workload patterns and automatically precomputing frequently accessed results. \n An especially exciting development is the integration with Joule Work, allowing business users to ask complex questions in natural language and receive answers grounded in trusted enterprise data. \n The business impact: Less time managing data pipelines, fewer data silos, faster analytics, and a scalable data foundation for AI agents operating across enterprise environments. \n 2. SAP and Databricks: Accelerating the Next Generation of Data and AI Innovation \n The future of enterprise AI requires collaboration between business applications, data engineering platforms, and advanced AI technologies. \n SAP's expanded partnership with Databricks brings additional industry-leading capabilities into SAP Databricks within SAP Business Data Cloud. \n The expanded capabilities include: \n\n Lakeflow \n\n Agent Bricks \n\n Unity Gateway \n\n Lakebase \n Through SAP Application Data Foundation, organizations can access SAP application data directly within their preferred SAP BDC engine, including SAP Databricks. \n This creates an opportunity to combine the rich business semantics of SAP data with the advanced analytics and AI capabilities of Databricks. \n Consider a real-world manufacturing scenario. \n A manufacturer wants to predict future product demand, optimize inventory, and improve supply chain efficiency. \n Traditionally, this could involve extracting historical sales data, integrating inventory information, combining external market intelligence, and building complex data pipelines before developing forecasting models. \n With SAP Business Data Cloud and SAP Databricks, data professionals can access SAP data, enrich it with third-party information, and create custom data products on a semantically rich foundation. \n AI models can then generate forecasts that are aligned with the business logic and relationships already embedded in SAP systems. \n The business impact: Accelerated AI development, reduced integration complexity, lower total cost of ownership, and faster realization of business value from cloud transformation. \n 3. SAP Reltio: Turning Fragmented Master Data into a Trusted 360-Degree Business View \n One of the biggest barriers to enterprise AI adoption is inconsistent master data. \n Imagine an organization where the same customer exists in multiple systems with different customer IDs, addresses, names, and transaction histories. \n A human employee might recognize that these records represent the same customer. But an AI agent needs reliable entity resolution and connected business relationships to reach the same conclusion. \n This is where SAP Reltio becomes important. \n Following the completion of its acquisition, SAP Reltio is now generally available within SAP Business Data Cloud, bringing multi-domain Master Data Management (MDM) capabilities natively into the business data fabric. \n Its AI-based entity resolution capabilities help organizations: \n\n Identify and reconcile duplicate records across SAP and non-SAP systems. \n\n Harmonize inconsistent customer, supplier, and product information. \n\n Build unified 360-degree views of critical business entities. \n\n Connect business attributes, relationships, and interactions. \n\n Publish trusted entity profiles as governed data products. \n The significance goes beyond traditional master data management. \n When Joule and Joule Agents access unified business entity profiles, they gain a more complete understanding of customers, suppliers, products, and their relationships across the enterprise. \n For example, a customer service agent can potentially understand a customer's purchase history, outstanding invoices, service interactions, and business relationships through connected and trusted information. \n The business impact: Better data quality, improved decision-making, stronger customer intelligence, and a reliable foundation for context-aware enterprise AI. \n 4. SAP Knowledge Graph and Ontology Manager: Giving AI Agents the Context to Think and Act \n This is arguably one of the most important developments in SAP's journey toward the autonomous enterprise. \n AI agents do not simply need access to information. They need to understand what that information represents, how different business entities are connected, and which business rules govern their decisions. \n For example, knowing that an invoice is overdue is useful. But understanding the customer associated with that invoice, the agreed payment terms, the credit exposure, and the organization's collections policies is what enables meaningful business action. \n SAP Knowledge Graph provides this connected business understanding by linking enterprise entities, relationships, and business rules. \n At SAP TechEd Berlin 2026, SAP introduced SAP Business Data Cloud Ontology Manager , an AI-assisted experience that enables organizations to create domain-specific views of SAP Knowledge Graph. \n Rather than exposing an entire enterprise knowledge model to every AI agent, organizations can create curated views containing only the information relevant to a particular business scenario. \n Consider a collections AI agent. \n To support collections operations effectively, the agent needs to understand: \n\n Customer relationships. \n\n Outstanding invoices. \n\n Payment terms. \n\n Credit risk. \n\n Financial transactions. \n\n Relevant business rules and policies. \n Using Ontology Manager, organizations can create a dedicated collections domain view that connects these entities and relationships. \n Joule Agents can then use this context to generate more relevant answers, recommendations, and business actions. \n Even more importantly, these domain-specific views inherit business definitions and governance from SAP Knowledge Graph. \n This means organizations can reuse the same business semantics across collections, cash flow management, order management, and other business scenarios without repeatedly redefining the underlying concepts. \n The business impact: More intelligent AI agents, consistent business semantics, reusable enterprise knowledge, and decisions grounded in how the organization actually operates. \n 5. The Bigger Picture: SAP Is Moving Beyond Data Management Toward Business Intelligence for Autonomous Operations \n The real significance of these announcements is not any individual technology or product integration. It is how these capabilities come together to create a unified foundation for enterprise intelligence. \n Consider how the different innovations complement each other: SAP innovation Role in the autonomous enterprise \n\n Dremio Open Lakehouse \n Makes distributed enterprise data accessible \n\n Apache Iceberg and Polaris \n Enables open data management and discovery \n\n SAP BDC Connect \n Supports zero-copy data sharing \n\n SAP Databricks \n Accelerates advanced analytics and AI development \n\n SAP Reltio \n Establishes trusted, unified business entities \n\n SAP Knowledge Graph \n Connects enterprise data with business meaning \n\n Ontology Manager \n Creates reusable, domain-specific business context \n\n Joule and Joule Agents \n Turn business context into intelligent assistance and action \n Together, these capabilities establish a powerful foundation for the next generation of enterprise AI. \n The transformation can be understood through four interconnected layers: \n The foundation of an autonomous enterprise \n AI & Autonomous Actions \n Joule · Joule Agents · Intelligent business workflows \n Business Context & Semantics \n SAP Knowledge Graph · Ontology Manager · SAP Reltio \n Data Integration & Interoperability \n SAP BDC Connect · Zero-copy sharing · SAP Databricks \n Open Data Foundation \n Dremio · Apache Iceberg · Apache Polaris · Distributed data sources \n Conceptual representation of how the announced capabilities work together, not an official SAP reference architecture. \n This approach shifts the enterprise data strategy from simply collecting and processing information to creating a connected business intelligence ecosystem. \n 6. What Enterprises Should Take Away from These Announcements \n For business leaders, enterprise architects, data engineers, and AI transformation teams, these innovations highlight several important priorities: \n 1. Think beyond traditional data integration. Build open architectures that allow data to remain accessible across platforms without unnecessary duplication. \n 2. Treat business context as a strategic asset. High-quality data alone is not enough. Business definitions, relationships, policies, and semantics must also be available to AI. \n 3. Invest in trusted master data. AI-driven decisions require consistent customer, supplier, product, and financial information across systems. \n 4. Make enterprise knowledge reusable. Domain-specific ontologies can help organizations develop AI agents that understand individual business processes without rebuilding business semantics for every use case. \n 5. Move from AI experimentation to business execution. The ultimate objective is to enable AI agents to support real business workflows with the appropriate governance, context, and controls. \n Conclusion: The Future Belo"
+  },
+  {
+   "key": "2b1464bb88998891",
+   "title": "A Heartfelt Thank You to the SAP Community – SAP Stammtisch Gurugram 31-Oct-2026",
+   "link": "https://community.sap.com/t5/gurugram-blog-posts/a-heartfelt-thank-you-to-the-sap-community-sap-stammtisch-gurugram-31-oct/ba-p/14514260",
+   "published": "2026-10-31T14:02:26+00:00",
+   "author": "ravigrover",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP Stammtisch Gurugram | 31 October 2026 \n Another wonderful afternoon connecting with the SAP community at SAP Stammtisch Gurugram ! \n It was great to bring together SAP professionals from SAP, IBM, Accenture and across the wider SAP ecosystem for meaningful conversations, networking, and knowledge sharing. \n Our discussions covered three exciting areas: \n Upcoming SAP Inside Track Gurugram – Planning community engagement, knowledge-sharing sessions, and collaboration. \n SAP Joule – Exploring the evolving role of AI in the SAP ecosystem. \n Autonomous Enterprise – Discussing how AI agents, automation, and intelligent business processes are shaping the future of enterprises. \n A heartfelt thank you to everyone who joined, shared perspectives, and contributed to making this gathering meaningful. \n\n Let's continue connecting, collaborating, and growing the SAP community together. See you at SAP Inside Track Gurugram! \n #SAPCommunity #SAPStammtisch #Gurugram #SAPInsideTrack #SAPJoule #AutonomousEnterprise #SAP #Accenture #IBM"
+  },
+  {
+   "key": "768d1914b541dfa8",
+   "title": "EPIC: 界面里面没有处理银行余额的页签",
+   "link": "https://community.sap.com/t5/financial-management-q-a/epic-%E7%95%8C%E9%9D%A2%E9%87%8C%E9%9D%A2%E6%B2%A1%E6%9C%89%E5%A4%84%E7%90%86%E9%93%B6%E8%A1%8C%E4%BD%99%E9%A2%9D%E7%9A%84%E9%A1%B5%E7%AD%BE/qaq-p/14514255",
+   "published": "2026-10-31T13:12:26+00:00",
+   "author": "bin_wu2",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "hi， \n S4PCE版本，在EPIC_PROC里面没有处理银行对账的页签，请问是怎么回事？谢谢"
+  },
+  {
+   "key": "6b01d4e95272b6c7",
+   "title": "EPIC:看不到付款建议",
+   "link": "https://community.sap.com/t5/financial-management-q-a/epic-%E7%9C%8B%E4%B8%8D%E5%88%B0%E4%BB%98%E6%AC%BE%E5%BB%BA%E8%AE%AE/qaq-p/14514253",
+   "published": "2026-10-31T13:06:40+00:00",
+   "author": "bin_wu2",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "hi， \n 我在EPIC_PROC里创建付款建议后，JOB里显示建议被删除，但在表FPRL_ITEM里是存在的，在EPIC里看不到这个建议，也没法处理，请问各位专家是什么原因？谢谢 \n Ben"
+  },
+  {
+   "key": "81cda0d2378a8234",
+   "title": "Preview report options are not working in Plateau Report Designer tool",
+   "link": "https://community.sap.com/t5/human-capital-management-q-a/preview-report-options-are-not-working-in-plateau-report-designer-tool/qaq-p/14514250",
+   "published": "2026-10-31T12:46:38+00:00",
+   "author": "PTecnico",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear Experts \n After importing the custom report into the Plateau Report Designer tool (PRD), the user is unable to preview the report and encounters an error message: \n \" HTTP ERROR: 500. Problem accessing /viewer/frameset. Reason: Server Error. Powered by Jetty .\" \n Reproducing the Issue \n Access the Plateau Report Design tool > \n Import custom report > \n Select 'Run' > View Report > Choose the available options > \n Observe an error in the browser stating: \" HTTP ERROR: 500. Problem accessing /viewer/frameset. Reason: Server Error. Powered by Jetty \". \n\n The configuration for PlateauReportDesigner.ini file is: \n -startup \n plugins/org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar \n --launcher.library \n plugins/org.eclipse.equinox.launcher.win32.win32.x86_1.1.200.v20140603-1326 \n -vm \n C:\\Program Files (x86)\\Java\\jre1.8.0_501\\bin\\javaw.exe \n -data \n E:\\Plateau Report Designer\\Workspace \n -vmargs \n -Xms40m \n -Xmx256m \n -XX:MaxPermSize=128m \n What is the possible cause of this error: \n In the note 3657398. only say: \n https://me.sap.com/notes/3657398 \n Cause \n The issue is related to Java and occurs specifically with custom reports' preview in the browser from the PRD tool. \n Resolution \n This issue falls outside the scope of our support, as it pertains to a custom reports' preview in the browser from the PRD tool, rather than the Learning Management System application. \n To address this scenario, we recommend the following options: \n You can still build the report in PRD and import it into Learning Administration, even if the preview functionality does not work for reports. \n You may consider reaching out to your IT team to explore potential solutions. Alternatively, if you require further assistance from SAP, you can contact the Professional Services team for further assistance."
+  },
+  {
+   "key": "5d5aa2718bef00d8",
+   "title": "Devtoberfest 2026: when will the grand prize winners be announced?",
+   "link": "https://community.sap.com/t5/devtoberfest-discussions/devtoberfest-2026-when-will-the-grand-prize-winners-be-announced/m-p/14514266#M1997",
+   "published": "2026-10-31T14:23:44+00:00",
+   "author": "AkumaryafirAk",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "Hi everyone, \n Devtoberfest 2026 has wrapped up, and what a ride! I finished at Level 4 (Nerdvana) and learned a lot from the sessions, tutorials and weekly activities along the way. \n Since the rules mention the grand prize draw happening around October 31st, I was wondering if there's an expected date for the winners announcement here on SAP Community, and whether winners hear by email first. It would be great to know so none of us miss it. \n Thanks to the organizers and speakers for another great Devtoberfest, and congratulations to everyone who took part! \n Abhishek"
+  },
+  {
+   "key": "c0eea58153c6555b",
+   "title": "HCM Job Architecture Harmonization in M&A Projects",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/hcm-job-architecture-harmonization-in-m-amp-a-projects/ba-p/14514296",
+   "published": "2026-10-31T23:37:33+00:00",
+   "author": "manubhutani",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "HCM Job Architecture Harmonization in M&A Projects \n 1. Purpose and when to harmonize \n An acquired workforce arrives with its own jobs, levels, titles, and pay structures. A lift-and-shift carries those over as they are by creating placeholders. Harmonization maps them into the acquirer’s job architecture so both populations run on a single, consistent structure in the target system. This guide covers how harmonization is carried out, the practices that work, how clients typically approach it, and the issues they run into. \n\n Dimension \n Lift-and-shift \n Harmonize \n\n What happens to acquired jobs \n Loaded as separate job codes, levels, and grades \n Mapped to the acquirer’s (or a combined) job codes, levels, and grades \n\n Speed to Day 1 \n Faster; few decisions needed \n Slower; needs design, compensation, and legal decisions and approvals \n\n Effort later \n Higher: two structures to maintain, split reporting \n Lower: one structure, one governance process \n\n Employee impact \n Little visible change \n Possible title, level, or grade changes; needs careful communication \n\n Best fit \n Short transition period, or the acquired entity stays separate \n Workforce will be integrated long-term with shared reporting, pay cycles, and mobility \n\n How to decide whether harmonization is the right call? \n The acquired employees will sit in the same organization, reporting lines, and manager population as existing employees. \n Compensation planning, promotion cycles, and performance processes will be shared. \n Leadership expects combined workforce reporting by job family, level, or grade. \n The acquirer wants one career framework and wants to avoid maintaining two architectures. \n Timeline of HCM TSA Exit \n\n 2. Anatomy of a job architecture \n A job architecture is the structure that organizes every role in the company. Harmonization means aligning each of these components, not just job codes. \n\n Component \n What it defines \n SF EC representation \n\n Job family and function \n Broad groupings of work (Finance, Engineering, HR, Operations) \n Job Function; job family via Job Profile Builder or a custom object \n\n Job profile / job code \n The standard definition of a role \n Job Classification (job code) foundation object \n\n Level \n Scope and seniority within a family \n Job Level (picklist or foundation object) \n\n Grade and pay structure \n Pay ranges, bands, or steps tied to level \n Pay Grade, Pay Range, Pay Components \n\n Titles \n Job title (system) vs. business title (what people see) \n Job title on job information; business title as a separate field \n\n Classification attributes \n Exempt/non-exempt, EEO category, regulatory or country-specific classification \n Attributes on Job Classification; country-specific fields \n\n Career paths \n How people move across levels and families \n Job Profile Builder or career content, or documented outside the system \n\n Position structure (if used) \n Seats in the org tied to a job code \n Position Management objects \n 3. High Level Source to target mapping \n\n Common source concept \n Typical SF EC target \n\n Job Family Group \n Job Function or grouping in Job Profile Builder \n\n Job Family \n Job family / sub-function (Job Profile Builder or custom object) \n\n Job Profile \n Job Classification (job code) \n\n Management Level \n Job Level \n\n Compensation Grade / Grade Profile \n Pay Grade and Pay Range \n\n Worker type / time type \n Employee Class, Employment Type, Regular/Temporary \n\n Position or job management staffing model \n Position Management on or off \n\n Worker-level business title \n Business title field \n\n Profile attributes (exempt status, EEO) \n Job Classification attributes \n\n 4. Key design decisions \n These decisions shape the step-by-step approach that follows. Agree them early, ideally before detailed mapping begins. \n\n Decision \n Options \n Guidance \n\n Level alignment \n Adopt the acquirer’s levels, or map by scope \n Match on scope of impact and accountability; calibrate on a sample of roles with business leaders \n\n Titles \n Keep legacy titles for a period, or convert at go-live \n Separate the system job title from the business title to reduce friction for employees \n\n Pay mapping \n Map by grade equivalence, or by pay range overlap \n Use range overlap; set a policy for out-of-range incumbents (hold, freeze, review at next cycle) \n\n Exempt / non-exempt status \n Keep source classification, or reassess \n Treat any reclassification as a legal decision with overtime and payroll implications \n\n Country rules \n Single global mapping, or country exceptions \n Plan exceptions where local law, collective agreements, or works council rights apply (for example Germany, France, and the Netherlands) \n\n Number of job codes \n Consolidate aggressively, or preserve granularity \n Consolidate duplicates, but avoid losing granularity needed for market pricing and compliance \n\n Staffing model \n Position management or job management \n Decide early; it affects headcount control, approvals, and reporting \n\n Effective date \n At go-live, or after the transition period or next pay cycle \n Choose based on legal review, pay cycle timing, and what employees can absorb \n\n History \n Keep legacy codes in history, or remap \n Keep a legacy-to-target reference so reporting can bridge both \n\n 5. How harmonization is done: step by step \n Common issues clients face, and how to handle them, are noted under each step. \n Step 1: Discover and inventory \n Extract all jobs from the source: job code, title, family, level, grade, exempt status, country, and headcount by job. \n Collect the acquirer’s architecture: job catalog, leveling guide, pay structures, title conventions, and any market pricing data. \n Identify countries with local requirements, such as works council involvement or collective agreements. \n Common issues and how to handle them \n Messy job inventory. Duplicate, inactive, and single-person job codes build up over years. Clean and consolidate them here, and agree rules for legacy and single-incumbent codes before mapping. \n Step 2: Set design principles and the target model \n Choose the target: the acquirer’s architecture, a hybrid with extensions for specialist roles, or a new combined model. \n Agree with the principles, for example: no pay reductions, no automatic title demotions, minimize new job codes, country compliance first. \n Decide title policy, the level-matching method, and who owns the architecture after go-live. \n Get executive approval of the principles before detailed mapping begins. \n Common issues and how to handle them \n Unclear ownership. There is often no single owner of job architecture on the acquirer side. Name an owner and an approver at kickoff, and start a decision log. \n Staffing model mismatch. Source and target may handle positions and headcount differently. Decide the model early, and confirm during testing that approvals and headcount reporting behave as intended. \n Timeline pressure. Harmonization decisions often take longer than the build and test windows. Prioritize high-headcount jobs, and use an interim crosswalk with phased employee-facing changes if needed. \n Step 3: Build the crosswalk \n The crosswalk is the core deliverable: a line by line mapping from every source job to a target job. Match on scope, accountability, required skills, and typical pay range , not on titles alone. \n\n Crosswalk field \n Purpose \n\n Source job code, title, family, level, grade \n Identify the starting point \n\n Headcount and countries \n Prioritizes review and shows where local rules apply \n\n Target job code, title, family, level, grade \n The proposed destination \n\n Match type \n One to one, many to one, one to many, no match, or exception \n\n Confidence (high / medium / low) \n Focus review time on uncertain matches \n\n Pay impact \n Flags incumbents outside the target range \n\n Legal or works council flag \n Marks items needing consultation or counsel review \n\n Approver and status \n Creates accountability and an audit trail \n\n Match type \n Description \n Typical treatment \n\n One-to-one \n Source job equals a target job \n Map directly \n\n Many-to-one \n Several source jobs collapse into one target job \n Consolidate - check that pay and scope differences are acceptable \n\n One-to-many \n One source job split by scope or level \n Split by criteria such as level, team, or country \n\n No match \n No equivalent in the target \n Create a new job code under governance, or map to the closest with approval \n\n Exception \n Any country specific or regulated roles \n Keep a separate mapping; involve legal and local HR \n Common issues and how to handle them \n Level mismatch. The same title can mean different scope in each company. Match on scope, accountability, and typical pay, and calibrate with business leaders on a sample of roles. \n Step 4: Validate and approve \n Review with HR Center of Excellence, Compensation, Legal, local HR, and business leaders. Start with the jobs covering most of the employees. \n Run impact analysis for acquired company employees: how many people see a change in title, level, grade, exempt status, or pay position. \n Engage works councils or employee representatives (unions etc.) where required and build their timeline into the plan. \n Record every approval in a decision log and set a freeze date after which changes follow change control. \n Common issues and how to handle them \n Pay misalignment. Acquired pay can sit outside the target range for the mapped grade. Run the incumbent impact analysis, set an out-of-range policy, and get Compensation approval. \n Legal and works council constraints. Job grouping and classification can be subject to co-determination or collective agreements. Identify the countries early, involve legal and local HR, and allow consultation time in the plan. \n Exempt status changes. Classification practices differ between companies. Require counsel sign-off, and model overtime and payroll impact before any change. \n Late changes after the freeze. Leaders often challenge matches once mock loads begin. Enforce the freeze date, impact assessment, and change control, and quantify the rework. \n Step 5: Configure in SuccessFactors \n Create or update job classifications, functions, levels, pay grades and ranges, and picklists with correct effective dates. \n Set country-specific attributes, and position structures if position management is in use. \n Align related configuration that depends on job data: role-based permissions, workflows, compensation and performance templates, and recruiting templates. \n Common issues and how to handle them \n Missed downstream dependencies. Payroll, recruiting, benefits, workflows, and reports are often keyed to job code, level, or grade. List every dependency during design, configure each one, and test it with real data in Step 6. \n Step 6: Migrate and test \n Apply the crosswalk in the data load: each employee’s job information is populated from the mapped target values. \n Run mock loads with reconciliation by job code, level, grade, and country, and list any incumbent with no match. \n Test downstream systems that depend on job data: payroll, applicant tracking, benefits eligibility, approval workflows, and reporting. \n Common issues and how to handle them \n History and effective dating. Past job records reference legacy codes. Decide whether history keeps the legacy codes or is remapped, and keep a legacy-to-target reference table for reporting. \n Step 7: Communicate and govern \n Brief managers and HR business partners first, with FAQs and talking points. Then communicate to employees. \n Set up a job-code request process, naming standards, and a periodic review so the architecture does not sprawl after go-live. \n Retire or lock legacy codes once reporting and history requirements are met. \n Common issues and how to handle them \n Perceived demotions or promotions. Title or level changes are visible to employees and managers. Apply the no-decrease and title principles set in Step 2, keep business titles separate from system titles, and br"
+  },
+  {
+   "key": "87dba2a533f71ab8",
+   "title": "SAP TechEd 2026 — Day 3: O Grand Finale",
+   "link": "https://community.sap.com/t5/curitiba-blog-posts/sap-teched-2026-day-3-o-grand-finale/ba-p/14514303",
+   "published": "2026-11-01T04:01:07+00:00",
+   "author": "LuizSouza_cwb",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Último dia de TechEd 2026 e o conteúdo mais técnico ficou pro final: SAP Business Data Cloud com Ontology Manager, parceria com Dremio, agentes com CrewAI e LangGraph na BTP, MCP Servers locais e o roadmap de 2027. Resumo direto de quem acompanhou virtual de Curitiba."
+  },
+  {
+   "key": "630ad84b3eccb3ac",
+   "title": "Set up LeanIX' custom discovery connector just by talking to it",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/set-up-leanix-custom-discovery-connector-just-by-talking-to-it/ba-p/14514295",
+   "published": "2026-11-01T03:14:02+00:00",
+   "author": "Marco_Dorn",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Use the SAP LeanIX MCP server to setup a custom-integration via custom discovery connector just by talking to your AI coding agent. In short: you bring the intent and the credentials; the agent handles the plumbing."
+  },
+  {
+   "key": "f604e84fe9595664",
+   "title": "My SAP Journey – Learning, Sharing, and Growing with the Community",
+   "link": "https://community.sap.com/t5/welcome-corner-discussions/my-sap-journey-learning-sharing-and-growing-with-the-community/m-p/14514311#M10795",
+   "published": "2026-11-01T07:01:33+00:00",
+   "author": "omaroun",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "Hello SAP Community! \n I'm Omar Oun, an SAP ABAP Developer with a growing interest in SAP Data & Analytics. \n My journey started with ABAP development and gradually expanded into SAP RAP, SAP UI5, SAP BTP, SAP Analytics Cloud (SAC), and SAP Datasphere. \n I'm passionate about learning new technologies, solving real-world challenges, and sharing knowledge with others. \n Looking forward to connecting, learning, and growing together with the SAP Community. \n Kind Regards, \n Omar Oun"
+  }
+ ],
+ "triage": {
+  "0": {
+   "i": 0,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Known SuccessFactors issue: Document Generation Usage Record missing from Trigger Workflows Base Object selection; no fix or workaround yet."
+  },
+  "1": {
+   "i": 1,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Functional guide to handling time-dependent hierarchies, reorganizations and snapshots for reporting in SAP Sustainability Control Tower."
+  },
+  "2": {
+   "i": 2,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Promotion of upcoming SAP Fieldglass live sessions; no technical content."
+  },
+  "3": {
+   "i": 3,
+   "category": "S/4HANA Development & Extensibility",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Step-by-step guide to populating PR header descriptions from Maintenance Orders via the EAM_ORDER_MODIFY_PR_DATA BAdI in S/4HANA Cloud."
+  },
+  "4": {
+   "i": 4,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Hands-on guide to building a production CAP agent using @cap-js/agents, A2A protocol and SAP AI Core."
+  },
+  "5": {
+   "i": 5,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Short video post on user-defined parameter queries in the SAP Business One web client, aimed at end users."
+  },
+  "6": {
+   "i": 6,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Marketing-style overview of SAP's data fabric and AI vision for the autonomous enterprise; no technical content."
+  },
+  "7": {
+   "i": 7,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Thank-you recap of the SAP Stammtisch Gurugram community meetup; event post with no technical content."
+  },
+  "8": {
+   "i": 8,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Question (Chinese) about EPIC_PROC on S/4HANA Public Cloud missing a bank reconciliation/balance tab; configuration-level issue."
+  },
+  "9": {
+   "i": 9,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Question (Chinese) on payment proposals created in EPIC_PROC existing in FPRL_ITEM but not visible or processable in the EPIC app."
+  },
+  "10": {
+   "i": 10,
+   "category": "Other",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "Plateau Report Designer returns HTTP 500 when previewing an imported custom report; a debugging issue in a report-building tool."
+  },
+  "11": {
+   "i": 11,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Community question asking when Devtoberfest 2026 grand prize winners will be announced; administrative, no technical content."
+  },
+  "12": {
+   "i": 12,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "HCM job architecture harmonization approach for M&A projects; functional HR design rather than development."
+  },
+  "13": {
+   "i": 13,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Portuguese event recap of SAP TechEd 2026 Day 3 covering BDC, agent frameworks on BTP, MCP servers and 2027 roadmap."
+  },
+  "14": {
+   "i": 14,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Shows setting up a custom LeanIX discovery connector by prompting an AI coding agent through the SAP LeanIX MCP server."
+  },
+  "15": {
+   "i": 15,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Personal introduction post from an ABAP developer sharing their learning journey across RAP, UI5, BTP, SAC and Datasphere."
+  }
+ },
+ "deep": {
+  "3": {
+   "summary": "A customer-developer blog for SAP S/4HANA Cloud on populating the header description of Purchase Requisitions (PRs) automatically when they are created from Maintenance Orders. It uses the standard BAdI EAM_ORDER_MODIFY_PR_DATA and claims no custom tables or objects are needed. The excerpt covers only the intro and section outline (Business Problem, Understanding the Solution, Implement the BAdI, Testing). The implementation steps, filter logic, and field mapping are not included in the text provided, so the actual technique cannot be verified from this excerpt.",
+   "key_points": [
+    "Goal: auto-fill PR header description when PRs are generated from Maintenance Orders (PM/EAM in S/4HANA Cloud).",
+    "Uses the standard BAdI EAM_ORDER_MODIFY_PR_DATA, i.e. classic customer extensibility via BAdI implementation rather than a custom object.",
+    "Stated audience: customer developers and key users in S/4HANA Cloud.",
+    "Stated benefit: better PR visibility for buyers and approvers by surfacing maintenance order context.",
+    "Structure: business problem, solution concept, BAdI implementation, testing."
+   ],
+   "technical_details": [
+    "BAdI: EAM_ORDER_MODIFY_PR_DATA (standard enhancement spot for PR data created from maintenance orders).",
+    "Deployment context: SAP S/4HANA Cloud (public/private edition extensibility; exact steps are not given in the excerpt).",
+    "Claim: no custom tables or custom objects are required.",
+    "Method names, filter parameters, and code listing are not visible in the provided text."
+   ],
+   "why_it_matters": "Shows the correct pattern for cloud extensibility: use a published BAdI rather than modifying standard PR creation. For PM-to-MM integration, it addresses a real usability gap, since PRs created from orders otherwise carry little context.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How can a Purchase Requisition created from a Maintenance Order show a meaningful description without custom development?",
+   "teaching_angle": "Useful as a case study in choosing a BAdI over a user exit or modification in a cloud system. Ask learners to locate the BAdI in the cloud enhancement catalog, identify its filter and method signature, and decide which order fields (equipment, functional location, order description) should map to the PR header description. Check the full post for the actual code before using it in class.",
+   "quality": 2
+  },
+  "4": {
+   "summary": "The post has only a title and no body text. Its title suggests a tutorial on building a production CAP agent using the @cap-js/agents library, SAP AI Core as the LLM backend, and agent-to-agent (A2A) communication, starting from CDS models. Nothing in the provided text confirms how these pieces are wired together, which versions are used, or what the production setup looks like.",
+   "key_points": [
+    "Only the title is available; no body content was provided.",
+    "Title implies a CAP (Node.js or Java) agent built with @cap-js/agents.",
+    "Title implies SAP AI Core as the model/inference platform.",
+    "Title implies A2A (agent-to-agent) interoperability as the target architecture."
+   ],
+   "technical_details": [
+    "Package named in title: @cap-js/agents (CAP JavaScript agent library; exact API not given).",
+    "Platform named in title: SAP AI Core.",
+    "Protocol named in title: A2A (agent-to-agent).",
+    "Starting point named in title: CDS (Core Data Services) models."
+   ],
+   "why_it_matters": "If the body is substantive, it covers an active area for CAP developers: connecting CDS-based services to AI Core and to agent interoperability standards. From the title alone, it cannot be judged as more than a promising topic.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Useful as a discussion prompt on how a CDS service can expose agent tools and how an agent is deployed on AI Core. Read the full post first and verify the package versions and API before teaching from it.",
+   "quality": 1
+  },
+  "14": {
+   "summary": "A short blog on using the SAP LeanIX MCP (Model Context Protocol) server, driven from an AI coding agent, to set up a custom discovery connector for LeanIX. The author's point is that the user supplies intent and credentials, and the agent handles the configuration steps. The provided text is only the abstract, so the actual connector configuration, required permissions, and the MCP tool calls are not shown.",
+   "key_points": [
+    "Uses the SAP LeanIX MCP server as the interface between an AI coding agent and LeanIX.",
+    "Goal: create a custom discovery connector for LeanIX without manual UI configuration.",
+    "Division of work: the human provides intent and credentials; the agent does the setup.",
+    "No code, payloads, or screenshots appear in the provided text."
+   ],
+   "technical_details": [
+    "SAP LeanIX MCP server (Model Context Protocol endpoint).",
+    "Object: custom discovery connector (LeanIX Discovery / Integration).",
+    "Inputs: user intent plus credentials supplied to the agent."
+   ],
+   "why_it_matters": "It shows MCP being used for administrative setup, not just for data reads. That is relevant for architects who want AI agents to manage integration configuration, but it also raises credential-handling and least-privilege questions that the abstract does not address.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How can a custom discovery connector be set up in LeanIX without manual configuration, by using an AI coding agent through MCP?",
+   "teaching_angle": "Discussion on security for agent-driven admin tasks: where credentials are stored, which token scopes are needed, and how to audit actions the agent takes. Requires the full post to assess whether the approach is practical.",
+   "quality": 2
+  },
+  "10": {
+   "summary": "A question from a Learning Management System (LMS) administrator. A custom report imported into the Plateau Report Designer (PRD) gives HTTP 500 at /viewer/frameset when previewing it in the browser. The poster includes the PlateauReportDesigner.ini file, which runs on Java 8 (jre1.8.0_501) with -Xmx256m and the -XX:MaxPermSize=128m flag. The accepted answer just points to note 3657398, says the issue is Java-related and outside support scope, and suggests building the report in PRD and importing it anyway. The answer does not explain the cause or give a fix.",
+   "key_points": [
+    "Symptom: HTTP ERROR 500 at /viewer/frameset (Jetty) when using View Report in PRD.",
+    "Affects custom reports only, according to the answer.",
+    "Config shown: Java 8 JRE, -Xmx256m, and -XX:MaxPermSize=128m.",
+    "The cited answer gives no root cause beyond 'Java-related'.",
+    "Workaround offered: skip preview, import the report into Learning Administration anyway, or engage Professional Services."
+   ],
+   "technical_details": [
+    "Note cited: 3657398 (only the link is given; its text is not in the post).",
+    "Tool: Plateau Report Designer (PRD), an Eclipse-based RCP app with an embedded Jetty viewer.",
+    "Startup: plugins/org.eclipse.equinox.launcher_1.3.0 and a win32 x86 launcher fragment.",
+    "JVM: C:\\Program Files (x86)\\Java\\jre1.8.0_501; -Xms40m -Xmx256m -XX:MaxPermSize=128m.",
+    "Error: HTTP 500 at /viewer/frameset (embedded Jetty)."
+   ],
+   "why_it_matters": "It is a useful reminder that embedded reporting tools rely on a local Java runtime and heap settings. Heap settings that are too small (256m) or a removed JVM flag can cause server-side errors in the local viewer. Note that -XX:MaxPermSize was removed in Java 8, so the JVM ignores it and prints a warning. This is general JVM knowledge, not something the thread confirms.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Why does previewing a custom report in Plateau Report Designer return HTTP 500 from the embedded Jetty viewer, and how can it be fixed?",
+   "teaching_angle": "Good for a troubleshooting lesson: read the INI file, check the JVM version and flags, and look at the server log to find the real exception. The thread shows that a support answer which only cites a note and redirects can leave the problem open. Ask learners how they would collect the stack trace and test a larger -Xmx before escalating.",
+   "quality": 2
+  }
+ },
+ "digest": {
+  "headline": "Thin Sunday: a BAdI-based PR description post for S/4HANA Cloud, two title-only AI posts, and an unresolved Plateau report preview error.",
+  "overview": "Only four items arrived today, and none is a release. Ref 3 is the most useful for ABAP developers: it uses the standard BAdI EAM_ORDER_MODIFY_PR_DATA to fill the Purchase Requisition header description when PRs are created from Maintenance Orders. The excerpt has no code, so the implementation can't be verified.\n\nRefs 4 and 14 are AI-related (a CAP agent with @cap-js/agents and AI Core, and a LeanIX MCP connector setup). We only have a title for ref 4 and an abstract for ref 14. Ref 10 is a Plateau Report Designer HTTP 500 question with no real fix. Treat everything today as leads to check, not as material to teach from yet.",
+  "top_stories": [
+   {
+    "title": "PR header description from Maintenance Orders via BAdI EAM_ORDER_MODIFY_PR_DATA",
+    "summary": "A blog describes filling the Purchase Requisition header description automatically when PRs are created from Maintenance Orders in S/4HANA Cloud. It uses the standard BAdI EAM_ORDER_MODIFY_PR_DATA and claims no custom tables or objects are needed. The excerpt shows only the outline (problem, solution, BAdI implementation, testing). Method signature, filters and field mapping are not included.",
+    "why_it_matters": "It is a clear example of using a published BAdI rather than modifying standard PR creation. It also fills a real PM-to-MM gap, because PRs created from orders carry little context for buyers. Read the full post before relying on it.",
+    "priority": 1,
+    "refs": [
+     3
+    ]
+   },
+   {
+    "title": "AI and agent posts: CAP agents on AI Core, and LeanIX setup via MCP",
+    "summary": "Ref 4 has only a title: a CAP agent built with @cap-js/agents, SAP AI Core and A2A, starting from CDS. Ref 14 describes setting up a LeanIX custom discovery connector through the LeanIX MCP server driven by an AI coding agent. Neither text includes code, versions or configuration.",
+    "why_it_matters": "Both point to CDS services and MCP being used as agent interfaces. Nothing can be confirmed yet, and ref 14 raises credential handling and least-privilege questions that the abstract does not address.",
+    "priority": 2,
+    "refs": [
+     4,
+     14
+    ]
+   },
+   {
+    "title": "Plateau Report Designer preview returns HTTP 500",
+    "summary": "An LMS admin gets HTTP 500 at /viewer/frameset when previewing a custom report. The INI file shows Java 8 with -Xmx256m and -XX:MaxPermSize=128m. The answer cites note 3657398, calls it Java-related and out of support scope, and suggests importing the report anyway.",
+    "why_it_matters": "The thread gives no root cause. The memory settings may be relevant, but that is general JVM knowledge, not something the thread confirms. It is outside the core ABAP stack.",
+    "priority": 3,
+    "refs": [
+     10
+    ]
+   }
+  ],
+  "releases": [],
+  "deep_dives": [
+   {
+    "title": "Using a standard BAdI to enrich PR data from Maintenance Orders",
+    "explanation": "Ref 3 uses the BAdI EAM_ORDER_MODIFY_PR_DATA to set the PR header description when a PR is generated from a Maintenance Order. The post says no custom tables or objects are needed. The excerpt does not show the method names, parameters or filter, so the code below is a generic pattern, not the post's implementation.\n\nThe usual steps are: find the enhancement spot and BAdI definition, check whether it is filter-dependent and whether multiple implementations are allowed, and read the method signature in ADT. In S/4HANA Cloud (the post's context), you would implement it as a customer-developer in the released extensibility model. Confirm the BAdI is released for your system type.\n\nThe design decision is which order fields go into the description: order number, order short text, equipment or functional location. The PR header description has a limited length, so concatenate and truncate deliberately. Keep the logic free of database reads where possible, since it runs in the PR creation flow.\n\nTest by creating a PR from an order and checking the header. Also test an order with empty fields, and mass creation, so one bad order does not break PR generation.",
+    "key_concepts": [
+     "BAdI implementation in ADT",
+     "Cloud-released extensibility",
+     "Field mapping and text length",
+     "Testing in the PR creation flow"
+    ],
+    "refs": [
+     3
+    ]
+   },
+   {
+    "title": "Reading a BAdI before implementing it",
+    "explanation": "Ref 3 is a good prompt for a method to inspect any BAdI. In ADT, open the enhancement spot, then the BAdI definition, and read the interface: importing, changing and returning parameters. The parameters tell you what you may modify and what is read-only.\n\nNext, check filters and multiple-use settings. A filter-less BAdI that is not multiple-use allows one active implementation, so a conflict with an existing one is a risk. Use the where-used list on the interface to find standard call sites and see the context in which it is called.\n\nWrite the implementation defensively: guard against initial inputs, avoid commits and implicit COMMIT WORK, and do not raise exceptions the caller does not expect. Unit-test the logic by moving it into a separate class that takes plain structures, so the BAdI method only delegates.\n\nThese are general practices, not claims from the post. The actual BAdI signature must be taken from the system or the full blog.",
+    "key_concepts": [
+     "Enhancement spot and BAdI definition",
+     "Method signature inspection",
+     "Filters and multiple use",
+     "Delegating to a testable class"
+    ],
+    "refs": [
+     3
+    ]
+   }
+  ],
+  "trending_problems": [
+   {
+    "theme": "Enriching documents created by standard processes",
+    "description": "Standard-generated documents, such as PRs from maintenance orders, often lack context. Ref 3 addresses this with a BAdI.",
+    "teaching_tip": "Have learners find the relevant BAdI for a document-creation flow and decide which source fields to map.",
+    "refs": [
+     3
+    ]
+   },
+   {
+    "theme": "Unresolved tool errors with note-only answers",
+    "description": "Ref 10 shows a support answer that cites a note and a scope limit but gives no cause. The user still has the HTTP 500.",
+    "teaching_tip": "Teach collecting the log and stack trace first, then testing one change at a time, such as heap size.",
+    "refs": [
+     10
+    ]
+   }
+  ],
+  "post_drafts": [
+   {
+    "title": "Fill PR description from Maintenance Orders",
+    "text": "*PR created from a maintenance order with no useful description?*\n\nA new community post uses the standard BAdI *EAM_ORDER_MODIFY_PR_DATA* in S/4HANA Cloud.\nIt claims no custom tables or objects are needed.\n\nThe excerpt doesn't show the code, so check the full post first.\n\nTakeaway: look for a released BAdI before thinking of modifications.\n\nhttps://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/populating-purchase-requisition-descriptions-from-maintenance-orders-in-sap/ba-p/14513558"
+   }
+  ],
+  "interview_questions": [
+   {
+    "question": "You need to change data of a document that a standard process creates, such as a PR from a maintenance order. How do you approach it?",
+    "answer": "First look for a released extension point, such as a BAdI, instead of modifying standard code. In ADT I open the enhancement spot and BAdI definition and read the method signature to see which parameters are changeable. I check whether it is filter-dependent and whether multiple implementations are allowed, to avoid conflicts. Ref 3 uses EAM_ORDER_MODIFY_PR_DATA for the PR header description. In the implementation I guard against initial values and avoid commits or unexpected exceptions. I keep the logic in a separate class so it can be unit-tested, and I test with an order that has missing fields.",
+    "level": "Mid-level",
+    "refs": [
+     3
+    ]
+   },
+   {
+    "question": "Why prefer a BAdI over an implicit enhancement or modification in a cloud system?",
+    "answer": "In S/4HANA Cloud, extensibility must use released, stable interfaces so upgrades do not break custom code. A BAdI is a published contract with a defined signature, which SAP is expected to keep compatible. Modifications and unreleased enhancements depend on internals that can change. A BAdI also supports a clean separation: the implementation sits in customer code and can be removed without touching standard objects. The tradeoff is that you can only change what the BAdI exposes, so you must check that its parameters cover the need.",
+    "level": "Senior",
+    "refs": [
+     3
+    ]
+   },
+   {
+    "question": "How would you govern AI agents that use MCP to change system configuration, as in the LeanIX example?",
+    "answer": "The abstract describes the user giving intent and credentials while the agent does the setup. I would treat the agent as a privileged integration user. That means a dedicated technical user with the minimum token scopes, secrets held in a vault rather than pasted into prompts, and an audit trail of every MCP tool call. I would separate read tools from write tools, require approval for destructive actions, and run first in a non-production tenant. The abstract does not cover these controls, so they are my recommendations, not claims from the post.",
+    "level": "Architect",
+    "refs": [
+     14
+    ]
+   }
+  ],
+  "class_idea": {
+   "title": "Reading and implementing a BAdI safely in ADT",
+   "why_now": "Ref 3 shows a BAdI-only solution for enriching PRs created from maintenance orders, a common extensibility task.",
+   "outline": [
+    "Find the enhancement spot and BAdI definition in ADT",
+    "Read the interface and decide which parameters can be changed",
+    "Filters and multiple-use settings",
+    "Delegate to a local class for testability",
+    "Guard against initial data and unexpected exceptions",
+    "Write an ABAP Unit test for the mapping logic",
+    "Test in the real document-creation flow"
+   ],
+   "exercise": "Pick a BAdI in your training system that modifies document data. Implement a method that builds a short description from two fields, truncate it to the target field length, and write an ABAP Unit test for empty and over-length inputs.",
+   "refs": [
+    3
+   ]
+  },
+  "whatsapp_highlights": "PR description from Maintenance Orders via BAdI EAM_ORDER_MODIFY_PR_DATA (S/4HANA Cloud) | CAP agent with @cap-js/agents and AI Core: title only, verify first | LeanIX connector setup via MCP: check credential handling | Plateau Report Designer HTTP 500: no real fix in thread"
+ }
+}
