@@ -1,1 +1,167 @@
-[]
+[
+ {
+  "key": "92fcfd1042c0f584",
+  "title": "SAP Document and Reporting Compliance: e-Invoice in Convergent Invoice using Extensibility",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-document-and-reporting-compliance-e-invoice-in-convergent-invoice-using/ba-p/14496133",
+  "published": "2026-11-02T10:53:54+00:00",
+  "author": "s_shet",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "You want to enable your system to create electronic documents for invoices posted via Convergent Invoice using SAP Document and Reporting Compliance. In this blog, we'll show you an example of how this can be achieved using extensibility, with Belgium (BE) as a reference country. \n Before you begin , ensure that the Financial Accounting Document, Sales and Distribution Billing Document e-Invoicing option is already available in your system for the specific country, including the eDocument customization and eDocument process. An implementation overview note (ex: For BE refer this note https://me.sap.com/notes/2424886 . ) will be available for each country e-Invoicing process if the country is localized by SAP for Financial Accounting Document, Sales and Distribution Billing Document. If you need to set up e-Invoicing from scratch for your country without an existing Financial Accounting Document, Sales and Distribution Billing Document localization, refer to the Extensibility for Electronic Document Processing in Private Cloud \n Implement the following SAP Note before proceeding: \n 3052578 — this note contains the list of relevant prerequisite notes to enable e-invoice for Convergent Invoice"
+ },
+ {
+  "key": "0d6ee1f27ecfa796",
+  "title": "Scheduling a Report by Email with a Custom Subject and Body in SAP SuccessFactors",
+  "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-members/scheduling-a-report-by-email-with-a-custom-subject-and-body-in-sap/ba-p/14514246",
+  "published": "2026-11-02T10:08:30+00:00",
+  "author": "AMIT_SHARMA01",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Introduction \n Many business teams need a report delivered to their inbox on a fixed schedule rather than logging in to run it manually. In SAP SuccessFactors, this can be achieved using the Report Distributor, which lets you bundle one or more reports, choose recipients, define your own email subject and message, and run the whole thing on a schedule. \n In this blog post, I will walk you through the end-to-end steps to schedule a report by email with a customised email subject and body, with screenshots for each step. \n Step-by-Step Configuration \n Step 1: Open Report Centre and go to View Schedules \n Navigate to Report Centre and click View Schedules in the top-right corner of the page. Report Centre – View Schedules Report Centre – View Schedules \n Step 2: Switch to the legacy Report Distributor tool \n On the View Schedules page, click Switch to the legacy Report Distributor Tool . \n Switch to the legacy Report Distributor Tool Switch to the legacy Report Distributor Tool \n Step 3: Create a new bundle \n Click New Bundle and provide the following details: \n Bundle Name – a meaningful name for your scheduled report. \n Page Size – for example, LETTER. \n Export Type / Export Format – the output file type of the attachment (for example PDF or Excel) will depend on the option you select here. \n Click OK to create the bundle. Add New Bundle Add New Bundle \n Step 4: Add the report to the bundle \n Click on your newly created bundle in the list, then click Add Item and select Add Report . Select the new bundle and click Add Item Select the new bundle and click Add Item Add Item options: Add Report, Add Excel Table, Add CSV Table Add Item options: Add Report, Add Excel Table, Add CSV Table \n In the report tree, expand All reports not in this bundle and select ReportCenter (or any other section) to find your report. Expand All reports not in this bundle and select ReportCenter Expand All reports not in this bundle and select ReportCenter \n Select the required report and click Add . The report is now added to the bundle. Choose the report from the list Choose the report from the list The report now appears in the bundle’s Item List The report now appears in the bundle’s Item List \n Step 5: Add recipients \n Open the Recipients tab, click Add Recipients , search for the user(s) who should receive the email, select them and click Add . \n Search for and add the recipients \n Step 6: Customise the email (Edit E-mail) \n Click the bundle name, then select File from the menu at the top left and choose Edit E-mail . File > Edit E-mail \n By default, the Default message option is selected. To use your own content, select the Override for <Bundle Name> option. You can also add localisations for the languages enabled in your system by using the language selector. \n\n Override option and language (localisation) selector \n Enter the From Address Prefix , the Subject for E-mail and the Body of message . You can personalise the content using these tokens: \n [%USERNAME%] \n [%FULLNAME%] \n [%EMAIL%] Custom email subject and body using tokens \n Once done, click Submit . \n Step 7: Schedule the report \n Go to the Schedule tab and click Add . \n\n Schedule tab – Add \n Enter the start date, start time and how often the schedule should recur (One Time, Daily, Weekly or Monthly), then click OK. The schedule is added and the report is now scheduled. \n\n Scheduler – start date, time and frequency \n\n Result \n At the scheduled date and time, the recipients receive an email with your custom subject and message, with the report attached in the export format you selected when creating the bundle. \n Email received by the recipient with the report attached \n Conclusion \n Using the Report Distributor, you can automate report delivery with a personalised email and a recurring schedule, saving users from running reports manually. I hope this post helps you set up scheduled report emails in your own system. Feel free to share your questions or experiences in the comments."
+ },
+ {
+  "key": "a2b8ce9f5de9922c",
+  "title": "Supplier invoice via BAPI_INCOMINGINVOICE_CREATE1: keeping the payment terms key AND forcing the due",
+  "link": "https://community.sap.com/t5/abap-blog-posts/supplier-invoice-via-bapi-incominginvoice-create1-keeping-the-payment-terms/ba-p/14513230",
+  "published": "2026-11-02T09:52:15+00:00",
+  "author": "cuongus",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "The business scenario \n A procurement system outside SAP is where users capture supplier invoices. Each invoice is sent to S/4HANA as a JSON message and posted as a logistics invoice, exactly as if an AP clerk had entered it in MIRO: \n External system ──JSON──▶ Inbound API (ABAP) ──▶ BAPI_INCOMINGINVOICE_CREATE1 ──▶ RBKP/RSEG + FI document \n Most of the message is what you would expect: purchase order and item, goods receipt reference, quantity, amount, tax lines. One requirement turned out to be harder than it looked."
+ },
+ {
+  "key": "50368d81963f790d",
+  "title": "My First SAP RAP Application – Part 3: Building a Student Management App Using Unmanaged RAP",
+  "link": "https://community.sap.com/t5/abap-blog-posts/my-first-sap-rap-application-part-3-building-a-student-management-app-using/ba-p/14512229",
+  "published": "2026-11-02T09:46:02+00:00",
+  "author": "omaroun",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "In Part 3 of my SAP RAP learning journey, I rebuild my Student Management Application using Unmanaged RAP on SAP S/4HANA 2023. This hands-on tutorial explores Behavior Definitions, custom CRUD implementation, transactional buffering, the save sequence, and SAP Fiori Elements."
+ },
+ {
+  "key": "d963ff41c97b8548",
+  "title": "The New Kid on the Block in SAP's Integration Portfolio: SAP Managed File Transfer by Redwood",
+  "link": "https://community.sap.com/t5/integration-blog-posts/the-new-kid-on-the-block-in-sap-s-integration-portfolio-sap-managed-file/ba-p/14514709",
+  "published": "2026-11-02T09:49:24+00:00",
+  "author": "Manuel_Namyslo",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "TechEd is now over – and I am quite happy that we got to experience so many different announcements, sessions and demo exercises related to SAP Integration Suite. If you missed any of it, my colleague Claire has pulled everything together on-demand in this blog post . \n But one of the greatest things released in recent weeks, which deserves it’s own spotlight is the announcement that SAP Managed File Transfer by Redwood is an SAP Solution Extension . To make sure this news doesn't get lost in the jungle of post-TechEd content, we're hosting a dedicated Activation Webinar on it – and registration is already open here! \n But just to set the stage: what is SAP Managed File Transfer, and why should you consider it? \n File transfer - a stubborn gap in enterprise integration \n Large files, strict audit requirements and external partners still make file transfer one of the most stubborn gaps in enterprise integration – and often the one that holds up an S/4HANA go-live. \n Because APIs and events get most of the attention in integration conversations. Yet in almost every SAP landscape, a surprisingly large share of business-critical data still moves as files: such as payment and bank statement files, EDI documents with suppliers and customers, payroll exports, product and pricing catalogs, regulatory submissions and batch extracts for analytics. \n And these requirements are hard to manage properly: \n Size and volume. Multi-gigabyte files and high-volume batch runs push message-based integration platforms beyond what they're designed for. \n Compliance. Regulations such as SOX, HIPAA, GDPR and PCI-DSS require encryption, complete audit trails and defined retention – evidence that ad-hoc FTP servers and scripts rarely provide. \n External partners. Banks, suppliers, logistics providers and authorities each bring their own protocols, keys and schedules. Onboarding every new partner often means another IT ticket, another script and another server nobody wants to own. \n In many companies, the result is a patchwork of legacy SFTP servers, scheduled jobs and custom code, with little visibility into what was sent, when and to whom. And this patchwork tends to surface at the worst possible moment: during an S/4HANA transformation. When teams inventory their interfaces, file-based flows often turn out to be the largest and least-documented group – and with SAP Process Orchestration approaching the end of mainstream maintenance, they need a future-proof home. \n SAP Managed File Transfer by Redwood closes that gap \n As an SAP Solution Extension – co-sold, co-developed and co-supported by SAP – SAP Managed File Transfer (MFT) by Redwood handles what general-purpose integration platforms aren't built for: multi-gigabyte files, audit retention for SOX, HIPAA, GDPR and PCI-DSS, and partner self-service exchanges that don't need IT for every transfer. \n Combined with SAP Integration Suite, it covers your full integration architecture under a single SAP relationship. \n What you are going to learn in this upcoming webinar \n What SAP MFT is and why it completes SAP's integration architecture \n Where it matters – the use cases across Manufacturing, Retail, Banking, Life Sciences and the Public Sector where it makes the difference \n How to move forward with SAP and partners \n I hope these couple of statements are enough to get you excited – at least I am already convinced 🙂 So make sure that you register for our upcoming session to learn more and get in touch with our experts: \n Register for the SAP Managed File Transfer Activation Webinar \n See you there! And if you already want to learn more about this Solution Extension before the webinar, I can recommend following ressources: \n\n Website on SAP Managed File Transfer by Redwood \n A brief solution demo on this new capability \n Whitepaper: File transfer operations for your cloud transformation \n\n Stay tuned!"
+ },
+ {
+  "key": "38f76c49dc33f2f6",
+  "title": "Shaping the Future of Water: Digital Transformation, Innovation, and Collaboration in Madrid",
+  "link": "https://community.sap.com/t5/sap-for-utilities-blog-posts/shaping-the-future-of-water-digital-transformation-innovation-and/ba-p/14512996",
+  "published": "2026-11-02T09:14:46+00:00",
+  "author": "MiquelCarbo",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "On October 21-22, industry leaders, utility executives, technology experts, and SAP customers gathered in Madrid for the Executive Value Network for Water & Wastewater 2026, hosted at Canal de Isabel II. The event provided a unique platform for water and wastewater organizations to exchange experiences, discuss digital transformation strategies, and explore innovations that can help utilities become more resilient, efficient, and sustainable"
+ },
+ {
+  "key": "aef8111052cdc76d",
+  "title": "Before You Build an External Hook: Using Reference Fields in SAP Sales and Service Cloud V2",
+  "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-members/before-you-build-an-external-hook-using-reference-fields-in-sap-sales-and/ba-p/14503536",
+  "published": "2026-11-02T09:00:00+00:00",
+  "author": "Jorge_Ocampos",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "When a Validation needs data that lives on another entity, the instinct is to write an External Hook. Before you do, check Reference Fields Usage. In this sixth article of the series, I use it to bring an Account's ABC classification into a native Validation on a Sales Quote, with no code. Then I push it: what a PreHook actually receives, what happens when the related value is empty, why a reference field can be hard to delete, and where the mechanism stops (a Task is linked to a quote in the UI, but it is not available as a KeyGroup). The result is a decision point to apply before reaching for code."
+ },
+ {
+  "key": "5bd109002d9da1b4",
+  "title": "Enabling Self-Service Form Editing During the Case Lifecycle in SAP Enterprise Service Management",
+  "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/enabling-self-service-form-editing-during-the-case-lifecycle-in-sap/ba-p/14514649",
+  "published": "2026-11-02T08:23:15+00:00",
+  "author": "srinithi_chinnappan",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "What happens when a requester needs to correct or update information after submitting a self-service form? \n Discover how SAP Enterprise Service Management enables requesters to edit submitted forms based on configurable conditions, reducing service agent effort and keeping data ownership with the requester."
+ },
+ {
+  "key": "21e20381878db369",
+  "title": "SAP PaPM Cloud Standard Model: What's New as of 2026-11-02?",
+  "link": "https://community.sap.com/t5/financial-management-blog-posts-by-sap/sap-papm-cloud-standard-model-what-s-new-as-of-2026-11-02/ba-p/14514643",
+  "published": "2026-11-02T08:11:57+00:00",
+  "author": "jillahgabog",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Hello, SAP Community! 👋 \n November is here, and we're back with another round of What’s New series in SAP Profitability and Performance Management Cloud Standard Model! 🍂 \n Here's what's new : \n Joule : Run process instances and check their status through Joule. \n Teams : Copy an existing team to create a new one. Team names can’t be changed after creation. \n Environment : Delete nodes and their empty subnodes in a single action. \n About : Access build details and release information more conveniently. \n Joule \n Run Process Instances with Joule \n Whether it's a monthly closing, cost allocation run or sustainability assessment, running process instances is part of everyday activities in Process Management . Now, you have another way to start these runs: Simply tell Joule which process instance you want to run. \n Joule identifies the process instance based on your request and helps you initiate the run. If multiple activities are available, Joule asks you which one to run before proceeding. \n To get started, open Joule, switch to Act mode, and enter a request such as: \n “Run the process instance 'ESG_OCT ’.” \n “Run all pending process instances for cost center 'EMEA' .” \n\n The same authorization rules in Process Management continue to apply. If you don’t have the required permissions or these conditions aren’t met, the run cannot be started. \n You can also ask Joule for an update on the run status. Joule can inform you whether the run is queued, still running, or completed. \n For more information, see Joule in Process Management . \n Teams \n Why Start from Scratch? \n Creating teams with similar configurations across departments, regions, or projects no longer means setting up each one from scratch. \n In the Teams application, you can now copy an existing team to create a new one with similar settings. Team names are also fixed after creation, helping maintain consistent team identities. Copy an Existing Team \n Simply copy an existing team, give the new team a unique name, and adjust the details as needed. Users assigned to the original team are also copied to the new team. \n To copy a team: \n Select an existing team. \n Choose Create > Copy Team . \n Enter a unique name for the new team. \n\n Optionally, update the description and child teams. \n Choose Copy . \n The new team is created with the copied settings, including any changes you made in the dialog. The original team remains unchanged. Team Names Stay Fixed After Creation \n As part of this enhancement, team names can no longer be changed after creation. The Name field is now read-only when editing an existing team. \n\n Teams may already be assigned as performers or reviewers in activities or configured as authorized teams within environments. Keeping team names unchanged provides a stable reference across these assignments. \n For more information, see Teams . \n Environment \n A Simpler Way to Delete Nodes and Their Subnodes \n In the Environment application, you can now delete a node together with all its subnodes in a single action, as long as none of them contains an environment. \n Previously, you had to remove each empty subnode before deleting the parent node. Now, you can clear the entire branch at once. 🤩 \n Just remember: If any subnodes contain an environment, you need to delete that environment first. \n For more information, see Environment . \n About \n Access Build Details and Release Information \n The About dialog in SAP Profitability and Performance Management Cloud Standard Model now provides faster access to the latest product updates and key application information. \n\n With this enhancement, you can: \n Check the Fast Track Mode status directly in the About dialog. \n Copy current build details that can be used when working with support. \n Open the latest release information through the What's New link. \n The updated layout organizes technical and release-related information into dedicated sections, making it easier to find the details you need from a single location. \n For more information, see About . \n For more updates, head over to What's New on SAP Help Portal or catch up on previous SAP Community posts with #PaPMCloudSMWhatsNew . \n Until next time, see you in the next What’s New! 👋"
+ },
+ {
+  "key": "a4a7e9a6d3407612",
+  "title": "SAP PaPM Cloud Universal Model What’s New as of 2026-11-02",
+  "link": "https://community.sap.com/t5/financial-management-blog-posts-by-sap/sap-papm-cloud-universal-model-what-s-new-as-of-2026-11-02/ba-p/14514328",
+  "published": "2026-11-02T07:51:39+00:00",
+  "author": "KrisReyes",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Hello SAP Community, \n Smarter shortcuts, quicker insights, and a smoother way to work are here! \n The latest enhancements in SAP Profitability and Performance Management Cloud Universal Model are all about making everyday tasks simpler and more intuitive. Whether you’re interacting with Joule, checking activities, adapting your UI, or exploring report data, there are new ways to get where you need to go with less effort. \n Let’s start with Joule. \n\n Get started with Slash Commands in Joule \n Imagine starting with a business requirement rather than an already configured finance environment. \n You know what the solution needs to achieve, but turning those requirements into a structured design, creating the necessary finance content, building the environment, and then checking the result can involve several stages. \n With the new finance slash commands in Joule, you can approach this as one guided journey in SAP Profitability and Performance Management Cloud Universal Model. \n Ready to Try It? \n Open Joule in Universal Model, enter “/” in the conversation panel to display all available commands, and choose the finance command that matches where you are on your journey. You can also type the command directly if you already know which action you want to start. \n\n Taken together, the new slash commands provide a clear path through the different stages of working with a finance environment such as: \n /fin-design turns your finance requirements into a blueprint without changing the Universal Model environment. \n /fin-create creates the required finance content from the approved requirements and blueprint. \n /fin-build builds the finance environment based on the approved blueprint. \n /fin-validate checks the resulting environment for completeness and consistency and provides a validation report without changing it. \n Instead of treating Joule only as a place to ask questions, you can now start a specific finance-related action simply by choosing the appropriate slash command. The commands represent a distinct stage in the process design, so you always know where you are and what comes next. For more information about the prompting recommendations, see Prompting Recommendations \n\n Explore your report data more naturally with Ask Joule \n\n When working with data in a report, you often know the information you want to see, but getting there can involve several configuration steps. You may need to apply filters, sort your data, create groups, or define aggregations before the grid shows the perspective you need. \n With the new Ask Joule feature in Insert Show Element , you can take a more conversational approach. \n Instead of configuring each setting manually, you can tell Joule what you want to do with the data using natural language. Joule then applies the result directly to the grid, helping you transition from a question to the view you need with less manual configuration. \n For example, instead of manually arranging the grid, you could ask Joule to: \n filter the information you want to focus on, \n sort the displayed data, \n organize information into groups, or \n aggregate values for analysis. \n\n And speaking of getting things done faster, let’s move from smarter interactions to quicker navigation. \n\n Quick access to Event Logs and Rules Screen from Manage Activities \n Working with activities often involves checking event logs or reviewing the rules associated with an activity. Previously, accessing this information required you to open an activity first and navigate to the corresponding link in the activity details. \n With the latest enhancement of the Manage Activities application, you can now access the Event Logs and Rules screens directly from the activity overview. They will be displayed in new browser tabs. This reduces navigation and makes it easier to review activity-related information while staying within your list of activities. \n You can add the Event Logs and Rules screen columns to the activity overview using Settings. \n From the activity overview, you can: \n Select the Event Logs link to open the event logs in a new browser tab filtered by the respective activity ID. \n Select the Rules screen link to quickly access the corresponding activity Rules screen in a new tab. The link is available only for activities where the Enable Show Rules checkbox is marked. \n This enhancement makes frequently used information more accessible and helps streamline activity review and troubleshooting without needing to open each activity individually. \n\n Finally, let’s wrap things up with more flexibility in how you work with your data. \n\n Apply conditions to multiple columns with ease in Adapt UI \n Imagine you’re working with a Data screen and want several columns to follow the same condition. Perhaps you want a group of Key Figures to stand out with the same color, or you want to apply the same condition across several Characteristic fields. \n With the latest Adapt UI enhancement, you can now select multiple columns and apply the condition to them all at once – saving time and keeping your Data screen consistent. \n Start right from your Data screen \n There’s no need to leave the Data screen when you want to work with conditions. You can apply a condition to multiple fields and add a color, making the relevant data easier to recognize immediately. \n\n Changed your mind? No problem. \n For example, you can select only the Key Figure fields and remove their color condition, while leaving the conditions applied to the other selected fields unchanged. This lets you refine your Data screen as your needs change. \n\n Bring your data back to its original view \n When you no longer need the conditions, simply select the affected fields, clear the conditions, and save your changes. The conditions are removed, returning the fields to their original state. \n\n Whether you want to highlight important information, fine-tune your selections, or start fresh, multiple selections, the Adapt UI feature gives you the flexibility to adjust several fields together instead of working through them one at a time. For more information about the Adapt UI configuration, see Adapt UI \n And that’s a wrap on these latest enhancements! \n From smarter interactions with Joule and quicker access to the information you need, to more flexibility in adapting your UI, these updates are designed to make your everyday experience in SAP Profitability and Performance Management Cloud, Universal Model simpler, faster, and more intuitive. \n We hope these enhancements help you spend less time navigating and more time focusing on what matters most in your work. \n Give them a try and discover how they can make a difference in your day-to-day tasks! \n Thanks for reading, and stay tuned for more updates!"
+ },
+ {
+  "key": "ccc7d92ef1faa4d9",
+  "title": "HTTP Code: 401 (Unauthorized) for Outbound Communication to Boomi",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/http-code-401-unauthorized-for-outbound-communication-to-boomi/qaq-p/14514781",
+  "published": "2026-11-02T10:51:17+00:00",
+  "author": "madhava_munagala13",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear Consultants, \n We are using Journal Entry by Ledger - Post (Asynchronous) and we would like to configure outbound confirmation to BOOMI. \n Following the SAP Community guidelines Guidelines for Enabling Outbound API Journal Entry... - SAP Community , we created the communication system and communication arrangement, and maintained the Boomi outbound credentials. The outbound call has been triggered, yet it shows an error: HTTP Code: 401 (Unauthorized). \n As the outbound call has been made, could you please share further steps to check authorization to BOOMI? Thank you for your help."
+ },
+ {
+  "key": "9bce4e09d99141d3",
+  "title": "KNA1 Local Authority Additional Fields - cvi",
+  "link": "https://community.sap.com/t5/technology-q-a/kna1-local-authority-additional-fields-cvi/qaq-p/14514748",
+  "published": "2026-11-02T10:21:05+00:00",
+  "author": "UmaArjunan",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Local authority fields PSOO1, PSOO2, PSOO3, PSOO4, PSOO5, PSON1, PSON2, PSON3, PSOVN, PSOTL, PSOHS, and PSOST exists in KNA1 but we are unable to find these fields in the standard CVI structures such as CMDS_EI_CENTRAL_DATA or other customer data nodes exposed by the CVI interface. \n Could anyone advise on the standard SAP approach for maintaining these fields through CVI?"
+ },
+ {
+  "key": "86e6af447aaf8802",
+  "title": "Cloud ALM ヘルス監視メトリックのクライアント依存性について",
+  "link": "https://community.sap.com/t5/technology-q-a/cloud-alm-%E3%83%98%E3%83%AB%E3%82%B9%E7%9B%A3%E8%A6%96%E3%83%A1%E3%83%88%E3%83%AA%E3%83%83%E3%82%AF%E3%81%AE%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E4%BE%9D%E5%AD%98%E6%80%A7%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/qaq-p/14514673",
+  "published": "2026-11-02T08:45:13+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "各クライアントにてダッシュボードへの表示およびアラートの設定（メール通知）を行うにあたり、ヘルス監視のメトリックはクライアント依存か、それともクライアント非依存かをお教えいただけますでしょうか。 \n また、クライアント非依存のメトリックの場合、すべてのクライアントでダッシュボードに表示し、1つのクライアントのみでアラートの設定（メール通知）を行うのが一般的でしょうか。 \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+ },
+ {
+  "key": "d943a77a37881f64",
+  "title": "How to change IM managed storage location to WM managed in SAP Public Cloud?",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/how-to-change-im-managed-storage-location-to-wm-managed-in-sap-public-cloud/qaq-p/14514671",
+  "published": "2026-11-02T08:37:50+00:00",
+  "author": "ST24",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Is it possible to change IM managed storage location to WM without emptying the IM storage location? \n In migration file it's said as follows: \n\n As prerequisite, if the existing storage location with stock would be assigned to WM warehouse and customizing for warehouse structure would be done etc. As there exists stock in IM already, would it be possible to migrate the stock to WM with migration file only?"
+ },
+ {
+  "key": "c94642a2b0749c4f",
+  "title": "How to set up FIK Payment for Denmark",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/how-to-set-up-fik-payment-for-denmark/qaq-p/14514650",
+  "published": "2026-11-02T08:02:46+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "You are implementing FIK payment process for Denmark. You would like to understand how to configure the set up for FIK payments. \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+ }
+]
