@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-02",
+  "label": "Monday, 2 November 2026",
+  "headline": "Thin day for core ABAP: CDS view extension and clean core guidance, a new BTP Destination Job type, and a CPI XSLT filtering question.",
+  "items": 30,
+  "deep": 8
+ },
+ {
   "date": "2026-11-01",
   "label": "Sunday, 1 November 2026",
   "headline": "Thin Sunday: a BAdI-based PR description post for S/4HANA Cloud, two title-only AI posts, and an unresolved Plateau report preview error.",
