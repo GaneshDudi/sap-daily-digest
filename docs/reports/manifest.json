@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-03",
+  "label": "Tuesday, 3 November 2026",
+  "headline": "A thin day for core ABAP: an incomplete BAPI invoice post, an unmanaged RAP series, and recurring F110 and Public Edition released-view questions.",
+  "items": 93,
+  "deep": 30
+ },
+ {
   "date": "2026-11-02",
   "label": "Monday, 2 November 2026",
   "headline": "Thin day for core ABAP: CDS view extension and clean core guidance, a new BTP Destination Job type, and a CPI XSLT filtering question.",
