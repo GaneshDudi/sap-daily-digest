@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-05",
+  "label": "Thursday, 5 November 2026",
+  "headline": "Thin day: RAP side effects, ABAP Cloud XCO and CL_ABAP_ZIP bugs, and extensibility questions in Private Cloud dominate; most posts lack answers or code.",
+  "items": 111,
+  "deep": 30
+ },
+ {
   "date": "2026-11-04",
   "label": "Wednesday, 4 November 2026",
   "headline": "A thin day for ABAP: a RAP message-highlighting question, a CI_COBL screen walkthrough, a Public Edition print preview via RAP, and several excerpts with no technical content.",
