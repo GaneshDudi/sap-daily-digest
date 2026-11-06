@@ -1,0 +1,1945 @@
+{
+ "items": [
+  {
+   "key": "8bb28daff0389191",
+   "title": "General Ledger Configuration at a Glance: A New Topic on the SAP Help Portal",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/general-ledger-configuration-at-a-glance-a-new-topic-on-the-sap-help-portal/ba-p/14492277",
+   "published": "2026-11-05T15:30:00+00:00",
+   "author": "Martin_Smith",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "General Ledger configuration spans dozens of activities — from chart of accounts setup to advanced valuation, document splitting, and fiscal year settings. A new document on the SAP Help Portal brings all of them together in one searchable, filterable table, accessible without logging into the configuration environment: Configuration Activities in General Ledger \n\n Each activity is classified as mandatory, recommended, or optional, giving project teams a concrete starting point. The content is also structured to be retrieved by AI tools connected to SAP's authorized knowledge sources."
+  },
+  {
+   "key": "24d8e5c4f828a8f4",
+   "title": "Навчальні пропозиції SAP – Листопад 2026 | Розклад сесій",
+   "link": "https://community.sap.com/t5/kyiv-blog-posts/%D0%BD%D0%B0%D0%B2%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D1%96-%D0%BF%D1%80%D0%BE%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D1%96%D1%97-sap-%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%BF%D0%B0%D0%B4-2026-%D1%80%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4-%D1%81%D0%B5%D1%81%D1%96%D0%B9/ba-p/14517132",
+   "published": "2026-11-05T15:00:13+00:00",
+   "author": "Anastasiia_Zhukova",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Щомісячний розклад сесій SAP User Groups, листопад 2026. Якщо у вашому листопадовому календарі ще є вільні години — ось чим їх варто заповнити."
+  },
+  {
+   "key": "6c4433b5fb32d106",
+   "title": "SAP S/4HANA Cloud Public Edition 2608.3: Final What's New & Product Assistance available",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/sap-s-4hana-cloud-public-edition-2608-3-final-what-s-new-amp-product/ba-p/14515396",
+   "published": "2026-11-05T14:49:39+00:00",
+   "author": "diana_vega",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "With immediate effect, the final What's New information for SAP S/4HANA Cloud Public Edition 2608.3 is now available. \n\n To access the final What’s New information, please use the What’s New Viewer . In addition, the final Product Assistance (aka Application Help) for SAP S/4HANA Cloud Public Edition 2608.3 is available. Please use the SAP S/4HANA Cloud Public Edition Help Portal page to access it. \n\n For you as a customer, we recommend to also use the Release Assessment and Scope Dependency (RASD) tool . The Release Assessment and Scope Dependency (RASD) tool provides you with a personalized and tailored view on What’s New information based on the activated and used scope within your system. The information for SAP S/4HANA Cloud Public Edition 2608.3 will be available in RASD within the next few days. A valid Customer S-user ID is required for login. We recommend to use RASD to prepare for upgrades and updates of your system and to focus on the new and changed features that are relevant for you as a customer. \n\n You can use the commenting feature for What’s New. With this feature, authors can evaluate your feedback and incorporate it into the documentation, if needed. We hope that by opening this channel of communication, we can learn how to further improve our What’s New content for you. To use this feature, you need to be logged into the Help Portal. The feature will only be available in the English version of the documents. To learn more about how the feedback process works in SAP Help Portal, see Giving Documentation Feedback ."
+  },
+  {
+   "key": "e74869a15f56480e",
+   "title": "Join our Live Session - Integration Transformation Flow and Replication Flow in SAP Datasphere",
+   "link": "https://community.sap.com/t5/data-and-analytics-learning-group-blog-posts/join-our-live-session-integration-transformation-flow-and-replication-flow/ba-p/14517058",
+   "published": "2026-11-05T13:54:41+00:00",
+   "author": "alexandergregor_scivos",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Hi friends of SAP Datasphere and data warehousing, \n you probably know that SAP Datasphere is not just a data fabric for virtually accessing data from various sources — it also includes a solid Data Warehouse engine for loading, staging, and refining data layer by layer. We offer a fantastic series of live sessions on which you learn about the data integration to SAP Datasphere. Don't miss them. \n Learn in this blog about upcoming dates and what to expect."
+  },
+  {
+   "key": "21073187d064e687",
+   "title": "Create Requirements with AI in SAP Cloud ALM",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/create-requirements-with-ai-in-sap-cloud-alm/ba-p/14517070",
+   "published": "2026-11-05T13:49:13+00:00",
+   "author": "Daniel_Enderli",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Introduction \n With the new AI-powered Requirement Generation capability in SAP Cloud ALM, you can leverage AI to support the creation of requirements – helping teams accelerate documentation, reduce manual effort, and improve efficiency. \n\n Let's use it \n Simply select Create → Requirement → Generate and let the AI assistant help you get started. \n\n Giving more context informations and data : \n\n The Result \n Requirements with Description, As-IS, To-Be, Business Value, Acceptance Criterias. \n\n Benefits \n Reduce time spent on manual requirement creation by automating the process with AI, ensuring high-quality and consistent documentation \n Enhance user story creation efficiency by leveraging high-quality requirements. \n Human-in-the-Loop (HITL) and Final approval of the Requirements \n For the final approval of the requirements and the Human-in-the-Loop (HITL), I recommend the following options: \n 1. Validation via an additional AI Assistant that reviews the result. \n 2. A Quality Gate Meeting , using a checklist, where key users and subject matter experts provide final approval. \n 3. A traditional review meeting , in which a project team validates, estimates, prioritizes, and grants final approval for the requirements. \n 💡 Want to discover more AI capabilities? \n The SAP Discovery Center is the place to explore available AI features, Joule Assistants and AI Agents across the SAP portfolio. \n You can also use the AI Estimator to calculate estimated AI Unit consumption and costs based on your company's requirements. This helps you evaluate different AI offerings and plan your AI adoption journey. \n 👉 Explore: https://discovery-center.cloud.sap/ \n This is a smarter, faster and more efficient requirements management! \n #SAPCloudALM #SAP #AI #RequirementsManagement #AIAssistant #DigitalTransformation"
+  },
+  {
+   "key": "04a94fabab4d6b06",
+   "title": "SAP-Managed Public Cloud ERP: From Integration to Autonomy",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/sap-managed-public-cloud-erp-from-integration-to-autonomy/ba-p/14493951",
+   "published": "2026-11-05T13:49:25+00:00",
+   "author": "MHundekari",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "AI works across the business when the processes underneath it are genuinely connected. This post explores what SAP-managed public cloud ERP delivers and how that foundation paves the way for the Autonomous Enterprise."
+  },
+  {
+   "key": "c5d39c4c3f440664",
+   "title": "How-To filter a List Report by an item field in a RAP app",
+   "link": "https://community.sap.com/t5/abap-blog-posts/how-to-filter-a-list-report-by-an-item-field-in-a-rap-app/ba-p/14517041",
+   "published": "2026-11-05T12:22:13+00:00",
+   "author": "Kinsbrunner",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "To summarize: \n - Filtering a header list by an item field is an OData V4 DS problem. Don't join the items into the header. \n - RAP supports any on compositions out of the box. Test it in the browser first. \n - Add the navigation path (_Item/Field) to UI.SelectionFietions. \n - The local UI.SelectionFields replaces the backend one, so repeat the full list. \n - If the FilterBar dies with reading 'map', check your XML"
+  },
+  {
+   "key": "154abbd90a231965",
+   "title": "Mastering IFRS 16 Lease Accounting with SAP RE-FX/CLM: Configuration and End-to-End Walkthrough",
+   "link": "https://community.sap.com/t5/financial-management-blog-posts-by-members/mastering-ifrs-16-lease-accounting-with-sap-re-fx-clm-configuration-and-end/ba-p/14516891",
+   "published": "2026-11-05T11:49:20+00:00",
+   "author": "achyuthreddyk-567",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Learn how to implement IFRS 16 lease accounting in SAP RE-FX/Contract and Lease Management (CLM). This blog walks through lease-in contract configuration, valuation rules, ROU asset and lease liability calculation, Asset Accounting integration, periodic postings, remeasurement, and reconciliation across SAP S/4HANA and Public Cloud."
+  },
+  {
+   "key": "a5c50d67b8ef107e",
+   "title": "SAP QA Testing Services for BTP-Based Custom Apps: A Different Approach than Classic ABAP?",
+   "link": "https://community.sap.com/t5/business-transformation-blog-posts/sap-qa-testing-services-for-btp-based-custom-apps-a-different-approach-than/ba-p/14512904",
+   "published": "2026-11-05T11:15:04+00:00",
+   "author": "toddbravosap",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP’s August 2025 update to the ABAP Extensibility Guide aligned its technical recommendations with the clean core level model, adding guidance for ABAP Cloud development and governance for classic ABAP code. That guidance helps teams choose between building an extension on the S/4HANA stack and building it side by side on SAP Business Technology Platform (BTP). It also shapes how I plan SAP QA testing services, because each choice creates different test boundaries. \n A classic Z-report and its BAdI live in one system, with one database and one transport path. A BTP app calls S/4HANA through APIs, publishes events, and ships through a pipeline. In this article, I follow one custom app through every test layer, compare it with its classic ABAP equivalent, and close with the six-step plan I recommend to teams starting this work."
+  },
+  {
+   "key": "0e9c8bb3b94b49a0",
+   "title": "Purchase Order Accruals - Customizing basics",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/purchase-order-accruals-customizing-basics/ba-p/14516999",
+   "published": "2026-11-05T10:42:22+00:00",
+   "author": "Ujhelyi_Zsuzsi",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "To set up the Accrual Engine with the necessary Customizing settings in SAP, you'll need to follow these steps. You can access these settings through the IMG (Implementation Guide) using transaction code SPRO or directly via ACEIMG for Accruals Management. Here’s a step-by-step guide: \n Accessing Customizing \n Transaction codes : Use SPRO for the general IMG or ACEIMG specifically for Accruals Management. \n Customizing Purchase Order Items for Accrual \n Path in SPRO : \n Financial Accounting (New) → General Ledger Accounting (New) → Periodic Processing → Accruals Management → Define Which Purchase Order Items Are To Be Accrued \n Configuration : Define the criteria for which purchase orders or items should be accrued. This could be based on various attributes like procurement type, purchase order type, material group, etc. \n Define Accrual Algorithms \n Path in SPRO : \n Financial Accounting (New) → General Ledger Accounting (New) → Periodic Processing → Accruals Management → Define Accrual Algorithms \n Configuration : Set up the algorithms that will calculate the accrual amounts. This could be based on different criteria such as linear, weighted, or custom algorithms. \n Define Review and Approval Procedures (not mandatory) \n Path in SPRO : \n Financial Accounting (New) → General Ledger Accounting (New) → Periodic Processing → Accruals Management → Define Review/Approval Procedures for Accruals \n Configuration : Specify whether a manual review and/or approval process is required for accrual amounts at the end of each period. Define the workflow and approval levels as necessary. \n Assign Accrual Accounts \n Path in SPRO : \n Financial Accounting (New) → General Ledger Accounting (New) → Periodic Processing → Accruals Management → Define Accrual Accounts \n Configuration : Map the relevant G/L accounts to be used for accrual postings. These accounts will record the accrued expenses and liabilities in the general ledger. \n Additional Settings (if required) \n Depending on your organization's requirements, you may need to configure additional settings such as tolerance limits, reporting settings, and integration with other modules (e.g., Materials Management, Controlling). \n\n Customizing Settings for the Accrual Engine \n The Accrual Engine is a generic tool, so you'll need to focus on the settings that are relevant for purchase order accruals. \n Steps: \n Access the IMG for Accruals Management : \n Transaction code: ACEIMG \n Define the General Settings : \n Path : Accruals Management → General Settings → Define General Settings \n Configuration : Configure the basic settings such as tolerance limits, rounding rules, and other general parameters. \n Define Accrual Algorithms : \n Path : Accruals Management → General Settings → Define Accrual Algorithms \n Configuration : Set up the algorithms to be used for calculating accruals. This could include linear, weighted, or custom algorithms specific to your business needs. \n Define Accrual Accounts : \n Path : Accruals Management → General Settings → Define Accrual Accounts \n Configuration : Map the relevant G/L accounts that will be used for posting the accrual entries. \n Define Accrual Types : \n Path : Accruals Management → General Settings → Define Accrual Types \n Configuration : Set up the different accrual types relevant for purchase orders, such as goods receipt, invoice receipt, etc. \n Customizing Settings Specific for Purchase Order Accruals \n These settings are tailored specifically for the application of purchase order accruals. \n Steps: \n Define Which Purchase Order Items Are to Be Accrued : \n Path : Accruals Management → Purchase Order Accruals → Define Which Purchase Order Items Are To Be Accrued \n Configuration : Specify the criteria for determining which purchase order items should be included in the accrual process. This can be based on attributes like purchase order type, procurement type, material group, etc. \n Define Accrual Methods for Purchase Order Items : \n Path : Accruals Management → Purchase Order Accruals → Define Accrual Methods for Purchase Order Items \n Configuration : Assign the specific accrual algorithms to the purchase order items. This defines how the accruals will be calculated. \n Define Review/Approval Procedures for Purchase Order Accruals : \n Path : Accruals Management → Purchase Order Accruals → Define Review/Approval Procedures for Accruals \n Configuration : Specify whether a manual review and/or approval process is required for the accrued amounts at the end of each period. Define the necessary workflow and approval levels. \n Additional Settings : \n Path : Accruals Management → Purchase Order Accruals → Additional Settings \n Configuration : Depending on your organization's requirements, you might need to configure additional settings such as tolerance limits specific to purchase orders, reporting settings, and integration settings with other modules like Materials Management or Controlling. \n\n Customizing Basic Settings \n In the transaction \"Accruals Management - IMG\" (ACEIMG), under Basic Settings, the following activities are relevant for purchase order accruals: \n Assign Company Codes : Assign the company codes to the Accrual Engine for which purchase order accruals will be posted. \n Define Accrual Item Types : This is one of the main activities in the Accrual Engine. Accrual item types are a central concept in the Accrual Engine. To understand this entity, it is beneficial to first grasp the underlying concept of accrual objects. \n These settings ensure that the Accrual Engine is configured to handle purchase order accruals according to your company's requirements."
+  },
+  {
+   "key": "688ceac8d935bb5d",
+   "title": "Free SAP Certified - Joule Studio Developer (C_JSD): How to Claim It and Pass",
+   "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/free-sap-certified-joule-studio-developer-c-jsd-how-to-claim-it-and-pass/ba-p/14513486",
+   "published": "2026-11-05T10:38:01+00:00",
+   "author": "Bandlavenkatesh1",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP is giving every learner one free attempt at the new SAP Certified - Joule Studio Developer (C_JSD) certification, but only until Dec 31, 2026. Here is everything you need to claim it, prepare for it and use your single attempt well."
+  },
+  {
+   "key": "49fd93ff40361a3a",
+   "title": "Purchase Order Accruals- High level purpose and basic examples",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/purchase-order-accruals-high-level-purpose-and-basic-examples/ba-p/14516989",
+   "published": "2026-11-05T10:29:46+00:00",
+   "author": "Ujhelyi_Zsuzsi",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Business context and overview \n As soon as there are liabilities to a third party, for example to a supplier, \n but the related costs have not yet been posted, accruals need to be \n posted. \n By posting accruals in the system, the relevant costs are allocated to \n the fiscal period in which they occurred. \n The posting of accruals is typically a period-end closing activity \n because it is often not known until period end to what extent accruals \n are required. \n Optional Extension: Accruals for Purchasing to Stock or Fixed Asset \n Default behavior: Accruals are only generated for purchase orders that involve cost assignments (such as cost centers or internal orders), not for those that go into material stock or fixed assets. \n Exception:  It is possible to enable accruals for purchase orders that post to material stock or fixed assets. This requires implementing specific Business Add-Ins (BAdIs). \n Guidance:  For technical details and sample source code for the BAdI implementations, refer to consulting note 2888110 - \"Enable accruals for purchase orders to stock\". \n\n Overview: Features \n With the new Purchase Order Accruals application: \n Automatically calculate and post purchase order accruals. \n Built on the new SAP S/4HANA Accrual Engine, offering flexible customization for accrual calculation and posting. \n Key features: \n ** optional review/approval process:** Activate through Customizing to review and approve monthly accrual amounts. \n Monitoring and review screens:  Available for SAP GUI in release 1809, with Fiori apps planned for release 1909. \n Cloud availability:  Purchase order accruals available in SAP S/4HANA Cloud 1811. \n Basic Principle \n At the end of each fiscal period, the Purchase Order Accruals application performs the following: \n Calculates accrual amounts for purchase order items by evaluating planned data, such as: \n Delivery schedules with planned delivery dates, determining cumulated planned costs up to the period's end. \n Other data like non-valuated goods receipts. \n Assumes that cumulated planned costs reflect actual costs at the period's end. \n If cumulated actual costs are less than planned, the system proposes the difference as the accrual amount. \n Activates a review process by default, as the proposed accrual amount is assumption-based. This review process can be configured to examine: \n Proposed accrual amounts. \n Planned costs. \n Fine-Grained Posting of Accruals: Audit-Save \n\n The Purchase Order Accruals application operates with precision: \n Calculates, reviews, and posts accruals at the detailed level of individual purchase order items. \n Aims to determine accrual amounts in a reliable, reproducible, and audit-compliant manner. \n Alternative approach: \n Estimate accrual amounts based on historical data. \n While applicable in some cases, this method generally produces unreliable results. \n Main Process Steps \n Purchase Order Accruals Process: \n Creation of Purchase Order \n Create purchase orders using transaction ME21N in MM-PUR. \n Each purchase order is automatically transferred to the Accrual Engine based on Customizing settings. \n Initial Data Load:  Transfer existing purchase orders using transaction POAC_MM2ACE_TRANSFER. \n 2. Display Accrual Objects \n View monthly accrual amounts calculated by the system using transaction POACTREE03. \n\n 3. Optional Review and Approval Process \n At the end of each fiscal period, a reviewer can adjust proposed accrual amounts or planned costs. \n Generate proposal amounts using transaction ACEPROPOSALRUN. \n Review: Perform using transactions FACRARVWBU (for PO owners) or FACRARVWCO (for controllers). Manual adjustments are possible. \n Approval: Perform using transaction FACRAAPPRVGL. Approval is mandatory for accrual postings if activated. \n 4. Post Accruals \n Post accrual amounts at the end of each fiscal period using transaction ACEPOSTINGRUN. \n Purchase Order Accruals: Architecture Big Picture \n\n Use-Cases for Accruals: PO Item Without Valuated GR \n\n Without Goods Receipts \n No goods receipts recorded. \n Accruals proposed based on: \n Delivery schedule in the purchase order item (past deliveries assumed as received). \n Straight-line approach (linear distribution of total PO item value). \n\n With Non-Valuated Goods Receipts \n Quantity received is recorded, but no costs posted. \n Accruals proposed based on recorded quantity multiplied by net price (use accrual method PLN_DSNVGR). \n Note for Enhanced Limit PO items: Use Expected Value for linearization. \n 3. With Valuated Goods Receipt Postings \n Goods receipt posts costs as entered quantity multiplied by net price. \n Accruals proposed based on delivery schedule (past deliveries assumed as received), considering posted costs. \n 4. With Service Entry Sheet Postings \n Service entry sheet posts costs similarly to valuated goods receipt. \n Accruals proposed based on straight-line approach (linear distribution between start and end dates). \n Note: Start and end dates visible for Lean Services approach (Product Type Group 2 “Service”). \n Relation to Accruals Management \n The application Purchase Order Accruals is part of the bigger application Accruals Management. \n Accruals Management bundles all applications that are based on the (new) S/4HANA Accrual Engine. \n The long-term vision of Accruals Management is to be the single point of entry for managing accruals."
+  },
+  {
+   "key": "cb89996db6c30681",
+   "title": "SAP Configuration Localization Tool (CLT)",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/sap-configuration-localization-tool-clt/ba-p/14516975",
+   "published": "2026-11-05T10:08:38+00:00",
+   "author": "AngelaDai",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The Configuration Localization Tool (CLT) in SAP Central Business Configuration is the core component of SAP S/4HANA Cloud Public Edition's Localization as a Self-Service framework. It allows customers and partners to create Customer Local Versions for countries and regions that do not yet have an SAP standard version. This article covers the core concepts, end-to-end process, a hands-on walkthrough using Macao as an example, and answers to frequently asked questions."
+  },
+  {
+   "key": "e696d7cfe6d4efc3",
+   "title": "What's New in Asset Management in SAP Cloud ERP Private 2025 FPS02",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/what-s-new-in-asset-management-in-sap-cloud-erp-private-2025-fps02/ba-p/14516848",
+   "published": "2026-11-05T09:09:20+00:00",
+   "author": "Fernanda_Rodrigues",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP Cloud ERP Private 2025 FPS02 marks a turning point for asset management. This release goes well beyond incremental improvements. It delivers a fully operational suite of AI agents that fundamentally changes how maintenance professionals work, moving from isolated transaction execution toward guided, end-to-end workflows where intelligent assistance handles the repetitive, high-volume, and error-prone steps. Alongside the autonomous AI story, FPS02 also introduces meaningful refinements in safety, planning, compliance, and extensibility. \n SAP S/4HANA Cloud Private Edition (the foundation of SAP Cloud ERP Private) strengthens its position as an integrated, intelligent platform for enterprise asset management in this release. \n In this post, you will find a curated overview of the most important innovations, grouped by theme and written for maintenance planners, technicians, reliability engineers, and integration professionals who rely on SAP S/4HANA to keep operations running safely and efficiently. \n For a broader look at what's new across all lines of business in the SAP Cloud ERP Private 2025 FPS02 release, don't miss the SAP Cloud ERP Private FPS02 release overview blog . \n Table of Contents \n Autonomous Asset Management: AI Agents in FPS02 \n Maintenance Request Initiation Agent \n Operational Maintenance Order Planning Agent \n Maintenance Event Planning Agent \n Maintenance Job Debrief Agent \n Equipment Insights Agent \n Maintenance Task List Agent \n Further updates on FPS02 release \n Maintenance notification–based inspection checklist process \n Inspection checklist further process adjustments \n SAP Dynamic Forms integration across asset management apps \n Graphical operation dependencies across maintenance orders \n Improved visibility for maintenance backlog and event-based planning \n Collaborative maintenance: maintenance order integration with BNAC \n Reference Structure: rule framework for change cascading \n Refurbishment best practice scope items (85R and 85U) \n Linear Asset Management APIs \n More information \n Autonomous Asset Management: AI Agents in FPS02 \n The Asset Operations Assistant: six agents, one coherent workflow \n The headline story in FPS02 is the Asset Operations Assistant — an AI-powered orchestration layer built on the SAP Joule framework that brings together purpose-built agents covering the full maintenance workflow: from reporting a failure, through order creation, event grouping, and job execution, all the way to technician feedback and knowledge capture. \n Each agent operates conversationally, in natural language, and always places the human in the loop. No record is created, no status is changed, and no data is submitted without explicit confirmation from the user. This is a deliberate design choice: the agents are meant to accelerate and improve decision quality, not replace the judgment of maintenance professionals. \n All six agents run on the SAP Joule framework and are accessed through Joule in SAP Cloud ERP Private. \n *Disclaimer: The Joule Assistants and Agents described in this post are currently available through SAP's Early Adopter Care (EAC) program. General availability is planned to begin in Q4 2026 , with rollout continuing into Q1 2027 . Not all agents require SAP S/4HANA Cloud Private Edition 2025 FPS2 — minimum system requirements vary by agent, and support for additional releases is being continuously extended through downports. For the latest on which releases support which agents, refer to SAP Note 3789370 , which is updated on an ongoing basis, and the SAP Discovery Center . All other innovations covered in this post (embedded AI features, Joule skills, and machine learning scenarios) are generally available with the 2025 FPS2 release unless noted otherwise. This blog is a living document and will be updated as new assistants and agents become available in the coming weeks and months. The information here reflects publicly available SAP product documentation and roadmap materials as of October 2026. All forward-looking statements are subject to change. \n\n Maintenance Request Initiation Agent \n Create maintenance notifications with the details that actually matter in seconds. \n The Maintenance Request Initiation Agent simplifies one of the most time-consuming daily tasks in asset operations: creating a maintenance notification with all relevant data. A technician in the field can describe an issue in natural language, i.e. a pump seal leaking and the agent takes it from there. \n The agent identifies the technical object from a partial description, presents a list of matching equipment so the user selects the correct one, and then enriches the notification with failure codes, damage categories, cause codes, and a matching score where catalog master data supports it. It also checks for duplicate notifications on the same equipment before creating a new one — letting the user cancel or create anyway — which keeps the maintenance backlog cleaner and reduces noise and tracking effort. \n For emergency scenarios , the agent creates both the notification and a maintenance order simultaneously, setting the order directly into execution. Notification type, priority, and start/end dates are captured in a single conversational exchange, with a confirmation step before any record is written to the system. \n The outcomes are direct: faster reporting regardless of IT experience, significantly higher data quality and completeness, and accelerated resolution by eliminating the manual follow-up that typically accompanies incomplete notifications. \n\n Operational Maintenance Order Planning Agent \n Turn a notification into a fully structured maintenance order with reference, readiness checks, and scheduling in one flow. \n Once a notification exists, the Operational Maintenance Order Planning Agent takes over the planning step. It creates maintenance orders directly from open notifications or from scratch, and it can retrieve a recommended list of reference orders ranked by match score against equipment, work center, description, and recent history, so planners reuse proven structures rather than starting blank. \n The agent executes readiness checks across all order prerequisites: component availability, service lead times, production resources and tools (PRTs), and capacity constraints. It validates dates against lead times, buffers, and resource availability. Status management (ready, in execution, scheduling, locked, tack/untack) is handled. \n After order creation, the agent naturally prompts the planner to bundle the order into an existing or new maintenance event, bridging directly into the event planning workflow described below. \n\n Maintenance Event Planning Agent \n Group, assign, and coordinate maintenance work across events without manual backlog triage. \n The Maintenance Event Planning Agent addresses one of the more labor-intensive aspects of tactical planning: aligning work orders and notifications to the right maintenance event (for example, a planned shutdown). Planners currently spend significant time manually reviewing backlog and assigning items; this agent automates that identification and matching. \n The agent creates maintenance events by event type (configurable per system), assigns relevant orders and notifications based on technical object and planning attributes, and provides visibility into assigned work and potential blockers within each event. It also identifies backlog items that fall within the event scope but have not yet been assigned, reducing the risk of leaving relevant work out of a window. \n Planners can ask for open events by time range (\"show me events from October 1 to October 10\"), assign additional orders conversationally, and release the planning bucket, all within the same Joule session. \n\n Maintenance Job Debrief Agent \n Capture what actually happened in the field, even from a handwritten note or a photo. \n The Maintenance Job Debrief Agent is built for the technician to complete a job. Its purpose is to make job confirmation and knowledge capture fast and natural, regardless of how the technician prefers to document work. A photo of the asset you just worked on, a handwritten note, an informal description: the agent reads all of it and converts it into structured, system-ready confirmation data. \n The agent finds the relevant order and operational line items from the provided context, corrects spelling, structures work details, and guides the posting of time and material usage, both planned and unplanned. When multiple jobs need confirmation, the agent handles them in sequence within the same session. \n Once confirmation is complete, the agent generates a structured feedback template, available in multiple languages, that the technician can review and send to the relevant planner. Crucially, the agent creates a draft in Outlook but does not send it automatically; the technician retains full control over what is communicated and to whom. This preserves operational knowledge at the point where it is richest: immediately after a job is completed. \n\n Equipment Insights Agent \n All equipment information in one view without manual data gathering across systems. \n The Equipment Insights Agent brings together fragmented equipment information from across S/4HANA into a single, structured overview. It aggregates equipment master data, installation details, active orders and notifications, measurement documents, and historical maintenance records, and summarizes long texts automatically so users do not have to read a long source to understand an asset's recent history. \n Beyond a static summary, the agent analyzes failure patterns, reliability indicators such as MTTR and MTBR (mean time to repair and mean time between repairs), and financial performance, linking cost data to maintenance and operational records. This gives maintenance planners, reliability engineers, and master data specialists a foundation for data-driven maintenance decisions and strategy. \n The agent works on one equipment record at a time, presenting status, age, location, maintenance history, last service date, and next scheduled maintenance — a quick, comprehensive briefing on an asset, with recommendations on what to address next. \n\n Maintenance Task List Agent \n Build maintenance task lists from instruction manuals automatically and consistently. \n The Maintenance Task List Agent automates the creation and maintenance of task lists by reading equipment instruction manuals (uploaded to customer-controlled storage such as SharePoint or S3). It extracts maintenance-relevant content based on the context provided by the planner, determines the appropriate operations and organizational attributes, and presents a draft task list for review and approval before any record is written. \n The agent identifies whether an existing task list already exists for the equipment and reuses or updates it where applicable, rather than creating duplicates. It supports equipment task lists, functional location task lists, and general maintenance task lists. When a manual changes, the agent detects the differences and applies targeted updates, enabling consistent, scalable maintenance practices across growing asset fleets. \n This capability requires document grounding functionality and a subscription to SAP BTP where the MCP server is deployed. \n\n Further updates on FPS02 release \n Maintenance notification-based inspection checklist process \n FPS02 introduces an inspection checklist process directly at the maintenance notification level. A new customizing activity lets you enable checklist processing for a specific notification type and planning plant combination, and maintain the relevant checklist types for the planned inspection. Within the notification, a Checklists tab provides the checklist types and the generated checklists. \n When the technical object's classification matches an inspection plan, the system can create an inspection lot for the notificat"
+  },
+  {
+   "key": "25ff1bc75c16cbec",
+   "title": "Destination Jobs: Call an OAuth-Protected Application in Another CF Landscape",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/destination-jobs-call-an-oauth-protected-application-in-another-cf/ba-p/14516861",
+   "published": "2026-11-05T08:47:37+00:00",
+   "author": "DenisDuev",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "See how you can call an secure endpoint using the new Destination jobs in SAP Job Scheduling service"
+  },
+  {
+   "key": "3bd0b6daff72095e",
+   "title": "CBAM: Regulatory Logic, Compliance Requirements, and SAP's Response",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/cbam-regulatory-logic-compliance-requirements-and-sap-s-response/ba-p/14516857",
+   "published": "2026-11-05T08:40:29+00:00",
+   "author": "AngelaDai",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "As of January 2026, the EU Carbon Border Adjustment Mechanism (CBAM) has entered its definitive regime. For EU importers of steel, aluminium, cement, fertilisers, electricity, and hydrogen, the obligations have shifted from quarterly reporting to real financial liability — certificate purchases, verified emission data, and annual declaration deadlines. \n\n This article reflects my understanding after reading EU official documentation and SAP-related training materials. Different perspectives are welcome."
+  },
+  {
+   "key": "b5a6bab49aaab981",
+   "title": "Smarter Guidance, Right Where You Work: SAP Analytics Cloud Integrates with WalkMe",
+   "link": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/smarter-guidance-right-where-you-work-sap-analytics-cloud-integrates-with/ba-p/14481984",
+   "published": "2026-11-05T08:23:25+00:00",
+   "author": "William_Yu1",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "In-application guidance and digital adoption capabilities, now built directly into SAC"
+  },
+  {
+   "key": "f399ffe5b0f0dbdf",
+   "title": "CBAM ：法规逻辑、合规要求与 SAP 的应对方案",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/cbam-%E6%B3%95%E8%A7%84%E9%80%BB%E8%BE%91-%E5%90%88%E8%A7%84%E8%A6%81%E6%B1%82%E4%B8%8E-sap-%E7%9A%84%E5%BA%94%E5%AF%B9%E6%96%B9%E6%A1%88/ba-p/14516802",
+   "published": "2026-11-05T08:23:11+00:00",
+   "author": "AngelaDai",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "2026年1月，欧盟碳边境调节机制（CBAM）进入正式执行阶段。对钢铁、铝、水泥、化肥、电力或氢气的欧盟进口商而言，义务已经不再只是季度报告——而是真实的证书购买、经核查的排放数据、以及年度申报截止日。这篇文章整理了我阅读欧盟官方文档和 SAP 相关培训材料之后的理解，分享给同样在关注这个话题的朋友，有不同见解欢迎交流。"
+  },
+  {
+   "key": "8e0d6688e0a4539b",
+   "title": "Introducing SAP Certified built with SAP Business AI Platform",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/introducing-sap-certified-built-with-sap-business-ai-platform/ba-p/14516499",
+   "published": "2026-11-05T08:18:05+00:00",
+   "author": "VenketesanGanesh",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The SAP Integration and Certification Center (SAP ICC) is pleased to introduce the SAP Certified built with SAP Business AI Platform font treatment, a new recognition for partner solutions that demonstrate technical alignment with SAP's AI strategy."
+  },
+  {
+   "key": "037afbadb7803ce0",
+   "title": "Issues with the configuration of the ‘Cash’ account",
+   "link": "https://community.sap.com/t5/financial-management-q-a/issues-with-the-configuration-of-the-cash-account/qaq-p/14517158",
+   "published": "2026-11-05T15:53:42+00:00",
+   "author": "xuqi_fangaf39f1",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi sap, \n The Group’s headquarters is located in China, and the system includes multiple company codes for China. There are subsidiaries overseas, such as in Poland and Vietnam. Should cash accounts be set up separately by currency?as follows: \n 10010000 CNY Company Code A \n 10010200 VND Company Code B \n 10010300 PLN Company Code C \n 10010400 HKD Company Code D \n Another way, Set up only one cash account and allocate it to different company codes; the currency of the accounts set up under each company code is the same as the company code’s currency.as follows: \n 10010000 （Company Code A CNY,CompanyCode B VND,CompanyCode C PLN,CompanyCode D HKD) \n Which approach would you recommend? Tks!"
+  },
+  {
+   "key": "de40f80113e33ecf",
+   "title": "How to Embed SAP Analytics Cloud Dashboards Directly Within SAP Build Work Zone?",
+   "link": "https://community.sap.com/t5/technology-q-a/how-to-embed-sap-analytics-cloud-dashboards-directly-within-sap-build-work/qaq-p/14517023",
+   "published": "2026-11-05T11:29:36+00:00",
+   "author": "suryacreatx",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello Community, \n I'm looking for guidance on a requirement involving SAP Analytics Cloud (SAC) and SAP Build Work Zone. \n Current Scenario: \n We have SAP Analytics Cloud dashboards exposed as tiles in SAP Build Work Zone. \n Currently, when a user clicks an SAC tile, they are redirected to SAP Analytics Cloud, where the dashboard opens separately. \n However, we noticed that SAP Fiori applications can be accessed and rendered directly within the same SAP Build Work Zone interface, providing a more seamless user experience. \n Expected Behaviour: \n We would like to achieve a similar experience with SAC dashboards, where: \n Users click an SAC tile in SAP Build Work Zone. \n The SAC dashboard opens within the same Work Zone interface. \n Users can interact with the dashboard without being redirected to a separate SAC window or application. \n My Questions: \n Is there a supported way to embed SAC stories directly within SAP Build Work Zone? \n Can this be achieved through an iframe, embedded application, or any native Work Zone integration? \n Are there any authentication, SSO, or cross-tenant limitations to consider? \n Is there an alternative approach that provides a similar seamless experience? \n I'm particularly interested in understanding whether this is supported through standard SAP capabilities or if there are any established workarounds. Any guidance or implementation references would be appreciated. \n Thanks!"
+  },
+  {
+   "key": "eeab8c8a079b7849",
+   "title": "collection date in value analysis",
+   "link": "https://community.sap.com/t5/technology-q-a/collection-date-in-value-analysis/qaq-p/14516943",
+   "published": "2026-11-05T09:44:13+00:00",
+   "author": "Raquel_Cabacinha",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Anyone knows if it is possible to change in a massive way, the collection date in the baseline State of the Value Analysis formulas? I have different collection date between process flow and value analysis and I want to change it to have the same collection date."
+  },
+  {
+   "key": "d6a071e6a1628050",
+   "title": "Supplier Journal Entry Clearing Using the Special G/L Indicator via API",
+   "link": "https://community.sap.com/t5/technology-q-a/supplier-journal-entry-clearing-using-the-special-g-l-indicator-via-api/qaq-p/14516930",
+   "published": "2026-11-05T09:29:00+00:00",
+   "author": "kiruthikadhavamani",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear SAP Community, \n I am working on supplier journal entry clearing using the Journal Entry Clearing API in SAP S/4HANA Public Cloud. \n The standard journal entry clearing process for normal supplier payments is working fine. However, when I try to clear supplier journal entries involving a Special G/L Indicator , I cannot find the corresponding Special G/L Indicator field in the standard SOAP API payload (WSBL). \n I would like to clarify the following: \n\n Does the Journal Entry Clearing API support clearing supplier journal entries based on the Special G/L Indicator? \n\n Why is the Special G/L Indicator field not available in the standard SOAP API payload? \n\n Is there any alternative API, SOAP service, or supported approach to clear supplier journal entries involving Special G/L transactions? \n\n Is it possible to pass the Special G/L Indicator through any other field or parameter in the clearing API? \n\n Could anyone please share their experience, relevant SAP documentation, or a recommended approach for handling this scenario in SAP S/4HANA Public Cloud?"
+  },
+  {
+   "key": "acb4852ad2315385",
+   "title": "Google shows wrong post dates (day/month switched)",
+   "link": "https://community.sap.com/t5/questions-about-sap-websites/google-shows-wrong-post-dates-day-month-switched/qaq-p/14516768",
+   "published": "2026-11-05T08:04:46+00:00",
+   "author": "Sandra_Rossi",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Google search ( https://www.google.com 😞 \n \"c1\" \"it is not allowed to release database tables\" site:sap.com \n\n French \"11 avr. 2026\" = English \"April 11th, 2026\". \n The question was posted November 4th, not April 11th. \n XCO framework expects C1-released database table - SAP Community \n Thanks. \n Sandra \n NB: no issue with Bing: \n \"Can AIF error alerts be delivered to SAP Business Workplace (SBWP)?\" site:sap.com \n\n French \"Il y a 3 jours\" = English \"3 days ago\". \n The question was posted November 2nd."
+  },
+  {
+   "key": "706f6bdb49f224a8",
+   "title": "How does SAP Joule understand custom tables and custom business objects?",
+   "link": "https://community.sap.com/t5/technology-q-a/how-does-sap-joule-understand-custom-tables-and-custom-business-objects/qaq-p/14516745",
+   "published": "2026-11-05T07:38:34+00:00",
+   "author": "archanaviswanath123",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "We are evaluating SAP Joule and would like to understand how it handles customer-specific data models and custom tables (Z* tables). How does Joule discover and understand custom tables and their relationships? Does it use SAP Data Dictionary metadata such as field labels, descriptions, domains, and foreign key relationships? Are additional configurations required to expose custom tables to Joule? If custom tables are exposed through CDS views, RAP business objects, or APIs, does Joule rely on these artifacts rather than directly accessing the tables? What are SAP's recommended practices for making custom business data understandable by Joule? Any guidance, documentation references, or practical experiences would be appreciated. Thank you."
+  },
+  {
+   "key": "6a6a310815bfb3f6",
+   "title": "How to Assign a Custom Analytical Query to a Custom Business Catalog Instead of a Standard Catalog?",
+   "link": "https://community.sap.com/t5/technology-q-a/how-to-assign-a-custom-analytical-query-to-a-custom-business-catalog/qaq-p/14516740",
+   "published": "2026-11-05T07:27:29+00:00",
+   "author": "Abinash16",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi SAP Experts, \n We are working on SAP S/4HANA Cloud Public Edition and have created a custom analytical query using the Custom Analytical Queries app. \n Currently, the analytical query is assigned to a standard business catalog. \n We would like to know whether it is possible to assign the custom analytical query to a custom business catalog instead of the standard SAP-delivered business catalog. \n Our Requirement: \n\n Create a custom business catalog. \n\n Assign the custom analytical query to the custom business catalog. \n\n Provide access to the analytical query through a custom business role. \n\n Avoid using standard SAP business catalogs. \n Questions: \n\n Is this supported in SAP S/4HANA Cloud Public Edition? \n\n If yes, what is the recommended procedure? \n\n Are there any restrictions when assigning custom analytical queries to custom business catalogs? \n Any guidance or official SAP documentation would be greatly appreciated. \n Thanks in advance!"
+  },
+  {
+   "key": "59a7824cffd9f0a5",
+   "title": "correspondence form issue in F.61 for Account statement.",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/correspondence-form-issue-in-f-61-for-account-statement/qaq-p/14516728",
+   "published": "2026-11-05T06:31:37+00:00",
+   "author": "Venu2025",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "In the correspondence Account statement form when we trigger the form in F.61 with the multiple BP’s and one is English and other is French BP’s we need a separate spool for English and French (i.e., present we are getting both English and French in a single spool ) we need a separate spool."
+  },
+  {
+   "key": "d5052bba48cc25ad",
+   "title": "PayrArea unchangeable for periods for which payroll has run",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/payrarea-unchangeable-for-periods-for-which-payroll-has-run/qaq-p/14516726",
+   "published": "2026-11-05T06:14:55+00:00",
+   "author": "atin_k",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Team, \n\n I am getting the error \"PayrArea unchangeable for periods for which payroll has run\" for an employee who was in Payroll Area A1 on 21.06.2029, was terminated that day, and rehired into payroll area A2 from 11.11.2024. \n From 22.06.2019 to 10.11.2024, the employee was on A1 (Inactive). The maintenance of A1 payroll area was stopped during 2023 in the backend, as all employees were moved to A2. \n So, now this employee is going to retro and as there is no A1 maintained in the backend table giving an error message. To resolve A1 error, I'm trying to put this employee on A2 from 22.06.2019 to 10.11.2024 , but system is throwing error - \"PayrArea unchangeable for periods for which payroll has run\"; even though there is no payroll results for this employee within that period. \n\n Could you please help. \n\n Thank you, \n AK"
+  },
+  {
+   "key": "7d49ef98c8a475ef",
+   "title": "Posting period 012 2025 is not open for variant 1071 and account category",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/posting-period-012-2025-is-not-open-for-variant-1071-and-account-category/qaq-p/14516712",
+   "published": "2026-11-05T05:13:42+00:00",
+   "author": "SAP-AFCONS",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "We have created a new company code, 1073 , and assigned Specify Number Assignment Across Company Codes to company code 1073. Please refer to the screenshot below: \n\n However, while executing AFAB , we are receiving the following error for Company Code 1071 : “Posting period 012/2025 is not open for variant 1071 and account category.”"
+  },
+  {
+   "key": "1f92e01893a9dd41",
+   "title": "MD04 & MRP Impact of Rejection Reason in Sales Order Approval Workflow",
+   "link": "https://community.sap.com/t5/technology-q-a/md04-amp-mrp-impact-of-rejection-reason-in-sales-order-approval-workflow/qaq-p/14516694",
+   "published": "2026-11-05T04:08:36+00:00",
+   "author": "Harukiy",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi expert, \n I would like to ask about the behavior of Sales Order Approval Workflows and their impact on MD04 (Stock/Requirements List) and MRP. \n 【Environment】 \n\n S/4HANA Cloud / S/4HANA \n\n BAdI used: Custom Logic for Sales Order Approval Reason (SD_APM_SET_APPROVAL_REASON) \n 【Background & Configuration】 We have implemented custom logic in the sales order approval process to compare header/item/partner data before and after changes and set an approval reason accordingly. This logic is designed to trigger a re-approval workflow even when the item \"Reason for Rejection\" is modified or set. \n 【Current Issue / Behavior】 When a Reason for Rejection is set on a sales order item that is pending approval (or re-approval), the sales order immediately disappears from the MD04 screen before the re-approval takes place. \n 【Questions】 \n\n MD04 Display Control: Is it standard SAP behavior for a sales order item to be removed from the MD04 requirements list immediately once a Reason for Rejection is set, even prior to the approval being completed? \n\n Impact on MRP: In this state (Reason for Rejection is set, but still pending approval), is it correct to assume that the sales order is excluded from MRP execution (i. e., demand is not considered)?"
+  },
+  {
+   "key": "ac0e83dc6fa5c137",
+   "title": "Dynamically load timestamped flat files (filename_YYYYMMDD.csv) into BW ADSO without SAP Data Servic",
+   "link": "https://community.sap.com/t5/technology-q-a/dynamically-load-timestamped-flat-files-filename-yyyymmdd-csv-into-bw-adso/qaq-p/14516683",
+   "published": "2026-11-05T03:06:28+00:00",
+   "author": "khalida-aurora07",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi SAP Community, \n I am looking for the best standard or automated approach to load flat files (CSV) directly into SAP BW / BW/4HANA Advanced DataStore Objects (ADSO) without using SAP Data Services (BODS) . \n\n Scenario & Requirement: \n\n Source files are generated daily with a dynamic timestamp in the file name: \n Format: <ReportName>_<Timestamp>.csv \n Example: \n\n Today: report_a_20261104235900.csv \n\n Tomorrow: report_a_20261105235900.csv \n\n Files for the same report (e. g., report_a_* ) need to be processed and loaded into the same target ADSO. \n\n We want to fully automate this ingestion in BW once the file arrives on the application server directory. \n Questions: \n\n DataSource Configuration: How can we handle dynamic/wildcard file names (e. g., report_a_*.csv ) directly in the SAP BW File DataSource so it picks all un-processed files matching the pattern and process it from the oldest to the newest timestamp? \n\n Process Chain Automation: What is the recommended practice for triggering the Process Chain/InfoPackage/DTP for dynamic file names? \n\n Archive/Cleanup: Is there a standard mechanism within BW to move or rename the file after successful loading to prevent double loading on the next run, or is an OS-level script / ABAP routine required in the Process Chain?"
+  },
+  {
+   "key": "fd1adbf21c7b00ff",
+   "title": "SAP Business One: 30 Years of Growing Together",
+   "link": "https://news.sap.com/2026/11/sap-business-one-30-years-of-growing-together/",
+   "published": "2026-11-05T12:15:00+00:00",
+   "author": "Stefanie Glenk",
+   "tags": [
+    "Artificial Intelligence",
+    "Customers",
+    "SME",
+    "Solutions",
+    "AI",
+    "SAP Business One"
+   ],
+   "feed": "SAP News Center",
+   "kind": "news",
+   "text": "Turning 30 is a good reason to look back—and an even better moment to ask what comes next. For SAP Business One, SAP’s solution for small- and medium-sized customers, that means building on three decades of growth with small and mid-size businesses and adopting AI to open new possibilities for customers to prosper in the future. \n\n Growing together \n\n Customer satisfaction has long been a hallmark of SAP Business One, with an enviably high customer retention rate in the upper 90% range. Customers typically only leave the solution when a business ceases to exist, for example through bankruptcy or acquisition. “Looking back at the last 30 years, we’ve had almost no customer churn,” said Darius Heydarian, global head of Partner Enablement for SAP Business One. “Some customers started with a handful of employees and stayed through two or three decades of change, growing with the solution.” \n\n Heydarian named two main reasons for the high customer retention: ongoing innovations in the solution itself and the SAP Business One partner ecosystem. SAP Business One operates on a fully indirect model: the solution is sold and implemented solely by partners, who also support customers during their day-to-day operations. Those partners are autonomous, locally present, and in many cases have been building solution expertise and knowledge for over 20 years. \n\n Customer voices \n\n Vereens Stores: adapting the software as operations evolve \n\n Vereens Stores, a U.S.-based supplier of fertilizers and turf management solutions, has been with SAP Business One for over 20 years. Andee DiCola, chief financial officer and co-owner, points to one thing above all else as the reason for staying: the customization capabilities of SAP Business One. “Rather than having to change the way we operate to fit the software, we have been able to adapt SAP Business One to meet our needs,” she said. Looking ahead, she expects AI to help her company work smarter with information already available today. “I see opportunities around reporting, data analysis, identifying unusual transactions or exceptions, and helping automate repetitive processes.” \n\n Design Resources, Inc.: using the same core platform across new ventures and markets \n Experience a single, affordable ERP solution for managing your entire company with SAP Business One \n\n Learn more \n\n Design Resources, Inc. (DRI), which designs and sources branded apparel, runs multiple intradependent businesses on SAP Business One. Joe Leimer, chief information officer at DRI, said the solution’s flexibility has followed each new opportunity: “Whenever ownership is exploring a new venture, the flexibility of SAP Business One hasn’t been a limit for us. We know our core ERP needs will be handled and backed by SAP.” For Leimer, choosing an ERP platform “is a decision you only want to make once.” \n\n Staying current: three decades of technology shifts \n\n The roots of SAP Business One are in a business management solution built for small companies by an Israel-based startup called Top Manage, which was bought by SAP in 2002. \n\n Renamed SAP Business One after the acquisition, the solution kept pace with—and sometimes led—technology shifts inside SAP. In 2011, it was one of the first SAP solutions to integrate the new SAP HANA in-memory database. That early adoption gave customers speed and analytics capabilities that traditional databases couldn’t match at the time. In 2020, SAP Business One, Web client, was introduced, encapsulating core business logic in a fresh and modernized user experience. Since then, the Web client has continued to evolve, delivering a growing scope of business processes alongside innovative analytics, integration, and customization capabilities. \n\n SAP Business One version 11, open for initial partner preview in 2027, will introduce a new generation of cloud management tools for SAP partners, such as containerized lifecycle management, which allows software updates without system downtime. It also adds native deployment support for hyperscaler platforms including AWS, Microsoft Azure, and Google Cloud, as well as native cloud storage integration via Google Drive and OneDrive. \n\n Adopting AI \n\n In August 2026, SAP Business One introduced integrated generative AI capabilities: “Ask AI” and AI user-defined query. Ask AI allows users to select business data within SAP Business One, based on their individual user authorization, and ask contextual questions about it, such as researching shipping costs, delivery times, or alternatives for a product. AI user-defined query allows non-technical users to generate sharable lists using natural language; for example, “Show me the top five customers by outstanding payments.” \n\n The partner AI ecosystem: two examples at work \n\n Beyond native AI features within SAP Business One, a growing ecosystem of partner-built AI solutions is already live. MCP (Model Context Protocol) server integration offers partners new ways to build their own agents and AI-powered extensions for SAP Business One. SAP’s Global AI Partner Innovations Playbook lists 54 solutions to date, with many more to come. The following examples shine a light on the quality of solutions offered by the ecosystem. \n\n Third Wave, a U.S.-based SAP partner, built Forge AI, an agentic AI that embeds seamlessly into SAP Business One, Web client. Users interact in natural language via a copilot window inside the SAP Business One user interface. They can search for a specific invoice, create a goods receipt, raise a support call, or cancel an order. The agent reads and writes data within SAP Business One, with a human confirmation step for any irreversible action. \n\n SAP partner Cloudiax took a different approach. Best known as an SAP Business One hosting provider, Cloudiax built AXeLANT Chat, an agentic AI running entirely on its own NVIDIA infrastructure in Germany—purpose-built for companies with strict data privacy and sovereignty requirements. AXeLANT Chat both analyzes business data and, with a human in the loop, carries out tasks such as creating a sales quote in SAP Business One. \n\n Built to last \n\n Embedded AI will be the next big chapter of SAP Business One. “The upcoming version 11 of SAP Business One will be aligned with the Autonomous Enterprise strategy, enabling agentic AI capabilities for the Web client and further extensibility possibilities for partner AI innovation,” said Peter Dominik, global head of SAP Business One Product Management. \n\n Joost Tigelaar, SAP global sales for SME Solutions, summarized the feedback from various conversations he had with partners during the SAP Partner Summit for EMEA and MEE in October: “SAP Business One customers value the flexibility of the solution, the strength of our partner ecosystem, and increasingly expect AI and automation to help them get more value from their business data and make every day work simpler.” \n\n Thirty years after the first customers made the strategic decision to adopt SAP Business One, the solution continues to evolve alongside its customers and the 1.2 million users working with it every day. \n\n Happy B1rthday: 30 Years of SAP Business One and Why Its AI Moment Is Just Beginning \n\n Click the button below to load the content from YouTube. \n\n Always allow YouTube \n\n Subscribe to the SAP News Center for the latest SAP news each week \n\n Sign up to get the newsletter"
+  },
+  {
+   "key": "25cc93f3d9c752ed",
+   "title": "Three Skills That Define the New Entry-Level Job in the AI Era",
+   "link": "https://news.sap.com/2026/11/three-skills-define-entry-level-job-ai-era/",
+   "published": "2026-11-05T11:15:00+00:00",
+   "author": "Lara Albert",
+   "tags": [
+    "Artificial Intelligence",
+    "Human capital management",
+    "AI",
+    "Digital skills",
+    "Future of work",
+    "Human resources (HR)"
+   ],
+   "feed": "SAP News Center",
+   "kind": "news",
+   "text": "The first weeks—or even days—on a job look very different than they did a decade ago. What’s changing isn’t just the pace of work but how quickly you’re expected to contribute. \n\n Early-career roles have long relied on gradual, hands-on learning: sitting in on meetings, preparing briefing materials, compiling inputs for reports, coordinating across teams, or shadowing customer conversations. These moments helped young professionals build judgment through repetition. Today, that model is evolving. Many of those tasks—reviewing customer feedback to identify trends, diagnosing why a campaign missed its targets, investigating a product bug or unexpected feature behavior, or interpreting performance metrics to suggest next steps—can now be completed in minutes with AI . Work that once filled weeks of onboarding is compressed into hours, fundamentally changing how learning happens on the job. \n Early talent in peril: How HR can strategically select and develop the workforce of tomorrow \n\n Read the research \n\n As organizations adapt, the expectations placed on employees are evolving just as quickly. Recent SAP research found that nearly 69% of organizations say AI is expanding employees’ day-to-day responsibilities, while more than half say workforce upskilling and reskilling isn’t keeping pace with AI adoption. For early-career professionals, that means entering workplaces where execution is faster, responsibilities are broader, and human judgment is even more important. \n\n Put together, the shift is clear. The new entry-level job brings higher expectations and less time to build confidence. In this environment, succeeding early in your career isn’t about knowing more—it’s about thinking differently. Three skills in particular will set you apart. \n\n AI fluency isn’t enough—judgment is what sets you apart \n\n Knowing how to use AI is quickly becoming table stakes. With 86% of students reporting they use AI in their studies, more than half weekly and nearly one in four daily, AI use alone won’t differentiate candidates. \n\n What will differentiate them is judgment: how someone frames a problem, tests assumptions, and turns a draft into something others can actually use. \n\n AI might give you a solid first draft of a client email, a slide deck, or a performance report. But is the tone right for that customer? Are the numbers interpreted correctly? Does the recommendation actually make sense in context? \n\n Used well, AI doesn’t replace thinking; it accelerates it. Used poorly, it produces confident-sounding work that’s misaligned, unsupported, or simply wrong. \n\n Before you hit send or share AI-assisted work, ask yourself: What problem am I solving? What might be missing or incorrect? What feels unclear or risky? And what should happen next? \n\n This isn’t about overthinking everything. It’s about making sure your work holds up, not just that it gets done. \n\n Make your work trustworthy \n\n As AI speeds up production, trust becomes a constraint. Fast work only matters if people can trust it. And early in your career, trust is what determines how much responsibility you’re given. \n\n Your role isn’t to accept AI output; it’s to validate it. \n\n If you’re using AI to summarize a sales call, pull insights from a data set, or draft a response to a customer issue, your job is to check the details: Are the numbers accurate? Are the sources credible? Is anything missing? Does this align with how your company actually operates? \n\n It also means knowing when to pause. If something doesn’t look right in a report or feels off in a customer message, asking a question is far more valuable than guessing. \n\n Just as important is transparency. Saying, “I used AI to draft this, here’s what I verified, and here’s what I’m unsure about,” builds more credibility than presenting something as fully finished when it isn’t. \n\n In practice, this shows up in small, but important ways: double-checking a metric before it goes into a dashboard, confirming details before sending a customer email, or validating assumptions before sharing a recommendation. \n\n You’re not alone in feeling some skepticism about AI. Gallup’s Gen Z research shows adoption can be steady as confidence fluctuates, and that skepticism can be an advantage. When you channel it into stronger verification habits and higher standards of proof, you’re not just moving fast; you’re producing work others can trust. \n\n Rapid learning is a competitive edge \n\n The biggest advantage you have early in your career is how quickly you learn. \n\n Every task—writing a follow-up email, building a slide, handling a support ticket, analyzing a report—is an opportunity to refine how you think. The professionals who progress fastest are the ones who treat each assignment as a learning loop, seeking input early, reflecting on outcomes, and applying lessons immediately. \n\n That doesn’t require a complex system. It can be as simple as asking: What decision did I make? Why? What worked (or didn’t)? And what will I do differently next time? \n\n This does two things: it converts experience into judgment faster, and it prevents AI from becoming a crutch. AI can generate options, but real growth comes from reviewing outcomes and adjusting how you work. \n\n The entry-level job hasn’t disappeared, it’s evolved \n\n Entry-level roles may be fewer and harder to secure, but the roles that exist today are shifting toward earlier responsibility as AI compresses execution time and pulls more meaningful work forward. \n\n The core skills that matter most aren’t simply “using AI.” They are judgment, the ability to build trust in your work, and the discipline to keep learning. \n\n If you get this right, you won’t just ramp quickly. You’ll stand out, building the kind of professional judgment, credibility, and confidence that no tool can replace. \n\n Lara Albert is CMO for SAP SuccessFactors. \n Get the latest SAP news delivered to your inbox once a week \n\n Sign up to receive the newsletter"
+  },
+  {
+   "key": "8fcba9bac2ff0e85",
+   "title": "I Passed the SAP Joule Studio Developer Exam. Here's What I Wish I'd Known.",
+   "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/i-passed-the-sap-joule-studio-developer-exam-here-s-what-i-wish-i-d-known/ba-p/14517312",
+   "published": "2026-11-05T23:30:11+00:00",
+   "author": "shaktibarath",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "I just passed the SAP Certified – Joule Studio Developer exam (C_JSD). If you work anywhere near SAP and AI agents, my advice is simple: take it now. \n SAP is offering one free attempt at the exam until December 31, 2026. That alone is reason enough to stop circling it. But there is a better one. This is not a memorize-and-recall test. It asks you to build, reason and defend your choices, and the preparation teaches you how SAP actually thinks about agents in the enterprise. \n Here is what worked, what didn't, and the one mistake I hope you avoid. \n Before you start: claim your free attempt \n\n Yes, it really is free. As part of the Joule Studio launch, SAP is giving every learner one attempt when they sign up through the campaign page on SAP Learning and accept the terms. You don't need an SAP Learning Hub subscription or a paid certification voucher. \n There's a catch worth knowing: this free attempt is the only way to take the exam. SAP won't accept a paid attempt for it, so if your one try goes badly, there's no buying a second. Prepare accordingly. \n Setup takes a few minutes. Do it in this order. \n Check your SAP Universal ID. You need a valid one at account.sap.com . SAP recommends assigning two different email addresses to it. \n Claim the complimentary attempt. Log in, accept the terms and claim your attempt . You get one free try, so don't rush into the exam. \n Read the official details. Review the Joule Studio Developer page and SAP's FAQ so nothing surprises you on the day. \n Start with the learning journey, and finish it \n\n My preparation began and ended with SAP's learning journey, Developing with Joule Studio . Complete it end to end. Don't skim the modules you think you already know. \n The journey does two jobs. It walks you through building agents in Joule Studio, step by step. It also lays out the vocabulary and the architecture the exam leans on. When the exam later asks you to explain a design decision, you will be drawing on that material, not on the clicks you made. \n You'll find the journey on SAP Learning . By the end, you should be comfortable with four things: \n Creating Joule agents \n Extending existing agents \n Building workflows \n Explaining where Joule Studio fits within SAP Business AI \n It's an assessment, not a quiz, so book early \n\n The Joule Studio Developer exam is scenario-based, not multiple choice. You get two hours, and you need 60% to pass. The work is hands-on: you build agents in Joule Studio, complete practical exercises, then demonstrate what you built to an AI avatar. The avatar also zooms out to the big picture, so expect to discuss how your work fits into the wider enterprise. \n SAP supplies a pre-configured Joule Studio practice environment, so you don't need your own BTP subaccount or Joule Studio subscription. The catch is the clock. Once you enroll in that environment, you have 24 hours to complete the hands-on exercises, build the required agents and finish the certification assessment. \n That makes timing everything. Don't activate the practice system until your preparation is done. But don't leave it to the last week either. More people are taking the exam while it's free, and availability could tighten as the deadline nears. \n Read the intent, requirements and specifications like a contract \n\n If I could underline one piece of advice, it would be this. Read everything Joule Studio generates for an agent: the intent, the requirements and the specifications. Don't treat them as boilerplate you scroll past on the way to the build. \n Those artifacts are where the agent's purpose gets pinned down. They define what it should do, what it shouldn't, and how success is judged. The exam returns to them repeatedly, and you will be asked to review them critically, not just accept them. Know where they come from, how they connect, and what a weak one looks like. \n The mistake I made: don't deploy the agent \n\n Here is where I lost time. During practice, I deployed my agent. It felt like the thorough, real-world thing to do. Instead, I ran straight into issues, including IAS errors/permissions, that had nothing to do with what the exam measures. \n The exam runs your agent with mock data. Deployment isn't part of the task. Every minute I spent untangling permissions issues was a minute I didn't spend testing my agent's logic. \n So learn from me: build the agent, test it with mock data, and stop there. Save deployment for your real projects. \n Inside the exam: a conversation, not a form \n\n The most memorable part was the format. The exam opens with an AI role-play agent. It asks you to open Joule Studio and walk it through a custom agent, in my case one built to review billing. \n From there, it feels less like an exam and more like a design review with a sharp colleague. You look at the agent's initial prompt. You review its intent and requirements. You are expected to ask clarifying questions where something is vague, which is exactly what a good developer does with a fuzzy business request. Later, the conversation moved on to reviewing an extension in the financial close space, focused on escalations. \n Once the build review is done, the agent zooms out to the big picture. The conversation shifts from the agent you built to how agents operate across the enterprise: how they're governed, how they connect to other systems, and where people stay in control. That's where your broader preparation pays off. \n Study the big picture, not just the build \n\n Building an agent gets you in the door. Understanding where it fits in the enterprise gets you through. Before the exam, spend time with SAP's wider story on Business AI, including the Autonomous Enterprise vision and the SAP AI Agent Hub. Read SAP's own material on them, not just summaries, so you understand the thinking behind the products as well as the features. \n Don't stop at definitions. Ask yourself why SAP designed things the way it did, and what trade-offs those choices involve. \n A feature list tells you what the platform does. The reasoning behind it tells you when to use it, and that's what you'll need to explain. \n Then make it concrete. Pick a business process you know well, from your own projects or clients, and walk through it end to end. \n Where would an agent genuinely help? \n Where would you still want a person making the call? \n What would you need to see to trust the agent once it's running? \n You don't need perfect answers. You need to have thought it through before someone asks. \n Finally, practice saying it out loud. Explaining a design choice in a conversation is a different skill from understanding it on paper. \n If you can talk a colleague through your reasoning in a few clear sentences, you're ready. The exam rewards a clear point of view grounded in how the platform works, not memorized answers. \n If you remember only five things \n\n Claim your free attempt before December 31, 2026. \n Complete the Developing with Joule Studio learning journey in full. \n Read every generated intent, requirement and specification closely. \n Start the 24-hour practice window only when you're ready, and test with mock data. Don't deploy. \n Practice explaining your design choices, because the exam will ask you to. \n Knowing what Joule is won't set you apart for long. Knowing how to build with it will. The credential is worth having, and the thinking it forces is worth even more. \n I hope my experience helps you walk into the exam a little more prepared and a little less anxious, and walk out with a pass. \n If you've taken it already, or you're preparing now, please share your experience in the comments. Your tips might be exactly what the next person needs. I read every comment and will reply as time permits. \n Good luck. I'm rooting for you."
+  },
+  {
+   "key": "1d266d7c42c47464",
+   "title": "2H 2026: Get to Value Faster With Connected Recruiting & Migration Acceleration Tools",
+   "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-sap/2h-2026-get-to-value-faster-with-connected-recruiting-amp-migration/ba-p/14517301",
+   "published": "2026-11-05T22:36:13+00:00",
+   "author": "joelrakes",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Find out all about the new and exciting ways to migrate to SmartRecruiters for SAP SuccessFactors."
+  },
+  {
+   "key": "bc7203d524b3e1a7",
+   "title": "Joule Learning Journal: November 2026",
+   "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/joule-learning-journal-november-2026/ba-p/14517294",
+   "published": "2026-11-05T22:30:53+00:00",
+   "author": "MichaelYe02",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Five links worth bookmarking this month."
+  },
+  {
+   "key": "b5b5d883b1bd7183",
+   "title": "Memory Meets Orchestration: How SAP HANA Cloud and Joule Are Reshaping Enterprise AI",
+   "link": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/memory-meets-orchestration-how-sap-hana-cloud-and-joule-are-reshaping/ba-p/14517193",
+   "published": "2026-11-05T19:10:26+00:00",
+   "author": "Daniel_Dukes",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Every enterprise AI team hits the same wall: agents that can reason in the moment but forget everything the moment the session ends. No context from yesterday. No learned preferences carried forward. The gap between what your agents know right now and what they knew last week is where value disappears. \n Two announcements from SAP TechEd 2026 address this directly - and together they outline an enterprise AI architecture that goes well beyond what either delivers alone. SAP Agent Memory Service gives agents persistent, governed memory built on SAP HANA Cloud. Joule evolves from a conversational interface into an agentic orchestration layer featuring open protocol support and expanded third-party connectivity. SAP Business AI Platform connects them to business context with governance at scale. \n The result is a layered stack taking shape across SAP's portfolio - one that gives data practitioners an increasingly integrated path from proof-of-concept agents to production-grade autonomous workflows. \n This post breaks down the architecture, the technical details, and where to start."
+  },
+  {
+   "key": "75e77d75bf7e52e4",
+   "title": "Most Transformations Fail Because People Aren't Ready. Here's How Yours Can Be Different",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/most-transformations-fail-because-people-aren-t-ready-here-s-how-yours-can/ba-p/14517210",
+   "published": "2026-11-05T19:09:09+00:00",
+   "author": "Adriana_Rotaru",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Every large-scale transformation follows the same pattern. The process design is solid. The solution architecture is reviewed and approved. The project plan is detailed, resourced, and stakeholder-signed. And then, somewhere between design sign-off and go-live, things start slipping, not because the technology failed, but because the people weren't ready. \n It's not a new problem. It's the oldest problem in enterprise transformation. And yet, in most programmes we see, the people dimension is still tracked in spreadsheets, managed project by project, and visible only in hindsight, when adoption is low, conformance is poor, and someone has to explain why the expected benefits aren't materialising. \n That gap is what led us to our new partner, Serendata"
+  },
+  {
+   "key": "32f69e9bbb7051bc",
+   "title": "Unit BOT is not created in language EN",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/unit-bot-is-not-created-in-language-en/qaq-p/14517308",
+   "published": "2026-11-05T22:40:01+00:00",
+   "author": "kraghavanbindhu",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "We got the issue like below in custom report \n\n For some reason the report using the FM CONVERSION_EXIT_CUNIT_INPUT for unit conversion and its picking the UOM from the character ATWRT from table AUSP \n\n Passed the objek from ausp in INOB to get the list of batches \n\n And found this in character value \n\n So we deleted the classification in all relevant batch and refreshed the table content in character BC_BASE_UOM \n\n Then the report works fine. Not sure what is the cause."
+  },
+  {
+   "key": "28b8836c12c0ab01",
+   "title": "Direct Costs in a Nutshell",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/direct-costs-in-a-nutshell/ba-p/14516111",
+   "published": "2026-11-06T06:09:06+00:00",
+   "author": "francesco_scibilia",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Learn more about the direct costs feature shipped with Contract and Lease Management 2608 HFC6 ."
+  },
+  {
+   "key": "797b868ce9c5c81e",
+   "title": "Part 3 – Track and Understand Availability Change Response Results(ACR) in SAP S/4HANA",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/part-3-track-and-understand-availability-change-response-results-acr-in-sap/ba-p/14509276",
+   "published": "2026-11-06T05:48:24+00:00",
+   "author": "sourabhshekharsharma",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "This post describes how to monitor Availability Change Response using the Monitor Availability Change Response application and explains the action status values you encounter. It also provides guidance on investigating the most common issues. \n Series: Part 1 – Availability Change Response (ACR) Framework in SAP S/4HANA: what it is and how it works"
+  },
+  {
+   "key": "60c2a3bc98adf157",
+   "title": "SAP-Pay powered by Tereina",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/sap-pay-powered-by-tereina/ba-p/14517362",
+   "published": "2026-11-06T04:51:25+00:00",
+   "author": "DiptiRanjanDas",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "This blog is intended for project members responsible for implementing SAP-PAY in S4Hana System. This blog explains the various steps to follow and the special Considerations for Intelligent and automated Invoice-to-Pay - end to end ​ with pre-requisites."
+  },
+  {
+   "key": "23f85ba351735196",
+   "title": "中国本地化长期资产进项税合规方案：SAP全新Fiori应用正式发布",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/%E4%B8%AD%E5%9B%BD%E6%9C%AC%E5%9C%B0%E5%8C%96%E9%95%BF%E6%9C%9F%E8%B5%84%E4%BA%A7%E8%BF%9B%E9%A1%B9%E7%A8%8E%E5%90%88%E8%A7%84%E6%96%B9%E6%A1%88-sap%E5%85%A8%E6%96%B0fiori%E5%BA%94%E7%94%A8%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/ba-p/14515928",
+   "published": "2026-11-06T04:27:02+00:00",
+   "author": "Yu_Ada",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "2026年中国长期资产进项税新规正式施行，SAP推出本地化Fiori应用，让合规数据有据可查、随法规持续演进。"
+  },
+  {
+   "key": "31141a90204abb22",
+   "title": "Announcement: New Blog on the SAP Certified - Joule Studio Developer Exam",
+   "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-members/announcement-new-blog-on-the-sap-certified-joule-studio-developer-exam/ba-p/14517319",
+   "published": "2026-11-05T23:48:29+00:00",
+   "author": "shaktibarath",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Dear members of the HCM community, \n I would like to let you know that I have published a new blog about my experience with the SAP Certified - Joule Studio Developer exam (C_JSD). I normally share my work in this community. Because this blog is about AI agents, I have published it in the Artificial Intelligence community instead, and I am writing here so that it reaches you as well. \n Why this matters for HR professionals \n AI agents are increasingly becoming part of SAP’s HCM landscape. Joule Studio is where these agents are designed, extended and tested. For HR consultants, functional leads and process owners, understanding how these agents are built is quickly becoming as important as understanding the processes they support. The combination of functional HCM knowledge and practical AI skills will be increasingly valuable in the years ahead. \n A limited-time opportunity \n SAP is currently offering one complimentary attempt at this certification until December 31, 2026. The exam is hands-on and scenario-based, so it validates practical skills rather than recall alone. I encourage anyone with an interest in AI within HR to consider it while the offer is available. \n What the blog covers \n How I prepared, including SAP’s official learning journey \n What to expect from the exam format and the 24-hour practice window \n Practical tips, and one mistake I recommend avoiding \n Where to find SAP’s official resources to get started \n Read the full blog: [link to blog] \n I would welcome your feedback, and I would be particularly interested to hear from colleagues in HCM who have taken the exam or are preparing for it. Please feel free to share your experiences in the comments on the blog."
+  },
+  {
+   "key": "5d4cbaf93a7e82cb",
+   "title": "Part 2 – Configuring Availability Change Response (ACR) in SAP S/4HANA: A Real-Life Walkthrough",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/part-2-configuring-availability-change-response-acr-in-sap-s-4hana-a-real/ba-p/14509195",
+   "published": "2026-11-06T05:57:07+00:00",
+   "author": "sourabhshekharsharma",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The Scenario: a goods receipt is posted for a high-priority material with open backorders, and ACR responds automatically – without a manual trigger or a scheduled run. \n This post uses that scenario to cover every configuration step needed to make ACR operational: enabling event activation for the plant, setting up the background processing service, and creating the Condition and Response Definitions. \n Series: Part 1 – Availability Change Response (ACR) Framework in SAP S/4HANA: what it is and how it works"
+  },
+  {
+   "key": "2910553e652fad61",
+   "title": "Automatic packing with packaging specification was cancelled",
+   "link": "https://community.sap.com/t5/supply-chain-management-q-a/automatic-packing-with-packaging-specification-was-cancelled/qaq-p/14517354",
+   "published": "2026-11-06T04:42:32+00:00",
+   "author": "NK_28",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear experts, we have a queue stuck in SMQ2, with the error 'Automatic packing with packaging specification 1234 was canceled \n Message No. /SCWM/HUFUNCTIONS54, please suggest how you have handled this in your EWM projects. Thanks in advance!"
+  },
+  {
+   "key": "71c205ec29cd15ed",
+   "title": "CLoud ALM Roles - Sensitive Roles Clarification",
+   "link": "https://community.sap.com/t5/technology-q-a/cloud-alm-roles-sensitive-roles-clarification/qaq-p/14517331",
+   "published": "2026-11-06T01:36:54+00:00",
+   "author": "SAPSupport",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello Team, \n We have below sensitive roles in roles collection list; would you please help us to understand what exactly these roles will expose to the users having this role. \n How safe it is to give it along the other roles, what is recommended approach or suggestion from you, to include these roles with which roles, admin, viewer or any other. \n\n ops_bm_OperationsBusinessProcessMonitoringSensitiveViewer \n ops_csa_OperationsConfigurationSecurityAnalysisSensitiveViewer \n ops_im_IntegrationOwnerSensitive \n ops_im_OperationsIntegrationMonitoringSensitive \n ops_jm_OperationsJobMonitoringSensitiveViewer \n ops_rum_RealUserAnalystSensitive \n ops_rum_OperationsRealUserMonitoringSensitive \n\n Regards, \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+  },
+  {
+   "key": "05c80f68b3171dfa",
+   "title": "eInvoicing Germany missing Area Codes of Phone Numbers",
+   "link": "https://community.sap.com/t5/financial-management-q-a/einvoicing-germany-missing-area-codes-of-phone-numbers/qaq-p/14517320",
+   "published": "2026-11-05T23:48:59+00:00",
+   "author": "fael_cnt",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear SAP Community, \n I'm currently implementing SAP DRC for eInvoicing Germany for different customers. \n During our check of the XML we realised the area code for our company code's phone number is missing in the XML. \n It is maintained correctly in the company code data. \n\n but it's missing in the xml version. \n\n It's missing in XRechnung, ZUGFeRD and Peppol and also regardless of the type of system. (OnPrem and Privat/Public Cloud have the same issue). \n\n Thank you. \n\n Kind Regards \n Elena Fan"
+  },
+  {
+   "key": "986864e4f23cf70a",
+   "title": "Configuration of Tolerances (SSCUI 102923 and 102323) not working",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/configuration-of-tolerances-sscui-102923-and-102323-not-working/qaq-p/14517263",
+   "published": "2026-11-05T20:38:49+00:00",
+   "author": "LGV",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear SAP Team, \n I have a G/L account 1121020000 (cash account, account group FIN ). \n When posting an incoming payment to this account, I would like any small payment differences (less than 10,000 VND ) to be automatically posted to G/L accounts 71113 * or 81113 *. \n I have already configured the relevant settings in transactions 102923 and 102323 , and I have also maintained the automatic account determination. \n\n However, I am facing two issues: \n\n I cannot find the Tolerance Group field in the G/L Account Master Data under Company Code Data > Control Data . Please refer to the attached screenshot. The field status group FIN is configured with Tolerance Group = Optional Entry , but the field is still not displayed. \n\n The posting works correctly when the payment difference is very small (for example, less than 200 VND ). However, when the difference is larger (for example, 5,000 VND ), the system returns an error instead of posting the difference to the configured accounts. \n\n Could you please help me check whether I am missing any configuration or tolerance settings? \n Thank you for your support."
+  },
+  {
+   "key": "d93bee9f0741aa45",
+   "title": "RFUMSV50 IEPS + IVA",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/rfumsv50-ieps-iva/qaq-p/14517191",
+   "published": "2026-11-05T17:38:11+00:00",
+   "author": "Lidia_Catalan42",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello, \n We are facing an issue with the Deferred Tax Transfer program (RFUMSV50 / DEFTAX toolbox) in SAP ECC (SAP_APPL 618, SP 0022) for Country Mexico (TAXMX pricing procedure). \n We are looking for community guidance or best practices on how to properly address this via custom development or workarounds. \n Detailed Scenario & Problem Description: \n When processing a payment/transfer for a deferred tax code (e.g., Code `I2`) that contains multiple tax condition lines—specifically **VAT (MWS)** and **IEPS (ZP1)**—the transfer program incorrectly overwrites the transaction key (KTOSL) of the VAT line, replacing it with the transaction key of the IEPS condition (ZP1). \n * **Invoice posting:** BSET correctly separates both lines with their respective GL accounts and transaction keys (MWS and ZP1). \n * **Transfer execution (RFUMSV50):** The program triggers warning message FF707 and forces the ZP1 transaction key onto the VAT line in the target document (F2), corrupting the VAT report (S_ALR_87012357). \n **Pricing & Configuration Setup:** \n * Tax procedure: TAXMX (Mexico). \n * Source Deferred Tax Code: I2 (MWS for VAT, ZP1 for IEPS). \n * Target Tax Code: F2. \n * OBCN configuration: ZP1 is configured with Tax Class = blank or 3 (Additional tax), while MWS uses Tax Class 1. \n **Our Questions:** \n 1. Has anyone encountered this limitation in DEFTAX when handling mixed tax codes (VAT + IEPS) in Mexico? \n 2. Since SAP standard does not cover this multi-line preservation of `KTOSL` in `RFUMSV50`, what is the cleanest way to implement an **Enhancement (Implicit/Explicit Enhancement)** to force the program to read the original `KTOSL` values directly from table `BSET` for the target documents without breaking standard execution? \n Any advice, code pointers, or architecture recommendations would be greatly appreciated. Thank you!"
+  },
+  {
+   "key": "26c9f8c6efd02256",
+   "title": "MCP Server integration with ECC",
+   "link": "https://community.sap.com/t5/technology-q-a/mcp-server-integration-with-ecc/qaq-p/14517190",
+   "published": "2026-11-05T17:29:09+00:00",
+   "author": "ibrahimbell",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "I am trying to build an integration between ECC system and our LLM through btp mcp server on integration suite. I am not sure the best way to go about this especially with user authentication. Any insights?"
+  },
+  {
+   "key": "3bec82ee852bc887",
+   "title": "unable to switch the number range from internal to External in vendor master data in ECC",
+   "link": "https://community.sap.com/t5/technology-q-a/unable-to-switch-the-number-range-from-internal-to-external-in-vendor/qaq-p/14517157",
+   "published": "2026-11-05T15:43:51+00:00",
+   "author": "vasuki20",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Vendor Number range already exist in SAP \n But it is internal number range, but we want a specific number so am trying to change the number range from internal to external. \n Can someone suggest any solution. \n Thank you in advance."
+  },
+  {
+   "key": "20edcc6e96b9f15e",
+   "title": "SAP CIG Mapping Tool: How to map multiple InvoiceDetailServiceItem descriptions correctly to JOBDESC",
+   "link": "https://community.sap.com/t5/technology-q-a/sap-cig-mapping-tool-how-to-map-multiple-invoicedetailserviceitem/qaq-p/14517146",
+   "published": "2026-11-05T15:15:13+00:00",
+   "author": "Naminezeroeight",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi SAP Community, \n I am looking for guidance on the correct line-item looping/context configuration in the SAP Integration Suite Managed Gateway Mapping Tool. \n Requirement \n For inbound cXML InvoiceDetailRequest, we need to map the service line description: \n\n InvoiceDetailServiceItemReference/Description \n to: \n Plain Text \n ARBCIG_INVOIC \n /IDOC \n /E1EDP01 \n /E1ARBCIG_NONPOSERV_DETAILS \n /JOBDESC \n SAP's cXML invoice structure supports InvoiceDetailItem for regular invoice lines and InvoiceDetailServiceItem for service-specific lines. \n Current behavior \n The mapping works when there is only one service occurrence. \n Examples tested successfully: \n 1 Material \n 2 Materials \n 2 Materials + 1 Service \n The issue appears when there are multiple service occurrences: \n\n Service + Service \n 2 Materials + 2 Services \n For example: \n Source Service 1: \n Description = Service Description A \n\n Source Service 2: \n Description = Service Description B \n Expected: \n Service 1 → JOBDESC = Service Description A \n Service 2 → JOBDESC = Service Description B \n Actual: \n Service 1 → JOBDESC = Service Description A \n Service 2 → JOBDESC = Service Description A \n\n The first service description is therefore reused for the subsequent service line. \n Current source conditions \n The mapping originally contained: \n\n C1: \n Type = VALUE \n Operator = NOTEMPTY \n XPath = InvoiceDetailServiceItem/@invoiceLineNumber \n\n C2: \n Type = POSITION \n Operator = EQUALS \n Position = 1 \n\n Source Expression: \n C1 AND C2 \n This results in a generated XPath containing: \n\n InvoiceDetailServiceItem[1] \n With this configuration, the Mapping Tool Extension Transformation succeeds, but the first service description is reused for the second service item. \n Diagnostic test \n We removed only: \n C2 = POSITION EQUALS 1 \n and retained: \n\n C1 = invoiceLineNumber NOTEMPTY \n The Mapping Tool Extension Transformation then failed with: \n\n A sequence of more than one item is not allowed \n as the first argument of fn:string-length() \n The error contains both service descriptions: \n\n (\"Service Description A\", \"Service Description B\") \n This seems to indicate that, without the position restriction, the Description XPath returns multiple service-item values in the same evaluation context rather than one value per service occurrence. \n Question \n What is the recommended way to loop/map each: \n\n InvoiceDetailServiceItem \n /InvoiceDetailServiceItemReference \n /Description \n to the corresponding: \n\n E1EDP01 \n /E1ARBCIG_NONPOSERV_DETAILS \n /JOBDESC \n when more than one InvoiceDetailServiceItem exists? \n Specifically: \n Should this use a Target Position Variable against a repeating target structure? \n Would a Target Value Variable using invoiceLineNumber or lineNumber be more appropriate? \n If using a Target Value Variable, which ARBCIG_INVOIC target field should be used as the matching sequential value? \n Has anyone implemented this mapping successfully for cXML invoices containing both InvoiceDetailItem and multiple InvoiceDetailServiceItem occurrences? \n SAP documentation describes Target Position Variable looping by selecting the repeating target parent and applying the corresponding source condition. \n SAP also documents Target Value Variable looping for cases where a source sequential value can be matched with the corresponding target sequential value. \n Any working example for InvoiceDetailServiceItem → ARBCIG_INVOIC would be greatly appreciated. \n Thank you."
+  },
+  {
+   "key": "e980f1873eadecbf",
+   "title": "SAP S/4HANA 2025 Upgrade Readiness - Function Modules Reported as Functionality Unavailable",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/sap-s-4hana-2025-upgrade-readiness-function-modules-reported-as/qaq-p/14517123",
+   "published": "2026-11-05T14:37:22+00:00",
+   "author": "neeteshachoubey",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "While performing the SAP Readiness Check on our current SAP S/4HANA 2023 system in preparation for upgrading to SAP S/4HANA 2025 (Private Cloud Edition), we identified the following function modules with the impact type \"Functionality Unavailable\" : \n\n IDOC_INPUT_INVOIC_FI \n IDOC_INPUT_INVOIC_MRM \n Could you please advise on the recommended next steps? Specifically, do these function modules have replacement alternatives in SAP S/4HANA 2025, or are any configuration changes, enhancements, or third-party add-on upgrades required to ensure the related business processes continue to function after the upgrade?"
+  },
+  {
+   "key": "06be53fbd2b3aee7",
+   "title": "SAP S/4HANA CCM - Proforma for agent sales commissions",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/sap-s-4hana-ccm-proforma-for-agent-sales-commissions/qaq-p/14517121",
+   "published": "2026-11-05T14:33:51+00:00",
+   "author": "anlro",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear all, \n We are currently implementing CCM in S/4HANA and I have a question regarding the process of Proforma settlement document for sales commission contracts. \n We need to implement a two-step commission settlement process : \n\n Pro forma settlement: We issue a pro forma settlement document to our agent, including a detailed breakdown of the calculated commission. \n\n Final settlement: Once the commission amount has been reviewed and approved, the agent issues a formal invoice, which we then integrate into the settlement process. \n This process seems to be supported by SAP as described in the documentation : \n https://learning.sap.com/courses/exploring-sap-s-4hana-settlement-management/classifying-variations-of-the-commission-process_b9322adb-664f-4520-b994-503db8580f32 \n I don't find a lot of information on how to implement proforma settlement document. \n In standard it seems that settlement document is 0C51 Commission Proforma. It's associated in condition contract type 0SC2 (Commission External: Billing Doc, 2step) under Proforma settlement settings. \n How can I create the proforma document ? Is there a transaction code ? \n Best regards, \n Anthony"
+  },
+  {
+   "key": "d4e56f52c6131279",
+   "title": "QR-Bill - Switzerland - External Reference in Customer Invoice",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/qr-bill-switzerland-external-reference-in-customer-invoice/qaq-p/14517105",
+   "published": "2026-11-05T14:20:36+00:00",
+   "author": "SebastianBraumann76",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "After enabling Swiss QR Bills, we noticed that the QR Bill reference printed on the invoice form is not automatically transferred to the External Reference field of the customer invoice. \n The requirement is to have the QR Bill reference stored in the External Reference field , so that it is available later during electronic bank statement processing. The bank statement contains the QR Bill reference, and we would like to use this information for matching the customer invoice. \n Has anyone implemented this successfully? \n How did you solve it? Is there a standard configuration or a specific setup that populates the External Reference field with the QR Bill reference? \n Any guidance or best practices would be greatly appreciated. \n Thank you in advance. \n Sebastian"
+  },
+  {
+   "key": "598cca0c05fffeee",
+   "title": "First-In, First-Out (FIFO) stock valuation method for Strategic and Critical Spares in SAP",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/first-in-first-out-fifo-stock-valuation-method-for-strategic-and-critical/qaq-p/14517044",
+   "published": "2026-11-05T12:20:02+00:00",
+   "author": "mynthia_mashele7f8105",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Currently, normal inventory is valued and issued at the weighted average price, while damaged and refurbished inventory is valued and issued at the standard price in SAP. \n The material master on SF2 has been configured to use the FIFO method. However, testing confirmed that financial results (Material Ledger and financial documents) still use the moving average price tied to price control V. \n How can a material be configured to issue Strategic and Critical Spares on a FIFO basis when it already uses price control (moving average price) and has price history? \n Can a single material use more than one price control (e.g., weighted average price and FIFO)? \n Which price takes precedence, and where does the FIFO method store prices (material master)?"
+  },
+  {
+   "key": "d0d7af021e753adf",
+   "title": "User Assignment of PR after approval and PR value to copy to RFQ",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/user-assignment-of-pr-after-approval-and-pr-value-to-copy-to-rfq/qaq-p/14517043",
+   "published": "2026-11-05T12:19:53+00:00",
+   "author": "mohammed_thattarathodika7975a6",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Support, \n I have received two requirements related to Purchase Requisition and RFQ processes from the Client. \n After complete approval of Purchase Requisition, the Procurement Lead need to assign any procurement team to take the ownership of the RFQ process in SAP Public Cloud system. I have checked any application in the Fiori app library, but unfortunately not able to find. \n While creating RFQ with reference to an approved PR, the value maintained in the PR need to be copied to RFQ. It is not copying the value to RFQ in SAP Public cloud. \n Appreciate your support and confirmation for the functionality availability in SAP S4 Hana Public Cloud system. \n Regards,"
+  },
+  {
+   "key": "b7d06cc58be3cb1c",
+   "title": "FB01 – Automatic Due Date Derivation for Intercompany Vendor Invoices (Spl. G/L B)",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/fb01-automatic-due-date-derivation-for-intercompany-vendor-invoices-spl-g-l/qaq-p/14517026",
+   "published": "2026-11-05T11:33:07+00:00",
+   "author": "Phalguni_Sharaschandra",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Currently, when AP users post intercompany vendor invoices in FB01 using Special G/L Indicator \"B\", SAP does not automatically derive the \"Due On\" date (ZFBDT) from the vendor's payment terms. As a result, users must manually calculate and enter the due date for every posting. This manual step adds extra processing time, increases the risk of errors and inconsistent due dates across invoices, and can lead to inaccurate payment scheduling and reporting of open items."
+  },
+  {
+   "key": "e7adbf25596a1c2a",
+   "title": "SAP Business Technology Platform (BTP) Trial account Phone Verification Issue",
+   "link": "https://community.sap.com/t5/technology-q-a/sap-business-technology-platform-btp-trial-account-phone-verification-issue/qaq-p/14517010",
+   "published": "2026-11-05T11:06:00+00:00",
+   "author": "muhammadfwd81",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi, \n I am trying to activate my SAP Business Technology Platform (BTP) Trial account, but I am unable to complete the telephone verification step. \n I received the SAP BTP Trial welcome email confirming my registration. However, when I click the activation link and request a verification code, I receive the following error: \n “We did not send you a code because you are not allowed to request phone calls. Please contact your system administrator.” \n I have tried to activate my trial through the official SAP account verification page, but I cannot proceed because of this error. \n I tried the same in Profile Management and sent emails to sapbtptrialsupport@sap.com and sso@sap.com \n but until now no luck. \n If someone has solution please let me know. \n Kind Regards \n Muhammad Fawad"
+  },
+  {
+   "key": "228be5d85f26bcbe",
+   "title": "SAC export to ACDOCP no detail log is showing (SAC to S/4 HANA)",
+   "link": "https://community.sap.com/t5/technology-q-a/sac-export-to-acdocp-no-detail-log-is-showing-sac-to-s-4-hana/qaq-p/14517005",
+   "published": "2026-11-05T10:57:36+00:00",
+   "author": "S0028300725",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "The Export job completes successfully in SAP Analytics Cloud (SAC), but the corresponding log/details are not available in the Data Timeline. Because of this, the exact start time, end time, and processing details cannot be clearly tracked."
+  },
+  {
+   "key": "aa55dca4f769ac5d",
+   "title": "Adopt Inforecord price when creating a PO instead of valuation price from PR",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/adopt-inforecord-price-when-creating-a-po-instead-of-valuation-price-from/qaq-p/14516990",
+   "published": "2026-11-05T10:30:15+00:00",
+   "author": "jnettika",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello, \n When creating a purchase order from Purchase requisition the inforecord price is not flowing to the PO. The valuation price in PR is copied to PO. \n Have maintained a parameter EFB=Z1 in SU3. \n Please let me know what other configuration is missing to pull the inforecord price to PO."
+  },
+  {
+   "key": "8e0dfadddb78f849",
+   "title": "Valuated stock becomes negative: 30.360- 1000001490 1100 47575 see long text Message No. M7314",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/valuated-stock-becomes-negative-30-360-1000001490-1100-47575-see-long-text/qaq-p/14516980",
+   "published": "2026-11-05T10:16:30+00:00",
+   "author": "MASTHANKHAN58",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Incident is raised for this issue \n Incident: 1547332 / 2026 - getting error \"Valuated stock becomes negative: 38,630.000- 1000001468 1100 0000090063 -> see long text"
+  },
+  {
+   "key": "dda57a802aa69473",
+   "title": "#CoE#GB Printing for Supplier Invoices, Down Payment Invoices, and Inbound Deliveries",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/coe-gb-printing-for-supplier-invoices-down-payment-invoices-and-inbound/qaq-p/14516979",
+   "published": "2026-11-05T10:14:02+00:00",
+   "author": "Ashley_Hung",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear Support Team, \n I would like to inquire about the printing functionality available in SAP S/4HANA Cloud Public Edition. \n Could you please advise whether the following documents can be printed or generated as PDF documents, and if so, what configuration or applications are required? If not, please also give us an answer. \n\n Supplier Invoice \n\n Supplier Down Payment Invoice \n\n Inbound Delivery \n We would appreciate it if you could provide the standard process, required configuration, and any relevant SAP documentation or best practices. \n Thank you for your support. \n Ashley"
+  },
+  {
+   "key": "2c04cd8c2caab0c7",
+   "title": "How I identify Entry Posted to COPA Characteristics",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/how-i-identify-entry-posted-to-copa-characteristics/qaq-p/14516977",
+   "published": "2026-11-05T10:13:39+00:00",
+   "author": "sameer_dherange9e9caa",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "We are now in the SIT stage, and we have already tested multiple scenarios in the test system. Finally, the client wants to see how much data is posted to COPA characteristics. I have checked the Market Segments - Plan/Actuals (F9103) report, but I could not determine how much data was posted to COPA characteristics. \n Can you help me understand? \n Regards, \n Chinmay D"
+  },
+  {
+   "key": "cb66540797c057bb",
+   "title": "Field Label Change via UI Adaptation Not Visible at Runtime",
+   "link": "https://community.sap.com/t5/technology-q-a/field-label-change-via-ui-adaptation-not-visible-at-runtime/qaq-p/14516954",
+   "published": "2026-11-05T09:56:25+00:00",
+   "author": "JaskaranS3112",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "A label rename done with UI Adaptation for field KNVV-KVGR2 in applications Manage Business Partner Master Data and Manage Customer Master Data (Fiori launchpad) , from \"Customer Group 2\" to \"Account Type\", is activated, published and transported, but the new label is not shown in the application."
+  },
+  {
+   "key": "9d6534b16e44b368",
+   "title": "SAP BTP TDD Subscription – Purchased Entitlements Not Fully Available in Global Account",
+   "link": "https://community.sap.com/t5/technology-q-a/sap-btp-tdd-subscription-purchased-entitlements-not-fully-available-in/qaq-p/14516929",
+   "published": "2026-11-05T09:28:21+00:00",
+   "author": "ParthaS_Gopalan",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello SAP Community, \n Our organization recently purchased the SAP BTP TDD (Test, Demonstration and Development) subscription to explore SAP Build, Joule and related SAP BTP development capabilities. \n We currently maintain two SAP Global Accounts, and the TDD subscription is intended to be used in our Adyan Consulting LLC Global Account. \n We have assigned the purchased TDD entitlements and created a subaccount in the US21 region. We have also provisioned SAP Business Application Studio (BAS) and SAP Build Process Automation (BPA). \n However, we are experiencing some entitlement and provisioning limitations. \n Purchased entitlements: \n Cloud TDD SAP Build Developer (SKU: 8019951) \n Cloud TDD Joule Base (SKU: 8020592) \n Current observations: \n Cloud Foundry Environment – Standard is available. \n Cloud Foundry Runtime – MEMORY entitlement does not appear in the Global Account. \n Cloud Foundry organization memory is showing 0 MB. \n The APPLICATION_RUNTIME – MEMORY service plan is unavailable. \n We are unable to deploy our existing CAP Node.js applications to the Cloud Foundry environment. \n We have also encountered intermittent BAS access and IAS authentication issues. \n Our questions to the SAP Community: \n Does the Cloud TDD subscription include Cloud Foundry Runtime memory entitlement, or does it need to be purchased or assigned separately? \n Is there any additional entitlement activation or provisioning procedure required after purchasing the TDD subscription? \n When an organization maintains multiple Global Accounts, are there any specific considerations for assigning TDD entitlements to the correct Global Account? \n Is there any official documentation explaining the expected service entitlements and limitations of the Cloud TDD subscription? \n Are there other TDD customers experiencing similar entitlement provisioning issues? \n Our objective is to use the TDD environment for SAP BTP development, CAP Node.js applications, SAP Build Process Automation and Joule-related POCs. \n We would appreciate guidance from SAP experts or customers who have successfully configured their TDD environments. \n Thank you."
+  },
+  {
+   "key": "7a174f938fe56f06",
+   "title": "Valuated stock becomes negative: 30.360- 1000001490 1100 47575 see long text Message No. M7314",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/valuated-stock-becomes-negative-30-360-1000001490-1100-47575-see-long-text/qaq-p/14516925",
+   "published": "2026-11-05T09:25:57+00:00",
+   "author": "MASTHANKHAN58",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Fetching error while transfer posting with 412 Q movement type in MIGO Transaction"
+  },
+  {
+   "key": "c44a1e52793d562f",
+   "title": "FIFO stock valuation method for Strategic and Critical Spares in SAP",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/fifo-stock-valuation-method-for-strategic-and-critical-spares-in-sap/qaq-p/14516921",
+   "published": "2026-11-05T09:24:16+00:00",
+   "author": "mynthia_mashele7f8105",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Currently, normal inventory is valued and issued at the weighted average price, while damaged and refurbished inventory is valued and issued at the standard price in SAP. \n The material master on SF2 has been configured to use the FIFO method. However, testing confirmed that financial results (Material Ledger and financial documents) still use the moving average price tied to price control V. \n How can a material be configured to issue Strategic and Critical Spares on a FIFO basis when it already uses price control (moving average price) and has price history? \n Can a single material use more than one price control (e.g., weighted average price and FIFO)? \n Which price takes precedence, and where does the FIFO method store prices (material master)?"
+  },
+  {
+   "key": "4ecc7be0624c0b87",
+   "title": "Set up F110 jobs on high priority",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/set-up-f110-jobs-on-high-priority/qaq-p/14516863",
+   "published": "2026-11-05T08:47:54+00:00",
+   "author": "carlosochoapuig",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Good morning, \n\n When a user executes proposals or payments on F110 transaction, by default SAP assigns C priority to the background job. \n\n We would like to set up this jobs as A priority (high). We haven't found how to set it up, we request support on this matter \n Thanks in advance for your help, kind regards, \n\n Carlos"
+  },
+  {
+   "key": "65be1430910cb214",
+   "title": "Adopt Inforecord price when creating a PO instead of valuation price from PR",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/adopt-inforecord-price-when-creating-a-po-instead-of-valuation-price-from/qaq-p/14516858",
+   "published": "2026-11-05T08:43:59+00:00",
+   "author": "jnettika",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello, \n When creating a Purchase order, the valuation price entered in the PR is getting copied to PO and not the info record price. \n Have assigned the Parameter EFB =Z1 which is functional auth for buyers still not copying the info record price to PO. \n Please let me know how PIR can be adopted when creating PO. \n What is the configuration missing."
+  },
+  {
+   "key": "d95e242885ad3905",
+   "title": "Support Request for Manufacturing Date Based FIFO Picking (FMFO) in SAP EWM",
+   "link": "https://community.sap.com/t5/supply-chain-management-q-a/support-request-for-manufacturing-date-based-fifo-picking-fmfo-in-sap-ewm/qaq-p/14516772",
+   "published": "2026-11-05T08:13:56+00:00",
+   "author": "Gautam15",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "We are implementing an outbound RF picking strategy at our warehouse (NEM3) with a requirement to prioritize picking of serialized finished goods based on the **oldest Manufacturing Date**, rather than the standard GRN date. \n\n Currently, picking in EWM follows FIFO based on Goods Receipt Date (field WRDAT). Our business needs ordering by Manufacturing Date, which is captured in ERP equipment master (table EQUI, field ERDAT)."
+  },
+  {
+   "key": "1b09888741d36274",
+   "title": "SAP PPM: Migration of Appropriation Requests to PPM Items",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/sap-ppm-migration-of-appropriation-requests-to-ppm-items/qaq-p/14516756",
+   "published": "2026-11-05T07:53:45+00:00",
+   "author": "MohammadHaque",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear EPPM Experts, \n My client is using the classical IM-PS solution. We're implementing SAP PPM for them and now have a requirement to migrate all the Appropriation Requests as PPM Items. Also need to establish the PS Project link to the respective PPM Item. These projects are currently assigned to Appropriation Request and have received their budget from Investment Program Positions. To enable these projects to get budget from PPM Item budget transfer, I have tried to change their budget profile and removed Program Type Budget from the Budget Profile, also tried to uncheck the Budget Distribution in Program Position but not allowed since there'e assigned measures. I am not allowed to transfer budget from PPM Item as it gives error that Capital investment budget exists for the project and transfer is not allowed. Any idea how to meet this requirement. \n Thanks, \n MTH"
+  },
+  {
+   "key": "0f97ea0cd93fd874",
+   "title": "Transportation Unit Automation: Intelligent Truck Check-In and Check-Out with ANPR, Smart Gates",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/transportation-unit-automation-intelligent-truck-check-in-and-check-out/ba-p/14516285",
+   "published": "2026-11-06T07:50:00+00:00",
+   "author": "Muhammad_Ashraf1",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "What if a truck could arrive at the warehouse gate, be automatically identified, validated against a planned Transportation Unit in SAP EWM, and checked in without manual intervention? \n This article explores an end-to-end SAP EWM - Transportation Unit automation scenario using ANPR cameras, smart boom barriers, SAP Integration Suite, SAP TU based EWM Integration and standard SAP EWM Enterprise Services . It covers truck validation against the planned TU, automated gate authorization, TU check-in/check-out, SOAMANAGER Web Service configuration, CPI integration flow, and sample API/SOAP payloads. \n The objective is simple: connect the physical movement of the truck at the warehouse gate with the digital TU lifecycle in SAP EWM, from Planned → Active → Completed. \n For TU based EWM-TM integration you can read my blog - https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/crucial-key-setup-needed-for-the-integration-of-tm-tu-based-integration/ba-p/13766871"
+  },
+  {
+   "key": "160d3e4d770312f9",
+   "title": "Dynamic Warehouse Process Type Determination for Cross-Stage Products Based on PMR Quantity",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/dynamic-warehouse-process-type-determination-for-cross-stage-products-based/ba-p/14515818",
+   "published": "2026-11-06T07:38:04+00:00",
+   "author": "Vinaykumar_Sharma",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "In real-world SAP EWM production staging, the same warehouse process may not be suitable for every quantity. What if larger PMR quantities should move directly to the PSA, while smaller quantities need to pass through a packing area first? This article explains a quantity-based WPT determination approach that combines standard production staging with LOSC-controlled multi-step movement."
+  },
+  {
+   "key": "bb4bf17830928edd",
+   "title": "Issue with the Fiori app\"Manage Documented Credit Decisions(F5587A)\"",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/issue-with-the-fiori-app-quot-manage-documented-credit-decisions-f5587a/qaq-p/14517449",
+   "published": "2026-11-06T07:03:15+00:00",
+   "author": "SAPSupport",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi SAP, \n\n We are unable to locate the Manage Documented Credit Decisions (F5587A) application in the SAP S/4HANA Public Cloud system \n Although the relevant scope has been activated in the CBC system, we are still unable to find the business catalog SAP_FIN_BC_CR_DCD_PC. \n Could you please investigate this issue from your end and advise us on the necessary steps to resolve it. \n Your assistance in resolving this issue would be greatly appreciated. \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+  },
+  {
+   "key": "00bdae5e9d7d8e4a",
+   "title": "Subject: MIQ1 – Materials with Available Stock Not Selected for Physical Inventory",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/subject-miq1-materials-with-available-stock-not-selected-for-physical/qaq-p/14517231",
+   "published": "2026-11-05T19:27:10+00:00",
+   "author": "palonsol",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello SAP Support Team, \n We are currently investigating an issue with transaction MIQ1 , where users report that not all materials with available stock are being selected for physical inventory. \n During our analysis, we noticed that there are several open physical inventory documents, as well as others that have already been posted. \n However, MIQ1 seems to identify certain materials as having blocked stock or stock in quality inspection, even though MB52 and MMBE show these materials as special stock Q in unrestricted use . \n Could you please help us clarify the standard logic used by MIQ1 to determine: \n\n Whether a material is eligible for physical inventory and which conditions may cause it to be excluded. \n\n How the transaction determines whether stock is unrestricted, blocked, or under quality inspection. \n\n Whether existing open or already posted physical inventory documents can affect material selection."
+  },
+  {
+   "key": "e57fe32c579cd365",
+   "title": "Default Tabs Displaying Inconsistently in the Web Assistant Help Panel",
+   "link": "https://community.sap.com/t5/human-capital-management-q-a/default-tabs-displaying-inconsistently-in-the-web-assistant-help-panel/qaq-p/14517183",
+   "published": "2026-11-05T16:59:38+00:00",
+   "author": "davidhortop",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "We are going live on November 25th with an S/4 HANA transformation project using SAP Companion Web Assistant with S/4 HANA TM & EWM applications to provide users with in-application help (PDFs and simulations) via the Learning tab. Decisions were taken early in the project to not use the Help Topics, Guided Tours, or What’s New tabs at this time. \n During final test, it was noted that for approx. 50% of 126 Fiori tiles, Web Assistant opened on the Help Topics tab with no content and no Learning Center button available. The other 50% opened automatically on the Learning tab and no Help Topics icon which is ideal behavior for our situation. \n We tried creating a help tile for one of the Fiori tiles that didn’t present the Help Topics icon and deleting it to see if the Help Topics tab would disappear. The Help Topics tab appear as expected when once the Help tile was created. Surprisingly, it didn’t disappear when the Help tile was removed. However, the Learning tab still opened by default (which was good). \n Our understanding was that each of the tabs should only appear if there is content. \n Can you please advise if there is a way to deliver this help more consistently? \n Thank you. \n Steps to Reproduce \n Scenario #1: Fiori Tiles That Display the Help Topics Tab By Default (~50%) \n 1. Log on to S/4 HANA FLP. \n 2. Open Fiori tile. \n 3. Click Open Help \n Results: \n Help panel opens Help Topics tab by default despite no Help tiles having ever been created. \n Users unable to see the available contextual help and or access the Learning Center. \n have to click the Learning tab (not ideal). \n Scenario #2: Fiori Tiles That Display the Learning Tab By Default (~50%) \n 1. Log on to S/4 HANA FLP. \n 2. Open Fiori tile. \n 3. Click Open Help \n Results: \n Help Topics tab remains visible despite Help tiles being removed. \n Help panel opens automatically on the Learning tab (not ideal but at least users immediately see the available contextual help and can access the Learning Center. \n would be better if the Help Topics tab was not displayed at all."
+  },
+  {
+   "key": "56c915e2e9f6d2fd",
+   "title": "Open links in a new tab in Cloud ALM",
+   "link": "https://community.sap.com/t5/technology-q-a/open-links-in-a-new-tab-in-cloud-alm/qaq-p/14517170",
+   "published": "2026-11-05T16:25:59+00:00",
+   "author": "Frederik_",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "When working in Cloud ALM I cannot seem to use CTRL+Click (or rightclick) to open a link in a new browser tab or window. For example when navigating from a Requirement to the User Story. Opening a link in a new tab seems to (re-)initialize CALM and falls back to the default/home page. I assume that's because the navigation in CALM uses some sort of in-app routing rather than 'normal' self-contained URLs. \n Can someone confirm if there is an easy workaround - other than copying URLs in order to open multiple instances of the same page?"
+  },
+  {
+   "key": "e1948add3d966407",
+   "title": "ASSET EXPLORER TEXT FIELD SAP MISSING",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/asset-explorer-text-field-sap-missing/qaq-p/14517156",
+   "published": "2026-11-05T15:39:32+00:00",
+   "author": "sabrinasantoro",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "In AW01N – Asset Explorer, the amount values are displayed correctly, but the related field descriptions are missing. \n we have already implemented report 3235123 - Value field text missing in T-code AW01N \n Please investigate the cause of the missing texts and advise whether any customizing/configuration or SAP correction is required \n thanks"
+  },
+  {
+   "key": "344e657961fd393e",
+   "title": "Experience with Custom Date Dimension (user-managed)",
+   "link": "https://community.sap.com/t5/technology-q-a/experience-with-custom-date-dimension-user-managed/qaq-p/14517065",
+   "published": "2026-11-05T13:43:56+00:00",
+   "author": "ekov514",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Experts, \n We stumbled on the fact that date dimension cannot be translated. Custom date dimension seems to come with significant limitations. \n I am curious how other are handling this in production: \n Have the limitations forced you to abandon them and accept english by default? \n If you did go the custom route, were there any surprises or broken features down the line? \n To add a context, we have planning with fiscal settings. \n Thank you! \n p.s. CIS884-I-8815 influence has been there for a while but with very few likes. If thats relevant to you, please contribute to put this influence on top of SAP's priorities."
+  },
+  {
+   "key": "4d319fdac8380f66",
+   "title": "Steps to patch a RAC environment.",
+   "link": "https://community.sap.com/t5/technology-q-a/steps-to-patch-a-rac-environment/qaq-p/14516562",
+   "published": "2026-11-04T17:56:50+00:00",
+   "author": "Mary_Allen",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Looking for exact steps to apply patch SAP19P_2608-70004550 for a system with RAC. \n Need clarification if we have a rac system do we stop the instance on one node and focus only on that servers patching? \n Is this patch a rolling patch and we can keep the instance running on the other server? We have a two node rac cluster with ASM being used. \n Unless otherwise stated, non-rolling installation steps that need to be executed on more than one cluster node can be executed in parallel on all nodes of the cluster. However, you must wait for all parallel executions related to one installation step to complete before moving to the next installation step. \n Follow the steps below. \n\n Stop all database applications, in particular all SAP applications. \n\n For each node of the cluster* and for each RDBMS home controlled by the grid stack* , stop all CRS-managed resources associated with the RDBMS home: rm -f $OHRDBMS.`hostname`.srvctlstatus env ORACLE_HOME=$OHRDBMS ORACLE_BASE=$OHRDBMS.dummybase $OHRDBMS/bin/srvctl stop home -o $OHRDBMS \\ -s $OHRDBMS.`hostname`.srvctlstatus -n `hostname` \n Above command and, likewise, other commands referring to the srvctl utility in this document intentionally use a dummy ORACLE_BASE directory to avoid errors when file orabasetab has not been maintained yet in some Oracle Home. See SAP Note 1521371 Setting of ORACLE_BASE in SAP environments for details. \n\n After having shut down all database processes as described in the previous step, use the fuser OS command to check for stale SQL*Plus sessions for each node of the cluster* and for each RDBMS home controlled by the grid stack* : # temporarily change to super user su root -c \"$SBPFUSER $IHRDBMS/bin/oracle\" \n If that command reports running processes, these are stale SQL*Plus sessions, which you can safely terminate with the kill command. \n\n For systems using ACFS only* : \n For each node of the cluster* , use the fuser OS command to check whether there are active processes running on any ACFS file system: # temporarily change to super user su root -c \"/sbin/acfsutil info fs -o mountpoints | xargs $SBPFUSER -mu\" \n If that command reports running processes, shut them down cleanly to avoid their forced termination in the next step. \n\n For each node of the cluster* , shut down the grid stack and unlock the grid home for patching: # temporarily change to super user su root -c \"$OHGRID/crs/install/rootcrs.sh -prepatch -nonrolling\" \n\n For Linux x86-64 only: \n For each node of the cluster* , take note of owner, group, and permissions of the oradism executable, then ensure that MOPatch can overwrite that executable: ls -al $OHGRID/bin/oradism # temporarily change to super user su root -c \"chown `id -u` $OHGRID/bin/oradism && chmod u+rw $OHGRID/bin/oradism\" \n\n For each node of the cluster* , install the patches of the SAP Bundle Patch into the grid home: env ORACLE_HOME=$OHGRID $OHGRID/MOPatch/mopatch.sh -v -s SGR19P_2608-70004550.ZIP \n Check the generated MOPatch reports for errors or unresolved conflicts. To resolve them, refer to section 6, \"Known Issues\" and to section \"Resolving Patch Conflicts and Errors\" of SAP Note 1027012 MOPatch - Install Multiple Oracle Patches in One Run. \n Furthermore, check whether MOPatch has deinstalled any non-SBP patches and ensure that you have not lost any critical fixes because of this. \n\n For Linux x86-64 only: \n For each node of the cluster* , restore owner, group, and permissions of the oradism executable and verify that they are identical to those they had in the beginning: # temporarily change to super user su root -c \"chown root $OHGRID/bin/oradism && chmod 4750 $OHGRID/bin/oradism\" ls -al $OHGRID/bin/oradism"
+  }
+ ],
+ "triage": {
+  "0": {
+   "i": 0,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Overview of General Ledger configuration activities on the SAP Help Portal; functional configuration reference, not developer content."
+  },
+  "1": {
+   "i": 1,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Ukrainian SAP User Group session schedule for November 2026; event promotion."
+  },
+  "2": {
+   "i": 2,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Final What's New and Product Assistance announced for S/4HANA Cloud Public Edition 2608.3; release info without developer depth."
+  },
+  "3": {
+   "i": 3,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Live session promo on transformation and replication flows in SAP Datasphere; data warehousing, outside focus areas."
+  },
+  "4": {
+   "i": 4,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "AI-generated requirements in SAP Cloud ALM for project teams; project documentation, not developer tooling."
+  },
+  "5": {
+   "i": 5,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Marketing piece on SAP-managed public cloud ERP and the autonomous enterprise vision."
+  },
+  "6": {
+   "i": 6,
+   "category": "RAP",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Practical how-to for filtering a RAP List Report by item fields using UI.SelectionFields navigation paths in OData V4."
+  },
+  "7": {
+   "i": 7,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "IFRS 16 lease accounting configuration and walkthrough in RE-FX/CLM; functional finance setup."
+  },
+  "8": {
+   "i": 8,
+   "category": "BTP & ABAP Cloud",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Compares QA testing approaches for BTP side-by-side apps versus classic ABAP extensions, tied to clean core guidance; partly service-focused."
+  },
+  "9": {
+   "i": 9,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Customizing steps for purchase order accrual engine in SPRO and ACEIMG; functional configuration basics."
+  },
+  "10": {
+   "i": 10,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "How to claim the free C_JSD Joule Studio Developer certification attempt before the deadline; certification and career content."
+  },
+  "11": {
+   "i": 11,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "High-level business purpose of purchase order accruals with basic examples; functional overview."
+  },
+  "12": {
+   "i": 12,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Configuration Localization Tool in Central Business Configuration for creating customer local versions; localization setup, not coding."
+  },
+  "13": {
+   "i": 13,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asset management features and AI agents in SAP Cloud ERP Private 2025 FPS02; functional maintenance scope."
+  },
+  "14": {
+   "i": 14,
+   "category": "BTP & ABAP Cloud",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Shows Destination jobs in SAP Job Scheduling service to call an OAuth-protected endpoint in another Cloud Foundry landscape."
+  },
+  "15": {
+   "i": 15,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Regulatory overview of the EU CBAM definitive regime and SAP's response; compliance, not development."
+  },
+  "16": {
+   "i": 16,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "SAC integration with WalkMe for in-application guidance; end-user digital adoption, not developer content."
+  },
+  "17": {
+   "i": 17,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Chinese-language version of the CBAM regulatory and SAP compliance overview; regulatory content."
+  },
+  "18": {
+   "i": 18,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "SAP ICC announces a new 'built with SAP Business AI Platform' recognition for partner solutions; partner branding."
+  },
+  "19": {
+   "i": 19,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Question on setting up cash G/L accounts per currency and company code; functional account configuration."
+  },
+  "20": {
+   "i": 20,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks how to embed SAC dashboards in SAP Build Work Zone instead of opening a separate tab; configuration-level integration."
+  },
+  "21": {
+   "i": 21,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Mass change of collection date in Value Analysis baseline formulas; functional product costing question."
+  },
+  "22": {
+   "i": 22,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Journal Entry Clearing API in S/4HANA Public Cloud lacks a way to clear supplier items with Special G/L indicator; API development issue."
+  },
+  "23": {
+   "i": 23,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Meta post about Google showing day and month switched in SAP Community post dates; no technical content."
+  },
+  "24": {
+   "i": 24,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Asks how Joule discovers Z* custom tables and relationships from DDIC metadata; relevant to Joule for developers."
+  },
+  "25": {
+   "i": 25,
+   "category": "S/4HANA Development & Extensibility",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Assigning a custom analytical query to a custom business catalog in S/4 Public Cloud; launchpad and catalog administration."
+  },
+  "26": {
+   "i": 26,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "F.61 account statement correspondence prints English and French partners in one spool; output configuration question."
+  },
+  "27": {
+   "i": 27,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Payroll area change blocked for periods already processed; HR payroll configuration and data issue."
+  },
+  "28": {
+   "i": 28,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "AFAB error on posting period 012/2025 for new company code; asset accounting period configuration issue."
+  },
+  "29": {
+   "i": 29,
+   "category": "S/4HANA Development & Extensibility",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Asks how custom BAdI logic setting sales order approval rejection reason affects MD04 and MRP; involves BAdI behavior analysis."
+  },
+  "30": {
+   "i": 30,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Loading timestamped CSV files into a BW ADSO without BODS; BW data loading outside focus areas."
+  },
+  "31": {
+   "i": 31,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "30-year anniversary post for SAP Business One with AI positioning; marketing."
+  },
+  "32": {
+   "i": 32,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Article on skills needed for entry-level jobs in the AI era; career content."
+  },
+  "33": {
+   "i": 33,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Personal account of passing the C_JSD Joule Studio Developer exam with exam-prep advice; certification content."
+  },
+  "34": {
+   "i": 34,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "SmartRecruiters migration tools for SAP SuccessFactors recruiting; HCM product promotion."
+  },
+  "35": {
+   "i": 35,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Monthly roundup of five Joule-related links; vague content with no technical detail."
+  },
+  "36": {
+   "i": 36,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "TechEd 2026 announcements on agent memory with SAP HANA Cloud and Joule orchestration; AI agent architecture, mostly high-level."
+  },
+  "37": {
+   "i": 37,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Change management essay on why transformations fail when people aren't ready; no technical content."
+  },
+  "38": {
+   "i": 38,
+   "category": "ABAP & Clean Code",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "Custom report fails because batch UOM from classification ATWRT is wrong and BOT unit is missing in EN; ABAP debugging of unit conversion."
+  },
+  "39": {
+   "i": 39,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Direct costs feature in Contract and Lease Management 2608 HFC6; functional feature overview."
+  },
+  "40": {
+   "i": 40,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Monitoring Availability Change Response results and action statuses in S/4HANA; supply chain application monitoring."
+  },
+  "41": {
+   "i": 41,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "SAP-Pay powered by Tereina implementation steps for invoice-to-pay; finance project setup."
+  },
+  "42": {
+   "i": 42,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "China long-term asset input VAT compliance using new localized Fiori app; tax localization, end-user functionality."
+  },
+  "43": {
+   "i": 43,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Announcement that a C_JSD exam blog was published in the AI community; community notice."
+  },
+  "44": {
+   "i": 44,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Walkthrough of ACR configuration in S/4HANA: event activation, background services and setup; functional configuration."
+  },
+  "45": {
+   "i": 45,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "EWM queue stuck in SMQ2 with automatic packing cancelled error; operational troubleshooting question."
+  },
+  "46": {
+   "i": 46,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks what sensitive SAP Cloud ALM roles expose and how to combine them safely; authorization question."
+  },
+  "47": {
+   "i": 47,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Company phone area codes missing from German eInvoice XML in SAP DRC; e-invoicing configuration issue."
+  },
+  "48": {
+   "i": 48,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Payment difference tolerances not posting for a cash G/L account; functional configuration issue."
+  },
+  "49": {
+   "i": 49,
+   "category": "ABAP & Clean Code",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "RFUMSV50 deferred tax program for Mexico IEPS and IVA needs custom development or workaround; ABAP extension question."
+  },
+  "50": {
+   "i": 50,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Connecting ECC to an LLM through the BTP MCP server on Integration Suite, with questions on user authentication."
+  },
+  "51": {
+   "i": 51,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Changing vendor master number range from internal to external in ECC; configuration question."
+  },
+  "52": {
+   "i": 52,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Mapping cXML InvoiceDetailServiceItem descriptions to JOBDESC with correct line-item looping in the CIG mapping tool."
+  },
+  "53": {
+   "i": 53,
+   "category": "S/4HANA Development & Extensibility",
+   "in_scope": false,
+   "importance": 3,
+   "one_liner": "Readiness check flags IDoc invoice function modules as unavailable for S/4HANA 2025 upgrade; migration planning question."
+  },
+  "54": {
+   "i": 54,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Pro forma settlement process for agent sales commissions in S/4HANA CCM; functional business process."
+  },
+  "55": {
+   "i": 55,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Swiss QR bill reference not copied to External Reference of customer invoice; functional invoice configuration."
+  },
+  "56": {
+   "i": 56,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "FIFO valuation configured on material master for spares but financial results still use other method; valuation configuration."
+  },
+  "57": {
+   "i": 57,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Assigning procurement owner after PR approval and copying PR value to RFQ in Public Cloud; business process question."
+  },
+  "58": {
+   "i": 58,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "FB01 does not derive due date for intercompany vendor invoices with Special G/L B; finance posting configuration."
+  },
+  "59": {
+   "i": 59,
+   "category": "BTP & ABAP Cloud",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "BTP trial account phone verification fails to send a code; account onboarding issue, not development."
+  },
+  "60": {
+   "i": 60,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "SAC data export to S/4HANA ACDOCP completes, but no detail log appears in Data Timeline, so run times can't be tracked."
+  },
+  "61": {
+   "i": 61,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Purchase order from PR copies valuation price instead of info record price; asks which purchasing configuration is missing beyond EFB=Z1."
+  },
+  "62": {
+   "i": 62,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Goods movement fails with M7314 'valuated stock becomes negative' on a plant/storage location; incident-driven inventory posting question."
+  },
+  "63": {
+   "i": 63,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks whether supplier invoices, down payments and inbound deliveries can be printed or PDF'd in S/4HANA Public Cloud and what setup is needed."
+  },
+  "64": {
+   "i": 64,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks how to measure how much data is posted to COPA characteristics during SIT, since F9103 doesn't show it."
+  },
+  "65": {
+   "i": 65,
+   "category": "S/4HANA Development & Extensibility",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "Key-user UI adaptation label change for KNVV-KVGR2 is activated and transported but doesn't appear at runtime in Fiori apps."
+  },
+  "66": {
+   "i": 66,
+   "category": "BTP & ABAP Cloud",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "TDD subscription purchased for BTP but entitlements don't fully appear in the intended global account; licensing and entitlement issue."
+  },
+  "67": {
+   "i": 67,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Transfer posting with 412 Q movement type in MIGO fails with the same M7314 negative valuated stock error; duplicate of item 62."
+  },
+  "68": {
+   "i": 68,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks how to make FIFO valuation apply to strategic spares in Material Ledger, since financial results still follow the weighted average method."
+  },
+  "69": {
+   "i": 69,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks how to set background job priority to A (high) for F110 payment run jobs, which default to C priority."
+  },
+  "70": {
+   "i": 70,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Same purchase order info record price issue as item 61 with EFB=Z1 already set; near-duplicate question."
+  },
+  "71": {
+   "i": 71,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "EWM RF picking needs FIFO by manufacturing date instead of GR date (WRDAT) for serialized finished goods at NEM3."
+  },
+  "72": {
+   "i": 72,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Migrating classic IM-PS appropriation requests to SAP PPM items and linking existing PS projects to them; project migration question."
+  },
+  "73": {
+   "i": 73,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Blog on automating EWM transportation unit check-in with ANPR cameras and smart gates via SAP Integration Suite and TU APIs."
+  },
+  "74": {
+   "i": 74,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Blog on quantity-based warehouse process type determination for cross-stage products in EWM production staging; mostly WPT configuration."
+  },
+  "75": {
+   "i": 75,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Manage Documented Credit Decisions (F5587A) Fiori app and business catalog SAP_FIN_BC_CR_DCD_PC missing in S/4HANA Public Cloud after scope activation."
+  },
+  "76": {
+   "i": 76,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "MIQ1 physical inventory create does not select all materials with available stock, with some already-posted and open documents involved."
+  },
+  "77": {
+   "i": 77,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "SAP Companion Web Assistant Learning tab shows default tabs inconsistently in the help panel for S/4HANA TM and EWM go-live."
+  },
+  "78": {
+   "i": 78,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Cloud ALM ignores Ctrl+click and right-click new-tab navigation, reinitializing to the home page when opening linked items."
+  },
+  "79": {
+   "i": 79,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "AW01N Asset Explorer shows amounts but not their field descriptions; asks for cause beyond note 3235123 already applied."
+  },
+  "80": {
+   "i": 80,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks production experiences with user-managed custom date dimensions, since the standard date dimension can't be translated."
+  },
+  "81": {
+   "i": 81,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks whether SAP patch SAP19P_2608-70004550 on a two-node Oracle RAC with ASM can be applied as a rolling patch node by node."
+  }
+ },
+ "deep": {
+  "6": {
+   "summary": "A how-to for filtering a Fiori elements List Report on a RAP header by a field that lives on the item (child) entity. The author argues this is an OData V4 Fiori elements filter problem, so you should not join or denormalise item fields into the header. The approach is to expose the composition path in the selection annotation and let RAP and the UI layer handle it. The excerpt is only a bullet summary, so the full code, XML and annotation examples are not visible.",
+   "key_points": [
+    "Filtering a header list by an item field is treated as an OData V4 / Fiori elements filter problem, not a reason to denormalise items into the header.",
+    "RAP supports any-depth compositions out of the box; the author recommends testing the filter in the browser first.",
+    "Add the navigation path (_Item/Field) to the UI.SelectionFields annotation.",
+    "A local UI.SelectionFields annotation replaces the backend one, so the full list of selection fields must be repeated in the local annotation.",
+    "If the FilterBar fails with \"reading 'map'\", the author attributes it to a problem in the XML (annotation) and says to check it.",
+    "The source has a typo in the bullet (\"UI.SelectionFietions\"); the intended annotation is UI.SelectionFields."
+   ],
+   "technical_details": [
+    "UI.SelectionFields annotation with a navigation path such as _Item/Field",
+    "RAP business object with a header-to-item composition",
+    "OData V4 Fiori elements List Report and FilterBar",
+    "Local (metadata/UI) annotation overriding the backend annotation set",
+    "Error message in the FilterBar: reading 'map' (attributed to XML)"
+   ],
+   "why_it_matters": "Filtering a header list by child-item data is a very common requirement in Fiori apps. The useful point is the design choice: keep the BO model normalised and push the filter through the composition path, rather than duplicating data into the header. The override behaviour of local annotations is also a common source of missing filter fields.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Build a header/item RAP BO with a composition, then add a UI.SelectionFields entry using the _Item/Field path. Have students deliberately create a local annotation that overrides the backend list and see which filter fields disappear. Discuss why denormalising item fields into the header is a poor design. Use the 'reading map' FilterBar error as a debugging exercise on annotation XML.",
+   "quality": 3
+  },
+  "24": {
+   "summary": "A question asking how SAP Joule discovers and understands custom (Z*) tables and their relationships. It asks whether Joule uses Data Dictionary metadata (labels, domains, foreign keys), whether extra configuration is needed, and whether Joule goes through CDS views, RAP business objects or APIs instead of raw tables. No answer or experience is included in the post, so it provides no technical facts on its own.",
+   "key_points": [
+    "Asks whether Joule uses DDIC metadata such as field labels, descriptions, domains and foreign keys to understand Z* tables.",
+    "Asks whether custom tables must be exposed explicitly and whether Joule relies on CDS views, RAP BOs or APIs rather than tables directly.",
+    "Asks for SAP's recommended practices for making custom business data understandable to Joule.",
+    "No replies or documentation links are included in the post."
+   ],
+   "technical_details": [
+    "Z* custom tables",
+    "DDIC metadata: field labels, descriptions, domains, foreign keys",
+    "CDS views, RAP business objects and APIs as possible exposure layers",
+    "SAP Joule"
+   ],
+   "why_it_matters": "Organisations with heavy custom code want to know whether an AI assistant can use their Z-data without a separate semantic layer. The question is relevant to clean-core and extensibility planning, but this post does not answer it.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Understanding how an AI assistant (Joule) can discover and use custom tables and business objects, and what has to be exposed or annotated for it to do so.",
+   "teaching_angle": "Use it as a prompt for discussing how AI assistants should access business data: through governed interfaces (CDS views with semantic annotations, RAP BOs, APIs) rather than raw tables. Ask learners to check current Joule documentation for what metadata it actually reads before assuming anything about DDIC.",
+   "quality": 2
+  },
+  "50": {
+   "summary": "A short question asking for the best way to connect an ECC system to an LLM through the BTP MCP server on SAP Integration Suite, especially regarding user authentication. The post gives no detail on the ECC release, the MCP server setup, the authentication approach tried, or the target use case. No answers are included.",
+   "key_points": [
+    "Goal: connect an ECC system to an LLM via the BTP MCP server on SAP Integration Suite.",
+    "Main concern: user authentication between the LLM flow and the ECC backend.",
+    "No detail on ECC release, connectivity method, or what has already been tried.",
+    "No replies in the post."
+   ],
+   "technical_details": [
+    "ECC backend",
+    "BTP MCP server on SAP Integration Suite",
+    "LLM integration",
+    "User authentication (method not specified)"
+   ],
+   "why_it_matters": "Connecting a legacy ECC landscape to LLM tooling is a real and frequent request. Authentication is the hard part, because it decides whether actions run as a technical user or as the actual business user with their own authorisations. The post raises this but does not explore it.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Finding a secure way for an LLM-based tool to call an ECC system through an MCP server on Integration Suite, with per-user authentication rather than a shared technical user.",
+   "teaching_angle": "Use it to discuss the trade-off between technical-user and per-user (principal propagation style) authentication for AI agents calling back-end systems, and how authorisations and audit trails are affected. Ask learners to specify the ECC release and the exposed endpoints before picking an auth design.",
+   "quality": 2
+  },
+  "8": {
+   "summary": "A blog that frames SAP QA testing for BTP-based custom apps against classic ABAP extensions, referencing SAP's August 2025 ABAP Extensibility Guide update and the clean core level model. It argues that a classic Z-report/BAdI sits in one system while a BTP app spans APIs, events and a pipeline, so test boundaries differ. The excerpt covers only the introduction; the test layers and the promised six-step plan are not visible, so the technical depth cannot be judged.",
+   "key_points": [
+    "Refers to SAP's August 2025 ABAP Extensibility Guide update, which aligned guidance with the clean core level model and added ABAP Cloud and classic ABAP governance guidance.",
+    "Contrasts a classic Z-report and BAdI (one system, one database, one transport path) with a BTP app that calls S/4HANA through APIs, publishes events and ships through a pipeline.",
+    "Says the author follows one custom app through each test layer and compares it with its classic ABAP equivalent.",
+    "Promises a six-step plan for teams starting this work; the steps are not in the excerpt."
+   ],
+   "technical_details": [
+    "ABAP Extensibility Guide (August 2025 update)",
+    "Clean core level model",
+    "ABAP Cloud vs classic ABAP extensions",
+    "BAdI and Z-report in S/4HANA",
+    "BTP app with S/4HANA API calls and event publishing"
+   ],
+   "why_it_matters": "Test strategy changes when extensions move from classic ABAP to side-by-side BTP apps. The distinction between test boundaries is useful for planning, even though the excerpt does not show how to apply it.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use the contrast to teach test boundaries: unit and integration tests for an ABAP class versus contract tests against S/4HANA APIs and event consumers in a BTP app. Ask learners to draw the test layers for one extension and to say which layer each transport or deployment step affects.",
+   "quality": 2
+  },
+  "14": {
+   "summary": "A short blog describing how to call an OAuth-protected endpoint in another Cloud Foundry landscape using the new Destination jobs in SAP Job Scheduling service. The post is a one-sentence teaser with no configuration steps, screenshots, or code in the excerpt, so the actual mechanism cannot be checked from the text.",
+   "key_points": [
+    "Subject: calling a secure (OAuth-protected) endpoint in another CF landscape from a scheduled job.",
+    "Uses the new Destination jobs feature of SAP Job Scheduling service.",
+    "No steps, configuration, or code in the excerpt."
+   ],
+   "technical_details": [
+    "SAP Job Scheduling service",
+    "Destination jobs (new feature)",
+    "OAuth-protected endpoint",
+    "Cloud Foundry landscape (cross-landscape call)"
+   ],
+   "why_it_matters": "Scheduled, cross-landscape calls with OAuth are a common need in BTP operations. A feature that handles this directly would be useful, but the post does not show how it works.",
+   "is_release_or_announcement": true,
+   "developer_problem": "",
+   "teaching_angle": "Have learners compare a scheduled job that calls a remote OAuth endpoint using a destination with the same call made from an app's own code, looking at token handling, secret rotation and failure retries. Check the full blog for the actual configuration before using it in class.",
+   "quality": 2
+  },
+  "36": {
+   "summary": "A TechEd 2026 announcement-style post that connects SAP Agent Memory Service (persistent, governed memory on SAP HANA Cloud) with Joule as an agentic orchestration layer and the SAP Business AI Platform. It is mainly positioning: it describes a layered stack and promises technical details, but the excerpt contains only the introduction with no APIs, protocols, setup steps or limits.",
+   "key_points": [
+    "SAP Agent Memory Service provides persistent, governed agent memory built on SAP HANA Cloud.",
+    "Joule is described as evolving into an agentic orchestration layer with open protocol support and expanded third-party connectivity.",
+    "SAP Business AI Platform is presented as the layer connecting agents to business context with governance.",
+    "The post promises architecture and technical details, but none appear in the excerpt."
+   ],
+   "technical_details": [
+    "SAP Agent Memory Service",
+    "SAP HANA Cloud (memory store)",
+    "Joule (agentic orchestration layer)",
+    "SAP Business AI Platform",
+    "Open protocol support and third-party connectivity (names not given in excerpt)"
+   ],
+   "why_it_matters": "Persistent agent memory is a real gap for enterprise agents. If the memory service works as described, it affects how data architects design context stores. The excerpt, however, is mostly marketing language.",
+   "is_release_or_announcement": true,
+   "developer_problem": "",
+   "teaching_angle": "Use it as a critical-reading exercise: list which claims are testable (where memory is stored, how it is governed, which protocols are supported) and which are only positioning. Then check the full post and product documentation for the specifics before building on any of them.",
+   "quality": 2
+  },
+  "73": {
+   "summary": "A blog outlining an end-to-end truck check-in/check-out scenario in SAP EWM. ANPR cameras and smart boom barriers identify the truck, validate it against a planned Transportation Unit (TU), authorise the gate, and drive the TU lifecycle from Planned to Active to Completed via SAP Integration Suite and standard EWM enterprise services. The intro lists SOAMANAGER web service configuration, a CPI integration flow and sample SOAP/API payloads, but none of these appear in the text provided, so the technical depth can't be verified from this excerpt. It points to a separate blog for the TU-based EWM-TM integration prerequisites.",
+   "key_points": [
+    "Truck is identified by ANPR cameras and validated against a planned TU in SAP EWM before check-in",
+    "Gate authorisation is automated through smart boom barriers",
+    "TU lifecycle is mapped as Planned → Active → Completed, linked to physical gate movement",
+    "Integration runs through SAP Integration Suite (CPI) and standard EWM enterprise services",
+    "The article claims SOAMANAGER web service setup, a CPI flow and SOAP/API payload samples, which are not visible in this excerpt",
+    "Prerequisite TU-based EWM-TM integration setup is covered in a separate linked blog"
+   ],
+   "technical_details": [
+    "SAP EWM Transportation Unit (TU) with check-in and check-out processing",
+    "Standard SAP EWM enterprise services (named in the post, specific service names not given)",
+    "SOAMANAGER web service configuration (claimed, not shown)",
+    "SAP Integration Suite / CPI integration flow (claimed, not shown)",
+    "ANPR camera and smart boom barrier hardware integration"
+   ],
+   "why_it_matters": "It shows how EWM yard/gate processes can be tied to physical events, which is a real pattern in logistics projects. As a standalone post, though, it is an overview with no verifiable code, payloads or configuration steps in the text supplied.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Useful as a case study for an EWM and integration class: walk through how a TU status change is driven by an external event via a web service, and how the TU-TM integration prerequisite fits in. Ask students to design the error handling for a camera misread or a TU that is not in Planned status, then compare with the full article once they have read it.",
+   "quality": 2
+  },
+  "22": {
+   "summary": "A question asking how to clear supplier open items that carry a Special G/L Indicator through the Journal Entry Clearing API in SAP S/4HANA Public Cloud. The poster reports that normal supplier clearing works but that the Special G/L Indicator field is missing from the standard SOAP payload (WSBL). They ask whether the API supports this, why the field is absent, whether another API exists, and whether the indicator can be passed in another field. No answer is included in the post.",
+   "key_points": [
+    "Standard clearing for normal supplier payments works through the Journal Entry Clearing API",
+    "The Special G/L Indicator field is not visible in the standard SOAP payload (WSBL)",
+    "Poster asks whether another API, SOAP service or field can carry the indicator",
+    "No replies or confirmed solution are included in the post",
+    "The question is about S/4HANA Public Cloud, where extensibility is limited to released APIs"
+   ],
+   "technical_details": [
+    "Journal Entry Clearing API in SAP S/4HANA Public Cloud",
+    "SOAP service referred to as WSBL, with the payload lacking a Special G/L Indicator field",
+    "Supplier journal entries with a Special G/L Indicator"
+   ],
+   "why_it_matters": "It exposes a real gap between what a released API exposes and what the underlying business process needs. Special G/L items are common in supplier accounting, so the answer affects integration design.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How to clear supplier journal entries that have a Special G/L Indicator through the released Journal Entry Clearing API in S/4HANA Public Cloud when the SOAP payload has no field for it.",
+   "teaching_angle": "A good exercise for teaching API-first constraints in cloud ABAP. Have students check the API's released data types in the API Business Hub or ADT, compare the payload with the SAP GUI clearing transaction (FB05 or F-03 style), and decide whether an unsupported attribute means a different API, a standard clearing path, or a gap to raise with SAP.",
+   "quality": 2
+  },
+  "29": {
+   "summary": "A question about how a custom approval reason (BAdI SD_APM_SET_APPROVAL_REASON) that forces re-approval affects the sales order's visibility in MD04 and its treatment in MRP. The poster reports that once a Reason for Rejection is set on a pending sales order item, the item disappears from MD04 before re-approval. They ask if this is standard and whether the item is then excluded from MRP demand. The post contains no answer and does not show the BAdI implementation code.",
+   "key_points": [
+    "Custom logic in BAdI SD_APM_SET_APPROVAL_REASON compares header, item and partner data before and after changes",
+    "The logic is meant to trigger re-approval even when the item Reason for Rejection is changed or set",
+    "Once the rejection reason is set on a pending item, the order disappears from MD04",
+    "Poster asks whether MRP then excludes the demand while approval is pending",
+    "No answer, code or standard documentation reference is included"
+   ],
+   "technical_details": [
+    "BAdI SD_APM_SET_APPROVAL_REASON (Custom Logic for Sales Order Approval Reason)",
+    "Sales order approval workflow (Sales Order Approval Management)",
+    "Reason for Rejection on the sales order item",
+    "MD04 (Stock/Requirements List) and MRP run",
+    "Environment stated as S/4HANA Cloud / S/4HANA, no release given"
+   ],
+   "why_it_matters": "Demand visibility in MD04 and MRP is a frequent source of confusion when approval logic changes sales order items. Knowing whether a rejected item drops out of MRP is needed to explain planning results to business users.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Whether a sales order item with a Reason for Rejection set during re-approval is standard-excluded from MD04 and MRP demand while approval is still pending.",
+   "teaching_angle": "Use it to discuss how SD item rejection reasons (abgru) influence requirement relevance in MRP. Students should trace the item status in VA03 and check MD04 before and after setting the reason, and state their assumption in writing before checking the MRP documentation. It also shows the risk of BAdI logic that changes item state during approval.",
+   "quality": 2
+  },
+  "52": {
+   "summary": "A detailed question about mapping several cXML InvoiceDetailServiceItem descriptions to the same JOBDESC field in an ARBCIG_INVOIC IDoc segment using the SAP Integration Suite Managed Gateway Mapping Tool. A single service line maps correctly, but with two or more service lines every service gets the first description. The poster shows that a POSITION EQUALS 1 condition causes the XPath to contain InvoiceDetailServiceItem[1], and that removing it leads to a fn:string-length error where the argument is a sequence of both descriptions. They ask how to loop each service item to its own E1ARBCIG_NONPOSERV_DETAILS segment and whether Target Position or Target Value Variable looping is appropriate. No answer is included.",
+   "key_points": [
+    "Mapping works with one service line but reuses the first service description when there are two or more",
+    "The hard-coded POSITION EQUALS 1 condition makes the generated XPath InvoiceDetailServiceItem[1]",
+    "Removing the position condition makes the Description XPath return a sequence, causing a fn:string-length error",
+    "The diagnostic error shows both descriptions returned in one evaluation context, which suggests the source is not scoped per occurrence",
+    "The poster asks whether Target Position Variable or Target Value Variable looping, using invoiceLineNumber or lineNumber, should be used",
+    "No solved example is included in the post"
+   ],
+   "technical_details": [
+    "SAP Integration Suite Managed Gateway Mapping Tool, cXML InvoiceDetailRequest inbound",
+    "Target: IDOC /E1EDP01 /E1ARBCIG_NONPOSERV_DETAILS /JOBDESC, ARBCIG_INVOIC",
+    "Source: InvoiceDetailServiceItem/InvoiceDetailServiceItemReference/Description",
+    "Conditions: C1 VALUE NOTEMPTY on InvoiceDetailServiceItem/@invoiceLineNumber, C2 POSITION EQUALS 1, expression C1 AND C2",
+    "Generated XPath InvoiceDetailServiceItem[1]",
+    "Error: A sequence of more than one item is not allowed as the first argument of fn:string-length()"
+   ],
+   "why_it_matters": "Looping in the CIG mapping tool is a common blocker for cXML invoice projects with repeating line items. The post gives a precise, reproducible diagnostic that is more useful than most mapping questions.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How to make each repeated InvoiceDetailServiceItem description map to its own E1ARBCIG_NONPOSERV_DETAILS/JOBDESC segment in the CIG mapping tool when there are several service items, instead of reusing the first one.",
+   "teaching_angle": "A strong case study for teaching source and target context in graphical mapping tools. Ask students to predict the generated XPath for each condition set before running the test, then discuss why a fixed position index works for one line but not for a repeating set. Compare Target Position and Target Value looping and explain why a sequential key such as invoiceLineNumber must exist on the target side.",
+   "quality": 4
+  },
+  "38": {
+   "summary": "A short post about a custom report that uses FM CONVERSION_EXIT_CUNIT_INPUT and gets the unit of measure from characteristic ATWRT in AUSP, found through the object number in INOB for batches. The report returned a wrong value; the poster found a bad characteristic value and fixed it by removing the classification from the relevant batches and refreshing the content of characteristic BC_BASE_UOM. They say the report now works but they don't know the root cause. The title (unit BOT not created in language EN) does not match the body, which describes a unit conversion problem.",
+   "key_points": [
+    "Custom report calls CONVERSION_EXIT_CUNIT_INPUT to convert a unit of measure",
+    "The unit value was read from characteristic ATWRT in AUSP via batch objects from INOB",
+    "A bad characteristic value was found in the batch classification",
+    "Fix: removed the classification from the affected batches and refreshed characteristic BC_BASE_UOM content",
+    "Root cause not identified; title refers to a different issue (unit BOT, language EN)"
+   ],
+   "technical_details": [
+    "FM CONVERSION_EXIT_CUNIT_INPUT",
+    "Tables AUSP (characteristic values) and INOB (internal object to object key mapping for batches)",
+    "Characteristic ATWRT (characteristic value field in AUSP) and characteristic BC_BASE_UOM",
+    "Batch classification data"
+   ],
+   "why_it_matters": "Wrong base unit values in batch classification cause silent failures in custom reports. The post describes a data-cleanup workaround rather than a fix, so the same problem could return.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Why a custom report that converts a unit via CONVERSION_EXIT_CUNIT_INPUT gets a wrong unit from batch classification data, and how to find the source of that bad value.",
+   "teaching_angle": "Use it to teach how classification data is stored (INOB, AUSP, CABN) and why conversion exits read whatever the data holds. Students should check where the bad value was written, through batch creation, mass change or an interface, before deleting classification data. The title mismatch makes a good discussion point on writing clear problem statements.",
+   "quality": 2
+  },
+  "49": {
+   "summary": "A question about the Deferred Tax Transfer program RFUMSV50 (DEFTAX toolbox) in ECC on SAP_APPL 618 SP 0022 for the Mexico TAXMX procedure. When a deferred tax code I2 has both VAT (MWS) and IEPS (ZP1) lines, the transfer overwrites the VAT line's transaction key KTOSL with ZP1's key, with warning FF707 raised. The post says BSET is correct at invoice posting, so the problem is in the transfer step. They ask whether others have hit this and how to add an enhancement that reads the original KTOSL values from BSET for the target documents. No answer is included.",
+   "key_points": [
+    "RFUMSV50 transfers a deferred tax code I2 that has MWS (VAT) and ZP1 (IEPS) lines",
+    "The target document F2 receives ZP1's transaction key on the VAT line",
+    "Warning FF707 is raised during the transfer",
+    "BSET is correct at invoice posting, which points to the transfer step as the cause",
+    "OBCN has ZP1 with tax class blank or 3 and MWS with tax class 1",
+    "Poster asks for an implicit or explicit enhancement approach without naming an enhancement point"
+   ],
+   "technical_details": [
+    "Program RFUMSV50, DEFTAX toolbox, SAP_APPL 618 SP 0022 (ECC)",
+    "Pricing procedure TAXMX (Mexico), deferred tax code I2, target tax code F2",
+    "Conditions MWS (VAT) and ZP1 (IEPS), tax classes 1 and blank/3 in OBCN",
+    "Table BSET for tax lines and KTOSL transaction keys",
+    "Message FF707 during transfer",
+    "Report S_ALR_87012357 affected by wrong transaction key"
+   ],
+   "why_it_matters": "Mixed VAT and IEPS deferred tax in Mexico is a real compliance issue, because wrong transaction keys break the tax report. A custom fix in a standard tax program needs careful testing.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How to stop RFUMSV50 from replacing the VAT line's transaction key with the IEPS key for mixed deferred tax codes, and where to add an enhancement that keeps the original KTOSL values from BSET.",
+   "teaching_angle": "A good case for discussing enhancement options in standard finance programs. Students should first find out which enhancement points exist in RFUMSV50 (for example with the enhancement tools in SE80), then check whether a standard note or support package changes the behaviour before writing custom code. The question also raises how tax classes in OBCN drive transaction keys.",
+   "quality": 3
+  },
+  "65": {
+   "summary": "A question asking why a label rename made with UI Adaptation does not appear at runtime. The user renamed the label of field KNVV-KVGR2 from \"Customer Group 2\" to \"Account Type\" in two Fiori launchpad apps, Manage Business Partner Master Data and Manage Customer Master Data. The change was activated, published and transported, but the old-style label still shows. The post gives no error message, no system or release details, no layer information, and no answer or follow-up.",
+   "key_points": [
+    "Scope: a UI Adaptation label change on KNVV-KVGR2 in two Fiori apps (Manage Business Partner Master Data, Manage Customer Master Data).",
+    "Steps reported: change made, activated, published, and transported. The runtime still shows the original label.",
+    "The post does not say which system the check was done in (dev, quality or production) or whether the transport was imported there.",
+    "The post does not say whether the adaptation was made for the correct app or the correct app variant, or which user or role was used.",
+    "No answer, workaround or root cause is given. The Tags field is empty."
+   ],
+   "technical_details": [
+    "Field: KNVV-KVGR2 (customer master sales area data, second customer group field).",
+    "Apps named: Manage Business Partner Master Data and Manage Customer Master Data (Fiori launchpad).",
+    "Adaptation steps mentioned: activate, publish, transport.",
+    "Original label text: \"Customer Group 2\"; new label text: \"Account Type\".",
+    "No release, support package, SAP Note, error text or transport request is mentioned."
+   ],
+   "why_it_matters": "Label overrides that do not show up after transport are a common support problem in Fiori adaptation work. Because the post gives no technical detail, it can not be verified or answered as written. It is still useful as a prompt to check the usual causes: the adaptation being made for a different app or layer than the one tested, a cached browser or launchpad session, and whether the label comes from the app's own annotations or the DDIC text instead of the adaptation.",
+   "teaching_angle": "Good as a troubleshooting exercise. Ask trainees to list checks in order: (1) confirm the adaptation is for the exact app ID being run, (2) confirm the transport was imported into the target client and the change is in the right layer, (3) clear browser and launchpad cache and retest with the same user and role, (4) check whether the field label is set by an annotation (for example @EndUserText.label or a Fiori annotation) that overrides the adapted text, (5) check where KVGR2 is shown in each app, because the same DDIC field may use different labels in each app. Note that the post itself does not provide enough detail to confirm any of these.",
+   "quality": 2,
+   "is_release_or_announcement": false,
+   "developer_problem": "Why a field label changed with UI Adaptation (KNVV-KVGR2 from \"Customer Group 2\" to \"Account Type\") does not appear in the Manage Business Partner and Manage Customer Master Data Fiori apps after activation, publish and transport.."
+  }
+ },
+ "digest": {
+  "headline": "A thin ABAP day: one RAP filter how-to, plus unanswered questions on Joule, MCP, UI Adaptation and API gaps.",
+  "overview": "The only core-stack item today is a RAP how-to on filtering a Fiori elements List Report by a field on a child item. The advice is to add the composition path (_Item/Field) to UI.SelectionFields and not to denormalise item data into the header. A local UI.SelectionFields annotation replaces the backend one, so the full list must be repeated there. The excerpt is a bullet summary, so the code is not visible.\n\nThe rest is mostly unanswered community questions and teaser posts. Joule and custom Z-tables, MCP with ECC, and the Special G/L gap in the clearing API all concern how much a released interface exposes. The UI Adaptation label question and the CIG mapping loop problem are troubleshooting cases. Several posts (refs 8, 14, 36, 73) show only an introduction, so treat their technical claims as unverified.",
+  "top_stories": [
+   {
+    "title": "Filtering a RAP List Report by a child-item field",
+    "summary": "The author treats this as an OData V4 Fiori elements filter problem. Add the navigation path (_Item/Field) to UI.SelectionFields. RAP supports compositions of any depth, so test the filter in the browser first. A local UI.SelectionFields annotation replaces the backend one, so repeat the full field list. A FilterBar error \"reading 'map'\" is attributed to a problem in the annotation XML.",
+    "why_it_matters": "It is a common requirement. The design point is to keep the BO normalised and filter through the composition. The override behaviour of local annotations is a frequent reason for filter fields going missing.",
+    "priority": 1,
+    "refs": [
+     6
+    ]
+   },
+   {
+    "title": "AI assistants and legacy or custom data: Joule with Z-tables, MCP with ECC",
+    "summary": "Two questions ask how Joule understands custom tables (DDIC labels, domains, foreign keys, or CDS/RAP/API exposure), and how to connect ECC to an LLM through the BTP MCP server on Integration Suite with user authentication. Neither has answers. Ref 36 is a TechEd-style post on Agent Memory Service on HANA Cloud with Joule. Its excerpt has no technical detail.",
+    "why_it_matters": "The open issue is the exposure layer and the identity. Per-user authentication decides whether authorisations and audit trails hold. Do not assume Joule reads DDIC metadata without checking the documentation.",
+    "priority": 2,
+    "refs": [
+     24,
+     50,
+     36
+    ]
+   },
+   {
+    "title": "Released-API gaps and mapping blockers in integration",
+    "summary": "The Journal Entry Clearing API in S/4HANA Public Cloud has no Special G/L Indicator field in its SOAP payload (ref 22). In the CIG mapping tool, a POSITION EQUALS 1 condition produces InvoiceDetailServiceItem[1], so every service line gets the first description. Removing it causes an fn:string-length sequence error (ref 52).",
+    "why_it_matters": "Both come down to what a released interface exposes and to scoping per occurrence when looping. Ref 52 gives a precise diagnostic, but neither post has an answer.",
+    "priority": 2,
+    "refs": [
+     22,
+     52
+    ]
+   },
+   {
+    "title": "UI Adaptation label change not visible after transport",
+    "summary": "A rename of KNVV-KVGR2 from \"Customer Group 2\" to \"Account Type\" was activated, published and transported, but the old label still shows in two Fiori apps. The post gives no release, layer or system detail.",
+    "why_it_matters": "It works as a checklist exercise: app ID, transport import, cache, and whether an annotation or DDIC text overrides the label. The post confirms none of these.",
+    "priority": 3,
+    "refs": [
+     65
+    ]
+   }
+  ],
+  "releases": [
+   {
+    "title": "Destination jobs in SAP Job Scheduling service",
+    "summary": "A new feature for calling an OAuth-protected endpoint in another Cloud Foundry landscape from a scheduled job. The excerpt has no configuration steps.",
+    "refs": [
+     14
+    ]
+   }
+  ],
+  "deep_dives": [
+   {
+    "title": "Filtering a RAP List Report by a child-item field",
+    "explanation": "The case is a header List Report that must be filtered by a field on an item entity in the composition. The source recommends against copying the item field into the header. Instead, expose the navigation path through the selection-field annotation, so the OData V4 Fiori elements filter bar applies the filter over the composition. It then relies on RAP's composition support and the OData V4 service.\n\nThe annotation entry is a path such as `_Item/Field` in `UI.SelectionFields`. In a CDS metadata extension the shape is roughly `@UI.selectionField: [{position: 10}]` on elements. For path-based fields, the source describes adding the navigation path to `UI.SelectionFields`. I cannot confirm the exact syntax from the excerpt, so verify it in your own system.\n\nA local `UI.SelectionFields` annotation, for example in the app's annotation file, replaces the backend one. So if you add one path locally, you must repeat all existing selection fields, or they vanish from the filter bar. If the FilterBar fails with \"reading 'map'\", the author attributes it to a problem in the annotation XML, so inspect it first.\n\nThe design point is that the BO stays normalised. Denormalising item fields into the header duplicates data and needs synchronisation logic in the behaviour implementation.",
+    "key_concepts": [
+     "UI.SelectionFields",
+     "Composition path _Item/Field",
+     "Local vs backend annotation override",
+     "OData V4 Fiori elements FilterBar",
+     "Avoiding denormalisation"
+    ],
+    "refs": [
+     6
+    ]
+   },
+   {
+    "title": "Looping repeated items in the CIG mapping tool",
+    "explanation": "The poster maps cXML InvoiceDetailServiceItem descriptions to JOBDESC in the E1ARBCIG_NONPOSERV_DETAILS segment of ARBCIG_INVOIC. With one service line it works. With two or more, every target gets the first description.\n\nThe cause shown in the post is the condition C2, POSITION EQUALS 1, combined with C1 (invoiceLineNumber not empty). It generates an XPath with `InvoiceDetailServiceItem[1]`, so the first item is always selected. Removing C2 makes the Description XPath return a sequence of both descriptions. That sequence is then passed to `fn:string-length`, which accepts only a single item, hence the error.\n\nThis indicates the source is not scoped to the current occurrence. The poster asks whether Target Position or Target Value Variable looping, keyed on invoiceLineNumber or lineNumber, is the right approach. No answer is given, so treat it as an open diagnostic. The general principle is that a repeating target segment needs a loop context from the source, not a fixed index.",
+    "key_concepts": [
+     "Source and target context in mapping",
+     "POSITION condition and generated XPath",
+     "Sequence vs single item in XPath functions",
+     "Target Position vs Target Value Variable looping"
+    ],
+    "refs": [
+     52
+    ]
+   }
+  ],
+  "trending_problems": [
+   {
+    "theme": "Released API does not expose a needed field",
+    "description": "Special G/L Indicator is missing in the Journal Entry Clearing SOAP payload in Public Cloud, and the post asks whether another API or field can carry it.",
+    "teaching_tip": "Have students check the released API structure, compare it with the GUI process, and decide between another API and a gap to raise with SAP.",
+    "refs": [
+     22
+    ]
+   },
+   {
+    "theme": "Annotation or adaptation changes not appearing",
+    "description": "A local selection-field annotation overrides the backend one (ref 6). A transported UI Adaptation label does not show at runtime (ref 65).",
+    "teaching_tip": "Teach a fixed order of checks: correct app and layer, transport imported, cache cleared, and annotation or DDIC overrides.",
+    "refs": [
+     6,
+     65
+    ]
+   },
+   {
+    "theme": "Enhancing standard programs and tax or MRP behaviour",
+    "description": "RFUMSV50 overwrites the VAT line KTOSL with the IEPS key (FF707), and the post asks where to enhance. A sales order rejection reason removes the item from MD04.",
+    "teaching_tip": "Look for enhancement points and SAP Notes before writing custom code, and state assumptions before testing.",
+    "refs": [
+     49,
+     29
+    ]
+   }
+  ],
+  "post_drafts": [
+   {
+    "title": "RAP: filter header by item field",
+    "text": "*RAP tip: filter a List Report by a child-item field*\n\nDon't copy the item field into the header.\n\n• Keep the BO normalised\n• Add the composition path (_Item/Field) to *UI.SelectionFields*\n• Test the filter in the browser first\n\n*Watch out:* a local UI.SelectionFields annotation *replaces* the backend one. Repeat the full list or fields disappear.\n\nFilterBar error \"reading 'map'\"? Check your annotation XML.\n\nhttps://community.sap.com/t5/abap-blog-posts/how-to-filter-a-list-report-by-an-item-field-in-a-rap-app/ba-p/14517041"
+   },
+   {
+    "title": "Mapping loop problem",
+    "text": "*Why does every service line get the first description?*\n\nCIG mapping tool case:\n• Condition POSITION EQUALS 1 gives XPath InvoiceDetailServiceItem[1]\n• So all targets get item 1\n• Remove it and you get a sequence, then an fn:string-length error\n\n*Lesson:* a repeating target needs a loop context from the source, not a fixed index.\n\nOpen question, no answer yet. What would you try?\n\nhttps://community.sap.com/t5/technology-q-a/sap-cig-mapping-tool-how-to-map-multiple-invoicedetailserviceitem/qaq-p/14517146"
+   }
+  ],
+  "interview_questions": [
+   {
+    "question": "A RAP List Report on a header needs a filter on an item field. How would you do it, and what pitfalls exist?",
+    "answer": "Keep the model normalised and do not copy the item field into the header. Expose the composition navigation path, such as _Item/Field, in the UI.SelectionFields annotation so the OData V4 Fiori elements filter bar can filter through the composition. Test it in the browser first. The main pitfall is that a local UI.SelectionFields annotation replaces the backend one, so the complete list of selection fields must be repeated, or the existing ones disappear. If the FilterBar fails with a \"reading 'map'\" error, the annotation XML is the first thing to inspect. Denormalising would duplicate data and force you to keep it consistent in the behaviour implementation.",
+    "level": "Senior",
+    "refs": [
+     6
+    ]
+   },
+   {
+    "question": "A UI Adaptation label change was transported but is not visible at runtime. How do you troubleshoot?",
+    "answer": "Start by confirming the adaptation was made for the exact app ID and layer that is being run. Then confirm the transport was imported into the target system and client. Clear the browser and launchpad cache and retest with the same user and role. Check whether the label comes from an annotation or DDIC text that takes precedence over the adaptation. Finally, check whether each app uses its own label for the same field, since KNVV-KVGR2 appears in two apps. The source post gives no details, so each of these is a hypothesis to test, not a confirmed cause.",
+    "level": "Mid-level",
+    "refs": [
+     65
+    ]
+   },
+   {
+    "question": "How would you design access for an LLM agent calling a legacy ECC system through an MCP server?",
+    "answer": "The key decision is the identity the call runs under. A shared technical user is simple but breaks authorisation checks and audit trails, because every action looks like the same user. Per-user authentication preserves the business user's authorisations, but needs a mechanism to propagate identity through the MCP server and Integration Suite to ECC. First establish the ECC release, the connectivity method and the exact endpoints to expose. Expose only narrow, governed interfaces, not raw tables. The source post only raises the question and gives no solution, so any design must be validated against current documentation.",
+    "level": "Architect",
+    "refs": [
+     50,
+     24
+    ]
+   }
+  ],
+  "class_idea": {
+   "title": "Fiori elements filter bars in RAP: selection fields, composition paths and annotation layering",
+   "why_now": "Today's RAP how-to shows that filtering by a child field is an annotation task. Annotation override problems also appear in the UI Adaptation question.",
+   "outline": [
+    "Header/item RAP BO with a composition",
+    "Default filter bar from UI.SelectionFields",
+    "Adding _Item/Field",
+    "Local vs backend annotation override",
+    "Why denormalising is a poor design",
+    "Debugging the FilterBar 'map' error",
+    "Checklist for changes that do not show at runtime"
+   ],
+   "exercise": "In ADT, build a header/item RAP BO with a composition and a metadata extension. Add a selection field using the _Item/Field path and test the filter in the preview. Then add a local annotation with only that field and observe which filters disappear. Fix it by repeating the full list.",
+   "refs": [
+    6,
+    65
+   ]
+  },
+  "whatsapp_highlights": "RAP: filter a List Report by an item field via UI.SelectionFields with _Item/Field, and repeat the full list in local annotations | CIG mapping: POSITION EQUALS 1 makes every service line reuse the first description | Special G/L Indicator missing in Journal Entry Clearing API (Public Cloud) | UI Adaptation label not visible after transport"
+ }
+}

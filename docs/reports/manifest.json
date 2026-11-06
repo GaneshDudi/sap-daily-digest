@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-06",
+  "label": "Friday, 6 November 2026",
+  "headline": "A thin ABAP day: one RAP filter how-to, plus unanswered questions on Joule, MCP, UI Adaptation and API gaps.",
+  "items": 82,
+  "deep": 13
+ },
+ {
   "date": "2026-11-05",
   "label": "Thursday, 5 November 2026",
   "headline": "Thin day: RAP side effects, ABAP Cloud XCO and CL_ABAP_ZIP bugs, and extensibility questions in Private Cloud dominate; most posts lack answers or code.",
