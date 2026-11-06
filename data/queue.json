@@ -532,5 +532,126 @@
   "feed": "SAP News Center",
   "kind": "news",
   "text": "For many manufacturers, years of growth have resulted in complex production environments. Site-specific applications, custom interfaces, and locally optimized processes often solve immediate business needs, but they can also make it more difficult to scale innovation, maintain systems, and drive consistency across a global production network. \n\n Today, manufacturers are looking to simplify through standardized digital platforms that can support global operations, improve visibility, and provide a foundation for future innovation. \n Boost automation and run autonomous manufacturing with SAP Digital Manufacturing \n\n Learn more \n\n When growth creates complexity \n\n As a global manufacturer of sensor and automation technology with around 9,000 employees worldwide, ifm electronic GmbH operates multiple production sites across Germany and internationally. Over time, individual sites have developed their own integrations between operational technology (OT) systems and enterprise applications, creating a highly individualized manufacturing landscape. \n\n While these local solutions addressed specific requirements, they also increased maintenance effort and complexity. As the company continued to grow, standardization became a strategic priority. \n\n “We were looking for a standard to bring to all production sites and to make use of the solutions already available on the market,” Martin Haury, head of Global IT Business Services, ifm electronic GmbH, said. \n\n Standardization as a strategic choice \n\n When evaluating its future manufacturing landscape, ifm reviewed multiple manufacturing execution solutions and selected the SAP Digital Manufacturing solution. During the evaluation, the team discovered that many of the capabilities it had developed over the years—including production order execution, scheduling, and track-and-trace functionality—were already available as standard capabilities. According to Haury, the majority of more than 100 internally developed functionalities could be covered by the standard solution. \n\n For ifm, the transformation was about more than just replacing custom applications. It was about establishing a standardized manufacturing foundation that could scale globally, increase transparency across operations, and support future innovation. The fact that so many internally developed capabilities were already available within SAP Digital Manufacturing helped accelerate that journey. \n\n Less development, faster adoption \n\n One of the most immediate benefits for ifm was the significant reduction in development effort. Rather than building and maintaining custom functionality, teams could make use of existing capabilities and configure them according to business requirements. \n\n “Our OT colleagues were actually surprised that it’s just parameterizing and the solution is there,” Haury said. \n\n Less development means less maintenance effort and a faster path from concept to deployment, helping ifm introduce standardized processes more efficiently across sites. \n\n Building the future together \n\n Throughout the implementation, cbs Corporate Business Solutions Unternehmensberatung GmbH supported ifm from both a manufacturing and a supply chain perspective. Beyond the technical implementation, the focus was on helping shape a future-ready manufacturing landscape that could scale across locations while remaining aligned with broader business processes. \n\n Implementation partner \n\n The implementation of SAP Digital Manufacturing was carried out in partnership with SAP partner cbs Corporate Business Solutions. The project focused on establishing standardized manufacturing processes and creating a scalable platform for future growth across ifm’s production operations. \n\n Greater visibility across operations \n\n Today, transparency is embedded far more deeply into ifm’s manufacturing operations. Production processes, manufacturing orders, and product availability are visible within a shared digital environment, enabling teams to work from the same information and respond more effectively to changing business requirements. \n\n “Our implementation of SAP Digital Manufacturing is an important step in our digital transformation, setting the stage for a more connected, agile, and data-driven production environment,” Haury said. \n\n As manufacturing networks become increasingly connected, access to consistent and reliable information is becoming essential for scaling operations and driving continuous improvement. \n\n Looking ahead \n\n Following a successful pilot deployment, ifm is preparing to expand the solution across its global production network. The company remains confident in both the approach and the long-term value it can deliver. \n\n More important, the project highlights a broader lesson for manufacturers: the future of digital manufacturing is not about building every capability from scratch. It is about using proven standards, simplifying complexity, and creating a foundation that enables innovation to scale. \n\n For manufacturers evaluating their own transformation journey, standardization is no longer just an IT objective. It is a business strategy for increasing transparency, reducing complexity, and preparing operations for future growth. “We were looking for a standard to bring to all production sites and to make use of integrated solution with seamless data-flow and clear innovation track, like AI,” Haury said. \n\n Explore inspiring customer journeys and discover how companies across industries are transforming their businesses with help from SAP Digital Manufacturing here . \n\n Anne Sailer is part of global product marketing for Manufacturing at SAP SE. \n Birgit Carnatz is part of global product marketing for Manufacturing at SAP SE. \n Subscribe to the SAP News Center for the latest SAP news each week \n\n Sign up today"
+ },
+ {
+  "key": "bb6ff944e77d4fcc",
+  "title": "Did You Know? An SAP Business Data Cloud Series | Season 1, Episode 4 | Data Lineage",
+  "link": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/did-you-know-an-sap-business-data-cloud-series-season-1-episode-4-data/ba-p/14517271",
+  "published": "2026-11-06T21:56:49+00:00",
+  "author": "JoseChicas",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Welcome back to \"Did You Know?\" A series where we shine a light on the SAP Business Data Cloud features that deserve more of your attention. E ach episode is a practical nudge to explore what's already in your hands. Season 1 is all about SAP Datasphere. On this episode, let's talk about Data Lineage"
+ },
+ {
+  "key": "92f196d6f8e1a450",
+  "title": "Accelerate the Suite adoption with SAP-Managed Public Cloud ERP – An Early Adopter Care Program",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/accelerate-the-suite-adoption-with-sap-managed-public-cloud-erp-an-early/ba-p/14500013",
+  "published": "2026-11-06T21:10:20+00:00",
+  "author": "Jimmy3",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP-managed public cloud ERP helps customers focus less on technical integration and more on innovation. Explore what's included in the Early Adopter Care program and how to get involved."
+ },
+ {
+  "key": "473adb640b9dcfbc",
+  "title": "Inventory Management – End of the Year Check Guide",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/inventory-management-end-of-the-year-check-guide/ba-p/14511214",
+  "published": "2026-11-06T21:02:53+00:00",
+  "author": "gabriel_kunz",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "During the end of fiscal year, several checks need to be done under the Inventory Management area to make sure that the stocks and its valuation is consistent to ensure business to run smoothly and audit process to be done without issues. \n This guide provides information on how to perform the most common checks in Inventory Management, the transaction and reports that can be used for it, how to use them correctly and what to do if SAP support needs to be contacted for correction of inconsistencies. \n Each topic also contains the most useful SAP Notes and KBA (Knowledge Based Articles) that can be used to assist you during the checks. \n It is worth noting that the data model for Inventory Management went through several changes upon the release from S/4HANA. If custom check reports are behaving differently from ECC on S/4HANA systems, please check the other post below for more details: \n SAP S/4HANA: Inventory Management Tables New Simplified Data Model (NSDM)"
+ },
+ {
+  "key": "a083fffcf03be48c",
+  "title": "Siemens, GS1 and SAP Demonstrate the Power of the European Business Wallet",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/siemens-gs1-and-sap-demonstrate-the-power-of-the-european-business-wallet/ba-p/14517995",
+  "published": "2026-11-06T19:50:41+00:00",
+  "author": "Monisha_Sharma",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "A New Era for Supplier Trust \n In today's complex global supply chains, knowing who you are doing business with has never been more critical or more difficult. Manual document checks, siloed compliance processes, and the ever-present risk of fraud have long burdened procurement and partner onboarding teams. That is now changing. \n In the Proof of Concept (PoC) completed in August 2026, SAP, Siemens, and GS1 demonstrated that the European Business Wallet (EBW) can fundamentally transform how companies verify, onboard, and trust their suppliers — with speed, security, and regulatory confidence built in from the start."
+ },
+ {
+  "key": "beed7145b3c91b08",
+  "title": "Your rate management checklist for SAP Fieldglass solutions",
+  "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/your-rate-management-checklist-for-sap-fieldglass-solutions/ba-p/14517984",
+  "published": "2026-11-06T19:45:07+00:00",
+  "author": "PeteBoshoff",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Thanks for reading our three-part blog series on optimizing external workforce rates. If you’ve checked out the first two blogs in this series, you’ve learned why contingent workforce rate management is critical and how activating key features in your SAP Fieldglass solutions can help improve your rate governance."
+ },
+ {
+  "key": "573fbdb0bcf55a9a",
+  "title": "The rate management playbook for SAP Fieldglass solutions",
+  "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/the-rate-management-playbook-for-sap-fieldglass-solutions/ba-p/14517978",
+  "published": "2026-11-06T19:41:58+00:00",
+  "author": "PeteBoshoff",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "If you’ve finished reading the first blog in this series, you know that uncontrolled rates for contingent workers are a significant problem for today’s businesses. But how can you best address the need for rate card management? The obvious solution is to improve your use of the rate management capabilities that already exist in your SAP Fieldglass solutions, quickly and with minimal effort."
+ },
+ {
+  "key": "1b0b7e739cf2293a",
+  "title": "Building an Enterprise Data & AI Eco with SAP BDC and Snowflake: Part 1 – SAP SuccessFactors and BDC",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/building-an-enterprise-data-amp-ai-eco-with-sap-bdc-and-snowflake-part-1/ba-p/14515867",
+  "published": "2026-11-06T18:48:17+00:00",
+  "author": "Ravikanth_Indurthi",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP BDC Intelligent Content and Data Packages: Unlocking SuccessFactors Employee Central Data Products."
+ },
+ {
+  "key": "3fe15657a4132856",
+  "title": "SAP CI/CD + CTMS, Part 0: The big picture",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-ci-cd-ctms-part-0-the-big-picture/ba-p/14517958",
+  "published": "2026-11-06T18:13:56+00:00",
+  "author": "AbhishekKumar_SAP",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "A map of the series: one CAP app, built once by SAP CI/CD, moved to a second subaccount by CTMS and tracked in Cloud ALM. The pieces, how they fit, the one idea that would have saved me the most time, and what each part covers."
+ },
+ {
+  "key": "4accc124b16169e9",
+  "title": "SAP Community Voice: Joule Studio Certification, ABAP at SAP TechEd, MCP, and Upcoming Events",
+  "link": "https://community.sap.com/t5/what-s-new/sap-community-voice-joule-studio-certification-abap-at-sap-teched-mcp-and/ba-p/14517820",
+  "published": "2026-11-06T17:36:22+00:00",
+  "author": "fatemehzarei_001",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Catch up on ABAP news from SAP TechEd, explore Joule Studio Certification and MCP, revisit SAP Inside Track Fortaleza, and find your next SAP Community event."
+ },
+ {
+  "key": "a0bb8bf5ff61d028",
+  "title": "FTR_CREATE Annuity: interest calculated after deducting full annuity",
+  "link": "https://community.sap.com/t5/financial-management-q-a/ftr-create-annuity-interest-calculated-after-deducting-full-annuity/qaq-p/14518032",
+  "published": "2026-11-06T20:41:14+00:00",
+  "author": "shady_elhefnawy",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear SAP Team, \n We are creating a loan in FTR_CREATE (TRM) with an Annuity Repayment condition: 1,000,000 EGP, 10% p.a., Act/360, 20 quarterly payments, interest paid in advance. \n Current SAP behavior: \n SAP deducts only the principal portion from the balance and then calculates the interest on what remains. \n Example: (1,000,000 - 38,556.23) x 10% x 92 / 360 = 24,570.23. The annuity is 63,126.46. \n Required behavior: \n The interest should be calculated after deducting the full annuity (principal + interest). \n Example: (1,000,000 - 62,775.61) x 10% x 92 / 360 = 23,951. The annuity is 62,775.61. \n Question: \n Is there a standard setting in FTR_CREATE or customizing to calculate the interest this way? If not, is there an SAP Note or a recommended enhancement? \n The Excel calculation and the cash flow export are available if needed. \n Best regards, \n Shady Osama"
+ },
+ {
+  "key": "45e67b8ec9196407",
+  "title": "Clarification Required on POS Tax-Inclusive Pricing and S/4HANA Tax Determination",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/clarification-required-on-pos-tax-inclusive-pricing-and-s-4hana-tax/qaq-p/14517937",
+  "published": "2026-11-06T16:55:55+00:00",
+  "author": "Victoria_Espinoza",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "We need guidance on POS integration pricing and tax behavior in S/4HANA Cloud Public Edition. \n Pricing requirement: \n The final POS price must be tax-inclusive, with ESP0/EPV0 holding the net price and ZTEG calculating the tax separately (e.g., 100 EGP + 14% ZTEG = 114 EGP). We use custom pricing procedure Z99998 (copied from A73034). \n Questions: \n 1. How to configure ESP0/EPV0 for net price and ZTEG for tax calculation? \n 2. How is the tax-inclusive price transferred to POS? \n 3. Is this supported via standard configuration? \n Tax determination issue: \n Despite changes to the Product Master tax classification, pricing analysis always shows 0 – Tax Exempt. \n Questions: \n 1. What master data/config drives tax classification in POS inbound pricing? \n 2. Why does the tax exempt result persist after Product Master changes? \n 3. Is additional configuration needed for ZTEG to determine the correct tax rate? \n\n Thanks!"
  }
 ]
