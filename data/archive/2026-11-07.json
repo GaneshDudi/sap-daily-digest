@@ -1,0 +1,1667 @@
+{
+ "items": [
+  {
+   "key": "6893ef9f2365fe5d",
+   "title": "SAP Fiori Tools 2611 Update: AI Skills, Full-Stack ABAP, and App-to-ABAP Navigation",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-fiori-tools-2611-update-ai-skills-full-stack-abap-and-app-to-abap/ba-p/14517903",
+   "published": "2026-11-06T15:58:17+00:00",
+   "author": "Christoph_Gollmick",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The 2611 release of SAP Fiori tools keeps pushing on AI-driven development: more skills, a plugin for GitHub Copilot, and the first direct link between your SAP Fiori app and the ABAP sources behind it within the same IDE. There are also improvements to the App Info page, a change to how we ship the extensions, and an update on the Project Accelerator."
+  },
+  {
+   "key": "e644f31820b150a9",
+   "title": "Check out the SAP Fieldglass 2026.11 Release – Spotlight Features Guide",
+   "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/check-out-the-sap-fieldglass-2026-11-release-spotlight-features-guide/ba-p/14517905",
+   "published": "2026-11-06T15:43:53+00:00",
+   "author": "KateMcCusker_",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "With each release, SAP Fieldglass introduces innovative features designed to enhance user experience, boost efficiency, and drive better business outcomes. \n The SAP Fieldglass 2026.11 Release Spotlight Features Guide covers the key updates in this release from AI and Integration to Services Procurement, Supplier Management and more. \n Use this guide to explore what’s new, understand how each feature works, and find the updates most relevant to how you manage your contingent workforce and services procurement. \n Want more information about the SAP Fieldglass 2026.11 Release? \n Stay up to date on all SAP Fieldglass release information through the What’s New Viewer on the SAP Help Portal and the SAP Fieldglass page on SAP Community."
+  },
+  {
+   "key": "069e00d500f14386",
+   "title": "My Metrics Update QRC4.2026: Monitor What Matters",
+   "link": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/my-metrics-update-qrc4-2026-monitor-what-matters/ba-p/14517838",
+   "published": "2026-11-06T15:27:15+00:00",
+   "author": "arnoklein",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "My Metrics is your personal KPI cockpit inside SAP Analytics Cloud . It is built for users who want to stay on top of their most important numbers without navigating through reports. With the latest updates, we've made it easier to create, configure, and monitor metrics. Here's what's new. \n Create Metrics Directly from a Model \n Until now, metrics could only be added from an existing story widget, which meant you first had to build or navigate to a report before you could monitor a KPI. That's no longer the case. You can now create a metric directly from a model within the My Metrics module, giving you more flexibility to define what you want to track from the start. \n A Redesigned Wizard \n The new step-by-step wizard walks you through the entire configuration, from selecting your measure and filters to adding variances and thresholds in a structured, intuitive flow. \n\n Quick Time Filters \n Choosing the right time period for a metric was one of the most common friction points. Quick Time Filters improve this with a curated set of ready-to-use options: Current Month, Quarter to Date, Last Quarter, and more, available directly in the filter step. No more static date configuration for the most common use cases. \n\n You can also extend the time window for the detailed visualization independently from the base metric to show a broader range on the detailed visualization via time shift. \n Improved Variable Support \n Metric creators can now modify variables (e.g. from SAP BW), so that metrics reflect the current variable state, ensuring your KPIs always show the data that's relevant today, not from the moment you set them up. \n\n WalkMe Integration \n New to My Metrics or exploring a feature for the first time? WalkMe integration brings contextual, step-by-step guidance directly into the product. Instead of searching documentation, you get the right help at the right moment, directly inside the UI. \n Threshold Configuration \n Monitoring a number is useful. Knowing when it's off track is better. The new threshold configuration lets you define a threshold directly on your metric. Color-coded status indicators make the situation visible at a glance, without having to interpret the raw number every time. And when a threshold is breached, My Metrics notifies you. You can subscribe to and receive threshold-based notifications directly via eMail, Teams or within SAP Analytics Cloud, so you're informed when a KPI moves outside its defined range. \n Please also take a look at my colleague Jie Deng's blog post about AI-Assisted Metrics Trend Analysis in SAP Analytics Cloud ."
+  },
+  {
+   "key": "59d18ea95fcbf62a",
+   "title": "Document Management in SAP Cloud ALM: Common Questions, Clear Answers",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/document-management-in-sap-cloud-alm-common-questions-clear-answers/ba-p/14517788",
+   "published": "2026-11-06T14:51:07+00:00",
+   "author": "michael_skiba",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "A practical Q&A guide covering everything customers and partners need to know about document handling in SAP Cloud ALM for Implementation — creation, templates, approval, versioning, external files, API, and more."
+  },
+  {
+   "key": "3011d509e63aed41",
+   "title": "What’s New in the SAP Digital Manufacturing 2611 Release",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/what-s-new-in-the-sap-digital-manufacturing-2611-release/ba-p/14514052",
+   "published": "2026-11-06T16:28:09+00:00",
+   "author": "ManoelCosta",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "See SAP Digital Manufacturing 2611 Release highlights below, covering topics like execution, APIs, integration, automation, resource orchestration, quality, issue resolution, insights, security, POD 2.0 and edge."
+  },
+  {
+   "key": "ae76d96e3c82603a",
+   "title": "What’s New for POD 2.0 in 2611 Release",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/what-s-new-for-pod-2-0-in-2611-release/ba-p/14514047",
+   "published": "2026-11-06T15:33:01+00:00",
+   "author": "ManoelCosta",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "See SAP Digital Manufacturing 2611 Release POD 2.0 highlights below."
+  },
+  {
+   "key": "3005f938da1a6ad2",
+   "title": "Inteligencia de Compras e Inventarios en SAP Business One: análisis relacional y dashboards avanzado",
+   "link": "https://community.sap.com/t5/frontend-ui5-sap-fiori-blog-posts/inteligencia-de-compras-e-inventarios-en-sap-business-one-an%C3%A1lisis/ba-p/14517755",
+   "published": "2026-11-06T13:46:54+00:00",
+   "author": "fmroque10",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP Business One concentra una gran cantidad de información relacionada con las operaciones comerciales de una empresa: órdenes de compra, proveedores, artículos, entradas de mercancía, facturas de proveedores, movimientos de inventario y ventas. \n Sin embargo, disponer de estos datos dentro del ERP no significa necesariamente que la organización tenga una visión completa de lo que está sucediendo."
+  },
+  {
+   "key": "9b5d8a8b93110a41",
+   "title": "Scalable and Multi-Off – Find your way",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/scalable-and-multi-off-find-your-way/ba-p/14517700",
+   "published": "2026-11-06T12:50:38+00:00",
+   "author": "Karin",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Scalable Delivery and Multi-Off Delivery are two options for partners to offer extensions. If you need help deciding for one or the other, you should consider some questions and facts."
+  },
+  {
+   "key": "5d74545606230971",
+   "title": "SAP Enterprise Financial Consolidation: Advancing Autonomous Performance Management",
+   "link": "https://community.sap.com/t5/financial-management-blog-posts-by-sap/sap-enterprise-financial-consolidation-advancing-autonomous-performance/ba-p/14517134",
+   "published": "2026-11-06T11:52:49+00:00",
+   "author": "Nverhoeven",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP Enterprise Financial Consolidation: Advancing Autonomous Performance Management with Trusted Group Financial Outcomes"
+  },
+  {
+   "key": "83e25dc7302d77df",
+   "title": "Ariba Invoicing / CIM: 2-Factor Authentication (Entra-ID) Identity Federation Fix",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/ariba-invoicing-cim-2-factor-authentication-entra-id-identity-federation/ba-p/14517658",
+   "published": "2026-11-06T11:47:07+00:00",
+   "author": "yanina_geist40ced8",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "1. Problem Description \n After switching the CIM application in SAP Cloud Identity Services (CIS) to use Microsoft Entra ID (formerly Azure Active Directory) as the identity provider, users reported error messages when trying to access the Ariba Invoicing module. Authentication via the Microsoft login page succeeded, but the application subsequently failed with errors. Error Scenario \n User authenticates successfully via Microsoft Entra ID (including 2-Factor Authentication / MFA), but receives an error upon reaching the CIM Accounting module. The session cannot be established correctly for the application. \n 2. Root Cause \n When an external Identity Provider (IdP) such as Microsoft Entra ID is configured in SAP Cloud Identity Services, the Identity Federation settings determine how SAP IAS (Identity Authentication Service) handles the authenticated user session. \n By default, the Identity Federation configuration is inherited from the parent application. In this case, the inherited settings did not include “Use Identity Authentication user store” — meaning SAP IAS passed the Entra ID token to CIM without resolving the user against its own user store. As a result, CIM could not find a matching user record and returned an error in the Accounting module. \n 3. Authentication Flow (Before & After Fix) \n Before the fix (broken flow) User → Microsoft Entra ID \n MFA / 2FA → SAP IAS (CIS) \n no user store lookup → CIM Accounting \n ✗ Error IAS receives federated token but cannot map user → session fails in CIM \n After the fix (working flow) User → Microsoft Entra ID \n MFA / 2FA → SAP IAS (CIS) \n user store lookup ✓ → CIM Accounting \n ✓ Success IAS resolves identity via user store → enriched user context propagated to CIM \n 4. Solution: Step-by-Step Configuration \n Log into SAP Cloud Identity Services (CIS) as an administrator and follow the navigation path below: CIS Admin Console → Applications → CIM → Conditional Authentication → Identity Federation 1 Open the CIS Admin Console \n Navigate to your SAP Cloud Identity Services admin console (e.g., https://<tenant>.accounts.ondemand.com/admin ) and sign in with administrator credentials. 2 Navigate to Applications \n In the left-hand menu, click Applications & Resources → Applications . 3 Select the CIM Application \n Search for or scroll to the CIM application in the list and click on it to open its settings. 4 Open Conditional Authentication \n Within the CIM application settings, select the Conditional Authentication tab. 5 Open Identity Federation \n Click on Identity Federation within the Conditional Authentication section. 6 Set Configuration Source to “Custom” \n Under Configuration Source , change from the inherited value to Custom . This overrides the parent application settings for CIM specifically. 7 Enable “Use Identity Authentication user store” \n Check the Use Identity Authentication user store checkbox. This is the critical fix. Leave Allow Identity Authentication users only and Apply Application Configurations unchecked. 8 Save and test \n Save the configuration and ask the affected user to log in again via Microsoft Entra ID to confirm the fix. \n Fig. 1 — Identity Federation settings in SAP CIS for the CIM application (after fix): Configuration Source set to Custom , Use Identity Authentication user store enabled. \n 5. Why This Is the Correct Solution \n SAP Cloud Identity Services supports Identity Federation : an external IdP (such as Microsoft Entra ID) handles the primary authentication including MFA/2FA, while SAP IAS acts as a broker connecting the authenticated identity to SAP application user records. \n The setting “Use Identity Authentication user store” controls whether SAP IAS performs a user lookup in its own user store after receiving the federated assertion from Entra ID: Setting Behavior Result \n Disabled (inherited / unchecked) SAP IAS forwards the Entra ID token to CIM without user store resolution. CIM receives only raw Entra ID attributes. CIM cannot find a matching user → Error \n Enabled (checked — after fix) SAP IAS looks up the user in its own store (matching by email). The full IAS user profile (including roles and group memberships) is forwarded to CIM. CIM receives enriched user context → Success Technical Background \n When Entra ID is configured as a Corporate Identity Provider in SAP IAS, it acts as an upstream IdP. The Identity Federation settings determine how the downstream application (CIM) receives user information. Enabling the IAS user store lookup ensures that attributes stored in IAS (roles, groups, application assignments) are correctly propagated to CIM — which is essential for module-level authorization such as access to the Accounting module. \n 6. Configuration Settings Reference Setting Value (After Fix) Explanation \n Configuration Source Custom Overrides parent application defaults with settings specific to CIM. Prevents unintended inheritance of restrictive parent configuration. \n Use Identity Authentication user store ✓ Enabled After Entra ID login, IAS matches the user to an existing IAS record. User profile data and application attributes are forwarded to CIM. \n Allow Identity Authentication users only ✗ Disabled If enabled, only users with a native IAS account (not federated via Entra ID) would be allowed. Leaving disabled permits Entra ID federated users. \n Apply Application Configurations ✗ Disabled Leave unchecked unless CIM-specific conditional authentication rules need to be applied on top of the federation settings. \n 7. Resolution Confirmation Issue Resolved \n After applying the above configuration, the user confirmed successful login via Microsoft Entra ID (including 2-Factor Authentication) and unimpeded access to the CIM Accounting module. (Confirmed November 6, 2026) SAP Cloud Identity Services — CIM Identity Feder"
+  },
+  {
+   "key": "2599ee6c00c21fa6",
+   "title": "Generic SOAP Dispatcher in SAP Integration Suite: A Practical Approach",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/generic-soap-dispatcher-in-sap-integration-suite-a-practical-approach/ba-p/14517657",
+   "published": "2026-11-06T13:00:38+00:00",
+   "author": "khusal810",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Introduction \n Generic dispatcher patterns are not new in the SAP integration world. \n If you have worked with IDocs or ABAP Proxies , you have probably seen scenarios where multiple interfaces enter through a common integration layer and are then dispatched to the appropriate integration flow. \n This made me think: \n Can we do something similar for SOAP interfaces in SAP Integration Suite? \n Instead of looking at every SOAP interface as an independent integration entry point, can we create a common SOAP dispatcher, identify the incoming service or operation, and route the request to the appropriate integration flow? \n That is what I wanted to explore. \n In this blog, I will walk through an approach for building a Generic SOAP Dispatcher using SAP Integration Suite, Cloud Integration . \n What Are We Trying to Achieve? \n Let's assume we have multiple SOAP-based interfaces originating from SAP ECC or SAP S/4HANA. \n A typical implementation may look like this: \n SOAP Interface 1 → Integration Flow 1 \n SOAP Interface 2 → Integration Flow 2 \n SOAP Interface 3 → Integration Flow 3 \n The idea is to introduce a common dispatcher layer: \n SAP ECC / S/4HANA \n ↓ \n Generic SOAP Endpoint \n ↓ \n Generic SOAP Dispatcher \n ↓ \n Identify Incoming Request \n ↓ \n Determine Routing Key \n ↓ \n Dynamic Routing \n ↓ \n Target Integration Flow \n This raises the most important technical question: \n How does the dispatcher determine which integration flow should receive the incoming SOAP request? \n The answer lies in the metadata available with the incoming request. Depending on the SOAP service and configuration, attributes such as SOAPAction , HTTP-related headers, request path, or other message metadata may provide information that can be used to derive a routing key. \n Before designing the routing logic, therefore, the first step is to understand exactly what information reaches Cloud Integration for the SOAP request. \n Proposed Technical Design \n The dispatcher is intentionally kept lightweight. It should not contain the actual business integration logic. \n Its responsibilities are limited to: \n Receive the SOAP request. \n Read the available request metadata. \n Derive a routing key. \n Validate the routing key. \n Route the request to the appropriate target integration flow. \n Reject unsupported requests in a controlled manner. \n The overall runtime design is: \n SOAP Sender \n ↓ \n GenericSOAPDispatcher \n ↓ \n Read Request Metadata \n ↓ \n Determine Routing Key \n ↓ \n Router \n ↓ \n ProcessDirect \n ↓ \n Target Integration Flow \n Step 1: Create the Generic SOAP Dispatcher \n Let's start by creating an integration flow called: \n GenericSOAPDispatcher \n Add a SOAP Sender Adapter and configure the endpoint that will act as the entry point for the dispatcher. \n The purpose of this integration flow is not to execute business-specific transformation or receiver logic. It acts as the technical entry and dispatching layer. \n At this stage, rather than immediately building the routing rules, I first wanted to understand what metadata Cloud Integration receives when the SOAP request arrives. \n\n Step 2: Inspect the Incoming Request \n This is where things become interesting. \n For a generic dispatcher to work, we need a reliable way of distinguishing one incoming SOAP request from another. \n During development, we can inspect the headers available to the message when the request reaches the integration flow. \n A temporary Groovy script can help us understand which headers are available: import com.sap.gateway.ip.core.customdev.util.Message\n\ndef Message processData(Message message) {\n\n def headers = message.getHeaders()\n def messageLog = messageLogFactory.getMessageLog(message)\n\n if (messageLog != null) {\n headers.each { key, value ->\n messageLog.setStringProperty(\n key.toString(),\n value?.toString()\n )\n }\n }\n\n return message\n} \n The intention of this script is purely diagnostic: send a test SOAP request and inspect which request-specific values are available in Cloud Integration. \n Important: I would not recommend logging every incoming header in a production implementation. HTTP and SOAP headers may contain authentication, authorization, session, or other sensitive information. \n Once the required routing attributes have been identified, logging should be restricted to the minimum information required for monitoring and troubleshooting. \n Step 3: Derive a Routing Key \n The dispatcher now needs to convert the request metadata into something that can be used consistently for routing. \n One candidate is SOAPAction , where the service configuration provides a meaningful and reliable value. \n For example, assume we have operations such as: \n CreateOrder \n UpdateOrder \n CancelOrder \n The incoming metadata could conceptually be mapped to an internal routing key: \n Incoming Operation Routing Key Target Flow \n CreateOrder CREATE_ORDER CreateOrder_iFlow \n UpdateOrder UPDATE_ORDER UpdateOrder_iFlow \n CancelOrder CANCEL_ORDER CancelOrder_iFlow \n I prefer deriving an internal routing key instead of tightly coupling the rest of the dispatcher directly to the raw SOAPAction value. \n This gives us a cleaner separation between request identification and message routing . \n Conceptually: \n Incoming SOAP Request \n ↓ \n Read SOAP Metadata \n ↓ \n Derive Routing Key \n ↓ \n CREATE_ORDER / UPDATE_ORDER / CANCEL_ORDER \n ↓ \n Router \n Step 4: Configure the Router \n Once the routing key is available, a standard Router can be used to determine the target integration flow. \n For example: \n CREATE_ORDER → CreateOrder_iFlow \n\n UPDATE_ORDER → UpdateOrder_iFlow \n\n CANCEL_ORDER → CancelOrder_iFlow \n A Default Route should always be provided. \n This handles scenarios where the dispatcher receives a request that it does not recognize. \n Instead of accidentally routing an unidentified request, the dispatcher can terminate processing with a controlled error such as: \n Unsupported SOAP operation or routing key. \n The error-handling path can additionally capture non-sensitive diagnostic information such as: \n Message ID / correlation identifier \n Routing key \n Requested operation \n Error category \n Timestamp \n Step 5: Delegate Processing to the Target Integration Flow \n A key design principle is to keep the dispatcher lightweight . \n Business-specific mappings, transformations, validations, receiver calls, and orchestration should remain within the corresponding integration flows. \n The dispatcher should only determine where the request needs to go . \n For flows deployed within the same Cloud Integration environment, ProcessDirect can be considered as one approach for communication between the dispatcher and the target integration flows. \n For example: \n GenericSOAPDispatcher \n | \n +-- CREATE_ORDER → ProcessDirect → CreateOrder_iFlow \n | \n +-- UPDATE_ORDER → ProcessDirect → UpdateOrder_iFlow \n | \n +-- CANCEL_ORDER → ProcessDirect → CancelOrder_iFlow \n This separation is important because otherwise the generic dispatcher can slowly turn into a large integration flow containing routing, mapping, transformation, receiver connectivity, and business logic for every interface. \n\n Where Does SOAMANAGER Fit? \n Now comes the other important part of this design. \n If an ABAP-based SAP ECC or SAP S/4HANA system is acting as the SOAP consumer, the relevant Web Service configuration and logical port in SOAMANAGER has to be configured to communicate with the endpoint exposed through SAP Integration Suite. \n Conceptually, the end-to-end path becomes: \n ABAP Application / Consumer Proxy \n ↓ \n SOAMANAGER Logical Port \n ↓ \n SAP Integration Suite SOAP Endpoint \n ↓ \n GenericSOAPDispatcher \n ↓ \n Determine Routing Key \n ↓ \n ProcessDirect \n ↓ \n Business Integration Flow \n ↓ \n Target System \n This is an important area to validate during implementation. \n A generic endpoint does not automatically mean that every SOAP consumer proxy can simply be pointed at the same URL without considering the underlying service configuration. \n The following aspects still need to be validated for the individual SOAP services: \n Service definition \n Binding \n SOAP operation \n SOAPAction behavior \n Logical port configuration \n Authentication and certificates \n Request and response contract \n Therefore, the dispatcher should be viewed as a routing pattern , not as a way of ignoring the individual SOAP service contracts. \n Error Handling \n Centralizing the entry point also gives us an opportunity to consistently handle technical routing errors. \n Some situations worth considering are: \n Required routing information is missing. \n SOAPAction or equivalent metadata cannot be mapped to a routing key. \n The routing key is not configured. \n The target integration flow is unavailable. \n The incoming SOAP message is invalid. \n Authentication or authorization fails. \n The downstream integration flow returns an error. \n One important distinction is that the dispatcher should handle dispatching-related failures , while business-specific error handling should continue to remain with the corresponding business integration flow. \n This keeps the responsibilities of the dispatcher clear. \n Design Considerations \n At this point, it may sound attractive to route every SOAP interface through one dispatcher. \n I would not recommend doing that by default. \n The pattern should be adopted where it provides a real operational or architectural benefit. \n Area Benefit / Consideration \n Entry Point Provides a common entry and routing layer for suitable SOAP interfaces. \n Routing Centralizes technical dispatching logic. \n Monitoring Common routing information can improve operational visibility. \n Error Handling Unsupported or unidentified requests can be handled consistently. \n Security Different SOAP services may have different authentication and authorization requirements. \n Performance The dispatcher introduces an additional processing layer. \n Availability A central dispatcher becomes a shared dependency for all interfaces routed through it. \n Governance New routing entries need controlled onboarding and ownership. \n Maintenance An uncontrolled number of routing rules can make the dispatcher difficult to maintain. \n Service Contract The common dispatcher does not remove the need to respect individual SOAP service contracts. \n When Would I Use This Pattern? \n I would consider this pattern when: \n There are multiple SOAP interfaces following a similar integration pattern. \n A reliable request attribute can be used to identify the destination. \n Centralized routing provides a genuine operational benefit. \n The target business flows can remain independently maintained. \n Security requirements are compatible with the common entry-point design. \n For a small number of unrelated SOAP interfaces, dedicated endpoints may still be simpler and easier to maintain. \n Conclusion \n So, coming back to the question that started this experiment: \n Can we implement a generic dispatcher for SOAP interfaces in SAP Integration Suite, similar to patterns we have seen for IDocs and ABAP Proxies? \n Yes, we can build such a pattern. \n The technical flow is relatively straightforward: \n SOAP Request \n ↓ \n Generic SOAP Endpoint \n ↓ \n Inspect Request Metadata \n ↓ \n Derive Routing Key \n ↓ \n Router \n ↓ \n ProcessDirect \n ↓ \n Target Integration Flow \n The real design decision is not whether we can build it, but whether the pattern makes sense for the integration landscape. \n A good generic dispatcher should remain a lightweight technical routing layer. It should not become the place where every interface's business logic is implemented. \n The other important consideration is identifying a stable and reliable routing attribute . SOAPAction can be one candidate, but the exact mechanism should be validated against the actual SOAP service design and runtime behavior. \n I started exploring this because generic dispatcher patterns are familiar on the IDoc and Proxy side, and I wanted to see how the same idea could be applied to SOAP interfaces in SAP Integration Suite."
+  },
+  {
+   "key": "b4cd2cd239c880be",
+   "title": "Integrating RE-FX with PS-CD / FI-CA: Configuration, Document Flow, and Practical Guidance",
+   "link": "https://community.sap.com/t5/financial-management-blog-posts-by-members/integrating-re-fx-with-ps-cd-fi-ca-configuration-document-flow-and/ba-p/14517630",
+   "published": "2026-11-06T11:40:00+00:00",
+   "author": "achyuthreddyk-567",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "How do RE-FX receivables reach the PS-CD/FI-CA sub-ledger? Explore the configuration chain and document flow - from integration switches and contract accounts to main/sub-transactions, billing documents, and RERAPP - with a practical walkthrough"
+  },
+  {
+   "key": "ad2c0e751f96f0e6",
+   "title": "让数据开口说话：SAP S/4HANA Cloud 嵌入式分析的 AI 新能力",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/%E8%AE%A9%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%A3%E8%AF%B4%E8%AF%9D-sap-s-4hana-cloud-%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%88%86%E6%9E%90%E7%9A%84-ai-%E6%96%B0%E8%83%BD%E5%8A%9B/ba-p/14517651",
+   "published": "2026-11-06T11:39:54+00:00",
+   "author": "AngelaDai",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "业务数据从来不缺，缺的是让数据快速转化为决策的路径。SAP S/4HANA Cloud 在 H2 2026 版本中，将 AI 能力深度融入嵌入式分析场景：从 Review Booklet 中的智能洞察、Joule 驱动的 KPI 差异分析 Agent，到报表的一键摘要与自然语言筛选——AI 正在成为每位分析师工作流中的标配，而非额外的工具层。"
+  },
+  {
+   "key": "5f7cb808a95f18aa",
+   "title": "SAP Product Model Viewer Launches on XREAL AURA",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-product-model-viewer-launches-on-xreal-aura/ba-p/14517521",
+   "published": "2026-11-06T11:24:11+00:00",
+   "author": "SarahMei",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Bring hands-free access to 3D product data and interactive work instructions to frontline workers."
+  },
+  {
+   "key": "dc34bd6ecb03bd91",
+   "title": "Joule Work mobile app at SAP TechEd 2026 in Berlin, and two nice new app enhancements.",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/joule-work-mobile-app-at-sap-teched-2026-in-berlin-and-two-nice-new-app/ba-p/14517489",
+   "published": "2026-11-06T14:33:47+00:00",
+   "author": "ThiloBerndt",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "As AI is changing the way how we work, SAP has redesigned the experience for SAP´s users with Joule Work as the main starting point. As most users work in a hybrid if not mobile work environment, the Joule Work mobile app gets more and more attention. This got obvious at SAP TechEd 2026, that took place last week in Berlin."
+  },
+  {
+   "key": "8b8c759ccc0c404a",
+   "title": "Discontinuation of the ABAP Cloud Developer Trial",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/discontinuation-of-the-abap-cloud-developer-trial/ba-p/14517552",
+   "published": "2026-11-06T09:55:48+00:00",
+   "author": "lienards",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Many developers used the ABAP Cloud Developer Trial to explore ABAP Cloud, experiment, learn, and build. \n Starting November 17, the ABAP Cloud Developer Trial will no longer be available for download from Docker Hub, and the corresponding Cloud Appliance Template SAP ABAP Platform 2025 developer edition on SAP HANA will no longer be available for creating appliances. \n Existing ABAP Cloud Developer Trial instances remain usable until their developer licenses expire, but licenses can no longer be extended. \n Where to go next? \n We encourage you to explore the free offerings of SAP Business AI Platform, ABAP environment . For an overview of the available options, see our Get started with SAP Business AI Platform, ABAP environment: Trial Account vs. Free Tier Option . \n As SAP partner you can also use the Test, Demo, and Development offerings available through the SAP Partner Portal . \n A big thank you to everyone who has downloaded, explored, tested, and learned with the ABAP Cloud Developer Trial. We look forward to seeing you on SAP Business AI Platform, ABAP environment. \n FAQ \n Find here some FAQ: \n What offering can I use to explore and learn ABAP Cloud? \n Leverage our free offerings of SAP Business AI Platform, ABAP environment. \n Will the ABAP Cloud Developer Trial be offered again in future? \n No. Leverage our free offerings of SAP Business AI Platform, ABAP environment . \n I am a partner and I use ABAP Cloud Developer Trial for demos. What can I use as an alternative? \n Leverage the offerings of the SAP Partner Portal . \n I am neither an SAP customer nor a partner. What can I use as an alternative? \n Leverage our free offerings of SAP Business AI Platform, ABAP environment . \n What happens to my existing ABAP Cloud Developer Trial instances? \n Existing instances can be used until the related developer license expires. \n What happens to my existing CAL instances? \n Existing instances can be used until the related developer license expires. \n Are any other CAL templates affected? \n No, only the Cloud Appliance Template SAP ABAP Platform 2025 developer edition on SAP HANA is affected. \n Will it be possible to extend the developer license for existing instances? \n No."
+  },
+  {
+   "key": "2abb9ad9c67ac5d2",
+   "title": "LLM Token Optimization at SAP: A Practical Guide for Developers and Business Users",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/llm-token-optimization-at-sap-a-practical-guide-for-developers-and-business/ba-p/14517397",
+   "published": "2026-11-06T09:47:18+00:00",
+   "author": "Rahul_Karda",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "AI tools charge for every word they process — and most of the cost comes from habits that are easy to fix. Long chat sessions, vague prompts, and pasting entire files when the model only needs ten lines can silently multiply your bill without improving the output. This guide gives SAP developers and business users a concrete set of habits and tools to reduce that waste, with before-and-after examples you can act on immediately. No experimentation required."
+  },
+  {
+   "key": "23a5c46c4dd77b76",
+   "title": "Build, Buy, or Configure? Closing an ERP Gap Without Adding a Vendor - Part 2",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/build-buy-or-configure-closing-an-erp-gap-without-adding-a-vendor-part-2/ba-p/14515906",
+   "published": "2026-11-06T09:44:19+00:00",
+   "author": "pascale_mwavaga",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Three ways to close a gap, and only one of them fit \n In Part 1 , I described the gap: SAP Business One cannot print inventory barcode labels from a posted Goods Receipt PO. \n This post is about what happened next: I did not design the solution immediately and wrote nothing. I spent time deciding which of three roads to take, then living with the consequences of that choice through the solution's design. \n\n Approach \n What it gives you \n What it costs an SMB (Small and Medium-sized Business) \n\n Buy a label management product \n Proper label designer, printer fleet management, mature ZPL handling \n New license line, new integration surface, a tool only one person learns \n\n Build a custom SDK add-on \n Exactly the behavior you specify, no third-party limits \n A developer you do not have, and an add-on that must be re-tested every upgrade \n\n Configure what is already owned \n No new vendor, no new skillset, maintainable by any B1 consultant \n You inherit the limits of the tools you have \n\n For a large enterprise, buying is usually the right choice. Label management is a real discipline, and the products are good at it. \n For this client, it was the wrong answer, not because of the license cost. It was wrong because of what I call the second-consultant test: when I leave, can the next person who touches this system understand it, change it, and not be afraid of it? \n A purchased label engine means the next consultant needs to know SAP Business One and that product. A custom add-on means they need a developer. Crystal Reports and B1UP mean they need skills that every SAP Business One consultant already has. \n That test is a luxury in enterprise work and a survival requirement in the SMB segment. SMBs change consultants. They change partners. They go eighteen months between touching a system. Anything that only one person understands is a liability with a delay fuse on it. \n So: configure. Use Crystal Reports for the label itself, Boyum B1UP for the user interaction, and the Zebra printer as a plain Windows printer. \n The architecture, end to end \n\n The Universal Function is highlighted because it is the hinge. It is the only component that talks to both the SAP form above it and the report below it, so it is where almost every design decision ended up: what values to ask for, in what order, with what defaults, and what to do when one of them doesn't exist. \n Four questions, and why each one is a business requirement \n The popup asks the user four things. Every one of them exists because a real situation on the floor demanded it, and I think the mapping is worth spelling out, because this is where a technical design either absorbs the warehouse's reality or fights it. \n\n What the popup asks \n Why it has to ask \n\n Item \n A GRPO regularly has eight or twelve lines. Some items in the list could have a different item code. \n\n Bin location \n A receipt can be split across bins. The label has to say where this particular stock went, not where the item usually lives. \n\n Lot / batch \n Some materials are batch-managed and some are not, and both arrive on the same truck. \n\n Number of copies \n\n Three quantities of an item are received into stock, they are of the same lot, and are placed into the same bin. This means one label printed three times. \n The button sits in the document footer, next to SAP's own OK and Cancel. Every standard button is still present and still in its usual place, which is exactly the point of the next section. \n The same label in the Crystal Reports designer. Five fields and a barcode on a small canvas: the entire output side of this solution. \n The whole user interaction: four fields and an OK button. Note the bin location here reads 00WH-00-ZZ-00-1, while the printed label above shows only 00-ZZ-00-1. The warehouse prefix is stripped on the label by a display formula in the report, because the people reading the label already know which warehouse they are standing in and the field is narrow \n The design decision I would make again \n For my first version, I put the button on the form using B1UP's Function Button feature. It worked, and then on some machines the GRPO form resized itself, and the standard SAP buttons along the bottom vanished. \n The fix was to switch to the Item Placement Tool and connect it to the Universal Function through a Validation configuration instead. Slightly more configuration, three objects rather than one, and the standard form layout is untouched. \n As all consultants know, users have little tolerance for a system that behaves unpredictably. \n One small thing that matters more than it should \n The Boyum variables popup ships with a default title: Define Survey Variables. If you leave it, that is what your warehouse team reads every single time they print a label. \n Set a title. I used Print GRPO Labels. It takes ten seconds and it is the difference between a feature that feels built for them and a feature that feels like a developer tool someone left switched on. \n Conclusion \n What this solution does is unremarkable: a button, a dialog, a report, a printer. What shaped it was the time spent choosing among three roads, and a single question: when I leave, can the next person who touches this system maintain it? \n That question ruled out both obvious answers. A purchased label engine would have been more capable, and would have left the client dependent on a product nobody there knows. A custom add-on would have fitted exactly, and would have left them dependent on a developer they do not employ. Configuring tools they already owned was the least impressive of the three options and the only one that survives my leaving. \n Four parameters, three configuration objects, one Crystal report, no custom code. For an SMB (Small and Medium-sized Business) running SAP Business One as its entire stack, that is usually the shape a workable answer takes. \n In Part 3, I will go through the nine things that broke along the way, including one that showed me my data model had quietly assumed every item was batch-managed."
+  },
+  {
+   "key": "f042c63eb1b8128d",
+   "title": "SAP’s New Fiori App Supports Long-Term Asset Input VAT Compliance in China",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/sap-s-new-fiori-app-supports-long-term-asset-input-vat-compliance-in-china/ba-p/14517556",
+   "published": "2026-11-06T09:42:12+00:00",
+   "author": "Yu_Ada",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "With China’s new input VAT rules for long-term assets taking effect in 2026, SAP introduces a localized Fiori app to help businesses maintain traceable compliance data and keep pace with evolving regulations."
+  },
+  {
+   "key": "76676837568729e0",
+   "title": "Smarter Compliance Management: Introducing Exemptions in Cloud ALM Configuration & Security Analysis",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/smarter-compliance-management-introducing-exemptions-in-cloud-alm/ba-p/14517549",
+   "published": "2026-11-06T10:23:17+00:00",
+   "author": "RamyaHV",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The Reality of Enterprise Compliance \n In any large SAP landscape, achieving 100% compliance on every security check, on every system, always, is rarely realistic. Software version limitations, ongoing implementation projects, formally accepted risks, and vendor timelines all create situations where a system legitimately cannot meet a requirement within a given timeframe. \n In many organisations, Security Officers may find themselves facing an uncomfortable trade-off, either living with compliance reports with \"false failures\" that erode trust in the data or removing systems from check scope entirely and losing visibility. Neither option is acceptable for serious security governance. \n Exemptions in SAP Cloud ALM Configuration & Security Analysis (CSA) changes that equation. \n\n What Are Exemptions? \n Exemptions are a formal, auditable mechanism that allows Security Officers to override non-compliant check results for specific systems, services, or configuration item values within a defined time window. \n This enables CSA to produce two independently queryable views of your landscape: \n Security Report -> The actual security posture - raw check results, no overrides \n Compliance Report-> Process compliance - reflecting formally accepted deviations and grace periods \n Both views coexist. You never lose sight of the real security state, while compliance reporting stays clean and meaningful. \n\n When Do You Need an Exemption? \n Some example real-world scenarios drive this feature: \n Grace Period for a Newly Introduced Requirement : A new security note arrives, and IT teams need time to roll it out across dozens of systems. A centrally defined grace period applies, reporting systems as compliant during the transition window rather than immediately flagging everything as non-compliant. \n Formally Accepted Risk: Some systems simply cannot satisfy a requirement due to a software version constraint, a third-party dependency, or implementation effort that outweighs the risk. After formal risk acceptance, Security Officers can overrule the check status for those specific systems with a time boundary that enforces the organization's periodic review cadence. \n Acceptable Deviations During Validation : During a validation review, certain configuration items deviate from the compliance rule but are deemed acceptable. For example, specific user IDs with special authorizations or known destinations used for a defined purpose. Security Officers can allow-list those specific values to keep compliance reports grounded in reality. \n\n How Exemptions Work in Practice \n CSA supports Exemptions for both SAP delivered checks and customer definable Custom Checks . Two types of Exemptions are supported. \n Exempted Systems / Services \n Removes specific systems or services from a check's scope, identified by their SID. Ideal for the grace period and accepted-risk scenarios above. \n Every entry carries a validity period, a behaviour (Overrule or Ignore), and an automatically derived status. \n Exempted Configuration Items \n For checks where specific configuration item values needs to be treated as acceptable rather than non-compliant. \n When a compliance rule does not fully specify all key field values, individual values can be explicitly exempted and treated as compliant for a defined scope and period. \n\n Key behaviour’s: \n Overrule (Compliant) -> the system shows as green in results, with a visible \"exempted\" indicator \n Ignore -> the system is hidden entirely and excluded from compliance calculation \n\n This is the right tool when selected items are explicitly known-good and should not count against compliance. \n\n A Clear Lifecycle \n Every exemption moves through a predictable lifecycle - Pending -> Active -> Expired , based on the validity period set by the Security Officer. Status transitions happen automatically, and multiple exemptions can exist on the same check if their periods don't overlap for the same scope. \n\n Switching Between Views Instantly \n The validation results view applies exemptions by default. A global Apply Exemptions toggle let’s any user switch instantly between: \n With Exemptions (default): results reflect the overruled, process-compliant view \n\n When a result is overruled as compliant, a dedicated column marks it as exempted, and the detail view shows a side-by-side comparison, so context is never lost. \n\n Without Exemptions : results reflect the actual security posture \n\n Summary \n Exemptions in SAP Cloud ALM Configuration & Security Analysis give Security Officers the structured mechanism they need to maintain credible, useful compliance reports in the real world without sacrificing visibility into the actual security posture. Time-bound and role-governed, they bridge the gap between security policy and operational reality. \n If you are a Security Officer managing compliance across a complex SAP landscape and have been working around the absence of a formal exemption mechanism, this feature is built for you. \n Need help in creating a custom check yourself? Here you go Create Custom Checks . \n For product questions or feedback on the Exemptions feature, reach out to us in the comments sections."
+  },
+  {
+   "key": "3feeacd2ceed598b",
+   "title": "SERIES_GENERATE_DATE in SAP HANA: Syntax, Output and Examples",
+   "link": "https://community.sap.com/t5/integration-blog-posts/series-generate-date-in-sap-hana-syntax-output-and-examples/ba-p/14515626",
+   "published": "2026-11-06T08:37:01+00:00",
+   "author": "Chaitanya444",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Need a row for every day, week or month in a range, even when your data has gaps? This post explains how SAP HANA’s SERIES_GENERATE_DATE works, covering its syntax, output columns and the exclusive end-date rule, with five small examples you can run straight away."
+  },
+  {
+   "key": "c63165d721b09da9",
+   "title": "Talk to Your HR System: Connecting Claude AI to SAP API Management with the Model Context Protocol",
+   "link": "https://community.sap.com/t5/integration-blog-posts/talk-to-your-hr-system-connecting-claude-ai-to-sap-api-management-with-the/ba-p/14514522",
+   "published": "2026-11-06T08:19:43+00:00",
+   "author": "Narasimha19",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Step-by-step guide to building an AI assistant that creates, reads, updates and deletes HR records in natural language, using Claude Desktop, a Node.js MCP server and SAP API Management on a free BTP Trial."
+  },
+  {
+   "key": "cb52542a5335a027",
+   "title": "BAPI not updating during mass update",
+   "link": "https://community.sap.com/t5/technology-q-a/bapi-not-updating-during-mass-update/qaq-p/14517866",
+   "published": "2026-11-06T15:21:24+00:00",
+   "author": "ricky_shaw",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Experts, \n I am calling a std BAPI inside a customer enhancement which gets called with std tcode. During mass processing this BAPI is not updating 50% of the records. \n So i am planning to wrap this BAPI in a sequence with BAPI*TRAnS**COMMIT inside a Z*FM & then call that Z*FM inside this Customer enhancement. \n Q1 ) Should i use this BAPI in the Z**FM or is it enough if i use BAPI*TRAnS**COMMIT in this Z**FM ? \n After that, In what way should i call this Z**FM ? \n\n Q2) Call ZFM*** starting new task \n or \n Q3) Call ZFM* in update task \n or \n Q4) Call ZFM** in background \n\n Please suggest. Awaiting your response."
+  },
+  {
+   "key": "bf3dafd1236d74ba",
+   "title": "Groovy V2 and HmacSHA256",
+   "link": "https://community.sap.com/t5/technology-q-a/groovy-v2-and-hmacsha256/qaq-p/14517822",
+   "published": "2026-11-06T14:57:14+00:00",
+   "author": "wilbertkarremans",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "We are converting groovy from 1.1 to 2.0. We need to make use of HmacSHA256. \n\n We can no longer use library: org.apache.commons.codec.binary.Hex \n In groovy 1.1 our script was working. \n This sample script does not run: \n package script.v2 \n import com.sap.it.script.v2.api.Message \n def Message processData(Message message) { \n try { \n message.setBody(javax.crypto.Mac.getInstance(\"HmacSHA256\").getAlgorithm()) \n } \n catch (Exception e) { \n message.setBody(e.getClass().getName() + \": \" + e.getMessage()) \n } \n return message \n } \n We get error: java.lang.Exception: class javax.crypto.Mac (in unnamed module &#64;0x4123dbf4) cannot access class sun.security.util.Debug \n Who can help?"
+  },
+  {
+   "key": "e301e08b8f095936",
+   "title": "Badi for MM02 in S/4HANA Cloud Public Edition",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/badi-for-mm02-in-s-4hana-cloud-public-edition/qaq-p/14517774",
+   "published": "2026-11-06T14:17:16+00:00",
+   "author": "Dirk",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear all, \n I am looking for a Badi that works for GUI app MM02 in the same way like CMD_PRODUCT_VALIDATE works for Fiori app Manage Product Master Data. \n The purpose in mm02 is to validate the value of a field and push a message on the screen if a certain value is found in the field during saving the change. \n Any idea is welcome. \n Thank you. \n BR \n Dirk"
+  },
+  {
+   "key": "a02b338186341c32",
+   "title": "Is SAP Event Mesh Bridge to Azure Event Grid still available and if so, where can I find out more?",
+   "link": "https://community.sap.com/t5/technology-q-a/is-sap-event-mesh-bridge-to-azure-event-grid-still-available-and-if-so/qaq-p/14517742",
+   "published": "2026-11-06T13:34:25+00:00",
+   "author": "daviddasilva",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello, \n I have seen some older press releases and blogs around a service that will natively connect SAP Event Mesh to Azure Event Grid. \n Here is one example https://community.sap.com/t5/technology-blog-posts-by-sap/sap-event-mesh-event-connector-to-microsoft-azure-to-go-beta/ba-p/13542280 \n The issue is that I cannot seem to find any information about this in SAP Help pages, or in me.sap.com. \n Is this an active service or has it been replaced by something else? \n Any information that can be shared would be greatly appreciated. \n Kind regards, \n David"
+  },
+  {
+   "key": "a53cb9efbe15d102",
+   "title": "SAP Build Work Zone apps via Content provider result in 500 internal server error",
+   "link": "https://community.sap.com/t5/technology-q-a/sap-build-work-zone-apps-via-content-provider-result-in-500-internal-server/qaq-p/14517709",
+   "published": "2026-11-06T12:56:22+00:00",
+   "author": "RouvenGob",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi everyone, \n\n we are exposing IU5 Apps via Content provider (DesignTime via \"/sap/bc/ui2/cdm3/entities\" endpoint) from AS ABAP to SAP Build Work Zone. Some apps work, some throw a 500 exception \"Failed to load resource: the server responded with a status of 500 ()\" . \n\n When accessing the App via FLP we can access it. Via SAP Build Work Zone we get an 500. \n This is the App \n\n I already checked the following notes: \n 3603759 - SAP Fiori Launchpad - 500 Interner Serverfehler bei Verwendung des Service-Handlers /UI2/CL_CDM3_EXPO_REST_HANDLER - SAP for Me \n 3365227 - ABAP-basierte UI5-Apps können in \"SAP Build Workzone, Standard Edition\" nicht geöffnet werden - SAP for Me \n 3580748 - Content-Kanal für SAP S/4HANA Cloud in Work Zone: 500 Interner Serverfehler und/oder 401 nicht autorisiert - SAP for Me \n Greetings \n Rouven"
+  },
+  {
+   "key": "3c4e5f757737d45a",
+   "title": "Can a single DP Agent connect to one SAP Datasphere tenant on one side, and multiple source systems?",
+   "link": "https://community.sap.com/t5/technology-q-a/can-a-single-dp-agent-connect-to-one-sap-datasphere-tenant-on-one-side-and/qaq-p/14517677",
+   "published": "2026-11-06T12:12:07+00:00",
+   "author": "SAPSupport",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi SAP, \n Please help us with the following query. \n Our understanding is that a single DP Agent can connect to one SAP Datasphere tenant on one side, and multiple source systems (e.g BW/4HANA & S4). Is that correct? \n Thanks! \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+  },
+  {
+   "key": "aa6f67d32678eec1",
+   "title": "Asset Migration One company code to another company code",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/asset-migration-one-company-code-to-another-company-code/qaq-p/14517598",
+   "published": "2026-11-06T10:53:46+00:00",
+   "author": "sriniericext",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "We need your assistance regarding migration of Asset from one company code to another company code along with Ordinary depreciation for current year."
+  },
+  {
+   "key": "8b8dcc4434289b01",
+   "title": "Plant not determining in the order",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/plant-not-determining-in-the-order/qaq-p/14517594",
+   "published": "2026-11-06T10:49:05+00:00",
+   "author": "Tejas_Kulkarni1",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "We are facing issues for one material for which plant is not determining automatically in the sales order. The material is maintained for that plant in MM03. \n Everytime User need to manually select plant in the sales order."
+  },
+  {
+   "key": "78d95fcf3b4432ec",
+   "title": "Unable to transport SAC Dimensions with data, error: Couldn’t import object: ;null;",
+   "link": "https://community.sap.com/t5/technology-q-a/unable-to-transport-sac-dimensions-with-data-error-couldn-t-import-object/qaq-p/14517580",
+   "published": "2026-11-06T10:31:32+00:00",
+   "author": "TOPPER_QACTIONS",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "I am trying to transport SAC Dimensions with data, but I keep receiving the error 'Couldn’t import object: 'null' for all types of dimensions. This error happens during the import process and affects all dimension types I attempt to transfer."
+  },
+  {
+   "key": "14e2ef79bc04675c",
+   "title": "Payment Request in TRM",
+   "link": "https://community.sap.com/t5/financial-management-q-a/payment-request-in-trm/qaq-p/14517544",
+   "published": "2026-11-06T09:25:23+00:00",
+   "author": "NermIN",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello, \n I have a question regarding the generation of payment requests based on the cash flows of a single deal. \n I have one deal. For the payment date of December 15, 2026, there are 5 cash flows of 1,200 each. I am generating payment requests using TBB1, and the system creates 5 separate payment requests. Is it possible to create a single payment request that covers all 5 cash flows of 1,200? I am not referring to grouping items into a single payment within F111; rather, I am interested in creating a single payment request object. \n Thank you"
+  },
+  {
+   "key": "a152094a9cfaa04d",
+   "title": "KSU5 default setting Allocation cockpit impact check if we disable",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/ksu5-default-setting-allocation-cockpit-impact-check-if-we-disable/qaq-p/14517528",
+   "published": "2026-11-06T08:54:11+00:00",
+   "author": "Manish_Patil63",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi SAP Team, \n Recently we have upgraded our SAP system from Version 2021 to SAP version 2025 and after upgrade we have observed that “Allocation cockpit by default” setting has been enabled, previously it was disable in SAP version 2021. Due to this reason view for screen execution was changed. So, users want to confirm that they can bring back the old version and is there any impact of this if we disable this setting. \n If there is no impact, then we can capture this setting in TR and move these changes or its client specific one-time setting? \n We have checked KBA doc 3536090 no major concern with setup but impact wise need to check with SAP team"
+  },
+  {
+   "key": "c2138e27bbd79546",
+   "title": "Receiving 429 Too many Request Error.",
+   "link": "https://community.sap.com/t5/technology-q-a/receiving-429-too-many-request-error/qaq-p/14517526",
+   "published": "2026-11-06T08:48:17+00:00",
+   "author": "bhushan_gawand",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Team, \n\n We have exposed SAP Standard APIs via SAP BTP APIM to external consumers. While making an call to SAP it is observed that team is facing 429 status code saying too many request. \n\n But in our landscape we don't use any quota / spike arrest policy to manage the Traffic. Can you please let us know if we have any default count for Rate limiting from SAP itself like we have 55 seconds for the timeout. \n\n Please check and let us know if you need more inputs from us."
+  },
+  {
+   "key": "4539086262b7e3a2",
+   "title": "テーブルVBBE[個々の品目に対する需要情報]の挙動について",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/%E3%83%86%E3%83%BC%E3%83%96%E3%83%ABvbbe-%E5%80%8B%E3%80%85%E3%81%AE%E5%93%81%E7%9B%AE%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E9%9C%80%E8%A6%81%E6%83%85%E5%A0%B1-%E3%81%AE%E6%8C%99%E5%8B%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/qaq-p/14517512",
+   "published": "2026-11-06T08:15:58+00:00",
+   "author": "S0002356860",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "テーブルVBBE[個々の品目に対する需要情報]の挙動について質問です。 \n VBBEは、受注伝票登録～出荷伝票登録までエントリ登録され、出庫確認処理で、エントリが物理削除される認識です。 \n 具体的には、以下の挙動と認識しております。 \n\n ＜VBBEテーブル＞ \n ① 受注伝票登録時：受注伝票番号・明細番号をキーにエントリ登録される。 \n ② 出荷伝票登録時：出荷伝票番号・明細番号のエントリが追加登録される。 \n 　　その際、①受注伝票のエントリの「未処理数量」「利用可能確認数量」がゼロになる。"
+  },
+  {
+   "key": "ac19849ad1ea9ac4",
+   "title": "Request to confirm the availability of migration template for In-Process Inspection data (Inspection",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/request-to-confirm-the-availability-of-migration-template-for-in-process/qaq-p/14517506",
+   "published": "2026-11-06T08:09:09+00:00",
+   "author": "broshan",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Experts, \n We are currently performing master data migration activities for SAP S/4HANA Cloud Private Edition 2025. \n As part of the Quality Management (QM) implementation, we need to migrate In-Process Inspection data (Inspection Type 03) , including inspection characteristics assigned to operations/phases in the Master Recipe. \n However, we could not identify a standard migration template or migration object in the SAP S/4HANA Migration Cockpit that supports uploading inspection characteristics and their assignments to Master Recipe operations/phases. \n Is there any standard migration object, report, API/BAPI, or other option to enable mass migration of these inspection characteristic assignments. \n Thank you"
+  },
+  {
+   "key": "66fb8f5fa7326faf",
+   "title": "Unable to install BW Modeling tools within HANA Studio",
+   "link": "https://community.sap.com/t5/technology-q-a/unable-to-install-bw-modeling-tools-within-hana-studio/qaq-p/14517503",
+   "published": "2026-11-06T08:06:43+00:00",
+   "author": "ARJONAA",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Error when adding BW Modeling Tools software within HANA Studio using jar script"
+  },
+  {
+   "key": "8aed79907f0defa4",
+   "title": "FCO_COGS_SPLIT_REPOST not showing any data for Goods issue document",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/fco-cogs-split-repost-not-showing-any-data-for-goods-issue-document/qaq-p/14517501",
+   "published": "2026-11-06T08:05:44+00:00",
+   "author": "vallari1",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "FCO_COGS_SPLIT_REPOST not showing any data for Goods issue document"
+  },
+  {
+   "key": "256432ea96666726",
+   "title": "SAP Datasphere – SuccessFactors connection: authorizations and Employee ID vs. User ID",
+   "link": "https://community.sap.com/t5/technology-q-a/sap-datasphere-successfactors-connection-authorizations-and-employee-id-vs/qaq-p/14517498",
+   "published": "2026-11-06T08:02:06+00:00",
+   "author": "lex84",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello SAP Support, \n we have successfully created a connection from SAP Datasphere to SAP SuccessFactors following the SAP documentation: \n https://help.sap.com/docs/SUPPORT_CONTENT/datasphere/6383693465.html \n The connection itself is working, but we have a question regarding the authentication and user mapping."
+  },
+  {
+   "key": "7141ff6e193f297a",
+   "title": "AENR Object Link Support in SAP S/4HANA Cloud Public Edition DMS",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/aenr-object-link-support-in-sap-s-4hana-cloud-public-edition-dms/qaq-p/14517480",
+   "published": "2026-11-06T07:37:45+00:00",
+   "author": "DKN1",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello, \n we are currently configuring Document Management (DMS) in SAP S/4HANA Cloud Public Edition (release 2608) and are trying to set up a custom document type that should only allow linking to a Change Master Record (AENR) via the object link configuration. \n Is the object type AENR (Change Master / Änderungsstamm) officially supported as an object link for DMS document types in SAP S/4HANA Cloud Public Edition? \n\n Any guidance or reference to an official SAP note or KBA would be greatly appreciated."
+  },
+  {
+   "key": "e18b6e655bf4ece1",
+   "title": "Purchase requisition",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/purchase-requisition/qaq-p/14517467",
+   "published": "2026-11-06T07:15:00+00:00",
+   "author": "vramasubramanian",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello SAP Community, \n In our system, we process a high volume of non-stock / non-valuated materials ( NLAG material type). We maintain valid Purchasing Info Records (PIRs) with agreed pricing, but we deliberately do not maintain Accounting Views for these NLAG part numbers. \n Currently, when creating a Purchase Order (PO), the pricing automatically populates from the PIR. However, during Purchase Requisition (PR) creation (e.g., via ME51N), the valuation price does not automatically populate from the PIR unless a user manually clicks \"Assign Source of Supply\" and copies the price over into the PR valuation price field. \n Our Questions: \n Is there a standard configuration or source-determination setting in S/4HANA / ECC to automatically derive and populate the PR Valuation Price directly from the valid PIR for NLAG materials upon entering the material and plant? \n If standard configuration is not supported without an Accounting View, what is the recommended BADI / User Exit (e.g., ME_PROCESS_REQ_CUST or EXIT_SAPLMEREQ_005 ) or BAPIs to automatically map the PIR net price into the PR valuation price during item creation/validation? \n Thank you for your insights and best practice recommendations! \n Vijay"
+  },
+  {
+   "key": "af74fef08554108f",
+   "title": "ME51N future plans",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/me51n-future-plans/qaq-p/14517454",
+   "published": "2026-11-06T07:03:54+00:00",
+   "author": "vramasubramanian",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Our team is standardizing our Purchase Requisition workflow on ME51N to improve efficiency and potentially explore barcode functionality. Could you please confirm the following: \n 1. ME51N Support Trajectory: Is ⁠ME51N⁠ fully supported for ongoing use across S/4HANA On-Premise and Private Cloud environments (per SAP Notes 2267449 and 493318)? \n 2. Legacy Status: Can you confirm that legacy ⁠ME51⁠ remains completely deprecated with no ongoing maintenance, making ⁠ME51N⁠ the mandatory baseline GUI transaction alongside Fiori alternatives (e.g., App F2229)? \n Regards, \n Vijay"
+  },
+  {
+   "key": "c216ef9751d534ae",
+   "title": "The Network does not inherited the ACP from the top project.",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/the-network-does-not-inherited-the-acp-from-the-top-project/qaq-p/14517118",
+   "published": "2026-11-05T14:31:24+00:00",
+   "author": "S0025790032",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "During the tests in QAS, we create a project steap by steap and in the end the Network, however bose on all correct configuration the ACL did not inhrit the ACL."
+  },
+  {
+   "key": "34f6ccbc33b9a35b",
+   "title": "Hello World!",
+   "link": "https://community.sap.com/t5/welcome-corner-discussions/hello-world/m-p/14517541#M10804",
+   "published": "2026-11-06T09:22:19+00:00",
+   "author": "AndCon",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "Hi everyone, \n My name is Andreas, and I’m an SAP ALM Consultant with around 10 years of experience in Application Lifecycle Management, primarily focusing on SAP Solution Manager and SAP Cloud ALM. \n Currently, I’m focusing on SAP Cloud ALM, exploring new possibilities for ALM processes, toolchain integration, and the transition from traditional SAP Solution Manager environments to modern cloud-based ALM solutions. \n I'm always interested in exchanging ideas and sharing experiences and practical approaches within the SAP community. \n Looking forward to connecting and having inspiring discussions with you all! \n -Andreas"
+  },
+  {
+   "key": "2b203d020638a876",
+   "title": "Connecting with the SAP Community – Sharing Knowledge and Experiences",
+   "link": "https://community.sap.com/t5/welcome-corner-discussions/connecting-with-the-sap-community-sharing-knowledge-and-experiences/m-p/14517490#M10802",
+   "published": "2026-11-06T07:56:08+00:00",
+   "author": "RAJESH_KHATEI",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "Excited to be part of the community, looking forward in engaging and contributing to the community. \n i have around 3 year experience in SAP IS-U (Electricity). \n Best regards \n Rajesh khatei"
+  },
+  {
+   "key": "e1d580d89295a740",
+   "title": "New Research Finds AI Is Moving Faster Than Organizations Can Adapt",
+   "link": "https://news.sap.com/2026/11/new-economist-enterprise-research-ai-moving-faster-than-organizations-can-adapt/",
+   "published": "2026-11-06T13:15:00+00:00",
+   "author": "Eric Annino",
+   "tags": [
+    "Artificial Intelligence",
+    "Cloud",
+    "Enterprise resource planning",
+    "Financial management",
+    "Human capital management",
+    "Supply chain management",
+    "Technology",
+    "Economist Enterprise"
+   ],
+   "feed": "SAP News Center",
+   "kind": "news",
+   "text": "Executives today face no shortage of pressure. \n Run your business on an AI cloud ERP built for companies of any size \n\n Learn how \n\n Finance leaders are navigating capital constraints and economic uncertainty. Supply chain and operations leaders are balancing efficiency with resilience in an increasingly unpredictable environment. HR leaders are working to address critical skills gaps while preparing the workforce for new technologies. \n\n Yet new research from Economist Enterprise sponsored by SAP—based on a survey of 2,015 C-suite executives at midsize organizations, those with revenues of $50 million to $1 billion, across the Americas, EMEA, and Asia-Pacific—found a common thread running through all three functions. For these organizations, AI adoption is consistently outpacing the people, processes, and capabilities needed to realize its full value. \n\n Across finance, HR, and supply chain, the challenge is no longer whether to adopt AI. It’s how to ensure organizations are ready for it. \n\n Across finance, HR, and supply chain, AI adoption is moving faster than the workforce, processes, and capabilities needed to support it. \n\n Finance leaders see AI as an equalizer \n\n For CFOs at midsize organizations, AI represents more than an efficiency opportunity. \n\n Capital availability and financing costs rank among the most pressing concerns for 41% of finance leaders, a higher percentage than at larger organizations. Against that backdrop, AI is increasingly viewed as a way to help companies compete with organizations that have historically benefited from deeper resources. \n\n Notably, reducing labor costs ranks last among CFOs’ AI objectives, cited by just 16% of respondents. Instead, finance leaders are focused on improving operational efficiency (41%), accelerating innovation (31%), and modernizing legacy systems (30%). \n\n The challenge is execution. Sixty-six percent of CFOs say AI adoption is moving ahead of workforce transformation efforts. The findings suggest that finance leaders must play a broader role in transformation by connecting technology investments to the capabilities and skills required to generate value. \n\n Sixty-six percent of CFOs say AI adoption is consistently running ahead of workforce transformation. \n\n Read the full report: Advantage Under Pressure: How CFOs Are Navigating AI and Capital Trade-Offs \n\n Supply chain and operations continue to gain influence \n\n The research also highlights the growing strategic role of operations leaders. \n\n Nearly half of C-suite executives rank supply chain, procurement, and operations among their organization’s three most influential functions, placing them on par with finance and behind only sales and technology. \n\n That influence comes with growing responsibilities. Forty-three percent of operations leaders cite supply chain disruption as a top concern, while 38% point to operational resilience. Two in five identify balancing efficiency and resilience as their defining challenge, a figure that rises to 48% in manufacturing organizations. \n\n AI presents significant potential, but results remain mixed. Only 47% of operations leaders at midsize companies report measurable value from AI investments, compared with 62% at organizations with revenues exceeding US$1 billion. \n\n Just four percent say AI and workforce transformation are advancing as fully integrated initiatives, while 59% say AI adoption is moving ahead of workforce change. \n\n The data suggests that organizations will create value not simply through AI investment, but through redesigning workflows, skills, and operating models around new technologies. \n\n Only four percent of operations leaders say AI and workforce transformation are advancing as fully integrated initiatives. \n\n Read the full report: Building for a World of What-Ifs: Navigating Resilience, Efficiency and Disruption \n\n HR is taking on more responsibility than ever \n\n No function is experiencing more rapid change than HR. \n\n Nearly 74% of CHROs say their function is significantly more involved in workforce transformation than it was three years ago, the highest rate of change among C-suite functions. \n\n The arrival of AI has intensified the challenge. More than half (54%) of CHROs identify workforce skills as the area least prepared for AI transformation. CHROs are also more than four times as likely as their executive peers to identify skills shortages as requiring immediate attention. \n\n At the same time, many organizations are shifting budgets toward technology investments, creating additional pressure on HR teams to demonstrate their strategic value. \n\n The opportunity for HR is significant. According to BCG , 70% of the effort required for AI transformation involves people and processes rather than technology itself. As organizations scale AI initiatives, workforce readiness may prove just as important as technological readiness. \n\n Fifty-four percent of CHROs identify workforce skills as the area least prepared for AI transformation. \n\n Read the full report: The Business of People: How CHROs Are Reshaping Tomorrow’s Workforce \n\n The AI readiness gap is also an opportunity \n\n Taken together, the three reports point to a common conclusion: organizations are moving quickly on AI, but often in fragmented ways. \n\n Finance is deploying AI while workforce transformation struggles to keep pace. Operations is embedding AI into business processes while skills gaps persist. HR is working to prepare employees for a future arriving faster than many organizations expected. \n\n For growing companies, this gap represents both a risk and an opportunity. Midsize organizations often have flatter structures and greater agility than larger enterprises, enabling them to align technology, people, and processes more quickly. \n\n The research suggests that success will depend less on how much organizations invest in AI and more on how effectively they connect AI initiatives with workforce transformation and business process change. Organizations that integrate those efforts stand the best chance of turning AI investments into measurable business value. \n\n The organizations generating the most value from AI aren’t necessarily investing more. They’re integrating technology, people, and processes more effectively. \n\n To hear more about this research directly from Economist Enterprise experts, join one of our upcoming webinars . \n Subscribe to the SAP News Center newsletter to receive news, stories, and updates each week \n\n Sign up now"
+  },
+  {
+   "key": "c449285c8f1d9d11",
+   "title": "What Manufacturers Can Learn from ifm’s Digital Manufacturing Journey",
+   "link": "https://news.sap.com/2026/11/what-manufacturers-can-learn-from-ifm/",
+   "published": "2026-11-06T12:15:00+00:00",
+   "author": "Anne Sailer",
+   "tags": [
+    "Customers",
+    "Industries",
+    "Supply chain management",
+    "Customer story",
+    "Manufacturing",
+    "SAP Digital Manufacturing",
+    "SAP Supply Chain Management"
+   ],
+   "feed": "SAP News Center",
+   "kind": "news",
+   "text": "For many manufacturers, years of growth have resulted in complex production environments. Site-specific applications, custom interfaces, and locally optimized processes often solve immediate business needs, but they can also make it more difficult to scale innovation, maintain systems, and drive consistency across a global production network. \n\n Today, manufacturers are looking to simplify through standardized digital platforms that can support global operations, improve visibility, and provide a foundation for future innovation. \n Boost automation and run autonomous manufacturing with SAP Digital Manufacturing \n\n Learn more \n\n When growth creates complexity \n\n As a global manufacturer of sensor and automation technology with around 9,000 employees worldwide, ifm electronic GmbH operates multiple production sites across Germany and internationally. Over time, individual sites have developed their own integrations between operational technology (OT) systems and enterprise applications, creating a highly individualized manufacturing landscape. \n\n While these local solutions addressed specific requirements, they also increased maintenance effort and complexity. As the company continued to grow, standardization became a strategic priority. \n\n “We were looking for a standard to bring to all production sites and to make use of the solutions already available on the market,” Martin Haury, head of Global IT Business Services, ifm electronic GmbH, said. \n\n Standardization as a strategic choice \n\n When evaluating its future manufacturing landscape, ifm reviewed multiple manufacturing execution solutions and selected the SAP Digital Manufacturing solution. During the evaluation, the team discovered that many of the capabilities it had developed over the years—including production order execution, scheduling, and track-and-trace functionality—were already available as standard capabilities. According to Haury, the majority of more than 100 internally developed functionalities could be covered by the standard solution. \n\n For ifm, the transformation was about more than just replacing custom applications. It was about establishing a standardized manufacturing foundation that could scale globally, increase transparency across operations, and support future innovation. The fact that so many internally developed capabilities were already available within SAP Digital Manufacturing helped accelerate that journey. \n\n Less development, faster adoption \n\n One of the most immediate benefits for ifm was the significant reduction in development effort. Rather than building and maintaining custom functionality, teams could make use of existing capabilities and configure them according to business requirements. \n\n “Our OT colleagues were actually surprised that it’s just parameterizing and the solution is there,” Haury said. \n\n Less development means less maintenance effort and a faster path from concept to deployment, helping ifm introduce standardized processes more efficiently across sites. \n\n Building the future together \n\n Throughout the implementation, cbs Corporate Business Solutions Unternehmensberatung GmbH supported ifm from both a manufacturing and a supply chain perspective. Beyond the technical implementation, the focus was on helping shape a future-ready manufacturing landscape that could scale across locations while remaining aligned with broader business processes. \n\n Implementation partner \n\n The implementation of SAP Digital Manufacturing was carried out in partnership with SAP partner cbs Corporate Business Solutions. The project focused on establishing standardized manufacturing processes and creating a scalable platform for future growth across ifm’s production operations. \n\n Greater visibility across operations \n\n Today, transparency is embedded far more deeply into ifm’s manufacturing operations. Production processes, manufacturing orders, and product availability are visible within a shared digital environment, enabling teams to work from the same information and respond more effectively to changing business requirements. \n\n “Our implementation of SAP Digital Manufacturing is an important step in our digital transformation, setting the stage for a more connected, agile, and data-driven production environment,” Haury said. \n\n As manufacturing networks become increasingly connected, access to consistent and reliable information is becoming essential for scaling operations and driving continuous improvement. \n\n Looking ahead \n\n Following a successful pilot deployment, ifm is preparing to expand the solution across its global production network. The company remains confident in both the approach and the long-term value it can deliver. \n\n More important, the project highlights a broader lesson for manufacturers: the future of digital manufacturing is not about building every capability from scratch. It is about using proven standards, simplifying complexity, and creating a foundation that enables innovation to scale. \n\n For manufacturers evaluating their own transformation journey, standardization is no longer just an IT objective. It is a business strategy for increasing transparency, reducing complexity, and preparing operations for future growth. “We were looking for a standard to bring to all production sites and to make use of integrated solution with seamless data-flow and clear innovation track, like AI,” Haury said. \n\n Explore inspiring customer journeys and discover how companies across industries are transforming their businesses with help from SAP Digital Manufacturing here . \n\n Anne Sailer is part of global product marketing for Manufacturing at SAP SE. \n Birgit Carnatz is part of global product marketing for Manufacturing at SAP SE. \n Subscribe to the SAP News Center for the latest SAP news each week \n\n Sign up today"
+  },
+  {
+   "key": "bb6ff944e77d4fcc",
+   "title": "Did You Know? An SAP Business Data Cloud Series | Season 1, Episode 4 | Data Lineage",
+   "link": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/did-you-know-an-sap-business-data-cloud-series-season-1-episode-4-data/ba-p/14517271",
+   "published": "2026-11-06T21:56:49+00:00",
+   "author": "JoseChicas",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Welcome back to \"Did You Know?\" A series where we shine a light on the SAP Business Data Cloud features that deserve more of your attention. E ach episode is a practical nudge to explore what's already in your hands. Season 1 is all about SAP Datasphere. On this episode, let's talk about Data Lineage"
+  },
+  {
+   "key": "92f196d6f8e1a450",
+   "title": "Accelerate the Suite adoption with SAP-Managed Public Cloud ERP – An Early Adopter Care Program",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/accelerate-the-suite-adoption-with-sap-managed-public-cloud-erp-an-early/ba-p/14500013",
+   "published": "2026-11-06T21:10:20+00:00",
+   "author": "Jimmy3",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP-managed public cloud ERP helps customers focus less on technical integration and more on innovation. Explore what's included in the Early Adopter Care program and how to get involved."
+  },
+  {
+   "key": "473adb640b9dcfbc",
+   "title": "Inventory Management – End of the Year Check Guide",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/inventory-management-end-of-the-year-check-guide/ba-p/14511214",
+   "published": "2026-11-06T21:02:53+00:00",
+   "author": "gabriel_kunz",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "During the end of fiscal year, several checks need to be done under the Inventory Management area to make sure that the stocks and its valuation is consistent to ensure business to run smoothly and audit process to be done without issues. \n This guide provides information on how to perform the most common checks in Inventory Management, the transaction and reports that can be used for it, how to use them correctly and what to do if SAP support needs to be contacted for correction of inconsistencies. \n Each topic also contains the most useful SAP Notes and KBA (Knowledge Based Articles) that can be used to assist you during the checks. \n It is worth noting that the data model for Inventory Management went through several changes upon the release from S/4HANA. If custom check reports are behaving differently from ECC on S/4HANA systems, please check the other post below for more details: \n SAP S/4HANA: Inventory Management Tables New Simplified Data Model (NSDM)"
+  },
+  {
+   "key": "a083fffcf03be48c",
+   "title": "Siemens, GS1 and SAP Demonstrate the Power of the European Business Wallet",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/siemens-gs1-and-sap-demonstrate-the-power-of-the-european-business-wallet/ba-p/14517995",
+   "published": "2026-11-06T19:50:41+00:00",
+   "author": "Monisha_Sharma",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "A New Era for Supplier Trust \n In today's complex global supply chains, knowing who you are doing business with has never been more critical or more difficult. Manual document checks, siloed compliance processes, and the ever-present risk of fraud have long burdened procurement and partner onboarding teams. That is now changing. \n In the Proof of Concept (PoC) completed in August 2026, SAP, Siemens, and GS1 demonstrated that the European Business Wallet (EBW) can fundamentally transform how companies verify, onboard, and trust their suppliers — with speed, security, and regulatory confidence built in from the start."
+  },
+  {
+   "key": "beed7145b3c91b08",
+   "title": "Your rate management checklist for SAP Fieldglass solutions",
+   "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/your-rate-management-checklist-for-sap-fieldglass-solutions/ba-p/14517984",
+   "published": "2026-11-06T19:45:07+00:00",
+   "author": "PeteBoshoff",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Thanks for reading our three-part blog series on optimizing external workforce rates. If you’ve checked out the first two blogs in this series, you’ve learned why contingent workforce rate management is critical and how activating key features in your SAP Fieldglass solutions can help improve your rate governance."
+  },
+  {
+   "key": "573fbdb0bcf55a9a",
+   "title": "The rate management playbook for SAP Fieldglass solutions",
+   "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/the-rate-management-playbook-for-sap-fieldglass-solutions/ba-p/14517978",
+   "published": "2026-11-06T19:41:58+00:00",
+   "author": "PeteBoshoff",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "If you’ve finished reading the first blog in this series, you know that uncontrolled rates for contingent workers are a significant problem for today’s businesses. But how can you best address the need for rate card management? The obvious solution is to improve your use of the rate management capabilities that already exist in your SAP Fieldglass solutions, quickly and with minimal effort."
+  },
+  {
+   "key": "1b0b7e739cf2293a",
+   "title": "Building an Enterprise Data & AI Eco with SAP BDC and Snowflake: Part 1 – SAP SuccessFactors and BDC",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/building-an-enterprise-data-amp-ai-eco-with-sap-bdc-and-snowflake-part-1/ba-p/14515867",
+   "published": "2026-11-06T18:48:17+00:00",
+   "author": "Ravikanth_Indurthi",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP BDC Intelligent Content and Data Packages: Unlocking SuccessFactors Employee Central Data Products."
+  },
+  {
+   "key": "3fe15657a4132856",
+   "title": "SAP CI/CD + CTMS, Part 0: The big picture",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-ci-cd-ctms-part-0-the-big-picture/ba-p/14517958",
+   "published": "2026-11-06T18:13:56+00:00",
+   "author": "AbhishekKumar_SAP",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "A map of the series: one CAP app, built once by SAP CI/CD, moved to a second subaccount by CTMS and tracked in Cloud ALM. The pieces, how they fit, the one idea that would have saved me the most time, and what each part covers."
+  },
+  {
+   "key": "4accc124b16169e9",
+   "title": "SAP Community Voice: Joule Studio Certification, ABAP at SAP TechEd, MCP, and Upcoming Events",
+   "link": "https://community.sap.com/t5/what-s-new/sap-community-voice-joule-studio-certification-abap-at-sap-teched-mcp-and/ba-p/14517820",
+   "published": "2026-11-06T17:36:22+00:00",
+   "author": "fatemehzarei_001",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Catch up on ABAP news from SAP TechEd, explore Joule Studio Certification and MCP, revisit SAP Inside Track Fortaleza, and find your next SAP Community event."
+  },
+  {
+   "key": "a0bb8bf5ff61d028",
+   "title": "FTR_CREATE Annuity: interest calculated after deducting full annuity",
+   "link": "https://community.sap.com/t5/financial-management-q-a/ftr-create-annuity-interest-calculated-after-deducting-full-annuity/qaq-p/14518032",
+   "published": "2026-11-06T20:41:14+00:00",
+   "author": "shady_elhefnawy",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear SAP Team, \n We are creating a loan in FTR_CREATE (TRM) with an Annuity Repayment condition: 1,000,000 EGP, 10% p.a., Act/360, 20 quarterly payments, interest paid in advance. \n Current SAP behavior: \n SAP deducts only the principal portion from the balance and then calculates the interest on what remains. \n Example: (1,000,000 - 38,556.23) x 10% x 92 / 360 = 24,570.23. The annuity is 63,126.46. \n Required behavior: \n The interest should be calculated after deducting the full annuity (principal + interest). \n Example: (1,000,000 - 62,775.61) x 10% x 92 / 360 = 23,951. The annuity is 62,775.61. \n Question: \n Is there a standard setting in FTR_CREATE or customizing to calculate the interest this way? If not, is there an SAP Note or a recommended enhancement? \n The Excel calculation and the cash flow export are available if needed. \n Best regards, \n Shady Osama"
+  },
+  {
+   "key": "45e67b8ec9196407",
+   "title": "Clarification Required on POS Tax-Inclusive Pricing and S/4HANA Tax Determination",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/clarification-required-on-pos-tax-inclusive-pricing-and-s-4hana-tax/qaq-p/14517937",
+   "published": "2026-11-06T16:55:55+00:00",
+   "author": "Victoria_Espinoza",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "We need guidance on POS integration pricing and tax behavior in S/4HANA Cloud Public Edition. \n Pricing requirement: \n The final POS price must be tax-inclusive, with ESP0/EPV0 holding the net price and ZTEG calculating the tax separately (e.g., 100 EGP + 14% ZTEG = 114 EGP). We use custom pricing procedure Z99998 (copied from A73034). \n Questions: \n 1. How to configure ESP0/EPV0 for net price and ZTEG for tax calculation? \n 2. How is the tax-inclusive price transferred to POS? \n 3. Is this supported via standard configuration? \n Tax determination issue: \n Despite changes to the Product Master tax classification, pricing analysis always shows 0 – Tax Exempt. \n Questions: \n 1. What master data/config drives tax classification in POS inbound pricing? \n 2. Why does the tax exempt result persist after Product Master changes? \n 3. Is additional configuration needed for ZTEG to determine the correct tax rate? \n\n Thanks!"
+  },
+  {
+   "key": "ab93f38ad04ed451",
+   "title": "S/4HANA Cloud Private Edition (012) - SAP Cloud Connector(SCC)をアップグレードする方法",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/s-4hana-cloud-private-edition-012-sap-cloud-connector-scc-%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/ba-p/14518067",
+   "published": "2026-11-07T00:30:23+00:00",
+   "author": "KevinYin",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP S/4HANA Cloud Private Editionにおいて、SAP Cloud Connector(以下、SCC)は、現時点ではお客様環境にデフォルトで提供されています。その構成は下記のとおりです。 \n 開発/検証環境: シングル構成(1台のサーバーを利用) \n 本番環境: 2台(Master/Slave)構成による冗長化 \n 本記事では、SR依頼によりSCCをアップグレードする方法についてご紹介します。 \n SCCをアップグレードする際は、下記のService Request(以下、SR)をご利用ください。 \n SRテンプレート: Upgrade SAP Cloud Connector \n\n SCCをアップグレードする \n 下記の例では、SR起票時点での最新バージョンにSCCをアップグレードしています。 \n\n Target Version : アップグレードするバージョンを選択する画面にて、現時点の最新バージョンである2.19.1を選択します。 \n\n 上記のリストに表示されているバージョンが、RISEでサポートしているSCCのバージョンです。なお、各バージョンのEOM(End Of Maintenance)の日付は定められておりません。SCCのサポート方針につきましては、下記のSAP Noteもあわせてご確認ください。 \n 3302250 - Cloud コネクタのサポート方針 \n また、バグが検知されたSCCバージョンは、RISEの判断によりアップグレード対象外となり、上記のターゲットバージョンのリストには表示されません。 \n Best Practice Update Sequence : Yes \n 開発/検証環境、本番環境の順(RISE推奨)でアップグレードする場合はYesを、それ以外の場合はNoを選択してください。 \n\n まとめ \n 本記事では、SRを利用してSAP Cloud Connector(SCC)をアップグレードする方法についてご紹介しました。 \n SCCは、SAP S/4HANA Cloud Private EditionとBTPを接続する重要なコンポーネントです。安定稼働とセキュリティの観点から、サポート対象の最新バージョンへ定期的にアップグレードすることをおすすめします。 \n アップグレードの際は、「Upgrade SAP Cloud Connector」テンプレートからSRを起票し、Target VersionおよびBest Practice Update Sequenceを適切に選択してください。 \n また、SCCのサポート方針やサポート対象バージョンにつきましては、SAP Note 3302250もあわせてご確認いただくことをおすすめします。"
+  },
+  {
+   "key": "636d9592190c95b4",
+   "title": "Open Mapping Tasks Count Discrepancy in Migration Cockpit",
+   "link": "https://community.sap.com/t5/technology-q-a/open-mapping-tasks-count-discrepancy-in-migration-cockpit/qaq-p/14518061",
+   "published": "2026-11-07T00:08:22+00:00",
+   "author": "yulo",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Does anyone experience the same Migration Cockpit issue where the count of open mapping tasks does not match the actual number of open mapping tasks? \n In my case, it shows 3 open mapping tasks, but when I open the mapping tasks, there is only 1 displayed. Has anyone encountered this discrepancy before?"
+  },
+  {
+   "key": "e067f1386b4922ef",
+   "title": "From Connected Data to Intelligent Decisions: Unlocking the Power of the SAP Commerce Knowledge Grap",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-connected-data-to-intelligent-decisions-unlocking-the-power-of-the-sap/ba-p/14518123",
+   "published": "2026-11-07T07:18:30+00:00",
+   "author": "Naveen_Panakkal",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "🚀 From Connected Data to Intelligent Decisions: Unlocking the Power of the SAP Commerce Knowledge Graph \n We've explored why SAP Commerce needs a semantic intelligence layer, how to model it using ontologies, and how to bring it to life using RDF, Turtle, Python and SPARQL. \n But here's the bigger question: \n What can we actually do with all this connected knowledge? \n Imagine a product becoming unavailable. Instead of looking at isolated records, what if we could trace its connections to: \n 🔹 Customers and active carts \n 🔹 Orders and fulfilment context \n 🔹 Promotions and associated transactions \n 🔹 Payments and other potentially affected business processes \n And go one step further — use AI to interpret these relationships, explain the findings and help identify where action may be needed. \n In the final article of this four-part series, we explore how a Commerce Knowledge Graph could become the foundation for: \n\n Cross-entity impact analysis \n\n Explainable business insights \n\n AI agents and intelligent querying \n\n A more context-aware SAP Commerce ecosystem \n The goal isn't just to connect data. It's to make those connections useful. \n This is where the journey from data modelling to semantic intelligence starts becoming interesting. \n #SAPCommerce #KnowledgeGraph #SemanticWeb #Ontology #RDF #SPARQL #EnterpriseAI #AIAgents #SAP"
+  },
+  {
+   "key": "4b7d30e555582555",
+   "title": "Beyond Turtle Files: Turning SAP Commerce Data into a Living Knowledge Graph",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/beyond-turtle-files-turning-sap-commerce-data-into-a-living-knowledge-graph/ba-p/14518121",
+   "published": "2026-11-07T07:21:55+00:00",
+   "author": "Naveen_Panakkal",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "An ontology defines the vocabulary. But can we actually use it to answer business questions? \n We've defined our SAP Commerce concepts and relationships. Now it's time to bring them to life. \n In this article, we move into the hands-on implementation of our knowledge graph using Python, RDFLib, RDF and SPARQL . \n Using a synthetic Commerce scenario, we'll connect Product P100 to its variants, customers, carts, orders, promotions and payment information. \n More importantly, we'll explore how a single SPARQL query can traverse these relationships and reveal connected business records. \n This is where the experiment becomes tangible: moving from a conceptual ontology to a queryable knowledge graph. \n Let's build the graph, query the relationships and see what it reveals."
+  },
+  {
+   "key": "099ce9e85bab95be",
+   "title": "The Architectural Paradigm of Agent Memory",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/the-architectural-paradigm-of-agent-memory/ba-p/14518117",
+   "published": "2026-11-07T07:09:04+00:00",
+   "author": "lalitmohan",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Building Stateful Enterprise Agents Using the SAP Agent Memory Service and LangGraph"
+  },
+  {
+   "key": "e33dba58f0d850ff",
+   "title": "Beyond items.xml: Giving SAP Commerce a Semantic Brain",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/beyond-items-xml-giving-sap-commerce-a-semantic-brain/ba-p/14518113",
+   "published": "2026-11-07T07:21:47+00:00",
+   "author": "Naveen_Panakkal",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "We know our SAP Commerce types. But do we have an explicit semantic model of what they mean and how they relate? \n Product, Customer, Cart, Order, Promotion and Payment are familiar concepts in every Commerce implementation. But how do we represent these concepts in a machine-readable model that applications and AI agents can understand and traverse? \n In this second article, we move from concept to implementation. \n We'll explore RDF, OWL and Turtle , define a focused SAP Commerce domain ontology, and model the relationships between customers, carts, orders, products and promotions. \n We'll also look at why an ontology is different from instance data, and how SHACL can help validate the resulting graph. \n The goal is simple: build a semantic foundation before attempting to build intelligence on top of it. \n Let's turn familiar Commerce types into a connected semantic model."
+  },
+  {
+   "key": "f038804172a6c43a",
+   "title": "Beyond APIs and Chatbots: Why SAP Commerce Needs a Semantic Intelligence Layer",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/beyond-apis-and-chatbots-why-sap-commerce-needs-a-semantic-intelligence/ba-p/14518110",
+   "published": "2026-11-07T07:20:41+00:00",
+   "author": "Naveen_Panakkal",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "What if SAP Commerce could understand relationships, not just expose data? \n We have APIs for products, carts, orders, customers and promotions. We have integrations connecting these systems. But when someone asks a seemingly simple question — \"A product is unavailable. Which customers, carts and orders could be affected, and why?\" — answering it can quickly become a complex exercise in connecting data across multiple entities. \n Could an ontology and knowledge graph provide a different way to look at this problem? \n In this article, I explore the idea of a Semantic Intelligence Layer for SAP Commerce — connecting business concepts, relationships and context to make cross-entity questions easier to understand and investigate. \n This is not about replacing APIs or databases. It is about exploring what becomes possible when we make business relationships explicit."
+  }
+ ],
+ "triage": {
+  "0": {
+   "i": 0,
+   "category": "Fiori & UI5",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Fiori tools 2611 adds AI skills, a GitHub Copilot plugin, and direct navigation from a Fiori app to its ABAP sources in the IDE."
+  },
+  "1": {
+   "i": 1,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Spotlight overview of SAP Fieldglass 2026.11 features across AI, integration, services procurement and supplier management."
+  },
+  "2": {
+   "i": 2,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Update on My Metrics in SAP Analytics Cloud, including creating metrics directly from a model for business users."
+  },
+  "3": {
+   "i": 3,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Q&A on document handling in SAP Cloud ALM for implementation projects: templates, approval, versioning and API."
+  },
+  "4": {
+   "i": 4,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Highlights of the SAP Digital Manufacturing 2611 release across execution, APIs, automation, quality and edge."
+  },
+  "5": {
+   "i": 5,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Highlights of POD 2.0 in the SAP Digital Manufacturing 2611 release."
+  },
+  "6": {
+   "i": 6,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Spanish-language guide to purchasing and inventory dashboards and relational analysis in SAP Business One."
+  },
+  "7": {
+   "i": 7,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Partner guidance for choosing between Scalable Delivery and Multi-Off Delivery for offering extensions."
+  },
+  "8": {
+   "i": 8,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Marketing-style overview of SAP Enterprise Financial Consolidation and autonomous performance management."
+  },
+  "9": {
+   "i": 9,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Fix for Ariba Invoicing login errors after moving CIM to Entra ID as identity provider in SAP Cloud Identity Services."
+  },
+  "10": {
+   "i": 10,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Pattern for a generic SOAP dispatcher in SAP Integration Suite that routes multiple interfaces to the right integration flow."
+  },
+  "11": {
+   "i": 11,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Explains RE-FX to PS-CD/FI-CA integration: switches, contract accounts, billing documents and RERAPP, from a configuration view."
+  },
+  "12": {
+   "i": 12,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Chinese-language overview of AI embedded analytics in S/4HANA Cloud for analysts: Review Booklet insights and Joule KPI agents."
+  },
+  "13": {
+   "i": 13,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Announcement that SAP Product Model Viewer runs on XREAL AURA glasses for frontline 3D product data."
+  },
+  "14": {
+   "i": 14,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Joule Work mobile app updates and news from SAP TechEd 2026 aimed at end users rather than developers."
+  },
+  "15": {
+   "i": 15,
+   "category": "BTP & ABAP Cloud",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "ABAP Cloud Developer Trial is removed from Docker Hub from November 17, and the developer edition appliance is also withdrawn."
+  },
+  "16": {
+   "i": 16,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Practical habits and tools to cut LLM token costs for developers using AI coding assistants, such as shorter sessions and targeted prompts."
+  },
+  "17": {
+   "i": 17,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Decision story on closing a Business One barcode label gap for posted goods receipts without adding a vendor."
+  },
+  "18": {
+   "i": 18,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Localized Fiori app for China's 2026 input VAT compliance on long-term assets, aimed at finance users."
+  },
+  "19": {
+   "i": 19,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Cloud ALM configuration and security analysis now supports exemptions for accepted compliance deviations."
+  },
+  "20": {
+   "i": 20,
+   "category": "HANA, AMDP & Performance",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Explains SAP HANA SERIES_GENERATE_DATE syntax, output columns and exclusive end-date rule with runnable examples."
+  },
+  "21": {
+   "i": 21,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Builds a Node.js MCP server so Claude Desktop can create, read, update and delete HR records via SAP API Management on BTP trial."
+  },
+  "22": {
+   "i": 22,
+   "category": "ABAP & Clean Code",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Debugs a standard BAPI that misses about half of records in mass processing, and asks whether to wrap it with explicit commits."
+  },
+  "23": {
+   "i": 23,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Groovy script for CPI V2 fails when generating HmacSHA256 after dropping the Hex commons-codec library; asks for a working approach."
+  },
+  "24": {
+   "i": 24,
+   "category": "S/4HANA Development & Extensibility",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Asks for a BAdI that validates field values in MM02 like CMD_PRODUCT_VALIDATE does for the Fiori product master app."
+  },
+  "25": {
+   "i": 25,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "Asks whether the SAP Event Mesh to Azure Event Grid bridge is still offered and where its documentation lives."
+  },
+  "26": {
+   "i": 26,
+   "category": "Fiori & UI5",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Some IU5 apps served via content provider to Build Work Zone return HTTP 500 while working in FLP; debugging the CDM3 endpoint."
+  },
+  "27": {
+   "i": 27,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks whether one Datasphere DP Agent can serve one tenant and multiple source systems like BW/4HANA and S/4HANA."
+  },
+  "28": {
+   "i": 28,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks how to migrate assets with current-year depreciation from one company code to another."
+  },
+  "29": {
+   "i": 29,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Plant is not auto-determined in sales orders for a material maintained in MM03; users select it manually."
+  },
+  "30": {
+   "i": 30,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "SAC dimension transport with data fails with 'Couldn't import object: null' for all dimension types."
+  },
+  "31": {
+   "i": 31,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks whether TBB1 can combine five same-date TRM cash flows into one payment request instead of five."
+  },
+  "32": {
+   "i": 32,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks how to revert the default Allocation Cockpit setting in KSU5 after upgrading from 2021 to 2025."
+  },
+  "33": {
+   "i": 33,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Receives HTTP 429 via SAP BTP API Management without quota policies; asks about default rate limits and where they come from."
+  },
+  "34": {
+   "i": 34,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Japanese question on how demand table VBBE entries are created by sales orders and removed at outbound delivery."
+  },
+  "35": {
+   "i": 35,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks if a migration template exists for in-process inspection data in S/4HANA Cloud Private Edition 2025."
+  },
+  "36": {
+   "i": 36,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Installation of BW Modeling Tools in HANA Studio fails when adding the software via jar script."
+  },
+  "37": {
+   "i": 37,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "FCO_COGS_SPLIT_REPOST shows no data for a goods issue document; a COGS split report question."
+  },
+  "38": {
+   "i": 38,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks about authorizations and Employee ID versus User ID mapping for the Datasphere to SuccessFactors connection."
+  },
+  "39": {
+   "i": 39,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks whether AENR change master can be an allowed object link for a custom DMS document type in S/4HANA Cloud."
+  },
+  "40": {
+   "i": 40,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "NLAG purchase orders pick up pricing without accounting views; asks how the pricing is determined."
+  },
+  "41": {
+   "i": 41,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks SAP to confirm the long-term support outlook for transaction ME51N and related barcode options."
+  },
+  "42": {
+   "i": 42,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Network in PS does not inherit access control list from the top project during QAS tests."
+  },
+  "43": {
+   "i": 43,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Introduction post from an SAP ALM consultant focused on Cloud ALM and Solution Manager."
+  },
+  "44": {
+   "i": 44,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Introduction post from a member with three years of IS-U electricity experience."
+  },
+  "45": {
+   "i": 45,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Vendor news about research showing AI adoption outpacing organizational readiness, with promotional ERP content."
+  },
+  "46": {
+   "i": 46,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Customer story on ifm's digital manufacturing journey and its lessons on scaling global production systems."
+  },
+  "47": {
+   "i": 47,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Season 1 episode of the Business Data Cloud series introducing data lineage features in SAP Datasphere."
+  },
+  "48": {
+   "i": 48,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Early Adopter Care program for SAP-managed public cloud ERP, focused on customer onboarding and adoption."
+  },
+  "49": {
+   "i": 49,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Checklist of year-end inventory management checks covering stock consistency and valuation in SAP."
+  },
+  "50": {
+   "i": 50,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Proof of concept showing Siemens, GS1 and SAP use the European Business Wallet to verify suppliers."
+  },
+  "51": {
+   "i": 51,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Marketing checklist for contingent workforce rate management in SAP Fieldglass."
+  },
+  "52": {
+   "i": 52,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Playbook on using existing SAP Fieldglass rate management capabilities for contingent worker rate governance."
+  },
+  "53": {
+   "i": 53,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Part 1 of a BDC and Snowflake series on SuccessFactors Employee Central data products and intelligent content."
+  },
+  "54": {
+   "i": 54,
+   "category": "Developer Tools & DevOps",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Series intro on CI/CD of a CAP app with SAP CI/CD, moving it to another subaccount with CTMS and tracking in Cloud ALM."
+  },
+  "55": {
+   "i": 55,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Community roundup covering SAP TechEd ABAP news, Joule Studio certification, MCP and upcoming events."
+  },
+  "56": {
+   "i": 56,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks why TRM FTR_CREATE annuity loans compute interest after deducting the full annuity instead of principal only."
+  },
+  "57": {
+   "i": 57,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks how to set up tax-inclusive POS pricing with a custom pricing procedure and separate tax condition in S/4HANA Cloud."
+  },
+  "58": {
+   "i": 58,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Japanese guide on upgrading SAP Cloud Connector in S/4HANA Cloud Private Edition through a service request."
+  },
+  "59": {
+   "i": 59,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Migration Cockpit shows three open mapping tasks but only one appears when opened; asks if others have seen this."
+  },
+  "60": {
+   "i": 60,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Wrap-up of a SAP Commerce knowledge graph series covering RDF, SPARQL and Python use cases; not ABAP or the reader's focus stack."
+  },
+  "61": {
+   "i": 61,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Hands-on SAP Commerce knowledge graph using Python, RDFLib and SPARQL on synthetic data; outside the reader's ABAP and SAP focus areas."
+  },
+  "62": {
+   "i": 62,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 3,
+   "one_liner": "Architecture article on stateful enterprise agents using SAP Agent Memory Service with LangGraph; AI agent design rather than developer tooling."
+  },
+  "63": {
+   "i": 63,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Introduces an explicit semantic ontology model for SAP Commerce types and relationships; conceptual, and not in the reader's focus areas."
+  },
+  "64": {
+   "i": 64,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Argues SAP Commerce needs a semantic layer over APIs for relationship queries; conceptual positioning piece, not hands-on development."
+  }
+ },
+ "deep": {
+  "0": {
+   "summary": "A release announcement for SAP Fiori tools 2611. The excerpt says the release adds more AI-driven development skills, a GitHub Copilot plugin, and a first direct link from a Fiori app to the ABAP sources behind it within the same IDE. It also mentions App Info page improvements, a change in how extensions are shipped, and a Project Accelerator update. The text is only a summary, so none of these features is described in technical detail.",
+   "key_points": [
+    "Fiori tools 2611 pushes further on AI-assisted development, with more skills and a plugin for GitHub Copilot.",
+    "New App-to-ABAP navigation: a Fiori app can be linked directly to its backing ABAP sources inside the same IDE.",
+    "App Info page improvements are mentioned without specifics.",
+    "Changes to how extensions are shipped, and an update on Project Accelerator, are noted without detail."
+   ],
+   "technical_details": [
+    "SAP Fiori tools release 2611",
+    "GitHub Copilot plugin",
+    "App-to-ABAP navigation within the IDE",
+    "App Info page",
+    "Project Accelerator"
+   ],
+   "why_it_matters": "For ABAP and Fiori developers working in Eclipse/VS Code, direct navigation from a Fiori app to its ABAP backend can shorten debugging and code-tracing. The post itself gives no mechanics, so the real value depends on the full release notes.",
+   "is_release_or_announcement": true,
+   "developer_problem": "",
+   "teaching_angle": "Use it as a 'what's new' item for a Fiori/ABAP tooling module. Ask learners to check the official 2611 release notes and to try the App-to-ABAP navigation on a sample app, then compare the workflow with their current one.",
+   "quality": 2
+  },
+  "10": {
+   "summary": "The post proposes a Generic SOAP Dispatcher in SAP Integration Suite (Cloud Integration). A single entry iFlow with a SOAP sender adapter reads request metadata, derives an internal routing key, and uses a Router to forward the message to a target iFlow, with a default route that rejects unknown requests. The author suggests using SOAPAction as the main source for the routing key. The excerpt is cut off mid-sentence in the error-handling section, and the proposed design is not tested in the text.",
+   "key_points": [
+    "Design: one GenericSOAPDispatcher iFlow with a SOAP sender, a routing-key step, a Router, and per-operation target iFlows (ProcessDirect appears in the runtime design).",
+    "Diagnostic step: a temporary Groovy script copies all message headers to the message log to see what arrives.",
+    "Routing key: map SOAPAction to internal keys such as CREATE_ORDER, UPDATE_ORDER and CANCEL_ORDER, rather than coupling routing to raw SOAPAction strings.",
+    "Default Route should return a controlled error such as 'Unsupported SOAP operation or routing key'.",
+    "The author warns against logging all headers in production because they may contain auth, session or other sensitive data.",
+    "The excerpt ends mid-sentence in the error-handling description, so the rest of the design is not shown."
+   ],
+   "technical_details": [
+    "Integration flow: GenericSOAPDispatcher",
+    "SOAP Sender adapter",
+    "Groovy script: com.sap.gateway.ip.core.customdev.util.Message, message.getHeaders(), messageLogFactory.getMessageLog(message), setStringProperty()",
+    "Router with Default Route",
+    "ProcessDirect for calls to target iFlows",
+    "SOAPAction header as routing-key source"
+   ],
+   "why_it_matters": "A single entry point for many SOAP interfaces makes it easier to govern endpoints, monitoring and error handling in Cloud Integration. The header-inspection step is a sound practice, and the warning about sensitive headers is important.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Good for an integration design exercise: ask learners to compare routing by SOAPAction, by body payload (XPath) and by request path, and to list the risks of each. Add a discussion point on logging only minimal, non-sensitive fields. Check which header names CPI actually exposes for SOAP requests, because the post describes this only conceptually.",
+   "quality": 3
+  },
+  "15": {
+   "summary": "A notice that the ABAP Cloud Developer Trial is being discontinued. From November 17, it can no longer be downloaded from Docker Hub, and the CAL template 'SAP ABAP Platform 2025 developer edition on SAP HANA' can no longer be used to create appliances. Existing instances keep working until their developer licences expire, but licences cannot be extended. The post points users to the free SAP Business AI Platform ABAP environment and, for partners, to the SAP Partner Portal.",
+   "key_points": [
+    "Docker Hub download of the ABAP Cloud Developer Trial stops from November 17.",
+    "The CAL template 'SAP ABAP Platform 2025 developer edition on SAP HANA' can no longer create appliances; it is the only template affected.",
+    "Existing trial instances remain usable until their developer licence expires; licence extension is not possible.",
+    "Recommended replacements: free SAP Business AI Platform ABAP environment (trial account or free tier) and SAP Partner Portal for partners."
+   ],
+   "technical_details": [
+    "ABAP Cloud Developer Trial (Docker Hub image)",
+    "Cloud Appliance Library (CAL) template: SAP ABAP Platform 2025 developer edition on SAP HANA",
+    "SAP Business AI Platform, ABAP environment (trial account vs free tier)",
+    "SAP Partner Portal Test, Demo and Development offerings"
+   ],
+   "why_it_matters": "Developers who rely on this image for ABAP Cloud learning or partner demos need to move to another environment. The FAQ makes clear that no new licences or extensions are coming for the trial.",
+   "is_release_or_announcement": true,
+   "developer_problem": "",
+   "teaching_angle": "Use it as a practical course update: ask learners to set up the free SAP Business AI Platform ABAP environment and to compare its trial and free tier terms with the old appliance. Include an exercise where learners plan how to migrate their existing exercises.",
+   "quality": 3
+  },
+  "21": {
+   "summary": "The post is a how-to for an AI assistant that creates, reads, updates and deletes HR records using natural language. The described stack is Claude Desktop, a Node.js MCP (Model Context Protocol) server, and SAP API Management on a free BTP Trial. Only the introductory abstract is included in the text, so the implementation steps, the API proxy setup and the security design are not visible.",
+   "key_points": [
+    "Goal: natural-language CRUD on HR records through Claude Desktop.",
+    "Architecture: Claude Desktop, a Node.js MCP server, and SAP API Management as the gateway to the HR system.",
+    "Environment: free BTP Trial account."
+   ],
+   "technical_details": [
+    "Model Context Protocol (MCP)",
+    "Claude Desktop",
+    "Node.js MCP server",
+    "SAP API Management",
+    "SAP BTP Trial"
+   ],
+   "why_it_matters": "Exposing SAP business APIs as MCP tools through an API gateway is a realistic pattern for AI agents. The security part (authentication, authorisation, write-operation controls) is what matters most for HR data, and the excerpt does not show it.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use it as a reference architecture for discussing AI tool exposure. Ask learners to define the MCP tool schema for create, read, update and delete operations, and to list the controls needed before an LLM may write HR data.",
+   "quality": 2
+  },
+  "54": {
+   "summary": "This is the introductory post of a series on SAP CI/CD with CTMS (Cloud Transport Management service). The series goal is to build one CAP application once with SAP CI/CD, move the same build to a second subaccount with CTMS, and track the change in Cloud ALM. The post is a map of the parts and says it will share one key idea that would have saved the author time, but the excerpt does not state that idea.",
+   "key_points": [
+    "Series scope: one CAP app, built once by SAP CI/CD, transported to a second subaccount by CTMS, and tracked in Cloud ALM.",
+    "The post maps the parts of the series and says how they fit together.",
+    "It promises a key lesson, but the excerpt does not reveal it."
+   ],
+   "technical_details": [
+    "SAP Continuous Integration and Delivery (SAP CI/CD)",
+    "CTMS (Cloud Transport Management service)",
+    "CAP application",
+    "BTP subaccounts (source and target)",
+    "SAP Cloud ALM"
+   ],
+   "why_it_matters": "Build-once, deploy-many with a transport layer is a real requirement for multi-subaccount BTP landscapes. The series could be useful, but this post contains only the plan.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use it as a course outline for BTP delivery: ask learners to sketch the build-once, transport-many flow and to name where approvals, versioning and monitoring sit in the chain.",
+   "quality": 2
+  },
+  "16": {
+   "summary": "A guide for SAP developers and business users on cutting LLM token costs. It names three main wastes: long chat sessions, vague prompts, and pasting whole files when only a few lines are needed. The post promises before-and-after examples and a set of tools, but the excerpt contains only the introduction, so no concrete examples or tool names are shown.",
+   "key_points": [
+    "Main cost drivers: long chat sessions, vague prompts, and pasting entire files.",
+    "The promised remedies are habits and tools, with before-and-after examples.",
+    "The excerpt contains only the introduction, so the examples and tools are not visible."
+   ],
+   "technical_details": [
+    "Token-based billing of AI tools",
+    "Context management in chat sessions",
+    "Scoped prompts and file excerpts"
+   ],
+   "why_it_matters": "Token use drives cost in AI-assisted ABAP and CAP development. Context hygiene is a practical habit, but this excerpt is too general to be more than a checklist.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use it as a discussion starter: ask learners to take a real prompt with a whole-file paste, reduce it to the relevant method or CDS view, and compare the output quality and token count.",
+   "quality": 2
+  },
+  "20": {
+   "summary": "A short HANA blog that introduces SERIES_GENERATE_DATE for generating a row for every day, week or month in a date range, including gaps in the source data. It says the post covers syntax, output columns and an exclusive end-date rule, with five small runnable examples. The text provided is only the introduction, so the syntax, column names and examples are not visible here.",
+   "key_points": [
+    "Purpose: generate a continuous series of dates at a chosen interval (day, week, month) to fill gaps in sparse data.",
+    "The post highlights an exclusive end-date rule, which is the detail most likely to cause off-by-one results.",
+    "Output columns are mentioned but not named in the excerpt.",
+    "Five examples are promised; none are shown in the excerpt."
+   ],
+   "technical_details": [
+    "SERIES_GENERATE_DATE (SAP HANA SQL series function)",
+    "Interval options: day, week, month (as described in the post)",
+    "Exclusive end-date semantics"
+   ],
+   "why_it_matters": "Gap-filling date series are a common need in reporting and CDS/SQL view design on HANA. An exclusive end date is an easy source of off-by-one errors, so the rule matters for correctness.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use it as a lab: build a date spine with SERIES_GENERATE_DATE, left-join sparse sales data to it, and have students verify the exclusive end boundary with edge-case dates. Check the full post for the exact output columns before relying on them.",
+   "quality": 3
+  },
+  "22": {
+   "summary": "An ABAP developer says a standard BAPI called from a customer enhancement inside a standard transaction fails to update about half the records during mass processing. They propose wrapping the BAPI in a Z function module that also calls BAPI_TRANSACTION_COMMIT, then asking which call mode to use: plain call, STARTING NEW TASK, IN UPDATE TASK or IN BACKGROUND TASK. The post gives no error messages, return-table analysis or root-cause evidence, so the proposed fix is not justified by a diagnosis.",
+   "key_points": [
+    "The real issue (why roughly 50% fail) is not diagnosed; no RETURN messages, lock errors or dump details are shown.",
+    "The options mix up different mechanisms: STARTING NEW TASK is asynchronous parallel processing, IN UPDATE TASK is for update-module logic run at COMMIT WORK, and IN BACKGROUND TASK is the LUW-based deferred update.",
+    "Calling BAPI_TRANSACTION_COMMIT inside an enhancement of a standard transaction can break the transaction's own LUW and must be justified.",
+    "Q1 (whether to wrap the BAPI or only add the commit) is answerable only after reading the BAPI's RETURN table and its commit behaviour."
+   ],
+   "technical_details": [
+    "Standard BAPI called from a customer enhancement (CMOD/BAdI enhancement point in a standard tcode)",
+    "BAPI_TRANSACTION_COMMIT (WAIT parameter)",
+    "CALL FUNCTION ... STARTING NEW TASK",
+    "CALL FUNCTION ... IN UPDATE TASK",
+    "CALL FUNCTION ... IN BACKGROUND TASK",
+    "Check BAPI RETURN table and SY-SUBRC after each call"
+   ],
+   "why_it_matters": "Partial failures in mass processing usually indicate LUW, locking or return-handling problems. Adding commits or async calls without diagnosis can create inconsistent data, which is a real risk in a standard transaction.",
+   "is_release_or_announcement": false,
+   "developer_problem": "A standard BAPI called from a customer enhancement in a mass transaction updates only about half the records, and the developer wants to know how to wrap it in a Z function module and which call mode to use.",
+   "teaching_angle": "Good interview case on LUW and update concepts. Ask candidates to explain the difference between STARTING NEW TASK, IN UPDATE TASK and IN BACKGROUND TASK, and to propose a diagnosis first: check RETURN per record, enqueue/lock failures, and whether the BAPI is called in a loop without a commit. Then discuss where the commit should sit.",
+   "quality": 3
+  },
+  "23": {
+   "summary": "A SAP Cloud Integration developer is moving a Groovy script from the older script version to the v2 API and needs HmacSHA256. The v2 runtime throws an access error when javax.crypto.Mac is used. The sample code only calls Mac.getInstance(...).getAlgorithm() and never computes an HMAC, so it does not test the real use case. The post has no answer.",
+   "key_points": [
+    "The error (class javax.crypto.Mac cannot access class sun.security.util.Debug) points to Java module encapsulation (JPMS) restricting access to an internal JDK class. The post does not state the Java version.",
+    "The sample is not a working HMAC: it never initialises the Mac with a key or calls doFinal.",
+    "The old dependency org.apache.commons.codec.binary.Hex is no longer usable in the v2 script environment.",
+    "No accepted answer or workaround is given."
+   ],
+   "technical_details": [
+    "SAP Cloud Integration Groovy script API v2 (package script.v2, com.sap.it.script.v2.api.Message)",
+    "processData(Message message) signature",
+    "javax.crypto.Mac.getInstance(\"HmacSHA256\")",
+    "Mac.init(SecretKeySpec) and doFinal() are needed for a real HMAC",
+    "Error text indicates JDK module restriction on sun.security.util.Debug"
+   ],
+   "why_it_matters": "Signing and hashing in integration flows (e.g. webhook or API signatures) are common. Hidden JDK-internal dependencies break silently when the runtime Java version changes.",
+   "is_release_or_announcement": false,
+   "developer_problem": "After moving a Cloud Integration Groovy script to the v2 API, javax.crypto.Mac access fails with a module access error, and the old Hex helper from commons-codec is no longer available.",
+   "teaching_angle": "Use it to show why scripts should use only public JDK APIs. Have students write a real HMAC-SHA256 with Mac.init and doFinal, then encode the bytes with a public API (for example java.util.HexFormat on Java 17+ if the runtime supports it, which should be verified) rather than the commons-codec class.",
+   "quality": 2
+  },
+  "24": {
+   "summary": "A consultant on S/4HANA Cloud Public Edition asks for a BAdI that works in the classic GUI transaction MM02 in the way CMD_PRODUCT_VALIDATE works for the Fiori app Manage Product Master Data. The goal is to validate a field on save and show a message. The post has no answer and does not say whether MM02 is available in this edition.",
+   "key_points": [
+    "The question mixes a classic GUI transaction (MM02) with a cloud Fiori extension point (CMD_PRODUCT_VALIDATE).",
+    "Public Edition restricts classic extensibility, so the answer depends on which BAdIs are released for cloud use.",
+    "No replies or suggested BAdIs are included in the post."
+   ],
+   "technical_details": [
+    "MM02 (classic transaction, SAP GUI)",
+    "CMD_PRODUCT_VALIDATE (named as the Fiori-side validation hook in the post)",
+    "Fiori app Manage Product Master Data",
+    "S/4HANA Cloud Public Edition extensibility restrictions (classic BAdIs and user exits generally not available unless released)"
+   ],
+   "why_it_matters": "It shows the real constraint of Public Edition: validation must use released extension points, and the choice of extension point depends on the UI the business user actually uses.",
+   "is_release_or_announcement": false,
+   "developer_problem": "In S/4HANA Cloud Public Edition, the developer needs a validation hook for classic MM02 equivalent to CMD_PRODUCT_VALIDATE for the Fiori app, so that a field value triggers a message on save.",
+   "teaching_angle": "Use it to teach the difference between classic and cloud extensibility. Ask students to check the released BAdI and extension catalogue in the Public Edition tools before proposing any custom validation, and to confirm whether MM02 is supported at all in that edition.",
+   "quality": 2
+  },
+  "26": {
+   "summary": "An integration consultant exposes UI5 apps (the post writes IU5, probably a typo) from AS ABAP to SAP Build Work Zone through a content provider that reads design-time data from the /sap/bc/ui2/cdm3/entities endpoint. Some apps open, others return HTTP 500 in Work Zone, while the same apps work in the classic FLP. The consultant lists three SAP notes already checked, but the post does not say which fix applied or what the root cause was.",
+   "key_points": [
+    "Only some apps fail, so the issue is likely app-specific CDM3 content or metadata, not a general outage.",
+    "The same apps work in FLP but fail through Work Zone, which narrows the problem to the content provider or CDM3 path.",
+    "The post lists three notes but gives no outcome for any of them.",
+    "The 500 is seen only in the browser console; no backend error log, ST22 dump or gateway trace is cited."
+   ],
+   "technical_details": [
+    "Content provider (content channel) for SAP Build Work Zone",
+    "CDM3 design-time endpoint: /sap/bc/ui2/cdm3/entities",
+    "ABAP-based UI5 apps (IU5 in the post is probably a typo for UI5)",
+    "Service handler /UI2/CL_CDM3_EXPO_REST_HANDLER (referenced in note 3603759)",
+    "SAP Notes 3603759, 3365227, 3580748 (SAP for Me)"
+   ],
+   "why_it_matters": "Exposing ABAP-hosted apps to Work Zone is a common hybrid setup. Failures that depend on the individual app are hard to debug unless you compare the CDM3 output of a working app with a failing one.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Some ABAP UI5 apps exposed via the CDM3 content provider return HTTP 500 in SAP Build Work Zone, while they open fine in FLP, and the notes already checked did not resolve it.",
+   "teaching_angle": "Teach a diff-based method: call /sap/bc/ui2/cdm3/entities for a working and a failing app and compare the JSON (missing properties, component names, semantic objects, URLs). Then check the backend logs (ST22, SLG1 for /UI2/ objects, and the gateway log) to find the exception behind the 500.",
+   "quality": 3
+  },
+  "33": {
+   "summary": "A team exposes SAP standard APIs through SAP BTP API Management to external consumers and gets HTTP 429 (Too Many Requests). They have no quota or spike-arrest policy configured and ask whether SAP applies a default rate limit, comparing it to a 55-second timeout. The post contains no diagnosis or answer and does not say which layer generated the 429.",
+   "key_points": [
+    "The post does not establish whether the 429 comes from the BTP API Management layer or from the SAP backend.",
+    "The question about SAP's own default rate limit is not answered in the text.",
+    "The comparison to a 55-second timeout is unclear and not explained.",
+    "No headers, request volumes, API names or APIM policy export are provided."
+   ],
+   "technical_details": [
+    "SAP BTP API Management (API proxy, policies)",
+    "HTTP 429 Too Many Requests",
+    "Quota and Spike Arrest policies (stated as not configured)",
+    "Standard SAP APIs exposed to external consumers",
+    "Timeout reference (55 seconds) mentioned without context"
+   ],
+   "why_it_matters": "Unexpected 429s in an API gateway can break external integrations. The first step is to identify the component that returns the 429, since default limits, policies and backend throttling behave differently.",
+   "is_release_or_announcement": false,
+   "developer_problem": "External consumers of SAP standard APIs exposed through BTP API Management receive 429 errors even though no quota or spike-arrest policy is configured, and the team wants to know if SAP applies a default rate limit.",
+   "teaching_angle": "Use it as a troubleshooting exercise: ask students to determine the 429 source from the response headers and the APIM trace or analytics, then check the policy chain and backend throttling. Note that a default limit is a claim to verify in the official documentation, not something to assume.",
+   "quality": 2
+  },
+  "25": {
+   "summary": "David asks whether the SAP Event Mesh to Azure Event Grid connector, which older SAP Community press releases and blogs described as a native integration, is still available. He links a technology blog announcing the connector as a beta (\"SAP Event Mesh Event Connector to Microsoft Azure to Go Beta\"). He says he cannot find any documentation for it on SAP Help or me.sap.com and asks whether it is active or has been replaced. The post contains no answer, no replies, and no version or configuration details.",
+   "key_points": [
+    "The question is about the status of a native SAP Event Mesh to Azure Event Grid connector, not about how to build one.",
+    "The linked source is a beta announcement, so beta status and any later GA or retirement are the central unknowns.",
+    "The author reports no documentation in SAP Help or me.sap.com, which is the main practical blocker for adoption.",
+    "The post gives no SAP Event Mesh version, Azure region, or connector configuration, so it cannot be verified from the text alone.",
+    "The post asks directly whether the connector was replaced by something else, but names no replacement."
+   ],
+   "technical_details": [
+    "Connector named in the linked blog: SAP Event Mesh event connector to Microsoft Azure (beta)",
+    "Target platform: Azure Event Grid",
+    "Source: SAP Event Mesh (the post does not state a release or version)",
+    "No API, annotation, or configuration details are given in the post"
+   ],
+   "why_it_matters": "Architects planning SAP-to-Azure eventing need to know whether a connector is supported before designing around it. A beta announcement with no matching Help documentation is a common trap: the feature may have been dropped, folded into another SAP eventing offering, or never reached GA. The post leaves all of this open, so it gives a reader no technical guidance.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How can I confirm whether the SAP Event Mesh to Azure Event Grid connector is still an active, supported service, and where is its documentation?",
+   "teaching_angle": "Use this as an exercise in verifying the status of an SAP service before committing to it. Students should check the SAP Help portal product versions, the SAP Discovery Center or SAP Integration Suite documentation, and the SAP Community release notes, and should treat beta blog posts as dated until confirmed in official docs. It also shows why a support ticket or SAP account team check is needed when docs are missing.",
+   "quality": 2
+  }
+ },
+ "digest": {
+  "headline": "Thin day for core ABAP: the ABAP Cloud Developer Trial is discontinued, and the one real ABAP question is about BAPI LUW handling.",
+  "overview": "The main news is the discontinuation of the ABAP Cloud Developer Trial. From November 17 the Docker Hub image can no longer be downloaded, and the CAL template \"SAP ABAP Platform 2025 developer edition on SAP HANA\" can no longer create appliances. Existing instances run until their licences expire, and licences cannot be extended. SAP points users to the free SAP Business AI Platform ABAP environment. Fiori tools 2611 also adds App-to-ABAP navigation and more AI skills, but the excerpt gives no mechanics.\n\nThe rest is mostly community Q&A with no answers: a BAPI that updates only half the records in a mass run, a Work Zone 500 error from CDM3 content, a 429 from API Management, and a Groovy v2 HMAC error. Most of these lack diagnostic detail. For a trainer, the useful points are that the course lab environments need a migration plan, and that the BAPI case is a good LUW teaching example.",
+  "top_stories": [
+   {
+    "title": "ABAP Cloud Developer Trial is discontinued",
+    "summary": "From November 17 the Docker Hub download stops and the CAL template 'SAP ABAP Platform 2025 developer edition on SAP HANA' can no longer create appliances. Existing instances work until their developer licence expires, and extensions are not possible. SAP recommends the free SAP Business AI Platform ABAP environment (trial account or free tier), and partners can use the SAP Partner Portal.",
+    "why_it_matters": "Anyone teaching ABAP Cloud or RAP on this image needs a replacement lab setup. Check the terms of the trial and free tier before moving course material.",
+    "priority": 1,
+    "refs": [
+     15
+    ]
+   },
+   {
+    "title": "BAPI updates only half the records in a mass update",
+    "summary": "A developer calls a standard BAPI from a customer enhancement in a standard transaction. About half the records are not updated. The proposed fix is a Z wrapper with BAPI_TRANSACTION_COMMIT, plus a choice among plain call, STARTING NEW TASK, IN UPDATE TASK or IN BACKGROUND TASK. There is no RETURN-table analysis, so the cause is not diagnosed.",
+    "why_it_matters": "Partial failures usually come from locks, ignored RETURN messages or LUW problems. A commit inside an enhancement of a standard transaction can break that transaction's own LUW. Diagnose first.",
+    "priority": 2,
+    "refs": [
+     22
+    ]
+   },
+   {
+    "title": "Fiori tools 2611: App-to-ABAP navigation and more AI skills",
+    "summary": "The release adds AI development skills, a GitHub Copilot plugin, and a direct link from a Fiori app to its backing ABAP sources in the same IDE. It also mentions App Info page improvements, changed extension shipping and a Project Accelerator update. The source is only a summary.",
+    "why_it_matters": "Navigating from app to ABAP backend could shorten tracing, but the details must be checked in the full release notes.",
+    "priority": 3,
+    "refs": [
+     0
+    ]
+   },
+   {
+    "title": "Work Zone 500 errors for ABAP apps via the CDM3 content provider",
+    "summary": "Some ABAP-hosted UI5 apps return HTTP 500 in SAP Build Work Zone through the content provider reading /sap/bc/ui2/cdm3/entities, while they work in FLP. Three SAP notes were checked without a stated result.",
+    "why_it_matters": "The failure depends on the app, so comparing CDM3 output of a working and a failing app, plus backend logs, is the practical way to find the cause.",
+    "priority": 3,
+    "refs": [
+     26
+    ]
+   },
+   {
+    "title": "API Management 429 and Groovy v2 HMAC issues in integration",
+    "summary": "A team gets HTTP 429 from SAP standard APIs exposed through BTP API Management without any quota or spike-arrest policy. Separately, a Cloud Integration Groovy v2 script fails on javax.crypto.Mac with an access error for sun.security.util.Debug. Neither post has an answer.",
+    "why_it_matters": "For the 429, first find which layer returns it. For the Groovy case, the sample never computes an HMAC, so it does not test the real use case.",
+    "priority": 3,
+    "refs": [
+     33,
+     23
+    ]
+   }
+  ],
+  "releases": [
+   {
+    "title": "SAP Fiori tools 2611",
+    "summary": "Adds AI skills, a GitHub Copilot plugin, App-to-ABAP navigation, App Info page improvements, a change in extension shipping and a Project Accelerator update. Details are not in the excerpt.",
+    "refs": [
+     0
+    ]
+   },
+   {
+    "title": "ABAP Cloud Developer Trial discontinuation (effective November 17)",
+    "summary": "Docker Hub download and CAL appliance creation from the ABAP Platform 2025 developer edition template end. Existing instances run until their licence expires.",
+    "refs": [
+     15
+    ]
+   }
+  ],
+  "deep_dives": [
+   {
+    "title": "Diagnosing a BAPI that fails on part of a mass update",
+    "explanation": "The question in ref 22 offers four call modes, but they solve different problems. A plain `CALL FUNCTION` runs in the same work process and LUW. `STARTING NEW TASK` starts an asynchronous call in a separate session, so it has its own LUW and the caller does not see the result directly. `IN UPDATE TASK` registers an update function module that runs at `COMMIT WORK`. `IN BACKGROUND TASK` registers a tRFC call that runs after `COMMIT WORK`. None of them is a fix for a failure that has not been diagnosed.\n\nStart with the `RETURN` table. After each BAPI call, read all messages of type E and A, and check `sy-subrc` for exceptions. Typical causes of a roughly 50% failure rate are lock conflicts, because the standard transaction already holds an enqueue on the same object, or the BAPI being called in a loop with state left over from the previous call. The post gives no evidence for any of these, so they are hypotheses to test, not conclusions.\n\nThe commit is the risky part. `BAPI_TRANSACTION_COMMIT` inside an enhancement of a standard transaction ends the transaction's LUW early. Data already prepared by the standard program may be committed or lost, and later rollback logic no longer works. If the update must be independent of the standard transaction, a separate task or a bgRFC/tRFC unit is a deliberate design choice. It then needs its own error handling and logging. If it must be part of the same LUW, no commit should be issued and the BAPI should run in the existing LUW.\n\nA minimal pattern: call the BAPI, evaluate `RETURN` with a helper, collect failures in an application log (SLG1), and only then decide on the commit location. Use `BAPI_TRANSACTION_ROLLBACK` for failed units only if you own the LUW.",
+    "key_concepts": [
+     "LUW and COMMIT WORK",
+     "STARTING NEW TASK vs IN UPDATE TASK vs IN BACKGROUND TASK",
+     "BAPI RETURN table evaluation",
+     "Enqueue/lock conflicts",
+     "Commits inside enhancements of standard transactions"
+    ],
+    "refs": [
+     22
+    ]
+   },
+   {
+    "title": "Clean-core options when classic BAdIs are not available (MM02 on Public Edition)",
+    "explanation": "Ref 24 asks for a BAdI in the classic GUI transaction MM02 on S/4HANA Cloud Public Edition, similar to CMD_PRODUCT_VALIDATE for the Fiori app Manage Product Master Data. The post has no answer and does not say whether MM02 is available in that edition. The core issue is that Public Edition limits extensibility to released extension points.\n\nThe working method is to confirm first which UI the business user uses, then look in the released BAdI and extension catalogue for that edition. Do not assume that a hook available for the Fiori app also fires in a classic transaction. The post itself describes CMD_PRODUCT_VALIDATE only as the Fiori-side hook.\n\nFor teaching, compare three questions: Is the object (product master) behind a released API or BAdI? Does the validation belong in the data layer (a released validation hook) or the UI? Can the business process be moved to the Fiori app where a released hook exists? Answering these before writing code avoids building on an unreleased extension point.",
+    "key_concepts": [
+     "Released extension points",
+     "Classic vs cloud extensibility",
+     "Public Edition restrictions",
+     "Validation hooks and UI dependence"
+    ],
+    "refs": [
+     24
+    ]
+   },
+   {
+    "title": "Finding the real failing layer: 429 in API Management and 500 in Work Zone",
+    "explanation": "Refs 33 and 26 are different symptoms with the same debugging principle: identify which component produced the error before changing configuration. In ref 33, the team has no quota or spike-arrest policy yet sees HTTP 429. The post does not show whether API Management or the SAP backend returned it. Response headers, the API Management trace and analytics show where the status code originates. Whether SAP applies a default limit is a claim to check in the official documentation.\n\nIn ref 26, apps open in FLP but some return 500 in Work Zone. The content provider reads `/sap/bc/ui2/cdm3/entities`. Fetch that endpoint for a working and a failing app and diff the JSON for missing properties, component names, semantic objects or URLs. Then check ST22, SLG1 and the gateway log for the exception behind the 500, because the post only cites the browser console.\n\nThe common step is to compare a working and a failing case and collect server-side evidence, not to try SAP notes one after another.",
+    "key_concepts": [
+     "HTTP 429 source identification",
+     "API Management trace and policies",
+     "CDM3 content provider",
+     "Diffing working vs failing app output",
+     "ST22 and SLG1 backend logs"
+    ],
+    "refs": [
+     33,
+     26
+    ]
+   }
+  ],
+  "trending_problems": [
+   {
+    "theme": "LUW and commit handling in enhancements",
+    "description": "A BAPI in a customer enhancement fails for about half the records in mass processing. The developer plans to add a commit and asynchronous call modes without a diagnosis.",
+    "teaching_tip": "Have students log RETURN messages per record first, then discuss where a commit may sit and why call modes differ.",
+    "refs": [
+     22
+    ]
+   },
+   {
+    "theme": "Extensibility limits on S/4HANA Cloud Public Edition",
+    "description": "A developer wants a validation hook in classic MM02, while only a Fiori-side hook is known.",
+    "teaching_tip": "Teach checking the released extension catalogue and the UI used before designing a validation.",
+    "refs": [
+     24
+    ]
+   },
+   {
+    "theme": "Unclear error origin in gateway and launchpad scenarios",
+    "description": "429 from API Management without policies, and 500 from Work Zone for some apps via CDM3.",
+    "teaching_tip": "Teach the diff method and tracing to locate the failing layer.",
+    "refs": [
+     33,
+     26
+    ]
+   },
+   {
+    "theme": "Groovy v2 runtime restrictions",
+    "description": "A script using javax.crypto.Mac fails with a JDK module access error, and commons-codec Hex is unavailable.",
+    "teaching_tip": "Write a real HMAC with Mac.init and doFinal using public JDK APIs and verify the runtime Java version.",
+    "refs": [
+     23
+    ]
+   }
+  ],
+  "post_drafts": [
+   {
+    "title": "ABAP Cloud Developer Trial ends",
+    "text": "*ABAP Cloud Developer Trial is being discontinued*\n\nFrom *Nov 17*:\n- no more Docker Hub download\n- CAL template \"ABAP Platform 2025 developer edition on SAP HANA\" can't create new appliances\n\nExisting instances keep running until their licence expires. *No extensions.*\n\nSAP points to the free SAP Business AI Platform ABAP environment (trial account or free tier).\n\nIf your practice setup depends on the image, plan the move now.\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/discontinuation-of-the-abap-cloud-developer-trial/ba-p/14517552"
+   },
+   {
+    "title": "Don't add COMMIT to fix a BAPI",
+    "text": "*BAPI updates only half the records in a mass run?*\n\nBefore wrapping it in a Z FM with BAPI_TRANSACTION_COMMIT:\n1. Read the *RETURN* table after every call\n2. Check for lock/enqueue conflicts\n3. Check what state carries over between calls\n\nA commit inside an enhancement of a standard transaction ends *its* LUW early.\n\nSTARTING NEW TASK, IN UPDATE TASK and IN BACKGROUND TASK are different mechanisms, not alternatives for the same fix.\n\nDiagnose first.\n\nhttps://community.sap.com/t5/technology-q-a/bapi-not-updating-during-mass-update/qaq-p/14517866"
+   },
+   {
+    "title": "429 from API Management?",
+    "text": "*Got HTTP 429 with no quota or spike-arrest policy?*\n\nFirst question: *who returned it*?\n- API Management layer, or\n- the SAP backend\n\nCheck response headers, the APIM trace and analytics, then the policy chain.\n\nDon't assume a default rate limit. Verify it in the official docs.\n\nhttps://community.sap.com/t5/technology-q-a/receiving-429-too-many-request-error/qaq-p/14517526"
+   }
+  ],
+  "interview_questions": [
+   {
+    "question": "A standard BAPI called in a loop from a customer enhancement updates only about half the records. How do you diagnose it before changing the code?",
+    "answer": "I would first check what the BAPI reports. After every call I read the RETURN table for E and A messages and check sy-subrc for exceptions, and I log them per record, for example in SLG1. Then I look for lock conflicts, because the standard transaction may hold an enqueue on the same object. I also check whether state from a previous iteration affects the next call. Only after that would I decide where a commit belongs. Adding BAPI_TRANSACTION_COMMIT inside an enhancement can end the standard transaction's LUW early and make its rollback logic unreliable.",
+    "level": "Senior",
+    "refs": [
+     22
+    ]
+   },
+   {
+    "question": "Explain the difference between CALL FUNCTION STARTING NEW TASK, IN UPDATE TASK and IN BACKGROUND TASK.",
+    "answer": "STARTING NEW TASK starts an asynchronous call in a separate session with its own LUW. The caller continues without waiting, and results can be received through a callback if one is registered. IN UPDATE TASK registers an update function module. The system runs it in an update work process when COMMIT WORK is executed, and it is discarded on ROLLBACK WORK. IN BACKGROUND TASK registers a tRFC call, which is executed after COMMIT WORK and can be repeated if it fails. So they differ in timing, transactional coupling and error handling. They are not interchangeable fixes for a failing update.",
+    "level": "Mid-level",
+    "refs": [
+     22
+    ]
+   },
+   {
+    "question": "Some ABAP-hosted UI5 apps return HTTP 500 in Work Zone through a CDM3 content provider but work in FLP. How do you approach it?",
+    "answer": "I would treat it as app-specific, since only some apps fail. I call /sap/bc/ui2/cdm3/entities for a working and a failing app and compare the JSON, looking for missing properties, component names, semantic objects or URLs. In parallel I look for the server-side exception behind the 500 in ST22, SLG1 and the gateway log, because the browser console alone gives too little. I would then check the SAP notes that match the symptom, such as those referencing the CDM3 handler. The goal is to find the real cause before applying notes at random.",
+    "level": "Architect",
+    "refs": [
+     26
+    ]
+   }
+  ],
+  "class_idea": {
+   "title": "Why does my BAPI fail on some records? LUW, commits and call modes",
+   "why_now": "A community question today shows a developer about to add commits and async call modes to a BAPI without reading the RETURN table. It is a common mistake.",
+   "outline": [
+    "LUW basics: dialog, update and database LUW",
+    "COMMIT WORK and ROLLBACK WORK in standard transactions",
+    "Reading BAPI RETURN and logging per record with SLG1",
+    "Enqueue and lock conflicts",
+    "STARTING NEW TASK vs IN UPDATE TASK vs IN BACKGROUND TASK",
+    "Where a commit may sit in an enhancement",
+    "Design of a safe wrapper function module"
+   ],
+   "exercise": "In ADT, write a report that calls a BAPI in a loop for 20 records, where some records are deliberately locked by a second session. Log all RETURN messages per record, find the lock failures, then add a wrapper that commits only in a program that owns the LUW. Compare the result with the same loop run inside an enhancement.",
+   "refs": [
+    22
+   ]
+  },
+  "whatsapp_highlights": "ABAP Cloud Developer Trial discontinued from Nov 17 (Docker Hub, CAL template); free ABAP environment suggested | BAPI updating only half the records: read RETURN and check locks before adding COMMIT | Fiori tools 2611 adds App-to-ABAP navigation | 429 from API Management: find which layer returns it"
+ }
+}
