@@ -653,5 +653,27 @@
   "feed": "SAP Community questions",
   "kind": "question",
   "text": "We need guidance on POS integration pricing and tax behavior in S/4HANA Cloud Public Edition. \n Pricing requirement: \n The final POS price must be tax-inclusive, with ESP0/EPV0 holding the net price and ZTEG calculating the tax separately (e.g., 100 EGP + 14% ZTEG = 114 EGP). We use custom pricing procedure Z99998 (copied from A73034). \n Questions: \n 1. How to configure ESP0/EPV0 for net price and ZTEG for tax calculation? \n 2. How is the tax-inclusive price transferred to POS? \n 3. Is this supported via standard configuration? \n Tax determination issue: \n Despite changes to the Product Master tax classification, pricing analysis always shows 0 – Tax Exempt. \n Questions: \n 1. What master data/config drives tax classification in POS inbound pricing? \n 2. Why does the tax exempt result persist after Product Master changes? \n 3. Is additional configuration needed for ZTEG to determine the correct tax rate? \n\n Thanks!"
+ },
+ {
+  "key": "ab93f38ad04ed451",
+  "title": "S/4HANA Cloud Private Edition (012) - SAP Cloud Connector(SCC)をアップグレードする方法",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/s-4hana-cloud-private-edition-012-sap-cloud-connector-scc-%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/ba-p/14518067",
+  "published": "2026-11-07T00:30:23+00:00",
+  "author": "KevinYin",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP S/4HANA Cloud Private Editionにおいて、SAP Cloud Connector(以下、SCC)は、現時点ではお客様環境にデフォルトで提供されています。その構成は下記のとおりです。 \n 開発/検証環境: シングル構成(1台のサーバーを利用) \n 本番環境: 2台(Master/Slave)構成による冗長化 \n 本記事では、SR依頼によりSCCをアップグレードする方法についてご紹介します。 \n SCCをアップグレードする際は、下記のService Request(以下、SR)をご利用ください。 \n SRテンプレート: Upgrade SAP Cloud Connector \n\n SCCをアップグレードする \n 下記の例では、SR起票時点での最新バージョンにSCCをアップグレードしています。 \n\n Target Version : アップグレードするバージョンを選択する画面にて、現時点の最新バージョンである2.19.1を選択します。 \n\n 上記のリストに表示されているバージョンが、RISEでサポートしているSCCのバージョンです。なお、各バージョンのEOM(End Of Maintenance)の日付は定められておりません。SCCのサポート方針につきましては、下記のSAP Noteもあわせてご確認ください。 \n 3302250 - Cloud コネクタのサポート方針 \n また、バグが検知されたSCCバージョンは、RISEの判断によりアップグレード対象外となり、上記のターゲットバージョンのリストには表示されません。 \n Best Practice Update Sequence : Yes \n 開発/検証環境、本番環境の順(RISE推奨)でアップグレードする場合はYesを、それ以外の場合はNoを選択してください。 \n\n まとめ \n 本記事では、SRを利用してSAP Cloud Connector(SCC)をアップグレードする方法についてご紹介しました。 \n SCCは、SAP S/4HANA Cloud Private EditionとBTPを接続する重要なコンポーネントです。安定稼働とセキュリティの観点から、サポート対象の最新バージョンへ定期的にアップグレードすることをおすすめします。 \n アップグレードの際は、「Upgrade SAP Cloud Connector」テンプレートからSRを起票し、Target VersionおよびBest Practice Update Sequenceを適切に選択してください。 \n また、SCCのサポート方針やサポート対象バージョンにつきましては、SAP Note 3302250もあわせてご確認いただくことをおすすめします。"
+ },
+ {
+  "key": "636d9592190c95b4",
+  "title": "Open Mapping Tasks Count Discrepancy in Migration Cockpit",
+  "link": "https://community.sap.com/t5/technology-q-a/open-mapping-tasks-count-discrepancy-in-migration-cockpit/qaq-p/14518061",
+  "published": "2026-11-07T00:08:22+00:00",
+  "author": "yulo",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Does anyone experience the same Migration Cockpit issue where the count of open mapping tasks does not match the actual number of open mapping tasks? \n In my case, it shows 3 open mapping tasks, but when I open the mapping tasks, there is only 1 displayed. Has anyone encountered this discrepancy before?"
  }
 ]
