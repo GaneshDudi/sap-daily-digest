@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-08",
+  "label": "Sunday, 8 November 2026",
+  "headline": "A thin Sunday: three integration and AI community posts with little code, so the value is in the questions they raise.",
+  "items": 6,
+  "deep": 3
+ },
+ {
   "date": "2026-11-07",
   "label": "Saturday, 7 November 2026",
   "headline": "Thin day for core ABAP: the ABAP Cloud Developer Trial is discontinued, and the one real ABAP question is about BAPI LUW handling.",

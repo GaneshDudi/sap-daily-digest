@@ -1,0 +1,144 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SAP Community digest · Sunday, 8 November 2026</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Serif:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F5F7F9;--surface:#FFFFFF;--ink:#16202A;--muted:#57636F;--rule:#D5DCE3;
+--blue:#0B5FAE;--amber:#8F5A00;--amber-bg:#FFF1D6;--chip:#E8EEF4;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0F1720;--surface:#16212C;
+--ink:#E6EDF3;--muted:#9AA7B4;--rule:#2A3744;--blue:#7DBBF7;--amber:#F2B955;--amber-bg:#2F2610;--chip:#1F2C39}}
+:root[data-theme="dark"]{--paper:#0F1720;--surface:#16212C;--ink:#E6EDF3;--muted:#9AA7B4;--rule:#2A3744;
+--blue:#7DBBF7;--amber:#F2B955;--amber-bg:#2F2610;--chip:#1F2C39}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 4rem)}
+body{margin:0;background:var(--paper);color:var(--ink);
+font:1.0625rem/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+a{color:var(--blue)}a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+h1,h2,h3{font-family:"IBM Plex Serif",Georgia,"Times New Roman",serif;line-height:1.25}
+header.mast{padding:3rem 0 1.5rem}
+.kicker{color:var(--muted);margin:0 0 .25rem;font-size:.95rem}
+h1{font-size:clamp(2rem,6vw,3rem);margin:0 0 1rem;font-weight:600;letter-spacing:-.01em}
+.lead{font-family:"IBM Plex Serif",Georgia,serif;font-size:1.3rem;line-height:1.45;margin:0 0 1rem}
+.stats{color:var(--muted);margin:0}
+nav.toc{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);
+border-bottom:1px solid var(--rule);overflow-x:auto;white-space:nowrap}
+nav.toc .wrap{display:flex;gap:1.25rem;padding-top:.7rem;padding-bottom:.7rem}
+nav.toc a{text-decoration:none;color:var(--ink);font-size:.95rem}
+nav.toc a:hover{color:var(--blue)}
+section{padding:2.25rem 0 .5rem}
+h2{font-size:1.6rem;margin:0 0 .35rem}
+.sub{color:var(--muted);margin:0 0 1.25rem}
+.story{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:1.1rem 1.25rem;margin:0 0 1rem}
+.story h3{margin:.1rem 0 .5rem;font-size:1.2rem}
+.story p{margin:.5rem 0}
+.prio{display:inline-block;font-size:.8rem;font-weight:600;color:var(--amber);background:var(--amber-bg);
+border-radius:4px;padding:.1rem .45rem}
+.why{color:var(--ink)}.why strong{font-weight:600}
+.src{font-size:.9rem;color:var(--muted);margin-top:.6rem}
+.src a{display:inline-block;margin:0 .9rem .3rem 0}
+.plain{border-left:3px solid var(--rule);padding:.1rem 0 .1rem 1rem;margin:0 0 1.25rem}
+.plain h3{margin:0 0 .35rem;font-size:1.1rem}
+.plain p{margin:.35rem 0}
+.dive{margin:0 0 2rem}
+.dive h3{font-size:1.35rem;margin:0 0 .5rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.75rem 0 0;padding:0;list-style:none}
+.chips li{background:var(--chip);border-radius:4px;padding:.15rem .5rem;font-size:.88rem}
+code{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-size:.92em;background:var(--chip);
+padding:.05rem .3rem;border-radius:3px}
+.draft{background:var(--surface);border:1px solid var(--rule);border-radius:10px;margin:0 0 1.25rem;overflow:hidden}
+.draft-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.75rem 1rem;
+border-bottom:1px solid var(--rule)}
+.draft-head h3{margin:0;font-size:1.05rem}
+.draft pre{margin:0;padding:1rem;white-space:pre-wrap;word-wrap:break-word;font:inherit;line-height:1.55}
+button.copy{font:inherit;font-size:.9rem;background:var(--blue);color:#fff;border:0;border-radius:6px;
+padding:.4rem .85rem;cursor:pointer;flex:none}
+:root[data-theme="dark"] button.copy{color:#0F1720}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) button.copy{color:#0F1720}}
+details{border-top:1px solid var(--rule);padding:.6rem 0}
+details:last-of-type{border-bottom:1px solid var(--rule)}
+summary{cursor:pointer;font-weight:600}
+summary .n{color:var(--muted);font-weight:400}
+.idx{list-style:none;margin:.6rem 0 0;padding:0}
+.idx li{padding:.45rem 0;border-top:1px dashed var(--rule)}
+.idx li:first-child{border-top:0}
+.kind{color:var(--muted);font-size:.85rem;margin-right:.4rem}
+.one{display:block;color:var(--muted);font-size:.93rem}
+.oos{opacity:.8}
+footer{color:var(--muted);font-size:.9rem;padding:3rem 0 2.5rem}
+.archive li{padding:.9rem 0;border-bottom:1px solid var(--rule);list-style:none}
+.archive{padding:0}.archive a{font-family:"IBM Plex Serif",Georgia,serif;font-size:1.2rem}
+.archive p{margin:.25rem 0 0;color:var(--muted)}
+.empty{color:var(--muted);font-style:italic}
+details.qa{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:.8rem 1.1rem;margin:0 0 .8rem}
+details.qa summary{font-weight:600;line-height:1.45}
+details.qa summary .prio{margin-right:.4rem}
+details.qa[open] summary{margin-bottom:.4rem}
+.outline{margin:.6rem 0;padding-left:1.4rem}.outline li{margin:.25rem 0}
+@media (prefers-reduced-motion:no-preference){.story,.dive{scroll-margin-top:4rem}}
+</style></head><body><header class="mast"><div class="wrap">
+<p class="kicker">SAP Community daily digest</p><h1>Sunday, 8 November 2026</h1>
+<p class="lead">A thin Sunday: three integration and AI community posts with little code, so the value is in the questions they raise.</p>
+<p class="stats">Screened 6 new items from the last day. 3 were technical, and 3 were read in full.</p>
+</div></header>
+<nav class="toc" aria-label="Sections"><div class="wrap">
+<a href="#overview">Overview</a><a href="#top">Top stories</a><a href="#releases">Releases</a>
+<a href="#dives">Deep dives</a><a href="#problems">Developer problems</a><a href="#interview">Interview questions</a><a href="#class">Class idea</a><a href="#drafts">Post drafts</a><a href="#all">Everything</a>
+</div></nav><main class="wrap"><section id="overview"><h2>The day in one minute</h2><p>Only three items arrived, all community blog posts. None covers core ABAP, RAP or CDS. One announces cpi-saper-dev-mcp, an open-source MCP server for building and testing SAP Cloud Integration iFlows with an AI agent. One is an orientation guide to SAP Joule Studio provisioning and roles. One describes a transportable CSRF token pattern in SAP API Management.</p><p>All three are abstracts or teasers with no code, policy XML, CLI syntax or tool lists. Treat them as pointers to verify, not as how-tos. The most reusable lesson is practical: check which APIs an agent calls, how credentials are handled, and which objects actually transport between landscapes.</p></section><section id="top"><h2>Top stories</h2><p class="sub">Ranked by how much they matter to ABAP developers.</p><article class="story"><span class="prio">Priority 1</span>
+<h3>cpi-saper-dev-mcp: MCP server for AI-driven iFlow development</h3><p>An open-source beta MCP server aimed at development, not operations, in SAP Cloud Integration. The claimed loop: the agent builds an iFlow, deploys it to a development tenant, sends a test message and fixes failures. The post gives no tool list, authentication model, scopes or MCP client compatibility.</p>
+<p class="why"><strong>Why it matters:</strong> It targets the iFlow development loop, where ops-focused MCP servers do not help. Without the repository or documentation, safety (credentials, tenant access) and quality of generated iFlows cannot be judged. Review the repo before any use, and only against a development tenant.</p><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/sap-cloud-integration-an-mcp-server-that-lets-ai-agents-build-and-test/ba-p/14516391" title="SAP Cloud Integration: an MCP server that lets AI agents build and test iFlows">Blog: SAP Cloud Integration: an MCP server that lets AI agents bui</a></div></article><article class="story"><span class="prio">Priority 2</span>
+<h3>Transportable CSRF token handling in SAP API Management</h3><p>The pattern fetches the CSRF token through a callout that targets the API proxy itself, reusing its provider and connection. It is claimed to work with OAuth or API key in front of the proxy and to move DEV to QA to UAT to PRD without a new API provider per landscape. The policy type and header details are not shown.</p>
+<p class="why"><strong>Why it matters:</strong> Environment-specific endpoints inside proxies are a common reason transports break. The idea is sound, but reproduce it in a sandbox before relying on it.</p><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/transportable-csrf-token-handling-in-sap-api-management-without-an-api/ba-p/14516606" title="Transportable CSRF token handling in SAP API Management without an API provider in the callout">Blog: Transportable CSRF token handling in SAP API Management with</a></div></article><article class="story"><span class="prio">Priority 3</span>
+<h3>SAP Joule Studio: provisioning, roles and Intent-Based Development</h3><p>The post covers the six IBD stages (Intent, Requirements, Specification, Solution, Testing, Deployment), admin provisioning in SAP for Me (Core Components, Joule, Joule Studio blueprints), the JouleStudioDeveloper group in SAP Cloud Identity Services, and the developer, administrator and end-user roles. Git with OIDC trust to GitHub is needed for production only. The excerpt is truncated and has no code or CLI syntax.</p>
+<p class="why"><strong>Why it matters:</strong> It maps the access and provisioning steps that usually block first-time users. Beyond that it is conceptual, so use SAP&#x27;s official documentation for hands-on steps.</p><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/from-business-intent-to-ai-agents-a-practical-guide-to-getting-started-with/ba-p/14518131" title="From Business Intent to AI Agents: A Practical Guide to Getting Started with SAP Joule Studio">Blog: From Business Intent to AI Agents: A Practical Guide to Gett</a></div></article></section><section id="releases"><h2>Releases and announcements</h2><div class="plain"><h3>cpi-saper-dev-mcp (open source, beta)</h3><p>Development-focused MCP server for SAP Cloud Integration, described as available now in beta. Details on supported APIs and setup are not given in the post.</p><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/sap-cloud-integration-an-mcp-server-that-lets-ai-agents-build-and-test/ba-p/14516391" title="SAP Cloud Integration: an MCP server that lets AI agents build and test iFlows">Blog: SAP Cloud Integration: an MCP server that lets AI agents bui</a></div></div></section><section id="dives"><h2>Deep dives</h2><p class="sub">The most valuable technical posts, explained.</p><article class="dive"><h3>Transportable CSRF token fetch in SAP API Management</h3><p>Write calls to many SAP backends (for example OData services in a Gateway system) need an <code>X-CSRF-Token</code> obtained with a prior GET carrying <code>X-CSRF-Token: Fetch</code>. In API Management this is usually done with a service callout policy that points to an API provider. The problem is that the provider is a per-landscape object, so each system needs its own and the configuration does not transport cleanly.</p><p>The post describes a different approach: the callout targets the API proxy itself, so it reuses the proxy&#x27;s existing provider and connection. It is said to work when OAuth or an API key protects the proxy, and to transport from DEV to PRD without new provider objects. The abstract does not name the policy type, headers or exact configuration, so those details are unverified.</p><p>To check it yourself, build a proxy to an OData service in a sandbox. Add a GET path that sends <code>X-CSRF-Token: Fetch</code> and captures the returned token and cookies. Then use that token on the POST. Watch session cookie handling, because the backend ties the token to the session. Finally, export and import the proxy and see which objects move.</p>
+<ul class="chips" aria-label="Key concepts"><li>CSRF token fetch (`X-CSRF-Token: Fetch`)</li><li>API proxy vs API provider</li><li>Service callout policy</li><li>Transport across landscapes</li><li>Session cookie binding of the token</li></ul><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/transportable-csrf-token-handling-in-sap-api-management-without-an-api/ba-p/14516606" title="Transportable CSRF token handling in SAP API Management without an API provider in the callout">Blog: Transportable CSRF token handling in SAP API Management with</a></div></article><article class="dive"><h3>Evaluating an AI agent that builds iFlows</h3><p>cpi-saper-dev-mcp is described as an MCP server that lets an agent build an iFlow, deploy it to a development tenant, send a test message and fix failures. MCP exposes tools to the agent, so the real behavior depends on which tools are defined and which Cloud Integration APIs they call. The post does not say.</p><p>Before trusting such a tool, review a few points. What credentials does it need, and with which scopes? Does it only touch a development tenant? Does the iFlow it generates stay in a form you can inspect, version and transport? How does it decide a test message succeeded, for example from message processing logs?</p><p>For teaching, this is a good case for discussing agent autonomy in a development loop: deploy and test are reversible on a development tenant, but the credentials and the review of generated artifacts still need human control.</p>
+<ul class="chips" aria-label="Key concepts"><li>MCP server</li><li>Development vs operations tooling</li><li>Development tenant isolation</li><li>Credential scopes</li><li>Reviewing generated iFlows</li></ul><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/sap-cloud-integration-an-mcp-server-that-lets-ai-agents-build-and-test/ba-p/14516391" title="SAP Cloud Integration: an MCP server that lets AI agents build and test iFlows">Blog: SAP Cloud Integration: an MCP server that lets AI agents bui</a></div></article></section><section id="problems"><h2>What developers are struggling with</h2><p class="sub">Patterns from today's questions. Useful for classes and interview prep.</p><div class="plain"><h3>Environment-specific configuration breaking transports</h3><p>Per-landscape objects such as API providers complicate moving API proxies from DEV to PRD.</p>
+<p><strong>Teaching tip:</strong> Have students list which objects in a proxy are environment-bound and which transport, then test it with an export and import.</p><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/transportable-csrf-token-handling-in-sap-api-management-without-an-api/ba-p/14516606" title="Transportable CSRF token handling in SAP API Management without an API provider in the callout">Blog: Transportable CSRF token handling in SAP API Management with</a></div></div><div class="plain"><h3>Access and provisioning as the first blocker for AI tooling</h3><p>Joule Studio needs ordered provisioning in SAP for Me and group assignment in SAP Cloud Identity Services before any development starts.</p>
+<p><strong>Teaching tip:</strong> Provide a checklist of provisioning order and roles before the hands-on session.</p><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/from-business-intent-to-ai-agents-a-practical-guide-to-getting-started-with/ba-p/14518131" title="From Business Intent to AI Agents: A Practical Guide to Getting Started with SAP Joule Studio">Blog: From Business Intent to AI Agents: A Practical Guide to Gett</a></div></div></section><section id="interview"><h2>Interview questions</h2><p class="sub">Grounded in today's material. Open each one to see a model answer.</p><details class="qa"><summary><span class="prio">Senior</span> A write call to an SAP backend through API Management fails with a CSRF error. How do you fix it, and how do you keep the fix transportable across landscapes?</summary>
+<p>The backend requires an <code>X-CSRF-Token</code> obtained by a prior GET with the header <code>X-CSRF-Token: Fetch</code>. The returned token must be sent on the write call, together with the session cookies, because the token is bound to the session. In API Management this is typically done with a callout policy before the write. The usual problem is that the callout points to a separate API provider, which exists per landscape. A community post describes making the callout target the API proxy itself, reusing its provider and connection, so no new provider is needed per system. I would verify this in a sandbox, including cookie handling and what moves on export and import.</p><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/transportable-csrf-token-handling-in-sap-api-management-without-an-api/ba-p/14516606" title="Transportable CSRF token handling in SAP API Management without an API provider in the callout">Blog: Transportable CSRF token handling in SAP API Management with</a></div></details><details class="qa"><summary><span class="prio">Architect</span> What would you check before letting an AI agent through an MCP server deploy and test iFlows on a Cloud Integration tenant?</summary>
+<p>First, which tools the server exposes and which Cloud Integration APIs they call. Second, the credentials and scopes it uses, which should be minimal and limited to a development tenant. Third, whether the generated iFlow is inspectable, versioned and goes through normal review before transport. Fourth, how success of a test message is determined, for example through message processing logs rather than the agent&#x27;s own claim. Fifth, how the tenant is protected so the agent cannot reach production. The announcement does not cover these points, so the repository must be reviewed.</p><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/sap-cloud-integration-an-mcp-server-that-lets-ai-agents-build-and-test/ba-p/14516391" title="SAP Cloud Integration: an MCP server that lets AI agents build and test iFlows">Blog: SAP Cloud Integration: an MCP server that lets AI agents bui</a></div></details><details class="qa"><summary><span class="prio">Mid-level</span> How is access to SAP Joule Studio provisioned, according to the guide?</summary>
+<p>An admin provisions in SAP for Me in order: Core Components, then Joule, then Joule Studio blueprints. Developers get access by assignment to the JouleStudioDeveloper group in SAP Cloud Identity Services. Roles are Developer for own solutions, Administrator for all tenant solutions, and End User for Joule Work access. For production, Git with OIDC trust between Cloud Identity Services and GitHub is required, while development and testing do not need it. The guide is conceptual and the excerpt is truncated, so details should be confirmed in SAP documentation.</p><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/from-business-intent-to-ai-agents-a-practical-guide-to-getting-started-with/ba-p/14518131" title="From Business Intent to AI Agents: A Practical Guide to Getting Started with SAP Joule Studio">Blog: From Business Intent to AI Agents: A Practical Guide to Gett</a></div></details></section><section id="class"><h2>Class idea</h2><article class="story"><h3>CSRF tokens and transportable proxy design in API Management</h3><p>Today&#x27;s CSRF post raises a common problem: environment-bound objects in API proxies break transports. It is also a topic ABAP developers meet when exposing OData services.</p>
+<ol class="outline"><li>How CSRF protection works in SAP Gateway/OData: fetch, token, session cookie</li><li>API proxy, API provider and callout policy relationships</li><li>Why per-landscape providers hurt transports</li><li>Self-targeting callout pattern: design and risks</li><li>Testing write calls end to end</li><li>Export/import and what moves between systems</li></ol><p><strong>Hands-on exercise:</strong> In a sandbox API Management tenant, build a proxy to an OData service with a write operation. Implement the CSRF fetch via a callout, make the POST succeed, then export and import the proxy and document which objects needed manual changes.</p><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/transportable-csrf-token-handling-in-sap-api-management-without-an-api/ba-p/14516606" title="Transportable CSRF token handling in SAP API Management without an API provider in the callout">Blog: Transportable CSRF token handling in SAP API Management with</a></div></article></section><section id="drafts"><h2>Post drafts for your community</h2><p class="sub">Ready to copy into WhatsApp. Review before posting.</p><div class="draft"><div class="draft-head"><h3>CSRF token in API Management</h3>
+<button class="copy" type="button" data-target="draft0">Copy text</button></div>
+<pre id="draft0">*CSRF token fetch in SAP API Management without a new API provider per system*
+
+A community post describes a pattern:
+- the callout targets the API proxy itself
+- it reuses the proxy&#x27;s provider and connection
+- it is said to work with OAuth or an API key in front
+- no new provider object per DEV/QA/PRD
+
+Caveat: the post is only an abstract. Policy type and headers are not shown.
+
+*Try it in a sandbox and check what actually transports.*
+
+https://community.sap.com/t5/technology-blog-posts-by-members/transportable-csrf-token-handling-in-sap-api-management-without-an-api/ba-p/14516606</pre></div><div class="draft"><div class="draft-head"><h3>MCP server for iFlows</h3>
+<button class="copy" type="button" data-target="draft1">Copy text</button></div>
+<pre id="draft1">*An open-source MCP server for building iFlows with an AI agent*
+
+cpi-saper-dev-mcp (beta) claims the agent can:
+- build an iFlow
+- deploy to a dev tenant
+- send a test message
+- fix failures
+
+The post gives no tool list, auth model or scopes.
+
+*Read the repo before connecting it to any tenant.*
+
+https://community.sap.com/t5/technology-blog-posts-by-members/sap-cloud-integration-an-mcp-server-that-lets-ai-agents-build-and-test/ba-p/14516391</pre></div></section><section id="all"><h2>Everything from today</h2><p class="sub">Every item collected, grouped by area. Items outside your focus areas are dimmed.</p><details><summary>OData, APIs &amp; Integration <span class="n">(2)</span></summary><ul class="idx"><li><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/technology-blog-posts-by-members/sap-cloud-integration-an-mcp-server-that-lets-ai-agents-build-and-test/ba-p/14516391">SAP Cloud Integration: an MCP server that lets AI agents build and test iFlows</a><span class="one">Open-source MCP server letting AI agents build, deploy and test SAP Cloud Integration iFlows in a dev tenant (beta).</span></li><li><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/technology-blog-posts-by-members/transportable-csrf-token-handling-in-sap-api-management-without-an-api/ba-p/14516606">Transportable CSRF token handling in SAP API Management without an API provider in the callout</a><span class="one">How to handle CSRF token fetch via an API Management callout that reuses the proxy&#x27;s own provider, transportable across landscapes.</span></li></ul></details><details><summary>Functional &amp; Business Processes <span class="n">(2)</span></summary><ul class="idx"><li class="oos"><span class="kind">Question</span>
+<a href="https://community.sap.com/t5/enterprise-resource-planning-q-a/s-4hana-public-cloud-can-lightweight-wm-storage-bin-management-be-used/qaq-p/14518219">S/4HANA Public Cloud – Can Lightweight WM (Storage Bin Management) Be Used Without Enabling EWM?</a><span class="one">Functional question on using Lightweight WM storage bins without activating EWM in S/4HANA Public Cloud.</span></li><li class="oos"><span class="kind">Question</span>
+<a href="https://community.sap.com/t5/enterprise-resource-planning-q-a/perform-contract-valuation-background-job-app-having-error/qaq-p/14518216">Perform Contract Valuation -Background Job App Having Error</a><span class="one">Functional user question about the Cash Flow view error in the contract valuation background job app.</span></li></ul></details><details><summary>Community, Events &amp; Careers <span class="n">(1)</span></summary><ul class="idx"><li class="oos"><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/kyiv-blog-posts/%D0%B2%D0%B5%D0%B1%D1%96%D0%BD%D0%B0%D1%80-autonomous-enterprise-for-retail-%D1%88%D1%96-%D1%8F%D0%BA%D0%B8%D0%B9-%D0%BD%D0%B5-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE-%D0%B0%D0%BD%D0%B0%D0%BB%D1%96%D0%B7%D1%83%D1%94-%D0%B2%D1%96%D0%BD-%D0%B4%D1%96%D1%94/ba-p/14518162">Вебінар Autonomous Enterprise for Retail: ШІ, який не просто аналізує — він діє</a><span class="one">Ukrainian marketing webinar promo on autonomous AI for retail; no developer content.</span></li></ul></details><details><summary>AI &amp; Joule <span class="n">(1)</span></summary><ul class="idx"><li><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/technology-blog-posts-by-members/from-business-intent-to-ai-agents-a-practical-guide-to-getting-started-with/ba-p/14518131">From Business Intent to AI Agents: A Practical Guide to Getting Started with SAP Joule Studio</a><span class="one">Getting-started guide to SAP Joule Studio for building agentic AI and intent-based applications.</span></li></ul></details></section></main><footer><div class="wrap">Generated 8 Nov 2026, 13:07 IST. Summaries are written by Claude;
+check the original post before quoting or teaching from it. <a href="../index.html">All reports</a></div></footer><script>
+document.querySelectorAll('button.copy').forEach(function(b){b.addEventListener('click',function(){
+var t=document.getElementById(b.dataset.target).innerText;
+navigator.clipboard.writeText(t).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy text'},2000)},
+function(){b.textContent='Select and copy manually'})})});
+</script></body></html>
