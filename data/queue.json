@@ -1,1 +1,57 @@
-[]
+[
+ {
+  "key": "1da37f4c1b1281c1",
+  "title": "Rethinking Step07 in SAP Cloud Integration Pipeline v2: a Domain-Centric Shared Outbound PoC",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/rethinking-step07-in-sap-cloud-integration-pipeline-v2-a-domain-centric/ba-p/14518187",
+  "published": "2026-11-08T15:50:05+00:00",
+  "author": "rhviana",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "A laboratory proof of concept in SAP BTP Trial for asynchronous Sales Order processing using a shared Step07, metadata-driven routing, and XSLT-based transformations"
+ },
+ {
+  "key": "16083ab0fcb83a1f",
+  "title": "Red Alert",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/red-alert/ba-p/14518252",
+  "published": "2026-11-08T14:12:34+00:00",
+  "author": "Ari",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Dear SAP Business One community Today I want to talk about how you could leverage the credit limit check functionality within the web client. Let’s look at this video to learn more: \n\n You can find additional information in the SAP Business One Web client user guide and the Learning journey . \n Best wishes, Ari"
+ },
+ {
+  "key": "e1b262433b04871a",
+  "title": "Using Joule Work Desktop and Model Context Protocol to access next-gen SAP Ariba solutions",
+  "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/using-joule-work-desktop-and-model-context-protocol-to-access-next-gen-sap/ba-p/14517240",
+  "published": "2026-11-08T13:36:14+00:00",
+  "author": "FlavioFonte",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Joule Work Desktop \n Joule Work Desktop (JWD) is SAP's AI-powered desktop assistant for business users, available on both macOS and Windows. It provides a conversational interface to a large language model (LLM) — but unlike a simple chatbot, it goes far beyond Q&A. \n At its core, JWD is a productivity platform that brings together: \n Conversational AI — natural language responses with Markdown, code blocks, tables, and structured visuals (cards, KPIs, charts) \n Local file access — read, write, edit, and search files directly from your computer within a sandboxed, secure folder \n Terminal execution — run Python, Node.js, and shell scripts from within a conversation \n Web search — real-time grounding of AI responses with external sources \n Microsoft 365 integration — email (Outlook), calendar, Teams, To Do, and OneDrive/SharePoint, all accessible via natural language \n Spaces — persistent dashboards where data-backed cards (KPIs, tables, charts) refresh automatically over time \n Skills — reusable instruction sets (playbooks) that extend Joule's expertise for specific workflows or domains \n JWD is designed for the modern knowledge worker who needs to act across tools, data, and systems — without switching context constantly. \n What is the Model Context Protocol \n The Model Context Protocol ( MCP ) is an open standard and open-source framework introduced by Anthropic in November 2024 to standardize the way AI systems like Large Language Models (LLMs) integrate and share data with external tools, systems, and data sources. MCP provides a standardized interface for reading files, executing functions, and handling contextual prompts. \n The benefit of the MCP is clear, instead of maintaining a complex set of integrations yourself, you can leverage MCP servers that handle the heavy lifting of connecting to external services. \n Before MCP, developers often had to build custom connectors for each data source or tool, resulting in what Anthropic described as an \"N×M\" data integration problem. \n MCP follows a Client x Server Architecture and the MCP client abstracts away the complexity of server communication, letting you focus on your application logic while still getting access to powerful external tools and data sources. \n MCP Connectors: Extending Joule to Any System \n One of the most powerful architectural features of Joule Work Desktop is its support for the Model Context Protocol (MCP) — an open standard that allows Joule to connect to virtually any external system through a Connector . \n What is MCP in JWD? \n Connectors in JWD are MCP server integrations . They expose tools — functions the AI can invoke — that let Joule read data from, write data to, and automate workflows in external platforms. Think of them as a bridge between the LLM and your enterprise systems. \n Each Connector: \n Connects to an MCP server via a URL \n Exposes a set of tools (API operations) that Joule can call in natural language \n Supports multiple authentication methods: no-auth, bearer token, API key, or OAuth 2.0 (with PKCE + Dynamic Client Registration) \n How to Add a Connector in JWD \n In Joule Work Desktop, connectors are managed under Extensions → Connectors : \n Go to the Extensions icon in the left navigation bar \n Select the Connectors tab \n Click New → Add Connector , enter the name and MCP server URL \n Configure authentication if required \n Activate the connector per conversation using the \"Select Connector\" button in the input field \n Organizations can also pre-deploy connectors centrally, so they appear automatically as \"Organization-Managed\" connectors for all users — no manual setup required. \n Why MCP Matters for Enterprise AI \n MCP fundamentally changes what an AI assistant can do in a business context. Rather than being limited to knowledge it was trained on, a Joule conversation with active MCP connectors can: \n Retrieve live data from enterprise systems at the moment of the conversation \n Trigger actions (create, update, submit) in those systems based on natural language intent \n Combine data from multiple systems in a single response or Space card \n Be extended without code — adding a new system capability means registering a new MCP server URL \n This makes Joule Work Desktop not just an assistant, but a true AI integration layer for enterprise workflows. \n Accessing SAP Ariba via JWD + MCP \n With the SAP Ariba MCP Connector , Joule Work Desktop gains direct access to Ariba procurement data and workflows — surfaced entirely through natural language. \n The Procurement MCP exposes SAP Ariba Buying capabilities through the Model Context Protocol, giving AI clients direct access to requisition reporting, catalog browsing, and requisition creation. It covers 17 tools across three capability areas: reporting, catalog and requisition creation. \n Once the Procurement Ariba MCP server is connected in JWD and activated in a conversation, users can ask questions like: \n “Show me the requisitions created in September 2026” \n \"Show me my open purchase orders\" \n \"What invoices are pending approval?\" \n \"Find suppliers for a given category\" \n \"What is the status of requisition [ID]?\" \n Behind the scenes, Joule invokes the Ariba MCP tools, retrieves live data from the Ariba backend, and presents the results — as a conversational response, a structured table, or even as a persistent Space card that refreshes automatically. \n In the case of the first prompt example where we asked, “ Show me the requisitions created in September 2026”, we used the SAP Ariba MCP connector that connected with an SAP Ariba environment retrieving not only the list of the PR, but also the Total Spend, Number of Requisitions, etc. (See snippet below). \n\n This illustrates how we can easily extend next-gen SAP Ariba solutions in an AI-native experience that meet users where they already work, generating specific combined information needed to run business. \n In the next blog we’ll talk more about extending next-gen SAP Ariba solutions and creating specific functionalities tailored to the customer’s needs."
+ },
+ {
+  "key": "0e0fd471c0c8cdd9",
+  "title": "access restriction at result recording for MIC based on a operation workcenter",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/access-restriction-at-result-recording-for-mic-based-on-a-operation/qaq-p/14518278",
+  "published": "2026-11-08T17:10:49+00:00",
+  "author": "kraghavanbindhu",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Our requirement is to restrict the result recording for particular MIC by particular users. Like production should record only PP MIC and Quality should record only quality results in QE51. Since we segregated the QM and PP MIC to seperate operation in Inspection plan with seperate PP and QM work centers. Then tried using the work center authroization Q_CHAR_PRC . But its not working as stated in the note - 1799300 - No authority check for work center in transaction QE51N - SAP for Me. \n\n The auth object for work center will work only if the workcenter has been added to the selection parameter on the initial screen of transaction QE51N. \n\n So it would be better to use the exit QEEM0003 and QEEM006 to acheive the requirements. Also the inspection qualitfication function also dont have any control in QE51N. There also enhancement only"
+ },
+ {
+  "key": "7330b54c0eb53d02",
+  "title": "code is being used and cannot be deleted - Message No. Q3221",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/code-is-being-used-and-cannot-be-deleted-message-no-q3221/qaq-p/14518274",
+  "published": "2026-11-08T15:49:13+00:00",
+  "author": "kraghavanbindhu",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "If you face this issue while deleting the code check all quality notification, defects, task where these codes are used or not. If there are transactional data then this cant be deleted. \n\n Even if you delete this the data will be stored in QPGR table with inactive status \n Even though we used the workaround to delete the code group using 2281926 - Error Q3221 when deleting QM code - SAP for Me its not deleting the codes from table rather setting inactive field in table QPGR. \n\n Also there are feasibility to delete the code from table using the workaround 556218 - Usage indicator of codes cannot be deleted - SAP for Me but its not available for our system S4 Core 109 2025 \n At last in snote 3397012 - Get error message Q3221 \"Code *** is being used and cannot be delete\" when trying to delete a code in a code group - SAP for Me its stated that \"The physical deletion of used codes in the database is not allowed to avoid data inconsistencies in other applications\". \n Better we can change the status to below."
+ }
+]
