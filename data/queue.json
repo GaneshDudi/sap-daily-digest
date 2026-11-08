@@ -53,5 +53,16 @@
   "feed": "SAP Community questions",
   "kind": "question",
   "text": "If you face this issue while deleting the code check all quality notification, defects, task where these codes are used or not. If there are transactional data then this cant be deleted. \n\n Even if you delete this the data will be stored in QPGR table with inactive status \n Even though we used the workaround to delete the code group using 2281926 - Error Q3221 when deleting QM code - SAP for Me its not deleting the codes from table rather setting inactive field in table QPGR. \n\n Also there are feasibility to delete the code from table using the workaround 556218 - Usage indicator of codes cannot be deleted - SAP for Me but its not available for our system S4 Core 109 2025 \n At last in snote 3397012 - Get error message Q3221 \"Code *** is being used and cannot be delete\" when trying to delete a code in a code group - SAP for Me its stated that \"The physical deletion of used codes in the database is not allowed to avoid data inconsistencies in other applications\". \n Better we can change the status to below."
+ },
+ {
+  "key": "025e3edb87f89bf7",
+  "title": "SAP Inside Track Paris 2026: We Did It!",
+  "link": "https://community.sap.com/t5/paris-blog-posts/sap-inside-track-paris-2026-we-did-it/ba-p/14518315",
+  "published": "2026-11-08T19:57:21+00:00",
+  "author": "walid",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "A few weeks before SAP Inside Track Paris, I wrote a blog post explaining how organizing this event sometimes felt like planning a wedding. \n Well, the wedding happened. And what a day it was! 😄"
  }
 ]
