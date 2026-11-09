@@ -1,0 +1,873 @@
+{
+ "items": [
+  {
+   "key": "1da37f4c1b1281c1",
+   "title": "Rethinking Step07 in SAP Cloud Integration Pipeline v2: a Domain-Centric Shared Outbound PoC",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/rethinking-step07-in-sap-cloud-integration-pipeline-v2-a-domain-centric/ba-p/14518187",
+   "published": "2026-11-08T15:50:05+00:00",
+   "author": "rhviana",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "A laboratory proof of concept in SAP BTP Trial for asynchronous Sales Order processing using a shared Step07, metadata-driven routing, and XSLT-based transformations"
+  },
+  {
+   "key": "16083ab0fcb83a1f",
+   "title": "Red Alert",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/red-alert/ba-p/14518252",
+   "published": "2026-11-08T14:12:34+00:00",
+   "author": "Ari",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Dear SAP Business One community Today I want to talk about how you could leverage the credit limit check functionality within the web client. Let’s look at this video to learn more: \n\n You can find additional information in the SAP Business One Web client user guide and the Learning journey . \n Best wishes, Ari"
+  },
+  {
+   "key": "e1b262433b04871a",
+   "title": "Using Joule Work Desktop and Model Context Protocol to access next-gen SAP Ariba solutions",
+   "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/using-joule-work-desktop-and-model-context-protocol-to-access-next-gen-sap/ba-p/14517240",
+   "published": "2026-11-08T13:36:14+00:00",
+   "author": "FlavioFonte",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Joule Work Desktop \n Joule Work Desktop (JWD) is SAP's AI-powered desktop assistant for business users, available on both macOS and Windows. It provides a conversational interface to a large language model (LLM) — but unlike a simple chatbot, it goes far beyond Q&A. \n At its core, JWD is a productivity platform that brings together: \n Conversational AI — natural language responses with Markdown, code blocks, tables, and structured visuals (cards, KPIs, charts) \n Local file access — read, write, edit, and search files directly from your computer within a sandboxed, secure folder \n Terminal execution — run Python, Node.js, and shell scripts from within a conversation \n Web search — real-time grounding of AI responses with external sources \n Microsoft 365 integration — email (Outlook), calendar, Teams, To Do, and OneDrive/SharePoint, all accessible via natural language \n Spaces — persistent dashboards where data-backed cards (KPIs, tables, charts) refresh automatically over time \n Skills — reusable instruction sets (playbooks) that extend Joule's expertise for specific workflows or domains \n JWD is designed for the modern knowledge worker who needs to act across tools, data, and systems — without switching context constantly. \n What is the Model Context Protocol \n The Model Context Protocol ( MCP ) is an open standard and open-source framework introduced by Anthropic in November 2024 to standardize the way AI systems like Large Language Models (LLMs) integrate and share data with external tools, systems, and data sources. MCP provides a standardized interface for reading files, executing functions, and handling contextual prompts. \n The benefit of the MCP is clear, instead of maintaining a complex set of integrations yourself, you can leverage MCP servers that handle the heavy lifting of connecting to external services. \n Before MCP, developers often had to build custom connectors for each data source or tool, resulting in what Anthropic described as an \"N×M\" data integration problem. \n MCP follows a Client x Server Architecture and the MCP client abstracts away the complexity of server communication, letting you focus on your application logic while still getting access to powerful external tools and data sources. \n MCP Connectors: Extending Joule to Any System \n One of the most powerful architectural features of Joule Work Desktop is its support for the Model Context Protocol (MCP) — an open standard that allows Joule to connect to virtually any external system through a Connector . \n What is MCP in JWD? \n Connectors in JWD are MCP server integrations . They expose tools — functions the AI can invoke — that let Joule read data from, write data to, and automate workflows in external platforms. Think of them as a bridge between the LLM and your enterprise systems. \n Each Connector: \n Connects to an MCP server via a URL \n Exposes a set of tools (API operations) that Joule can call in natural language \n Supports multiple authentication methods: no-auth, bearer token, API key, or OAuth 2.0 (with PKCE + Dynamic Client Registration) \n How to Add a Connector in JWD \n In Joule Work Desktop, connectors are managed under Extensions → Connectors : \n Go to the Extensions icon in the left navigation bar \n Select the Connectors tab \n Click New → Add Connector , enter the name and MCP server URL \n Configure authentication if required \n Activate the connector per conversation using the \"Select Connector\" button in the input field \n Organizations can also pre-deploy connectors centrally, so they appear automatically as \"Organization-Managed\" connectors for all users — no manual setup required. \n Why MCP Matters for Enterprise AI \n MCP fundamentally changes what an AI assistant can do in a business context. Rather than being limited to knowledge it was trained on, a Joule conversation with active MCP connectors can: \n Retrieve live data from enterprise systems at the moment of the conversation \n Trigger actions (create, update, submit) in those systems based on natural language intent \n Combine data from multiple systems in a single response or Space card \n Be extended without code — adding a new system capability means registering a new MCP server URL \n This makes Joule Work Desktop not just an assistant, but a true AI integration layer for enterprise workflows. \n Accessing SAP Ariba via JWD + MCP \n With the SAP Ariba MCP Connector , Joule Work Desktop gains direct access to Ariba procurement data and workflows — surfaced entirely through natural language. \n The Procurement MCP exposes SAP Ariba Buying capabilities through the Model Context Protocol, giving AI clients direct access to requisition reporting, catalog browsing, and requisition creation. It covers 17 tools across three capability areas: reporting, catalog and requisition creation. \n Once the Procurement Ariba MCP server is connected in JWD and activated in a conversation, users can ask questions like: \n “Show me the requisitions created in September 2026” \n \"Show me my open purchase orders\" \n \"What invoices are pending approval?\" \n \"Find suppliers for a given category\" \n \"What is the status of requisition [ID]?\" \n Behind the scenes, Joule invokes the Ariba MCP tools, retrieves live data from the Ariba backend, and presents the results — as a conversational response, a structured table, or even as a persistent Space card that refreshes automatically. \n In the case of the first prompt example where we asked, “ Show me the requisitions created in September 2026”, we used the SAP Ariba MCP connector that connected with an SAP Ariba environment retrieving not only the list of the PR, but also the Total Spend, Number of Requisitions, etc. (See snippet below). \n\n This illustrates how we can easily extend next-gen SAP Ariba solutions in an AI-native experience that meet users where they already work, generating specific combined information needed to run business. \n In the next blog we’ll talk more about extending next-gen SAP Ariba solutions and creating specific functionalities tailored to the customer’s needs."
+  },
+  {
+   "key": "0e0fd471c0c8cdd9",
+   "title": "access restriction at result recording for MIC based on a operation workcenter",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/access-restriction-at-result-recording-for-mic-based-on-a-operation/qaq-p/14518278",
+   "published": "2026-11-08T17:10:49+00:00",
+   "author": "kraghavanbindhu",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Our requirement is to restrict the result recording for particular MIC by particular users. Like production should record only PP MIC and Quality should record only quality results in QE51. Since we segregated the QM and PP MIC to seperate operation in Inspection plan with seperate PP and QM work centers. Then tried using the work center authroization Q_CHAR_PRC . But its not working as stated in the note - 1799300 - No authority check for work center in transaction QE51N - SAP for Me. \n\n The auth object for work center will work only if the workcenter has been added to the selection parameter on the initial screen of transaction QE51N. \n\n So it would be better to use the exit QEEM0003 and QEEM006 to acheive the requirements. Also the inspection qualitfication function also dont have any control in QE51N. There also enhancement only"
+  },
+  {
+   "key": "7330b54c0eb53d02",
+   "title": "code is being used and cannot be deleted - Message No. Q3221",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/code-is-being-used-and-cannot-be-deleted-message-no-q3221/qaq-p/14518274",
+   "published": "2026-11-08T15:49:13+00:00",
+   "author": "kraghavanbindhu",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "If you face this issue while deleting the code check all quality notification, defects, task where these codes are used or not. If there are transactional data then this cant be deleted. \n\n Even if you delete this the data will be stored in QPGR table with inactive status \n Even though we used the workaround to delete the code group using 2281926 - Error Q3221 when deleting QM code - SAP for Me its not deleting the codes from table rather setting inactive field in table QPGR. \n\n Also there are feasibility to delete the code from table using the workaround 556218 - Usage indicator of codes cannot be deleted - SAP for Me but its not available for our system S4 Core 109 2025 \n At last in snote 3397012 - Get error message Q3221 \"Code *** is being used and cannot be delete\" when trying to delete a code in a code group - SAP for Me its stated that \"The physical deletion of used codes in the database is not allowed to avoid data inconsistencies in other applications\". \n Better we can change the status to below."
+  },
+  {
+   "key": "025e3edb87f89bf7",
+   "title": "SAP Inside Track Paris 2026: We Did It!",
+   "link": "https://community.sap.com/t5/paris-blog-posts/sap-inside-track-paris-2026-we-did-it/ba-p/14518315",
+   "published": "2026-11-08T19:57:21+00:00",
+   "author": "walid",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "A few weeks before SAP Inside Track Paris, I wrote a blog post explaining how organizing this event sometimes felt like planning a wedding. \n Well, the wedding happened. And what a day it was! 😄"
+  },
+  {
+   "key": "b1ca15e150cc1a32",
+   "title": "AI-Powered Cash Sweeps on SAP S/4HANA",
+   "link": "https://community.sap.com/t5/financial-management-blog-posts-by-members/ai-powered-cash-sweeps-on-sap-s-4hana/ba-p/14510025",
+   "published": "2026-11-09T06:12:37+00:00",
+   "author": "JyotiNarang",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": ""
+  },
+  {
+   "key": "7d8703592b5a52af",
+   "title": "SAP Inventory Valuation: Standard Price vs Moving Average Price",
+   "link": "https://community.sap.com/t5/financial-management-blog-posts-by-members/sap-inventory-valuation-standard-price-vs-moving-average-price/ba-p/14518430",
+   "published": "2026-11-09T05:41:01+00:00",
+   "author": "ESAITEJA",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP Inventory Valuation: Standard Price vs Moving Average Price \n Choosing the right price control (MBEW-VPRSV) decides how inventory is valued and where variances land. Here is a quick comparison of the two options. \n 1. Standard Price (S) \n 2. Moving Average Price (V)"
+  },
+  {
+   "key": "b3af33167346ab98",
+   "title": "Sharing SAP Expertise, Inspiring Innovation | SAP Community Event Speaker 2026",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/sharing-sap-expertise-inspiring-innovation-sap-community-event-speaker-2026/ba-p/14518424",
+   "published": "2026-11-09T05:23:11+00:00",
+   "author": "ShaikAzmathulla",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Recognized with the SAP Community Event Speaker Badge 2026 for contributing to the SAP ecosystem through technical presentations, knowledge sharing, and community engagement. Sharing my journey across SAP Enterprise Architecture, SAP BTP, Enterprise Integration, and AI-driven transformation."
+  },
+  {
+   "key": "a7d2e0681100dcf3",
+   "title": "From Metrics to Business Value: Building a Digital Commerce KPI Maturity Framework",
+   "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/from-metrics-to-business-value-building-a-digital-commerce-kpi-maturity/ba-p/14515312",
+   "published": "2026-11-09T04:42:46+00:00",
+   "author": "ManimozhiRathinam",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Launching an ecommerce platform is only the beginning. To continuously improve digital commerce performance, organizations need a structured approach to measuring platform health, connecting KPIs to business goals, understanding customer behavior, and ultimately demonstrating business value. Every search, product view, cart addition, checkout interaction, and purchase generates data. \n Are we measuring what really matters to the business? \n It is recommended to execute a phased maturity path rather than a comprehensive analytics program. The approach outlines four phases: Foundational Monitoring, Business Goal Alignment, Digital Customer Journey Analysis, and Enterprise Analytics."
+  },
+  {
+   "key": "35fb330abb912e0c",
+   "title": "RAG in the SAP Ecosystem: Connecting LLMs to Enterprise Knowledge",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/rag-in-the-sap-ecosystem-connecting-llms-to-enterprise-knowledge/ba-p/14514839",
+   "published": "2026-11-09T03:30:00+00:00",
+   "author": "suryacreatx",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Understanding how retrieval, embeddings, and grounding can make enterprise AI more relevant."
+  },
+  {
+   "key": "01aa43a0b0881b8a",
+   "title": "A Transport-Based Clean Core Precheck in SAP S/4HANA Without Waiting for SAP Cloud ALM",
+   "link": "https://community.sap.com/t5/abap-blog-posts/a-transport-based-clean-core-precheck-in-sap-s-4hana-without-waiting-for/ba-p/14518342",
+   "published": "2026-11-09T01:21:58+00:00",
+   "author": "shasankgupta024",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Clean Core findings are most useful while development is still in the development system. This article explains how a custom ABAP utility can execute SAP’s Clean Core ATC checks for a transport request, task, or selected repository objects and provide immediate object-level A/B/C/D classifications, finding counts, and technical debt scores without exporting XML or waiting for the next SAP Cloud ALM import."
+  },
+  {
+   "key": "82a0f4926d95acb7",
+   "title": "Dangerous goods in MRO logistics: what Restricted Items brings to SAP S/4HANA",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/dangerous-goods-in-mro-logistics-what-restricted-items-brings-to-sap-s/ba-p/14518210",
+   "published": "2026-11-08T23:43:11+00:00",
+   "author": "Pavel_Rovenskiy",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "\"How do I track dangerous goods and hazardous materials information through my supply chain in SAP?\" If you work with MRO logistics, you have heard this question. Often the answer involves a custom solution, unique to each SAP customer. SAP Product Compliance offers comprehensive standard capabilities, but many MRO customers need something lighter: a way to capture DG-related information for received items, make it visible to everyone in the process, and run basic checks before shipping. That is what Restricted Items for SAP Field Logistics (SAP S/4HANA) delivers. In this post I introduce the capability, show where it fits, and walk through a quick example. In almost every MRO-related SAP implementation project I have been involved in, dangerous goods handling was on the requirements list. \n In short \n Restricted Items is a standard capability in SAP Field Logistics, generally available since SAP S/4HANA 2025 FPS01. \n It provides a data model and UI for capturing dangerous goods, hazardous materials, and other restriction information directly in logistics documents. \n It works with all item types, including free text items, rentals, and third-party items. No material master or substance data is mandatory. \n The framework includes configurable validation hooks and key user extensibility for clean core developments. \n Restricted item data is accessible from Field Logistics apps across different roles in the supply chain, so warehouse staff, logistics coordinators, and shipping operators all see the same information. \n It allows connecting external sources of information or other SAP solutions through an API. \n It is not a replacement for SAP S/4HANA for Product Compliance, which covers full regulatory compliance management. \n What is SAP Field Logistics? \n\n Field Logistics covers the movement of goods between base and remote plants across asset-intensive industries. \n Field Logistics is part of the SAP Oil, Gas and Energy solution portfolio, but it applies to any asset-intensive industry that runs MRO operations: oil and gas, mining, utilities, wind power, and others. It is built natively on SAP S/4HANA and shares the same upgrade cycle. The solution adds industry-specific capabilities to core SAP S/4HANA processes, covering supplier items, kits, containers, voyages, receipts, and returns through a set of SAP Fiori apps. \n\n Field Logistics covers forward supply processes and returns scenarios across multiple item types. \n For a full overview, see the SAP Field Logistics documentation or the Discovering SAP Field Logistics course on SAP Learning. \n Tracking dangerous goods in MRO logistics \n MRO operations regularly handle items that are dangerous, hazardous, or subject to special handling restrictions. A valve may contain a regulated substance, chemical used for maintenance is classified under the IMDG Code, rental tool requires specific packaging and labeling before it can go on a vessel. \n The information that needs to travel with these items through the supply chain includes attributes such as the UN number, hazard class, packing group, and shipping name. Warehouse staff, logistics coordinators, and shipping operators all need access to it at all process steps. \n The challenge is that many of these items are free text or rentals. They have no material master record in the system, so there is no standard place to attach dangerous goods data. Another challenge is that this information must be available for everyone handling these items across different roles and applications. In practice, we see customers creating enhancements, unique per each implementation. Restricted Items in Field Logistics is designed to address all these challenges. \n What Restricted Items brings to the table \n Restricted Items gives you a standard set of attributes you can attach to any item in Field Logistics, whether it belongs to a purchase order, a delivery, a work order, or a network order. Once entered, this information is automatically cross-linked between all SAP documents for the item and accessible from every Field Logistics app in the process chain. \n\n Restricted Item attributes on a record. \n Category - high-level restriction type \n Class and Subclass - hazard or restriction classification \n Packing Group - packaging requirement level \n UN Number - United Nations substance identifier \n Shipping Name - official transport name \n EmS Code 1, EmS Code 2 - emergency schedules \n Emergency Action Code - response procedure code \n These attributes are configurable. You can define your own classes and subclasses to match your organization's categories, whether those follow IMDG, the European Agreement concerning the International Carriage of Dangerous Goods by Road (ADR), internal safety policies, or something else entirely. \n\n Configuration for restricted Item attributes \n If the standard set of attributes is not enough, you can add custom fields through key user extensibility . \n Each restricted item record also supports text notes and file attachments, so handling instructions or safety documents can travel with the item. \n\n Text notes on a restricted item record. Useful for handling instructions or additional context. \n\n File attachments on a restricted item record for safety data sheets, certificates, or other supporting documents. \n The restricted item information is integrated across Field Logistics apps: Manage Logistics (Supplier Items), Process Receipts, Process Cross-Plant Receipts, Pack Containers, Manage Kits, Manage Voyages, Initiate Returns by Product, Initiate Returns by Order, and Process Returned Items. \n In every app, a Contains Restricted Item field appears in the list page alongside a Restricted Information icon and label. \n\n The Contains Restricted Item field and popover give immediate visibility across all Field Logistics apps. \n The object page shows a warning when restricted items are present. From either view, you can navigate directly to the full restricted item record. \n\n Warning is shown in Field Logistics apps if opened object contains restricted item. \n The dedicated Manage Restricted Items app provides a central view of all restricted item records with full lifecycle visibility, reference document tracking, notes, attachments, and a change log. \n\n The dedicated Manage Restricted Items Fiori app. \n A quick example: dangerous goods information end to end \n\n Restricted item information follows the item through both forward and return flows. \n Imagine a corrosive chemical arrives at the supply base on a purchase order. Here is how its dangerous goods information travels through the process, entered once, visible to everyone. \n\n Receiving at the supply base. The Receiving Specialist opens the purchase order item in Process Receipts and creates a Restricted Item record with the hazard class, UN number, and packing group. From this point on, the dangerous goods data is part of the item. \n\n Packing. The Warehouse Clerk opens Pack Containers and immediately sees the DG indicator on the delivery item. Clicking it shows the classification details and links to the full record. After the item is packed, the container itself is flagged, and the clerk is warned when opening it. If implemented, a validation prevents packing incompatible items into the same container. \n\n Vessel planning. The Transportation Planner assigns containers to a voyage in Manage Voyages . Containers carrying dangerous goods are clearly marked. A warning appears when the voyage is opened, and validations, if implemented, can block incompatible containers from being assigned together. \n\n Receiving at the remote site. When the container arrives, the Remote Warehouse Clerk sees the same dangerous goods information in Process Cross-Plant Receipts . \n\n Returns. When the item is sent back, the dangerous goods data stays with it. The Maintenance Technician or Remote Warehouse Clerk initiating and preparing the return sees it. The Transportation Planner managing the return voyage also sees it. And when the item arrives back at the supply base, the Warehouse Clerk receiving it can access the same DG data that was created when the item was received from the supplier. \n Validations and extensibility \n Restricted Items is designed as a framework. You can build clean core custom validations that run during logistics operations whenever restricted items are involved. \n The following table shows a selection of the available validation hooks: \n Validation hook Application Triggered by \n Assign Delivery Item to Container/Package Pack Containers Packing delivery action \n Assign Container to Voyage Pack Containers, Manage Voyages Assign action \n Dispatch Container Pack Containers Dispatch action \n Initiate Transport Manage Logistics Initiate Transport action \n Seal Container Pack Containers Seal action \n Initiate Returns by Product Initiate Returns by Product Initiate Returns action \n Receive Items Process Receipts Confirm Receipt action \n There are 16 validation hooks in total, covering packing, voyaging, dispatching, sealing, returns, and receipt processes. See the Restricted Items documentation for the full list. \n Each validation hook is configured with a custom ABAP class that implements the validation logic. This means implementing validations requires ABAP development, but because the hooks and class assignment are managed through configuration, the approach stays within clean core principles. \n\n Each validation hook maps to a custom ABAP class through configuration. \n Key user extensibility is available through the Custom Fields app: you can add fields to the Restricted Item business context ( FLOG_RESTRICTEDITEM ) using key user adaptation. \n Restricted Items also exposes an API for integration. If your organization needs to connect to an external dangerous goods database, another SAP component such as Purchasing or SAP Extended Warehouse Management (SAP EWM), or a third-party system, the API provides the interface. \n Restricted Item API documentation \n Restricted Items fits the clean core approach: you use the standard framework and extend it through supported APIs and key user tools, rather than building custom code on the core. \n What Restricted Items is not \n Restricted Items is a lightweight, logistics-focused solution. It is not a replacement for SAP S/4HANA for product compliance. If your organization needs full substance tracking, regulatory content with automated updates, safety data sheet management, dangerous goods classification against multiple regulations, or compliance checks embedded across sales, purchasing, and transportation, SAP S/4HANA for product compliance is the right solution. \n Get started \n Restricted Items for Field Logistics is generally available since SAP S/4HANA 2025 FPS01, with additional capabilities in 2025 FPS02. Restricted Items is part of the SAP Field Logistics licence; check SAP Note 3510169 for any current restrictions or prerequisites. \n Restricted Items documentation on SAP Help Portal \n What's New in 2025 FPS01: Restricted Items \n What's New in 2025 FPS02: Restricted Items enhancements \n What's New in 2025 FPS02: New Application for Centralized Restricted Item Management \n Restricted Item API \n Discovering SAP Field Logistics (SAP Learning) \n SAP Field Logistics documentation \n Other blog posts about Field Logistics capabilities that you may find interesting: \n SAP Field Logistics: Centralized Supplier Item Repository for an Optimized Supply Chain \n SAP Field Logistics: Next Generation Kitting & Staging for MRO Industries \n If you have questions or want to share how you plan to use Restricted Items in your Field Logistics implementation, I'd like to hear about it in the comments."
+  },
+  {
+   "key": "1118d4cf8f02713c",
+   "title": "Import Sales Orders",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/import-sales-orders/qaq-p/14518384",
+   "published": "2026-11-09T01:23:20+00:00",
+   "author": "S-O",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello Experts! \n\n We are using the 'Import Sales Orders' app in SAP S/4HANA Cloud. \n\n Our pricing procedure consists of the base price (PPR0) and additional condition types (ZPxx). Master data is configured for each condition type. \n\n For business operational adjustments, we want to register debit/credit adjustments for these additional condition types (ZPxx) using the Import Sales Orders app. However, when attempting the import, master data values are automatically proposed, preventing correct processing. Setting a value of '\\0' to unused condition types also does not resolve the issue. \n\n Could you please confirm if this is the intended standard behavior for the Import Sales Orders app? If so, could you advise on the recommended approach to manually update condition amounts via batch import? \n\n Best Regards, \n Saki"
+  },
+  {
+   "key": "785165dd1d148af9",
+   "title": "Interview with Manish Prasad: “Touch Any Growth Lever in India and You’ll Find SAP There”",
+   "link": "https://news.sap.com/2026/11/interview-with-manish-prasad-sap-india/",
+   "published": "2026-11-09T05:15:00+00:00",
+   "author": "Andrea Diederichs",
+   "tags": [
+    "Corporate",
+    "India"
+   ],
+   "feed": "SAP News Center",
+   "kind": "news",
+   "text": "Few markets are evolving as rapidly as India right now. Manish Prasad, president and managing director of SAP Indian Subcontinent, oversees a market where 60% of the GDP already touches an SAP system. At the same time, AI investment is accelerating, manufacturing is moving up the national agenda, and India is turning out tech talent at scale. \n\n About Manish Prasad \n\n With more than two decades in technology and business, Manish Prasad leads SAP across India, Bangladesh, and Sri Lanka. He works closely with some of the region’s leading businesses, helping them navigate changing markets and make the most of new technology. \n\n A seasoned global leader, Prasad has worked across North America, the Middle East, Asia, and Australia, with experience spanning industries from metals and mining to automotive. Before SAP, he held senior roles at Wipro, Accenture, Dell, and Tata Steel. \n\n What makes India so strategically important for SAP right now? \n\n Prasad: I would look at it through four pillars. The first is the macro economy. India is one of the fastest-growing major markets, with GDP growth in the 6.5% to 7% range and an economy of about US$4.15 trillion today. The aspiration is to reach somewhere between $6 trillion and $7 trillion by the end of this decade. \n\n Agriculture, pharma, and services have traditionally been the main drivers. Now manufacturing is being added in a big way through the government initiative “Make in India.” As the country pivots toward manufacturing, SAP can become the nerve wire in that growth story. \n How India drives SAP’s AI future \n\n Read the feature \n\n The second pillar is SAP. We are blessed to have a brand that resonates across the country. Touch any growth lever in this economy, and you’ll find an SAP element there—from national critical infrastructure to the large conglomerates driving growth. We have close to 14,000 customers today, but in the corporate segment alone, we see an addressable market of around 100,000 customers. \n\n The third pillar is talent. India graduates 2.55 million STEM students every year, and about 16% of global AI talent comes from India. Customers across the globe understand that India will remain an extremely important supplier of talent. \n\n And the fourth pillar is government: the push to improve governance, ease of doing business, policy, infrastructure, and logistics costs. Bring all those pieces together, and that is where India becomes unique. \n\n So, India’s growth and SAP’s growth are increasingly connected? \n\n Absolutely. About 60% of India’s GDP touches an SAP system in some form, which is why I say India’s growth story is mirroring SAP’s growth story. The momentum is also coming from the Indian consumer. The buying power of the average Indian is increasing rapidly, and about 70%–75% of what India produces is consumed in the country. When you have to serve 1.4 billion people, the economy keeps driving itself. \n\n Who are SAP’s customers in India, and what do they need most now? \n\n SAP’s customer base in India spans large enterprises, the fast-growing corporate sector, and government. In the enterprise segment, that means working with some of the country’s best-known business groups, including Tata Group, Reliance Industries, and Adani Group. \n\n Government customers are focused on sovereignty: they want the benefits of SAP platforms, but they also want data and critical processes kept locally, especially in the context of AI. \n\n Enterprise customers, meanwhile, are past the proof-of-concept stage. They understand the value of AI; now they do not want to stop at a few pilots or hackathons. They want us to look at their processes end to end and show how the Autonomous Enterprise can improve their KPIs. Either way, the ask is the same: show us the value, and show us fast. \n\n What role does SAP India play in SAP’s global AI ambitions? \n\n First, we have extraordinary scale here. Whatever you touch in India involves millions, sometimes billions, of records. If an AI use case can move from proof of concept to full-scale deployment here, it proves the model is resilient and can be replicated globally. \n\n Second, we have the talent and partner ecosystem to adapt these technologies quickly and cost-effectively for real customer needs. We have seen this with SAP GROW: it has worked well in India because our people and partners can build the right extensions, make the product relevant for customers, and do it at an optimum price point. The same logic is now applying to AI. \n\n And third, our market shows how AI and human talent can grow together. This is not a story about AI replacing people. It is a story about AI complementing talent to create the next level of efficiency and growth. \n\n What makes India’s talent base distinctive? \n\n There is an absolutely positive mindset. India is a middle-class and lower-middle-class country. Many young people come into employment after growing up with constraints. When they get an opportunity, they do not want to miss it. That creates a competitive mindset and a hunger to do better—for their organizations, their families, and themselves. \n\n What SAP provides is the platform: a strong brand, fantastic products, clear leadership, and a market that is expanding in a big way. When those pieces come together, they create real excitement and enthusiasm within our talent. \n\n What are your biggest challenges? \n\n One challenge is that the ambition often starts at the top. Boards want to move fast on transformation, cloud, AI, and the Autonomous Enterprise, but in large Indian organizations, getting that vision through the system can take time. For SAP, the challenge is to reach the right executive level early and help turn that intent into something the business can actually implement. \n\n Then there is the question of reach. India is a huge market, and SAP can only do so much directly. To reach tier-two, tier-three, and tier-four cities, we need partners who understand the industry, the technology, and the customer conversation and who can move with velocity. \n\n Data sovereignty has also become a much bigger part of the conversation, especially with AI. Customers want to understand how local we are, how data is governed, and how business continuity is protected. That can slow the pace at which we want to move, but it is understandable. Events from the Russia war to the West Asia crisis to tariffs have made organizations think much more deeply about resilience as they adopt new technology. \n\n What do you want SAP India to be known for in three or four years? \n\n I would like SAP India to be seen as a market that contributes meaningfully to SAP’s growth. The ambition is for India to contribute 6%–8% of SAP’s growth. We may not be as large as the U.S. or parts of Europe in the near future, but we can become a significant growth engine in our own right. \n\n Just as important, India should create references that matter beyond India. When SAP brings major offerings such as the Autonomous Enterprise, SAP GROW, SAP Business Technology Platform, SAP Business Data Cloud, or SAP Business AI to market, we should be able to point to strong customer examples here that other markets can use, learn from, and replicate. We have already seen that with SAP GROW, including customers deploying in 50 days. Because the scale here is so large, a reference from India can become a proof point for SAP globally. \n\n What is the best part of your job right now? \n\n Representing SAP—and I really mean that. What gets me into the office every day is knowing that while we are helping our customers, those customers are helping move the needle for the nation. SAP is an underlying platform for that growth, and that gives me a real sense of pride, joy, and gratitude. The SAP team in India is making that happen every day, and that is what motivates me personally. \n\n Get the latest SAP news delivered to your inbox once a week \n\n Sign up for the newsletter"
+  },
+  {
+   "key": "b1eb41d7c31740f0",
+   "title": "Smarter Charts in SAP Analytics Cloud: Sorting, Axis Synchronisation, and Custom Axis Titles",
+   "link": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/smarter-charts-in-sap-analytics-cloud-sorting-axis-synchronisation-and/ba-p/14517992",
+   "published": "2026-11-09T08:10:07+00:00",
+   "author": "Vivek-Varma",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Charts sit at the heart of every financial and operational dashboard in SAP Analytics Cloud. The decisions analysts and business leaders make depend not only on the data these charts display, but on how that data is ordered, scaled, and labelled. When a chart presents figures in an arbitrary sequence, forces an unnecessary secondary axis, or generates an axis title so long it gets truncated, the analytical signal gets buried under visual noise. These are not cosmetic problems — they affect the quality and speed of decision-making. \n Until now, three specific gaps stood out for users working with complex visualisations. The Waterfall Chart, despite being one of the most powerful tools for variance decomposition and financial storytelling, offered no way to reorder its bars — users were locked into the sequence in which data arrived from the model. The Combination of Column and Line Chart forced every measure on the Line Axis onto its own secondary axis even when it shared the same unit and scale as the Column Axis or vice versa, cluttering the chart with an axis that may have mixed scales and units. And across all chart types, axis titles were auto-generated by concatenating measure and dimension names — producing labels too long, too technical, and too difficult to customise for a business audience. \n With the 2026 Q4 QRC , SAP Analytics Cloud delivers three targeted improvements that address each of these gaps directly: sorting in the Waterfall Chart, per-measure axis synchronisation in the Combination of Column and Line Chart, and custom axis titles across all axis-bearing chart types."
+  },
+  {
+   "key": "acc0fa792b8dae46",
+   "title": "GR/IR at Month-End: The End User, Consultant and Management View",
+   "link": "https://community.sap.com/t5/financial-management-blog-posts-by-members/gr-ir-at-month-end-the-end-user-consultant-and-management-view/ba-p/14517421",
+   "published": "2026-11-09T07:41:48+00:00",
+   "author": "Farrukh_Gillani",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The GR/IR clearing account is one of the most important (and most ignored) accounts in the monthly close. Here's how to run it, how to design it, and why management should care, from three perspectives."
+  },
+  {
+   "key": "309e67f70d812957",
+   "title": "SAP S/4HANA MRP Live (MD01N) PR Not Deleted Due to Rescheduling Horizon and Factory Calender",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/sap-s-4hana-mrp-live-md01n-pr-not-deleted-due-to-rescheduling-horizon-and/ba-p/14512736",
+   "published": "2026-11-09T07:37:51+00:00",
+   "author": "ankit_1996",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "An existing purchase requisition was not deleted during an MRP Live run (MD01N), while Classic MRP (MD01/MD02) behaved as expected. This post shares how we traced the difference to the plant-level rescheduling horizon (999 days) and the validity of the factory calendar, along with a troubleshooting approach you can reuse."
+  },
+  {
+   "key": "79c49190289e4ff0",
+   "title": "Can SAP S/4HANA Rebuild the Number Your Board Approved?",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/can-sap-s-4hana-rebuild-the-number-your-board-approved/ba-p/14517288",
+   "published": "2026-11-09T07:34:44+00:00",
+   "author": "RoyGomezPe",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The board slide shows one number. S/4HANA shows another. Nobody made a mistake. A one-afternoon test, using what is already in S/4HANA, to check whether the figure your board decides with is produced by the system or by a person."
+  },
+  {
+   "key": "a068f39d83a62a31",
+   "title": "Adopt customer/supplier field status in S/4HANA Business Partner",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/adopt-customer-supplier-field-status-in-s-4hana-business-partner/ba-p/14518475",
+   "published": "2026-11-09T06:59:20+00:00",
+   "author": "Atul_Gupta1",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "It is commonly recommended in S/4HANA Cloud Private Edition implementation and system conversion projects to adopt standard BP field status. But what if your business process requires having different field status for BP fields based on the type of customer or supplier. This blog explains how to influence BP field statuses to prioritize supplier /customer account group level config over BP Role level config."
+  },
+  {
+   "key": "ad7356e85f6cc08f",
+   "title": "ABAP from the terminal: Getting started with Claude Code and ADT 1.2",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/abap-from-the-terminal-getting-started-with-claude-code-and-adt-1-2/ba-p/14518472",
+   "published": "2026-11-09T06:46:27+00:00",
+   "author": "AminAlmarsafy",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "ADT for VS Code 1.2 brings updated MCP tools for reading and editing ABAP objects, searching the repository, and accessing runtime feeds. This article shows how to connect Claude Code CLI, create a console class, and generate a complete Books RAP application with a published service binding."
+  },
+  {
+   "key": "662fbdd3388b7a57",
+   "title": "BC Sets information and EWM BC Sets",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/bc-sets-information-and-ewm-bc-sets/ba-p/14507810",
+   "published": "2026-11-09T06:39:06+00:00",
+   "author": "kalyana_EWM",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "This article provides basic information about the Business configuration sets. EWM specific BC sets also discussed with screen shots."
+  },
+  {
+   "key": "159f57388769d113",
+   "title": "RAP - Grouping of Actions",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/rap-grouping-of-actions/ba-p/14516941",
+   "published": "2026-11-09T06:37:50+00:00",
+   "author": "sanjay22",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "How can you group your various actions in RAP under a single button, especially if the actions are quite similar? This article will look at the details of implementing this with ABAP. \n In this article, we will implement the Factory Actions and apply grouping in the UI to better visualize the options for the user. \n Introduction \n Displaying every action as a separa te button can make an application to olb ar feel crowded. Grouping related actions in a dropdown offers a simpler way to present these options under one meaningful label. In this blog , we will bring Approve, Reject and Cancel together under a single Status dropdown in an ABAP RAP application. Using UI annotations, we will define an action group and assign the actions to it, creating a more organised interface while keeping each option accessible . \n Factory Actions \n Factory actions in ABAP RAP are used to create new business object instances through custom logic. They can be instance-bound or static: an instance-bound factory action can copy values from an existing record into a new one, while a static factory action can create a record with predefined default values. Typical examples include copying an existing record or creating a new record with prefilled data. \n Distinction for this example: The Approve, Reject and Cancel definitions shown below are instance-bound non-factory actions, not factory actions. They are declared using action rather than factory action and specify result [1] $self. This blog groups these three existing actions under the Status dropdown; it does not demonstrate creating new records with factory actions. \n Current Status \n We had already defined the following actions in the behaviour, but hadn't yet implemented them. The following definitions currently exist and are already displayed in the UI. action ( features : instance ) Approve parameter ZA_APPROVE_PARAM \n\nresult [1] $self{ default function GetDefaultsFor_Appr; } \n\nevent TravelApproved parameter ZI_TRAVEL_EVT; \n\nvalidation valid_emp_name on save { field EmployeeName; create; update; } \n\naction ( features : instance ) Reject result [1] $self; \n\naction ( features : instance ) cancel result [1] $self; \n Grouping \n In this section, we want to group the two factory actions. The user should then find the option to create a record under one item and no longer scattered across several buttons, where other actions might also be visible. @UI.lineItem: [ { importance: #MEDIUM },{ position: 20, type: #FOR_ACTION, dataAction: 'Approve', label: 'Approve' },\n { position: 30, type: #FOR_ACTION, dataAction: 'Reject', label: 'Reject' }, { position: 40, type: #FOR_ACTION, dataAction: 'cancel', label: 'Cancel' } ] \n To do this, we create a group of type FOR_ACTION_GROUP. We give it a description and an \" actionGroupId \". In the UI, the group will then bundle all assigned elements as a dropdown menu. As a final step , we need to assign the \" actionGroupId \" to the buttons. This adds a new line and two attributes to the UI annotations. @UI.lineItem: [ { importance: #MEDIUM }, { position: 10, type: #FOR_ACTION_GROUP, label: 'Status', actionGroupId: 'GRP1' }, { position: 20, type: #FOR_ACTION, dataAction: 'Approve', label: 'Approve', actionGroupId: 'GRP1' }, { position: 30, type: #FOR_ACTION, dataAction: 'Reject', label: 'Reject', actionGroupId: 'GRP1' }, { position: 40, type: #FOR_ACTION, dataAction: 'cancel', label: 'Cancel', actionGroupId: 'GRP1' } ] \n Conclusion \n This example brings Approve, Reject and Canc el together through a Status action-group entry and a shared actionGroupId . The annotation change is only part of the story: the project context, grouping rationale and testing observations explain whether the design served the intended workflow . \n\n Grouping related actions in an ABAP RAP application is more than a way to tidy the toolbar: it is a decis ion about how to organise the available operations. This walkthrough shows how an action group and a shared group identifier bring existing options under one dropdown without changing their definitions. The key takeaway is to choose a meaningful group label, group options that belong together, and verify the result against the intended workflow. A cleaner layout is the starting point; a grouping that makes sense to users is the goal ."
+  },
+  {
+   "key": "4afc80234322f7f4",
+   "title": "Looking for a CAMT.053 to SAP BankStatement_In API field-level mapping document",
+   "link": "https://community.sap.com/t5/technology-q-a/looking-for-a-camt-053-to-sap-bankstatement-in-api-field-level-mapping/qaq-p/14518474",
+   "published": "2026-11-09T06:49:50+00:00",
+   "author": "Daggolu_PremSai",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi everyone, \n Has anyone worked on integrating ISO 20022 CAMT.053.001.02 bank statement files with SAP S/4HANA Public Cloud using the BankStatement_In SOAP API ? \n I’m looking for an existing field-level mapping document or conversion sheet that maps CAMT.053 XML elements to the corresponding SAP API fields. \n If anyone has a sample mapping, XSLT/Groovy transformation, or reference implementation, it would be really helpful if you could share it. \n Thanks in advance!"
+  },
+  {
+   "key": "e209968a39bd5c47",
+   "title": "How to prorate accrual mid year time profile changes ?",
+   "link": "https://community.sap.com/t5/human-capital-management-q-a/how-to-prorate-accrual-mid-year-time-profile-changes/qaq-p/14518439",
+   "published": "2026-11-09T06:30:26+00:00",
+   "author": "GouthamVarma",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Everyone, \n Our client’s time account calendar year runs from April to March. When an employee changes from Scheme A to Scheme B in June, we expect the time account balances to be prorated based on the duration spent under each scheme. \n Expected behaviour: \n · Scheme A: The time account allocation should be prorated from April until the effective date of the time profile change in June. \n · Scheme B: The time account allocation should be prorated from the effective date of the change in June until the end of the time account calendar year in March, rather than granting the full annual allocation. \n We would like to understand the possibilities for achieving this requirement in SAP SuccessFactors Time Management. \n May I know to steps and configuration to achieve this? \n Thank you for your support."
+  },
+  {
+   "key": "4dde871db0fe452c",
+   "title": "How to get scheduled working time from work pattern on day basis in Time Valuation",
+   "link": "https://community.sap.com/t5/human-capital-management-q-a/how-to-get-scheduled-working-time-from-work-pattern-on-day-basis-in-time/qaq-p/14518437",
+   "published": "2026-11-09T06:23:10+00:00",
+   "author": "GouthamVarma",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Everyone, \n Currently we are using weekly time sheet and want to get day planned working time instead of weekly figure even using valuate per day \n Thanks"
+  },
+  {
+   "key": "956352f49aae7fce",
+   "title": "How can I list and verify secondary indexes in SAP BTP ABAP Environment trial?",
+   "link": "https://community.sap.com/t5/technology-q-a/how-can-i-list-and-verify-secondary-indexes-in-sap-btp-abap-environment/qaq-p/14518389",
+   "published": "2026-11-09T02:01:36+00:00",
+   "author": "koichi_kk",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "I am using SAP BTP ABAP Environment 2608 HFC5 trial with Eclipse ADT 3.60. \n I want to define a unique secondary index on a custom table using: \n CLIENT, CREATED_BY, EXTERNAL_REQUEST_ID. \n The Table Index creation wizard is available, but I have not created the index yet. \n I encountered these limitations: \n - Open ABAP Development Object rejects \"type:INDX\" with \n \"Object type INDX is not supported\". \n - Open Others > Index Overview opens only the table's general properties. \n What is the supported way in this environment to: \n 1. List existing secondary indexes belonging to the table? \n 2. Verify that an activated unique index actually exists in the database with the intended fields? \n Please distinguish repository definitions from physical database verification."
+  },
+  {
+   "key": "2e22d322cdb9b7c4",
+   "title": "SAP PAPM on Prem version Calculated YTD based on MTD values",
+   "link": "https://community.sap.com/t5/financial-management-q-a/sap-papm-on-prem-version-calculated-ytd-based-on-mtd-values/qaq-p/14518381",
+   "published": "2026-11-09T00:20:50+00:00",
+   "author": "ShekarG",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "we are on SAP PAPM On Prem with BW/4 HANA, i would like to calculate YTD amount based on MTD amount. Could you please share step by step functions and settings in the each tab required to get YTD values based on MTD."
+  },
+  {
+   "key": "ccdf53a4b3bee683",
+   "title": "SAP EWM – Warehouse Number Inactive in VL32N Stock Placement Tab",
+   "link": "https://community.sap.com/t5/supply-chain-management-learning-group-discussions/sap-ewm-warehouse-number-inactive-in-vl32n-stock-placement-tab/m-p/14518324#M8",
+   "published": "2026-11-08T20:31:22+00:00",
+   "author": "mahdi-tahmasebi",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "maintain inbound delivery \n Hello, \n Dear friends, this is my first post here. \n I am working with SAP S/4HANA EWM and have encountered an issue when processing an inbound delivery using transaction VL32N . \n Problem description: \n When I open an inbound delivery in VL32N and navigate to the Stock Placement tab, I cannot select my warehouse number. The warehouse number appears to be inactive or unavailable in the selection list. \n Configuration and checks already performed: \n\n I have created the warehouse number in the system. \n\n I have assigned the warehouse number to my plant. \n\n However, the warehouse number is still unavailable for selection in the Stock Placement tab. \n My questions: \n\n Is assigning a warehouse number to a plant sufficient to make it available in VL32N? \n\n Are there additional configuration steps required in EWM or in the integration between Inventory Management and EWM? \n\n Which configuration settings or assignments should I check to resolve this issue? \n I would appreciate any guidance or suggestions from experienced SAP EWM consultants. \n Thank you in advance for your help. \n Best regards, \n Mahdi"
+  },
+  {
+   "key": "ed3e6f30c448e66c",
+   "title": "Supply Chain Leader | SAP S/4HANA Practitioner | Clean Data & MRP Specialist",
+   "link": "https://community.sap.com/t5/welcome-corner-discussions/supply-chain-leader-sap-s-4hana-practitioner-clean-data-amp-mrp-specialist/m-p/14518318#M10808",
+   "published": "2026-11-08T19:51:08+00:00",
+   "author": "E_Elehinle-2026",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "Hi SAP Community! \n Hello from Sweden! I’m a supply chain executive with a passion for MRP optimization and clean data governance. \n Having served as Company Lead for a major legacy-to-SAP migration and Chief of Business Key Users (BKUs), I’ve learned firsthand that no ERP system can succeed without pristine data - clean data is the true bedrock of supply chain execution. \n As I actively dive deeper into SAP S/4HANA (MRP Live, IBP, and digital supply chain architecture), I joined this community to exchange practical, real-world insights, discuss data governance, and connect with fellow supply chain and SAP professionals. \n Looking forward to engaging and learning together!"
+  }
+ ],
+ "triage": {
+  "0": {
+   "i": 0,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "PoC of a shared outbound Step07 in SAP Cloud Integration Pipeline v2 with metadata-driven routing and XSLT transformations for Sales Orders."
+  },
+  "1": {
+   "i": 1,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Overview of using the credit limit check in the SAP Business One web client, with a video and learning journey link."
+  },
+  "2": {
+   "i": 2,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Business-user desktop assistant Joule Work Desktop with MCP to reach Ariba; aimed at end users rather than developers."
+  },
+  "3": {
+   "i": 3,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Question on restricting QM result recording per MIC by work center authorization so production and quality users see different MICs."
+  },
+  "4": {
+   "i": 4,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Explains why a quality notification code cannot be deleted (Q3221) when transactional data uses it, with a QPGR workaround note."
+  },
+  "5": {
+   "i": 5,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Recap post about organizing and holding the SAP Inside Track Paris 2026 community event."
+  },
+  "6": {
+   "i": 6,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Finance-oriented post on AI-driven cash sweeps in S/4HANA; no technical or development content in the excerpt."
+  },
+  "7": {
+   "i": 7,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Compares standard price and moving average price control (MBEW-VPRSV) for inventory valuation and variance postings."
+  },
+  "8": {
+   "i": 8,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Announces the SAP Community Event Speaker Badge 2026 recognition for the author."
+  },
+  "9": {
+   "i": 9,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Conceptual framework for digital commerce KPI maturity and business value measurement; not developer-focused."
+  },
+  "10": {
+   "i": 10,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "Conceptual introduction to RAG on SAP: retrieval, embeddings and grounding for connecting LLMs to enterprise knowledge."
+  },
+  "11": {
+   "i": 11,
+   "category": "S/4HANA Development & Extensibility",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Custom ABAP utility runs SAP Clean Core ATC checks per transport or object, giving A/B/C/D ratings before Cloud ALM is available."
+  },
+  "12": {
+   "i": 12,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Introduces Restricted Items in SAP S/4HANA for tracking dangerous goods in MRO logistics; functional scope only."
+  },
+  "13": {
+   "i": 13,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Question on registering debit/credit adjustments for additional pricing conditions in the S/4HANA Cloud Import Sales Orders app."
+  },
+  "14": {
+   "i": 14,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Interview with SAP India's managing director on market growth, AI investment and manufacturing; corporate news."
+  },
+  "15": {
+   "i": 15,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "SAC chart sorting, axis synchronisation and custom axis titles for dashboard design; business analytics rather than development."
+  },
+  "16": {
+   "i": 16,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Month-end GR/IR clearing account process from end-user, consultant and management viewpoints; functional finance content."
+  },
+  "17": {
+   "i": 17,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Troubleshoots why MRP Live (MD01N) did not delete a purchase requisition, tracing it to rescheduling horizon and factory calendar settings."
+  },
+  "18": {
+   "i": 18,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Finance and reporting discussion on whether S/4HANA reproduces the board-approved figure; a one-afternoon functional test."
+  },
+  "19": {
+   "i": 19,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Configures S/4HANA Business Partner field status to differ for customers and suppliers; configuration rather than development."
+  },
+  "20": {
+   "i": 20,
+   "category": "Developer Tools & DevOps",
+   "in_scope": true,
+   "importance": 5,
+   "one_liner": "Uses ADT for VS Code 1.2 MCP tools with Claude Code CLI to create an ABAP class and generate a Books RAP service binding."
+  },
+  "21": {
+   "i": 21,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Basics of business configuration (BC) sets with EWM-specific BC set examples and screenshots; configuration content."
+  },
+  "22": {
+   "i": 22,
+   "category": "RAP",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Implements grouping of similar RAP factory actions under a single UI button, with ABAP code and Fiori annotations."
+  },
+  "23": {
+   "i": 23,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "Asks for a CAMT.053 to BankStatement_In SOAP API field mapping, XSLT or sample to integrate bank statements into S/4HANA Cloud."
+  },
+  "24": {
+   "i": 24,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "HR time management question on prorating time account accruals when an employee changes schemes mid-year."
+  },
+  "25": {
+   "i": 25,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "HR time evaluation question on getting daily scheduled working time from a work pattern instead of weekly values."
+  },
+  "26": {
+   "i": 26,
+   "category": "BTP & ABAP Cloud",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Asks how to list and verify a unique secondary index on a custom table in BTP ABAP trial via ADT wizard limitations."
+  },
+  "27": {
+   "i": 27,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks for PAPM on-prem setup steps to derive YTD values from MTD amounts; configuration of planning calculations, not development."
+  },
+  "28": {
+   "i": 28,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "EWM issue where the warehouse number cannot be selected in the VL32N Stock Placement tab for an inbound delivery."
+  },
+  "29": {
+   "i": 29,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Self-introduction post from a supply chain executive focused on MRP optimization and clean data governance; no technical content."
+  }
+ },
+ "deep": {
+  "20": {
+   "summary": "A how-to post about ADT for VS Code 1.2 and its updated MCP tools for reading and editing ABAP objects, searching the repository, and reading runtime feeds. It describes connecting the Claude Code CLI to ADT, creating a console class, and generating a Books RAP application with a published service binding. The text provided is only the abstract, so the actual tool names, configuration steps and code are not visible to me.",
+   "key_points": [
+    "ADT for VS Code 1.2 ships updated MCP tools covering ABAP object read/edit, repository search and runtime feeds.",
+    "The workflow connects the Claude Code CLI to the ABAP system through these MCP tools.",
+    "The demo creates a console class first, then a complete Books RAP application.",
+    "The RAP application ends with a published service binding.",
+    "Only the abstract is available; the MCP tool names and configuration are not shown here."
+   ],
+   "technical_details": [
+    "ADT for VS Code 1.2",
+    "MCP (Model Context Protocol) tools for ABAP object read/edit, repository search, runtime feeds",
+    "Claude Code CLI as the MCP client",
+    "ABAP console class",
+    "RAP Books application",
+    "Published service binding"
+   ],
+   "why_it_matters": "Shows agentic AI tooling being used against a real ABAP system to generate RAP content, which is directly relevant to developers evaluating AI-assisted development in ADT. Whether it works well depends on details the abstract does not give.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use it to discuss how MCP exposes ADT capabilities to external AI agents and what guardrails (transport handling, activation, review) matter before letting an agent generate or modify RAP objects. Ask students to list which ADT operations they would expose and which they would keep manual.",
+   "quality": 2
+  },
+  "11": {
+   "summary": "Proposes a custom ABAP utility that runs SAP's Clean Core ATC checks against a transport request, a task, or selected repository objects in the development system. It promises object-level A/B/C/D classifications, finding counts and technical debt scores, without exporting XML or waiting for a SAP Cloud ALM import. The excerpt describes the goal and output but shows no code, check variant names, or API used to run the checks.",
+   "key_points": [
+    "Runs Clean Core ATC checks in the development system, before transport to a later landscape.",
+    "Scope can be a transport request, a task, or selected repository objects.",
+    "Output is an A/B/C/D classification per object, finding counts and a technical debt score.",
+    "Avoids XML export and the wait for the next SAP Cloud ALM import.",
+    "Implementation details (classes, check variants, ATC API calls) are not included in the text provided."
+   ],
+   "technical_details": [
+    "SAP Clean Core ATC checks",
+    "Transport request / task as scope",
+    "Repository object selection",
+    "A/B/C/D object classification",
+    "Technical debt score",
+    "SAP Cloud ALM (comparison point)"
+   ],
+   "why_it_matters": "Earlier feedback on clean core findings is valuable because fixing issues in development is cheaper than fixing them after import. The idea is useful for teams that want transport-level gating, but the excerpt does not prove the approach works.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use it as a design exercise: how would you run ATC programmatically for a transport, and how would you map findings to a clean core rating? Students should identify which parts they would need to verify against SAP's own Clean Core check set and scoring before trusting the output.",
+   "quality": 3
+  },
+  "22": {
+   "summary": "Walks through grouping three existing RAP actions (Approve, Reject, Cancel) under a single Status dropdown in the UI, using the UI annotation @UI.lineItem with FOR_ACTION_GROUP and a shared actionGroupId. The post explicitly says the three actions are instance-bound non-factory actions and not factory actions, although the intro and the grouping section call them factory actions. The conclusion mentions testing observations and project context, but none are shown.",
+   "key_points": [
+    "Adds a FOR_ACTION_GROUP line item with label 'Status' and actionGroupId 'GRP1'.",
+    "Assigns Approve, Reject and cancel to the same group by adding actionGroupId to each FOR_ACTION line item.",
+    "Actions are not changed in the behaviour definition; only the UI annotations change.",
+    "The post states the actions are instance-bound non-factory actions, contradicting its own headings and wording about factory actions.",
+    "No implementation of the action methods, no testing results, and no screenshots are included."
+   ],
+   "technical_details": [
+    "@UI.lineItem with type #FOR_ACTION_GROUP",
+    "type #FOR_ACTION with dataAction, label and actionGroupId",
+    "Behaviour definition: action (features: instance) Approve parameter ZA_APPROVE_PARAM result [1] $self",
+    "action (features: instance) Reject / cancel result [1] $self",
+    "event TravelApproved parameter ZI_TRAVEL_EVT",
+    "validation valid_emp_name on save { field EmployeeName; create; update; }"
+   ],
+   "why_it_matters": "The annotation pattern for grouping actions in a RAP list report toolbar is useful and short. The post's terminology confusion around factory actions could mislead readers who are learning the difference.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How do you put several existing RAP actions under one toolbar dropdown without changing their behaviour definitions?",
+   "teaching_angle": "Good for a lab: start with three buttons, add the group annotation, then check the result in Fiori Elements. Ask learners to explain why the group is UI-only and what happens if an action is not enabled for a given instance (features: instance). Point out the factory-action wording error as a discussion point.",
+   "quality": 3
+  },
+  "0": {
+   "summary": "A laboratory proof of concept on SAP BTP trial for asynchronous Sales Order processing in SAP Cloud Integration Pipeline v2. It reworks Step07 as a shared, domain-centric outbound step that uses metadata-driven routing and XSLT transformations. The excerpt is only the abstract, so the design, metadata format, and results are not visible.",
+   "key_points": [
+    "PoC runs in a SAP BTP trial environment.",
+    "Scenario is asynchronous Sales Order processing.",
+    "Step07 is turned into a shared outbound step.",
+    "Routing is driven by metadata rather than hard-coded flows.",
+    "Transformations are done with XSLT."
+   ],
+   "technical_details": [
+    "SAP Cloud Integration Pipeline v2",
+    "Step07 (shared outbound step)",
+    "Metadata-driven routing",
+    "XSLT transformations",
+    "SAP BTP trial",
+    "Asynchronous Sales Order processing"
+   ],
+   "why_it_matters": "Relevant for integration architects who want to reduce duplicated outbound logic across domains. Without the body text, the value of the design is not yet demonstrated.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use as a discussion on the trade-off between shared integration steps and per-interface flows, and on how metadata-driven routing affects testability and traceability.",
+   "quality": 2
+  },
+  "26": {
+   "summary": "A question from a developer on SAP BTP ABAP Environment trial (2608 HFC5) with ADT 3.60, asking how to list existing secondary indexes on a custom table and how to verify an activated unique index physically. They tried 'Open ABAP Development Object' with type INDX, which was rejected, and 'Others > Index Overview', which only showed general table properties. They explicitly ask to separate repository (definition) checks from physical database checks. No answer is included in the post.",
+   "key_points": [
+    "Planned unique secondary index on a custom table over CLIENT, CREATED_BY, EXTERNAL_REQUEST_ID.",
+    "Index creation wizard is available but the index has not been created yet.",
+    "Open ABAP Development Object with type INDX returns 'Object type INDX is not supported'.",
+    "Others > Index Overview shows only the table's general properties.",
+    "Asks for two things: list existing secondary indexes, and verify the activated index exists in the database with the intended fields."
+   ],
+   "technical_details": [
+    "SAP BTP ABAP Environment 2608 HFC5 (trial)",
+    "Eclipse ADT 3.60",
+    "Custom table with secondary unique index on CLIENT, CREATED_BY, EXTERNAL_REQUEST_ID",
+    "Table Index creation wizard",
+    "Object type INDX not supported",
+    "Others > Index Overview"
+   ],
+   "why_it_matters": "Index handling differs in ABAP Cloud / BTP environments, and the question shows where ADT's UI does not cover the need. A clear answer would help developers avoid guessing at the physical state of the database.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How can I list the secondary indexes of a table and verify that an activated unique index exists in the database with the intended fields in BTP ABAP Environment trial?",
+   "teaching_angle": "Use it to teach the difference between the repository view (what is defined and activated in ADT) and the database view (what the HANA catalog physically contains). Students should work out which checks they can do from ADT and which need database-level tooling, and state which of those are allowed in the trial. The post itself has no answer, so treat any proposed solution as unverified.",
+   "quality": 3
+  },
+  "10": {
+   "summary": "A conceptual overview of retrieval-augmented generation (RAG) in the SAP context, covering retrieval, embeddings and grounding for enterprise AI. The excerpt names no SAP product, API, service, or architecture component. As far as the text shows, it is a high-level introduction with no technical depth.",
+   "key_points": [
+    "Introduces RAG as a way to ground LLM answers in enterprise knowledge.",
+    "Mentions retrieval, embeddings and grounding as core ideas.",
+    "No SAP product, service or API is named in the text.",
+    "No implementation, code, or architecture is shown."
+   ],
+   "technical_details": [
+    "Retrieval-augmented generation (RAG)",
+    "Embeddings",
+    "Grounding",
+    "Enterprise knowledge"
+   ],
+   "why_it_matters": "The topic is relevant to ABAP developers building AI features, but the excerpt gives nothing new for someone who already knows RAG. It is an orientation piece, not a how-to.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use only as a warm-up slide if you need a definition. For a deeper session, pair it with a concrete SAP example, such as an SAP HANA vector store or an SAP AI service, and ask learners to map each concept to a component.",
+   "quality": 1
+  },
+  "23": {
+   "summary": "A community question asking whether anyone has integrated ISO 20022 CAMT.053.001.02 bank statement files with SAP S/4HANA Public Cloud via the BankStatement_In SOAP API. The author wants an existing field-level mapping document or conversion sheet from CAMT.053 XML elements to API fields, and also asks for a sample XSLT/Groovy transformation or reference implementation. The post contains no answer, no mapping content, and no code; it is purely a request for resources.",
+   "key_points": [
+    "Asks for a field-level mapping from CAMT.053.001.02 XML elements to BankStatement_In SOAP API fields.",
+    "Target system is S/4HANA Public Cloud, using the BankStatement_In SOAP API.",
+    "Requests an existing mapping sheet, XSLT, Groovy script, or reference implementation.",
+    "Post provides no concrete element names, no sample payload, and no description of the problem encountered.",
+    "Question is unanswered in the text supplied."
+   ],
+   "technical_details": [
+    "Message standard: ISO 20022 camt.053.001.02 (bank-to-customer account statement).",
+    "Target API: BankStatement_In (SOAP, S/4HANA Public Cloud).",
+    "Possible integration tooling mentioned: XSLT or Groovy (e.g., in SAP Integration Suite), but none is shown in the post."
+   ],
+   "why_it_matters": "Bank statement import into S/4HANA Cloud is a common finance integration task, and CAMT.053 is the standard format banks deliver. A verified mapping would save time. However, the post itself offers no technical substance to learn from, so its value depends on the replies it attracts.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Finding or building a field-level mapping from CAMT.053.001.02 XML to the BankStatement_In SOAP API in S/4HANA Public Cloud.",
+   "teaching_angle": "Use as a discussion prompt: have students list the key CAMT.053 structures (GrpHdr, Stmt, Ntry, NtryDtls, TxDtls, Amt, CdtDbtInd, RmtInf) and reason about how each would map to a bank statement API's header, item, amount, and reference fields. Students can then check the real API field list in the SAP API Business Hub before writing a transformation, and discuss why mappings are usually built per bank variant rather than taken from a generic sheet.",
+   "quality": 2
+  }
+ },
+ "digest": {
+  "headline": "Thin day: Claude Code via MCP in ADT for VS Code, a transport-level clean core precheck idea, and a RAP action-group pattern.",
+  "overview": "Seven items were collected and several are abstract-only. The most relevant are an ADT for VS Code 1.2 post on connecting Claude Code to an ABAP system through MCP tools (ref 20), a proposed utility that runs Clean Core ATC checks per transport (ref 11), and a short RAP post on grouping toolbar actions (ref 22). Only the RAP post has concrete annotation detail.\n\nFor teaching, the useful material is the RAP annotation pattern and two open questions: how to verify secondary indexes in a BTP ABAP trial (ref 26), and what guardrails an AI agent needs when it edits ABAP objects. Treat the AI and clean core claims as unverified until you read the full posts.",
+  "top_stories": [
+   {
+    "title": "Claude Code connected to ADT for VS Code 1.2 via MCP",
+    "summary": "ADT for VS Code 1.2 ships updated MCP tools for reading and editing ABAP objects, repository search and runtime feeds. The Claude Code CLI is the client. The demo creates a console class, then a Books RAP application with a published service binding. Only the abstract was available, so tool names, configuration and code are unknown.",
+    "why_it_matters": "It shows agentic tooling working against a real ABAP system and generating RAP artifacts. The open questions are guardrails: transports, activation and review. Quality cannot be judged from the abstract.",
+    "priority": 1,
+    "refs": [
+     20
+    ]
+   },
+   {
+    "title": "Transport-based Clean Core precheck in the dev system",
+    "summary": "A custom ABAP utility is proposed that runs SAP's Clean Core ATC checks for a transport, a task or selected objects. It outputs A/B/C/D classification per object, finding counts and a technical debt score, with no XML export and no wait for SAP Cloud ALM. The excerpt shows no code, check variants or APIs.",
+    "why_it_matters": "Finding clean core issues before transport is cheaper than after import. Verify the check set and scoring against SAP's own before relying on it.",
+    "priority": 2,
+    "refs": [
+     11
+    ]
+   },
+   {
+    "title": "RAP: grouping actions under one toolbar dropdown",
+    "summary": "Three existing instance-bound actions (Approve, Reject, Cancel) are grouped under a 'Status' dropdown. A @UI.lineItem entry of type #FOR_ACTION_GROUP defines the group with actionGroupId 'GRP1'. Each #FOR_ACTION line item gets the same actionGroupId. The behaviour definition is unchanged. The post calls the actions factory actions in places and non-factory in another, which is contradictory.",
+    "why_it_matters": "It is a short, reusable UI-only pattern for Fiori Elements list reports. The terminology error could confuse learners.",
+    "priority": 2,
+    "refs": [
+     22
+    ]
+   },
+   {
+    "title": "Verifying secondary indexes in BTP ABAP Environment trial",
+    "summary": "A developer on 2608 HFC5 with ADT 3.60 wants to list a table's secondary indexes and verify that an activated unique index (CLIENT, CREATED_BY, EXTERNAL_REQUEST_ID) exists physically. Open ABAP Development Object rejects type INDX, and Others > Index Overview shows only general table properties. No answer is given.",
+    "why_it_matters": "It exposes a gap between ADT's repository view and the database view in ABAP Cloud.",
+    "priority": 3,
+    "refs": [
+     26
+    ]
+   }
+  ],
+  "releases": [
+   {
+    "title": "ADT for VS Code 1.2",
+    "summary": "Updated MCP tools for ABAP object read/edit, repository search and runtime feeds, as described in a how-to post. Details are not visible in the abstract.",
+    "refs": [
+     20
+    ]
+   }
+  ],
+  "deep_dives": [
+   {
+    "title": "Grouping RAP actions with UI annotations",
+    "explanation": "The grouping is purely a UI concern. In the metadata extension or CDS annotations you add one line item of `type: #FOR_ACTION_GROUP` with a label (here 'Status') and an `actionGroupId` (here 'GRP1'). Then you add `actionGroupId: 'GRP1'` to each `#FOR_ACTION` line item that has its `dataAction` and label (Approve, Reject, cancel).\n\nThe behaviour definition does not change. The actions stay declared as `action (features: instance) Approve parameter ZA_APPROVE_PARAM result [1] $self` and similar. Because they use `features: instance`, the feature control logic still decides per row whether each entry in the dropdown is enabled.\n\nThe source post calls these factory actions in its intro and headings, then says they are instance-bound non-factory actions. Use that as a teaching point. A factory action creates new instances (`factory action`), while these return `$self`. The post shows no action implementation, tests or screenshots, so verify the rendering in Fiori Elements yourself.",
+    "key_concepts": [
+     "@UI.lineItem",
+     "#FOR_ACTION_GROUP",
+     "actionGroupId",
+     "features: instance",
+     "factory vs instance action"
+    ],
+    "refs": [
+     22
+    ]
+   },
+   {
+    "title": "Repository vs database view of secondary indexes in ABAP Cloud",
+    "explanation": "The question in ref 26 separates two checks: what is defined and activated in the repository, and what physically exists in the database. In ADT, the Index creation wizard works. But opening type INDX through Open ABAP Development Object returns 'Object type INDX is not supported', and Others > Index Overview shows only the table's general properties.\n\nThe post has no answer, so any approach is unverified. A sensible way to teach it is to separate the questions. First, confirm the index definition is in the activated table or index object. Second, find out which database-level evidence is permitted in a trial tenant, since ABAP Cloud restricts direct database access.\n\nA behavioural check is another option: a unique index should reject a duplicate insert on the key fields. This is an inference, not something stated in the post.",
+    "key_concepts": [
+     "secondary index",
+     "unique index",
+     "repository vs DB catalog",
+     "ABAP Cloud restrictions",
+     "ADT Index Overview"
+    ],
+    "refs": [
+     26
+    ]
+   },
+   {
+    "title": "MCP in ADT for VS Code: what to expose to an agent",
+    "explanation": "The post (ref 20) says ADT for VS Code 1.2 provides MCP tools to read and edit ABAP objects, search the repository and read runtime feeds, with Claude Code CLI as the client. It generates a console class and a Books RAP app with service binding. Only the abstract was available.\n\nFor developers the design question is which operations an agent should perform unattended. Reading objects and searching are low risk. Editing, activating and publishing a service binding change the system and need a transport and a human review step.\n\nTreat generated RAP code like any junior contribution: check the behaviour definition, authorization handling and ATC results before release.",
+    "key_concepts": [
+     "MCP",
+     "agentic development",
+     "ADT for VS Code",
+     "transport and activation control",
+     "code review of generated RAP"
+    ],
+    "refs": [
+     20
+    ]
+   }
+  ],
+  "trending_problems": [
+   {
+    "theme": "Verifying DB-level objects from ADT in ABAP Cloud",
+    "description": "Developers cannot easily list secondary indexes or confirm their physical existence from ADT in the BTP trial.",
+    "teaching_tip": "Teach the repository versus database distinction and which checks are possible under ABAP Cloud restrictions.",
+    "refs": [
+     26
+    ]
+   },
+   {
+    "theme": "Finding integration mappings for bank statements",
+    "description": "A developer looks for a CAMT.053 to BankStatement_In field-level mapping for S/4HANA Public Cloud. No answer is given.",
+    "teaching_tip": "Have students map CAMT.053 structures to API fields from the API Business Hub definition, per bank variant.",
+    "refs": [
+     23
+    ]
+   }
+  ],
+  "post_drafts": [
+   {
+    "title": "RAP action groups",
+    "text": "*Group RAP actions in one dropdown, with no behaviour change*\n\n1. Add a line item with type #FOR_ACTION_GROUP, label 'Status', actionGroupId 'GRP1'\n2. Add the same actionGroupId to each #FOR_ACTION line item (Approve, Reject, Cancel)\n\nIt is *UI-only*. The behaviour definition stays the same.\n`features: instance` still controls what is enabled per row.\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/rap-grouping-of-actions/ba-p/14516941"
+   },
+   {
+    "title": "Claude Code with ADT",
+    "text": "*AI agents can now work against ABAP via MCP*\n\nADT for VS Code 1.2 has MCP tools to read and edit objects, search the repository and read runtime feeds.\nThe post connects the Claude Code CLI and builds a Books RAP app.\n\nQuestion for your team: which operations would you allow an agent to do without review?\n\nOnly the abstract is available, so check the full post.\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/abap-from-the-terminal-getting-started-with-claude-code-and-adt-1-2/ba-p/14518472"
+   }
+  ],
+  "interview_questions": [
+   {
+    "question": "How do you group several RAP actions into one dropdown in a Fiori Elements list report, and does it affect the behaviour definition?",
+    "answer": "You add a @UI.lineItem entry of type #FOR_ACTION_GROUP with a label and an actionGroupId. Then you add the same actionGroupId to each #FOR_ACTION line item that references the action through dataAction. The behaviour definition is not changed, because grouping is purely presentation. Enablement is still driven by the action's feature control, for example features: instance, so each entry can be enabled or disabled per row. This is different from a factory action, which creates new instances, whereas instance actions here return $self.",
+    "level": "Mid-level",
+    "refs": [
+     22
+    ]
+   },
+   {
+    "question": "A table has a new unique secondary index in a BTP ABAP trial, and ADT shows no index list. How would you separate repository checks from database checks?",
+    "answer": "First confirm the definition: the index must be in the activated table or index object with the intended fields. That is the repository view. Second, the physical state sits in the HANA catalog, and ABAP Cloud restricts direct database access, so what is possible in a trial is limited. In the source question, Open ABAP Development Object rejects type INDX and Index Overview shows only general table properties. A behavioural test is possible: insert two rows with the same key fields and expect the second to fail. That test shows uniqueness is enforced but not the index's physical structure. State this limit when you report the result.",
+    "level": "Senior",
+    "refs": [
+     26
+    ]
+   },
+   {
+    "question": "What controls would you put in place before letting an AI agent edit ABAP objects through MCP in ADT?",
+    "answer": "Separate read operations from write operations. Read and search tools carry little risk. Write, activate and publish operations should happen only in a development system, on a dedicated transport, with a named developer responsible. Generated code goes through peer review and ATC, including Clean Core checks, before release. Restrict the agent's authorizations so it cannot release transports. Log what the agent changed. The source post only describes the capability in its abstract, so these controls are design recommendations, not features of the tool.",
+    "level": "Architect",
+    "refs": [
+     20,
+     11
+    ]
+   }
+  ],
+  "class_idea": {
+   "title": "Grouping and controlling RAP actions in Fiori Elements",
+   "why_now": "A current post shows the #FOR_ACTION_GROUP pattern but confuses factory and instance actions, which is a common learner mistake.",
+   "outline": [
+    "Instance action vs factory action in the behaviour definition",
+    "features: instance and feature control",
+    "Line item annotations with #FOR_ACTION",
+    "Grouping with #FOR_ACTION_GROUP and actionGroupId",
+    "Testing enablement per row in Fiori Elements",
+    "Common mistakes"
+   ],
+   "exercise": "In ADT, take a RAP travel BO with Approve, Reject and Cancel actions. Add a 'Status' group via annotations. Implement feature control so that Approve is disabled for already approved rows, and verify the dropdown in the preview.",
+   "refs": [
+    22
+   ]
+  },
+  "whatsapp_highlights": "Claude Code + ADT for VS Code 1.2 via MCP (abstract only) | Transport-level Clean Core ATC precheck idea | RAP: group actions with #FOR_ACTION_GROUP, UI-only | Open question: verifying secondary indexes in BTP ABAP trial"
+ }
+}
