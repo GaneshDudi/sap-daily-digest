@@ -508,5 +508,159 @@
   "feed": "SAP News Center",
   "kind": "news",
   "text": "WALLDORF — SAP SE (NYSE: SAP) today announced that AstraZeneca, a global biopharmaceutical company, is migrating to SAP Cloud ERP Private through the RISE with SAP journey, expanding the companies’ 20-year relationship. \n Transform on-premises ERP to the cloud so it can power AI assistants to drive real business outcomes \n\n Learn how \n\n The full-estate migration extends one of the largest SAP footprints in life sciences. By simplifying and standardizing AstraZeneca’s technology landscape, it helps create a more agile and resilient digital foundation, enabling the company to move faster, make better-informed decisions and deliver value for its stakeholders. \n\n AstraZeneca is a global, science-led biopharmaceutical company focused on the discovery, development and commercialization of prescription medicines in oncology, rare disease and biopharmaceuticals, including cardiovascular, renal and metabolism, and respiratory and immunology. Through its Axial Business Transformation Programme, AstraZeneca is moving from legacy environments in SAP ERP Central Component to SAP Cloud ERP Private, supporting more standardized ways of working, harmonized data and connected processes across the enterprise. \n\n “SAP has been a key part of how we run our operations for more than two decades,” Chris Taylor, Chief Information Officer, AstraZeneca, said. “This next chapter of our partnership is about much more than modernizing technology. Through Axial, we are simplifying how AstraZeneca operates and creating the foundations to move faster and unlock greater value from AI. That matters because the faster we can turn insight into action, the faster we can create value for our company and for patients.” \n\n AstraZeneca is exploring a range of business AI capabilities from SAP, including the Industry AI portfolio, the Joule solution and agentic use cases across finance, supply chain and manufacturing. These capabilities have the potential to enhance productivity, strengthen data quality and governance, and enable faster decision-making. \n\n The SAP Business Data Cloud solution can support AstraZeneca in building a clean data core, bringing together disparate data sets to create a trusted foundation for future AI adoption. With the SAP Green Ledger solution, AstraZeneca can connect sustainability and business data across its value chain, helping embed sustainability considerations into core business processes and decision-making. \n\n “Across the life sciences and healthcare industry, companies are rethinking how technology can help them manage complexity and drive greater value,” Thomas Saueressig, Chief Customer Officer and Member of the Executive Board of SAP SE, said. “AstraZeneca’s Axial Transformation Programme shows how cloud, data and AI can create a stronger foundation for innovation at scale. By helping simplify operations, enable faster decisions and unlock trusted insights, we can support AstraZeneca as it works to push the boundaries of science to deliver life-changing medicines to patients worldwide.” \n\n Visit the SAP News Center . Get SAP news via LinkedIn and Bluesky . \n Subscribe to the SAP News Center newsletter to receive news, stories and updates each week \n\n Sign up now \n\n Media Contacts: \n Lawrie Benfield, lawrie.benfield@sap.com , +44 7776 515259 \n Sonya Domanski, sonya.domanski@sap.com , +44 734 546 5928 \n SAP Press Room ; press@sap.com \n\n This press release was created with the assistance of artificial intelligence and has been reviewed by the editorial team. \n This document contains forward-looking statements, which are predictions, projections, or other statements about future events. These statements are based on current expectations, forecasts, and assumptions that are subject to risks and uncertainties that could cause actual results and outcomes to materially differ. Additional information regarding these risks and uncertainties may be found in our filings with the Securities and Exchange Commission, including but not limited to the risk factors section of SAP’s 2024 Annual Report on Form 20-F. \n © 2026 SAP SE. All rights reserved. \n SAP and other SAP products and services mentioned herein as well as their respective logos are trademarks or registered trademarks of SAP SE in Germany and other countries. Please see https://www.sap.com/copyright for additional trademark information and notices."
+ },
+ {
+  "key": "fdf7e99f91cf776b",
+  "title": "SAP TechEd 2026: The MDM and Data Governance Conversation",
+  "link": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/sap-teched-2026-the-mdm-and-data-governance-conversation/ba-p/14520021",
+  "published": "2026-11-10T20:35:27+00:00",
+  "author": "Corrie",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Packed sessions, sharp questions, and one clear theme: MDM is now the foundation for AI. Here's what the data governance community took away from SAP TechEd 2026."
+ },
+ {
+  "key": "31402dc1aaf682fd",
+  "title": "Customize Your Journey, Part 2: Revisit Your Route",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/customize-your-journey-part-2-revisit-your-route/ba-p/14520002",
+  "published": "2026-11-10T19:14:35+00:00",
+  "author": "Chandan_Gurav",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "practical guide to finding, inspecting, editing, and deleting your customized road maps \n Your customized road map is ready, and the team has its itinerary. \n Then comes the first follow-up: “Where do I find it again?” A colleague wants to check which roadmaps and modules you selected. A scope discussion calls for a few changes. \n Welcome to life after Finish ."
+ },
+ {
+  "key": "0be0d439010971fa",
+  "title": "Data: The Foundation of Business AI in HCM - December 2026",
+  "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-sap/data-the-foundation-of-business-ai-in-hcm-december-2026/ba-p/14520001",
+  "published": "2026-11-10T19:21:03+00:00",
+  "author": "ana_delavega",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Are you in Human Resources or IT and have Story Reports enabled, but no current HR data quality tooling? Then this webinar is for you! \n Register HERE \n ________________________ \n Option 1: December 3rd, 8:00 AM - 9:30 AM CST (EMEA/AMER) \n Option 2: December 8th, 10:00 PM - 11:30 PM CST (APAC/EMEA) \n Business AI is only as good as the data behind it. In this 90-minute session, we explore why Data Quality is a core discipline within a mature HR Data Management strategy— and how SuccessFactors Story Reports helps you get started in measuring and improving data quality for your HR data. \n Click on \"Register More\" for more information. \n See you there! \n\n If you have any questions or inquiries, please get in touch with the Program Manager: karla.trevino@sap.com"
+ },
+ {
+  "key": "21ca2e0f3b0f4075",
+  "title": "From Relational to Semantic: Ontology Modeling on SAP HANA Cloud with metaphactory",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-relational-to-semantic-ontology-modeling-on-sap-hana-cloud-with/ba-p/14517906",
+  "published": "2026-11-10T17:39:15+00:00",
+  "author": "yashikasomani",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Introduction \n In May 2026, we announced a new strategic technology partnership with metaphacts: the integration of the SAP HANA Cloud Knowledge Graph Engine with metaphactory, an enterprise knowledge graph platform built on open W3C standards. Since that announcement, a key question from customers has been: how do I actually take my existing SAP HANA Cloud data and turn it into a semantic knowledge graph? \n Drawing on a detailed walkthrough published by our partners at metaphactory, we'll show you how to model an ontology step by step on the metaphactory platform from an existing SAP HANA Cloud schema, with AI assistance throughout. \n The SAP HANA Cloud Knowledge Graph Engine: Your Semantic Foundation \n Before we walk through the modeling steps, it is worth briefly grounding the workflow in what the SAP HANA Cloud Knowledge Graph Engine provides. \n The Knowledge Graph Engine is a dedicated RDF triple store built into SAP HANA Cloud. It stores graph data as subject-predicate-object triples, the foundational data model of the Semantic Web, and it queries that data using SPARQL — the W3C-standardized query language for RDF graphs. Key capabilities include: \n Native RDF triple store : store and manage knowledge graph data directly inside SAP HANA Cloud, without an external graph database \n Full SPARQL 1.1 support : query and update RDF data using the same SQL-like fluency your teams already use for relational data \n SQL–SPARQL interoperability : federate queries across the knowledge graph, relational, vector, and spatial engines in a single platform — no ETL required \n W3C standards compliance : ontologies expressed in OWL and constraints defined in SHACL are natively supported \n Fully transactional : the Knowledge Graph Engine participates in SAP HANA Cloud's unified transaction model, reading only committed data \n Multiple output formats : SPARQL query results can be returned as JSON, XML, CSV, or TSV, making it straightforward to integrate with downstream systems and AI applications \n For SAP HANA Cloud users, this means your knowledge graph data lives right next to your transactional and analytical data. You don't manage a second system; you extend the one you already have. \n For full technical details, see the SAP HANA Cloud Knowledge Graph Engine Guide . \n Getting Started: Supplier Relationship Management \n The walkthrough below is based on a real example from the metaphactory team: modeling a Supplier Relationship Management (SRM) Ontology on top of an SAP HANA Cloud database. The goal is to create a centralized resource that users from across the enterprise can query and retrieve specific supply chain information and data sources they need. This ontology will help people with and without technical expertise, and also AI, to locate data needed to answer supply chain questions. But like many large enterprises, the information they need is spread across disparate documents and files, all organized and formatted differently. Luckily, because data schemas on the SAP HANA Cloud account capture this valuable information; all of this data can be utilized to build an ontology. \n Step 1: Connect metaphactory to SAP HANA Cloud & Import Datasource Schema \n The first step is to create a datasource in metaphactory that points to your SAP HANA Cloud instance. \n In the metaphactory UI, navigate to the Datasources page and create a new datasource. Give it a descriptive name — in our example, \"SRM: Supplier Relationship Management\" — and an optional description. Then provide the JDBC connection details for your SAP HANA Cloud instance: \n JDBC URL : jdbc:sap://<your-hana-host>:<port> \n Username and Password for your SAP HANA Cloud database user \n Once the connection details are entered, use the Test Connection button to verify that metaphactory can reach your SAP HANA Cloud instance. Once you have made sure they are connected, you are ready to click “Select Schemas”. \n\n Image: SAP HANA Cloud datasource creation and connectivity configuration in metaphactory. \n With the connection established, the next step is to bring the schema into metaphactory. Click Select Schemas and choose the schema(s) you want to model — in our example, the KGE_USER schema. \n Press “Create”, and wait for the diagram to load. You will see the main data schema represented as the node “SRM: Supplier Relationship Management: KGE_USER” with six other connected nodes, including the tables inside the data schema such as “PARTNER_CONTACTS”, “PARTNER_ADDRESSES” and “BUSINESS_PARTNERS”. \n\n Image: Selecting the schema for the SRM Supplier Relationship Management datasource. \n Once the import is complete, you will see the schema successfully represented as RDF. \n\n Image: Diagram of the loaded datasource schema in metaphactory on SAP HANA Cloud Knowledge Graph Engine. \n Step 1 Demo: \n Step 2: Build the Ontology \n With the schema imported, navigate to the Ontologies section of metaphactory and create a new ontology. Set the title to \"Supplier Relationship Management Ontology\" and expand the additional metadata and settings and select the data source just created, “SRM: Supplier Relationship Management”. This binding is important: metaphactory's AI assistant metis will use this grounding to suggest an ontology structure that is directly aligned with your actual data. \n\n Image: Creating the Supplier Relationship Management Ontology. \n This is where the workflow starts to feel different from traditional ontology development. \n metis is metaphactory's AI semantic modeling assistant, built directly into the metaphactory platform. metis combines knowledge from large language models and knowledge graphs to assist you with ontology building via its conversational interface. Following the LOT methodology, it will start by providing the initial context we have for the initial ontology state, and via back-and-forth conversation, metis will help to suggest the ontology structure best suited to your business case needs based on the imported schema — including classes , relations (object properties), and attributes (data properties). \n For the SRM schema, metis reviews the five tables and generates a set of ontology elements. For example, it might propose: \n A Supplier class with attributes for name, identifier, and country of origin \n A Contract class with attributes for start date, end date, and value \n A Product class linked to suppliers via a suppliedBy relation \n A PurchaseOrder class linked to contracts via a coveredBy relation \n metis can also propose competency questions, based on ontology metadata, and the datasource which is used in the context of this ontology. An example question generated in our example is “Which suppliers are currently approved for a given product, service, or category?”. If the ontology fails to answer the proposed questions, you can use the conversational interface to make relevant tweaks, or make manual mapping changes yourself. \n You review the proposed elements in the metis panel, accept or adjust them, and instruct metis to encode the accepted elements into the ontology. The process is iterative and collaborative: you stay in control of the semantic design while metis does the heavy lifting of translating relational structures into ontology concepts. \n\n Image: Using the metis conversational interface to build and refine an ontology. \n Once you are satisfied with the proposed structure, metis encodes the accepted elements. You now have a formal ontology in OWL, ready for the next step. \n Step 3: Manual Ontology Building and Refinement \n Beyond AI-assisted ontology generation, users can also build and enhance ontologies directly using the Visual Ontology Editor. Following a human-in-the-loop approach is strongly recommended to ensure accuracy and quality throughout the modeling process. \n The metaphactory interface is designed to simplify semantic modeling, allowing users with limited technical expertise to create and manage knowledge graphs efficiently. In this example, we can further enrich the ontology by reviewing the suggestions generated by Metis. These recommendations are available both in the Metis panel and directly on the diagram canvas, where they can be accepted, modified, or removed as needed. \n For instance, we may decide to add the synonym \" Business Partner \" to the Supplier class . We can also enhance the class by adding a label attribute with a cardinality of 1. \n Any modifications made in metaphactory are instantly synchronized with the connected SAP HANA Cloud Knowledge Graph Engine , ensuring that the underlying semantic model always remains up to date. \n\n Image: Making manual ontology edits in metaphactory on SAP HANA Knowledge Graph Engine. \n Step 3 Demo: \n Step 4: Data Source Mappings in metaphactory \n An ontology alone describes the shape of your knowledge. To populate it with data from SAP HANA Cloud, you need mappings -- rules that connect relational tables and columns to ontology classes and properties. \n Navigate to the datasource page, open the Datasource Schema , and create a new mapping set named \"SRM mappings\" . Select Map Data Schema from the interface, choose the Supplier Relationship Management Ontology from the dropdown, and then enable \"Map and Generate AI Mappings\" . \n metaphactory's AI mapping engine analyzes the ontology you built and the relational schema you imported, and automatically generates the mappings between them. Once the generation is complete, you can expand the rows in the data table to explore the generated mappings. \n\n Image: Mappings for SRM mappings in metaphactory on SAP HANA Cloud Knowledge Graph Engine. \n Step 4 Demo: \n\n Step 5: Setting up Conversational AI Using metis \n In this step, we provide a brief overview of how to configure Conversational AI in metaphactory using the SAP HANA Knowledge Graph Engine. \n To create a Search and Discovery Agent, select AI Services from the toolbar and create a template that includes the Conversational AI component. Once the template has been created, configure the agent by navigating to the Agents and Template & Applications Pages sections in the toolbar and associating the template with the desired agent configuration. \n\n Image: Configuring conversational AI on the metaphactory on SAP HANA Cloud Knowledge Graph Engine. \n Once you have configured your conversational AI, you can begin asking questions about the ontology and connected data sources. For example, if you ask \"Describe the class Supplier\", metis will process the request and return a summary of the class, including its relevant properties, relationships, and associated metadata. \n\n Image: Querying the data schema with the successfully configured conversational AI. \n Step 5 Demo: \n\n Step 6: Exploring Loaded Schema, Ontology and Mappings \n Now that you have mapped your classes and relationships and refined any corner cases, you are ready to share your ontology with colleagues. They can explore and leverage the ontology through the Conversational AI agent configured in the previous step. The agent utilizes the ontology, the underlying data source, and the mappings you have created to enable users to query source data directly using natural language. \n Let's explore some additional capabilities of the conversational AI agent. For example, a member of the compliance and regulatory team may need to identify suppliers that present regulatory or business risks. They could ask the search wizard: \" Where do I find risk level and financial rating information for suppliers? \" \n The agent would analyze the request and guide the user to the relevant SAP HANA Cloud data schema, specifically the SRM (Supplier Relationship Management) schema imported as KGE_USER, as well as the entities and attributes that are relevant to the question. metis also highlights potential ambiguities and provides additional context that may help users better understand the results. In this example, the attributes RISK_LEVEL and FINANCIAL_RATING are mapped to an Assessment entity rath"
+ },
+ {
+  "key": "f3ef8f818b10c564",
+  "title": "Code, Community, and a Bit of Bass: Meet Matheus Brasil",
+  "link": "https://community.sap.com/t5/porto-blog-posts/code-community-and-a-bit-of-bass-meet-matheus-brasil/ba-p/14519777",
+  "published": "2026-11-10T17:07:33+00:00",
+  "author": "matheus_brasil",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "20 years in the SAP ecosystem, from ABAP to BTP, CAP, and now Agentic AI. Add community building, a passion for technology, and a bit of bass guitar, and that's a little bit of my story."
+ },
+ {
+  "key": "c4c216cef9558e1b",
+  "title": "Deja que IA te ayude a aprender a construir Agentes",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/deja-que-ia-te-ayude-a-aprender-a-construir-agentes/ba-p/14519926",
+  "published": "2026-11-10T16:13:13+00:00",
+  "author": "SergioG_TX",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "En este blog, use Codex para que me ayudara a aprender como crear un agente.md"
+ },
+ {
+  "key": "0be90a2b4493558c",
+  "title": "Let AI help you learn Agent building",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/let-ai-help-you-learn-agent-building/ba-p/14519898",
+  "published": "2026-11-10T16:15:51+00:00",
+  "author": "SergioG_TX",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "In this blog, I am using Codex (AI assisted development) to help me create a Fiori app, consuming an API from #SAPBusinessAcceleratorHub via agents.md files"
+ },
+ {
+  "key": "d5ce29fb4ee94cf8",
+  "title": "SAP AI Units Explained: What They Are, How They Work and What They Cost You",
+  "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/sap-ai-units-explained-what-they-are-how-they-work-and-what-they-cost-you/ba-p/14519832",
+  "published": "2026-11-10T15:26:08+00:00",
+  "author": "GouthamiR",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "If you've been exploring AI features in SAP's portfolio recently, you have almost certainly come across the term \"AI Units\" and probably had one or more of these questions: \n What exactly is an AI Unit? Does every AI feature cost units? How do I know how many I'll need? And is there a simple reference somewhere that tells me what each feature costs? \n These are the questions I hear most often right now from customers, partners, and colleagues alike. So let me explain it as plainly as possible, without the jargon."
+ },
+ {
+  "key": "11e69cdacdf2ea83",
+  "title": "From SAP ECC 6.0 to SAP Cloud ERP: Derive your scope from the legacy system",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/from-sap-ecc-6-0-to-sap-cloud-erp-derive-your-scope-from-the-legacy-system/ba-p/14519828",
+  "published": "2026-11-10T15:20:20+00:00",
+  "author": "hilko_mueller",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "In almost every transition project from SAP ECC 6.0 to SAP Cloud ERP for midmarket customers. The question arise what the right scope for the new ERP is when replacing the legacy system. \n This blog tries to answer the question what the best scope might be to replace your legacy system and give guidance to select the right option."
+ },
+ {
+  "key": "d034793544b6aeeb",
+  "title": "Azure SQL Troubleshooting Queries Runbook for SAP Commerce Cloud",
+  "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/azure-sql-troubleshooting-queries-runbook-for-sap-commerce-cloud/ba-p/14519814",
+  "published": "2026-11-10T15:22:29+00:00",
+  "author": "YannickRobin",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "This runbook documents the SQL queries used to troubleshoot Azure SQL environments."
+ },
+ {
+  "key": "9a0d6b379eba8827",
+  "title": "🚨 GURUGRAM, IT'S TIME TO GET EXCITED! SOMETHING BIG IS COMING!",
+  "link": "https://community.sap.com/t5/gurugram-blog-posts/gurugram-it-s-time-to-get-excited-something-big-is-coming/ba-p/14518776",
+  "published": "2026-11-10T18:12:15+00:00",
+  "author": "ravigrover",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "THE WAIT IS OVER! \n The excitement is real. The SAP community has a reason to celebrate! \n But what is it? \n SCROLL DOWN TO DISCOVER… \n\n SAP INSIDE TRACK GURUGRAM \n Gurugram | December 2026 \n More details coming soon. Stay tuned! \n #SAPInsideTrack #SAPInsideTrackGurugram #SAPCommunity #Gurugram #SAP #Innovation #SAPBTP #SAPJoule \n Ravi Grover ( SAP Inside Track Gurugram | Organizing Team)"
+ },
+ {
+  "key": "1c3c7f5d5b9acf35",
+  "title": "Intrastat Germany in SAP ECC: transition from IDEV to eSTATISTIK.core – SAP note for SD-FT/MM-FT",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/intrastat-germany-in-sap-ecc-transition-from-idev-to-estatistik-core-sap/qaq-p/14520022",
+  "published": "2026-11-10T20:29:32+00:00",
+  "author": "t_jungesblut75",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello community, \n A customer is running SAP ECC 6.0 (classic Foreign Trade, components SD-FT-GOV / MM-FT-GOV) and creates the German Intrastat declarations as INSTAT/XML files: dispatches via VE01 and arrivals via ENPA. So far these files have been uploaded to Destatis via IDEV (form “Außenhandel - D - Intrahandel Dateimeldung”) without any issues. \n Destatis is moving file submissions in INSTAT/XML format from IDEV to eSTATISTIK.core. When the existing files are checked in .CORE (“Lieferung prüfen”), they are rejected with schema and content errors, for example: \n declarationTypeCode missing (expected between Function and flowCode) \n errors in NatureOfTransaction \n errors in partnerId (dispatches only) \n in a comparable S/4HANA case also: phoneNumber/faxNumber/e-mail placed directly under ContactPerson instead of ContactPerson/Address, and postalCode/cityName required in that address \n Question 1: Is there an official SAP solution for ECC? \n The only note I could find is KBA 3780606 (“Intrastat Germany transition to eSTATISTIK.CORE: xml compliance and required notes”). It refers to SAP S/4HANA (component SLL-ITR-ISR, Intrastat in International Trade / /ECRS/) and fixed the issues in an S/4HANA system. However, it does not seem to apply to the classic Intrastat reports in ECC (VE01/VE03, ENPA). Is there an SAP note or KBA for ECC (SD-FT-GOV / MM-FT-GOV) that makes the INSTAT/XML file compliant with eSTATISTIK.core? Or is SAP not planning a solution for ECC, so that a custom adjustment is required? \n Question 2: What is the official deadline? \n I found contradictory information: In a Destatis webinar in August 2025, a transition period of about one year after the start of INSTAT/XML upload in .CORE (September 2025) was mentioned. Some companies were told that IDEV can only be used until the end of 2026. The current information page in the Destatis “Erhebungsportal” states that INSTAT/XML files can be submitted via IDEV up to reference period 2027, and that from reference period January 2028 onwards only .CORE is possible. Does anyone have reliable information, e.g. official communication from Destatis, on which deadline actually applies to existing IDEV file reporters? \n Thanks in advance for any hints or experiences!"
+ },
+ {
+  "key": "e98e10e1459ac6c5",
+  "title": "Compensation Statements for inactive users",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/compensation-statements-for-inactive-users/qaq-p/14520017",
+  "published": "2026-11-10T20:10:03+00:00",
+  "author": "mfpabon23",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Community, \n I would like to know how other consultants have handled the following scenario. \n The customer requires salary increases and Compensation Statements to be published only for active employees. \n I tested scenarios where employees become inactive while a worksheet is in progress or after it has been completed, but before publishing compensation results and statements. \n I observed the following: \n Salary increases are not published to Employee Central, but Compensation Statements are still generated and published. \n After updating completed worksheets, inactive employees disappear from Executive Review but remain visible in the Completed Worksheets. \n I considered Suppress Statement, but I have not found a way to automate the suppression through a rule. \n Is there a way to automatically prevent Compensation Statements from being generated for employees who become inactive after the worksheet is launched or completed? \n Thank you for your suggestions."
+ },
+ {
+  "key": "ebe137e154c3f231",
+  "title": "Movement Type Determination Based on Maintenance Order Type",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/movement-type-determination-based-on-maintenance-order-type/qaq-p/14519808",
+  "published": "2026-11-10T14:49:52+00:00",
+  "author": "MuratTnrkt",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Experts! \n I am working with SAP S/4HANA Public Cloud and have created a custom movement type 961 based on the standard movement type 261 . \n In SAP S/4HANA Private Cloud/On-Premise, we can configure movement type determination based on maintenance order types. However, we could not find the equivalent configuration activity in Public Cloud. \n Is it possible to assign different movement types to maintenance order types in SAP S/4HANA Public Cloud?"
  }
 ]
