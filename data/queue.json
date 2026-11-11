@@ -1,1 +1,367 @@
-[]
+[
+ {
+  "key": "92a1d45c4aef90eb",
+  "title": "AI Is Everywhere. Here's Where It Fits in Your SAP Cloud ALM Implementation Project",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/ai-is-everywhere-here-s-where-it-fits-in-your-sap-cloud-alm-implementation/ba-p/14520459",
+  "published": "2026-11-11T13:38:21+00:00",
+  "author": "AARCE1",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "The SAP Cloud ALM Implementation Best Practice Guides now include AI guidance — showing you where AI and agents apply in your project, for which roles, and with Joule prompts where they're available. A living reference that grows as capabilities do."
+ },
+ {
+  "key": "dfb57f1296ce1c02",
+  "title": "Configuring the SAP-Managed Market Rates Management Integration",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/configuring-the-sap-managed-market-rates-management-integration/ba-p/14520408",
+  "published": "2026-11-11T12:39:12+00:00",
+  "author": "TRM_UA",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Starting from release 2608.3, SAP S/4HANA public cloud customers who use SAP Market Rates Management (MRM), Bring Your Own Rates (BYOR) option have access to a SAP-managed provisioning path. Furthermore, the overall provisioning process for the BYOR option will change. \n This blog post walks through the end-to-end setup steps for each customer type."
+ },
+ {
+  "key": "9569c689dda0424c",
+  "title": "Exploring Data Directly with SAP Analytics Cloud Data Analyzer",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/exploring-data-directly-with-sap-analytics-cloud-data-analyzer/ba-p/14520491",
+  "published": "2026-11-11T12:11:22+00:00",
+  "author": "suryacreatx",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Stories answer the questions you planned for. Data Analyzer handles the ones you didn’t. A look at what it supports, what QRC4 2026 changes, and where it belongs in an enterprise SAC landscape."
+ },
+ {
+  "key": "a40e6250724f1956",
+  "title": "KHIVE + SAP Joule: AI you can trust to make the call",
+  "link": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/khive-sap-joule-ai-you-can-trust-to-make-the-call/ba-p/14519943",
+  "published": "2026-11-11T11:30:15+00:00",
+  "author": "kcjayaraman-SAPArchitect",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "This blog explains how Khive framework complements SAP Joule and why every SAP consultant should care."
+ },
+ {
+  "key": "811e335786864dae",
+  "title": "Wish Someone Told Me This When I First Started Working on SAP Part 1",
+  "link": "https://community.sap.com/t5/beginner-corner-blog-posts/wish-someone-told-me-this-when-i-first-started-working-on-sap-part-1/ba-p/14488317",
+  "published": "2026-11-11T09:55:27+00:00",
+  "author": "JENITA_04",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "If you're new to SAP, or you've landed on a project and don't recognize half the vocabulary, this series is for you. \n When I started, I assumed the hard part would be learning my module. It wasn't. It was the terminology: SAP, ECC, S/4HANA, Cloud, Greenfield, Brownfield, System Conversion, Upgrade, Quality, Production. I could look up each term, but I couldn't see how they fit together. It felt like collecting puzzle pieces without the picture on the box. \n So I went back to basics and asked a few simple questions. What is SAP? Why do companies need it? Where does S/4HANA fit? Where is a customer starting from, and how do they get where they want to go? Who is involved, and where does the work actually happen? \n This series is the mental map I built from those answers. Part 1 covers the foundation: what SAP is, what S/4HANA is, and how a customer's starting point shapes the way it transforms. Terms like Update, Upgrade, and the system landscape (Quality, Production) come in Part 2. No prior SAP knowledge is needed."
+ },
+ {
+  "key": "a455ebdf95d82721",
+  "title": "SAP Is Everywhere. So Why Is It Still So Hard to Get Started?",
+  "link": "https://community.sap.com/t5/beginner-corner-blog-posts/sap-is-everywhere-so-why-is-it-still-so-hard-to-get-started/ba-p/14511726",
+  "published": "2026-11-11T09:54:41+00:00",
+  "author": "Daniel_Feja86",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Do you need a background in business or IT to find your place in the SAP ecosystem? As a German Studies graduate working in SAP education, I've seen how different people's expectations and career paths can be. Here's why getting started with SAP can still be surprisingly difficult, and why there's more to this world than consulting and development."
+ },
+ {
+  "key": "6920d8c7f9ce1106",
+  "title": "From Correction Recommendations to Actionable Insights with SAP Signavio Transformation Manager",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/from-correction-recommendations-to-actionable-insights-with-sap-signavio/ba-p/14520289",
+  "published": "2026-11-11T09:26:37+00:00",
+  "author": "AlexKorn",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Finding the problems is not where the real work comes into play. It is all about translating the recommendations into actionable items which can be ranked and scheduled. \n The most recent feature available on SAP Signavio Process Transformation Manager allows you to generate structured Insights based on Correction Recommendations made through SAP Signavio Process Insights."
+ },
+ {
+  "key": "61f173c2ac6ba090",
+  "title": "SAP GTS - Legal Changes Hot info - November Edition",
+  "link": "https://community.sap.com/t5/financial-management-blog-posts-by-sap/sap-gts-legal-changes-hot-info-november-edition/ba-p/14520285",
+  "published": "2026-11-11T09:22:53+00:00",
+  "author": "AM_Sinclair",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "This blog is intended to provide updates on \"hot\" topics in relation to legal changes affecting the SAP Global Trade Services products. \n This is not a replacement for the official notes released or the the Regulatory Change Manager announcements but rather supplementary information. These announcements are also available in KBA 3707712 - SAP GTS - Legal Changes Hot info!!"
+ },
+ {
+  "key": "bb5001bcf9e021cd",
+  "title": "Real-World Learnings from Early adopters of Brownfield HPA (I_SAPIBP2) Migration",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/real-world-learnings-from-early-adopters-of-brownfield-hpa-i-sapibp2/ba-p/14520275",
+  "published": "2026-11-11T12:53:16+00:00",
+  "author": "Kavyanshi",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "With the introduction of the migration tool (MOVE2H) in 2605, customers already running on SAP7 or SAP7F planning areas could migrate to the new planning area : I_SAPIBP2. Two such customers adopted this brownfield migration as part of SAP’s Early Adopter Care (EAC) program. \n Both customers have now gone live on I_SAPIBP2. This blog draws directly from their shared experiences to give you a practical, honest guide to what a brownfield HPA migration involves — what to prepare for, what to watch out for, and what the payoff looks like on the other side. \n Customer Story 1: A Large Battery Distribution Company \n The Business Challenge \n The company had been running IBP successfully for years — demand planning, supply and response planning (RNS), inventory optimization (IO), and order-based planning (OBP) were all live. But one critical capability was missing: meaningful scenario planning. \n Planners were forced to work across seven spreadsheets simultaneously to simulate different supply and demand outcomes. The process was slow, error-prone, and provided no consolidated visibility. \n The Core Technical Challenge: Dual Product Hierarchies \n The most significant technical complexity in this migration was a fundamental design reality: the company operates with different product numbering on the demand and supply sides. \n Demand side: Demand Planning runs on sales part numbers, planned at the location, customer, and distributor level. \n Supply side: Supply Planning, IO, and OBP run on vendor part numbers \n Because the standard HPA migration tool assumes consistent product hierarchies across planning areas, it could not be used for a full automated migration. The tool was leveraged only for the Response & Supply planning area; demand planning and IO required full manual configuration from scratch within the new Harmonized Planning Area. \n The team solved this by constructing the unified HPA in five steps: \n Demand Planning in I_SAPIBP2 — A parallel set of sales-part product master data tables was created to support demand forecasting within the HPA. \n Supply Planning in I_SAPIBP2 — Standard product master data tables were used for vendor-part supply, IO, and OBP planning. \n Forecast Translation — The forecast generated on the sales part is transferred to the vendor part via a structured mapping process using CI-DS task lists. \n Scenario Planning Architecture — Additional key figures allow planners to adjust the forecast, with scenario planning connected end-to-end through to supply planning on the vendor part. \n Customer Data Integration — OBP customers are integrated through Real-Time Integration (RTI); the demand-to-supply handoff operates at the product-location level, keeping the design clean. \n Scenario Planning: Before vs. After \n Before migrating to I_SAPIBP2, bridging three separate planning areas required CI-DS jobs and copy operators to pass data across boundaries. This was functional but fragile and gave planners no consolidated view. \n After the migration, scenario planning runs through application jobs in two modes: \n Self-service: On-demand by planners: A dedicated application job template lets planners execute scenario runs themselves, end-to-end, at any time. \n Scheduled: Automated background jobs handle mass data updates nightly, without overwriting any interactive key figure adjustments planners have made \n Critical Prerequisite: HANA to HANA Cloud Upgrade \n A prerequisite that was not initially on the project radar: The underlying database requires upgrade from SAP HANA to SAP HANA Cloud which is a mandatory pre-requisite for HPA and subsequently scenario planning. This upgrade must be completed before the migrating tool can be activated and before SAP can grant the necessary authorizations. \n Customer Story 2: Global HVAC manufacturer \n The Business Challenge \n The customer was an early adopter of SAP 7 planning area using SDI (SAP HANA Smart Data Integration) during a previous early adoption program. Their IBP landscape comprised two major planning areas: Demand Planning on time-series and Order-Based Planning (OBP) on SAP7. The project described here is their brownfield migration from SAP7 to the new Harmonized Planning Area I_SAPIBP2 \n The company’s strategic sequencing was deliberate: migrate and stabilize supply planning first, then implement Inventory Optimization once HPA was proven in production. \n Real-Time Integration (RTI): Critical Learnings \n RTI integration between S4HANA and I_SAPIBP2 was one of the most valuable areas the customer shared. \n Use CIAS — Do Not Attempt Manual RTI Setup: Customer initially tried to set up RTI manually and hit multiple roadblocks. Switching to the CIAS (Cloud Integration Automation Service) setup provided by SAP resolved every blocker and significantly fast-tracked the process. \n Migration Tool (Move to I_SAPIBP2): What Worked and What Required Manual Effort \n What worked well out of the box: \n Attributes mapping — most attributes mapped automatically \n Standard master data — mapped cleanly with no issues \n Copy operators — migrated successfully once the planning area was activated \n Core planning area configurations — the large majority migrated effectively \n Time savings — after the tool became available, bulk migration activities were completed within 1–2 weeks (vs. weeks of manual work) \n Iterative use — the tool can be re-run on the same source/target pair, enabling fix-and-remigrate without starting over \n Challenges that required manual intervention: \n\n # \n CHALLENGE \n FIX \n\n 1. \n Time Profile Mismatch (Critical Prerequisite): Existing planning area lacked 'tech week' in the time profile; the I_SAPIBP2 target had it. \n Download the existing planning area as a binary file. Manually update the time profile to match the target. Rebuild the planning area configuration. Then re-run the migration tool. \n\n 2. \n Virtual and Reference Master Data: Virtual and reference master data in the SAP7 planning area did not migrate automatically in all cases. \n Perform manual mapping and configuration adjustments for virtual and reference master data types. \n\n 3. \n Planning Level Migration: In SAP7, planning levels do not require a source mapping for mandatory attributes. In I_SAPIBP2, this source assignment is mandatory — a structural difference that drove 1,300+ errors. \n Create a virtual master data type for example PDS planning levels. Maintain all custom PDS attributes in virtual master data. Assign the virtual master data as the source in each affected planning level. Activate the planning levels — errors resolve once source assignments are correctly set up. \n\n 4. \n Forecast Key Figures: Multiple forecast key figures (e.g., forecast unconstrained, helper key figures) were not mapped automatically by the tool. \n Migrate all key figures that the tool can map and activate the planning area. Use the 'Compare Planning Area' function to identify any missing key figures. Manually create the missing key figures in the target planning area. \n Note: You can add missing key figures post-migration without impact. Treat the migration as an iterative, not a one-shot, process. \n Overall Assessment: \n\n Related Links: \n Migrating to SAP IBP Harmonized Planning Area (I_S... - SAP Community \n Getting Started with SAP IBP New Harmonized Planni... - SAP Community \n Happy Reading! 🙂"
+ },
+ {
+  "key": "9178ab4a4bf60b24",
+  "title": "More Time to Get It Right - SAP's Transition Option",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/more-time-to-get-it-right-sap-s-transition-option/ba-p/14520257",
+  "published": "2026-11-11T08:53:58+00:00",
+  "author": "Benjamin_Wilk",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP is extending the transition option beyond SAP ERP to now also cover SAP CRM 7.0 (with EHP 4) and SAP SCM 7.0 (with EHP 3/EHP 4). The standard window runs from 2031 to 2033. The transition option for SAP ERP may run through 2035 with additional prerequisites."
+ },
+ {
+  "key": "165ae768e3f3d3aa",
+  "title": "How to Stay on Top of Important Updates in SAP Logistics Management",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/how-to-stay-on-top-of-important-updates-in-sap-logistics-management/ba-p/14520100",
+  "published": "2026-11-11T08:28:20+00:00",
+  "author": "SarahMo",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Some updates in SAP Logistics Management require action on day one. Here's where to look and what to check after every release."
+ },
+ {
+  "key": "0381fd2655fc903d",
+  "title": "New E-learning: SAP Multi-Bank Connectivity & SAP S/4HANA Cloud for Advanced Payment Management",
+  "link": "https://community.sap.com/t5/financial-management-blog-posts-by-sap/new-e-learning-sap-multi-bank-connectivity-amp-sap-s-4hana-cloud-for/ba-p/14520211",
+  "published": "2026-11-11T08:07:18+00:00",
+  "author": "IcyHuang",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Organizations today need efficient ways to connect with banks, streamline payments, and improve control over their financial operations. Managing multiple banking relationships and payment processes can be complex, time-consuming, and costly for finance and treasury teams. \n SAP Multi-Bank Connectivity provides a secure network that connects organizations with their banking partners, helping simplify bank communication and payment processing. Combined with SAP S/4HANA Cloud for Advanced Payment Management , organizations can centralize payment operations on a single platform, improve cash visibility, and reduce finance and treasury costs. \n In this 2-hour e-learning course , you will learn how these solutions help organizations optimize payment processes, simplify bank connectivity, and improve cash and treasury management to support more efficient financial operations. \n What You'll Learn \n In this course, you will learn about the core functionalities of SAP Multi-Bank Connectivity and how it provides a secure and centralized network between financial institutions and corporate customers. You will explore the onboarding process for SAP Multi-Bank Connectivity and understand how organizations can establish efficient bank communications to optimize finance operations. Additionally, you will discover how SAP S/4HANA Cloud for Advanced Payment Management centralizes group payments, improves cash and treasury management, and helps organizations streamline financial operations while reducing operational costs. \n The e-learning course consists of the following three modules, followed by a knowledge assessment: \n Reducing Finance Cost with SAP Multi-Bank Connectivity \n Onboarding SAP Multi-Bank Connectivity for Optimal Finance Operations \n Optimizing Cash and Treasury Cost with SAP S/4HANA Cloud for Advanced Payment Management \n Ready to Get Started? \n Enrolling in the Optimizing Payments: SAP Multi-Bank Connectivity & SAP S/4HANA Cloud for Advanced Payment Management e-learning course now! \n 📝 Note: Access to this E-learning requires a one-time registration to SAP Enterprise Support Academy on SAP Learning. \n\n Enhance Your SAP Experience with Value Maps \n Beyond this e-learning, SAP Enterprise Support offers additional resources to help you drive innovation. Value maps on SAP Community bring together guidance, recommended actions, and supporting resources to help you decide what to focus on next - all included in your SAP cloud subscription. \n Looking for more e-learning resources on SAP Financial Management capabilities? Visit this article in Finance Management value map to discover additional learning content and resources. To access the Value Map Groups , login to the SAP Community using an S-user ID or a Universal ID. \n\n 👉 Watch our short demo video , then head over to our page to explore our range of topics and request a call with a value map topic expert for guidance tailored to your goals. \n About the author: \n Icy Huang is a Topic Expert for SAP Enterprise Support value maps, specializing in SAP S/4HANA Cloud. Based in Singapore, Icy has been with SAP since 2007, taking on diverse roles that have largely centered around customer engagement and success across the organization. Now she focuses on helping business accelerate the adoption of SAP S/4HANA Cloud solutions with value map content and SAP Enterprise Support offerings."
+ },
+ {
+  "key": "682556ec987115e6",
+  "title": "How to bill service orders before completion",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/how-to-bill-service-orders-before-completion/qaq-p/14520568",
+  "published": "2026-11-11T13:38:34+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello, \n How can I bill individual completed service confirmations for a T&M service order before posting the final confirmation? \n Is it possible to release each confirmation for billing independently, without waiting for the service order item to be completed? \n Thanks! \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+ },
+ {
+  "key": "3ef6b7d0175f4df8",
+  "title": "Need to make a field \"Place of Birth\" in personalinfo HRIS",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/need-to-make-a-field-quot-place-of-birth-quot-in-personalinfo-hris/qaq-p/14520537",
+  "published": "2026-11-11T12:53:48+00:00",
+  "author": "Anamika1008",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "As per business requirement field \"Place of Birth\" in personalinfo HRIS should be mandate in PDC step only to Candidate . Can it be achieved."
+ },
+ {
+  "key": "8a5e56da244d3321",
+  "title": "Do we have provision to create and assign Z sales document types with Z delivery types",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/do-we-have-provision-to-create-and-assign-z-sales-document-types-with-z/qaq-p/14520496",
+  "published": "2026-11-11T12:51:58+00:00",
+  "author": "RanjitSimonJohn",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear SAP Team, \n As per the Sales business requirement, business standard consignment sales scenario for which we have activated the scope item 1IU. Also business has demo sales scenario where Trigon business has requested to create Custom sales document type, delivery types and billing types. Unfortunately I dont see any provision to assign the custom delivery types and billing types in the Configure Sales Document Types node. Also I dont see option to edit the number range interval in the delivery types and billing types to provide the flexible number interval between different delivery and billing types. \n\n I have also observed that I am not able to add new filed into the Listing and exclusion condition tables where business is requested to add Sales Group VKGRP and Labour-MARA- LABOR. \n\n Request you to kindly review the business request and let us know the alternatives."
+ },
+ {
+  "key": "3e6602991b796219",
+  "title": "SAC Integration with SAP S/4HANA RISE Private Cloud",
+  "link": "https://community.sap.com/t5/technology-q-a/sac-integration-with-sap-s-4hana-rise-private-cloud/qaq-p/14520369",
+  "published": "2026-11-11T11:20:36+00:00",
+  "author": "Revathi_boddapu",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Team, \n I am currently working on integrating SAP Analytics Cloud (SAC) with our SAP S/4HANA RISE Private Cloud instance, with the objective of implementing SAC predictive scenarios such as Classification, Regression, and Time Series Forecasting. \n I have reviewed several SAP Help documents, best-practice guides regarding SAC connectivity with S/4HANA. However, there are multiple connectivity options, prerequisites, and configuration approaches, and I would like to understand the recommended setup specifically for our RISE environment before proceeding. \n I got Document / Scope ID for achieving Communication arrangement settings for public cloud. However, couldn't find for private cloud \n Could you please assist on the following: \n Recommended connectivity approach between SAC and the S/4HANA RISE Private Cloud instance for acquired/imported data required by SAC. \n Prerequisites and configuration required on the RISE/S/4HANA side, including any required services, communication arrangements, CDS/OData exposure etc., \n Whether SAP Cloud Connector is required for our RISE landscape. \n Required technical users, roles, authorizations etc.,"
+ },
+ {
+  "key": "7080ced2bad900ba",
+  "title": "Process Free Form Payments or post bank statements with profit center from Bank Account Master?",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/process-free-form-payments-or-post-bank-statements-with-profit-center-from/qaq-p/14520353",
+  "published": "2026-11-11T10:59:55+00:00",
+  "author": "djwafelap",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi SAP experts! \n Due to their organisational structure, my client requires a profit center in every document line in S/4HANA Public Cloud, particularly for balance sheet accounts. We were surprised to find out that in some applications it is not possible to enter a profit center, even though the profit centre is a central and crucial field in the document split. \n For example, every bank account (‘Manage Bank Accounts’) in the bank relationship section has the option to assign a profit center, which is what we did. \n However, if you then try to post a bank statement or a free-form payment, neither is the profit center of the account used carried over into the posted documents, nor is there an option to enter a profit center. Instead, the system uses a dummy profit center defined in Customizing/CBC. This is very frustrating, as a meaningful assignment to a real profit center is either not possible at all or only possible with significant effort. \n Is there a way to use the assigned profit center for all postings? What do we need to do to achieve this? \n If not, is there a custom logic that allows us to override the profit center and, at the same time, read the correct profit center from the bank account master record? \n Thank you in advance for any help! \n Kind regards, \n Rado"
+ },
+ {
+  "key": "33d492f67248e610",
+  "title": "USTRD _XML_ Issue in Version V9 format",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/ustrd-xml-issue-in-version-v9-format/qaq-p/14520350",
+  "published": "2026-11-11T10:48:45+00:00",
+  "author": "Dharmendrarajj_K",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Team, \n We have upgraded to ISO 20022 V9 and are currently facing an issue with the USTRD (Unstructured Remittance Information) tag generation in the Credit Transfer XML file. \n Could you please check and advise what might be missing in our configuration or setup? The USTRD tag is not being generated in the outbound payment file after the V9 upgrade. \n Please let us know if there are any additional settings, mapping changes, DMEE node updates, or payment medium configuration requirements that need to be maintained for V9. \n Thank you in advance for your support."
+ },
+ {
+  "key": "dd2b74def220368a",
+  "title": "SAP cloud integrarion Successfactors oData receiver adapter, paging unclear",
+  "link": "https://community.sap.com/t5/technology-q-a/sap-cloud-integrarion-successfactors-odata-receiver-adapter-paging-unclear/qaq-p/14520344",
+  "published": "2026-11-11T10:32:44+00:00",
+  "author": "Koen_VL",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello, \n I use the Configure the SuccessFactors OData V2 Receiver Adapter | SAP Help Portal in a custom iFlow. \n Our connected SF system has around 70'000 records, so I need to use pagination to get all the data. \n My question is, when I only need the 70'000 records, is it enough to just set paging, or is it mandatory to also put this inside of a looping process call? There is an old blog mentionning that, but not sure if that is still relevant, as without it, I get far more records than the menitionned limit of 1000 records. \n\n 2830254 - How to enable Snapshot-Based pagination in SuccessFactors adapters in CPI - SAP for Me gives that as optional, but want to understand this better. \n\n can you advise? \n\n Koen"
+ },
+ {
+  "key": "959224e2eb03db16",
+  "title": "SAP DMC - OPC UA Alarms and events connection to ProdCo",
+  "link": "https://community.sap.com/t5/technology-q-a/sap-dmc-opc-ua-alarms-and-events-connection-to-prodco/qaq-p/14520330",
+  "published": "2026-11-11T10:25:08+00:00",
+  "author": "esarimese",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Good morning, \n I was wondering if SAP DM production connector supports the OPC UA Events and Alarms. \n\n Right now, we can subscribe to OPC UA servers Data access and get triggers but there are some machines that they send data as OPC UA Events access. \n In the following post, it was mentioned that this capability was on roadmap for 2021, but I cannot find any mention to it in the help: Machine Data Integration | SAP Help Portal \n How to capture Alerts of an OPC UA Server using SA... - SAP Community \n Therefore, is it possible to connect a OPC UA Events and Alarms system? \n\n Thank you in advance. \n Best regards, \n Emre Sarimese"
+ },
+ {
+  "key": "fa34b90b571057e2",
+  "title": "Alternate Specification with different quantity in recipe",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/alternate-specification-with-different-quantity-in-recipe/qaq-p/14520322",
+  "published": "2026-11-11T10:14:17+00:00",
+  "author": "saurabhk2294",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "We have 2 different foils of different size (say 100 and 50 mm) used in same recipe as alternates giving he same primary output. So the quantity of bigger foil will be half of that of smaller foil. As alternate specs have same quantity. How is this managed in SAP?"
+ },
+ {
+  "key": "0a109d315598ec59",
+  "title": "Variable Pay – PM Form Mapping Error",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/variable-pay-pm-form-mapping-error/qaq-p/14520317",
+  "published": "2026-11-11T10:07:25+00:00",
+  "author": "Giustina",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "I need your help with an issue relating to variable pay. \n The client has set up several PM forms for users, based on their associated scorecards. \n Consequently, it is necessary to map multiple PM templates to the variable pay system in order to retrieve the target results for all users. \n By mapping multiple performance tabs in the ‘Rating Source’ section. \n However, something then started to go wrong and now the system no longer allows me to map different PM tabs. \n When I try to add more PM forms, the system creates a ‘dummy’ save and does not update the template. (Leaving only one PM form mapped.) \n (The module is configured as ‘Assignment-based’) \n What could be causing the problem? \n Thanks in advance \n @xavierlegarrec \n The configuration had been carried out correctly as follows:"
+ },
+ {
+  "key": "cad88e1fdd7d8a45",
+  "title": "Asset master (AS01/AS02): derive ANLU custom field value from another ANLU field",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/asset-master-as01-as02-derive-anlu-custom-field-value-from-another-anlu/qaq-p/14520308",
+  "published": "2026-11-11T09:48:27+00:00",
+  "author": "kazuma_matsuzawa",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello experts, \n ■Objective \n When saving the asset master (AS01/AS02), we would like to set values as follows: \n - If ANLU-ZZ1_MTCD_FAA is filled, read the old material number (MARA-BISMT) from the material master \n and set it to ANLU-ZZ1_MTCDS_FAA. \n - If ANLU-ZZ1_HMTCD_FAA is filled, read the old material number (MARA-BISMT) from the material master \n and set it to ANLU-ZZ1_HMTCDS_FAA. \n These fields were created with Custom Fields and Logic (business context: FAA_ASSET_MASTER_DATA). \n ■Issue \n We tried to implement this in the asset master substitution (OACS) user exit, \n but in AS01, the ANLU values could not be referenced within the user exit. \n ■What we have checked \n - The documentation of enhancement AIST0002 states that user-defined fields \n cannot be substituted or validated. \n - Debugging the substitution user exit in AS01 shows that the ANLU work area \n is initial, including the key fields (BUKRS, ANLN1, ANLN2). \n - Referencing (SAPLXAIS)ANLU in the debugger results in \"invalid variable\". \n ■Questions \n 1. Is there a way to reference ANLU values entered on the screen (before saving) \n within the substitution user exit? \n 2. Is there a Custom Logic BAdI for FAA_ASSET_MASTER_DATA that can derive/set \n custom field values when saving the asset master? \n 3. Can this requirement be implemented in EXIT_SAPLAIST_003 (AIST0002) \n for fields created with Custom Fields and Logic? \n 4. Is the asset master substitution (OACS) also executed in AS02? \n 5. If none of the above is possible, what would be the recommended approach? \n ■Environment \n SAP S/4HANA 2023 FPS02 \n Any advice would be appreciated. Thank you."
+ },
+ {
+  "key": "ae6fe06c4a5630b7",
+  "title": "View Browser app; the \"Show Content\" button is not enabled",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/view-browser-app-the-quot-show-content-quot-button-is-not-enabled/qaq-p/14520305",
+  "published": "2026-11-11T09:40:53+00:00",
+  "author": "Lorenzo_Panetto",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "in sap cloud public , i cannot view the data contained within the View Browser app; the \"Show Content\" button is not enabled—why is that?"
+ },
+ {
+  "key": "688ce80b0b0ce4c0",
+  "title": "Liquidity Item Not Appearing in G/L Account Postings – SAP S/4HANA Public Cloud",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/liquidity-item-not-appearing-in-g-l-account-postings-sap-s-4hana-public/qaq-p/14520303",
+  "published": "2026-11-11T09:37:03+00:00",
+  "author": "-mario_2026",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi everyone, \n I have configured a Liquidity Item in the Liquidity Calculation: G/L Classification app, assigning it to a specific G/L account. \n\n However, when I post accounting documents using this G/L account, the Liquidity Item is not automatically populated or displayed in the resulting postings. \n I would like to understand whether additional configuration is required for the Liquidity Item to be derived correctly during G/L postings. \n\n Has anyone encountered this issue in SAP S/4HANA Public Cloud? Is there any additional configuration or activation step required beyond maintaining the G/L account classification? \n Any guidance would be greatly appreciated. \n Thanks in advance!"
+ },
+ {
+  "key": "2c9368cb464f1f8e",
+  "title": "EC to ECP Replication Error: “Employee Is Already Hired” After Rehire History Was Deleted",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/ec-to-ecp-replication-error-employee-is-already-hired-after-rehire-history/qaq-p/14520283",
+  "published": "2026-11-11T09:28:34+00:00",
+  "author": "Neha_Gaur95",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Issue \n An employee was originally hired and subsequently withdrawn in Employee Central (EC). This employment history was successfully replicated to Employee Central Payroll (ECP). \n Later, the employee was rehired in EC. However, before the rehire was replicated, the original hire and withdrawal history was deleted from EC. As a result, EC contained only the latest rehire record, while ECP still contained the original employment history. \n The replication then failed with the following errors: \n Employee is already hired \n Personnel number was already accounted. Do not change entry date \n The issue occurred because the effective-dated employment history in EC was no longer aligned with the existing employee history in ECP. \n Solution \n Step 1: Check the EC and ECP employment history \n Compare the employee’s effective-dated records in EC with the personnel-action history available in ECP. \n Verify the following information: \n Original hire date \n Withdrawal or termination date \n Rehire date \n Employee status \n Employee class and employee type \n Existing payroll results \n Do not change the original hire date in ECP if payroll results already exist. \n Step 2: Restore the original employment history in EC \n Recreate the historical records that were previously replicated to ECP: \n Recreate the original hire record. \n Recreate the corresponding withdrawal or termination record. \n Verify that the events, event reasons, dates, and employment status match the records already available in ECP. \n Complete the historical correction before recreating the latest rehire record. \n Step 3: Correct employee classification values \n Review the Employee Class and Employee Type values in EC. \n Ensure that the values maintained on the hire and termination records are valid and correctly mapped to the required employee group and employee subgroup in ECP. \n Use the appropriate values according to the organization’s EC-to-ECP mapping configuration. \n Step 4: Verify the employee key mapping \n In ECP, check table HRSFEC_D_EEKEYMP using transaction SE16 or SE16N . \n Confirm that: \n The EC employee ID is mapped to the correct ECP personnel number. \n The employment ID and assignment details are correct. \n No incorrect or duplicate mapping exists. \n If the mapping is missing or inconsistent, it should be corrected through the approved SAP process. Direct table updates should not be performed without SAP guidance. \n Step 5: Validate the earliest personnel action date \n Check the earliest personnel action date in ECP. \n The date should correspond to the employee’s original hire action, not the later withdrawal, termination, or rehire action. \n If payroll results already exist, carefully assess the impact before changing the date. \n Step 6: Run replication for the restored history \n Trigger employee replication from EC to ECP after restoring and validating the original history. \n Review the replication log in transaction SLG1 and confirm that: \n The historical hire record is processed. \n The withdrawal or termination record is processed. \n No duplicate-hire error is generated. \n The replicated infotype records are valid. \n Step 7: Recreate the rehire record \n After the original history is synchronized successfully: \n Recreate the rehire record in EC. \n Verify the rehire event and event reason. \n Validate the employee classification and organizational information. \n Trigger replication again. \n Step 8: Validate the final result in ECP \n After successful replication: \n Check the personnel-action history in PA20 . \n Confirm that the original hire, withdrawal or termination, and rehire actions appear in the correct sequence. \n Review SLG1 to ensure that replication completed successfully. \n Verify that the employee’s current status is correct. \n Step 9: Validate payroll impact \n Run payroll simulation before executing the productive payroll run. \n If the restored historical dates generate an unexpectedly large number of retroactive payroll periods, review Infotype 0003 – Payroll Status . \n Update the retrospective accounting date only when it is supported by the business requirement and payroll policy. Then rerun payroll and confirm that the required retroactive periods are processed correctly. \n Conclusion \n The error was resolved by restoring the deleted historical employment records in EC, aligning the EC and ECP histories, validating the employee-key mapping and earliest personnel action date, and then replicating the rehire record again. \n #ECP"
+ },
+ {
+  "key": "1c309812ef96c11d",
+  "title": "Settlement rule in investment project",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/settlement-rule-in-investment-project/qaq-p/14520276",
+  "published": "2026-11-11T09:15:11+00:00",
+  "author": "indira_priyadarshinif8af04",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear SAP Support Team, \n We have a requirement in our Investment Project in SAP S/4HANA Public Cloud. \n We need to settle the actual costs of three WBS elements to a common superior WBS element or Project Definition AuC. The remaining three WBS elements should settle to their respective individual AuCs. \n We came across SAP Note 211324 (CJB1 - Strategy for Settlement to Superior WBS), which describes the \"Superior WBS Element\" receiver type for internal settlement within the WBS hierarchy. \n Could you please clarify the following: \n Is internal settlement to a superior WBS element supported in SAP S/4HANA Public Cloud? \n Is there any standard configuration or supported alternative to achieve this requirement without ABAP modifications? \n Is it possible to settle the actual costs of three WBS elements to one common Project Definition AuC, while the remaining three WBS elements settle to their respective individual AuCs? \n Please suggest the recommended standard solution for this business requirement. \n Regards, \n Naveen D"
+ },
+ {
+  "key": "236470008b7507e5",
+  "title": "Assisted Course Generation in Learning Administration – Limitations Preventing Adoption",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/assisted-course-generation-in-learning-administration-limitations/qaq-p/14520267",
+  "published": "2026-11-11T09:03:40+00:00",
+  "author": "IrynaD",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "We have been evaluating Assisted Course Generation in Learning Administration and see good potential for using AI to simplify course creation. However, we identified two current limitations that prevent us from adopting the functionality in our standard process: \n 1. Item ID generation \n The Item ID is automatically generated, and it is currently not possible to apply the naming convention configured under System Administration → Configuration → Auto Generated IDs → Enable Item. \n 2. Mandatory Item custom fields \n Mandatory Item custom fields using predefined drop-down values cannot be populated during the assisted course generation process. \n These are important requirements in our LMS configuration because they support consistent course governance and data quality. As a result, courses generated through the AI-assisted functionality still require additional manual handling and do not fully align with our standard course creation process. \n It would be helpful to know whether SAP plans to enhance Assisted Course Generation to: \n respect the configured Item ID naming convention; and \n support mandatory custom fields, including drop-down fields. \n We would be interested to hear whether other SAP SuccessFactors Learning customers have encountered similar limitations and how they are managing them. \n Thank you for feedback and comments! \n Kind regards, \n Iryna"
+ },
+ {
+  "key": "0ecfa49ea9a990ee",
+  "title": "Excel to PowerPoint link",
+  "link": "https://community.sap.com/t5/financial-management-q-a/excel-to-powerpoint-link/qaq-p/14520238",
+  "published": "2026-11-11T08:33:50+00:00",
+  "author": "jatinder_bains",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi, I have some SAC (formula driven tables like P&Ls or overheads breakdown) and charts created which live in Excel spreadsheets which i regularly require updated into PowerPoint decks as this is what we use to present the financial information with commentary etc... \n Is there a link or functionality that exists to create a live link so if we change the period for our month end reporting we can automatically refresh for the next period, rather than having to copy and paste the items each time. \n Thanks in advance"
+ },
+ {
+  "key": "fc606653137bd6bb",
+  "title": "Bank statement processing issue",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/bank-statement-processing-issue/qaq-p/14520195",
+  "published": "2026-11-11T07:40:17+00:00",
+  "author": "Monalisa32",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Has anyone ever experience the BSP import issue. The mapping data preview reads all the data within the statement but when implemented into SAP for bank processing it doesn't read the statement."
+ },
+ {
+  "key": "903caed20b5bebab",
+  "title": "SAP and VFC Open Intelligent Fashion Store",
+  "link": "https://news.sap.com/2026/11/sap-and-vf-corporation-open-intelligent-fashion-store/",
+  "published": "2026-11-11T13:00:00+00:00",
+  "author": "SAP News",
+  "tags": [
+   "Industries",
+   "Solutions",
+   "Technology",
+   "Autonomous Enterprise",
+   "Industry AI",
+   "Retail"
+  ],
+  "feed": "SAP News Center",
+  "kind": "news",
+  "text": "Industry AI connects the shopper journey with end-to-end retail operations, enhancing the consumer experience \n\n WALLDORF — SAP SE (NYSE: SAP) and VF Corporation (NYSE: VFC) today opened S.Fashion, a retail innovation space at the SAP headquarters in Walldorf designed to explore how AI-enabled, end-to-end processes can enhance the consumer experience while making store operations more effective. \n Autonomous Enterprise: Where your business can think, adapt and act like never before \n\n Learn more \n\n This store puts the SAP vision for the Autonomous Enterprise into a working fashion retail environment, with selected products from the world-renowned VF Corporation brand portfolio, including The North Face, Vans and Timberland. In this environment, Industry AI draws on business data and retail process expertise to support decisions and actions across inventory, order management, pricing, fulfillment and replenishment. The store combines these capabilities with SAP applications, automation and connected hardware. \n\n The announcement was made at the opening of S.Fashion in Walldorf, attended by Christian Klein, CEO of SAP, and Sujay Kumar, Vice President, Global ERP Technology at VF Corporation. \n\n “The Autonomous Enterprise becomes real when AI can understand business context and act across connected processes,” said Christian Klein, CEO of SAP. “Together with VF Corporation, we are bringing this vision to life in one of retail’s most dynamic environments. S.Fashion shows how applications, data and Industry AI can work together across the entire operation, turning insights into action while keeping people in control. When technology absorbs complexity, store teams have more time to engage with consumers and create the experiences that build lasting relationships.” \n\n Industry AI Across Retail Operations \n\n Fashion retail requires precise coordination across brand, style, size, color, availability, price and fulfillment. In S.Fashion, item-level RFID data, robotics and SAP applications support a connected flow across inventory, orders, pricing, promotions and replenishment. AI agents are designed to help interpret events and coordinate next steps across processes, while people retain oversight of operating rules and exceptions. By simplifying and connecting these processes, the store will explore how technology can reduce operational complexity for teams and give them greater capacity to focus on consumers. \n\n A customer can discover products, explore personalization and virtual try-on options, and create an order. The process can then initiate item retrieval, customization, packing, payment and collection. The transaction updates inventory and can trigger a next step, such as replenishment, without relying on manual handoffs between separate systems. \n\n The experience links the physical store with a digital journey in a mobile app. Joule, part of SAP Business AI Platform, guides consumers from store entry and product discovery to in-store navigation and checkout. At the personalization station, consumers can turn a sketch and prompt into AI-generated artwork ready for embroidery. Once ordered, the personalized garment is embroidered, packed and placed in a personal locker for pickup. A holographic virtual try-on lets consumers check fit, color and overall look without changing clothes. In the fitting room, item recognition and a smart mirror recommend sizes, matching products and styling ideas. Consumers can also request another size without leaving the room. If consumers opt in, their preferences and past interactions shape curated looks and increasingly relevant recommendations. \n\n For SAP and VFC, the store serves as a live test environment for how AI, intelligent automation and physical retail work together. During selected hours, the store operates autonomously, with no staff on site. \n\n “S.Fashion gives us a unique opportunity to turn retail innovation into real-world learning,” said Sujay Kumar, Vice President, Global ERP Technology at VF Corporation. “By testing new experiences in a live environment, we can better understand what resonates with consumers and what helps our teams deliver an even better experience every day. For us, technology is most valuable when it enables our people to spend more time engaging with consumers and creating meaningful in-store experiences. The insights we gain will help us learn faster, focus on what works, and scale the solutions that can make the biggest difference across our brands.” \n\n An Intelligent Store Built Around Experience \n\n S.Fashion is designed to explore how intelligent technology can support different retail experiences while using the same connected data and business processes across the store. The focus is on understanding how technology can complement the role of store teams, make operations more effective and create more engaging and interactive experiences for consumers. \n\n During selected hours, the store operates autonomously, with no staff on site, enabling SAP and VFC to explore different retail models using the same underlying technology and processes. S.Fashion will be open to SAP employees and their friends and families, and it will also host arranged visits for customers and partners. This gives VFC and SAP a working retail environment in which to test operating processes under live conditions and demonstrate how they work together. \n\n A Living Proof Point for the Autonomous Enterprise \n\n The Walldorf opening puts the SAP strategy for the Autonomous Enterprise into practice in a live retail environment. This will help SAP and VFC assess how processes can recognize change, coordinate action across functions and support new commercial models. \n\n Visit the SAP News Center . Get SAP news via LinkedIn and Bluesky . \n\n About VF Corporation \n\n VF Corporation (NYSE: VFC) is a portfolio of leading outdoor and active brands, including The North Face®, Vans®, and Timberland®. VFC is committed to providing consumers with innovative products that are rooted in performance and elevated design, while delivering sustainable and long-term value for its employees, communities, and shareholders. For more information, please visit vfc.com. \n\n About SAP \n\n As a global leader in enterprise applications and business AI, SAP (NYSE:SAP) stands at the nexus of business and technology. For over 50 years, organizations have trusted SAP to bring out their best by uniting business-critical operations spanning finance, procurement, HR, supply chain, and customer experience. For more information, visit  www.sap.com . \n Subscribe to the SAP News Center newsletter to receive news, stories and updates each week \n\n Sign up now \n\n Note to editors: \n To preview and download broadcast-standard stock footage and press photos digitally, please visit www.sap.com/photos . On this platform, you can find high resolution material for your media channels. \n\n For customers interested in learning more about SAP products: \n Global Customer Center: +49 180 534-34-24 \n United States Only: 1 (800) 872-1SAP (1-800-872-1727) \n\n For more information, press only: \n Martin Gwisdalla, +49 6227 7-67275, martin.gwisdalla@sap.com , CET \n Dana Roesiger, +49 6227 7-63900, dana.roesiger@sap.com , CET \n SAP Press Room ; press@sap.com \n\n This press release was created with the assistance of artificial intelligence and has been reviewed by the editorial team. \n This document contains forward-looking statements, which are predictions, projections, or other statements about future events. These statements are based on current expectations, forecasts, and assumptions that are subject to risks and uncertainties that could cause actual results and outcomes to materially differ. Additional information regarding these risks and uncertainties may be found in our filings with the Securities and Exchange Commission, including but not limited to the risk factors section of SAP’s 2025 Annual Report on Form 20-F. \n © 2026 SAP SE. All rights reserved. \n SAP and other SAP products and services mentioned herein as well as their respective logos are trademarks or registered trademarks of SAP SE in Germany and other countries. Please see https://www.sap.com/copyright for additional trademark information and notices. \n Please consider our privacy policy . If you received this press release in your e-mail and you wish to unsubscribe to our mailing list please contact press@sap.com and write Unsubscribe in the subject line."
+ },
+ {
+  "key": "8b5b1b93fe08b162",
+  "title": "ABAP Platform Becoming an Enterprise-Grade Execution Backbone for Agentic AI",
+  "link": "https://news.sap.com/2026/11/abap-platform-becoming-enterprise-grade-execution-backbone-agentic-ai/",
+  "published": "2026-11-11T11:15:00+00:00",
+  "author": "Johannes Klostermeier",
+  "tags": [
+   "Artificial Intelligence",
+   "Technology",
+   "ABAP",
+   "Agentic AI",
+   "Autonomous Enterprise"
+  ],
+  "feed": "SAP News Center",
+  "kind": "news",
+  "text": "In an interview, Sonja Liénard, head of ABAP Platform at SAP, discusses the Autonomous Enterprise and ABAP platform as an “execution backbone” for agentic AI. \n\n About Sonja Liénard \n\n Sonja Liénard is an information scientist and business information specialist who joined SAP in 2012. As senior vice president and head of ABAP Platform at SAP, she is responsible for ABAP and all matters related to ABAP platform. In this role, she is also the head of ABAP AI and thus globally responsible for the latest developments and innovations in this domain. \n\n What is the Autonomous Enterprise? What part does ABAP platform play in it? \n\n Liénard: At SAP Sapphire in 2026, we unveiled the Autonomous Enterprise —our vision for how we want to help large enterprises in the era of agentic AI. The fundamental shift we’re seeing is in the way people work with technology. Interfaces are no longer the focus: interaction is outcome-driven, not tool-driven. \n\n The user experience is being transformed. Instead of filling out forms in an application, you simply open a chat and ask: “Who was on vacation in the last 30 days, and when?” The answer comes back in real time. That’s the Autonomous Enterprise. \n\n The nature and purpose of ABAP platform is not changing. It is still the foundation on which business processes run—and it is now also the backbone on which agents operate. What is changing is the way users access applications. Agents now sit in front of those applications as an additional abstraction layer. \n\n If agents are expected to handle real business tasks—not demo scenarios, but actual financial postings, HR processes, or supply chain decisions—they need to run on a platform that is reliable, governed, and scalable. \n Get started with modern ABAP development \n\n Find out how \n\n Can you explain what ”outcome-driven” means? \n\n Here’s an example. Instead of filling out a requisition form field by field, I open my chat and say, “I need 30 laptops for new hires by the end of October.” Agents check the catalog, review the budget, and create the requisition, without me having to navigate the process myself. \n\n As a user, I’m focused solely on the outcome, not on the route I need to take. When I enter a natural-language prompt, agents can autonomously pursue a variety of solution paths. What we’re seeing is a paradigm shift. The form-based environment we’re used to is giving way to the outcome-driven, agentic model. \n\n What does designing a platform for agents involve? \n\n It presents us with challenges on various levels. \n\n The first is reliability. Data and results must always be reliable, traceable, and reproducible—regardless of who triggered the agent or which path it took to obtain the data. This requires safety nets and very robust quality controls and tools. \n\n The next level is accountability and governance. Each agent must have a clearly defined authorization scope. What is it permitted to do? What is it not permitted to do? What data is it allowed to access? Agents need skills and workflows to follow. And there must also be an audit trail: what changes an agent made, who triggered the agent, and what exactly it was instructed to do. Well-defined interfaces are essential to ensure that agents operate strictly within their architectural boundaries, helping to prevent unauthorized data flows, close potential security gaps, and protect systems from compromise. \n\n And finally, there’s scalability. ABAP platform must have the computing and storage capacity required to handle spikes in agent activity. We are preparing for this, running security tests and assessing the platform’s scalability limits. \n\n The key principle remains the same: we must define very clearly where and when humans retain the final say. That is the foundation of enterprise trust—in the agentic AI era as much as in any other. \n\n Previously, you described the ABAP MCP (Model Context Protocol) server as an important building block for everything related to agentic AI . What’s the latest news here? \n\n We released the ABAP MCP server in the second quarter. It opens ABAP platform to the agentic era by enabling MCP-compatible agents to interact with ABAP capabilities. MCP can provide well-defined interfaces for agent-to-agent communication, interaction with external tools, and task delegation. \n\n You’re referring to agents that perform tasks in ABAP systems. But what about agents that administer or operate these systems? \n\n We released our first AI-powered development tools in early 2025. They were designed to boost developer productivity by providing assistance with coding and with code quality reviews. We’ve now gone further. The market is moving fast, and the next logical step is to extend AI capabilities to operations. \n\n We’re now looking at agents for administration and operations—and investing there, too. But we need safety nets, clear accountability, and well-defined boundaries. We will work to ensure that these agents have a supporting capacity only and that they do not operate in systems autonomously. \n\n With agents handling more and more operational tasks, how will SAP ensure that the guardrails remain sufficiently robust? \n\n In regards to development, it’s important to understand that ABAP and non-ABAP development differ. In ABAP, changes take effect immediately in the system and are generally corrected forward, not rolled back. This makes it especially important to have robust guardrails in place for agents, such as an isolated testing environment, thorough quality checks, and clearly defined skills and playbooks that govern agent actions and ensure reproducible results. We’re investing in all of this. \n\n What about customers that are not yet on the latest release? \n\n ABAP AI capabilities are now available in earlier versions as well. For enterprises looking to move to a newer release, our agent-led toolchain can offer dedicated support. We are currently building seven agent families that cover different process steps of a migration, including system analysis, testing, and custom code migration. These agents can also be deployed independently for custom code quality reviews. \n\n With an eye to the rest of 2026, what should customers and partners look out for? \n\n SAP is focusing on three elements. The first is migration. By year-end, we plan to ship additional practical tools to help support the entire migration process. Second is sovereign cloud solutions, for which we are developing compelling AI capabilities for enterprises with specific data sovereignty requirements. And third is MCP tooling, well-defined, secure external interfaces that open ABAP platform to the agentic world without compromising platform security. \n\n You’ve been clear throughout that ABAP developers will stay relevant and that AI will not replace them. But the picture you’re painting is of a platform that increasingly runs itself. How should developers be thinking about their role? \n\n How is the developer role changing? That’s a question for all developers, not just those who work on ABAP platform. Humans will continue to be responsible for what enters the system and what happens to data. We need to define clearly where humans make the final call and who is accountable. So, the role of developers is shifting. They are spending less time on writing code and more on oversight, software architecture, and prompting to ensure that agents do exactly what they are supposed to. The tasks are changing; the accountability isn’t. \n\n And there’s one more point I’d like to stress: ABAP platform is becoming an enterprise-grade execution backbone for agentic AI. I use the word “backbone” deliberately. We’re not a generic agent runtime. General-purpose AI can’t match what we offer: rich, proven business logic, enterprise-grade governance, and a 40-year track record of running the world’s most critical business processes. That’s the role of ABAP platform in the Autonomous Enterprise. \n\n Get the latest SAP news delivered to your inbox once a week \n\n Subscribe today"
+ }
+]
