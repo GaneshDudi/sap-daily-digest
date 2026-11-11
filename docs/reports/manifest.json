@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-11",
+  "label": "Wednesday, 11 November 2026",
+  "headline": "Thin day: a RAP unmanaged-save skeleton with real gaps, an ADT ABAP Unit run-scope bug, and a TM performance regression with an SAT trace.",
+  "items": 104,
+  "deep": 30
+ },
+ {
   "date": "2026-11-10",
   "label": "Tuesday, 10 November 2026",
   "headline": "Thin ABAP day: RAP and function-module limits, an AUTHORITY-CHECK puzzle, agent-for-dumps teasers, and unanswered Business One questions.",
