@@ -53,5 +53,38 @@
   "feed": "SAP Community questions",
   "kind": "question",
   "text": "Hi sap, \n When switching to the live system with 5MQ SCOPE enabled, how can opening stock for goods dispatched or in transit be imported whilst ensuring consistency with the amounts recorded under the ‘goods dispatched’ account in the original system’s financial records (for each sales order)? \n 上线切换在启用 5MQ SCOPE 的情况下，如何导入期初发出商品或在途库存，同时能保证与原系统财务发出商品科目金额（每张销售订单）保持一致."
+ },
+ {
+  "key": "7fe25963fc83e072",
+  "title": "Why OData/RAP Service Changes Often Require Metadata Cache Clean, Avoid Cache Problems in Production",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/why-odata-rap-service-changes-often-require-metadata-cache-clean-avoid/ba-p/14522540",
+  "published": "2026-11-14T21:50:25+00:00",
+  "author": "anupkumarbharti",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Introduction : One of the most common frustrations for SAP developers is this scenario: I changed my CDS view, RAP BO, service definition, or service binding. The activation was successful, but the UI or consumer system still behaves as if nothing changed The root cause is usually metadata caching."
+ },
+ {
+  "key": "d9c57899df69115d",
+  "title": "Duplicate Invoice Detection with SAP RPT-1.6 and Command A Reasoning Model: A Personal Experiment",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/duplicate-invoice-detection-with-sap-rpt-1-6-and-command-a-reasoning-model/ba-p/14522522",
+  "published": "2026-11-14T21:10:42+00:00",
+  "author": "JasonLu",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "I ran 500 invoice pairs through SAP RPT-1.6 and Cohere Command A Reasoning Model to see which handles duplicate detection better. The results were more nuanced than I expected, and one failure revealed something important about how tabular AI actually works."
+ },
+ {
+  "key": "24037cd91a4e7029",
+  "title": "Enquiry regarding the method for importing opening provisional estimates (GR/IR) account details",
+  "link": "https://community.sap.com/t5/financial-management-q-a/enquiry-regarding-the-method-for-importing-opening-provisional-estimates-gr/qaq-p/14522470",
+  "published": "2026-11-14T15:51:25+00:00",
+  "author": "xuqi_fangaf39f1",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi sap, \n Enquiry regarding the method for importing opening provisional estimates (GR/IR) account details during the go-live transition. \n Ensure that the provisional (GR/IR) accounts match the detailed amounts in the original system’s accounts (linked to each purchase order), whilst enabling subsequent invoice verification or the settlement of provisional accounts to proceed smoothly. \n 上线切换期初暂估（GR/IR)科目明细导入方法咨询 \n 暂估（GR/IR)科目与原系统科目明细金额保持一致（关联每笔采购订单），同时能满足后续顺利进行发票校验或暂估清账"
  }
 ]
