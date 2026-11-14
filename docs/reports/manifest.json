@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-14",
+  "label": "Saturday, 14 November 2026",
+  "headline": "Thin day: one useful ABAP change-document audit report, a PI/PO principal propagation migration abstract, and two Joule Studio posts with no body text.",
+  "items": 34,
+  "deep": 4
+ },
+ {
   "date": "2026-11-13",
   "label": "Friday, 13 November 2026",
   "headline": "A light day: ABAP-side posts on OData streams, BAPI custom fields and Public Edition pricing, plus AI tooling gaps in ISLM and ADT MCP.",
