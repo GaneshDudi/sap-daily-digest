@@ -1,1 +1,35 @@
-[]
+[
+ {
+  "key": "4ee568e381907900",
+  "title": "Multilevel Custom As-Built Report with As-Planned Info in SAP PEO",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/multilevel-custom-as-built-report-with-as-planned-info-in-sap-peo/ba-p/14522716",
+  "published": "2026-11-15T16:15:15+00:00",
+  "author": "Juan_Ventura",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "This blog post describes an approach of how to implement in SAP S/4HANA a custom solution of the As-Built Report to display both the real assembled components (either planned or unplanned) and the planned components which were not assembled. \n The target audience for this blog post will be consulting people, project team members, key users, and subject matter experts who are interested on production engineering and operations within SAP S/4HANA."
+ },
+ {
+  "key": "0371d34a133c9234",
+  "title": "Classify Your Way: Marketing Attributes & Product Attributes in SAP Sales Cloud Version 2",
+  "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/classify-your-way-marketing-attributes-amp-product-attributes-in-sap-sales/ba-p/14522638",
+  "published": "2026-11-15T08:50:27+00:00",
+  "author": "Yogesh__Vijay",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Standard fields sometimes don't quite fit your business. Extensibility sometimes overkill. SAP Sales Cloud V2's new Marketing Attributes and Product Attributes give your admins a third option — reusable, governed classification for Accounts, Contacts, and Products, configured in minutes and ready to filter on immediately."
+ },
+ {
+  "key": "c51e7aa640a6a57d",
+  "title": "ADT standard function module:The editor can not be shown because the content can not be synchronized",
+  "link": "https://community.sap.com/t5/abap-forum/adt-standard-function-module-the-editor-can-not-be-shown-because-the/m-p/14522652#M1481",
+  "published": "2026-11-15T11:39:40+00:00",
+  "author": "Sandra_Rossi",
+  "tags": [],
+  "feed": "SAP Community discussions",
+  "kind": "discussion",
+  "text": "I've got this error in Eclipse ADT when displaying SWE_EVENT_CREATE: \n \"The editor can not be shown because the content can not be synchronized with the backend.\" \n In the ADT Communication Log, I can see this HTTP request: \n GET /sap/bc/adt/functions/groups/swea/fmodules/swe_event_create HTTP/1.1 \n Response body: \n <?xml version=\"1.0\" encoding=\"UTF-8\"?><exc:exception xmlns:exc=\" http://www.sap.com/abapxml/types/communicationframework \"> \n <namespace id=\"com.sap.adt\"/> \n <type id=\"ExceptionInvalidData\"/> \n <message lang=\"EN\">An error occurred during serialization in the simple transformation program ST_FB_ADT_FUNC</message> \n <localizedMessage lang=\"EN\">An error occurred during serialization in the simple transformation program ST_FB_ADT_FUNC</localizedMessage> \n <properties> \n <entry key=\"XML_PATH\"/> \n <entry key=\"XML_OFFSET\">0 </entry> \n <entry key=\"T100KEY-ID\">00</entry> \n <entry key=\"T100KEY-NO\">001</entry> \n <entry key=\"T100KEY-V1\">An error occurred during serialization in the simp</entry> \n <entry key=\"T100KEY-V2\">le transformation program ST_FB_ADT_FUNC</entry> \n </properties> \n </exc:exception> \n The original exception is CX_SY_CONVERSION_NO_DATE_TIME \"Value is not a valid date in accord with the XML format for ABAP ST_FB_ADT_FUNC\". \n What is the error? How to make it work? \n Thanks. \n Sandra \n System: ABAP 7.58 SP 1 ON-PREMISE."
+ }
+]
