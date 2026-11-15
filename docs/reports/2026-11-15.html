@@ -1,0 +1,127 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SAP Community digest · Sunday, 15 November 2026</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Serif:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F5F7F9;--surface:#FFFFFF;--ink:#16202A;--muted:#57636F;--rule:#D5DCE3;
+--blue:#0B5FAE;--amber:#8F5A00;--amber-bg:#FFF1D6;--chip:#E8EEF4;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0F1720;--surface:#16212C;
+--ink:#E6EDF3;--muted:#9AA7B4;--rule:#2A3744;--blue:#7DBBF7;--amber:#F2B955;--amber-bg:#2F2610;--chip:#1F2C39}}
+:root[data-theme="dark"]{--paper:#0F1720;--surface:#16212C;--ink:#E6EDF3;--muted:#9AA7B4;--rule:#2A3744;
+--blue:#7DBBF7;--amber:#F2B955;--amber-bg:#2F2610;--chip:#1F2C39}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 4rem)}
+body{margin:0;background:var(--paper);color:var(--ink);
+font:1.0625rem/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+a{color:var(--blue)}a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+h1,h2,h3{font-family:"IBM Plex Serif",Georgia,"Times New Roman",serif;line-height:1.25}
+header.mast{padding:3rem 0 1.5rem}
+.kicker{color:var(--muted);margin:0 0 .25rem;font-size:.95rem}
+h1{font-size:clamp(2rem,6vw,3rem);margin:0 0 1rem;font-weight:600;letter-spacing:-.01em}
+.lead{font-family:"IBM Plex Serif",Georgia,serif;font-size:1.3rem;line-height:1.45;margin:0 0 1rem}
+.stats{color:var(--muted);margin:0}
+nav.toc{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);
+border-bottom:1px solid var(--rule);overflow-x:auto;white-space:nowrap}
+nav.toc .wrap{display:flex;gap:1.25rem;padding-top:.7rem;padding-bottom:.7rem}
+nav.toc a{text-decoration:none;color:var(--ink);font-size:.95rem}
+nav.toc a:hover{color:var(--blue)}
+section{padding:2.25rem 0 .5rem}
+h2{font-size:1.6rem;margin:0 0 .35rem}
+.sub{color:var(--muted);margin:0 0 1.25rem}
+.story{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:1.1rem 1.25rem;margin:0 0 1rem}
+.story h3{margin:.1rem 0 .5rem;font-size:1.2rem}
+.story p{margin:.5rem 0}
+.prio{display:inline-block;font-size:.8rem;font-weight:600;color:var(--amber);background:var(--amber-bg);
+border-radius:4px;padding:.1rem .45rem}
+.why{color:var(--ink)}.why strong{font-weight:600}
+.src{font-size:.9rem;color:var(--muted);margin-top:.6rem}
+.src a{display:inline-block;margin:0 .9rem .3rem 0}
+.plain{border-left:3px solid var(--rule);padding:.1rem 0 .1rem 1rem;margin:0 0 1.25rem}
+.plain h3{margin:0 0 .35rem;font-size:1.1rem}
+.plain p{margin:.35rem 0}
+.dive{margin:0 0 2rem}
+.dive h3{font-size:1.35rem;margin:0 0 .5rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.75rem 0 0;padding:0;list-style:none}
+.chips li{background:var(--chip);border-radius:4px;padding:.15rem .5rem;font-size:.88rem}
+code{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-size:.92em;background:var(--chip);
+padding:.05rem .3rem;border-radius:3px}
+.draft{background:var(--surface);border:1px solid var(--rule);border-radius:10px;margin:0 0 1.25rem;overflow:hidden}
+.draft-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.75rem 1rem;
+border-bottom:1px solid var(--rule)}
+.draft-head h3{margin:0;font-size:1.05rem}
+.draft pre{margin:0;padding:1rem;white-space:pre-wrap;word-wrap:break-word;font:inherit;line-height:1.55}
+button.copy{font:inherit;font-size:.9rem;background:var(--blue);color:#fff;border:0;border-radius:6px;
+padding:.4rem .85rem;cursor:pointer;flex:none}
+:root[data-theme="dark"] button.copy{color:#0F1720}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) button.copy{color:#0F1720}}
+details{border-top:1px solid var(--rule);padding:.6rem 0}
+details:last-of-type{border-bottom:1px solid var(--rule)}
+summary{cursor:pointer;font-weight:600}
+summary .n{color:var(--muted);font-weight:400}
+.idx{list-style:none;margin:.6rem 0 0;padding:0}
+.idx li{padding:.45rem 0;border-top:1px dashed var(--rule)}
+.idx li:first-child{border-top:0}
+.kind{color:var(--muted);font-size:.85rem;margin-right:.4rem}
+.one{display:block;color:var(--muted);font-size:.93rem}
+.oos{opacity:.8}
+footer{color:var(--muted);font-size:.9rem;padding:3rem 0 2.5rem}
+.archive li{padding:.9rem 0;border-bottom:1px solid var(--rule);list-style:none}
+.archive{padding:0}.archive a{font-family:"IBM Plex Serif",Georgia,serif;font-size:1.2rem}
+.archive p{margin:.25rem 0 0;color:var(--muted)}
+.empty{color:var(--muted);font-style:italic}
+details.qa{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:.8rem 1.1rem;margin:0 0 .8rem}
+details.qa summary{font-weight:600;line-height:1.45}
+details.qa summary .prio{margin-right:.4rem}
+details.qa[open] summary{margin-bottom:.4rem}
+.outline{margin:.6rem 0;padding-left:1.4rem}.outline li{margin:.25rem 0}
+@media (prefers-reduced-motion:no-preference){.story,.dive{scroll-margin-top:4rem}}
+</style></head><body><header class="mast"><div class="wrap">
+<p class="kicker">SAP Community daily digest</p><h1>Sunday, 15 November 2026</h1>
+<p class="lead">A thin day: one community post on stale OData/RAP metadata after activation, with no steps or code to verify its claim.</p>
+<p class="stats">Screened 9 new items from the last day. 1 were technical, and 1 were read in full.</p>
+</div></header>
+<nav class="toc" aria-label="Sections"><div class="wrap">
+<a href="#overview">Overview</a><a href="#top">Top stories</a><a href="#releases">Releases</a>
+<a href="#dives">Deep dives</a><a href="#problems">Developer problems</a><a href="#interview">Interview questions</a><a href="#class">Class idea</a><a href="#drafts">Post drafts</a><a href="#all">Everything</a>
+</div></nav><main class="wrap"><section id="overview"><h2>The day in one minute</h2><p>Only one item was collected today (ref 5). It is a community blog intro describing a familiar symptom. After you change a CDS view, RAP BO, service definition or service binding, activation succeeds, but the Fiori UI or consumer still shows the old behaviour. The author blames metadata caching and suggests clearing the metadata cache in production.</p><p>The text names no cache, transaction, report or API. It gives no verification steps either. Treat it as a prompt for investigation, not as guidance. The root cause is asserted, not demonstrated. The practical value today is as a teaching exercise: identify which layer holds stale metadata and prove it by comparing $metadata before and after the change.</p></section><section id="top"><h2>Top stories</h2><p class="sub">Ranked by how much they matter to ABAP developers.</p><article class="story"><span class="prio">Priority 2</span>
+<h3>Stale OData/RAP metadata after successful activation</h3><p>A community post says changes to a CDS view, RAP BO, service definition or service binding often do not show up in the UI or consumer even though activation succeeds. It attributes this to metadata caching and recommends cleaning the metadata cache to avoid production problems. The provided text is only an intro: it does not identify the cache (Gateway, browser, launchpad or consumer), the clean-up method, or any verification.</p>
+<p class="why"><strong>Why it matters:</strong> The symptom is real and common in RAP projects, but the post gives no actionable steps. Do not take the cause as verified. Check which layer is stale by comparing $metadata responses, and take the cache-clean steps from SAP documentation for your release.</p><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/why-odata-rap-service-changes-often-require-metadata-cache-clean-avoid/ba-p/14522540" title="Why OData/RAP Service Changes Often Require Metadata Cache Clean, Avoid Cache Problems in Production">Blog: Why OData/RAP Service Changes Often Require Metadata Cache C</a></div></article></section><section id="releases"><h2>Releases and announcements</h2><p class="empty">Nothing new was released or announced today.</p></section><section id="dives"><h2>Deep dives</h2><p class="sub">The most valuable technical posts, explained.</p><article class="dive"><h3>Diagnosing stale metadata after activating a RAP service change</h3><p>The post (ref 5) describes the symptom: activation succeeds, but the consumer behaves as if nothing changed. It names a metadata cache as the cause without saying which one. The text gives no transaction, report or API, so the specifics below are a diagnostic approach, not facts from the post.</p><p>Start by asking what changed on the server. Activating a CDS view, service definition or behavior definition changes repository objects. A service binding exposes the service, and consumers read its <code>$metadata</code> document. Candidate holders of old metadata are the server-side Gateway metadata cache, the browser, the Fiori launchpad, and any consumer-side proxy or generated client. The post does not say which one applies.</p><p>A workable method is to fetch <code>$metadata</code> directly, for example in a fresh browser session or a REST client, and compare it with what the UI sees. If the direct response is current and the UI is stale, the problem is on the client side. If the direct response is stale, look at the server. Repeat the check after each cache-clean step to see which step fixed it. Take the actual cache-clean procedure from SAP documentation for your release, since the post does not provide it.</p>
+<ul class="chips" aria-label="Key concepts"><li>`$metadata` document comparison</li><li>Service binding and service definition</li><li>Candidate cache layers: Gateway, browser, launchpad, consumer proxy</li><li>Before/after verification</li></ul><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/why-odata-rap-service-changes-often-require-metadata-cache-clean-avoid/ba-p/14522540" title="Why OData/RAP Service Changes Often Require Metadata Cache Clean, Avoid Cache Problems in Production">Blog: Why OData/RAP Service Changes Often Require Metadata Cache C</a></div></article></section><section id="problems"><h2>What developers are struggling with</h2><p class="sub">Patterns from today's questions. Useful for classes and interview prep.</p><div class="plain"><h3>Stale metadata after RAP/CDS change</h3><p>Activation succeeds, but the UI or consumer still shows old behaviour after changes to a CDS view, RAP BO, service definition or service binding. The post blames metadata caching but does not identify which cache.</p>
+<p><strong>Teaching tip:</strong> Have students list every layer that could hold old metadata, then prove which one is stale by comparing raw `$metadata` before and after each clean-up step. Have them find the official steps in SAP documentation.</p><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/why-odata-rap-service-changes-often-require-metadata-cache-clean-avoid/ba-p/14522540" title="Why OData/RAP Service Changes Often Require Metadata Cache Clean, Avoid Cache Problems in Production">Blog: Why OData/RAP Service Changes Often Require Metadata Cache C</a></div></div></section><section id="interview"><h2>Interview questions</h2><p class="sub">Grounded in today's material. Open each one to see a model answer.</p><details class="qa"><summary><span class="prio">Senior</span> After you activate a change to a CDS view and RAP BO, the Fiori app still shows old behaviour. How do you find out where the stale state is?</summary>
+<p>Separate server state from client state. First confirm the objects are active and the service binding is published. Then request <code>$metadata</code> for the service directly, in a fresh session or a REST client, and compare it with what the app uses. If the direct response shows the change, the staleness is on the client side, such as browser, launchpad or a consumer proxy. If it does not, the server side needs investigation, including any Gateway metadata cache. Clear one layer at a time and recheck <code>$metadata</code> after each step, so you know which step fixed it. Take the exact cache-clean procedure from SAP documentation for your release instead of guessing. Note that the source post only asserts caching as the cause and does not prove it.</p><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/why-odata-rap-service-changes-often-require-metadata-cache-clean-avoid/ba-p/14522540" title="Why OData/RAP Service Changes Often Require Metadata Cache Clean, Avoid Cache Problems in Production">Blog: Why OData/RAP Service Changes Often Require Metadata Cache C</a></div></details><details class="qa"><summary><span class="prio">Mid-level</span> Which artefacts are involved when you expose a RAP BO as an OData service, and which of them can affect what a consumer sees in `$metadata`?</summary>
+<p>The CDS data model and projection views define the entities and fields. The behavior definition and projection define the operations and actions. The service definition selects which entities are exposed. The service binding publishes the service for a protocol such as OData V2 or V4 UI. A change to any of these can change <code>$metadata</code>. Activation updates the repository, but a consumer sees the change only if it reads fresh metadata. That is why you check the raw <code>$metadata</code> response after changes. The source post lists these same artefacts as the ones whose changes appear not to take effect.</p><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/why-odata-rap-service-changes-often-require-metadata-cache-clean-avoid/ba-p/14522540" title="Why OData/RAP Service Changes Often Require Metadata Cache Clean, Avoid Cache Problems in Production">Blog: Why OData/RAP Service Changes Often Require Metadata Cache C</a></div></details><details class="qa"><summary><span class="prio">Architect</span> A colleague says &#x27;it&#x27;s just metadata cache, clear it in production after each transport.&#x27; How do you respond as a technical lead?</summary>
+<p>I would ask for evidence first. A blanket cache clean after each transport treats a symptom without a confirmed cause, and the source post does not say which cache is meant or how to clear it. I would reproduce the problem, compare <code>$metadata</code> from the server with what the client holds, and identify the layer. If a server cache is confirmed, I would document the SAP-supported procedure for our release and add it to the transport or go-live checklist. I would also check whether the transport is complete, for example that the service binding and all dependent objects arrived. A clear, verified runbook is better than a habit based on an assumption.</p><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/why-odata-rap-service-changes-often-require-metadata-cache-clean-avoid/ba-p/14522540" title="Why OData/RAP Service Changes Often Require Metadata Cache Clean, Avoid Cache Problems in Production">Blog: Why OData/RAP Service Changes Often Require Metadata Cache C</a></div></details></section><section id="class"><h2>Class idea</h2><article class="story"><h3>Hunting stale metadata in RAP/OData services</h3><p>Today&#x27;s only item (ref 5) describes activation succeeding while the UI shows old behaviour, and blames metadata caching without evidence. It is a good case for teaching evidence-based diagnosis.</p>
+<ol class="outline"><li>Artefact chain: CDS, behavior definition, service definition, service binding</li><li>What a consumer reads: the `$metadata` document</li><li>Candidate cache layers: Gateway, browser, launchpad, consumer proxy</li><li>Method: compare raw `$metadata` before and after each step</li><li>Finding the official cache-clean steps in SAP documentation for your release</li><li>Building a go-live checklist from verified steps</li></ol><p><strong>Hands-on exercise:</strong> In ADT, take a RAP service and add a field to the CDS projection view. Activate it. Fetch `$metadata` through the service binding&#x27;s URL and through the Fiori app&#x27;s session. Record whether each shows the new field. Clear one candidate cache at a time and note which step makes the two outputs match. Write a short runbook.</p><div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-members/why-odata-rap-service-changes-often-require-metadata-cache-clean-avoid/ba-p/14522540" title="Why OData/RAP Service Changes Often Require Metadata Cache Clean, Avoid Cache Problems in Production">Blog: Why OData/RAP Service Changes Often Require Metadata Cache C</a></div></article></section><section id="drafts"><h2>Post drafts for your community</h2><p class="sub">Ready to copy into WhatsApp. Review before posting.</p><div class="draft"><div class="draft-head"><h3>Activated, but UI still shows old behaviour?</h3>
+<button class="copy" type="button" data-target="draft0">Copy text</button></div>
+<pre id="draft0">*Activated your RAP/CDS change but the Fiori UI looks unchanged?*
+
+A community post blames metadata caching. It names no cache and gives no steps, so treat it as a hint, not a diagnosis.
+
+Quick way to find the stale layer:
+1. Open the service&#x27;s `$metadata` URL in a fresh session
+2. Compare it with what the app sees
+3. Current in the direct call = client-side cache
+4. Stale in the direct call = look server-side
+
+*Prove it, don&#x27;t assume it.*
+
+https://community.sap.com/t5/technology-blog-posts-by-members/why-odata-rap-service-changes-often-require-metadata-cache-clean-avoid/ba-p/14522540</pre></div></section><section id="all"><h2>Everything from today</h2><p class="sub">Every item collected, grouped by area. Items outside your focus areas are dimmed.</p><details><summary>Functional &amp; Business Processes <span class="n">(5)</span></summary><ul class="idx"><li class="oos"><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/sap-ewm-vendor-specific-preferred-uom-for-same-material/ba-p/14522247">SAP EWM - Vendor-Specific Preferred UoM for Same Material</a><span class="one">EWM configuration approach for vendor-specific preferred units of measure when one material is supplied in different packaging.</span></li><li class="oos"><span class="kind">Question</span>
+<a href="https://community.sap.com/t5/financial-management-q-a/issues-relating-to-the-import-of-opening-data-for-work-in-progress-in-3f0/qaq-p/14522467">Issues relating to the import of opening data for work-in-progress in 3F0 SCOPE</a><span class="one">Go-live question on importing opening work-in-progress per production order under 3F0 SCOPE while matching legacy WIP financial balances.</span></li><li class="oos"><span class="kind">Question</span>
+<a href="https://community.sap.com/t5/financial-management-q-a/issues-relating-to-the-import-of-opening-data-for-5mq-scope/qaq-p/14522466">Issues relating to the import of opening data for 5MQ SCOPE</a><span class="one">Go-live question on importing opening goods-dispatched and in-transit stock per sales order under 5MQ SCOPE to match legacy financials.</span></li><li class="oos"><span class="kind">Question</span>
+<a href="https://community.sap.com/t5/financial-management-q-a/enquiry-regarding-the-method-for-importing-opening-provisional-estimates-gr/qaq-p/14522470">Enquiry regarding the method for importing opening provisional estimates (GR/IR) account details</a><span class="one">Go-live question on importing opening GR/IR provisional accounts per purchase order so invoice verification and settlement still work.</span></li><li class="oos"><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/financial-management-blog-posts-by-sap/cost-centers-review-booklet-one-cost-center-report-to-rule-them-all/ba-p/14522392">Cost Centers Review Booklet: One Cost center report to rule them all?</a><span class="one">Overview of a finance Cost Centers Review Booklet report with actuals, plan/actual comparison and embedded AI insights.</span></li></ul></details><details><summary>Security &amp; Basis <span class="n">(1)</span></summary><ul class="idx"><li class="oos"><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/technology-blog-posts-by-members/restoring-an-encrypted-sap-hana-backup-to-another-system/ba-p/14522442">Restoring an Encrypted SAP HANA Backup to Another System</a><span class="one">Step-by-step Basis guide to restoring an encrypted SAP HANA tenant backup into another system after importing root keys.</span></li></ul></details><details><summary>OData, APIs &amp; Integration <span class="n">(1)</span></summary><ul class="idx"><li><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/technology-blog-posts-by-members/why-odata-rap-service-changes-often-require-metadata-cache-clean-avoid/ba-p/14522540">Why OData/RAP Service Changes Often Require Metadata Cache Clean, Avoid Cache Problems in Production</a><span class="one">Explains why OData/RAP changes from CDS, behavior definitions or service bindings don&#x27;t show up and how to clear metadata cache safely.</span></li></ul></details><details><summary>AI &amp; Joule <span class="n">(1)</span></summary><ul class="idx"><li class="oos"><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/technology-blog-posts-by-sap/duplicate-invoice-detection-with-sap-rpt-1-6-and-command-a-reasoning-model/ba-p/14522522">Duplicate Invoice Detection with SAP RPT-1.6 and Command A Reasoning Model: A Personal Experiment</a><span class="one">Personal experiment comparing SAP RPT-1.6 and Cohere Command A for duplicate invoice detection, including a tabular-AI failure case.</span></li></ul></details><details><summary>Community, Events &amp; Careers <span class="n">(1)</span></summary><ul class="idx"><li class="oos"><span class="kind">Blog</span>
+<a href="https://community.sap.com/t5/technology-blog-posts-by-sap/5-things-i-learned-facilitating-sap-s-agentic-ai-training-in-2026/ba-p/14522545">5 things I learned facilitating SAP&#x27;s Agentic AI training in 2026</a><span class="one">Trainer reflections on facilitating SAP Agentic AI sessions in Ireland and earning the C_JSD Joule Studio certification.</span></li></ul></details></section></main><footer><div class="wrap">Generated 15 Nov 2026, 13:31 IST. Summaries are written by Claude;
+check the original post before quoting or teaching from it. <a href="../index.html">All reports</a></div></footer><script>
+document.querySelectorAll('button.copy').forEach(function(b){b.addEventListener('click',function(){
+var t=document.getElementById(b.dataset.target).innerText;
+navigator.clipboard.writeText(t).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy text'},2000)},
+function(){b.textContent='Select and copy manually'})})});
+</script></body></html>
