@@ -64,5 +64,228 @@
   "feed": "SAP Community blog posts",
   "kind": "blog",
   "text": "The vision of Autonomous Enterprise was unveiled at SAP Sapphire in May 2026 and expanded at SAP Connect in October 2026. It is SAP's unified vision and product architecture for running AI-native business operations. Rather than treating AI as isolated chatbots or add-ons, it embeds autonomous AI agents directly into core enterprise workflows - shifting human roles from manual execution to strategic direction and oversight. \n Autonomous Spend Management is a key business domain of SAP's Autonomous Enterprise vision, transforming procurement from traditionally manual, transaction-driven processes into intelligent, AI-powered operations. \n The purpose of this post is to provide an overview of the Autonomous Spend Management domain within SAP's Autonomous Enterprise vision based on my understanding. It could help readers understand the capabilities and prepare for its adoption."
+ },
+ {
+  "key": "af15623ef3c7a70d",
+  "title": "Engineering Autonomous Workflows in SAP by transitioning from AI Assistants to AI Agents",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/engineering-autonomous-workflows-in-sap-by-transitioning-from-ai-assistants/ba-p/14514853",
+  "published": "2026-11-16T03:30:00+00:00",
+  "author": "suryacreatx",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "An AI that gives a wrong answer wastes a minute. An AI that takes a wrong action can cost a supplier relationship. That difference is what this post is about."
+ },
+ {
+  "key": "87bafc1fb0b148d1",
+  "title": "[Devtoberfest2026] Build Your Reputation: Community Stars Tell How They Built Their Brand",
+  "link": "https://community.sap.com/t5/curitiba-blog-posts/devtoberfest2026-build-your-reputation-community-stars-tell-how-they-built/ba-p/14522757",
+  "published": "2026-11-16T01:41:26+00:00",
+  "author": "LuizSouza_cwb",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": ""
+ },
+ {
+  "key": "275b1a3de7eeb7e6",
+  "title": "Missão cumprida! Até 2027: SITCWB2026 celebra a força da comunidade SAP em Curitiba",
+  "link": "https://community.sap.com/t5/curitiba-blog-posts/miss%C3%A3o-cumprida-at%C3%A9-2027-sitcwb2026-celebra-a-for%C3%A7a-da-comunidade-sap-em/ba-p/14520630",
+  "published": "2026-11-14T12:51:51+00:00",
+  "author": "SimoneKersck",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "No último sábado, 7 de novembro, Curitiba foi palco de mais um capítulo especial da história da SAP Community. Realizamos a 4ª edição do SAP Inside Track Curitiba (SITCWB2026), um encontro que reuniu 440 inscritos e teve seus ingressos esgotados um mês antes do evento. Um sucesso absoluto que reforça o quanto nossa comunidade está viva, engajada e crescendo a cada ano! \n Como parte da equipe organizadora e curadora da SAP Community Curitiba, é difícil colocar em palavras a alegria e o orgulho de ver tudo aquilo que construímos juntos se materializar. Cada edição tem sua própria história, e este ano não foi diferente. \n\n Um dia de conhecimento, conexão e muita alegria \n O dia começou com aquela energia que já é marca registrada do nosso SITCWB. Os participantes foram recebidos com muito carinho pela nossa equipe de voluntários, um delicioso coffee break e, neste ano, uma novidade que conquistou todos os corações: nossa capivara ganhou vida e se tornou a grande estrela da festa, trazendo ainda mais alegria e momentos especiais para o evento. \n\n Também tivemos uma ativação no balcão da SAP Community Curitiba, fortalecendo a conexão dos participantes com a página oficial da SAP Community. Como parte dessa iniciativa, 200 participantes receberam uma caneca exclusiva do SITCWB2026. Mais do que um presente, uma lembrança de que fazemos parte de algo muito maior. \n\n Outro momento muito especial foi: a Árvore da Comunidade. Cada participante foi convidado a escrever seu nome em uma folha e, juntos, fomos construindo uma árvore repleta de nomes. Mais do que uma atividade simbólica, essa iniciativa teve o propósito de representar o pertencimento, mostrando que cada pessoa é parte importante da nossa comunidade. Afinal, uma comunidade forte é construída por pessoas, e cada uma delas faz a diferença. Nossa árvore se tornou um símbolo lindo de conexão, união e da força que temos quando crescemos juntos. \n\n A abertura foi um momento especial, conduzido por mim, Simone, ao lado do nosso curador @LuizSouza . Tivemos também a alegria de contar com a presença de quatro SAP Champions nesta edição ( @Marssel700 , @SimoneKersck , @RobertaFernande e @MustafaBensan ), tornando o encontro ainda mais significativo para a nossa comunidade. \n\n E para conduzir essa jornada de conhecimento, contamos com nossos MCs @AdrianoCWB e Talis , que deram ritmo à programação, conectaram os diferentes momentos do evento e contribuíram para que tudo acontecesse de forma leve, dinâmica e acolhedora. \n\n Na sequência, tivemos um momento especial com representantes da PUCPR, que compartilharam com os participantes um pouco sobre a estrutura, as oportunidades e tudo o que a instituição oferece, aproximando ainda mais a comunidade do ambiente acadêmico. \n\n A partir daí, demos início a uma programação repleta de palestras enriquecedoras, compartilhamento de conhecimento, incluindo uma palestra internacional e diversas demonstrações que estimularam conversas, reflexões e novas possibilidades. \n\n Ao longo do dia, tivemos experiências que tornaram o evento ainda mais especial. No intervalo do almoço, um picolé para refrescar e renovar as energias e uma ativação deliciosa da Pipoquinhas JP, que trouxe ainda mais sabor e alegria para o nosso encontro. São esses pequenos detalhes e experiências que ajudam a tornar cada edição única e especial. \n\n Nos stands dos nossos patrocinadores Ouro, os participantes também puderam conhecer soluções, trocar experiências e ampliar seus conhecimentos. \n\n E, claro, não poderia faltar aquilo que faz o SIT ser tão especial: o networking. Os encontros nos corredores, as conversas entre palestras, as novas conexões e os reencontros mostram que a comunidade SAP vai muito além da tecnologia. Ela é feita de pessoas. \n A força de uma comunidade que cresce junto \n O SITCWB2026 foi mais uma demonstração da força e do protagonismo da SAP Community em Curitiba. \n Por trás de cada detalhe, existe uma equipe que acredita no propósito de compartilhar conhecimento, aproximar profissionais e criar oportunidades para que todos possam crescer juntos. \n Meu agradecimento mais especial vai para os nossos voluntários. Vocês colocaram o coração em cada atividade, em cada recepção, em cada detalhe. A dedicação, o carinho e a energia de vocês fizeram toda a diferença. É impossível realizar um evento dessa dimensão sem pessoas tão comprometidas e especiais. \n\n Aos nossos MCs Adriano e Talis, muito obrigada por conduzirem a programação com energia, carisma e dedicação. Vocês foram fundamentais para tornar a experiência do SITCWB2026 ainda mais leve, dinâmica e especial. \n Aos palestrantes, nossa gratidão por compartilharem conhecimento, experiências e aprendizados tão valiosos. Vocês inspiram profissionais, despertam novas ideias e fortalecem o protagonismo de cada pessoa na construção de sua carreira. \n À PUCPR, nosso reconhecimento por nos receber mais uma vez e compartilhar com a comunidade as oportunidades e a estrutura da instituição. \n Aos nossos patrocinadores e apoiadores, muito obrigada por acreditarem no SITCWB e na força da comunidade. O apoio de vocês é fundamental para que possamos continuar realizando encontros como este, de forma colaborativa e com cada vez mais qualidade. \n\n E também nosso carinho e agradecimento à Pipoquinhas JP por fazer parte dessa experiência e contribuir para deixar nosso encontro ainda mais especial. \n E a todos que estiveram conosco, o nosso muito obrigada! Vocês são a razão de tudo isso acontecer. Cada conexão, cada troca e cada sorriso fizeram do SITCWB2026 um dia inesquecível. \n Reviva os melhores momentos do SITCWB2026 \n Esta foto representa muito mais do que um evento: representa uma comunidade que cresce, se fortalece e constrói junto. \n\n E para reviver toda essa energia, preparamos um registro especial de tudo o que aconteceu nesta edição. \n 🎬 Confira o After Movie do SITCWB2026: \n https://youtu.be/ib__DaAYUQo \n Missão cumprida! Até 2027! \n Encerrar mais uma edição do SITCWB traz aquela mistura de felicidade, gratidão e saudade. Foram meses de planejamento, dedicação, desafios e muito trabalho, mas ver tudo se concretizar e sentir a energia de vocês faz cada esforço valer a pena. \n Saímos desta edição com o coração cheio e a certeza de que estamos construindo algo muito especial. \n A expectativa para 2027 já começou! Que venha mais um ano de aprendizado, conexões, colaboração e crescimento. \n Porque a SAP Community Curitiba é isso: pessoas que compartilham, que apoiam, que acreditam e que fazem acontecer. \n Missão cumprida, SITCWB2026! Nos vemos em 2027!"
+ },
+ {
+  "key": "7f0ea70c03ce0ea6",
+  "title": "How to Purge Historical Records from ProcessTaskLog Table",
+  "link": "https://community.sap.com/t5/crm-and-cx-q-a/how-to-purge-historical-records-from-processtasklog-table/qaq-p/14522891",
+  "published": "2026-11-16T06:16:47+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "A significant volume of records in the ProcessTaskLog table have been identified and would like to remove older entries. \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+ },
+ {
+  "key": "1d3b6371d33c21d6",
+  "title": "create Material determination /Exclusion VB11/VB01 condition records automatically through API",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/create-material-determination-exclusion-vb11-vb01-condition-records/qaq-p/14522878",
+  "published": "2026-11-16T05:54:50+00:00",
+  "author": "Jayakumar12",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "We have requirement to create Material determination /Exclusion VB11/VB01 condition records automatically through CPI middleware. \n As part of clean core we are searching for relevant API in api.sap.com, there were no released API for private cloud. \n Please suggest what is Best SAP standard solution (Provide any BAPI)"
+ },
+ {
+  "key": "764b07a9543177d1",
+  "title": "Access to Attachments After MM_EKKO Archiving",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/access-to-attachments-after-mm-ekko-archiving/qaq-p/14522782",
+  "published": "2026-11-16T04:12:39+00:00",
+  "author": "y_n1",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "We are considering archiving purchasing documents using MM_EKKO. \n Could you please confirm whether attachments associated with purchasing documents can still be accessed after the documents have been archived? \n According to the SAP Help documentation below, attachments cannot be accessed when generating output for archived purchase orders. \n Therefore, we would like to confirm whether this limitation applies only to output processing, or whether attachments themselves become inaccessible after MM_EKKO archiving. \n Thank you for your support. \n Best regards,"
+ },
+ {
+  "key": "ee08b20ca72c87d9",
+  "title": "SAP Cloud ALM Subscription clarification",
+  "link": "https://community.sap.com/t5/technology-q-a/sap-cloud-alm-subscription-clarification/qaq-p/14522771",
+  "published": "2026-11-16T02:41:41+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear , \n We have identified an SAP Cloud Integration Automation (CIAS) subscription entitlement assigned to our SAP BTP subaccount under the SAP Cloud ALM global account. \n We would like to obtain complete official clarification regarding the subscription, licensing conditions, available features, usage restrictions, technical capabilities, and commercial terms before activating or using this service in our production landscape. \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+ },
+ {
+  "key": "7bd32f353f28af23",
+  "title": "Need to have extra standard fields in the Pop Up while Creating the SO with Reference to Invoice",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/need-to-have-extra-standard-fields-in-the-pop-up-while-creating-the-so-with/qaq-p/14522770",
+  "published": "2026-11-16T02:34:29+00:00",
+  "author": "karaphe",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Need to have some extra standard fields in the Pop Up while Creating the Sales Order with reference to Invoice. \n In standard while creating the sales Order system show the below Information \n Item , Material, Description Open Qt, Billed Qt, Billing Date \n But the requirement the to show the some additional Info like Batch (line Item Wise) \n Also Can we maximize the pop up screen to show all the data without Scrolling to Left/Right"
+ },
+ {
+  "key": "ee09b96f785fcafd",
+  "title": "Request for confirmation on the availability of monthly SAP system monitoring",
+  "link": "https://community.sap.com/t5/technology-q-a/request-for-confirmation-on-the-availability-of-monthly-sap-system/qaq-p/14522765",
+  "published": "2026-11-16T01:46:48+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear SAP Team, \n We would like to check the availability of various SAP system monitoring and audit reports through SAP Cloud ALM. \n Could you please confirm whether the following reports can be generated and downloaded from SAP Cloud ALM on a monthly basis? \n Database Backup Report – Monthly backup details, including successful and failed backups. \n Transport Request Report – Monthly transport request details, including transport IDs, descriptions, owners, and import status. \n Client Modification History Report – Monthly report showing how many times SAP client settings were changed to Modifiable through SCC4, including the date, time, client number, and user ID responsible for each change. \n SM20 Security Audit Log Report – User-wise transaction execution details, including which transactions (T-Codes) were executed by users, along with date and time. \n Total SAP User ID Count Report – Monthly count of total SAP user IDs across the systems. \n Database Growth Report – Monthly database size and growth details. \n Specific Table Growth Report – Monthly growth details of specific tables, including table size and record growth. \n Additionally, please clarify the following: \n Which of the above reports are available directly in SAP Cloud ALM? \n Can these reports be downloaded in Excel or CSV format? \n Is historical data available for monthly reporting? \n For reports not currently supported, is there any alternative method or configuration available through SAP Cloud ALM? \n Our objective is to centralize these reports through SAP Cloud ALM and reduce the dependency on manually extracting reports from individual SAP transactions. \n Please share your guidance and recommendations. \n Regard, \n Shubham PERSON_NAME \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+ },
+ {
+  "key": "ffe5a2ab1fdb0ae2",
+  "title": "Subject: SAP BTP Trial – Integration Suite subscription blocked by appPlan decommissionin",
+  "link": "https://community.sap.com/t5/technology-q-a/subject-sap-btp-trial-integration-suite-subscription-blocked-by-appplan/qaq-p/14522749",
+  "published": "2026-11-15T20:52:19+00:00",
+  "author": "Evariste_Pede",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello SAP Support Team, \n I am unable to subscribe to SAP Integration Suite in my SAP BTP Trial account. \n When creating the Integration Suite subscription with the Trial plan, I receive the following error: \n Failing subscription request because decommissioning is in progress for appPlan: [trial]"
+ },
+ {
+  "key": "0672ca6cee9b987b",
+  "title": "Fiori Report Row expansion not working",
+  "link": "https://community.sap.com/t5/technology-q-a/fiori-report-row-expansion-not-working/qaq-p/14522735",
+  "published": "2026-11-15T17:49:04+00:00",
+  "author": "raskulk",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "The BS Load bookmark was created in the ZFIB21 Fiori app based on ZFIBS21 GC. Some rows were expanded to the G/L level before saving the bookmark. However, when we change the fiscal period and load the bookmark, it returns to the original hierarchy level. \n Is it possible to manually set different hierarchy levels for different rows?"
+ },
+ {
+  "key": "fc53f306afdc0989",
+  "title": "Read-only on-prem tool on customer’s licensed SAP ECC and ECM: allowed?",
+  "link": "https://community.sap.com/t5/technology-q-a/read-only-on-prem-tool-on-customer-s-licensed-sap-ecc-and-ecm-allowed/qaq-p/14522731",
+  "published": "2026-11-15T17:08:29+00:00",
+  "author": "shubh_5312",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi all, \n I'm a developer building an on-premises tool that connects to a customer's SAP ECC and SAP Extended ECM (by OpenText) with read-only access. The tool runs on the customer's own servers, the customer holds the SAP licence, and the customer creates the read-only user for us. \n For SAP ECC, the customer downloads the SAP NetWeaver RFC SDK with their own S-user. Based on SAP's licence terms for SAP Connectors, this looks allowed: the connectors are for connecting non-SAP applications to SAP, at no extra fee, as long as they are not redistributed. \n https://support.sap.com/en/product/connectors \n For SAP Extended ECM, we use the published OpenText Content Server REST API with a read-only account. \n My questions: \n 1. Is our reading of the licence terms correct, i.e. is this allowed? \n 2. Do we, as the tool vendor, need any SAP licence or approval of our own? \n Our customer has asked for official confirmation from SAP that this is allowed. If someone from SAP can confirm this, could you please share how we can get it in writing, for example an email from the right SAP team, or the contact or channel we should use?"
+ },
+ {
+  "key": "c5b5d2845befdee7",
+  "title": "Assigning Item to Competencies in Bulk Upload",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/assigning-item-to-competencies-in-bulk-upload/qaq-p/14522640",
+  "published": "2026-11-15T09:31:06+00:00",
+  "author": "indahayuputri93",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear Expert Friends, \n\n I need your help to do bulk upload of competencies to existing learning items. I have reviewed few guides and also reviewed post in this community Solved: Linking Item to competency data - SAP Community . However, my txt files are still not being read by the connector. I attached files for the reference as well. \n Below are the things that I did already: \n 1. Prepare the item competency file as per configured template. \n 2. Upload item competency and item data in txt files as per configured in SFTP desired folder path. Noticed that I just need to upload 2 files which are item data and item competency as I don't need to upload the remaining 4 files under item connector. \n 3. Noticed that the status is WARN NO RECORD even the files are there in SFTP and I have used pipe (|) as the separator. \n 4. I tried multiple times with REV_DTE and without REV_DTE as it is marked as optional. \n Kindly advise as I have no luck in this thing and it has been pending for long times. \n\n Thank you. \n Regards, \n Ayu"
+ },
+ {
+  "key": "5fcc83f5881c8f59",
+  "title": "How to add an Ad-Hoc Reviewer on demand for an approval tsk in My Inbox for SAP Public Cloud system?",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/how-to-add-an-ad-hoc-reviewer-on-demand-for-an-approval-tsk-in-my-inbox-for/qaq-p/14522564",
+  "published": "2026-11-15T07:18:19+00:00",
+  "author": "mohammed_thattarathodika7975a6",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "I have a business requirement from client as follows: \n Example: \n A workflow has been started for a PR or PO etc. There are 3 levels configured in the Manage Workflow App -(1 - Reporting Manager, 2 - CFO and 3 - CEO as final Approver). \n The request has been reached to CFO for second level approval / reviewal. But CFO need an ad-hoc review process by FM only for this workflow. After the review process by FM, the workflow should return back to CFO with FM's comments. \n How to achieve this requirement without using Forward or Delegate functionality available for My inbox application?"
+ },
+ {
+  "key": "4d381237bcd47baf",
+  "title": "SAP S/4HANA ICMR - How to Configure Display Groups Based on Matching Rules in a Reconciliation Case?",
+  "link": "https://community.sap.com/t5/financial-management-q-a/sap-s-4hana-icmr-how-to-configure-display-groups-based-on-matching-rules-in/qaq-p/14522504",
+  "published": "2026-11-14T19:55:24+00:00",
+  "author": "Piyush-97_",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi SAP Community, \n I am working on Intercompany Matching and Reconciliation (ICMR) in SAP S/4HANA and have a requirement related to the configuration of Display Groups within Define Reconciliation Cases . \n Business Requirement: \n We have configured multiple matching rules in ICMR to identify and match different types of intercompany transactions, such as invoices, payments, credit notes, and TDS. \n We would like to create separate Display Groups within a reconciliation case based on the matching rules used during the matching process. \n For example: \n Display Group 1 - Invoices Matched: Display items processed through Matching Rule 1. \n Display Group 2 - Amount Difference in Invoices Matched : Display items processed through Matching Rule 2. \n Display Group 3 - Credit Notes: Display items processed through Matching Rule 3. \n Display Group 4 - Amount Difference in Credit Notes Matched: Display items processed through Matching Rule 4. \n Current Observation: \n While configuring Display Groups under Define Reconciliation Cases , we are unable to identify an option to filter or segregate reconciliation items directly based on the matching rule applied. \n Questions: \n Is it possible to configure Display Groups in ICMR based on the matching rule ID or matching rule applied to individual items? \n Is there any standard field or configuration available that allows matching rules to be used as selection criteria for Display Groups? \n If direct filtering by matching rules is not supported, is there an alternative standard approach to achieve this requirement without custom development? \n The objective is to enable business users to view different categories of intercompany transactions in separate Display Groups based on the matching logic applied. \n Any guidance, configuration references, or alternative approaches would be greatly appreciated. \n Thanks in advance!"
+ },
+ {
+  "key": "d935ccadad3ec9bb",
+  "title": "Help needed: hiding Reference Structure fields in equipment master (IE01/IE02)",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/help-needed-hiding-reference-structure-fields-in-equipment-master-ie01-ie02/qaq-p/14522464",
+  "published": "2026-11-14T14:27:59+00:00",
+  "author": "yassine_bouchkara",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear Experts, \n I’m reaching out because we need your help with an equipment master issue. We want to hide two fields in the “Structure” block of the equipment screen (IE01/IE02/IE03): \n Reference Structure ID (ITOB-REFSTRUCIDENTIFIER) \n Reference Equipment (ITOB-REFERENCEEQUIPMENT) \n\n These fields don’t appear in the equipment field selection, so we can’t set them to “Hide”, and I haven’t found any other standard setting to remove them. Ideally, we would like to hide them for a specific equipment category only. \n Could you show me how to do this, or point me to the right customizing? \n It would help us a lot. Thank you in advance for your support. \n Regards"
+ },
+ {
+  "key": "ad58cdb201cb4d31",
+  "title": "SKU field in MIGO editable",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/sku-field-in-migo-editable/qaq-p/14522448",
+  "published": "2026-11-14T12:14:43+00:00",
+  "author": "PS271",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear Team, \n We would like to make the “QTY in SKU” field editable during MIGO. Could you please advise us on the best way to achieve this? \n\n Regards,Parag Sethia"
+ },
+ {
+  "key": "d9ab6cfce4c576de",
+  "title": "CDS View for ANLC ANLZ for data extraction and ingestion",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/cds-view-for-anlc-anlz-for-data-extraction-and-ingestion/qaq-p/14522447",
+  "published": "2026-11-14T12:13:47+00:00",
+  "author": "sush_pasp",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Need data extraction on ANLC and ANLZ. \n ANLC provides the cumulative acquisition values and accumulated depreciation per fiscal year per depreciation area which is not in ACDOCA. \n FAAT_PLAN_VALUES and FAAT_DOC_IT are the alternative objects storing data from ANLC and ANLZ \n I do not find any views in these tables enabled for extraction. Any suggested way of extracting data from ANLC and ANLZ?"
+ },
+ {
+  "key": "297fcbcf41316b00",
+  "title": "SAP BTP ABAP Trial – ABAP Server Stuck in Run Level \"Internal\" – Service Unavailable",
+  "link": "https://community.sap.com/t5/abap-forum/sap-btp-abap-trial-abap-server-stuck-in-run-level-quot-internal-quot/m-p/14522501#M1480",
+  "published": "2026-11-14T19:47:34+00:00",
+  "author": "rajesh_midde4033df",
+  "tags": [],
+  "feed": "SAP Community discussions",
+  "kind": "discussion",
+  "text": "Hello SAP Experts, \n I am experiencing an issue with my SAP BTP ABAP Environment Trial instance. The instance was created successfully, but I am unable to connect to it through Eclipse ADT or the ABAP Web UI. \n Instance details: \n\n Instance Name: default_abap-trial \n\n Instance ID: 778cff9e-219f-4f78-9f73-10e976075f7a \n\n Subaccount: trial \n\n Region: AWS US East (VA) \n\n ABAP Environment URL: https://6449ad14-b137-4a27-8017-6421c2c4f0b0.abap.us10.hana.ondemand.com \n\n Creation Date: November 11, 2026 \n\n Creation Operation Status: Succeeded \n\n BTP instance status previously showed: Usable \n Errors encountered: \n\n When connecting through Eclipse ADT: \n \"Logon is not possible: Failed to get service instance URL info for https://6449ad14-b137-4a27-8017-6421c2c4f0b0.abap.us10.hana.ondemand.com : The ABAP Server is in run level 'internal'.\" \n\n When opening the ABAP Web UI: \n \"Service Instance Currently Unavailable\" \n I have already: \n\n Verified that the BTP ABAP Environment instance was created successfully. \n\n Checked the instance status in SAP BTP Cockpit. \n\n Tried accessing the ABAP Web UI directly. \n\n Waited more than six hours and retried the connection. \n\n Restarted my SAP Business Application Studio workspace, but the issue remains. \n Could you please investigate whether there is a backend issue with my ABAP Trial instance and advise whether the existing instance can be recovered? \n I have already created ABAP packages, classes and database tables in this environment. I would prefer to recover the existing instance rather than delete and recreate it, if possible. \n Thank you for your assistance."
+ },
+ {
+  "key": "3aaa6e057d1fc4f7",
+  "title": "India’s Rise: From Promise to Platform for Global Growth",
+  "link": "https://news.sap.com/2026/11/india-promise-to-platform-global-growth/",
+  "published": "2026-11-16T05:15:00+00:00",
+  "author": "Paul Taylor",
+  "tags": [
+   "Corporate",
+   "India"
+  ],
+  "feed": "SAP News Center",
+  "kind": "news",
+  "text": "India’s emergence is not a single story of growth, but a set of connected shifts changing how global companies think about markets, talent, technology, and innovation. \n\n India today is an industrial and technology powerhouse, and it has become a strategic center for global business, technology, innovation, and investment. For SAP, that makes India not only an important domestic market, but also a place where enterprise technology is built, tested, and scaled for global impact. \n\n The forces behind India’s rise are structural, not cyclical: economic scale, deep technology talent, and digital infrastructure built for mass adoption. Together, they have shifted India from a market companies serve or source from into one where global technology strategy is designed, tested, and scaled. \n President and MD of SAP India Manish Prasad: “Touch any growth lever in India and you’ll find SAP there” \n\n Read the interview \n\n A $5 trillion economy \n\n India’s growth, demographic scale, engineering talent, digital infrastructure, and expanding technology capabilities have set the pace for global growth and enterprise digital transformation. \n\n India is already one of the fastest-growing major economies, with annual GDP growth of roughly 6.5% to 7% and an economy of about US$4.15 trillion today. \n\n At its present growth rate, India is on track to cross the $5 trillion threshold shortly and become the world’s third-largest economy, overtaking Japan and Germany. By the end of the decade, India’s GDP is expected to be between $6 trillion and $7 trillion. \n\n These are more than numerical milestones. A market of India’s size already influences global investment priorities, supply chain decisions, technology adoption, and corporate growth strategies. \n\n Several structural advantages support this growth: a large domestic market with a population of 1.4 billion, rising affluence, and rapid urbanization that is increasing demand for infrastructure, housing, transportation, financial services, healthcare, and consumer products. \n\n Government policy has reinforced this momentum through tax changes, foreign direct investment rules, production-linked incentives, and sustained infrastructure investment in ports, highways, logistics corridors, and renewable energy. \n\n India’s $5 Trillion Rise is Changing Everything \n\n Click the button below to load the content from YouTube. \n\n Always allow YouTube \n\n Video by Natalie Hauck and Alexander Januschke \n\n Capital investment \n\n At the same time, manufacturing investment has expanded as multinational companies have sought to diversify global supply chains and establish alternatives to excessive dependence on China and other production centers. \n\n As incomes rise, consumption has expanded; as investment has increased, productivity has improved; and as productivity has improved, India has become more attractive to global capital. This feedback loop is giving the economy its own growth momentum while deepening its integration with global markets. \n\n This shift has also changed how global executives view India. Companies that once treated India as a back-office or low-cost manufacturing base are now recalibrating it as a demand market, innovation hub, and source of global momentum. \n\n A talent engine like no other \n\n With more than one billion citizens under 35 and more than 2.5 million STEM graduates each year, India has one of the world’s deepest reservoirs of technology talent. That talent spans engineering, computer science, data science, mathematics, and applied sciences, feeding industries such as software engineering, semiconductor design, cloud infrastructure, cybersecurity, and artificial intelligence. \n\n India’s universities, including the world-renowned IIT network, are also evolving. The IndiaAI Mission, launched in March 2024 with a budget of about $1.1 billion, supports AI research, compute infrastructure, and skills development so India can build AI systems, not just operate them. \n\n This talent depth changes the calculus for global employers. It allows companies to staff large engineering initiatives at a scale that is difficult to match in most markets, making India a preferred location for next-generation engineering and innovation functions. \n\n A full-stack digital nation \n\n India’s digital transformation has provided another distinctive advantage: digital identity, payments, financial services, government platforms, and expanding connectivity built at national scale. This has created an environment where digital products can reach hundreds of millions of users quickly, giving companies a vast, real-world laboratory for new technologies and business models. \n\n The country has long been a preferred offshore location for multinationals’ software and services work, now concentrated in Global Capability Centers. Over half of the world’s dedicated GCCs are located in India, where they employ nearly 2.1 million professionals and account for about 45% of major-city commercial office leasing. \n\n These centers, which are expected to generate about $100 billion in export revenues this year, no longer simply provide back-office support. They have become full-stack innovation hubs running software development, product engineering, data analytics, cybersecurity operations, and AI and machine learning initiatives for their parent organizations. \n\n Global banks like JP Morgan, technology giants including Google and Microsoft, and hundreds of others run mission-critical digital transformation programs out of India, not because it is the cheapest option, but because it has become one of the most capable. \n\n This shift from cost arbitrage to capability arbitrage defines India’s current GCC boom. It shows that India has become a place where the world’s largest enterprises build and test their digital future, not merely maintain outsourced systems. \n\n AI-ready by design \n\n India also has the four conditions needed to become a leading artificial intelligence economy : data at scale, developer depth, compute investment, and a favorable policy framework. \n\n First, data volume: more than a billion people generate data across payments, e-commerce, telecommunications, and government digital services, creating a critical input for training and refining AI systems at scale. \n\n Second, the developer ecosystem: India has one of the world’s largest software developer populations, with a growing share focused on AI and machine learning and supported by a vibrant startup environment. \n\n A recent GitHub report found that India added more than 5.2 million developers in one year, accounting for one in three new developers on the platform worldwide and is the second-largest contributor to GitHub AI projects. \n\n Third, investment: AI startup funding rose sharply in 2025 across large language models, enterprise tools, and sector-specific applications. The IndiaAI Datasets Platform is also building public and private datasets for developers. \n\n Fourth, regulation: India’s policy framework for data protection and AI governance is maturing toward a model that aims to balance innovation with accountability rather than defaulting to either extreme. \n\n The strategic takeaway \n\n Together, these factors position India not just to adopt AI built elsewhere, but to shape how AI and AI agents are built, deployed, and scaled globally. For example, India has become central to SAP’s AI strategy. Today over 80% of SAP’s AI agents are built in India, and India itself is one of SAP’s fastest-growing markets . \n\n India’s emergence as a global economic and technological superpower is a reality. Its economy is growing faster than peers at comparable scale, its talent base is among the world’s deepest, its digital infrastructure is proven, and its AI ecosystem is moving from adoption to innovation. \n\n Moving forward, India’s success will depend on how effectively it converts scale into productivity, talent into innovation, and digital infrastructure into globally competitive businesses while managing social and other challenges. The foundations are in place; the next decade will show whether India’s remarkable emergence as one of the world’s largest economies and principal engines of economic and technological growth can be sustained. \n\n Get weekly updates from the SAP News Center, delivered straight to your inbox \n\n Sign up for the newsletter"
  }
 ]
