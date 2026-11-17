@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-17",
+  "label": "Tuesday, 17 November 2026",
+  "headline": "A thin day for core ABAP: clean-core and released-API questions, a HANA ALTER TABLE decimal risk, and RAG pre-filtering lead the material.",
+  "items": 120,
+  "deep": 30
+ },
+ {
   "date": "2026-11-16",
   "label": "Monday, 16 November 2026",
   "headline": "A measured local-model ABAP agent experiment leads a thin day; the rest is unanswered forum questions on ADT, SD enhancements, CDS extraction and clean core.",
