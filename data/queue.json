@@ -641,5 +641,115 @@
   "feed": "SAP News Center",
   "kind": "news",
   "text": "For a lot of SAP customers, “order management solution” means one more system to integrate, one more database to sync, and one more thing that breaks when SAP pushes an update. DataXstream built its OMS Plus platform to avoid that problem entirely, and its 20-plus-year partnership with SAP is the reason why. \n\n No database, no integration, no tech debt \n\n Keith Fatula, vice president of Solution Engineering at DataXstream, explains the core idea simply. OMS Plus doesn’t have its own database; it’s built directly on SAP Business Technology Platform (SAP BTP) , which means it runs natively inside the SAP ecosystem instead of sitting alongside it. \n\n “There’s no separate database,” Fatula says, “meaning there are no integrations that need to be done at all.” When a customer service rep pulls up pricing, inventory, or order history in OMS Plus, they’re seeing the same real-time SAP data everyone else in the organization sees—not a replicated or synced copy. \n Get the most advanced order management system for SAP \n\n Learn more about DataXstream’s OMS Plus platform \n\n That native build also protects something SAP customers are increasingly focused on: the clean core . Because OMS Plus runs on SAP BTP rather than through custom modifications, customers can keep their core SAP intact, which Fatula describes as critical from an Autonomous Enterprise standpoint. There’s no separate screen for employees to learn, no swivel-chair workflow between systems, and when SAP rolls out updates, OMS Plus keeps working without any catch-up integration required. \n\n The platform is also device agnostic. Whether the user is a call center agent working a phone queue, a field account executive on a tablet, or someone at a front counter, OMS Plus runs the same way across devices without a separate build for each environment. One platform, one interface, one source of truth. \n\n That flexibility is part of why DataXstream’s customer base spans industries. Daikin Comfort Technologies, one of the world’s largest HVAC manufacturers, selected OMS Plus to raise the bar on its customer experience—a high-volume distribution environment where order accuracy and speed directly affect relationships with contractors and dealers across North America. \n\n Where AI fits in \n\n Fatula is clear about why DataXstream’s AI approach has resonated: the AI lives inside the screen people already use, not in a separate tool they have to switch to. \n\n “It’s not just an additional feature,” Fatula says. “We’ve embedded it where your employees actually are, where those customer service people are working.” A rep taking an order can see a substitute suggested when an item isn’t available locally, or get a relevant prompt about the customer they’re helping, without leaving the workflow they’re already in. Because it lives in the same interface, it doesn’t disrupt how people work. It just makes each interaction a little sharper. \n\n What SAP Store adds \n\n Being an endorsed app on SAP Store means DataXstream has already cleared SAP’s security and testing benchmarks before a customer ever evaluates the product. Fatula points to that as a real accelerator in the sales cycle—customers browsing the store already trust SAP, and that trust transfers. Deals have ranged from six to seven figures. \n\n “They know we’re a qualified application,” Fatula says. “We’re a trusted partner.” \n\n His advice to other partners considering SAP Store is direct: don’t just list features. “List out the benefits that your customers are already receiving from your application. Show them the connection—that your application is something they need to look into.” \n\n For SAP customers wrestling with order management complexity, DataXstream’s pitch comes down to one idea: the fewer systems you have to stitch together, the fewer things there are to break. \n\n Watch the video to hear directly how DataXstream built OMS Plus natively into SAP and where AI fits into the order management workflow. \n\n How DataXStream Accelerates Sales and Customer Engagement with SAP Store | SAP Partner \n\n Click the button below to load the content from YouTube. \n\n Always allow YouTube \n\n Andreia Bessa is integrated marketing lead for SAP Store at SAP. \n Subscribe to the SAP News Center for the latest SAP news each week \n\n Sign up"
+ },
+ {
+  "key": "b4c9bf152ec05042",
+  "title": "A New Navigation for SAP Signavio Process Insights. Here’s What’s Changing",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/a-new-navigation-for-sap-signavio-process-insights-here-s-what-s-changing/ba-p/14521292",
+  "published": "2026-11-17T03:42:26+00:00",
+  "author": "h-kumar",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP Signavio Process Insights is getting a redesigned left-side navigation that groups related capabilities under two new sections: Transform and Realize Value and Mine and Analyze. Source system selection now works from multiple screens, Value Analysis has a guided creation flow, and Administration and Data Privacy live together under a new Settings area. Nothing you rely on has gone away, it's just organized around how you actually work. \n Read the full walkthrough before the December preview arrives!"
+ },
+ {
+  "key": "8adc2247b13e46ea",
+  "title": "PET 2.0 大中华区专场：首批中文演示视频正式上线",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/pet-2-0-%E5%A4%A7%E4%B8%AD%E5%8D%8E%E5%8C%BA%E4%B8%93%E5%9C%BA-%E9%A6%96%E6%89%B9%E4%B8%AD%E6%96%87%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91%E6%AD%A3%E5%BC%8F%E4%B8%8A%E7%BA%BF/ba-p/14523650",
+  "published": "2026-11-17T03:08:18+00:00",
+  "author": "Y_Lou",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "PET（Product Enablement Training）是 SAP Cloud ERP & SCM Product Success 团队为大中华区合作伙伴和客户提供的 S/4HANA Cloud Public Edition 定期功能培训系列。2026 年下半年，PET 系列正式向 PET 2.0 视频模式 演进——将原有直播课的核心内容浓缩为 5 - 20 分钟左右的短视频，主题聚焦、面向实操，不受档期和时区限制，发布后长期可按需回看。 \n\n 在此，PSCC 大中华区陆续为您发布第一批中文演示视频，涵盖 RASD 2026 新功能（三期系列）、IAM 后继应用激活操作、2608 实际成本分析新功能，以及如何使用 SAP Business AI Catalog 查找 AI 功能。本文将作为窗口持续汇总已发布的视频，方便合作伙伴和客户统一访问。 \n\n 本文目录 \n RASD 2026 新功能演示系列 \n Part I｜助您更加轻松升级的检查工具 \n Part II｜让升级准备更轻松的四项更新 \n Part III｜智能推荐 \n IAM 后继应用激活操作演示 \n 2608 实际成本分析新功能演示 \n SAP Business AI Catalog 使用指南 \n\n RASD 2026 新功能演示系列 \n Release Assessment and Scope Dependency（RASD）工具 2026 年迎来多项更新，目标是帮助客户在升级准备过程中更高效地识别变更影响。本系列共三期，逐步介绍全部新功能。如需直接体验，请访问 sap.com/rasd ，使用 S-User ID 登录。 \n Part I｜助您更加轻松升级的检查工具 \n 介绍三项核心更新：Change History（追踪 Preliminary → RTC 的全部变更，Last Modified On 筛选器聚焦增量变化）、从 RASD 直接导航至 S/4HANA Cloud 应用（影响评估卡片详情页一键跳转），以及 IAM 应用影响一览（基于实际使用情况自动过滤，可下载为 SAP Cloud ALM 任务）。 \n\n Part II｜让升级准备更轻松的四项更新 \n 四项优化：主页显示客户名称（替代 CRM ID，CSM 和管理员用户可同时查看 CRM ID 与 ERP ID）、邮件通知订阅（每次 RTC 发布后主动推送 Day 1 影响分析至邮箱）、废弃对象分析直接呈现于 Dashboard（颜色标识辅助优先级判断），以及 Communication Arrangements 影响可见性（API → Communication Scenario → Communication Arrangement 完整依赖链路）。 \n\n Part III｜智能推荐 \n 介绍基于数据的行业同行推荐功能：系统根据与你业务画像相似的同行客群，推荐值得关注的 Scope Item——包括已激活但近期无使用记录的功能（同行正在活跃使用），以及尚未激活但正被同行广泛采用的功能。支持按租户 Landscape、国家地区、激活状态及 License 要求多维度筛选。 \n 演示视频即将发布。 \n\n IAM 后继应用激活操作演示 \n 自 2602 版本起，新应用交付时默认未激活。本视频演示如何提前激活后继应用，以及系统如何引导用户切换新旧版本，帮助管理员避免升级后出现应用访问中断的情况。 \n 📹 演示视频： \n\n 2608 实际成本分析新功能演示 \n 介绍 2608 版本新增的两款应用：分析物料实际价值（支持跨工厂、跨期间批量分析，一览全量物料的库存价值、移动记录与实际成本）和管理自定义导出（与 CKM3N 相同深度的完整数据，可导出至 Excel，包含三张专业工作表，后台运行不影响当前工作）。 \n 📹 演示视频： \n\n 如何使用 SAP Business AI Catalog 快速查找 S/4HANA Cloud AI 功能 \n 演示如何在 SAP Discovery Center 的 AI Catalog 中筛选 S/4HANA Cloud Public Edition 相关 AI 功能，了解计费模式（Base AI / Premium AI）、Demo 视频、Roadmap 及 Pricing 信息，并掌握从发现到评估的推荐工作流。 \n 📹 演示视频： \n\n 如有任何问题或反馈，欢迎在评论区留言，或直接联系 PSCC 大中华区团队。"
+ },
+ {
+  "key": "279faf8314cabcc5",
+  "title": "New 'Unlocking AI for HR' Episode: A Deep Dive into Joule, AI Assistants, and Autonomous Work",
+  "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-sap/new-unlocking-ai-for-hr-episode-a-deep-dive-into-joule-ai-assistants-and/ba-p/14523618",
+  "published": "2026-11-16T23:47:43+00:00",
+  "author": "Kristin_McHugh",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Joule, AI assistants, AI agents, and autonomous workflows are rapidly becoming part of the modern HR technology landscape, but what do these innovations do within SAP SuccessFactors, and how can customers take advantage of them today? \n In this episode of Unlocking AI for HR , Kristin and Rebecca are joined by Robert Wood, Head of AI Product Management, to explore how AI is being embedded across the HCM suite to help customers work more efficiently and make better decisions. We’ll break down the differences between AI assistants, agents, and autonomous workflows, discuss real-world use cases across SAP SuccessFactors solutions, and explain how these capabilities work together to support the vision of the HCM Autonomous Enterprise. \n Thanks to the SAP SuccessFactors AI user group for submitting questions to leverage in the podcast! Leave a comment and let us know what you think of the conversation with Rob. \n Spotify: https://open.spotify.com/episode/5st2i4XA9PMMrnaj9LkMqZ?si=IM_N9F9UR2Kon6Wgiuan5Q \n Apple podcasts: https://podcasts.apple.com/us/podcast/a-deep-dive-into-joule-ai-assistants-and-autonomous-work/id682..."
+ },
+ {
+  "key": "e4d8f6b84c8041e3",
+  "title": "Second Half 2026 Release: Moving from workforce strategy to execution with organizational modeling",
+  "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-sap/second-half-2026-release-moving-from-workforce-strategy-to-execution-with/ba-p/14523597",
+  "published": "2026-11-17T01:41:05+00:00",
+  "author": "nicoleramirez",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Organizational change is constant. For most HR teams, so is the challenge of managing it. Fragmented planning creates visibility gaps and duplicate work. Reorganizations modeled in spreadsheets and slide decks are slow to update, error-prone, and disconnected from the live system where changes ultimately need to land. Stakeholders end up working from different versions of the data, which creates misalignment that stalls decisions and approvals. And when a direction is finally locked, execution is just as manual as the planning, with each update applied one by one and no reliable way to catch errors before they surface in production. \n Now, imagine if the entire org design process lived in one shared environment, where everyone worked from the same live data and decisions could be made faster and with greater confidence. Where access was controlled by role-based permissions, so the right people could contribute at the right stage without compromising the integrity of the model. Where multiple scenarios could be built, compared, and adjusted in real time, with the full impact of every change visible before anything was submitted. And where a single approval triggered automated execution across the entire system, eliminating the manual steps and data errors that define the process today. \n With the second half 2026 release, this is exactly what organizational modeling in SAP SuccessFactors Employee Central delivers — at no additional cost to Employee Central customers. One of the most highly requested capabilities from our customer community, this new capability enables HR and business leaders to plan and execute reorganizations with greater speed, clarity, and control. \n\n Image: Organizational modeling capabilities in SAP SuccessFactors Employee Central \n Make restructuring decisions in days, not weeks \n Every modeling project lives in a shared environment within SAP SuccessFactors, where HR leaders, business stakeholders, and org design teams are all working from the same picture, with the same data. Each project captures the full context — effective date, business rationale, and scope — in the same system where the data actually lives. No more version chaos. No more parallel decisions made by people who don't know what the other is planning. \n Collaborate on org design without the friction \n Leaders can design, compare, and stress-test multiple org structures without touching live data. No slide copying, no manual iteration. Multiple simulation versions can be created and shared across stakeholders without anyone overwriting the original. The focus stays on finding the best answer, not managing the process around it. \n Protect data accuracy across every org change \n Built-in validation catches errors before anything is ever submitted. Once the preferred scenario is approved, a controlled cascading save automatically updates every affected organizational object. No manual steps to chase, no risk of something being applied incorrectly, no issues surfacing after you've already hit production. \n Model faster, decide smarter, execute with confidence. That's what org modeling looks like when it lives where your data lives. \n Learn more \n Comprehensive resources are available to support your adoption of SAP SuccessFactors Organizational Modeling: \n Org modeling demo \n FAQ \n What's New Viewer — Track the latest releases and feature updates for Organizational Modeling Organizational Modeling in Employee Central \n SAP Help Portal — Setup and configuration guides for Organizational Modeling in Employee Central Implementing and Managing Organizational Modeling in Employee Central \n Provisioning Support — Understand availability and timelines based on different DCs"
+ },
+ {
+  "key": "eb625580ea3abf38",
+  "title": "How I Passed the SAP Certified – Joule Studio Developer Exam (C_JSD): A Complete Prep Guide",
+  "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/how-i-passed-the-sap-certified-joule-studio-developer-exam-c-jsd-a-complete/ba-p/14523593",
+  "published": "2026-11-16T23:36:12+00:00",
+  "author": "anandtigadikar",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Over a weekend I cleared the C_JSD — SAP Certified, Joule Studio Developer certification, and I want to share everything I did to prepare. This is not a generic \"read the documentation\" post. This is a practical, honest breakdown of the exam format, what you actually need to build, how to write a strong agent prompt, and how to handle the role play assessment the part most candidates underestimate. If you are planning to take this exam before the free voucher window closes on 31 December 2026 , this guide is for you."
+ },
+ {
+  "key": "0f42087a762a6792",
+  "title": "SAP Incentive Management Q4 2026 Release Highlights",
+  "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/sap-incentive-management-q4-2026-release-highlights/ba-p/14523559",
+  "published": "2026-11-16T19:47:00+00:00",
+  "author": "akshataphilar",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Explore the latest innovations delivered in SAP Incentive Management Q4 2026 Release Briefing and review the presentation for more insights."
+ },
+ {
+  "key": "46afb9427caae608",
+  "title": "Unable to create separate Customizing Transport Requests for *",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/unable-to-create-separate-customizing-transport-requests-for/qaq-p/14523644",
+  "published": "2026-11-17T02:14:38+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "We are experiencing an issue when attempting to create a new Customizing Transport Request in our SAP S/4HANA Cloud Public Edition implementation project *. \n The affected user, *, attempts to create a new Customizing Transport Request using the Export Customizing Transports app in the Development Customizing tenant. \n However, the system displays the following error message: \n \"Only 1 transport is allowed. Use transport *.\" \n The referenced transport request * belongs to another consultant, PERSON_NAME, and is currently in Modifiable status. \n * already has his own Customizing task within PERSON_NAME's transport request, but he needs to create and manage a separate transport request for his FI/CO configuration activities. \n Additional findings: \n\n * and the affected project user have the business role BR_EXTENSIBILITY_SPEC assigned. \n\n The business catalog SAP_CORE_BC_EXT_SET_PC is included in this role. \n\n PERSON_NAME can create Customizing Transport Requests. \n\n The transport request * related to the activation of scope items 5D2, 5HP and 5MQ is already Released. \n\n We cannot find the Extensibility Settings app in the * Customizing tenant, despite the required business catalog being assigned. \n\n When accessing the Development tenant *, the system displays: \"Extensibility is not active. Use the customizing tenant instead.\" \n According to SAP KBA DIGITS, this behavior may be related to Simple Transport Mode and the activation of Flexible Transport Mode. \n We request SAP Support to investigate the transport configuration and authorization setup, verify the current transport mode, and explain why the Extensibility Settings app is unavailable in *. \n Please provide the appropriate steps to enable multiple independent Customizing Transport Requests without affecting existing project transports. \n\n --- Steps to Reproduce --- \n\n Log in to SAP S/4HANA Cloud Public Edition Development Customizing tenant LJ3/100. \n\n Open the Export Customizing Transports app. \n\n Select Create to create a new Customizing Transport Request. \n\n Attempt to create a separate request for Yorman Blanco (FI/CO consultant). \n\n The system displays the error: \"Only 1 transport is allowed. Use transport LJ3K900018.\" \n\n Open transport request LJ3K900018 and verify that it belongs to PERSON_NAME and is in Modifiable status. \n\n Verify that Yorman's task LJ3K900022 is already assigned to this request. \n\n *Note To SAP: \n I grant permission to SAP Support to connect to my impacted non-production environments and use these steps to be reproduced, even if these steps lead to changes. My permission remains in place until the issue is resolved unless I give other instructions to SAP Support. \n\n --- Support Assistant --- \n\n Q: Are you using the customizing tenant (development system)? \n A: yes \n Q: Have you enabled key user extensibility in the Extensibility Settings? \n DIGITS - Key User Extensibility apps are not available or read only \n A: no \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+ },
+ {
+  "key": "736d964e36307112",
+  "title": "Skillsoft Percipio Outbound HTTPS IP Change – Who Owns the Whitelisting?",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/skillsoft-percipio-outbound-https-ip-change-who-owns-the-whitelisting/qaq-p/14523630",
+  "published": "2026-11-17T01:19:30+00:00",
+  "author": "losangeles202321",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi SAP Community, \n Skillsoft/Percipio has issued a service announcement advising that new IP addresses will be used for outbound HTTPS traffic from 6 December 2026 . \n For customers using Percipio with SAP SuccessFactors Learning , who should be responsible for whitelisting these new IP addresses? \n Does SAP need to whitelist the Percipio IPs within the SAP-hosted SuccessFactors Learning landscape? \n Or is this solely a customer IT/Network responsibility? \n Are there circumstances where both sides need to update their allowlists? \n Interested to hear how others using the SuccessFactors Learning–Percipio integration are handling this change. \n Thanks!"
+ },
+ {
+  "key": "3580a4615910c6d3",
+  "title": "[Agent harness]",
+  "link": "https://community.sap.com/t5/technology-q-a/agent-harness/qaq-p/14523626",
+  "published": "2026-11-17T00:40:24+00:00",
+  "author": "ks_shin920-",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "test posting"
+ },
+ {
+  "key": "556454a52076a384",
+  "title": "Change Assignment of Company code to Company for Entity and posting the transactions for 1-2 years",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/change-assignment-of-company-code-to-company-for-entity-and-posting-the/qaq-p/14523609",
+  "published": "2026-11-16T22:59:38+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear Team, \n As we are implementing the Group Reporting, we need one to one assignment for mapping of company code assigned to company. In that case for company codes which are already live in PROD - we need to change the company. Can you please help us what will be the implications of changing the assignment in PROD. \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
  }
 ]
