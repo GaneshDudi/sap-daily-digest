@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-18",
+  "label": "Wednesday, 18 November 2026",
+  "headline": "A quiet day: one RAP question on active-table retention stands out, alongside thin integration, Joule agent and HANA note posts.",
+  "items": 100,
+  "deep": 11
+ },
+ {
   "date": "2026-11-17",
   "label": "Tuesday, 17 November 2026",
   "headline": "A thin day for core ABAP: clean-core and released-API questions, a HANA ALTER TABLE decimal risk, and RAG pre-filtering lead the material.",
