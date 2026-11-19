@@ -102,6 +102,9 @@ jobs:
   # Company careers sites. Added one by one after checking they work.
   # type successfactors: SAP SuccessFactors career sites (RSS search, up to 20 jobs per search)
   # type workday: Workday career sites (host, tenant and site come from the careers URL)
+  # Every entry here was live-tested with an "SAP ABAP" search AND checked against
+  # its site's robots.txt / terms of use before being added. See README for the
+  # full list of companies that were tried and why they didn't make the cut.
   careers:
     - name: SAP
       type: successfactors

@@ -142,6 +142,28 @@ From tomorrow, everything runs by itself.
 
 ---
 
+## SAP job market agent (jobs.py)
+
+Besides company careers sites, `jobs.py` pulls jobs from Adzuna's India index and your job-alert emails. Every company careers site is added to `config.yaml` only after two checks: a live "SAP ABAP" search that actually returns jobs, and its `robots.txt` / terms of use, to confirm automated access is allowed.
+
+**Currently included:**
+
+- **SAP** (`jobs.sap.com`) — SuccessFactors RSS search. `robots.txt` allows all paths, and the search returns ABAP roles.
+
+**Tried and skipped:**
+
+| Company | Platform | Why it was skipped |
+| --- | --- | --- |
+| Wipro, HCLTech, EY, Deloitte India, NTT DATA | SuccessFactors | Each returned jobs for an "SAP ABAP" search, but their `robots.txt` disallows `/services/`, which is exactly the RSS path (`/services/rss/job/`) this agent would need to call. |
+| Accenture, PwC, Shell, ZEISS, Mitel | Workday | Returned jobs (or, for 3M, Momentive and Dentsu, returned none at all), but Workday's own terms of service prohibit "data mining, robots or similar data gathering or extraction methods" against any `myworkdayjobs.com` site, regardless of what an individual tenant's `robots.txt` allows. |
+| 3M, Momentive, Dentsu | Workday | A live "SAP ABAP" search returned zero jobs, so there is nothing to add even before the terms-of-service issue above. |
+| Oracle (KPMG India) | Oracle Recruiting Cloud | The search API works and returns ABAP roles, but KPMG's applicant-tracking terms of use explicitly prohibit "data mining, robots or similar data gathering or extraction methods" on their careers site. |
+| IBM | — | IBM's public careers page (`ibm.com/careers/search`) is a JavaScript app with no documented data API, and its underlying jobs site (`careers.ibm.com`) returns an empty bot-check response to plain HTTP requests, so no automated search could be run at all. |
+
+Because none of the candidates above cleared both checks, `job_sources.py` keeps only the `successfactors` and `workday` source types it already had — no new source type was needed for this round.
+
+---
+
 ## If something goes wrong
 
 Open **Actions**, click the red run, and read the last lines of the log.
