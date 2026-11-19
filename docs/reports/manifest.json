@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-19",
+  "label": "Thursday, 19 November 2026",
+  "headline": "ABAP environment release 2611 adds CDS Define Index, RFC error details and more ADT tooling; the rest of the day is thin posts and unanswered questions.",
+  "items": 100,
+  "deep": 30
+ },
+ {
   "date": "2026-11-18",
   "label": "Wednesday, 18 November 2026",
   "headline": "A quiet day: one RAP question on active-table retention stands out, alongside thin integration, Joule agent and HANA note posts.",
