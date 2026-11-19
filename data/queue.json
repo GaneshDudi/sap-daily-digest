@@ -1,1 +1,244 @@
-[]
+[
+ {
+  "key": "f4d19820a1f9d444",
+  "title": "Building an Enterprise Data & AI Ecosystem – Part 2: Connecting SAP BDC with Snowflake by Zero-Copy",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/building-an-enterprise-data-amp-ai-ecosystem-part-2-connecting-sap-bdc-with/ba-p/14518054",
+  "published": "2026-11-19T10:27:32+00:00",
+  "author": "Ravikanth_Indurthi",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Provision the BDC Connect integration, enroll Snowflake's Zero-Copy Connector, share an Employee Central Data Product, and mount it in Snowflake as a catalog-linked database. \n Multi-part series \n Part 1 – Employee Central Data Packages and SAP BDC Intelligent Content \n Part 2 – BDC Connect and Snowflake Zero-Copy Data Sharing"
+ },
+ {
+  "key": "d63d377574e30b5f",
+  "title": "Handling Unnamed CSV Columns in SAP CPI: A Practical Groovy-to-OData Integration Scenario",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/handling-unnamed-csv-columns-in-sap-cpi-a-practical-groovy-to-odata/ba-p/14525352",
+  "published": "2026-11-19T10:03:41+00:00",
+  "author": "Divya_MK",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "What happens when a CSV file contains additional unnamed columns that don't match the expected structure? \n In this blog, I share a practical SAP CPI integration scenario where I handled unexpected CSV columns using Groovy by assigning temporary field names and passing the data through an OData service to an ABAP custom table. \n I'll walk through the challenge, the approach I used, and some practical considerations when handling inconsistent CSV structures in SAP Integration Suite."
+ },
+ {
+  "key": "137f04eeb18e9896",
+  "title": "How Agentic AI Is Reshaping the Commodity Lifecycle - From Field to Financial Close",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/how-agentic-ai-is-reshaping-the-commodity-lifecycle-from-field-to-financial/ba-p/14524706",
+  "published": "2026-11-19T10:03:11+00:00",
+  "author": "HaraldSchlueter",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Learn about our Autonomous Commodity Management Vision, Agent build and Customer Co-innovation"
+ },
+ {
+  "key": "8c50640f196148cf",
+  "title": "E-learning Available: Optimizing Material Ledger in SAP S/4HANA for Material Valuation Purposes",
+  "link": "https://community.sap.com/t5/financial-management-blog-posts-by-sap/e-learning-available-optimizing-material-ledger-in-sap-s-4hana-for-material/ba-p/14526088",
+  "published": "2026-11-19T09:48:25+00:00",
+  "author": "IcyHuang",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Are you looking to improve inventory valuation accuracy, enhance financial transparency, and streamline period-end closing activities? If so, join our new e-learning course, Optimizing Material Ledger in SAP S/4HANA for Material Valuation Processes . \n This 1-hour e-learning course provides business users, consultants, and implementation teams with a comprehensive introduction to the Material Ledger functionality in SAP S/4HANA, covering both scenarios with and without Actual Costing. Participants will gain practical insights into Material Ledger capabilities, key configuration options, and material valuation processes that support informed decision-making and strengthen financial reporting. \n What You'll Learn \n Upon completing this course, you will be able to: \n Understand the role of Material Ledger in SAP S/4HANA , including why it is mandatory, and how it supports material valuation, inventory transparency, and financial reporting. \n Differentiate between Material Ledger scenarios with and without Actual Costing , and identify the key processes, capabilities, and business use cases associated with each approach. \n Explain key configuration options and valuation processes within Material Ledger , enabling you to contribute confidently to implementation, optimization, and day-to-day operational activities. \n The e-learning course consists of a single learning unit and concludes with an assessment designed to test and reinforce your knowledge. \n Ready to Get Started? \n Enrolling in the Optimizing Material ledger in SAP S/4HANA for Material Valuation Purposes e-learning course now! \n 📝 Note: Access to this E-learning requires a one-time registration to SAP Enterprise Support Academy on SAP Learning. \n\n Enhance Your SAP Experience with Value Maps \n Beyond this e-learning, SAP Enterprise Support offers additional resources to help you drive innovation. Value maps on SAP Community bring together guidance, recommended actions, and supporting resources to help you decide what to focus on next - all included in your SAP cloud subscription. \n Looking for more e-learning resources on SAP Financial Management capabilities? Visit this article in Finance Management value map to discover additional learning content and resources. To access the Value Map Groups , login to the SAP Community using an S-user ID or a Universal ID. \n\n 👉 Watch our short demo video , then head over to our page to explore our range of topics and request a call with a value map topic expert for guidance tailored to your goals. \n About the author: \n Icy Huang is a Topic Expert for SAP Enterprise Support value maps, specializing in SAP S/4HANA Cloud. Based in Singapore, Icy has been with SAP since 2007, taking on diverse roles that have largely centered around customer engagement and success across the organization. Now she focuses on helping business accelerate the adoption of SAP S/4HANA Cloud solutions with value map content and SAP Enterprise Support offerings."
+ },
+ {
+  "key": "9f3b477abfbeb20b",
+  "title": "New SAP AI Learning Pages: Helping You Find the Right Path by Role and Goal",
+  "link": "https://community.sap.com/t5/artificial-intelligence-learning-group-blog-posts/new-sap-ai-learning-pages-helping-you-find-the-right-path-by-role-and-goal/ba-p/14525675",
+  "published": "2026-11-19T09:30:39+00:00",
+  "author": "RuxandraZamfir",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "SAP AI learning continues to grow, and the new role and goal-based experience on learning.sap.com makes it easier to find the learning most relevant to your work. Explore dedicated pages for Business Users, Consultants, Architects, Developers, and Sales, with learning, live sessions, guidance, and supporting resources organized around what each role is trying to achieve."
+ },
+ {
+  "key": "0f70a8f3ecccde54",
+  "title": "Strengthening the Quality of Risk Information in SAP GRC Risk Management",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/strengthening-the-quality-of-risk-information-in-sap-grc-risk-management/ba-p/14526054",
+  "published": "2026-11-19T09:06:46+00:00",
+  "author": "mohammad_hanfi2",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Application: SAP GRC Risk Management \n Intended audience: Risk and action owners, Enterprise Risk Management teams, SAP GRC administrators, and reporting teams \n Classification: General Use \n Purpose \n SAP GRC Risk Management enables organizations to maintain risk assessments, treatment actions, Key Risk Indicators (KRIs), and supporting quantitative information in one environment. For this information to support management decisions, records must reflect the current position, be supported by appropriate evidence, and remain consistent across workflows and reports. \n Responsibility for maintaining each data element should therefore be assigned clearly. Review cycles, approval requirements, escalation routes, and automated validation checks should also be defined within the relevant risk-management methodology and SAP GRC workflow."
+ },
+ {
+  "key": "e73fced66757091a",
+  "title": "Will updating the DPAgent also update the adapters?",
+  "link": "https://community.sap.com/t5/technology-q-a/will-updating-the-dpagent-also-update-the-adapters/qaq-p/14526135",
+  "published": "2026-11-19T11:08:54+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi SAP, \n We are planning to upgrade our Datasphere DPAgent to the latest version. When we update the DPAgent, will the CamelJdbcAdapter also get upgraded? Or does this need to be done separately? \n Thank you! \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+ },
+ {
+  "key": "1e08bf672f2eab10",
+  "title": "Basic Document Management",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/basic-document-management/qaq-p/14526125",
+  "published": "2026-11-19T10:58:32+00:00",
+  "author": "pollysyms15",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi all \n Just looking for some direction here on who has implemented a good solution within current capability of having employee documents (offer/contract/other correspondence) attached to the EC profile. \n Background - We have explored the possibility with our partners a few times but all have agreed it's not too elegant. The 2H26 release appears to have brought us one step closer to achieving this with Onboarding documents on the new Documents navigation section. \n I've done some basic research and see we could implement a custom config on personal data for attachments (currently no attachment field enabled). All our 47 country locations have their own internal storage mechanisms so we're not able to provide truly global HR support as we begin to move to a shared service operation. \n I'd welcome any thoughts/ideas on the best approach. TIA for your time! \n Kind regards, \n Polly"
+ },
+ {
+  "key": "74e62bd5b461a4e4",
+  "title": "Export from My Inbox / Approver Outbox",
+  "link": "https://community.sap.com/t5/financial-management-q-a/export-from-my-inbox-approver-outbox/qaq-p/14526120",
+  "published": "2026-11-19T10:44:35+00:00",
+  "author": "Amberkite",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "An end user would like to understand whether they can export the items in her individual approved Outbox into a CSV/ sheets file, so she can manipulate the data and compare it with her budget. A monthly export would work. Our understanding is that t he My Inbox / Approver Outbox is a workflow processing area, meaning it's designed for approving and rejecting tasks, not for reporting. We understand that there is the Supplier Invoices List app (App ID: F1060A) which shows all invoices including their approval status, and this is where you can filter, view, and export. But the concern is whether this would give approvers access to see all invoices including expenses etc, not just their own. We've also understood that we could potentially use the Schedule Supplier Invoice Jobs – Advanced app (App ID: F1683) for a recurring monthly export, but again the visibility of invoices is creating concern. Does anyone have any recommendations? Many thanks in advance. \n\n If an export is the best option, it would be helpful to understand whether I can run it myself or receive it automatically each month, and which fields it can include, such as the date, supplier, amount and budget line. I understand that I can make an export in the Supplier Invoices List app"
+ },
+ {
+  "key": "1783e75804afb2ad",
+  "title": "change e-mail address for Balance Statement report",
+  "link": "https://community.sap.com/t5/technology-q-a/change-e-mail-address-for-balance-statement-report/qaq-p/14526118",
+  "published": "2026-11-19T10:43:49+00:00",
+  "author": "Mimmo_Grimaldi",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear support, how I can change the e-mail address linked to Balance Statement for all customer of Capgemini VAR service? \n Thank you. \n Mimmo Grimaldi"
+ },
+ {
+  "key": "80fb2b7363d0fa60",
+  "title": "Asset transfer process",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/asset-transfer-process/qaq-p/14526115",
+  "published": "2026-11-19T10:38:18+00:00",
+  "author": "Bajel",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Kindly find attached the test case related to the asset transfer process in SAP for your reference. \n Currently, for transferring assets from one location to another in SAP, we need to create a new asset and transfer the asset value using T-code ABUMN . \n However, this process results in two different asset numbers being maintained in the system, making asset tracking and reconciliation difficult. \n Request you to kindly review the process and suggest a suitable resolution. Instead of creating a new asset number, can we transfer the existing asset to another location while retaining the same asset number?"
+ },
+ {
+  "key": "00b92b0bdc0dfbd6",
+  "title": "Purchase Request printing System CR Design error",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/purchase-request-printing-system-cr-design-error/qaq-p/14526101",
+  "published": "2026-11-19T10:03:33+00:00",
+  "author": "kedalenechong",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi All \n Please help advise how to solve Purchase Request printing System CR Design error \n\n We have verified the following: \n  Do you encounter the same error if you Answer No to the System Message? \n\n Yes, \n  Do you encounter this printing error in other posted Service Type Purchase Request transaction? \n Yes, not able to print as well. \n  Do you encounter this printing error in other posted Item Type Purchase Request transaction? \n Yes, not able to print as well. \n  Do you encounter this printing error if you login SAP Business One with your own SAP User password using another Computer? \n No, I’m able to print using other Computer for posted Item and Service Type. \n  Do you encounter this printing error if you let another SAP User (such as Super User manager) login SAP Business One in your Computer? \n Yes, User FC002 not able to print after using my computer to login. \n\n  Does other SAP User (such as FC001) encounter this Purchase Request Printing error in other Computer? \n No, other user able to print. \n\n Kedalene Chong"
+ },
+ {
+  "key": "1ed72295479fa2b2",
+  "title": "Joule Base vs Premium: when do custom Joule Studio agents and SAP-delivered Joule agents consume AI",
+  "link": "https://community.sap.com/t5/technology-q-a/joule-base-vs-premium-when-do-custom-joule-studio-agents-and-sap-delivered/qaq-p/14526090",
+  "published": "2026-11-19T09:51:40+00:00",
+  "author": "Boopalan",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear Experts, \n I'm planning a Joule Studio (classic edition) setup in a BTP Cloud Foundry subaccount, connected to SAP S/4HANA 2023 FPS02 on-premise through Cloud Connector. Business users will use Joule from an SAP Build Work Zone, standard edition site. \n From the documentation I understand: \n - Joule Studio needs Joule Base (8019544) or higher, plus SAP Build on the build-default plan with a developer licence. \n - Joule Premium (8019164) includes AI Units. \n - AI Units are a virtual currency for premium AI capabilities, consumed per predefined metric and tracked in SAP for Me. \n What I couldn't find is which Joule features actually consume AI Units at run time. My questions: \n 1. Custom skills (Joule Studio): Does a custom Joule skill that calls an S/4HANA OData API through an action project consume AI Units when a business user runs it? Or is this covered by Joule Base? \n 2. Custom agents (Joule Studio): Do custom agents built in Joule Studio consume AI Units when users run them? If so, what is the metric (per agent run, per conversation, per LLM call)? Are they metered under SAP Build instead? \n 3. SAP-delivered Joule agents: With only Joule Base, can users try or use SAP's own Joule agents, or do they always need AI Units? Which of these agents work with S/4HANA on-premise, as opposed to only S/4HANA Cloud? \n 4. Access channel: Does consumption differ depending on where users open Joule (Work Zone site, Joule web client, embedded in an SAP application)? I assume not, but would like confirmation. \n 5. Development and testing: Do test runs inside Joule Studio (the test or preview of skills and agents) consume AI Units or SAP Build capacity? \n 6. Joule Premium: How many AI Units are included, and is there documentation listing the AI Unit cost per Joule capability? \n 7. Monitoring: Besides SAP for Me, is there a way to see AI Unit consumption per skill or per agent, to help with sizing? \n Any pointers to official documentation, the AI Unit Estimator entries for Joule, or real project experience would be very helpful. \n Thanks in advance!"
+ },
+ {
+  "key": "49b93086a1b02ac9",
+  "title": "How to calculate the DSO in FSCM - SAP S/4HANA Cloud Public Edition",
+  "link": "https://community.sap.com/t5/financial-management-q-a/how-to-calculate-the-dso-in-fscm-sap-s-4hana-cloud-public-edition/qaq-p/14526078",
+  "published": "2026-11-19T09:34:58+00:00",
+  "author": "Brant1",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "There is a Help portal - How the DSO Is Calculated ( https://help.sap.com/docs/SAP_S4HANA_CLOUD/918bca53037f408f91a2295d04ac16bc/30759d54da6e420ba745718ef5cfa970.html?version=LATEST&ai=true&locale=en-US ) of Public Cloud, and how can we retrieve the parameters in a Fiori App? \n If you're wondering how to calculate Days Sales Outstanding (DSO) using the Public Cloud platform, here's an approach you can follow based on a practical example: \n Example: Calculating DSO on November 19th \n Today is November 19th , and the DSO is 110 . Let’s break down the calculation step-by-step: \n\n Step 1: Retrieve Customer Balance in Fiori App \n\n Use the app \"Display Customer Balance\" in Fiori to get the required financial details. \n\n Posting Period : The current posting period is November (Period 11) . \n\n Current Balance : The balance displayed for this period is 70,801.57 EUR . \n\n Sales of the Period : The total sales for the last three periods need to be calculated as follows: \n September sales: 70,035.63 EUR \n October sales: -19.94 EUR \n November sales: 0 EUR \n Total Sales for the Period = 70,035.63 + (-19.94) + 0 = 70,015.69 EUR \n\n Step 2: Determine the Sales Period \n The sales period is calculated as the sum of the sales days in the last three months, plus the sales days in the current month (up to today). For this example: \n September : 31 days \n October : 30 days \n November : 31 days \n Current Month Days until November 19th : 18 or 19 days \n Note: Due to time zone differences, the value for the current month's sales days can sometimes vary between the actual number of days passed and one less day. In this example, we are using 18 days. \n Therefore, the total Sales Period = 31 days + 30 days + 31 days + 18 days = 110 days . \n Step 3: Calculate DSO \n :The DSO = Currently Balance / (Sales of the Period * period ) = 70801.57/ ( 70,015.69 * 110 )= 111.2346775415625 = 111 \n\n Hopefully it is helpful for your doubt about calculating the DSO of FSCM. \n Best Regards, \n Brant"
+ },
+ {
+  "key": "9646bceace7f1a79",
+  "title": "Support - EXIT or BADI for app F2343.",
+  "link": "https://community.sap.com/t5/product-lifecycle-management-q-a/support-exit-or-badi-for-app-f2343/qaq-p/14526056",
+  "published": "2026-11-19T09:12:36+00:00",
+  "author": "SAPSupport",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello experts, \n I need a recommendation for a BADI or EXIT that provides access to the storage location field used during a goods movement triggered by a usage decision. \n In this scenario, I am transferring material from plant A, storage location B, to storage location C, while also updating the stock type (from \"unrestricted-use\" to \"blocked\"). \n I am looking for an enhancement point that contains organizational structure information, which will allow me to implement custom logic as requested by my client—while ensuring compliance with \"clean core\" principles. \n I have already looked into exit QEVA0010, but it does not meet the requirements. I also came across SAP Note 3760024 , which mentions some relevant points, but it pertains to a different app (F2345). \n Could you please provide a recommendation? \n ------------------------------------------------------------------------------------------------------------------------------------------------ \n Learn more about the SAP Support user and program here ."
+ },
+ {
+  "key": "63b8bf2fc5d82908",
+  "title": "Signavio Process Manager: Collaboration HUB License + Administrator -> Weird view?!",
+  "link": "https://community.sap.com/t5/technology-q-a/signavio-process-manager-collaboration-hub-license-administrator-gt-weird/qaq-p/14526053",
+  "published": "2026-11-19T09:04:57+00:00",
+  "author": "Stephen_Niemann42",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi team, \n we just tested the new update including the administration changes. Hereby we found that if you assign a user admin role and collaboration HUB License, that the \"setup\" button in process manager is missing, but instead showing menu buttons in the top row. This includes the \"subscriptions\" and \"Manage approval workflows button\", which are both gone after assigning the very same user process modeler license again, instead it will show the setup button again. Additionally, the buttons are not clickable when collab user license and administrator role are assigned. \n Collaboration HUB License + Administrator role: \n\n Process Modeler License + Administrator role: \n\n Do you experience the same situation?"
+ },
+ {
+  "key": "1b5cf27fcc29cbf4",
+  "title": "DRC FRANCE CREDIT NOTE SF ET FI",
+  "link": "https://community.sap.com/t5/financial-management-q-a/drc-france-credit-note-sf-et-fi/qaq-p/14526031",
+  "published": "2026-11-19T08:33:57+00:00",
+  "author": "laura_lejouis",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello SAP Community, \n We are facing an issue with SAP DRC France when creating credit notes in both FI and SD. The generated XML file does not contain the expected information. \n We have performed the following checks: \n The mapping for source type FI_INVOICES seems correct, and the DG information is properly populated. \n We will also investigate the SD_INVOICES source type. \n SAP Note 3794256 – Electronic Invoicing for France via Approved Platform: Corrections (Version 😎 is already fully implemented in our system. \n This note addresses eDocument type determination and sign handling for SD invoices and credit memos. \n Could you please advise whether this issue could be related to additional Customizing, eDocument type determination or a known SAP bug? \n Has anyone encountered a similar issue with DRC France credit notes? \n Thank you for your help!"
+ },
+ {
+  "key": "47a5566cc7a244d6",
+  "title": "Material to spec link for SDS generation in a combined PLM/Product safety environment",
+  "link": "https://community.sap.com/t5/product-lifecycle-management-q-a/material-to-spec-link-for-sds-generation-in-a-combined-plm-product-safety/qaq-p/14526005",
+  "published": "2026-11-19T08:21:38+00:00",
+  "author": "S0027628040",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "I wondered if anyone had tackled this challenge before and, if so, how they addressed it: \n I'm working in a combined PLM/Product Safety Classic environment - the S/4 version of the ECC EHS and recipe management. We're designing a data structure that will be used for both recipe management and SDS generation and have hit a challenge with assigning materials to specs. Our current data structure is: \n A spec for the bulk chemical. HALB materials will be assigned to this spec type \n Specs for the finished goods. Finished goods are a combination of the bulk material and packaging. Bulk and finished goods specs are indirectly connected via the recipe: the recipe for a finished good uses the bulk spec as an input component. A Finished Good general recipe has a corresponding finished good spec. FERT materials will be assigned to finished good specs. there will probably be more than 1 FERT per finished goods spec and more than 1 finished good spec per bulk spec. We can assume that the FERTs have different product names \n\n My challenges are: \n Which object to use for SDS generation \n Leading on, how to connect the materials to the spec used for SDS generation: I can assume that I'll need SDSs for all the FERTs and probably for the HALB \n I want to be able to use automatic SDS shipping in the future \n I'll also be creating European Poison Centre Notifications for the spec where I generate the SDS, using a 3rd party tool. \n My thoughts: \n Creating the SDS on the bulk spec makes sense, as the bulk spec contains the Information that I need to create a SDS and also because a SDS is supposed to be Independent of the pack size. Creating PCNs from this spec would also work \n The crux of the problem: \n If I generate the SDS on the bulk spec, then in order to get the product name from the FERT material, I need to assign a FERT material to a bulk spec. This results in 1 FERT being assigned to 2 specs; 1 finished good spec and one bulk spec. This is not great and will trigger the need to customise all cases where a material needs to find a spec e.g. automatic SDS shipping, SVT \n An alternative option would be to create inheritance relationships between the bulk and finished goods specs and generate SDSs on the finished goods specs. The would mean that 1 material was assigned to one spec. However this could lead to duplicate SDSs because multiple FERTs have the same product name but different packaging and also the need for a SDS for the HALB. \n Neither option looks great. Has anyone tackled a similar situation and how did they address it? Are there other options that I'm missing? \n Thanks \n Phil"
+ },
+ {
+  "key": "5ecfd3dfec46665c",
+  "title": "Bank statement format no available for Copy",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/bank-statement-format-no-available-for-copy/qaq-p/14525988",
+  "published": "2026-11-19T07:59:02+00:00",
+  "author": "mayur_save",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Please refer the case 3688448. The solution provided to copy the existing format using app \"Map Format Data for Incoming Files from Banks\". Following steps were provided but. We are not able to see the format \"CAMT.053.001.08\" to copy. \n\n Step-by-Step: Map FEBEP-PARTN via Custom Format Mapping \n Step 1 – Open the Map Format Data for Incoming Files from Banks App \n Log on to the SAP Fiori Launchpad as Configuration Expert – Business Process Configuration \n Open app F5608 – Map Format Data for Incoming Files from Banks. \n\n Step 2 – Copy the Standard Format \n For version 08: Select CAMT.053.001.08 and choose Copy. \n For version 02: Select camt.053.001.02 and choose Copy. \n Assign a name in the customer namespace (e.g., Z_CAMT053_V8_PARTN or Z_CAMT053_V2_PARTN) \n Select Create as Child if applicable and confirm. \n\n Step 3 – Edit the Custom Format Mapping \n Choose Details (>) next to your new custom format \n Choose Edit \n In the left pane, choose Expand All to view the full mapping tree. \n Navigate to the node responsible for setting the Partner Name — th"
+ },
+ {
+  "key": "e65cd3d4417f4d35",
+  "title": "Utilizacao da ABa de Servicos no Pedido de Compra",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/utilizacao-da-aba-de-servicos-no-pedido-de-compra/qaq-p/14525657",
+  "published": "2026-11-18T17:55:46+00:00",
+  "author": "maushimada",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Ola srs. \n Ola a todos, Em funcao da Reforma tributaria, teremos que codificar nossos servicos , onde hoje eh comprado por Descricao. Isto para que os codigos de servicos oficiais saiam na Nota Fiscal e posteriormente tenhamos creditos. Meus pedidos de compra de servico sao criados atraves de integracao com o COUPA. O Coupa envia para o SAP a categoria de Item a letra B, fazendo com que o SAP nao abra a pasta Servicos na linha de detalhe do Item. Pelo que sei, esta aba de Servico so ira ser disponibilizada quando utilizado a categoria de item a letra D (servicos). Existe alguma outra forma desta pasta Servicos ser disponibilizada com outra categoria de item ? Exemplo a letra B (limites) ? Obrigado a todos."
+ },
+ {
+  "key": "3d888e4758c2a826",
+  "title": "Memory consumption when \"copying\" internal tables",
+  "link": "https://community.sap.com/t5/abap-forum/memory-consumption-when-quot-copying-quot-internal-tables/m-p/14526146#M1495",
+  "published": "2026-11-19T11:28:53+00:00",
+  "author": "master1980",
+  "tags": [],
+  "feed": "SAP Community discussions",
+  "kind": "discussion",
+  "text": "Hello, \n\n i am currently developing new Conceps how to beatifully delegate tasks from \"classical\" user Exits to classes/OO. \n Example: CMDO/SMOD \"Userexit\" EXIT_SAPLVEDF_002 is for maniplating IDOC-Data INVOIC02 (Invoice). The Exit is called multiple times during processing of one Invoice. \n In my \"new\" exit i have a method set_data where I give all necessary data to the class. In the class I have instance attributes for all \n the data. I dont have data references for the data in order to save \"memory consumption\". INTERFACE zif_sd_bill_exit_saplvedf_002\n PUBLIC .\n\n INTERFACES zif_enhancement .\n INTERFACES zif_injectable .\n\n METHODS set_data\n IMPORTING\n !is_bill_header TYPE vbdkr\n !is_message_status TYPE nast\n !is_control_record TYPE edidc\n !it_bill_item TYPE vbdpr_tt\n !it_pricing TYPE komv_t.\n METHODS execute\n IMPORTING\n VALUE(is_current_segment) TYPE edidd\n CHANGING\n !ct_idoc_data TYPE idoc_data .\nENDINTERFACE. \n Lets say this would be the \"memory-Friendly-approach\" INTERFACE zif_sd_bill_exit_saplvedf_002\n PUBLIC .\n\n INTERFACES zif_enhancement .\n INTERFACES zif_injectable .\n\n METHODS set_data\n IMPORTING\n !is_bill_header TYPE REF TO vbdkr\n !is_message_status TYPE REF TO nast\n !is_control_record TYPE REF TO edidc\n !it_bill_item TYPE REF TO vbdpr_tt\n !it_pricing TYPE REF TO komv_t.\n METHODS execute\n IMPORTING\n VALUE(is_current_segment) TYPE edidd\n CHANGING\n !ct_idoc_data TYPE idoc_data .\nENDINTERFACE. \n\n According to this site, i dont have to care about memory consumption at all: \n Memory Inspector Concepts \n The concept is called \"Copy-on-Write-Sharing\": As long as I dont change the data in my class, there is no Copy at all. \n Is the correct? Is this the case all the time without any exception? Cound I pass all Global Data of sap-programms to Objects this way? Is there any Problem, i have not thought about jet?"
+ },
+ {
+  "key": "398fec02ec2cfc28",
+  "title": "Email valid attributes in SAP Emarsys (Engagement Cloud)",
+  "link": "https://community.sap.com/t5/abap-forum/email-valid-attributes-in-sap-emarsys-engagement-cloud/m-p/14526018#M1494",
+  "published": "2026-11-19T08:25:37+00:00",
+  "author": "AL_Nikhil",
+  "tags": [],
+  "feed": "SAP Community discussions",
+  "kind": "discussion",
+  "text": "Requirement: to get all emails validated via third party service provider into CDP and based on response received from third party service provider, \n CDP will update \"Email valid\" attributes for each email into SAP Emarsys Tenant (True or False/ Valid or Invalid). \n 1. Is it possible to alter the field value vai SAP CDP? \n 2. As per SAP \"Email valid\" is standard exclusive field and depend on user response in bounce management and should alter via any other points \n 3. We would like to avoid to use custom attributes. Kindly help us based on your experience. Best Regards, Nikhil N"
+ }
+]
