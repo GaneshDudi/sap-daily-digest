@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-20",
+  "label": "Friday, 20 November 2026",
+  "headline": "Light day: a RAP actions tutorial, a RAP business event blueprint, and clean-core API gaps in questions on BAPIs and exits.",
+  "items": 96,
+  "deep": 19
+ },
+ {
   "date": "2026-11-19",
   "label": "Thursday, 19 November 2026",
   "headline": "ABAP environment release 2611 adds CDS Define Index, RFC error details and more ADT tooling; the rest of the day is thin posts and unanswered questions.",
