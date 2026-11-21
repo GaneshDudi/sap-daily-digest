@@ -1,0 +1,1129 @@
+{
+ "items": [
+  {
+   "key": "329642da6fc05991",
+   "title": "Your Joule assistant is only as good as the documentation behind it",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/your-joule-assistant-is-only-as-good-as-the-documentation-behind-it/ba-p/14525209",
+   "published": "2026-11-20T10:50:36+00:00",
+   "author": "sranjitha_sathiavathy",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "A practical way to check whether your SAP content is ready for AI retrieval, before you blame the model."
+  },
+  {
+   "key": "02250f483662238c",
+   "title": "E-learning Available: Introducing Planon Real Estate Management Integrated with SAP S/4HANA",
+   "link": "https://community.sap.com/t5/financial-management-blog-posts-by-sap/e-learning-available-introducing-planon-real-estate-management-integrated/ba-p/14526869",
+   "published": "2026-11-20T10:15:33+00:00",
+   "author": "IcyHuang",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Want to bring your lease, contract, and real estate management processes into a single, integrated environment? Join our new e-learning course, Introducing Planon Real Estate Management Integrated with SAP S/4HANA , and discover how SAP Contract and Lease Management together with SAP Real Estate & Facilities Management by Planon can help improve compliance, increase operational efficiency, and provide greater visibility across your organization. \n In this 40-minute e-learning course , you'll learn how organizations can streamline the management of leases, contracts, and real estate portfolios by connecting key business processes with ERP finance. Explore how the integrated solution helps simplify operations, support regulatory compliance, enhance decision-making through improved transparency, and provide greater control across the real estate lifecycle. \n What You'll Learn \n Upon completing this course, you will be able to: \n Explain the purpose and key capabilities of SAP Contract and Lease Management and SAP Real Estate & Facilities Management by Planon within ERP finance. \n Describe how these solutions streamline lease, contract, and real estate processes to improve operational efficiency and compliance. \n Identify the benefits of centralized management, including enhanced visibility, financial control, and more accurate reporting across real estate portfolios. \n The e-learning course consists of a single learning unit and concludes with an assessment designed to test and reinforce your knowledge. \n Ready to Get Started? \n Enrolling in the Introducing Planon Real Estate Management Integrated with SAP S/4HANA e-learning course now! \n 📝 Note: Access to this E-learning requires a one-time registration to SAP Enterprise Support Academy on SAP Learning. \n\n Enhance Your SAP Experience with Value Maps \n Beyond this e-learning, SAP Enterprise Support offers additional resources to help you drive innovation. Value maps on SAP Community bring together guidance, recommended actions, and supporting resources to help you decide what to focus on next - all included in your SAP cloud subscription. \n Are you looking for more e-learning resources on SAP Financial Management capabilities? Visit this article in Finance Management value map to discover additional learning content and resources. To access the Value Map Groups , login to the SAP Community using an S-user ID or a Universal ID. \n\n 👉 Watch our short demo video , then head over to our page to explore our range of topics and request a call with a value map topic expert for guidance tailored to your goals. \n About the author: \n Icy Huang is a Topic Expert for SAP Enterprise Support value maps, specializing in SAP S/4HANA Cloud. Based in Singapore, Icy has been with SAP since 2007, taking on diverse roles that have largely centered around customer engagement and success across the organization. Now she focuses on helping business accelerate the adoption of SAP S/4HANA Cloud solutions with value map content and SAP Enterprise Support offerings."
+  },
+  {
+   "key": "46c1b9c0fdf5e204",
+   "title": "Data Readiness for PLM Migrations: Five Critical Challenges and how to Solve Them",
+   "link": "https://community.sap.com/t5/product-lifecycle-management-blog-posts-by-sap/data-readiness-for-plm-migrations-five-critical-challenges-and-how-to-solve/ba-p/14526837",
+   "published": "2026-11-20T09:58:04+00:00",
+   "author": "AnnetteGarcia",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Ready for your PLM migration—but is your data? Explore five critical data-readiness challenges and how to tackle them before you make the move."
+  },
+  {
+   "key": "a97d93cce565a0d0",
+   "title": "Fundamentals: SAP BDC vs. SAP Datasphere",
+   "link": "https://community.sap.com/t5/data-and-analytics-learning-group-blog-posts/fundamentals-sap-bdc-vs-sap-datasphere/ba-p/14526828",
+   "published": "2026-11-20T09:54:32+00:00",
+   "author": "D066380",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP Datasphere is the core — the data modeling and integration tool. SAP Business Data Cloud (BDC) is the overarching framework — the fully managed platform in which SAP Datasphere serves as a central component. Anyone using SAP BDC is always also using SAP Datasphere. Anyone using only SAP Datasphere has not yet adopted the full SAP BDC platform. SAP Business Data Cloud is a more comprehensive data platform. SAP Datasphere is a central component within SAP Business Data Cloud, providing key capabilities for data integration and modeling."
+  },
+  {
+   "key": "79b2ebaf5eb76165",
+   "title": "Customer-Specific Pick HU Packaging Material Determination in SAP EWM via Packaging Specification",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/customer-specific-pick-hu-packaging-material-determination-in-sap-ewm-via/ba-p/14526415",
+   "published": "2026-11-20T09:44:26+00:00",
+   "author": "Sameer_Abdul",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "In standard SAP EWM, the Pick HU packaging material can’t be determined per customer, because the Ship-To is not passed to packaging specification determination. This article closes that gap with a lean BAdI implementation (/SCWM/EX_PS_DET_PREPARE) that supplies the Ship-To. It is combined with a custom condition table (CUSBDL01) and a warehouse order creation rule that creates one warehouse order per customer. As a result, EWM determines the right packaging material (ZEURO or ZINDUSTRIAL) and creates the pick HU as soon as the warehouse order is created. Test results before and after the implementation are included."
+  },
+  {
+   "key": "8fc623e70ed8eb10",
+   "title": "Configuring Alternative-Based Confirmation (ABC) in S/4HANA aATP",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/configuring-alternative-based-confirmation-abc-in-s-4hana-aatp/ba-p/14501380",
+   "published": "2026-11-20T09:27:01+00:00",
+   "author": "Prashanth425",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Deep Dive: Configuring Alternative-Based Confirmation (ABC) in S/4HANA aATP \n As organizations migrate from classic SAP ERP to S/4HANA, standardizing supply chain fulfilment is often a top priority. In classic ECC Sales and Distribution (SD), if a plant ran out of stock during sales order entry, handling automated substitutions required a mix of complex material determination, custom user exits (MV45AFZZ), or manual intervention by the sales representative. \n With S/4HANA advanced Available-to-Promise (aATP) , SAP introduced Alternative-Based Confirmation (ABC) . ABC automates substitution logic, allowing the system to instantly look at alternative plants, storage locations, or even substitute products to fulfil a sales order requirement. \n This blog post provides a step-by-step configuration walkthrough for setting up Plant Substitution via ABC in S/4HANA. \n The Core Architecture of ABC \n Unlike classic ATP which heavily locked database tables and processed checks rigidly, ABC evaluates alternative fulfilment sources based on predefined business rules in real-time. \n When a requirement cannot be met at the requested plant, ABC executes a multi-step logic loop: \n Determine Substitution Method: Should the system look for an alternative plant, a different storage location, or a replacement product? \n Apply Strategy: How should the system choose among alternatives? (e.g., choose the plant with the highest stock, or the one closest to the customer?). \n Execute Evaluation: Calculate the delivery split or full substitution and pass the confirmed schedule lines back to the SD sales order. \n Step-by-Step Configuration Walkthrough \n To configure ABC, you will primarily use SAP S/4HANA Fiori applications designed for aATP management. Ensure your user catalog has the role ATP_MGR_BC (ATP Manager) assigned. \n Step 2.1: Define Characteristic Combinations \n First, you must tell SAP when ABC should trigger. For example, you might only want ABC to run for a specific Sales Organization or high-priority Customer Groups. \n Fiori App: Configure Characteristic Combinations \n Action: Create a new characteristic combination using the usage ABC (Alternative-Based Confirmation) . \n Fields: Add fields like VKORG (Sales Organization), VTWEG (Distribution Channel), or KUNNR (Sold-to Party). This forms the structural foundation of your lookup rules. \n\n Step 2.2: Configure Substitution Strategies \n The strategy defines how the substitution behaves when triggered. \n Fiori App: Configure Alternative-Based Confirmation → Strategy Tab \n Action: Define a new strategy (e.g., STR_PLANT_SUB). \n Key Parameters to Configure: \n Substitution Method: Set this to Plant Substitution . \n Confirmation Goal: Choose whether you want the Maximal Confirmation (split deliveries across multiple alternative plants to fulfil 100% of the order) or Earliest Confirmation (fulfil from a single alternative plant that can deliver the fastest). \n\n Step 2.3: Define Alternative Determination (The Access Sequence) \n This is where you tell the system how to calculate the actual alternative plants. \n Fiori App: Configure Alternative-Based Confirmation → Alternative Determination \n Action: Link your substitution strategy to an evaluation sequence. \n Logic Type: \n Manual List: You explicitly define that if Plant 1000 is empty, look at Plant 1100, then Plant 1200. \n Distance-Based (Geographical): If SAP Transportation Management (TM) or geographical coordinates are active, the system automatically calculates the closest substitute warehouse to the ship-to party. \n\n Step 2.4: Maintain Substitution Rules (Value Mapping) \n Now, tie your characteristic combination from Step 2.1 to your strategy from Step 2.2. \n Fiori App: Manage Substitution Rules \n Action: Create a new rule. Enter your Sales Org (e.g., 1010) and assign the Strategy STR_PLANT_SUB to it. \n Result: Any sales order created under Sales Org 1010 will now dynamically trigger ABC if the primary plant suffers a stock stockout. \n\n Extending ABC: Developer Extensibility (Clean Core) \n While the Fiori apps handle standard business scenarios, enterprise requirements often demand custom prioritization logic. To keep your S/4HANA core Clean , avoid classic user exits and instead leverage standard Cloud-ready Cloud Business Add-Ins (BAdIs). \n For advanced ABC manipulations, implement the following BAdI: \n BAdI Name: BADI_ATP_ABC_SUBST_METH \n Description: Use this to programmatically alter the calculated alternative plants or substitute products based on custom fields (e.g. Specialized freight costs before deciding on the alternative plant). \n Key Under-the-Hood Tables for Troubleshooting \n When debugging ABC behavior or writing technical reports, these are the core database artifacts you need to look at: \n ATPC_ABC_STRAT : Stores the basic configuration metadata for your Alternative-Based Confirmation strategies. \n ATPC_ABC_RULE : Contains the active substitution rules mapped to your business characteristics. \n I_SalesDocumentItem : In S/4HANA, track the fields Substitution Reason and Original Plant at the item level to verify if an item was successfully swapped by ABC logic. \n Lessons from the Field & Common Pitfalls \n Master Data Alignment: Plant substitution will fail silently if the material master (MM01) is not extended to the alternative plants. Ensure your governance process extends the material to all potential substitute plants within the ABC pool. \n Intercompany Billing Complexity: If ABC swaps the shipping plant to a plant belonging to a different Company Code, ensure your standard Intercompany Billing (IV) configuration, pricing procedures, and internal customer profiles are correctly mapped. Otherwise, billing blocks will halt the downstream O2C process. \n End-to-End Testing Flow in VA01 \n To validate that your Alternative-Based Confirmation (ABC) configuration is working seamlessly, execute a standard order-to-cash test cycle using the classic VA01 transaction or the Create Sales Orders Fiori app. \n Step 6.1: Initial Sales Order Entry \n Action: Create a standard sales order (OR). Enter a material that you know is currently out of stock at your primary plant (e.g., Plant 1010) but is fully available at your alternative plant (e.g., Plant 1020). \n Input: Enter the target quantity and leave the plant field as the default primary plant (1010). \n\n Capture the initial VA01 item overview screen right after pressing Enter. Show the entered material, the requested quantity, and the default primary plant (1010) before saving. \n\n Step 6.2: The aATP Simulation Screen \n Action: Because there is insufficient stock at Plant 1010, the system will automatically trigger the aATP check and open the confirmation screen. \n System Behavior: Instead of showing a zero confirmation, ABC works in the background. It evaluates your substitution rules and identifies Plant 1020 as an eligible alternative. \n\n Capture the S/4HANA Availability Control Screen. Highlight the Substitution status icon or message showing that the system has dynamically evaluated alternative sources. \n\n Step 6.3: Verifying the Substituted Schedule Lines \n Action: Accept the confirmation and look at the item details or schedule line data. \n Result: You will see that the system has either fully substituted the plant on the main item line or created a split line reflecting the alternative plant (1020) with the confirmed quantity and delivery date. \n\n Capture the Schedule Lines tab (Sales Document Item -> Schedule Lines). Draw a red box around the Shipping Plant column, which should now explicitly display the alternative plant value (e.g., 1020) and the successfully confirmed quantity. \n Conclusion: This document provides a comprehensive overview of the Alternative-Based Confirmation (ABC) configuration in SAP S/4HANA, including the end-to-end setup steps, sales order creation, validation of substitution determination during the aATP check, and verification of schedule line quantity confirmation through alternative plant sourcing. The scenario demonstrates how ABC enables automatic confirmation of customer demand by identifying eligible alternative plants when the requested plant lacks sufficient inventory."
+  },
+  {
+   "key": "f24c84df015d4fd5",
+   "title": "Availability Check cannot read Special Stock [E] during 1P9 Scope",
+   "link": "https://community.sap.com/t5/supply-chain-management-q-a/availability-check-cannot-read-special-stock-e-during-1p9-scope/qaq-p/14526874",
+   "published": "2026-11-20T10:27:11+00:00",
+   "author": "henry1342",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello, \n I am currently facing an issue where the Availability Check cannot recognize stock allocated as Special Stock E (Sales Order Stock). \n This occurs during the Intercompany Stock Transfer process (1P9) in S/4HANA Cloud. Although stock physically exists in the supplying plant as Special Stock E, the Availability Check shows \"0 EA available on desired date\" with a warning message (Message No. 06450). \n Additionally, since the Total Replenishment Lead Time is set to 120 days in the material master (MRP 3 view), the confirmed date gets pushed too far into the future, which does not reflect the actual stock situation. \n My questions are: \n 1. Is this standard SAP behavior that ATP excludes Special Stock E from the available stock calculation? \n 2. If stock already exists in the supplying plant, shouldn't the system consider this stock first and confirm a nearer date? \n 3. Is there any setting (e.g., Scope of Availability Check) to adjust this behavior? \n It would be great if someone could explain the background logic behind this. Thank you!"
+  },
+  {
+   "key": "ad9aac5ad7c625c6",
+   "title": "Your Support Needed: Only 6 Votes Missing! 🚀",
+   "link": "https://community.sap.com/t5/coffee-corner-discussions/your-support-needed-only-6-votes-missing/m-p/14526831#M3467",
+   "published": "2026-11-20T09:43:15+00:00",
+   "author": "Kerisha123",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "A few weeks ago, I shared an idea request highlighting a gap in SAP purchase order output management: \n 👉 A Missing Distinction in PO Output: Why Changed Purchase Orders Deserve Their Own Type \n The proposal addresses a common challenge: distinguishing between newly created purchase orders and changed purchase orders within output management. Having a dedicated output type for changed POs would significantly improve supplier communication, reduce misunderstandings, and simplify business processes. \n Thanks to the great support from the community, we have already reached 9 out of the 15 required votes . We are very close, but still need 6 more votes for the idea to gain additional visibility and consideration. \n If you have experienced similar challenges in your organization, I would greatly appreciate your support by casting a vote for the idea. \n ➡️ Specific Email Template for Change of Purchase | Continuous Influence \n Every vote helps move this enhancement one step closer to becoming reality. \n Thank you for your support!"
+  },
+  {
+   "key": "2667ba50e2a76fdd",
+   "title": "Why Enterprise Architecture Is Becoming Key to Successful AI",
+   "link": "https://news.sap.com/2026/11/why-enterprise-architecture-is-becoming-key-to-successful-ai/",
+   "published": "2026-11-20T11:15:00+00:00",
+   "author": "Tim Clark",
+   "tags": [
+    "Artificial Intelligence",
+    "Technology",
+    "Transformation management",
+    "Autonomous Enterprise",
+    "Enterprise architecture management"
+   ],
+   "feed": "SAP News Center",
+   "kind": "news",
+   "text": "Artificial intelligence is changing how enterprises operate, but a gap exists between experimentation and tangible business value. \n Unify SAP and non-SAP data into trusted, multidomain views of every entity you run on \n\n Learn how \n\n While approximately 90% of companies have embarked on their AI journeys, only six to 10% are using the technology effectively, according to figures shared by Harish Parmar, enterprise architect at SAP, during his presentation at the recent Reltio event, “ Data in the AI Era: Connecting the Dots .” \n\n The lack of effectiveness isn’t due to a lack of AI capabilities. Organizations are struggling to connect sophisticated technologies with the data, processes, and business context required to make them useful. \n\n For enterprise architects, addressing these challenges requires a fundamental shift from connecting applications and systems to designing intelligent, increasingly autonomous enterprises. \n\n “AI does not have a context problem, but the enterprises have representation problems,” Parmar said. \n\n Enterprises struggle to represent their business relationships, data, and processes in ways AI systems can understand and act upon. \n\n W hy AI ambitions are outpacing enterprise readiness \n\n Parmar identified four obstacles preventing organizations from realizing AI’s potential: \n\n Poor data quality \n\n Missing business context \n\n Inadequate governance \n\n Architectural debt \n\n Data quality remains a persistent challenge, with Parmar citing estimates that 80% of AI project effort goes toward data preparation. But clean data alone isn’t enough and AI must understand how information relates to business operations, including relationships among customers, transactions, applications, and organizational policies. \n\n Governance presents another challenge. Unlike consumer-facing generative AI tools, enterprise AI must operate within established security, authorization, and compliance requirements. An AI assistant, for example, should not disclose confidential employee salary information simply because someone asks. \n\n Architectural debt further complicates adoption. Most enterprises cannot replace existing systems overnight, making incremental modernization essential. \n\n From connected systems to intelligent enterprises \n\n Parmar traced decades of technological evolution, from on-premises infrastructure and monolithic applications to cloud computing, SAP HANA, cloud-native environments, and AI-native platforms. \n\n Enterprise data has undergone a similar transformation. \n\n Initially used for recording transactions, data became the foundation for reporting, dashboards, and business intelligence. Big data, machine learning, and large language models expanded its potential. Enterprises are now entering a phase centered on business semantics, knowledge graphs, and contextual intelligence. \n\n Traditional enterprise architectures typically connected three layers: applications, data, and user experiences. AI introduces another essential component: context. \n\n “The context enables the AI to understand what the data is all about because without context, we don’t know how to make the meaning out of it,” Parmar explained. \n\n Five layers of AI context \n\n Parmar outlined five interconnected layers enterprise architects should consider when building AI-ready environments. \n\n The first is data context , establishing how information is organized and related. \n\n The second is semantic and knowledge context , connecting information across applications and business systems. Consider a customer whose information appears in an SAP ERP system, Salesforce, and a point-of-sale application. Each may contain different identifiers for the same individual. Establishing a unified customer record gives AI a more complete picture of transactions and interactions. \n\n The third layer, architecture and governance context , addresses how AI agents interact with enterprise systems, including authentication, authorization, monitoring, and auditing. Parmar referenced SAP LeanIX, SAP Cloud ALM, and SAP AI Agent Hub as technologies supporting architectural visibility and governance. \n\n The fourth layer, process and predictive context , connects intelligence to business activities such as procurement, sales, and accounting. SAP Signavio, for example, helps organizations understand business processes and operational workflows. \n\n Finally, company-specific context incorporates organizational policies, approval limits, and business rules. This layer is important because policies and employee responsibilities continually change. An AI agent operating with outdated purchasing authorization information could make an incorrect decision. Together, these layers establish a foundation for AI systems that understand enterprise information and how it should be used. \n\n Building AI agents that can scale \n\n As enterprises introduce custom AI applications, Parmar emphasized three architectural principles. First, organizations should treat custom AI agents as independent products with clearly defined capabilities. Second, those products should be configurable and capable of communicating with different systems through standard protocols, including Model Context Protocol (MCP). Third, wherever practical, they should be designed as headless services operating across multiple user interfaces. \n\n This approach laid the foundation for a more sustainable solution architecture. By prioritizing flexibility and reusability, it enabled broader adoption across scenarios while avoiding fragmented implementations that often become difficult to support and maintain over time. \n\n It also matters for SAP customers transitioning from SAP ECC to SAP S/4HANA, who should consider whether custom AI applications can continue operating after migration. \n\n “Whenever you think about architecture, think holistically,” Parmar advised. This means ensuring SAP and non-SAP systems, authentication requirements, and integration mechanisms are in place. \n\n Governance cannot be an afterthought \n\n As AI agents become more autonomous, governance must be embedded directly into enterprise architecture. \n\n “Governance cannot be an afterthought,” Parmar said. Organizations need mechanisms documenting which agents operate, which systems they access, what models they use, and how decisions can be reviewed. However, technical oversight is only part of the equation. \n\n Parmar compared AI agents to newly hired interns who must learn an organization’s policies, procedures, and ethical expectations. Just as employees receive training before assuming responsibility, AI agents need appropriate instructions, guardrails, and access to current company policies. \n\n “A human is at the end of the day, accountable, and this is non-negotiable,” Parmar said. Even when AI agents execute decisions independently, people must remain responsible for their actions and outcomes. \n\n Enterprise architect’s evolving role \n\n AI is also transforming the skills required of enterprise architects. Technical expertise remains essential, but Parmar believes education and storytelling are becoming equally important. Architects must help business users understand AI, explain its limitations, and communicate what’s required before deploying new capabilities. \n\n “Storytelling is a key skill which is evolving as a must-have requirement for an enterprise architect,” Parmar said. \n\n The pace of technological change also demands greater experimentation and adaptability. Rather than relying on multiyear technology assumptions, organizations must continually reassess emerging capabilities. \n\n AI is also lowering barriers to application development, making imagination, business understanding, and identifying valuable use cases increasingly important. \n\n When these foundations come together, organizations can better translate AI investments into business outcomes. It doesn’t eliminate the need for people. Instead, it elevates their responsibilities toward judgment, oversight, and higher-value work. \n\n “We are the captains of this Autonomous Enterprise ,” Parmar said. \n Subscribe to our newsletter to receive weekly news highlights from the SAP News Center \n\n Subscribe now"
+  },
+  {
+   "key": "8dc5f64578961f00",
+   "title": "How to Find and Connect Your Existing ADT Generated Fiori Application in Business Application Studio",
+   "link": "https://community.sap.com/t5/frontend-ui5-sap-fiori-blog-posts/how-to-find-and-connect-your-existing-adt-generated-fiori-application-in/ba-p/14527094",
+   "published": "2026-11-20T17:28:47+00:00",
+   "author": "mohit_dev",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Introduction One of the most common challenges when starting with SAP Business Application Studio (BAS) is figuring out how to work with existing Fiori applications that have already been deployed in your ABAP system. Many developers expect to see projects immediately in their workspace, only to find the folder is empty. This blog post explains the correct way to discover and connect your existing ADT-deployed Fiori applications in BAS, so you can start editing them right away. \n The Challenge When you first open Business Application Studio, you might see: - ‌‌ Welcome page with options like \"New Project from Template\" - ‌‌ File menu with options like \"Import Project\", \"Open Folder\" - ‌‌ BUT: No connection to your existing projects in the ABAP system - ‌‌ AND: The File Explorer shows only your local computer's folders \n If you try \"Import Project\" or \"Open Folder\", you'll only see files on your local machine — not your deployed Fiori applications. The question is: How do I access my existing Fiori applications that are already in the ABAP system? \n Prerequisites Before connecting to your existing Fiori application, ensure you have: \n 1. ‌‌ Business Application Studio (BAS) deployed in your SAP BTP account 2. ‌‌ A Fiori application already deployed in your ABAP system (via ADT or Fiori Generator) 3. ‌‌ Developer role in your SAP BTP account 4. ‌‌ System destination configured in BTP that points to your ABAP system - You can verify this when creating a new project — if you see your system in the destination list, the connection is configured 5. ‌‌ Access credentials for your ABAP development system \n The Solution: Use the Fiori CLI Command The correct way to connect to your existing Fiori application is using the Fiori Download Command built into BAS. \n\n Step 1: Open the Command Palette 1. Open BAS in your browser 2. Press: 'Ctrl + Shift + P' (Windows/Linux) or 'Cmd + Shift + P' (Mac) 3. The Command Palette will open at the top of your screen \n Step 2: Search for the Fiori Download Command In the Command Palette, type: \"Fiori: Download ADT Deployed App from SAPUI5 ABAP Repository\". \n Step 3: Select the Command 1. Click on 'Fiori: Download ADT Deployed App from SAPUI5 ABAP Repository' in the dropdown 2. Press Enter or click to select \n BAS will now connect to your configured ABAP system. \n Step 4: Choose Your ABAP System Destination After selecting the command, BAS will prompt you: \"Select Destination:\" You'll see a list of available system destinations. These are the destinations you configured in your BTP account that point to your ABAP systems. Select Your System 1. Click on your development system destination. 2. BAS will authenticate using the credentials stored in BTP. \n Step 5: Select Your Fiori Application Once authenticated, BAS will display: \n \"Select Application:\" \n A list of all Fiori applications deployed in your ABAP system will appear. What You'll See Each application listing typically shows: - 📱 Application Name (the Fiori app title) - 🔤 Application ID (the technical identifier, e.g., 'com.example.myapp') - 📦 Package/Namespace (where it's stored in the system) \n Step 6: Choose Download Location BAS will ask: \"Select Target Folder:\" This is where the application files will be downloaded to in your BAS workspace. Options - Accept default: Click the suggested folder (usually '/home/user/projects' or similar) - Choose custom location: Click to select a different folder - Create new folder: You can create a new folder if needed Recommendation: For organization, use: /home/user/projects/your-app-name/ \n This keeps your projects organized and easy to find later. \n Step 7: Download and Wait Once you select the destination folder, BAS will: \n 1. Connect to your ABAP system 2. Download all application files (this may take 30-60 seconds) 3. Extract and prepare the project structure 4. Display progress in the Terminal panel at the bottom \n What to Look For \n ‌‌ Terminal shows: \"Download completed\" or \"Project successfully downloaded\" ‌‌ No errors: The Terminal shows no red error messages ‌‌ Files appear: Your project folder now contains the application files \n Step 8: Verify the Project Structure Once download is complete, you should see your project structure like this: 📁 your-fiori-app-name/ ├── 📁 .vscode/ │ └── 📄 launch.json (VSCode debugging config) ├── 📁 dist/ (Build output - don't edit) ├── 📁 node_modules/ (Dependencies - auto-generated) ├── 📁 webapp/ (★ Main application source code) │ ├── 📁 annotations/ (OData annotations) │ ├── 📁 i18n/ (★ Language/translation files) │ │ └── 📄 i18n.properties │ ├── 📁 localService/ (Mock data for local testing) │ ├── 📁 test/ (Unit tests) │ ├── 📄 Component.js (Application component) │ ├── 📄 index.html (HTML entry point) │ └── 📄 manifest.json (★ Application metadata) ├── 📄 .appGenInfo.json (Generator metadata) ├── 📄 .gitignore (Git ignore rules) ├── 📄 archive.zip (Backup of original) ├── 📄 package.json (Project dependencies) ├── 📄 package-lock.json (Dependency lock file) ├── 📄 README.md (Project documentation) ├── 📄 ui5-deploy.yaml (Deployment configuration) ├── 📄 ui5-local.yaml (Local development config) ├── 📄 ui5-mock.yaml (Mock service config) └── 📄 ui5.yaml (Main UI5 config) \n Troubleshooting \n Issue: Command Not Found \"I can't find the Fiori download command\" \n Solution: - Ensure BAS has the Fiori Extensions installed - Go to Extensions (left sidebar) and search: 'Fiori' - Install any SAP Fiori-related extensions - Restart BAS and try again \n Issue: No Systems in Destination List \"I don't see my ABAP system in the destination dropdown\" \n Solutions: 1. Verify BTP configuration: - Go to BTP Cockpit → Your account - Verify destination exists and is active - Verify authentication method is correct \n 2. Ask your administrator: - Confirm destination is created for your user - Confirm you have permission to access it - Provide exact destination name \n 3. Create destination if missing: - Contact your BTP admin to create a new destination - Provide: system host, system number, client, username \n Issue: No Applications in Application List \"The application list is empty or my app isn't showing\" \n Solutions: 1. Verify application is deployed: - Use ADT or SAP GUI to confirm the app exists in the system - Check it's in the correct package \n 2. Verify system access: - Confirm you have developer access to the system - Confirm you can access the package where the app is stored \n 3. Ask your administrator: - Confirm the application is actually deployed - Confirm you have permission to see it - Provide the exact application ID or package name \n Next Steps After Connecting Once you've successfully downloaded your Fiori application, you can: \n 1. ‌‌ Edit the application using BAS editor 2. ‌‌ Test locally using 'npm install' and 'npm start' 3. ‌‌ Modify configuration (titles, properties, etc.) 4. ‌‌ Build and deploy back to the ABAP system 5. ‌‌ Track changes using Git \n Summary To find and connect your existing Fiori application in Business Application Studio: 1. ‌‌ Open Command Palette ('Ctrl + Shift + P') 2. ‌‌ Type: 'Fiori: Download ADT Deployed App from SAPUI5 ABAP Repository' 3. ‌‌ Select your system destination 4. ‌‌ Select your Fiori application from the list 5. ‌‌ Choose download location (default is fine) 6. ‌‌ Wait for download to complete 7. ‌‌ Verify project structure appears in your workspace \n That's it! You now have your existing Fiori application in BAS and can start editing."
+  },
+  {
+   "key": "8c631291c55fade0",
+   "title": "SAP HANA Administration in Bite-Sized Chunks",
+   "link": "https://community.sap.com/t5/technology-platform-learning-group-blog-posts/sap-hana-administration-in-bite-sized-chunks/ba-p/14521380",
+   "published": "2026-11-20T16:02:04+00:00",
+   "author": "gary_tyrrell",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "A recurring series of Live Sessions dedicated to SAP HANA administration is launching in 2027, offering a new pathway to learning."
+  },
+  {
+   "key": "106b0f1df124ba64",
+   "title": "SAP Inside Track Paraguay – Asunción 2026: Del caos al control: SAP BCM y MBC",
+   "link": "https://community.sap.com/t5/asunci%C3%B3n-blog-posts/sap-inside-track-paraguay-asunci%C3%B3n-2026-del-caos-al-control-sap-bcm-y-mbc/ba-p/14527052",
+   "published": "2026-11-20T15:50:50+00:00",
+   "author": "Zamichiei",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "¿Cuántas horas perdimos entrando a varios portales bancarios para ver si un pago salió, si lo rechazaron o por qué? Con esa pregunta abrieron la primera charla técnica del SAP Inside Track Paraguay – Asunción 2026 Néstor Pastrana y Edith Guerreño, de Kuaatec. Es el segundo año que participan en el SITPY, y la idea sigue siendo la misma: compartir conocimiento con toda la comunidad, no solo con consultores, sino también con usuarios que quieren entender cómo SAP se aplica en sus procesos."
+  },
+  {
+   "key": "a5de8eb79e845836",
+   "title": "Check out the Expert-guided Implementation (EGI) sessions for December 2026",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/check-out-the-expert-guided-implementation-egi-sessions-for-december-2026/ba-p/14503843",
+   "published": "2026-11-20T15:00:00+00:00",
+   "author": "LeeanDeLoria",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Check out the Expert-guided Implementation (EGIs) sessions for December 2026 . EGI sessions are instructor-led. The sessions below are designed to facilitate effective adoption and utilization of the SAP Signavio solutions. EGIs are part of your SAP Enterprise Support or SAP Enterprise Support, Cloud Edition contract, which means there’s no additional cost for participating in these sessions. \n Important: The links in this blog post connect to SAP Learning which requires an S-user for login. \n December 2026 sessions are outlined in this blog with brief descriptions. \n ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n ✔️ SAP Signavio Adoption Starter: Driving Lead to Cash Excellence with Unified Process Intelligence [English & Chinese]. Register Here. This course introduces business process analysis and process mining with SAP Signavio Process Intelligence. Through lead-to-cash process scenarios spanning both SAP and non-SAP environments, attendees will gain an understanding of the solution’s base and premium capabilities while exploring its AI-powered features. The session will demonstrate how pre-built tools, accelerators, and best practices can help accelerate process discovery and value realization. Participants will also learn about the Plug & Gain approach and how it leverages the full capabilities of the SAP Signavio Process Transformation Suite. \n Goals: \n • Develop first-level experience with SAP Signavio Process Intelligence to analyze and optimize lead to cash business processes. \n • Utilize the AI-powered capabilities, base and premium features of SAP Signavio Process Intelligence. \n • Accelerate process transformation and continuous improvement initiatives using the Plug & Gain approach, pre-built accelerators, dashboards and best practices \n ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n ✔️ SAP Signavio Adoption Starter: Driving Process Excellence with Process Management Solutions [Chinese]. Register Here. This course introduces participants to SAP Signavio Process Manager and the fundamentals of Business Process Management (BPM). Attendees will learn how to create and manage process models using BPMN 2.0, document and analyze processes, generate reports, and collaborate through the SAP Signavio Process Collaboration Hub. The session also provides an overview of Signavio’s reporting, simulation, and AI capabilities to support process improvement and governance. \n Goals: \n Understand the capability and usability of the SAP Signavio Process Manager and Collaboration Hub.​ \n Navigate the workspace, understand BPMN and how to create diagrams using this notation. \n Understand the overall features of Signvaio Process Manager. \n ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n ✔️ SAP Signavio Adoption Starter: Deploying Process Management Solutions for Administrators [Chinese]. Register Here. This course provides a practical introduction to the SAP Signavio Transformation Suite, focusing on Process Manager and Collaboration Hub. Participants will learn how to configure and administer the platform, manage users and access rights, maintain process architectures and repository entries, and establish modeling standards. The sessions also cover Collaboration Hub setup, along with an overview of SAP Signavio AI capabilities to support process management and improvement. \n Goals: \n Understand the capability of SAP Signavio Process Manager and Collaboration Hub as an SAP Signavio Administrator. \n Understand workspace configuration and set-up of both the Collaboration Hub and Process Manager, and how to correctly administer the system. \n ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n ✔️ SAP Signavio Adoption Starter: Driving Acquire to Decommission Excellence with unified Process Intelligence [English] . Register Here . This course introduces business process analysis and process mining with SAP Signavio Process Intelligence. Through acquire-to-decommission process scenarios spanning both SAP and non-SAP environments, attendees will gain an understanding of the solution’s base and premium capabilities while exploring its AI-powered features. The session will demonstrate how pre-built tools, accelerators, and best practices can help accelerate process discovery and value realization. Participants will also learn about the Plug & Gain approach and how it leverages the full capabilities of the SAP Signavio Process Transformation Suite. \n Goals: \n Develop first-level experience with SAP Signavio Process Intelligence to analyze and optimize acquire to decommission business processes . \n Utilize the AI-powered capabilities, base and premium features of SAP Signavio Process Intelligence . \n Accelerate process transformation and continuous improvement initiatives using the Plug & Gain approach, pre-built accelerators, dashboards and best practices . \n ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n Stay tuned each month to learn what courses will be offered next. \n Enhance Your SAP Experience with Value Maps \n Beyond Expert-guided Implementation sessions, SAP Enterprise Support offers additional resources to help you drive innovation. Value maps on SAP Community bring together guidance, recommended actions, and supporting resources to help you decide what to focus on next - all included in your SAP cloud subscription. \n Watch our short demo video , then head over to our page to explore our range of topics and request a call with a topic expert for guidance tailored to your goals. \n Regards, \n Leean De Loria - Topic Expert for SAP Enterprise Support value maps."
+  },
+  {
+   "key": "f4eba3fb7d75c1a9",
+   "title": "SAP Named a 2026 Gartner Peer Insights™ Customers’ Choice for Talent Acquisition (Recruiting) Suites",
+   "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-sap/sap-named-a-2026-gartner-peer-insights-customers-choice-for-talent/ba-p/14526970",
+   "published": "2026-11-20T13:21:55+00:00",
+   "author": "Kristin9",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Your voice matters! SAP has been named a 2026 Gartner Peer Insights™ Customers’ Choice for Talent Acquisition, based on 293 verified customer reviews. Discover how your feedback and trust, alongside our recognition as a Gartner Magic Quadrant™ Leader, help shape the future of SAP SuccessFactors Recruiting and talent acquisition innovation."
+  },
+  {
+   "key": "6179a218211fd5df",
+   "title": "Powering Agentic Readiness: SAP Integration Day Bengaluru 2026",
+   "link": "https://community.sap.com/t5/integration-blog-posts/powering-agentic-readiness-sap-integration-day-bengaluru-2026/ba-p/14520304",
+   "published": "2026-11-20T13:03:44+00:00",
+   "author": "artigopalan",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "On 24 November 2026, SAP Labs India brings together enterprise integration practitioners, architects, developers, and business leaders for a full-day programme centred on one question: is your integration estate ready for the age of AI agents? In this blog we cover what to watch, what to expect, and why it matters."
+  },
+  {
+   "key": "015b297c7295db2e",
+   "title": "SAP Inside Track Paraguay – Asunción 2026: Hecho en comunidad",
+   "link": "https://community.sap.com/t5/asunci%C3%B3n-blog-posts/sap-inside-track-paraguay-asunci%C3%B3n-2026-hecho-en-comunidad/ba-p/14525720",
+   "published": "2026-11-20T15:57:00+00:00",
+   "author": "Zamichiei",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Así arrancó el SAP Inside Track Paraguay – Asunción 2026: antes de las charlas técnicas, Leticia Fleyta, Alejandro Hidalgo y Juan Pablo Zamichiei contaron por qué estamos acá un sábado a la mañana y qué es esto de la comunidad SAP."
+  },
+  {
+   "key": "1751bb3f0a534f1b",
+   "title": "AI Support in SAP Certification: SAP Joule for Consultants",
+   "link": "https://community.sap.com/t5/sap-learning-blog-posts/ai-support-in-sap-certification-sap-joule-for-consultants/ba-p/14526938",
+   "published": "2026-11-20T12:53:21+00:00",
+   "author": "BeccaG",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP Joule for Consultants is now available during eligible SAP system-based certification assessments. Discover how this AI-powered reference aid supports practical, skills-based assessments while reinforcing the importance of professional expertise."
+  },
+  {
+   "key": "e38c7245da18d8f8",
+   "title": "Extending standard SAP Delivered AI Agents with Joule Studio",
+   "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/extending-standard-sap-delivered-ai-agents-with-joule-studio/ba-p/14526929",
+   "published": "2026-11-20T12:23:20+00:00",
+   "author": "FlavioFonte",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "In this blog you'll learn how to extend a standard SAP Delivered AI Sourcing Negotiation Agent"
+  },
+  {
+   "key": "4a18463276529b0e",
+   "title": "Relembre a palestra: Giving Joule a Voice, from Inspiration to Live Demo #SITCWB2026",
+   "link": "https://community.sap.com/t5/curitiba-blog-posts/relembre-a-palestra-giving-joule-a-voice-from-inspiration-to-live-demo/ba-p/14522516",
+   "published": "2026-11-20T12:00:00+00:00",
+   "author": "AdrianoCWB",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "No dia 7 de novembro, no Auditório Carlos Costa da PUCPR, Mustafa Bensan, Founder e Chief Architect da Autonify, SAP Champion e organizador do SAP Inside Track Sydney, apresentou no SAP Inside Track Curitiba 2026 a palestra \"Giving Joule a Voice: From Inspiration to Live Demo\". A palestra foi em inglês. \n Sobre a palestra \n A apresentação teve três blocos: o contexto, uma demonstração ao vivo (\"Meet the voice agent\") e os bastidores de como funciona. \n No contexto, Mustafa lembrou a frase de Christian Klein, CEO da SAP, \"The end of the keyboard is near\", e que no SAP Sapphire a SAP anunciou o uso do LiveKit para recursos de voz em tempo real na Joule. \n Para levar \n A voz em tempo real está chegando à Joule, segundo o anúncio da SAP no Sapphire. \n A palestra foi da inspiração à demonstração ao vivo e, depois, ao como funciona por dentro. \n Summary in English \n Mustafa Bensan (Autonify) walked the audience through the context of voice-enabled Joule, including SAP's announcement at Sapphire about using LiveKit for realtime voice, then showed a live demo of a voice agent and explained how it works under the hood. \n Sobre o palestrante e o patrocínio \n Mustafa Bensan, Founder e Chief Architect da Autonify, membro do programa SAP Champions. Seu foco atual é habilitar IA para a empresa autônoma. LinkedIn: www.linkedin.com/in/mustafabensan \n A Autonify foi patrocinadora Bronze do SAP Inside Track Curitiba 2026. \n Assista ao evento gravado no YouTube: https://youtu.be/6kfJHxQN140 \n Veja todas as palestras no post índice: https://community.sap.com/t5/curitiba-blog-posts/sap-inside-track-curitiba-2026-relembre-as-palestras-sitcwb/ba-p/14522453 \n #SITCWB2026 #SAPCommunity #SAPCommunityCWB #Autonify #Joule"
+  },
+  {
+   "key": "375f223c5660c2da",
+   "title": "UK Payroll April 2027: Why SAP is Targeting February 2027 for the Main Legal Changes",
+   "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-sap/uk-payroll-april-2027-why-sap-is-targeting-february-2027-for-the-main-legal/ba-p/14524325",
+   "published": "2026-11-20T11:45:40+00:00",
+   "author": "NatashaRobinson",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP wish to share an update with our customers that the main legal changes supporting the April 2027 UK payroll legislation will be delivered in February 2027. \n This post explains the reasoning, so customers can plan accordingly."
+  },
+  {
+   "key": "ad8ce3306f5e67ba",
+   "title": "Replicate Work Center from SAP S/4HANA OP (2025 FPS02) to SAP Field Service & Asset Management",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/replicate-work-center-from-sap-s-4hana-op-2025-fps02-to-sap-field-service/ba-p/14526868",
+   "published": "2026-11-20T11:38:10+00:00",
+   "author": "Saurabh_Awasthi85",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Currently the creation and assignment of work center in SAP FSA is done manually, by automatically replicating Work Centers from SAP S/4HANA OP to SAP Field Service & Asset Management, both systems stay in sync. This helps dispatchers assign work to the right teams and resources, making planning and scheduling easier, faster, and more accurate. \n Additionally, if there exists any HR assignment to the work center that is assigned to the Region section of that corresponding Person in SAP FSA. \n Why Does This Integration Matter? \n With integration: \n The relevant work centers are already available in FSA immediately when created in S/4HANA OP. \n Automatic assignment of Work center to the correct person in FSA if HR Assignment exists for the Work Center. \n Faster scheduling, fewer wrong assignments, and a planning picture that matches the backend . \n Key Benefits of Integration \n Automatic synchronization of work center & HR Assignment of master data between S/4HANA and FSA. \n Consistent resource model delivery. \n Multi-company support - replicate to one or many FSA companies. \n Scope of the Integration \n Here's what's included in the SAP S/4HANA On Premise 2025 FPS02 release. \n Replication from SAP S/4HANA to SAP FSA is supported. \n Create or change work centers in S/4HANA OP (TCODE : CR01/CR02). \n Changes automatically replicate to FSA. \n Supports both a bulk initial load and incremental (delta) updates on change. \n FSA Multi-company Support \n Prerequisites \n Implement SAP NOTE 3839618 for S/4HANA 2023 FPS03, S/4HANA 2025 FPS01 releases. \n DRF Replication Model is maintained & activated in the target system. \n BGRFC inbound destination is configured. \n Configuration Steps \n For multiple FSA companies: \n SPRO → Service → Integration with Other SAP Solutions → SAP Field Service Management → Configure Multiple Company Replication \n 1.Select the Rule type for Replication Object \n\n The integration Supports Plant and All companies rule type which can be configured from here \n '01' Belongs to Plant \n '00' Belongs to All companies \n 2.Define the Respective Company \n\n 3.Assign FSA Company details \n\n 4.Assign Replication Object details \n\n 5.Select the Replication Object and ‘Assign Relevant Plants’. \n\n Create BGRFC inbound destination : \n Transaction: SBGRFCCONF \n EAM_FSM_WC_INBOUND \n EAM_FSM_UFP_INBOUND \n\n Extract AIF Contents : \n Transaction: /AIF/CONTENT_EXTRACT \n\n AIF Namespace: /FSMPM \n AIF Interface: WORKCT_OUT \n DRF Configuration \n Define Replication Models: \n Go to DRFIMG -> Define Custom Settings for Data Replication -> Define Replication Models \n\n Assign Outbound Implementation \n\n Assign Target System \n\n Work Center Replication Demo \n Scenario: A Work Center is created in SAP S/4HANA and has an HR Assignment, The Work Center Is replicated to SAP FSA and HR Assignment is added to the Region Section of People. \n Create work center using transaction CR01 \n\n Provide Basic Data and switch to Default Values tab for HR Assignment \n\n Create HR Assignment and assign Person \n\n Save Work Center and check replication in SAP FSA -> Setting And Configuration -> Service Regions \n The Replication is done as PLANT_WORKCENTER \n\n Check person Assignment in SAP FSA-> Master Data -> People \n\n Final Thoughts \n Replicating Work Centers from SAP S/4HANA On Premise 2025 FPS02 to SAP FSA keeps the resource model consistent across back office and field with master data in sync, scheduling gets sharper, technicians get clearer direction, and the whole service operation runs a little smoother."
+  },
+  {
+   "key": "a608f05a477685e5",
+   "title": "SAP Note feedback says \"You completed all your learning assignments\"?",
+   "link": "https://community.sap.com/t5/questions-about-sap-websites/sap-note-feedback-says-quot-you-completed-all-your-learning-assignments/qaq-p/14527003",
+   "published": "2026-11-20T14:04:29+00:00",
+   "author": "Sandra_Rossi",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "I just added a feedback to one SAP Note in SAP Support (\"Rate this document\"), just to ask the clarification of text unclear (\" If this indicator is set\" in 2465573 - Material Number assignment with Leading Zeros - SAP for Me ), and I obtained this: \n\n \"Thank you for your feedback \n You completed all your learning assignments.\" \n Why does it say \"You completed all your learning assignments\"? \n Thanks. \n Sandra"
+  },
+  {
+   "key": "9cd99fde09ebe8a5",
+   "title": "change layout in MMBE for specific user",
+   "link": "https://community.sap.com/t5/supply-chain-management-q-a/change-layout-in-mmbe-for-specific-user/qaq-p/14526912",
+   "published": "2026-11-20T11:57:53+00:00",
+   "author": "Vishishta",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "So, when i execute and enter inside MMBE screen. there are columns on right side such as unrestricted use, quality insp, blocked, on order stock etc. \n I want to change the sequence of these columns for a specific user."
+  },
+  {
+   "key": "6804d5275cd19c4b",
+   "title": "German employee BIB replication fails with error: Fill mandatory field: P0002-GESCH",
+   "link": "https://community.sap.com/t5/human-capital-management-q-a/german-employee-bib-replication-fails-with-error-fill-mandatory-field-p0002/qaq-p/14526893",
+   "published": "2026-11-20T11:39:09+00:00",
+   "author": "Saswatee_Panda",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Replicating German Employees fail with below error: \n Fill mandatory field: P0002-GESCH for time segment 18.11.2026 to 31.12.9999 \n Replication is working alright for other countries. \n Value mapping has been maintained; primary mapping is maintained in ERP_WS_5. Do we need to maintain country specific value mapping? \n Under verbose, I could see PERNR defined by implementation in BADI. ECPAO_IN_EXT_PERNR_MAP. is this causing the issue? \n #LOD"
+  },
+  {
+   "key": "6f457a7bca073819",
+   "title": "Public Cloud - Partial Billing of Service Order Item",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/public-cloud-partial-billing-of-service-order-item/qaq-p/14526876",
+   "published": "2026-11-20T10:33:38+00:00",
+   "author": "F-Schmidt_67",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello community, \n I'm looking for a possibility of partial billing of service order item. \n Example: \n We have a service order with one item. During the month our technicians confirm time to this service order item and at the end of month, I want to invoice them to customer. As the service order stays open for futher time confirmation in the following month, no of the existing time confirmation has set the flag for final confirmation. I can't release the existing confirmations for invoicing. \n\n I tried to check the csutomizing in CBC if item category of confirmation is SCP3 or if I can adapt the customiziing, but access to SSCUI 107306 is denied. \n\n Ist there any possibility to change/check customizing or is it denied in public cloud in general? \n Is there any other possibility to make partial billing of service order item? \n Thanks, Frank"
+  },
+  {
+   "key": "eaaefd2aee759c83",
+   "title": "Standard Enrichment Flow for Company Code and Division during Raw-to-Billable BIT Transfer",
+   "link": "https://community.sap.com/t5/financial-management-q-a/standard-enrichment-flow-for-company-code-and-division-during-raw-to/qaq-p/14526829",
+   "published": "2026-11-20T09:34:35+00:00",
+   "author": "Bobby_SAP",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello Experts, \n\n In SAP BRIM (Convergent Invoicing), I am trying to understand the exact standard enrichment for Company Code ( BUKRS ) and Division ( SPART ) fields when a Billable Item (BIT) is transferred from Raw ( 0 ) to Billable ( 2 ) status. \n\n Specifically, I would like to clarify the sequence in which the standard system evaluates and derives these two fields—whether it prioritizes master data (Contract Account and Provider Contract), configuration (Posting Area 8120 ). \n\n Could you please explain the step-by-step enrichment hierarchy and how field ( BUKRS or SPART ) is determined first during standard BIT transfer? \n\n And explain the main functionality of PA - 8120 account assignment, when it applicable and is it mandatory to maintain for every BIT type. \n\n Thank you in advance for your guidance."
+  },
+  {
+   "key": "40231d71ccf712ba",
+   "title": "Bestellanlage Liefertermine am Wochenende",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/bestellanlage-liefertermine-am-wochenende/qaq-p/14526785",
+   "published": "2026-11-20T08:32:09+00:00",
+   "author": "Nadine_Henzel",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hallo, \n wir haben das Problem das bei Bestellanlage teilweise Liefertermine auf ein Wochenende oder sogar Feiertage fallen. Es sollen aber nur Liefertermine von MO-FR gültig sein, auch keine Anlieferung an Feiertagen. \n Unser Werkskalender hat 7 Tage eingestellt. Diesen benötigen wir für unsere Produktion da diese 24/7 statt findet. Diesen können wir nicht auf 5 Tage MO-FR ändern. Welche Möglichkeit haben wir die Liefertermine in Bestellungen automatisch auf Anlieferung MO-FR zu ändern? Gibt es einen eigenen Einkaufskalender? Danke. \n Grüsse \n Nadine Henzel"
+  },
+  {
+   "key": "5adf42d1d7f3d122",
+   "title": "Automatic determination of Shipping Type in sales order on sales order's Shipping Condition",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/automatic-determination-of-shipping-type-in-sales-order-on-sales-order-amp/qaq-p/14526778",
+   "published": "2026-11-20T08:16:49+00:00",
+   "author": "MangeshDongre",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Our requirement is to print of proper DG Data on Delivery Note. Currently all Shipping Modes are considered for printing which leads to a lot of unnecessary information. \n Need to configure Automatic determination of Shipping Type in sales order on sales order's Shipping Condition \n Do we have standard configuration available in SAP Public Cloud ? or do we need to do development ?"
+  },
+  {
+   "key": "921a866e0fa5b4dd",
+   "title": "0material Length upgrade to 40 Char",
+   "link": "https://community.sap.com/t5/technology-q-a/0material-length-upgrade-to-40-char/qaq-p/14526771",
+   "published": "2026-11-20T08:02:52+00:00",
+   "author": "raghusapbi1",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi, \n as our BPC Source system changing to S4- we are required to upgrade 0material field length to 40 Char \n Please assist to advise the process to change standard BW info object to 40 Char"
+  },
+  {
+   "key": "d2d32ca13c8e2a42",
+   "title": "Unable to Access \"Maintain Dimensions for Units of Measurement\" Config in sap public cloud",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/unable-to-access-quot-maintain-dimensions-for-units-of-measurement-quot/qaq-p/14526770",
+   "published": "2026-11-20T08:02:05+00:00",
+   "author": "kistagoundla_30-08",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello Experts, \n I need to maintain the Units of Measurement under the Maintain Dimensions for Units of Measurement configuration activity in SAP S/4HANA Public Cloud. \n Although all three configuration nodes appear to be active in CBC, I am unable to access these configuration activities. \n I checked with the Security team, and they confirmed that all the required authorizations have been provided in CBC. However, the issue still persists, and I am unable to access these nodes. \n Could anyone please advise: \n Is there any additional business role or authorization required to access these configuration activities? \n Is there any additional activation or configuration required in CBC to make these nodes accessible? \n Any suggestions or guidance would be greatly appreciated."
+  },
+  {
+   "key": "3c52d41064ec2bea",
+   "title": "Overall Budget Field Greyed Out During Budget Supplement for IM-Integrated Project",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/overall-budget-field-greyed-out-during-budget-supplement-for-im-integrated/qaq-p/14526769",
+   "published": "2026-11-20T08:00:29+00:00",
+   "author": "Mphitso-123_",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "The project is assigned budget profile ZTT001 , where both Total Values and Annual Values are configured and active. Based on the configuration, we would expect overall budget values to be maintainable, but the system restricts input on the Overall Budget field. \n The project is also integrated with Investment Management (IM) through Program Type ZTT1 . We would like SAP to confirm whether this behaviour is standard system functionality, configuration-driven, or an indication of a defect. Specifically, we need clarification on whether IM integration can cause the Overall Budget field in CJ37 to become display-only while annual values remain editable."
+  },
+  {
+   "key": "5d26675c68327f79",
+   "title": "This application is an SAP application. Some settings are read-only",
+   "link": "https://community.sap.com/t5/technology-q-a/this-application-is-an-sap-application-some-settings-are-read-only/qaq-p/14526762",
+   "published": "2026-11-20T07:42:13+00:00",
+   "author": "Kiran_Adhane12",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear SAP, \n Please let me know how to delete the application in SAP CIS with following information - This application is an SAP application. Some settings are read-only. \n Please note, I've admin authorization to SAP CIS tenant. \n BR, \n K"
+  },
+  {
+   "key": "f41d8bc8b0808e63",
+   "title": "Double budget consumption during WBS-to-WBS settlement",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/double-budget-consumption-during-wbs-to-wbs-settlement/qaq-p/14526732",
+   "published": "2026-11-20T06:50:06+00:00",
+   "author": "subhampoddar2024",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "During settlement using CJ88 from a child WBS element (lower in the hierarchy) to a parent WBS element (higher in the hierarchy), the cost appears to use the budget twice. \n Availability control checks the budget at the receiver (parent) WBS element during settlement. \n The same cost still uses up the budget of the sender (child) WBS element. \n Why does the cost to be settled count against the budget again, and is this the expected behavior in S/4HANA PS? \n Because of this behavior, I have to increase the receiver WBS element’s budget before settlement and decrease the sender WBS element’s budget after settlement, so that the total budget of the project remains constant. \n Note: This issue occurs only during settlement, because afterwards the sender WBS element’s budget is naturally freed up."
+  },
+  {
+   "key": "7020abb12c34919a",
+   "title": "KEDR Exits are not triggering Goods issue posting time",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/kedr-exits-are-not-triggering-goods-issue-posting-time/qaq-p/14526633",
+   "published": "2026-11-20T03:37:36+00:00",
+   "author": "haripothula111",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Team, \n We have added new COPA characteristic in our operation concern, generated Operating concern, it automatically added new field in ACDOCA and CE4COSTT tables, we trying to add the custom logic to fill the data in that field, Cost based and Marginal Analysis both are activated our system, KEDR exits EXIT_SAPLKEAA_001, EXIT_SAPLKEAA_002, EXIT_SAPLKEDRCOPA_001 break points not triggering or not stopping at the time of Goods issue posting, KEDR will not work for account based COPA/Marginal Analysis ? tried to find the exit which can trigger at time of PGI and get the data using custom logic ? \n Thanks \n Hari"
+  },
+  {
+   "key": "3bb3643df81f9ae8",
+   "title": "ABAP Keyword Doc doesn't mention CX_SY_DYN_CALL_ILLEGAL_METHOD in static call of interface method",
+   "link": "https://community.sap.com/t5/abap-forum/abap-keyword-doc-doesn-t-mention-cx-sy-dyn-call-illegal-method-in-static/m-p/14526937#M1498",
+   "published": "2026-11-20T12:27:19+00:00",
+   "author": "Sandra_Rossi",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "I have reported this undocumented behavior to the ABAP Keyword Documentation team. I will add an answer as soon as it has been fixed or rejected by the team. \n\n Document: Static Method Calls | ABAP Keyword Documentation \n Error: missing information about possible exception CX_SY_DYN_CALL_ILLEGAL_METHOD in static call of an interface method which is not implemented. See below minimal code to reproduce. \n Documentation says: \n Catchable Exceptions \n CX_SY_NO_HANDLER \n See Class-Based Exceptions in Procedures. \n CX_SY_REF_IS_INITIAL \n Cause: Reference variable is initial \n Runtime error: OBJECTS_OBJREF_NOT_ASSIGNED \n\n Suggestion for improvement: add the missing exception: \n CX_SY_DYN_CALL_ILLEGAL_METHOD \n Cause: The called interface method is not yet implemented in the class. \n Runtime error: CALL_METHOD_NOT_IMPLEMENTED \n\n Minimal global class to reproduce (ADT > F9 > IF_ABAP_API_STATE~IS_RELEASED fails): CLASS zdemo DEFINITION PUBLIC.\n PUBLIC SECTION.\n INTERFACES if_oo_adt_classrun.\n INTERFACES if_abap_api_state.\nENDCLASS.\n\nCLASS zdemo IMPLEMENTATION.\n METHOD if_oo_adt_classrun~main.\n if_abap_api_state~is_released( ). \"<=== CX_SY_DYN_CALL_ILLEGAL_METHOD\n ENDMETHOD.\nENDCLASS. \n Thanks. \n Sandra"
+  },
+  {
+   "key": "b2e9d3ea696fdd42",
+   "title": "Asset - Depreciation in SAP B1 Hana",
+   "link": "https://community.sap.com/t5/welcome-corner-discussions/asset-depreciation-in-sap-b1-hana/m-p/14526878#M10824",
+   "published": "2026-11-20T10:39:37+00:00",
+   "author": "Sekar_Aruchamy",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "Hello Experts, \n We are a rental service company that has been using SAP Business One on HANA since 2023. Initially, we configured our Asset Master Data to calculate depreciation using the WDV method. Now, we wants to switch the depreciation method from WDV to the SLM. \n Currently, some assets have already been sold, while depreciation has already been posted. Before we proceed, we need clarification on the following points: \n 1) Is it possible to change the depreciation method from WDV to SLM in the middle of the year? \n 2) Is it possible to cancel or reverse all previously posted depreciation runs? \n 3) How can we post the revised depreciation values for the financial year 2024–2025?\" \n Support us."
+  },
+  {
+   "key": "fd2dfbd5fb28203a",
+   "title": "Hello SAP Community! 👋 From Learning ABAP to Exploring the Future of SAP Technology",
+   "link": "https://community.sap.com/t5/welcome-corner-discussions/hello-sap-community-from-learning-abap-to-exploring-the-future-of-sap/m-p/14526794#M10823",
+   "published": "2026-11-20T08:40:09+00:00",
+   "author": "yuvashankar",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "Hi everyone! \n I'm Yuva Shankar , an SAP ABAP Associate Consultant , and I'm excited to introduce myself to the SAP Community! \n I work primarily with SAP ABAP development , exploring different aspects of SAP technologies and continuously building my knowledge of the SAP ecosystem. \n My areas of interest include: \n\n SAP ABAP & OOABAP – Reports, ALV, Module Pool programming, and object-oriented development. \n\n SAP S/4HANA – Understanding modern SAP architecture and custom code development. \n\n CDS Views & OData – Building data models and developing services for SAP applications. \n\n SAP RAP & Fiori – Exploring modern application development and user experience. \n\n SAP BTP & Business AI – Learning about cloud technologies, automation, and AI-powered enterprise solutions. \n\n SAP Data Archiving & OpenText – Exploring enterprise data management and archiving solutions. \n I'm particularly interested in understanding how traditional SAP development is evolving with modern technologies such as RAP, BTP, and SAP Business AI. \n I'm joining this community to: \n\n Learn from experienced SAP professionals and industry experts. \n\n Connect with developers, consultants, architects, and fellow SAP enthusiasts. \n\n Share my learning experiences, technical discoveries, and practical solutions. \n\n Explore new SAP technologies and contribute to meaningful discussions. \n I believe learning becomes more valuable when knowledge is shared. I'm looking forward to connecting with like-minded people, exchanging ideas, and growing together in this amazing SAP ecosystem. \n If you're working with ABAP, S/4HANA, BTP, Fiori, or SAP Business AI, I'd love to connect and learn from your experiences! \n Looking forward to being part of the community! \n Yuva Shankar"
+  },
+  {
+   "key": "e8c5155eecc78ca9",
+   "title": "CDS - dynamic hierarchy from transactional data and AFO",
+   "link": "https://community.sap.com/t5/data-and-analytics-forum/cds-dynamic-hierarchy-from-transactional-data-and-afo/m-p/14526781#M199",
+   "published": "2026-11-20T08:27:35+00:00",
+   "author": "bellec",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "Hello, \n I need to generate a dynamic hierarchy from transactional data by using custom CDS views. \n In my transactional data, I have a parent field and a child field. \n I managed to have a successful result with a recursion view and a hierarchy view but the hierarchy is not usable in analysis for office : no hierarchy appears in the properties of the parent or child fields. Is it possible to make that ? \n Thanks for your help. \n Catherine"
+  },
+  {
+   "key": "4f955cc81d3898e5",
+   "title": "How SAP and Microsoft Innovate Together to Deliver AI Value for the Enterprise",
+   "link": "https://news.sap.com/2026/11/how-sap-microsoft-innovate-deliver-ai-value-enterprise/",
+   "published": "2026-11-20T14:15:00+00:00",
+   "author": "Brenda Bown",
+   "tags": [
+    "Artificial Intelligence",
+    "Ecosystem",
+    "Agentic AI",
+    "Joule Work",
+    "Microsoft",
+    "SAP Business AI"
+   ],
+   "feed": "SAP News Center",
+   "kind": "news",
+   "text": "Today, SAP is making Joule Work even more interoperable by taking advantage of the latest capabilities in Microsoft Work IQ , announced at Microsoft Ignite. \n Stop navigating apps, start directing the business with Joule Work \n\n Learn how \n\n Joule Work delivers access to processes, transactions, and unified operational data. The addition of Work IQ provides organizational context found in Microsoft 365 and beyond, closing the gap between where work happens and where business runs. \n\n As AI spreads across disconnected enterprise environments, keeping work connected and maintaining oversight becomes exponentially harder. That’s why SAP collaborates with Microsoft to solve both challenges and unlock exponential AI value. \n\n SAP combines expertise and capabilities with Microsoft’s to deliver more AI-driven business outcomes to our customers than either could individually, with security, governance, and responsible AI built in from day one. Countless customers already depend on SAP Business AI Platform , Joule Work , Microsoft Copilot , Microsoft 365 , Azure , and more to get work done. \n\n Many are connecting SAP business processes with Microsoft AI experiences today. For example, Nestlé uses RISE with SAP on Microsoft Azure to modernize and operate its SAP environment. The company also leverages Joule Assistants to improve accounts receivable workflows. \n\n AI value compounds when data, logic, and control come together \n\n In Joule Work, people describe what they want to achieve. Joule Assistants coordinate Joule Agents to execute multi-step workflows across SAP and third-party systems. They connect the relevant data, tools, and applications, all within SAP permissions and controls, to inform every decision, action, and agent-driven workflow. \n\n SAP Business AI Platform is the architecture underneath, connecting data foundations and bidirectional workflows. Within it, SAP Business Data Cloud provides the AI-ready data foundation: semantically rich, business-ready data products grounded in SAP’s business processes and relationships to power more accurate, context-aware AI. \n\n This is also a key place where SAP is collaborating with Microsoft to deliver compounding value. SAP Business Data Cloud Connect for Microsoft Fabric enables a unified data foundation across SAP and Microsoft environments through bidirectional, zero-copy data integration. Neither system sits in front of the other; the intelligence flows both ways. With this shared foundation in place, Joule Work and Microsoft Copilot draw on the same trusted data to inform decisions and orchestrate reliable agent-driven workflows across platforms and systems, without duplication or loss of context. \n\n With the release earlier this month of the agent gateway and the open A2A protocol, agents built with Microsoft Copilot Studio can delegate SAP-specific work directly to Joule Agents rather than requiring teams to recreate business processes from scratch. Security, identity, and policies carry through automatically, ensuring consistent execution across HR, finance, supply chain, and other SAP workloads. \n\n SAP AI Agent Hub , part of SAP Business AI Platform, gives organizations telemetry and lifecycle visibility across SAP, Microsoft, and third-party agents as they multiply across environments. It keeps every agent observable, accountable, and governed. \n\n Administrators can see which agents are running, how they’re being used, and the value delivered—and then use that information to have agents do even more. Think of it as an all-in-one air traffic control, measurement, and upgrade system for all your AI agents. And the best part is that the more you connect data, workflows, and agents, the more value those AI agents deliver. \n\n SAP AI capabilities available across Microsoft 365 experiences \n\n Today, Joule and Copilot offer many capabilities across the productivity tools people use every day. For example, employees can use Joule Work to access SAP business context directly from Microsoft Teams. Developers using Microsoft Copilot Studio can extend business processes without manually building SAP expertise into every agent, and incorporate SAP agents into their organization’s broader workflows . As Work IQ capabilities roll out over time, Joule Work will become progressively more intelligent and integrated across M365 environments. \n\n SAP is also working with Microsoft to bring enterprise process intelligence into even more places work already happens. We’re also continuing to enhance Joule Work and Microsoft Copilot’s ability to work bi-directionally. Soon, these AI agents will surface SAP insights inside Microsoft 365 as soon as they’re relevant, while SAP applications draw on Teams, SharePoint, and the rest of the Microsoft 365 environment to better inform every decision and action, supercharging measurable business outcomes. \n\n Three ways to extend Microsoft AI with Joule Agents and SAP business processes \n\n Microsoft practitioners have several opportunities right now to improve their workflows: \n\n Discover and use Joule Agents from Microsoft workflows without rebuilding SAP business logic. \n\n Extend Microsoft Copilot and Copilot Studio with SAP business processes, data, and expertise using SAP’s pre-built connectors, agent templates, and the A2A integration pattern available in Copilot Studio. From procurement matching to inventory checks, SAP business logic is available as governed agent capabilities that Copilot can call on demand. \n\n Leverage SAP AI Agent Hub to monitor agent activity across SAP and Microsoft environments with greater visibility into usage, execution, and outcomes. \n\n Are you a Microsoft practitioner ready to bring all that value into your daily work on behalf of important stakeholders? Learn how to get started here . \n\n Brenda Bown is chief marketing officer for SAP Business AI Platform and Joule at SAP. \n Sign up for our newsletter to receive weekly news highlights from the SAP News Center \n\n Subscribe here"
+  },
+  {
+   "key": "a95bf09d565cb8c4",
+   "title": "From Melbourne to Mexico: How SAP Concur and AI Help the San Francisco 49ers Take Their Game Global",
+   "link": "https://news.sap.com/2026/11/how-sap-concur-helps-san-francisco-49ers-take-game-global/",
+   "published": "2026-11-20T13:15:00+00:00",
+   "author": "Sinead Cormican",
+   "tags": [
+    "Corporate",
+    "Solutions",
+    "Spend management",
+    "SAP Concur",
+    "SAP Sponsorships"
+   ],
+   "feed": "SAP News Center",
+   "kind": "news",
+   "text": "As the San Francisco 49ers travel across continents during the 2026 NFL International Series, SAP Concur helps manage the travel, expenses, and payments that keep the team moving seamlessly. \n Connect travel booking and expense management for total visibility and control \n\n Learn how \n\n In professional football, success is measured in seconds. A perfectly timed pass, a decisive block, or a touchdown can make all the difference. But behind every moment on the field is an enormous amount of planning, coordination, and execution that makes it possible. For organizations competing at the highest level, it is also built in the back office—in the systems and processes that keep a complex operation running, wherever in the world it happens to be. \n\n For the San Francisco 49ers, the 2026 NFL season brings a new level of international complexity. With the NFL staging a record-breaking nine international games across seven countries and four continents, the league is taking American football to new audiences around the world. The 49ers are part of that global journey, with international matchups in Melbourne, Australia, and Mexico City, Mexico. \n\n The 49ers lead the way in the NFL in terms of miles traveled in the 2026- 2027 season, with an estimated 38,000 miles, meaning coordinating flights, hotels, travel arrangements, expenses, and vendor payments is a logistical feat. \n\n From Melbourne to Mexico: How SAP Concur Helps the San Francisco 49ers Take Their Game Global \n\n Click the button below to load the content from YouTube. \n\n Always allow YouTube \n\n More than a travel challenge \n\n Moving a professional sports franchise across continents is a different proposition from an away trip to another city. When the 49ers travel internationally, they bring players, coaches, medical staff, equipment, and a full organizational support operation with them. Expenses are incurred in multiple currencies. Vendors must be contracted and paid across different legal and regulatory environments. And finance teams back home need visibility into spending as happens—not weeks later, after expense reports have made their way through a manual process. \n\n The team behind the team \n\n As an SAP Concur customer, alongside other SAP solutions such as SAP Business AI Platform, the 49ers use the platform to manage travel booking and expense reimbursement in one integrated environment. Today, 95% of the organization’s business travel bookings flow through SAP Concur, giving the finance team centralized visibility across the travel program. \n\n The San Francisco 49ers also uses AI capabilities within SAP Concur, including expense automation and intelligent recommendations, helping simplify expense management and streamline processes for employees and the accounting team. \n\n “We use [SAP] Concur as our invoice, expense reimbursement, and travel booking platform,” said Jeremiah Lagasca, Accounting Manager at the San Francisco 49ers. “The accounting team has gained significant operational efficiencies by having all these components managed under one roof. Furthermore, this allows our users to have a more streamlined process for business travel and vendor payments.” \n\n The impact is measurable. By streamlining its financial processes through SAP Concur, the 49ers have reduced processing times for invoices and expense reports by 32%, helping the accounting team work more efficiently and manage the demands of the organization. \n\n Connected systems, connected teams \n\n Just as success on the field depends on every part of the team working together, operational success depends on processes and data being connected rather than siloed. \n\n SAP Concur brings travel, expense, and invoice management into a single platform reducing the manual handoffs and reconciliation work that tend to accumulate when these functions live in separate systems. For finance teams, that means better visibility into spending and faster close cycles. For employees traveling on behalf of the organization—whether the destination is Santa Clara or Mexico City—it means a more consistent and straightforward experience, from booking a trip to submitting a claim. \n\n As the team prepares to kick off in Mexico City on Sunday, the logistical work required to get them there is already done. The bookings are made, the expenses are tracked, the vendors are paid. That is not incidental to the team’s performance: it is part of what makes it possible. \n\n With SAP Concur helping bring travel, expenses, and payments together, the 49ers can focus on what matters most: performance, and competing at the highest level, wherever the game takes them. \n\n Sinéad Cormican is communications lead for SAP Global Sponsorships. \n San Francisco 49ers: Bringing the fan experience to the next level \n\n Explore their success story"
+  },
+  {
+   "key": "2cf3088d84428cfd",
+   "title": "Takeda Turns to SAP S/4HANA to Support Digital Transformation",
+   "link": "https://news.sap.com/2026/11/takeda-turns-to-sap-erp-digital-transformation/",
+   "published": "2026-11-20T12:15:00+00:00",
+   "author": "Brian Wasson",
+   "tags": [
+    "Cloud",
+    "Customers",
+    "Enterprise resource planning",
+    "Industries",
+    "AI",
+    "Cloud ERP",
+    "Customer story",
+    "Pharmaceuticals",
+    "RISE with SAP",
+    "SAP Cloud ERP",
+    "SAP S/4HANA"
+   ],
+   "feed": "SAP News Center",
+   "kind": "news",
+   "text": "Takeda Pharmaceuticals is in the midst of a major shift in how it runs some of its most important business processes. The biotech company’s move from SAP ERP Central Component (SAP ECC) to SAP Cloud ERP applications through the RISE with SAP journey is part of a broader effort to simplify how its business runs, make better use of data, and create more room for digital and AI-enabled ways of working. \n\n Takeda has 250 years of history, 50,000 employees, global operations, and medicines reaching patients in more than 80 countries. That’s why it’s important for the transformation project to connect everyday process improvements with a larger purpose: helping employees work more effectively and supporting the reliable delivery of medicines to patients. \n\n “A couple of years ago, around 2022 or 2023, Takeda decided to make data and digital capabilities a core part of our business strategy,” said Roland Straub, global business transformation lead for Supply Chain at Takeda Pharmaceuticals. “With the AI developments of the last few years, we see a real opportunity to bring automation and support to life for our employees and, importantly, for our patients.” \n\n Takeda Brings Data and Digital to Life with SAP \n\n Click the button below to load the content from YouTube. \n\n Always allow YouTube \n\n Video by Natalie Hauck and Alexander Januschke \n\n SAP Cloud ERP offers an integrated suite of business applications that can support core business processes. For organizations moving from SAP ECC, the shift can also be an opportunity to simplify processes, reduce complexity, and prepare the business for more embedded intelligence. \n\n Straub explained why that foundation matters to Takeda: “SAP is the core system that supports and operates nearly all of our processes around the globe, from manufacturing and supply chain to finance, quality, and beyond.” \n\n The transformation reflects SAP’s work to embed AI capabilities throughout business processes. The Autonomous Enterprise is SAP’s vision for how businesses can operate with people in control, systems working in context, and governance built in. \n\n That balance is especially important in regulated industries such as life sciences. Autonomous regulated manufacturing scenarios can help connect supply chain, production, and quality processes while supporting consistency, reducing manual effort, and maintaining compliance boundaries. \n\n Takeda is also working with SAP on co-development in this area. “Together, we are co-developing new agentic functionalities for regulated industries,” Straub said. “We believe these capabilities can scale across the industry, not just within Takeda.” \n\n Looking ahead, Straub said the priorities are clear: bring the SAP S/4HANA journey to life, understand and use the AI capabilities in SAP Cloud ERP effectively, and continue building the partnership with SAP. For Takeda, success goes beyond just a technology go-live. It’s a more connected, intelligent, and patient-focused way of working. \n Get weekly updates from the SAP News Center, delivered straight to your inbox \n\n Sign up for the newsletter"
+  },
+  {
+   "key": "6b7eafccfbde4516",
+   "title": "Time Tracking – Reprocessing Attendance After an External Integration Failure",
+   "link": "https://community.sap.com/t5/human-capital-management-q-a/time-tracking-reprocessing-attendance-after-an-external-integration-failure/qaq-p/14527210",
+   "published": "2026-11-20T21:24:14+00:00",
+   "author": "AMIT_SHARMA01",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Scenario: \n A customer integrates an external biometric attendance system with SAP SuccessFactors. \n Due to an API failure, attendance records for 200 employees were not transferred for three days. \n The external system still contains the original clock-in and clock-out records. \n The integration team successfully restores connectivity, but the customer wants to re-import only the missing records without creating duplicates for employees whose attendance was already transferred. \n Question: \n What is the recommended approach for reprocessing failed attendance records from an external system? \n How can we implement duplicate detection and idempotency when importing Clock In Clock Out events through APIs or middleware?"
+  },
+  {
+   "key": "0fac26b32c3d96db",
+   "title": "Time Tracking – Employees Working Across Multiple Cost Centers",
+   "link": "https://community.sap.com/t5/human-capital-management-q-a/time-tracking-employees-working-across-multiple-cost-centers/qaq-p/14527205",
+   "published": "2026-11-20T20:48:17+00:00",
+   "author": "AMIT_SHARMA01",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Scenario: \n A customer has employees who work across multiple departments during the same day. \n For example: Working periodCost centerHours \n\n 8 AM–12 PM \n Finance \n 4 \n\n 12 PM–3 PM \n Operations \n 3 \n\n 3 PM–5 PM \n Projects \n 2 \n The employee's Job Information contains only the primary cost center. \n However, the customer wants the attendance hours to be distributed automatically to the respective cost centers for payroll and controlling purposes. \n Question: \n How can SAP SuccessFactors Time Tracking capture and distribute working hours across multiple cost centers within a single working day? \n Can employees record cost center information through time events, or should this be handled through time sheet coding, account assignment, or integration with SAP ERP S/4HANA?"
+  },
+  {
+   "key": "9667255add4342e6",
+   "title": "Employee Central - Rehiring an Employee with the Same Person ID but a New Employment",
+   "link": "https://community.sap.com/t5/human-capital-management-q-a/employee-central-rehiring-an-employee-with-the-same-person-id-but-a-new/qaq-p/14527203",
+   "published": "2026-11-20T20:45:03+00:00",
+   "author": "AMIT_SHARMA01",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Scenario: \n An employee leaves the organization in March and is rehired in November. \n The employee returns with a different position, department, manager, and employment terms. \n The customer wants to retain the employee's previous employment history while ensuring that the new employment has a separate set of job information and workflow assignments. \n However, some integrations are still identifying the employee using the previous employment information. \n Question: \n What is the recommended approach for handling rehires in Employee Central when the employee retains the same person identity but receives a new employment record? \n How should integrations distinguish between Person ID External, User ID, and Employment ID to avoid updating the previous employment instead of the new one?"
+  },
+  {
+   "key": "9f93a81a74031a66",
+   "title": "SAC Currency conversion using data action",
+   "link": "https://community.sap.com/t5/technology-q-a/sac-currency-conversion-using-data-action/qaq-p/14527260",
+   "published": "2026-11-21T08:22:49+00:00",
+   "author": "kiran_s611",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi All, \n I am trying to do currency conversion with Data action. \n I did the below steps. \n 1. In model i have created the Target measure like below \n\n 2. I have created a Data Action parameter like below \n\n 3. Created the conversion step like below \n\n 4. In the filter section i have used the parameter like below \n\n I am running the Data Action and selecting the currency value \n\n But it is populating data only for single region only like below. Value is coming correctly but currency symbol is displaying wrong in it. \n\n My requirement is to populate all records ( for all regions ) under Target Measure with currency converted values. \n How to achieve it. \n Can anyone of you please help me on this. \n Thanks"
+  }
+ ],
+ "triage": {
+  "0": {
+   "i": 0,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Argues SAP content must be AI-retrieval ready before blaming Joule; a content-quality checklist, not a developer how-to."
+  },
+  "1": {
+   "i": 1,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Promotes an e-learning course on Planon real estate management integrated with SAP contract and lease management."
+  },
+  "2": {
+   "i": 2,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Covers data-readiness challenges for PLM migrations; a migration-planning topic rather than development."
+  },
+  "3": {
+   "i": 3,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Explains how SAP Business Data Cloud relates to SAP Datasphere; conceptual overview with no build content."
+  },
+  "4": {
+   "i": 4,
+   "category": "S/4HANA Development & Extensibility",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Implements a lean EWM BAdI (/SCWM/EX_PS_DET_PREPARE) to pass Ship-To into packaging specification determination for customer-specific Pick HU material."
+  },
+  "5": {
+   "i": 5,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Configuration guide for alternative-based confirmation in S/4HANA aATP; customizing rather than development."
+  },
+  "6": {
+   "i": 6,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Availability check fails to read special stock E during 1P9 intercompany transfer in S/4HANA Cloud; a functional stock-determination issue."
+  },
+  "7": {
+   "i": 7,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks community members to vote for a PO output management idea request; a promotional call, not technical content."
+  },
+  "8": {
+   "i": 8,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Marketing news on enterprise architecture for AI with a unified-data promotion; no developer content."
+  },
+  "9": {
+   "i": 9,
+   "category": "Fiori & UI5",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Shows how to connect an ADT-generated Fiori app from the ABAP system to SAP Business Application Studio workspace projects."
+  },
+  "10": {
+   "i": 10,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Announces a 2027 live-session series on SAP HANA administration; learning event promotion, not development."
+  },
+  "11": {
+   "i": 11,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Recap of a SAP Inside Track Paraguay talk on bank communication management and payment tracking; event content."
+  },
+  "12": {
+   "i": 12,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Lists December 2026 expert-guided implementation sessions for SAP Signavio; enablement schedule, not technical content."
+  },
+  "13": {
+   "i": 13,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Announces a Gartner Peer Insights recognition for SAP SuccessFactors Recruiting; marketing announcement."
+  },
+  "14": {
+   "i": 14,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Event promo for SAP Integration Day Bengaluru on 24 November 2026 focused on integration readiness for AI agents."
+  },
+  "15": {
+   "i": 15,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Community-focused recap of the opening of SAP Inside Track Paraguay 2026; no technical content."
+  },
+  "16": {
+   "i": 16,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Announces SAP Joule for Consultants as a reference aid in eligible SAP certification assessments; certification policy, not development."
+  },
+  "17": {
+   "i": 17,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Walkthrough of extending a standard SAP-delivered sourcing negotiation AI agent using Joule Studio."
+  },
+  "18": {
+   "i": 18,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Portuguese recap of a Joule voice-demo talk at SAP Inside Track Curitiba 2026; event coverage rather than a how-to."
+  },
+  "19": {
+   "i": 19,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Announces timing of UK payroll legal changes for April 2027; payroll functional update, not development."
+  },
+  "20": {
+   "i": 20,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Describes replicating work centers from S/4HANA OP to Field Service & Asset Management; a standard replication setup rather than custom code."
+  },
+  "21": {
+   "i": 21,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks why SAP Note feedback says learning assignments are complete; a support-portal UI question."
+  },
+  "22": {
+   "i": 22,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks how to reorder MMBE stock columns for a specific user; a personalization question, not development."
+  },
+  "23": {
+   "i": 23,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "German employee replication to ERP fails on mandatory field P0002-GESCH; HR integration value-mapping configuration issue."
+  },
+  "24": {
+   "i": 24,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks how to partially bill a public cloud service order item as technicians confirm time; a billing business process question."
+  },
+  "25": {
+   "i": 25,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks about standard BRIM enrichment sequence for company code and division during raw-to-billable BIT transfer."
+  },
+  "26": {
+   "i": 26,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Purchase order delivery dates land on weekends or holidays despite a 7-day plant calendar; a MM configuration question."
+  },
+  "27": {
+   "i": 27,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks for standard configuration to auto-determine shipping type from shipping condition for DG data on delivery notes."
+  },
+  "28": {
+   "i": 28,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks how to extend the standard BW InfoObject 0MATERIAL to 40 characters for a BPC-to-S/4 migration."
+  },
+  "29": {
+   "i": 29,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Cannot access units-of-measurement dimension configuration activities in S/4HANA Public Cloud despite active nodes; an authorization or config access issue."
+  },
+  "30": {
+   "i": 30,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Overall budget field is greyed out for an IM-integrated project despite active budget profile; a configuration question."
+  },
+  "31": {
+   "i": 31,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks how to delete an SAP application in SAP Cloud Identity Services where settings are read-only; tenant admin issue."
+  },
+  "32": {
+   "i": 32,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Settlement from child to parent WBS via CJ88 consumes budget twice; a project-system availability control business question."
+  },
+  "33": {
+   "i": 33,
+   "category": "ABAP & Clean Code",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Custom COPA KEDR exits (EXIT_SAPLKEAA_00x) are not firing at goods issue posting time; a custom-logic enhancement debugging problem."
+  },
+  "34": {
+   "i": 34,
+   "category": "ABAP & Clean Code",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "ABAP keyword documentation omits CX_SY_DYN_CALL_ILLEGAL_METHOD for static calls of interface methods; reported documentation gap."
+  },
+  "35": {
+   "i": 35,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks how to switch asset depreciation from WDV to SLM in SAP Business One after some assets were sold; a finance configuration question."
+  },
+  "36": {
+   "i": 36,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Self-introduction from an ABAP associate consultant; community networking post with no technical content."
+  },
+  "37": {
+   "i": 37,
+   "category": "CDS & Data Modeling",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Building a dynamic hierarchy from parent-child transactional data with recursive CDS and hierarchy views, but AFO does not expose it."
+  },
+  "38": {
+   "i": 38,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "News on SAP and Microsoft making Joule Work interoperable with Microsoft Work IQ; marketing announcement."
+  },
+  "39": {
+   "i": 39,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Customer story on SAP Concur travel and expense support for the San Francisco 49ers; marketing content."
+  },
+  "40": {
+   "i": 40,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Customer story on Takeda's move from SAP ECC to SAP Cloud ERP via RISE; business transformation news."
+  },
+  "41": {
+   "i": 41,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Reprocessing attendance records after an external biometric integration outage in SuccessFactors Time Tracking; a functional process scenario."
+  },
+  "42": {
+   "i": 42,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Splitting attendance hours across multiple cost centers in SuccessFactors Time Tracking; an HR configuration scenario."
+  },
+  "43": {
+   "i": 43,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Rehiring an employee with the same person ID but new employment in Employee Central; an HR master data scenario."
+  },
+  "44": {
+   "i": 44,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Currency conversion in an SAC data action using a target measure and parameter filter; analytics modeling, not ABAP development."
+  }
+ },
+ "deep": {
+  "9": {
+   "summary": "A step-by-step BAS guide for connecting to a Fiori app already deployed from ADT or the Fiori generator. It says to use the command palette command 'Fiori: Download ADT Deployed App from SAPUI5 ABAP Repository', pick a BTP destination, pick an application from the list, and download it to a workspace folder. It also shows the expected project tree and gives troubleshooting for a missing command and a missing destination. The post is practical for beginners, but it is mostly UI click-through with generic claims and little depth.",
+   "key_points": [
+    "Empty BAS workspace is the starting problem: Import Project and Open Folder only show the local machine, not the ABAP repository.",
+    "Use the command palette command 'Fiori: Download ADT Deployed App from SAPUI5 ABAP Repository' to pull an app from the ABAP system into BAS.",
+    "The flow is: choose a BTP system destination, let BAS authenticate with the destination's stored credentials, select the app by title/ID/package, then choose a target folder.",
+    "The post lists the expected project layout: webapp/, manifest.json, ui5.yaml, ui5-local.yaml, ui5-mock.yaml, ui5-deploy.yaml, .appGenInfo.json, archive.zip.",
+    "Troubleshooting covers a missing command (install Fiori extensions and restart) and a missing destination (check BTP destination, ask the admin)."
+   ],
+   "technical_details": [
+    "Command palette: Ctrl+Shift+P / Cmd+Shift+P",
+    "Command: 'Fiori: Download ADT Deployed App from SAPUI5 ABAP Repository'",
+    "Prompts: 'Select Destination:', 'Select Application:', 'Select Target Folder:'",
+    "Application ID example: com.example.myapp",
+    "Expected files: webapp/manifest.json, webapp/Component.js, ui5.yaml, ui5-deploy.yaml, .appGenInfo.json, archive.zip, package.json",
+    "Destination lives in BTP cockpit; BAS uses stored destination credentials"
+   ],
+   "why_it_matters": "Many developers hit this exact gap when they move from ADT-built Fiori apps to BAS. The post gives the right command name and a sensible first workflow for a team that wants to edit existing apps in BAS.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How do I find and open an existing Fiori app that was deployed to the ABAP system from Business Application Studio?",
+   "teaching_angle": "Use it as a lab: deploy a small app with ADT, then reproduce the download in BAS and check the generated UI5 project files. Also discuss how the destination and the ABAP repository affect what appears. The post does not cover ABAP-side authorization or repository details, so add those yourself if you teach them.",
+   "quality": 3
+  },
+  "17": {
+   "summary": "This post is a one-sentence teaser that says it will show how to extend a standard SAP-delivered AI Sourcing Negotiation Agent with Joule Studio. It has no steps, code, configuration, or screenshots in the text provided. There is nothing technical to evaluate.",
+   "key_points": [
+    "The post only states its goal: extend a standard SAP-delivered AI Sourcing Negotiation Agent.",
+    "Joule Studio is named, but no capability, extension mechanism, or prerequisites are described.",
+    "The text contains no technical detail to check."
+   ],
+   "technical_details": [
+    "Product named: Joule Studio",
+    "Agent named: SAP-delivered AI Sourcing Negotiation Agent"
+   ],
+   "why_it_matters": "The topic (extending standard Joule agents) is relevant to developers moving into AI-based SAP extensions, but this text does not deliver any of that content.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Not usable in class as it stands. If the full article is available, check how the extension is built, which extension points the standard agent exposes, and how it is deployed and tested.",
+   "quality": 1
+  },
+  "4": {
+   "summary": "The post describes a customer-specific Pick HU packaging material determination in SAP EWM. Standard EWM does not pass the Ship-To into packaging specification determination, so the author uses a lean BAdI, /SCWM/EX_PS_DET_PREPARE, to supply it. A custom condition table, CUSBDL01, and a warehouse order creation rule that creates one warehouse order per customer complete the design. The post says test results before and after are included, but those results are not in the text provided.",
+   "key_points": [
+    "Gap: standard EWM does not pass Ship-To to packaging specification determination, so Pick HU packaging cannot vary by customer.",
+    "Fix: BAdI /SCWM/EX_PS_DET_PREPARE supplies the Ship-To during packaging specification determination.",
+    "Customer-to-packaging mapping is held in a custom condition table, CUSBDL01.",
+    "A warehouse order creation rule creates one warehouse order per customer, so the Pick HU is created when the warehouse order is created.",
+    "Example outcomes: ZEURO or ZINDUSTRIAL packaging material."
+   ],
+   "technical_details": [
+    "BAdI: /SCWM/EX_PS_DET_PREPARE",
+    "Custom condition table: CUSBDL01",
+    "Packaging specification determination (EWM)",
+    "Warehouse order creation rule (one WO per customer)",
+    "Pick HU creation at warehouse order creation",
+    "Packaging materials: ZEURO, ZINDUSTRIAL"
+   ],
+   "why_it_matters": "This is a concrete, narrow EWM enhancement pattern: pass data the standard process drops, then drive the result through a condition table. The pattern can be reused for other attributes that standard packaging determination ignores.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How do I make EWM choose a Pick HU packaging material based on the customer (Ship-To), which standard EWM cannot do?",
+   "teaching_angle": "Good for an EWM case study: trace the standard determination, find where the Ship-To is lost, place a BAdI there, then connect the result to warehouse order creation. Ask learners to draw the data flow before looking at the code. The post's own test data would be needed to check the claims.",
+   "quality": 3
+  },
+  "34": {
+   "summary": "The author reports that the ABAP Keyword Documentation for static method calls omits CX_SY_DYN_CALL_ILLEGAL_METHOD. This exception is raised when a static call goes to an interface method that the class has not implemented. The author gives a minimal global class that calls IF_ABAP_API_STATE~IS_RELEASED without implementing it, and has filed the issue with the documentation team. There is no answer yet in the post.",
+   "key_points": [
+    "The documentation lists CX_SY_NO_HANDLER and CX_SY_REF_IS_INITIAL as catchable exceptions for static calls but omits CX_SY_DYN_CALL_ILLEGAL_METHOD.",
+    "The proposed missing entry: CX_SY_DYN_CALL_ILLEGAL_METHOD with cause 'called interface method not yet implemented in the class' and runtime error CALL_METHOD_NOT_IMPLEMENTED.",
+    "The reproduction is a global class that declares INTERFACES if_abap_api_state and calls is_released in if_oo_adt_classrun~main, but never implements is_released.",
+    "The author reported it to the documentation team and will update the post when it is fixed or rejected."
+   ],
+   "technical_details": [
+    "Class: ZDEMO (global, PUBLIC)",
+    "Interfaces: IF_OO_ADT_CLASSRUN, IF_ABAP_API_STATE",
+    "Call: if_abap_api_state~is_released( )",
+    "Exception: CX_SY_DYN_CALL_ILLEGAL_METHOD",
+    "Runtime error: CALL_METHOD_NOT_IMPLEMENTED",
+    "Doc topic: Static Method Calls (ABAP Keyword Documentation)"
+   ],
+   "why_it_matters": "A catchable exception that the docs omit can lead to untested code paths. The example is small and easy to run, so it is a good test case for documentation gaps.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Which exception is raised when a static call hits an interface method that a class has not implemented, and why is it missing from the docs?",
+   "teaching_angle": "Good for a lab on exception behavior: reproduce the error, show that it cannot be caught the way the documented exceptions are, then add a handler for it. It also shows how to report documentation issues. Test it in your own release, since the post does not give one.",
+   "quality": 4
+  },
+  "37": {
+   "summary": "The author wants a dynamic hierarchy built from parent and child fields in transactional data, using custom CDS views. A recursive view and a hierarchy view both return results, but the hierarchy does not show up as a hierarchy in the field properties in Analysis for Office. The author asks whether this can be done. The post gives no view definitions, annotations, or AFO version, and no answer is included.",
+   "key_points": [
+    "Source data: parent and child fields in transactional tables.",
+    "Built with a recursive view and a hierarchy view, and both return data.",
+    "Problem: AFO shows no hierarchy in the properties of the parent or child fields.",
+    "No code, annotations, or AFO version is given, so the cause cannot be checked from the post."
+   ],
+   "technical_details": [
+    "Custom CDS views with a recursive view and a hierarchy view",
+    "Analysis for Office (AFO) field properties",
+    "No analytic annotations or view definitions are shown in the post"
+   ],
+   "why_it_matters": "Exposing hierarchies to analytics tools from CDS is a common requirement, and a view that returns data but is not usable as a hierarchy in AFO is a typical symptom of a missing analytic setup.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How do I expose a CDS parent-child hierarchy so that Analysis for Office recognizes it as a hierarchy?",
+   "teaching_angle": "Use it to teach the difference between data that merely returns parent-child rows and a hierarchy that an analytics client can use. Ask students to check the analytic annotations and the query's exposure, then test in AFO. Keep the answer hedged: the post does not give the definitions needed to confirm the cause.",
+   "quality": 2
+  },
+  "33": {
+   "summary": "A user says that KEDR exits EXIT_SAPLKEAA_001, EXIT_SAPLKEAA_002, and EXIT_SAPLKEDRCOPA_001 do not stop at breakpoints during goods issue posting. They added a COPA characteristic to a generated operating concern, which created the new field in ACDOCA and CE4COSTT. Cost-based and marginal analysis are both active. They ask whether KEDR does not work for account-based COPA and Marginal Analysis, and they want an exit that runs at PGI. The post has no reply.",
+   "key_points": [
+    "Context: new COPA characteristic in a generated operating concern; new field added to ACDOCA and CE4COSTT.",
+    "Goal: fill the new field with custom logic during goods issue (PGI) posting.",
+    "Exits that do not trigger: EXIT_SAPLKEAA_001, EXIT_SAPLKEAA_002, EXIT_SAPLKEDRCOPA_001.",
+    "Both cost-based and marginal analysis are active.",
+    "The question is open: whether KEDR applies to account-based COPA and Marginal Analysis, and which exit runs at PGI."
+   ],
+   "technical_details": [
+    "Function groups/includes: SAPLKEAA (EXIT_SAPLKEAA_001, EXIT_SAPLKEAA_002), SAPLKEDRCOPA (EXIT_SAPLKEDRCOPA_001)",
+    "Tables: ACDOCA, CE4COSTT (new field added after operating concern regeneration)",
+    "Scenario: goods issue posting (PGI)",
+    "COPA variants: account-based COPA and Marginal Analysis"
+   ],
+   "why_it_matters": "Custom fields added to COPA through the ACDOCA and CE4COSTT path depend on the right posting-time exit. Choosing the wrong exit means the field stays empty, which is a common cause of silent data gaps.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Why do the KEDR exits not trigger during goods issue posting for the new COPA field, and which exit should fill the field at PGI?",
+   "teaching_angle": "Good for a COPA case study: ask learners which exit sits in which posting path and how to verify with a breakpoint or trace. The post shows no response and does not state the release, so do not present any answer as confirmed.",
+   "quality": 2
+  }
+ },
+ "digest": {
+  "headline": "A thin day: one documentation gap on an uncaught ABAP exception, an ADT-to-BAS Fiori workflow, an EWM BAdI pattern, and two unanswered forum questions.",
+  "overview": "Six items today, none of them a release. The most useful for ABAP developers is a forum report that the Keyword Documentation omits CX_SY_DYN_CALL_ILLEGAL_METHOD for static calls to unimplemented interface methods (ref 34). The others are a BAS how-to for downloading ADT-deployed Fiori apps (ref 9), an EWM packaging determination enhancement via a BAdI (ref 4), and two open questions on CDS hierarchies in AFO (ref 37) and KEDR exits at goods issue (ref 33). The Joule Studio post (ref 17) has no content.\n\nThe practical value is in the patterns, not the news. Check exception behaviour yourself instead of trusting the docs, and treat the two unanswered questions as teaching prompts, not as confirmed answers. None of the posts gives a release number, so verify everything on your own system.",
+  "top_stories": [
+   {
+    "title": "Keyword Doc omits CX_SY_DYN_CALL_ILLEGAL_METHOD for static interface method calls",
+    "summary": "A developer reports that the Static Method Calls documentation lists CX_SY_NO_HANDLER and CX_SY_REF_IS_INITIAL but not CX_SY_DYN_CALL_ILLEGAL_METHOD. That exception, with runtime error CALL_METHOD_NOT_IMPLEMENTED, occurs when a class declares an interface but does not implement a called method. The repro is a global class with INTERFACES if_abap_api_state that calls if_abap_api_state~is_released( ) in if_oo_adt_classrun~main. The issue has been filed with the documentation team, with no reply yet.",
+    "why_it_matters": "It is a catchable exception that the docs do not mention, and the repro is small enough to run in minutes. Good material for showing how to check behaviour instead of relying on documentation.",
+    "priority": 1,
+    "refs": [
+     34
+    ]
+   },
+   {
+    "title": "Opening ADT-deployed Fiori apps in Business Application Studio",
+    "summary": "The post explains how to pull an app already deployed to the ABAP repository into BAS. Use the command 'Fiori: Download ADT Deployed App from SAPUI5 ABAP Repository', choose a BTP destination, select the app, and pick a target folder. It lists the expected project files (manifest.json, ui5.yaml, ui5-deploy.yaml, .appGenInfo.json) and troubleshooting for a missing command or destination.",
+    "why_it_matters": "Import Project and Open Folder only see the local machine, which confuses teams moving between ADT and BAS. The post gives the correct command, though it stays at click-through level.",
+    "priority": 2,
+    "refs": [
+     9
+    ]
+   },
+   {
+    "title": "EWM: customer-specific Pick HU packaging material via BAdI",
+    "summary": "Standard EWM does not pass the Ship-To into packaging specification determination. The author uses BAdI /SCWM/EX_PS_DET_PREPARE to supply it, a custom condition table CUSBDL01 for the customer-to-packaging mapping, and a warehouse order creation rule giving one warehouse order per customer. The before/after test results are not in the text provided.",
+    "why_it_matters": "It is a reusable pattern: supply data the standard process drops, then drive the result through a condition table.",
+    "priority": 3,
+    "refs": [
+     4
+    ]
+   },
+   {
+    "title": "Two open questions: CDS hierarchy in AFO and KEDR exits at PGI",
+    "summary": "One user has a recursive view and a hierarchy view that return data, but AFO does not show a hierarchy in the field properties. Another finds that EXIT_SAPLKEAA_001, EXIT_SAPLKEAA_002 and EXIT_SAPLKEDRCOPA_001 do not stop at goods issue after adding a COPA characteristic (new field in ACDOCA and CE4COSTT). Neither post has an answer, definitions, or a release.",
+    "why_it_matters": "Both are common real-world gaps (analytic exposure of hierarchies, posting-time exit selection in account-based COPA), but the causes cannot be confirmed from the posts.",
+    "priority": 3,
+    "refs": [
+     37,
+     33
+    ]
+   }
+  ],
+  "releases": [],
+  "deep_dives": [
+   {
+    "title": "Unimplemented interface methods: CX_SY_DYN_CALL_ILLEGAL_METHOD",
+    "explanation": "The reported case: a global class declares `INTERFACES if_abap_api_state` but does not implement `is_released`. A static call to `if_abap_api_state~is_released( )` from `if_oo_adt_classrun~main` ends in runtime error `CALL_METHOD_NOT_IMPLEMENTED`, with the exception `CX_SY_DYN_CALL_ILLEGAL_METHOD`. The author says the Static Method Calls documentation lists `CX_SY_NO_HANDLER` and `CX_SY_REF_IS_INITIAL` but not this one, and has filed it with the documentation team.\n\nThe practical lesson is to reproduce it. Create the class in ADT, run it with F9, and look at the short dump. Then wrap the call in `TRY ... CATCH cx_sy_dyn_call_illegal_method` and check whether the handler fires in your release. The post gives no release, so do not assume the behaviour is identical across systems.\n\nIt also shows that an interface does not have to be fully implemented for the class to activate in this scenario, which is why the failure only appears at runtime. Tell students not to rely on the documentation's exception list as complete, and to test unusual paths.",
+    "key_concepts": [
+     "CX_SY_DYN_CALL_ILLEGAL_METHOD",
+     "CALL_METHOD_NOT_IMPLEMENTED",
+     "Static method calls",
+     "IF_OO_ADT_CLASSRUN",
+     "Verifying documentation by reproduction"
+    ],
+    "refs": [
+     34
+    ]
+   },
+   {
+    "title": "Moving from ADT-deployed Fiori apps to BAS",
+    "summary_note": "",
+    "explanation": "Apps deployed from ADT or the Fiori generator live in the SAPUI5 ABAP Repository. In BAS, Import Project and Open Folder only reach the local workspace, so the app does not appear. The post's answer is the command palette entry 'Fiori: Download ADT Deployed App from SAPUI5 ABAP Repository'.\n\nThe flow: select a BTP destination (BAS uses its stored credentials), select the app by title, ID or package, then choose a target folder. The result should contain `webapp/`, `manifest.json`, `ui5.yaml`, `ui5-local.yaml`, `ui5-mock.yaml`, `ui5-deploy.yaml`, `.appGenInfo.json` and `archive.zip`.\n\nIf the command is missing, install the Fiori extensions and restart; if the destination is missing, check it in the BTP cockpit. The post does not cover ABAP-side authorizations or repository details, so add those yourself when teaching.",
+    "key_concepts": [
+     "SAPUI5 ABAP Repository",
+     "BTP destination",
+     "ui5-deploy.yaml",
+     "Command palette",
+     "manifest.json"
+    ],
+    "refs": [
+     9
+    ]
+   }
+  ],
+  "trending_problems": [
+   {
+    "theme": "Hierarchies from CDS not usable in analytics clients",
+    "description": "A recursive and a hierarchy CDS view return data, but AFO shows no hierarchy on the parent/child fields. No definitions or annotations were posted.",
+    "teaching_tip": "Have students compare the view definition against what an analytics client needs, then test in AFO. Do not present a cause as confirmed.",
+    "refs": [
+     37
+    ]
+   },
+   {
+    "theme": "Choosing the right exit for custom COPA fields at PGI",
+    "description": "Three KEDR exits do not trigger at goods issue after a COPA characteristic was added to ACDOCA and CE4COSTT.",
+    "teaching_tip": "Teach how to locate the posting path with a breakpoint or trace before picking an exit.",
+    "refs": [
+     33
+    ]
+   },
+   {
+    "theme": "Incomplete documentation of runtime exceptions",
+    "description": "The Keyword Doc omits a catchable exception for static calls to unimplemented interface methods.",
+    "teaching_tip": "Reproduce, catch, and report documentation gaps.",
+    "refs": [
+     34
+    ]
+   }
+  ],
+  "post_drafts": [
+   {
+    "title": "Unimplemented interface method",
+    "text": "*Doc gap: static call to an unimplemented interface method*\n\nA class declares an interface but never implements a method.\nYou call it statically.\n\nResult: runtime error *CALL_METHOD_NOT_IMPLEMENTED*, exception *CX_SY_DYN_CALL_ILLEGAL_METHOD*.\n\nThe Keyword Doc for static method calls reportedly doesn't list it. A developer has filed it with the docs team.\n\n*Takeaway:* reproduce it in ADT on your release and test your CATCH. Don't trust the doc's exception list as complete.\n\nhttps://community.sap.com/t5/abap-forum/abap-keyword-doc-doesn-t-mention-cx-sy-dyn-call-illegal-method-in-static/m-p/14526937#M1498"
+   },
+   {
+    "title": "ADT app not visible in BAS",
+    "text": "*Can't find your ADT-deployed Fiori app in BAS?*\n\nImport Project and Open Folder only see your local machine.\n\nUse the command palette:\n*Fiori: Download ADT Deployed App from SAPUI5 ABAP Repository*\n\nThen pick the BTP destination, the app, and a target folder.\n\nCommand missing? Install the Fiori extensions and restart.\nDestination missing? Check it in BTP cockpit.\n\nhttps://community.sap.com/t5/frontend-ui5-sap-fiori-blog-posts/how-to-find-and-connect-your-existing-adt-generated-fiori-application-in/ba-p/14527094"
+   }
+  ],
+  "interview_questions": [
+   {
+    "question": "A class declares an interface but does not implement one of its methods, and another program calls it statically. What happens, and how do you handle it?",
+    "answer": "Per today's forum report, the call ends in runtime error CALL_METHOD_NOT_IMPLEMENTED, raised as CX_SY_DYN_CALL_ILLEGAL_METHOD. It surfaces at runtime, not at design time. The reporter says the Keyword Documentation for static method calls does not list this exception. You can wrap the call in TRY and CATCH cx_sy_dyn_call_illegal_method, but the better fix is to implement the method. I would reproduce it in my own release first, because the post does not state one. I would also add a unit test that exercises every interface method a consumer calls.",
+    "level": "Mid-level",
+    "refs": [
+     34
+    ]
+   },
+   {
+    "question": "Your team built Fiori apps from ADT, and a colleague wants to edit one in BAS but sees an empty workspace. How do you get the app in?",
+    "answer": "Import Project and Open Folder only reach the local machine, not the ABAP repository. Use the command palette command 'Fiori: Download ADT Deployed App from SAPUI5 ABAP Repository'. Choose the BTP destination, let BAS authenticate with its stored credentials, select the app and choose a target folder. You should get webapp/, manifest.json and the ui5*.yaml files. If the command is missing, install the Fiori extensions; if the destination is missing, check the BTP cockpit. Authorizations on the ABAP side are not covered by the source, so confirm them separately.",
+    "level": "Mid-level",
+    "refs": [
+     9
+    ]
+   },
+   {
+    "question": "Standard EWM drops the Ship-To when determining packaging specifications. How would you enhance it for customer-specific Pick HU packaging?",
+    "answer": "The reported approach uses BAdI /SCWM/EX_PS_DET_PREPARE to supply the Ship-To to packaging specification determination. The customer-to-packaging mapping is held in a custom condition table, CUSBDL01, so the determination can return a material like ZEURO or ZINDUSTRIAL. A warehouse order creation rule creates one warehouse order per customer, so the Pick HU is created with the right context. I would trace the standard determination first to confirm where the Ship-To is lost. I would keep the BAdI implementation small and test with several customers. The post's test results were not included, so I would not rely on its claims without testing.",
+    "level": "Senior",
+    "refs": [
+     4
+    ]
+   }
+  ],
+  "class_idea": {
+   "title": "Verifying runtime behaviour: unimplemented interface methods and documentation gaps",
+   "why_now": "Today's forum post shows the Keyword Documentation missing a catchable exception for static calls to unimplemented interface methods.",
+   "outline": [
+    "Interfaces and partial implementation",
+    "Static vs dynamic method calls",
+    "Reproduce CALL_METHOD_NOT_IMPLEMENTED with if_abap_api_state",
+    "Read the short dump in ADT (ST22 feed)",
+    "Catch CX_SY_DYN_CALL_ILLEGAL_METHOD",
+    "Compare with documented exceptions",
+    "How to report documentation issues"
+   ],
+   "exercise": "In ADT, create a global class that implements IF_OO_ADT_CLASSRUN and INTERFACES if_abap_api_state, and call if_abap_api_state~is_released( ) without implementing it. Run with F9, inspect the dump, then add a TRY/CATCH for cx_sy_dyn_call_illegal_method and confirm whether it is caught on your release. Write a short note on what the docs say versus what you observed.",
+   "refs": [
+    34
+   ]
+  },
+  "whatsapp_highlights": "Keyword Doc omits CX_SY_DYN_CALL_ILLEGAL_METHOD for static calls to unimplemented interface methods | Get ADT-deployed Fiori apps into BAS with the 'Download ADT Deployed App' command | EWM Pick HU packaging by Ship-To via BAdI /SCWM/EX_PS_DET_PREPARE | Open: CDS hierarchy in AFO and KEDR exits at PGI"
+ }
+}
