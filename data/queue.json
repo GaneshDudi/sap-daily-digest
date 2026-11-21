@@ -480,5 +480,38 @@
   "feed": "SAP News Center",
   "kind": "news",
   "text": "Takeda Pharmaceuticals is in the midst of a major shift in how it runs some of its most important business processes. The biotech company’s move from SAP ERP Central Component (SAP ECC) to SAP Cloud ERP applications through the RISE with SAP journey is part of a broader effort to simplify how its business runs, make better use of data, and create more room for digital and AI-enabled ways of working. \n\n Takeda has 250 years of history, 50,000 employees, global operations, and medicines reaching patients in more than 80 countries. That’s why it’s important for the transformation project to connect everyday process improvements with a larger purpose: helping employees work more effectively and supporting the reliable delivery of medicines to patients. \n\n “A couple of years ago, around 2022 or 2023, Takeda decided to make data and digital capabilities a core part of our business strategy,” said Roland Straub, global business transformation lead for Supply Chain at Takeda Pharmaceuticals. “With the AI developments of the last few years, we see a real opportunity to bring automation and support to life for our employees and, importantly, for our patients.” \n\n Takeda Brings Data and Digital to Life with SAP \n\n Click the button below to load the content from YouTube. \n\n Always allow YouTube \n\n Video by Natalie Hauck and Alexander Januschke \n\n SAP Cloud ERP offers an integrated suite of business applications that can support core business processes. For organizations moving from SAP ECC, the shift can also be an opportunity to simplify processes, reduce complexity, and prepare the business for more embedded intelligence. \n\n Straub explained why that foundation matters to Takeda: “SAP is the core system that supports and operates nearly all of our processes around the globe, from manufacturing and supply chain to finance, quality, and beyond.” \n\n The transformation reflects SAP’s work to embed AI capabilities throughout business processes. The Autonomous Enterprise is SAP’s vision for how businesses can operate with people in control, systems working in context, and governance built in. \n\n That balance is especially important in regulated industries such as life sciences. Autonomous regulated manufacturing scenarios can help connect supply chain, production, and quality processes while supporting consistency, reducing manual effort, and maintaining compliance boundaries. \n\n Takeda is also working with SAP on co-development in this area. “Together, we are co-developing new agentic functionalities for regulated industries,” Straub said. “We believe these capabilities can scale across the industry, not just within Takeda.” \n\n Looking ahead, Straub said the priorities are clear: bring the SAP S/4HANA journey to life, understand and use the AI capabilities in SAP Cloud ERP effectively, and continue building the partnership with SAP. For Takeda, success goes beyond just a technology go-live. It’s a more connected, intelligent, and patient-focused way of working. \n Get weekly updates from the SAP News Center, delivered straight to your inbox \n\n Sign up for the newsletter"
+ },
+ {
+  "key": "6b7eafccfbde4516",
+  "title": "Time Tracking – Reprocessing Attendance After an External Integration Failure",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/time-tracking-reprocessing-attendance-after-an-external-integration-failure/qaq-p/14527210",
+  "published": "2026-11-20T21:24:14+00:00",
+  "author": "AMIT_SHARMA01",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Scenario: \n A customer integrates an external biometric attendance system with SAP SuccessFactors. \n Due to an API failure, attendance records for 200 employees were not transferred for three days. \n The external system still contains the original clock-in and clock-out records. \n The integration team successfully restores connectivity, but the customer wants to re-import only the missing records without creating duplicates for employees whose attendance was already transferred. \n Question: \n What is the recommended approach for reprocessing failed attendance records from an external system? \n How can we implement duplicate detection and idempotency when importing Clock In Clock Out events through APIs or middleware?"
+ },
+ {
+  "key": "0fac26b32c3d96db",
+  "title": "Time Tracking – Employees Working Across Multiple Cost Centers",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/time-tracking-employees-working-across-multiple-cost-centers/qaq-p/14527205",
+  "published": "2026-11-20T20:48:17+00:00",
+  "author": "AMIT_SHARMA01",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Scenario: \n A customer has employees who work across multiple departments during the same day. \n For example: Working periodCost centerHours \n\n 8 AM–12 PM \n Finance \n 4 \n\n 12 PM–3 PM \n Operations \n 3 \n\n 3 PM–5 PM \n Projects \n 2 \n The employee's Job Information contains only the primary cost center. \n However, the customer wants the attendance hours to be distributed automatically to the respective cost centers for payroll and controlling purposes. \n Question: \n How can SAP SuccessFactors Time Tracking capture and distribute working hours across multiple cost centers within a single working day? \n Can employees record cost center information through time events, or should this be handled through time sheet coding, account assignment, or integration with SAP ERP S/4HANA?"
+ },
+ {
+  "key": "9667255add4342e6",
+  "title": "Employee Central - Rehiring an Employee with the Same Person ID but a New Employment",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/employee-central-rehiring-an-employee-with-the-same-person-id-but-a-new/qaq-p/14527203",
+  "published": "2026-11-20T20:45:03+00:00",
+  "author": "AMIT_SHARMA01",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Scenario: \n An employee leaves the organization in March and is rehired in November. \n The employee returns with a different position, department, manager, and employment terms. \n The customer wants to retain the employee's previous employment history while ensuring that the new employment has a separate set of job information and workflow assignments. \n However, some integrations are still identifying the employee using the previous employment information. \n Question: \n What is the recommended approach for handling rehires in Employee Central when the employee retains the same person identity but receives a new employment record? \n How should integrations distinguish between Person ID External, User ID, and Employment ID to avoid updating the previous employment instead of the new one?"
  }
 ]
