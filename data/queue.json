@@ -1,1 +1,24 @@
-[]
+[
+ {
+  "key": "5550596cacc1fd6c",
+  "title": "SAP EWM- Receiving Material in Different Packaging for Same UOM",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/sap-ewm-receiving-material-in-different-packaging-for-same-uom/ba-p/14527109",
+  "published": "2026-11-22T09:11:48+00:00",
+  "author": "Vedant_Gunde",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Business Scenario: \n Same material is procured from multiple vendors in different packaging sizes, and it shares the same Unit of Measure (UOM). Because standard system configuration does not allow multiple conversion entries for the same UOM on a single material master, (Eg. 1 CAR = 4 EA and 1 CAR = 6 EA), we need a solution to receive and manage different vendor-specific packaging types for the same material. \n Configuration: \n SCM EWM > EWM > Goods Receipt Process > Inbound Delivery >Define Document Types for Inbound Delivery Process \n Master Data: \n - Create Product master (/SCWM/MAT1) \n\n - Create Packaging Specification (/SCWM/PACKSPEC) \n 2 Packaging specifications are created with Condition type 0IBD is maintained with 2 different Ship from party (Vendor). In level Target quantity is maintained as per packaging supplied by vendor. \n Vendor 1 supply material in packing of 4 EA in one Carton. \n\n Vendor 2 supply material in packing of 6 EA in one Carton. \n Testing \n Create Inbound delivery with Supplier 1 \n Delivery replicated to EWM \n For Supplier 1 from the Packspec (2000066) is determined and hence 12 HUs are created. \n Create Inbound delivery with Supplier 2 \n Delivery replicated to EWM \n For Supplier 2 from the Packspec (2000070) is determined and hence 8 HUs are created. \n Conclusion: Using Packaging specification, condition type > condition record we can receive different packaging for Same UOM."
+ },
+ {
+  "key": "60feb7c3d3a55c66",
+  "title": "I have access for Learning Hub(LH), but unable to access stay certified",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/i-have-access-for-learning-hub-lh-but-unable-to-access-stay-certified/qaq-p/14526163",
+  "published": "2026-11-20T15:57:08+00:00",
+  "author": "Vishw2026",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello All, \n I am able to access Learning hub from my end, every half yearly basis SAP Release delta exam for certification active purpose, but I was unable to access stay certified due to credentials missing \n Error Message :Can’t see your certifications? Complete your SAP Universal ID setup Your SAP Universal ID might be missing a secondary email address. This additional email is required for account recovery purposes and to manage your certifications effectively. Please add at least one additional email address by visiting the Universal ID account manager . Note: Secondary email ID added but still issue persists"
+ }
+]
