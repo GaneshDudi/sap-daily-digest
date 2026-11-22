@@ -1,0 +1,573 @@
+{
+ "items": [
+  {
+   "key": "0dd91bb0b5f58af4",
+   "title": "Enterprise Search Models in Quality Management in SAP S/4HANA Cloud Public Edition 2608",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/enterprise-search-models-in-quality-management-in-sap-s-4hana-cloud-public/qaq-p/14527274",
+   "published": "2026-11-21T09:45:17+00:00",
+   "author": "siddhant_dutta",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Introduction — The Challenge of Finding QM Data Quickly \n Quality Management professionals — whether consultants, quality engineers, or quality technicians — routinely need to locate specific QM objects across a complex landscape of inspection lots, certificate receipts, defects, quality tasks, and master inspection data. Until now, finding these objects required navigating through multiple dedicated SAP Fiori apps, each with its own filter criteria and search capabilities. For a quality technician tracking down a specific certificate receipt during a goods receipt, or a quality engineer searching for open defects linked to a supplier complaint, this multi-app navigation consumed valuable time and introduced unnecessary friction into daily workflows. \n With the SAP S/4HANA Cloud Public Edition 2608.1 release, SAP introduces Enterprise Search Models for Quality Management — a targeted enhancement that brings QM business objects directly into the unified Enterprise Search experience on the SAP Fiori launchpad. This means quality professionals can now find QM objects instantly from the launchpad header bar, without first navigating to a specific app. \n This blog post provides an advanced, step-by-step guide on what the feature delivers , how to enable it , how to use each search model , and why it matters for your quality operations. A dedicated reference section at the end consolidates all official SAP documentation links for your convenience. \n 1. What Is Enterprise Search in SAP S/4HANA Cloud Public Edition? \n Before diving into the QM-specific enhancements, it is important to understand the broader Enterprise Search framework. \n Enterprise Search is the central search capability of SAP S/4HANA Cloud Public Edition. It provides unified, comprehensive, and secure real-time access to enterprise data, enabling users to search for structured data (business objects) and directly access associated applications and actions — all from a single search bar embedded in the SAP Fiori launchpad header ( SAP Help — Enterprise Search Architecture ). \n Key characteristics of Enterprise Search include: \n Unified access: A single search bar in the Fiori launchpad shell bar searches across all enabled business objects (purchase orders, materials, cost centers, etc.) and apps. \n Security-aware results: Search results respect the user's authorization profile — users only see objects they are permitted to access. \n Relevance-ranked results: Results are ranked by relevance using SAP HANA embedded search technology. \n Auto-suggestions and wildcards: The search supports auto-suggestions, wildcard matching, and phrase matching for efficient information retrieval. \n Extensible by key users: Key users can view, activate, and manage SAP-delivered search models, as well as create custom search models from CDS views using the Manage Search Models app. \n Enterprise Search is included with the base SAP S/4HANA Cloud Public Edition subscription and does not require a separate license ( SAP Discovery Center — Enterprise Search ). \n Further Reading: \n Enterprise Search Architecture and Configuration — SAP Help \n Searching from the SAP Fiori Launchpad — SAP Help \n SAP Discovery Center — Enterprise Search AI Feature \n SAP Fiori Design Guidelines — Enterprise Search \n 2. What Are Enterprise Search Models in Quality Management? \n With the 2608.1 release, SAP delivers predefined Enterprise Search models for the following QM business objects ( What's New in SAP S/4HANA Cloud Public Edition 2608.1 — PDF , Section 8.1.1): \n Search Model Description \n 1 Certificate Receipts Search for quality certificate receipts by plant, material, supplier, purchase order, batch, inspection lot, and more. \n 2 Quality Tasks Search for quality tasks by task code, status, processor, planned end date, defect reference, and follow-up actions. \n 3 Quality Notification Activities Search for quality notification activities by notification type, status, and related attributes. \n 4 Defects Search for defects by detailed description and associated attributes. \n 5 Inspection Methods Search for inspection methods by detailed description. \n 6 Master Inspection Characteristics Search for master inspection characteristics by detailed description. \n These search models are delivered by SAP as part of the standard product — they do not require custom development. Once activated, they appear as selectable categories in the Enterprise Search dropdown on the Fiori launchpad. \n What This Means in Practice \n Previously, to find a specific certificate receipt, a user had to: \n Navigate to the Manage Certificate Receipts app (F3233). \n Apply filters manually within the app. \n Scroll through results to find the target record. \n Now, with the Enterprise Search model, the user simply: \n Clicks the search icon in the Fiori launchpad header bar. \n Selects Certificate Receipts from the dropdown. \n Types a search term (e.g., material number, supplier name). \n Navigates directly to the matching record in the Manage Certificate Receipts app. \n This same pattern applies to all six QM search models listed above. \n Further Reading: \n What's New in SAP S/4HANA Cloud Public Edition 2608.1 (HFC4) — PDF, Section 8.1.1 \n What's New Viewer — 2608.1 (HFC4) Online \n Feature Scope Description — SAP S/4HANA Cloud Public Edition 2608 \n 3. How to Enable Enterprise Search Models for Quality Management \n Enabling the QM Enterprise Search models involves a combination of feature activation , search model management , and role/catalog assignment . Below is the step-by-step procedure. \n 3.1 Prerequisites \n Before activating the QM search models, ensure the following: \n Business Role: The user performing the activation must have a business role that includes the Configuration Expert — Business Process Configuration (SAP_BR_BPC_EXPERT) role template. \n Business Catalog for Search Model Management: The business catalog SAP_CORE_BC_EXT_ESH_PC must be assigned to the relevant business role. (Note: The older catalog SAP_CORE_BC_EXT_ESH is deprecated.) This catalog provides access to the Manage Search Models app ( SAP Help — Manage Search Models ). \n QM-Specific Business Catalogs: End users who will consume the search results need the appropriate QM business catalogs assigned to their roles. For example, to search for Certificate Receipts, the user needs the catalog SAP_QM_BC_INCG_QLTY_CERT (QM — Manage Incoming Quality Certificates). \n 3.2 Step-by-Step Activation \n Step 1: Navigate to Feature Activation \n Log on to the SAP Fiori launchpad as a Configuration Expert — Business Process Configuration (SAP_BR_BPC_EXPERT). \n Open the Manage Your Solution app. \n Navigate to Configure Your Solution . \n Search for Activate Features and open the configuration activity. \n Locate the relevant QM Enterprise Search feature(s) and activate them. \n ( SAP Help — Feature Activation Process ) \n Step 2: Verify and Manage Search Models \n Open the Manage Search Models app on the Fiori launchpad. \n On the Delivered by SAP tab, filter by application area or component to find the QM-related search models (e.g., Certificate Receipts, Quality Tasks). \n Verify the Activation Status of each model. If a model shows as Inactive , select it and activate it. \n Optionally, you can edit SAP-delivered search models to customize which fields are displayed and in which order. Save your changes as a draft or publish directly to the catalog. \n ( SAP Help — Delivered by SAP Search Models ) \n Step 3: Transport to Production \n If you are working in a quality (Q) system, the activated and optionally customized search models must be transported to the production system: \n After saving and activating the search model, navigate to Custom Catalog Extension . \n Add the catalog and publish the search model to the selection catalog. \n Use the Export Software Collection and Import Collection apps in Transport Management to move the search model to the production system. \n The transporting user needs a business role with authorization for these Transport Management apps. \n ( SAP Help — Transport Search Models ) \n Step 4: Assign QM Business Catalogs to End-User Roles \n Ensure that end users who need to search for QM objects have the appropriate QM business catalogs assigned to their business roles. For example: \n Search Model Required Business Catalog \n Certificate Receipts SAP_QM_BC_INCG_QLTY_CERT \n Quality Tasks Relevant QM catalogs for Nonconformance Management or Problem-Solving Processes \n Quality Notification Activities Relevant QM notification catalogs \n Defects Relevant Nonconformance Management catalogs \n Inspection Methods Relevant Quality Planning catalogs \n Master Inspection Characteristics Relevant Quality Planning catalogs \n Further Reading: \n Manage Search Models — Delivered by SAP \n Creating a Custom Search Model (Video Guide) \n Transporting Search Models to Production \n What's New — Feature Activation for 2608.1 (HFC4) \n Apps for Quality Management (QM) — SAP Help \n 4. Deep Dive: Each QM Search Model in Detail \n This section provides field-level details for each of the QM search models, including which attributes are searchable, which app the search navigates to, and a practical usage scenario. \n 4.1 Certificate Receipts \n The Certificate Receipts model is a predefined search for quality certificate receipts — records that document the receipt of quality certificates from suppliers for purchased materials. \n Searchable Fields: \n Certificate Receipt number \n Plant \n Material \n Supplier \n Goods Receipt Posting Date \n Certificate Type \n Purchasing Document / Item \n Batch \n Inspection Lot \n Navigates To: Manage Certificate Receipts app (F3233) \n Practical Scenario: During a goods receipt process, a quality technician needs to verify whether a specific supplier has provided the required quality certificate for a batch of raw material. Instead of opening the Manage Certificate Receipts app and manually filtering, the technician clicks the search icon in the launchpad, selects \"Certificate Receipts,\" types the supplier name or purchase order number, and immediately locates the relevant certificate receipt record. \n ( SAP Help — Searching for a Certificate Receipt ) \n 4.2 Quality Tasks \n The Quality Tasks model is a predefined search for quality tasks — activities created in the context of defect processing or problem-solving processes within Nonconformance Management. \n Searchable Fields: \n Quality Task and Task Text (note: for technical reasons, internal quality task IDs prefixed with \"$\" may be displayed) \n Task Code and Code Text \n Task Status \n Processor \n Planned End Date \n Defect reference \n Follow-up Action \n Related Code Groups \n Navigates To: Process Quality Tasks app \n Practical Scenario: A quality engineer is conducting a supplier audit and needs to quickly find all open quality tasks assigned to a specific processor. By selecting \"Quality Tasks\" in Enterprise Search and entering the processor's name, the engineer gets an instant overview of all relevant tasks — with direct navigation to each task for further processing. \n ( SAP Help — Searching for Quality Tasks ) \n 4.3 Quality Notification Activities \n The Quality Notification Activities model provides a predefined search for notification activities — tasks within quality notifications that describe the planning and organizational aspect of notification processing. \n Searchable Fields: \n Notification Activity \n Notification Type \n Status \n Related notification attributes \n Navigates To: Quality notification processing apps \n Practical Scenario: A quality manager reviewing notification turnaround times can search for specific notification activities by type and status to quickly identify bottlenecks in the complaint resolution process. \n ( SAP Help — Searching for Quality Notification Activities ) \n 4.4 Defects \n The Defects search model enables searching for defects recorded in Nonconformance Management. With the 2608.1 release, the search capability is enhanced to in"
+  },
+  {
+   "key": "56271a5ff8b2b589",
+   "title": "SAP Inside Track Tokyo 2027 Event Information",
+   "link": "https://community.sap.com/t5/tokyo-blog-posts/sap-inside-track-tokyo-2027-event-information/ba-p/14524209",
+   "published": "2026-11-21T15:05:11+00:00",
+   "author": "sumikko",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP Inside Track Tokyo 2027を開催します！ \n SAP Inside Trackは、SAP Communityのメンバーが中心となって企画・運営するコミュニティイベントです。 \n SAPに関する最新情報や技術、実際に試してみた経験、プロジェクトで得た知見などを持ち寄り、参加者同士で共有しながら一緒に学んでいきます。 \n SAPを仕事で使っている方はもちろん、これからSAPについて学びたい方、学生の方など、SAPに興味のある方ならどなたでも参加できます。 \n イベント概要 \n 項目 内容 \n イベント名 SAP Inside Track Tokyo 2027 \n テーマ 後日公開 \n 言語 日本語 \n 開催形式 ハイブリッド開催（予定） \n Day 1 2027年3月16日（火） \n Day 2 2027年3月29日（月） \n 開催場所 SAPジャパンオフィス（予定） \n 開催時間 夜開催（予定） \n 参加費 無料 \n ※ SAP Communityへの登録は無料です。 \n イベントのねらい \n SAP TechEdなどのイベントで得た最新情報や、自分で実際に試してみたこと、プロジェクトや日々の業務で経験したことを、コミュニティで共有してみませんか？ \n SAP Inside Track Tokyoでは、完成された成功事例だけではなく、 \n 新しいSAP製品・サービスを実際に触ってみた \n SAP TechEdなどで気になった技術をさらに調べてみた \n プロジェクトで使ってみて分かったこと \n 技術検証をしてみた結果 \n うまくいったこと、うまくいかなかったこと \n SAPについて最近考えていること \n など、コミュニティならではの幅広いアウトプットを歓迎します。 \n 発表する人も、参加する人も、SAPについて一緒に学び、交流できるイベントを目指しています。 \n 開催日程 \n 開催日 日時・会場 \n Day 1 2027年3月16日（火） \n SAPジャパンオフィス（予定） \n 夜開催予定 \n Day 2 2027年3月29日（月） \n SAPジャパンオフィス（予定） \n 夜開催予定 \n Day 1 / Day 2のトピック・トラックについては後日公開します。 \n 参加申し込み \n SAP Inside Track Tokyo 2027への参加申し込みページは準備中です。 \n 会場参加・オンライン参加の方法など、詳細が決まり次第このページでお知らせします。 \n 登壇者募集 \n SAP Inside Track Tokyo 2027では、コミュニティの皆さんからの登壇を募集します！ \n SAP Inside Trackはコミュニティイベントですので、「専門家でなければ発表できない」ということはありません。 \n 自分で試してみたことや経験したことを、ぜひコミュニティで共有してください。 \n セッション形式 \n 1セッション 15分程度 を予定しています。 \n 例えば、こんな発表を歓迎します。 \n プレゼンテーション \n 製品・サービスのデモ \n 技術検証・PoCの結果 \n プロジェクトや業務で得た知見 \n 製品・技術についての考察 \n SAP Communityで共有したいアイデア \n テーマ例 \n SAPの製品・サービス・技術・コミュニティに関する内容であれば、幅広いテーマを歓迎します。 \n 例えば、 \n SAP TechEd 2026で気になったトピックを深掘りしてみた \n SAP Business AI / Joule / AI Agentを試してみた \n SAP BTPでアプリやサービスを作ってみた \n SAP S/4HANAを使ってみて分かったこと \n ABAP / Fiori / SAPUI5について試してみた \n SAP Integration Suiteでこんな連携を作ってみた \n SAPのData / Analytics関連サービスを使ってみた \n SAPの最新技術について考察してみた \n プロジェクトで経験した課題と、その解決方法 \n SAP Communityでの活動や経験 \n などです。 \n 「試してみた」「作ってみた」「考えてみた」「ここで困った」といった内容も大歓迎です！ \n 登壇申し込み \n 登壇申し込みは こちら から！ \n ※定員に達した場合、募集を終了いたします \n セッション情報 \n 登壇者・セッション情報は決まり次第、順次更新します。 \n Day 1 | 2027年3月16日（火） \n セッション情報は後日公開します。 \n Day 2 | 2027年3月29日（月） \n セッション情報は後日公開します。 \n SAP Inside Track Tokyoについて \n ハッシュタグ #sitTokyo \n 運営 chillSAP \n SAP Inside Track Tokyoは、SAP Communityのメンバーによって企画・運営されるカジュアルなコミュニティイベントです。 \n SAP社による公式イベントではありません。 \n 会社や所属、SAP経験の長さに関係なく、SAPに興味のある方同士で知識や経験を共有し、交流することを目的としています。 \n 初めてSAP Inside Trackに参加する方も大歓迎です！ \n 過去のSAP Inside Track Tokyo \n これまでのイベントについては、以下のページをご覧ください。 \n SAP Inside Track Tokyo 2026 \n SAP Inside Track Tokyo 2025 \n 過去のイベントでどのようなセッションが行われたか、登壇を検討している方もぜひ参考にしてください。 \n SAP Communityへの登録 \n SAP Inside Track Tokyoへの参加をより楽しんでいただくため、SAP Communityへの登録をおすすめします。 \n SAP Communityのアカウントは無料で作成できます。 \n SAP Community上のイベントページが公開されたら、イベントページから参加登録を行うことができます。 \n SAP Community Badge \n SAP Inside Track Tokyo 2027参加者向けのSAP Community Badgeについても、情報が決まり次第このページでご案内します。 \n Day 1 SAP Community Eventページ \n Day 2 SAP Community Eventページ \n Updates \n SAP Inside Track Tokyo 2027に関する情報は、このページで随時更新していきます。 \n 今後、以下の情報を公開予定です。 \n 参加申し込み \n Day 1 / Day 2のテーマ・トラック \n 登壇者・セッション情報 \n タイムテーブル \n 会場案内 \n オンライン参加方法 \n SAP Inside Track Tokyo 2027で皆さんにお会いできることを楽しみにしています！"
+  },
+  {
+   "key": "4c37c175c7a5dddf",
+   "title": "\"Cancellation Date Is Before the Goods Issue Date” Error in SMQ2 – A Debugging Approach",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/quot-cancellation-date-is-before-the-goods-issue-date-error-in-smq2-a/ba-p/14527343",
+   "published": "2026-11-21T14:46:37+00:00",
+   "author": "Asmithaa",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Introduction: \n In SAP ERP–EWM integration, data is exchanged between the systems through queued Remote Function Calls (qRFCs) for relevant integration processes. These queues help ensure that messages are processed in sequence. If an error occurs during queue processing, the queue may remain in an error status and can be monitored using transactions such as SMQ1 (outbound queues) or SMQ2 (inbound queues), depending on the system and direction of communication. \n\n In this blog, I would like to highlight an error encountered during EWM outbound delivery processing: “Cancellation Date Is Before the Goods Issue Date.” I will walk through the scenario and the debugging approach used to resolve it. \n How Does It Occur? \n Once the delivery is distributed to EWM, the products are picked and Goods Issue (GI) is posted from EWM. The corresponding message is then transferred to ERP through the queue. However, due to an error during processing, the Goods Issue document is not posted in ERP and remains stuck in the queue. In this scenario, the delivery may need to be reversed. \n When the user attempts to reverse the delivery on a subsequent day, a second queue is generated for the reversal. The original Goods Issue queue is still pending, and the reversal queue is also held up. When the queues are processed, the system encounters a date validation issue: the cancellation date is earlier than the Goods Issue date being processed, resulting in the error shown below. \n\n The Resolution: \n To resolve the issue in this scenario, debugging is performed in the function module BAPI_OUTB_DELIVERY_CHANGE to adjust the cancellation date so that it is later than the Goods Issue date. \n Step 1: Select the Debug Queue option in the qRFC monitor. This takes you to the ABAP Debugger, where the queue processing can be traced. \n\n Step 2: In the debugger, locate the variable HEADER_DEADLINES[]. Identify the TIMESTAMP_UTC field, which contains the date value. Update it to a date later than the Goods Issue date, after validating the relevant document dates and business impact. \n\n Step 3: Execute the debugger using F8 so that the updated date is processed. In this scenario, the queue is cleared, allowing the original Goods Issue to be posted in ERP, followed by the cancellation. \n\n Conclusion: \n Queue errors are common in SAP EWM, and many can be resolved through standard troubleshooting and process intervention. However, there are scenarios where debugging may be required, particularly when an issue is affecting business operations. \n\n Although this approach helped resolve the issue in this case, it should not be treated as a standard solution for every occurrence. Changes made through debugging should be carefully validated against the document history, posting sequence and business requirements, and performed only with appropriate approval. A standard SAP solution for handling such scenarios would be preferable, as it could help avoid manual debugging and provide a more sustainable way to resolve these issues."
+  },
+  {
+   "key": "bb4b02e146f3340b",
+   "title": "Position Validity Mismatch During Employee Replication from SF EC to S/4HANA",
+   "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-members/position-validity-mismatch-during-employee-replication-from-sf-ec-to-s/ba-p/14527329",
+   "published": "2026-11-21T14:21:36+00:00",
+   "author": "Rithika_M21",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Introduction \n During the replication of a hired employee from SAP SuccessFactors Employee Central (SF EC) to SAP S/4HANA, an error occurred related to the validity period of the position and its organizational assignment. The position and its cost center were set up correctly in both systems.. The replication failed because of a mismatch in the validity dates of the related organizational objects. This document explains the issue, the steps taken to investigate it and the solution that was applied to make the employee replication work properly. \n Issue \n While trying to replicate an employee from SF EC to S4 HANA, we got an error message that said: \n \"Position 8268 : Validity of object 0000002232**** does not match relationship A011\" \n\n Steps to check the replication \n - Go to T-code: ECPAO_EE_ORG_QUERY \n - Enter the transformation template group that is used for employee replication \n - Provide the employee ID you want to replicate and run the process \n - Go to T-code SLG1 to see the error log \n - If no errors are shown there, check the log queue using T-code SFIOM_VIEW_REQUESTS \n - Click on processing. If it shows failed, open the application log for details \n Explanation \n A new employee was hired in SF EC on 28.10.2026. We were trying to replicate this employees master data to S4 HANA. During the replication, we received the error: \n \"Position 8268 : Validity of object 0000002232**** does not match relationship A011\" \n Issue Analysis \n 1. I checked position 8268 in S/4HANA using T-code PO13. It was successfully. Showed up correctly. \n 2. I looked at the relationship details for this position. The cost center was properly. Effective from 28.10.2026. \n 3. In SF EC, I verified that the cost center mapped to this position matches the date. \n\n 4. Since position details looked correct, I checked the cost center in S/4HANA. \n 5.Using T-code KS03, I found that the cost center start date was set to 01.11.2026, not 28.10.2026 as expected. \n\n Solution \n The issue was fixed by updating the cost center start date in S/4HANA to 28.10.2026 of 01.11.2026. After making this change, the employee was successfully replicated from SF EC to S/4HANA. \n Conclusion \n The replication failure happened because of a mismatch in the validity dates between the cost center and the position. The position was effective from 28.10.2026,. The cost center was only valid from 01.11.2026. Since the cost center was not active on the start date of the position, the system flagged a relationship validity error (A011). \n By correcting the cost center start date to 28.10.2026, the validity mismatch was resolved. The employee replicated successfully after this fix. This shows that alignment of validity dates across objects is critical during employee replication. Any mismatch in dates can cause the process to fail, even if the data itself is correct."
+  },
+  {
+   "key": "3c2143030c1788f6",
+   "title": "Public or Private Cloud ERP? A Finance View on Choosing the Right SAP Cloud ERP",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/public-or-private-cloud-erp-a-finance-view-on-choosing-the-right-sap-cloud/ba-p/14527296",
+   "published": "2026-11-21T11:41:59+00:00",
+   "author": "Farrukh_Gillani",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Most comparisons of SAP Cloud ERP (Public) and SAP Cloud ERP Private look at infrastructure and IT. This post looks at the same decision from the finance side: month-end close, allocations, controls, industry requirements and who owns what after go-live."
+  },
+  {
+   "key": "8babc959db4f679e",
+   "title": "APP:Import Bank Directories Usage enquiry",
+   "link": "https://community.sap.com/t5/financial-management-q-a/app-import-bank-directories-usage-enquiry/qaq-p/14527360",
+   "published": "2026-11-21T16:00:16+00:00",
+   "author": "xuqi_fangaf39f1",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Sap, \n We use ‘Migration Projects – Bank’ to import bank master data. I have also found another app: ‘Import Bank Directories’. My enquiry is: does this app also allow the import of bank master data, and does it offer any other functions besides this one?"
+  },
+  {
+   "key": "e89e66dabca2488e",
+   "title": "Enquiry regarding the method for importing opening bank account balances",
+   "link": "https://community.sap.com/t5/financial-management-q-a/enquiry-regarding-the-method-for-importing-opening-bank-account-balances/qaq-p/14527358",
+   "published": "2026-11-21T15:47:03+00:00",
+   "author": "xuqi_fangaf39f1",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Sap, \n Bank accounts are classified as cash accounts. In this scenario, what method should be used to import bank account balances when the project goes live, whilst also generating account balances?"
+  },
+  {
+   "key": "af0ace548ba481d5",
+   "title": "USER ID'S IN MANAGE WORKFLOW FOR PO'S",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/user-id-s-in-manage-workflow-for-po-s/qaq-p/14527357",
+   "published": "2026-11-21T15:41:35+00:00",
+   "author": "Dinesh_158",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear Experts, \n I am trying to configure a workflow for Purchase Orders using the Manage Workflows Fiori app. However, in the Recipients tab, when I select the Users option, the system does not display any list of users. Due to this issue, I am unable to configure the workflow based on specific users. \n Could you please help me identify the possible cause of this issue and advise where I need to check the user configuration or master data to ensure that the list of users is displayed in the Manage Workflows app? \n Please refer to the attached screenshot. \n\n Best regards, \n Dinesh U"
+  },
+  {
+   "key": "3e7f51814592c639",
+   "title": "Public Cloud: your CFO asks for a custom extension. What would you advise?",
+   "link": "https://community.sap.com/t5/enterprise-architecture-discussions/public-cloud-your-cfo-asks-for-a-custom-extension-what-would-you-advise/m-p/14527306#M599",
+   "published": "2026-11-21T11:37:39+00:00",
+   "author": "Farrukh_Gillani",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "Hi everyone, \n Here's a situation I think many teams on SAP S/4HANA Cloud Public Edition will recognize. I'd love to hear how you would handle it. \n The situation \n A company recently went live on SAP S/4HANA Cloud Public Edition . Every month-end, the finance team allocates shared costs (IT, HR, office rent) to departments and projects. \n The allocation is based on numbers from another system , such as hours worked per project. So every month the team: \n downloads the numbers to Excel, \n calculates the percentages by hand, and \n updates the allocation in SAP. \n It takes two days of every close , and mistakes happen when the numbers change at the last minute. \n The CFO asks: \"We moved to the cloud to simplify. Can we build something in SAP to do this automatically?\" \n In Public Cloud we can't simply write custom code in the core, and every half-yearly upgrade has to keep working. So the answer isn't just \"yes, let's develop it.\" \n What would you recommend? \n Use the standard: upload the numbers into SAP as allocation drivers (statistical key figures) and let the standard allocation do the work. \n Key user tools: use the in-app options (custom fields, custom logic, custom reports) to fill the gap without coding. \n Developer or side-by-side extension: build an extension with SAP's released APIs, inside the system or on SAP BTP, that pulls the numbers and runs the allocation automatically. \n Simplify the process: agree with the business on a simpler allocation key, so no extension is needed. \n My questions \n Which option would you choose in Public Cloud, and why? \n What do you check before saying yes to an extension (upgrade impact, cost, who maintains it, audit trail)? \n Have you faced something similar on Public Cloud? What worked for you? \n My first instinct as a finance person is to start with the standard and key user tools , and only build an extension when the business value is clear. But I'm curious how others, especially architects and Public Cloud consultants, see it. \n Looking forward to your ideas!"
+  },
+  {
+   "key": "c99d35e0a1630ca6",
+   "title": "Sydney Stammtisch Recap Nov '26",
+   "link": "https://community.sap.com/t5/sydney-blog-posts/sydney-stammtisch-recap-nov-26/ba-p/14527446",
+   "published": "2026-11-22T00:47:48+00:00",
+   "author": "MikeDoyle",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The Pumphouse was pumping..."
+  },
+  {
+   "key": "bb8585a052c5d99e",
+   "title": "Migrating from SAP C4C to SAP Sales & Service Cloud V2: Integration Lessons Learned (Part 2 of 2)",
+   "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/migrating-from-sap-c4c-to-sap-sales-amp-service-cloud-v2-integration/ba-p/14527405",
+   "published": "2026-11-21T21:51:23+00:00",
+   "author": "Afonso_JPP",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The documentation tells you what to configure. It doesn't always tell you what goes wrong. \n Earlier this year, I was part of a team that migrated a customer from SAP Cloud for Customer to SAP Sales and Service Cloud Version 2 (SSC V2), integrated with SAP S/4HANA Private Cloud Edition (PCE). The go-live was a success. The road there was not always straightforward. \n In this two-part series, I share what I wish I'd known before starting — the things that don't appear in any setup guide because they only emerge from actually doing the project: a migration landmine hidden in plain sight in the configuration documentation, custom C4C logic that failed to port across and the simpler native solution that replaced it, and an architectural pattern that worked right up until a standard package update. \n Part 1 covers the foundational setup that applies to any SSC V2 and S/4HANA integration. Part 2 is where it gets specific to migration. \n If you're planning a similar project, or already in the middle of one, I hope this saves you some time."
+  },
+  {
+   "key": "495a66e41c24bdc5",
+   "title": "Migrating from SAP C4C to SAP Sales & Service Cloud V2: Integration Lessons Learned (Part 1 of 2)",
+   "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/migrating-from-sap-c4c-to-sap-sales-amp-service-cloud-v2-integration/ba-p/14512557",
+   "published": "2026-11-21T21:52:57+00:00",
+   "author": "Afonso_JPP",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The documentation tells you what to configure. It doesn't always tell you what goes wrong. \n Earlier this year, I was part of a team that migrated a customer from SAP Cloud for Customer to SAP Sales and Service Cloud Version 2 (SSC V2), integrated with SAP S/4HANA Private Cloud Edition (PCE). The go-live was a success. The road there was not always straightforward. \n In this two-part series, I share what I wish I'd known before starting — the things that don't appear in any setup guide because they only emerge from actually doing the project: a migration landmine hidden in plain sight in the configuration documentation, custom C4C logic that failed to port across and the simpler native solution that replaced it, and an architectural pattern that worked right up until a standard package update. \n Part 1 covers the foundational setup that applies to any SSC V2 and S/4HANA integration. Part 2 is where it gets specific to migration. \n If you're planning a similar project, or already in the middle of one, I hope this saves you some time."
+  },
+  {
+   "key": "09e4a7b67165752e",
+   "title": "Free Joule Studio Certification - Essential skill",
+   "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/free-joule-studio-certification-essential-skill/ba-p/14527397",
+   "published": "2026-11-21T21:10:15+00:00",
+   "author": "vineet_gupta3",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Free SAP Joule studio certification offer from SAP is way more than another SAP certification. It is a sure shot way for all SAP resources to truly understand SAP AI strategy. By getting hands on experience on a working SAP Joule studio setup, it really grounds your knowledge on how SAP is infusing AI into its products. Don't miss this one...."
+  },
+  {
+   "key": "c7bfa4f4d82fe334",
+   "title": "Payroll Posting from ECP to S4/HANA",
+   "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-members/payroll-posting-from-ecp-to-s4-hana/ba-p/14527390",
+   "published": "2026-11-21T20:21:59+00:00",
+   "author": "Srismart_10-09-2001",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Introduction: \n Payroll processing is a critical business function that requires accurate integration between Human Capital Management (HCM) and Finance. In an SAP landscape where Employee Central Payroll (ECP) handles payroll processing and SAP S/4HANA manages financial accounting, seamless integration between these systems is essential for ensuring accurate and timely financial postings. \n Payroll posting from SAP ECP to SAP S/4HANA enables organizations to transfer payroll results, including employee salaries, deductions, employer contributions, and other payroll components, into the appropriate General Ledger (GL) accounts. This integration helps maintain financial accuracy, improve transparency, and streamline reconciliation between payroll and finance. \n In this blog, we will explore the payroll posting process from SAP ECP to SAP S/4HANA, including the key configurations, integration steps, and important considerations involved in ensuring successful payroll posting. \n Scenario: \n Payroll can be performed in three different landscapes such as ECC, S/4HANA and ECP. Data integration flow depends on the system we run Payroll. In our case the Payroll is being performed in ECP. When I run payroll and post the document to finance, the document is not successfully transferred. \n System Architecture and Data Flow: \n\n ECP System Behavior: \n When I run payroll successfully and triggered live payroll posting. The documents got generated without any errors. \n I have released all the sub documents and posted the main document. In ECP the document got transferred Successfully. But in Finance the document was not posted. \n\n System Process: \n In ECP system once the live payroll run is performed, simulation posting run is done to check for posting related errors. once the simulation posting is successful, live posting is performed after putting the control record in Exit mode. After posting document got generated, release the child documents/ sub documents and post the main document. \n Once posting is done and the status is being changes to document transferred, then IDOC will be generated and posted to the S/4 System connected to it via RFC Connection setup. \n Analysis: \n If the document is posted and not received in the receiver system then check for IDOC errors if any and check the status of IDOC. \n In our case the IDOC status in ECP system is Data Passed to Port in ECP System. \n\n Solution: \n Check for the Connection and IDOC status in S/4 system. \n T.codes to be used: WE02, SM58 \n\n Conclusion: \n Payroll posting from SAP ECP to SAP S/4HANA plays an important role in connecting payroll operations with financial accounting. With the right configuration of wage types, symbolic accounts, GL account assignments, and integration settings, organizations can ensure that payroll results are accurately reflected in their financial records. A well-established posting process not only minimizes manual intervention and reconciliation efforts but also improves data consistency, financial transparency, and operational efficiency. By understanding the end-to-end integration process and addressing configuration dependencies, SAP consultants can ensure a smooth and reliable payroll-to-finance integration."
+  },
+  {
+   "key": "890c117885c1ec43",
+   "title": "sap analytics cloud - data action - breakpoint issue",
+   "link": "https://community.sap.com/t5/financial-management-q-a/sap-analytics-cloud-data-action-breakpoint-issue/qaq-p/14527476",
+   "published": "2026-11-22T00:48:23+00:00",
+   "author": "MaheshKosuri",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi \n I am facing issue in data action break point. Data action simply running in backend and finishing its job without stopping at breakback point. I have maintained only one trace , break back point at DATA \n I have cleared all browser cache, \n Any one faced similar issue and appreciate your inputs \n regards \n Mahesh"
+  },
+  {
+   "key": "466f32c25ec3cb34",
+   "title": "locking Issue in MDG CR Activation",
+   "link": "https://community.sap.com/t5/technology-q-a/locking-issue-in-mdg-cr-activation/qaq-p/14527402",
+   "published": "2026-11-21T21:26:21+00:00",
+   "author": "karthik_subramanian",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Experts, \n I have below scenario in MDG Customer and it would be great if you can help on this. Thanks. \n User A has started creating the CR via CHANGE PROCESS in MDG UI and when activating the CR...then this ***NEW***(account site id) been generated with new( NUMBER GENERATE ) value and updated in MDG UI screen. \n Issue is only in production system at sometimes, this ***NEW***(account site id) not generated with new value and not loaded in screen. \n via SLG1 mechanism, observed that new value been generated in background but not loaded in the CR...because of lock issue. \n Further we checked the respective workflow log and observed that there is some lock issue as screen below for reference. \n It would be great if you can give hints on this case to overcome this lock issue...Thanks. \n On Tech side, we are generating this NEW id in the service badi during activation step and writing in the screen via GOV API. Is there any additional care to be taken on this ? \n NOTE : This locking issue happens only in production box and not other environments. \n in MDG UI below : Field : Account site id \n\n Lock Message via SWIA: \n\n Regards, \n Karthik S"
+  },
+  {
+   "key": "73780739fc89ac5e",
+   "title": "Skipping MDF Warning Messages in OData API Upserts with warningAcknowledged",
+   "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-members/skipping-mdf-warning-messages-in-odata-api-upserts-with-warningacknowledged/ba-p/14527194",
+   "published": "2026-11-22T07:25:41+00:00",
+   "author": "AMIT_SHARMA01",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Introduction \n If you work with custom MDF objects in SAP SuccessFactors, you probably use business rules to raise warning messages. On the UI this works well: the user sees the warning, chooses OK, and the record is saved. Integrations behave differently. A warning raised by a business rule causes an OData API upsert to fail, even though the same save would succeed on the UI after the user acknowledges the warning. \n The warningAcknowledged parameter solves this. It lets an API call tell the system that the warning has already been acknowledged, so the upsert can go through. \n What is warningAcknowledged? \n warningAcknowledged is a query parameter on the MDF OData API upsert operation. Setting it to true skips the warning messages that business rules raise on the MDF object. \n Value Behavior \n false (default) If the business rule is triggered, a warning message appears and the upsert fails. \n true \n No warning message appears, even if the business rule is triggered. The upsert succeeds. \n\n Prerequisites \n A business rule is defined for the MDF object to raise a warning message. \n The API user does not have the Admin access to MDF OData API permission. \n Note: The parameter has no impact on users with the Admin access to MDF OData API permission. If an admin user creates or changes a record that triggers a warning, the warning is skipped automatically. \n Use Case 1: Upsert a record with warningAcknowledged=true \n A manager submits a training request that exceeds the department budget. On the UI, the business rule shows a warning and the user chooses OK to proceed. An integration can do the same by sending warningAcknowledged=true . \n Request \n\n Operation Upsert \n HTTP Method POST \n URI https://<API-endpoint-URL>/odata/v2/upsert?warningAcknowledged=true \n Payload {\n \"__metadata\": {\n \"uri\": \"cust_TrainingRequest('TR-1001')\"\n },\n \"externalCode\": \"TR-1001\",\n \"externalName\": \"Leadership Workshop Request\",\n \"cust_employeeId\": \"100245\",\n \"cust_courseName\": \"Advanced Leadership Skills\",\n \"cust_estimatedCost\": 4500,\n \"cust_currency\": \"USD\",\n \"cust_requestStatus\": \"Submitted\"\n} \n Response \n The upsert succeeds and the record is created. {\n \"d\": [\n {\n \"key\": null,\n \"status\": \"OK\",\n \"editStatus\": \"UPSERTED\",\n \"message\": null,\n \"index\": 0,\n \"httpCode\": 200,\n \"inlineResults\": null\n }\n ]\n} \n\n Use Case 2: Upsert a record with warningAcknowledged=false \n If the API user doesn’t have the Admin access to MDF OData API permission and omits the parameter (or sets it to false ), the business rule warning blocks the upsert. \n Request \n Operation Upsert \n HTTP Method POST \n URI https://<API-endpoint-URL>/odata/v2/upsert?warningAcknowledged=false \n Payload {\n \"__metadata\": {\n \"uri\": \"cust_TrainingRequest('TR-1002')\"\n },\n \"externalCode\": \"TR-1002\",\n \"externalName\": \"Project Management Certification Request\",\n \"cust_employeeId\": \"100318\",\n \"cust_courseName\": \"PMP Certification Preparation\",\n \"cust_estimatedCost\": 7200,\n \"cust_currency\": \"SAR\",\n \"cust_requestStatus\": \"Draft\"\n} \n Response {\n \"d\": [\n {\n \"key\": null,\n \"status\": \"ERROR\",\n \"editStatus\": null,\n \"message\": \"The estimated training cost exceeds the department budget limit; To be able to save MDF object with warning, please set the 'warningAcknowledged' flag to true. with the index 0\",\n \"index\": 0,\n \"httpCode\": 500,\n \"inlineResults\": null\n }\n ]\n} \n The error message includes your user-defined warning text, followed by the instruction to set the warningAcknowledged flag to true . \n Key takeaways \n Business-rule warnings on MDF objects block API upserts by default for non-admin API users. \n Add warningAcknowledged=true to the upsert URL to skip the warning and complete the save. \n Admin users with Admin access to MDF OData API are not affected, because their warnings are always skipped. \n Use the parameter deliberately. The warning exists for a reason, so make sure your integration validates the data the warning was meant to protect. \n Conclusion \n If your integration fails on a warning that a user would simply acknowledge on the UI, warningAcknowledged=true is the right fix. Have you used this parameter in your own integrations? Share your experience or questions in the comments."
+  }
+ ],
+ "triage": {
+  "0": {
+   "i": 0,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Describes enterprise search models for locating QM objects in S/4HANA Cloud Public Edition; an end-user functional feature rather than development."
+  },
+  "1": {
+   "i": 1,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Event announcement for SAP Inside Track Tokyo 2027 with dates and format."
+  },
+  "2": {
+   "i": 2,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Debugging approach for a 'cancellation date before goods issue date' error in SMQ2 qRFC queues between SAP ERP and EWM."
+  },
+  "3": {
+   "i": 3,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Covers a position validity mismatch causing employee replication failure from SuccessFactors EC to S/4HANA; mainly master data setup."
+  },
+  "4": {
+   "i": 4,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Finance-perspective opinion comparing SAP Cloud ERP Public and Private editions; no technical content."
+  },
+  "5": {
+   "i": 5,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks whether the Import Bank Directories app can import bank master data and what else it does; functional migration question."
+  },
+  "6": {
+   "i": 6,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks which method to use for importing opening bank account balances at go-live; functional data migration question."
+  },
+  "7": {
+   "i": 7,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Manage Workflows Fiori app shows no users in recipients tab for purchase order workflow; functional configuration issue."
+  },
+  "8": {
+   "i": 8,
+   "category": "S/4HANA Development & Extensibility",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Discussion on how to advise on a custom allocation extension in S/4HANA Public Cloud, touching on clean core extensibility options."
+  },
+  "9": {
+   "i": 9,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Community meetup recap from a Sydney Stammtisch with no technical content."
+  },
+  "10": {
+   "i": 10,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Part 2 of lessons learned integrating SAP Sales and Service Cloud V2 with S/4HANA Private Cloud after a C4C migration, covering integration pitfalls."
+  },
+  "11": {
+   "i": 11,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Part 1 of lessons learned integrating SAP Sales and Service Cloud V2 with S/4HANA Private Cloud after a C4C migration, covering integration pitfalls."
+  },
+  "12": {
+   "i": 12,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Promotes a free SAP Joule Studio certification offer; certification marketing rather than a developer how-to."
+  },
+  "13": {
+   "i": 13,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Covers payroll result posting from Employee Central Payroll to S/4HANA Finance; mainly HCM-to-finance setup and integration configuration."
+  },
+  "14": {
+   "i": 14,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "SAP Analytics Cloud data action breakpoint not stopping during debugging; SAC-specific and outside the listed focus areas."
+  },
+  "15": {
+   "i": 15,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "MDG change request activation generates a new account site ID in production only, causing locking and number range concerns."
+  },
+  "16": {
+   "i": 16,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Explains how to use warningAcknowledged in SuccessFactors OData API upserts so MDF business rule warnings do not fail integrations."
+  }
+ },
+ "deep": {
+  "16": {
+   "summary": "A practical blog on the warningAcknowledged query parameter for the MDF OData API upsert. Business rules that raise warnings on custom MDF objects block integrations by default, while the same save succeeds on the UI after the user clicks OK. Setting warningAcknowledged=true on the upsert URL skips those warnings for non-admin API users. The post includes two request/response examples, one with true (success) and one with false (HTTP 500-style error whose message contains the custom warning text plus the instruction to set the flag).",
+   "key_points": [
+    "Business-rule warnings on MDF objects fail OData API upserts by default (warningAcknowledged=false).",
+    "Adding ?warningAcknowledged=true to the upsert URL skips the warning and completes the save.",
+    "Users with the Admin access to MDF OData API permission are unaffected; their warnings are skipped automatically.",
+    "The error message echoes the custom warning text and tells the caller to set the flag to true.",
+    "The author advises validating the data the warning was meant to protect before using the flag.",
+    "Prerequisite: a business rule must exist on the MDF object that raises a warning."
+   ],
+   "technical_details": [
+    "Endpoint: POST https://<API-endpoint-URL>/odata/v2/upsert?warningAcknowledged=true",
+    "Parameter: warningAcknowledged (boolean query parameter; default false)",
+    "Permission: Admin access to MDF OData API (bypasses warnings)",
+    "Example MDF entity: cust_TrainingRequest with externalCode, cust_estimatedCost, cust_currency, cust_requestStatus",
+    "Success response: d[].status \"OK\", editStatus \"UPSERTED\", httpCode 200",
+    "Failure response as shown: status \"ERROR\", editStatus null, httpCode 500, message containing the business-rule text",
+    "Payload uses __metadata.uri alongside externalCode in an upsert body (OData v2 style)"
+   ],
+   "why_it_matters": "Integration failures on business-rule warnings are a common SuccessFactors pain point, and this parameter is the documented switch that brings API behaviour in line with the UI acknowledgement flow. Knowing the permission interaction (admins bypass automatically) matters for test results, since a test run under an admin integration user will hide the behaviour production non-admin users see.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Good lab exercise: build a business rule that raises a warning on a custom MDF object, then call the upsert with a non-admin API user with and without the flag, and compare responses. Follow up with a discussion of when a warning should be a hard error instead of something an integration can bypass.",
+   "quality": 4
+  },
+  "2": {
+   "summary": "A short troubleshooting note on an EWM-to-ERP outbound delivery issue where a qRFC queue fails with 'Cancellation Date Is Before the Goods Issue Date'. The root cause described is a stuck Goods Issue queue in ERP followed by a reversal queue created on a later day. The workaround shown is debugging the qRFC via the SMQ monitor and changing the TIMESTAMP_UTC value in HEADER_DEADLINES[] inside BAPI_OUTB_DELIVERY_CHANGE. The author is clear that this is a one-off manual intervention, not a standard fix.",
+   "key_points": [
+    "qRFC errors in EWM integration can block sequential processing of Goods Issue and subsequent reversal queues.",
+    "The error arises when a reversal is created on a later day while the original GI queue is still pending.",
+    "Workaround: use 'Debug Queue' from the qRFC monitor to step into the failing call.",
+    "The date fix is applied to HEADER_DEADLINES[]-TIMESTAMP_UTC inside BAPI_OUTB_DELIVERY_CHANGE.",
+    "The author explicitly says debugging changes need document history checks and approval and are not a standard solution.",
+    "The post does not explain how to prevent the queue from getting stuck in the first place."
+   ],
+   "technical_details": [
+    "Transactions: SMQ1 (outbound qRFC queues), SMQ2 (inbound qRFC queues)",
+    "qRFC monitor action: Debug Queue (opens ABAP Debugger on the queued call)",
+    "Function module: BAPI_OUTB_DELIVERY_CHANGE",
+    "Table parameter: HEADER_DEADLINES[], field TIMESTAMP_UTC",
+    "Process: EWM Goods Issue posted, message sent to ERP via qRFC; reversal queued separately",
+    "Debugger step: F8 to continue after editing the variable"
+   ],
+   "why_it_matters": "Useful for support consultants who meet stuck qRFCs in EWM/ERP integration and need to understand the sequence dependency. Editing live business data in a debugger on a production queue is risky, so the value is mostly in recognising the pattern, and the prevention side (sequencing, reversal timing, queue monitoring) matters more than the workaround.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use it to teach qRFC troubleshooting: identify the failing queue in SMQ1/SMQ2, understand LUW dependency order, and discuss why a reversal should not be queued before the original GI is confirmed. Ask trainees to propose a standard fix (e.g., resolving the queue order or using the proper reprocessing path) instead of debugging.",
+   "quality": 3
+  },
+  "8": {
+   "summary": "A discussion post, framed as a CFO request, about automating a monthly cost allocation on SAP S/4HANA Cloud Public Edition. Allocation drivers (hours per project) currently come from another system through manual Excel work, costing two days per close. The author lists four options: standard allocation with statistical key figures, key-user in-app tools, a side-by-side extension on SAP BTP using released APIs, or simplifying the allocation key. The author leans towards starting with standard and key-user tools and asks the community which option they would choose and what checks they would run before approving an extension.",
+   "key_points": [
+    "Public Cloud forbids custom code in the core, and upgrades must not break the solution.",
+    "Option 1: upload drivers as statistical key figures and use standard allocation.",
+    "Option 2: key-user tools (custom fields, custom logic, custom reports) without coding.",
+    "Option 3: side-by-side extension using released APIs, in-system or on SAP BTP.",
+    "Option 4: agree a simpler allocation key with the business to avoid building anything.",
+    "Checklist for any extension: upgrade impact, cost, ownership, audit trail."
+   ],
+   "technical_details": [
+    "Product: SAP S/4HANA Cloud Public Edition",
+    "Standard concept: statistical key figures as allocation drivers",
+    "Extension tiers named: key-user extensibility, released APIs, side-by-side on SAP BTP",
+    "No specific transaction, app, or API names are given in the post"
+   ],
+   "why_it_matters": "This is a realistic architect decision for Public Cloud projects. The answer hinges on the extensibility model (no core modification, released APIs only) rather than on ABAP skill, which is a shift that experienced on-premise ABAP developers often underestimate.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How to automate a monthly cost allocation that uses external driver data in S/4HANA Cloud Public Edition without modifying the core and without breaking half-yearly upgrades.",
+   "teaching_angle": "Good interview or class prompt: ask trainees to rank the four options, then to name the specific extensibility artefacts they would use (released APIs, key-user apps, BTP side-by-side) and the upgrade-safety checks. Also ask them to verify the upgrade cadence against current SAP documentation, since the post says 'half-yearly' and SAP's Public Edition cadence is more granular.",
+   "quality": 3
+  },
+  "10": {
+   "summary": "This is the Part 2 post of a two-part series on migrating a customer from SAP Cloud for Customer (C4C) to SAP Sales and Service Cloud Version 2, integrated with S/4HANA Private Cloud Edition. The text provided contains only the introduction and a teaser for the specifics. It promises a migration pitfall in the configuration documentation, custom C4C logic that did not port and was replaced by a native solution, and an architectural pattern that broke after a standard package update. None of those lessons appear in the supplied text.",
+   "key_points": [
+    "Project: C4C to SAP Sales and Service Cloud V2, integrated with S/4HANA Private Cloud Edition; go-live reported as successful.",
+    "Promised lessons: a documentation pitfall, non-portable custom C4C logic replaced by a native solution, and a pattern broken by a standard package update.",
+    "The supplied text has only the intro; the actual lessons are not present, so they cannot be assessed.",
+    "Post is written from practitioner experience, not as a release announcement."
+   ],
+   "technical_details": [
+    "Source system: SAP Cloud for Customer (C4C)",
+    "Target system: SAP Sales and Service Cloud Version 2 (SSC V2)",
+    "Integration partner: SAP S/4HANA Private Cloud Edition (PCE)",
+    "No API, object, or configuration names appear in the supplied text"
+   ],
+   "why_it_matters": "A C4C to SSC V2 migration with S/4HANA PCE integration is a live topic, and practitioner lessons on documentation gaps and standard-update breakage would be valuable. However, the substance is missing from the text provided, so the value cannot be confirmed here.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Do not teach from this excerpt alone. Pull the full article and use its specific pitfalls as a case study on integration upgrade risk, and on the trade-off between porting custom logic and adopting native features.",
+   "quality": 2
+  },
+  "11": {
+   "summary": "This is the Part 1 post of the same two-part C4C to SAP Sales and Service Cloud V2 series. The supplied text is identical to the Part 2 intro and contains no setup details. It says Part 1 covers the foundational setup that applies to any SSC V2 and S/4HANA integration, but none of that setup is included in the text provided.",
+   "key_points": [
+    "Part 1 covers foundational SSC V2 and S/4HANA integration setup, per the author.",
+    "The supplied text is the same introduction shown for Part 2 and has no configuration steps.",
+    "The author frames the series around pitfalls not found in setup guides.",
+    "No release or announcement content."
+   ],
+   "technical_details": [
+    "Source system: SAP Cloud for Customer (C4C)",
+    "Target system: SAP Sales and Service Cloud Version 2 (SSC V2)",
+    "Integration partner: SAP S/4HANA Private Cloud Edition (PCE)",
+    "No configuration steps, objects, or versions beyond these are given in the supplied text"
+   ],
+   "why_it_matters": "Foundational integration setup for SSC V2 with S/4HANA is needed reading for anyone starting such a project, but this excerpt does not contain that setup, so its practical value cannot be judged from what was provided.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use the full Part 1 article as a reference for mapping the foundational integration steps. Students can compare its steps against the official SAP setup documentation to find gaps.",
+   "quality": 2
+  }
+ },
+ "digest": {
+  "headline": "Quiet Sunday with no core ABAP content: MDF OData warning flag, a qRFC debugging workaround, and a Public Cloud extensibility discussion.",
+  "overview": "Five community items, none on core ABAP, RAP or CDS. The most practical is a SuccessFactors note on the warningAcknowledged parameter for MDF OData upserts (ref 16). A qRFC troubleshooting post covers an EWM-to-ERP queue failure fixed by editing data in the debugger (ref 2). A Public Cloud discussion asks how to automate a cost allocation without core modification (ref 8). Two C4C to Sales & Service Cloud V2 posts arrived with only their introductions (refs 10, 11).\n\nFor an ABAP trainer, the useful material is the pattern content. Queue sequence dependency in qRFC and the move from in-core code to released APIs and key-user tools in Public Cloud both fit into class discussion. The C4C posts should not be used until the full articles are read. Items 16 and 2 are about specific mechanisms, but neither is ABAP development content in the strict sense.",
+  "top_stories": [
+   {
+    "title": "MDF OData upsert: warningAcknowledged lets API calls pass business-rule warnings",
+    "summary": "Business-rule warnings on custom MDF objects make OData v2 upserts fail by default, while the UI succeeds after the user clicks OK. Adding ?warningAcknowledged=true to the /odata/v2/upsert URL skips the warnings. Users with the Admin access to MDF OData API permission bypass warnings automatically. The failure response shows httpCode 500 with the warning text and an instruction to set the flag.",
+    "why_it_matters": "Testing under an admin integration user hides the failure that non-admin production users will hit. The author also advises validating the data the warning protects before using the flag.",
+    "priority": 1,
+    "refs": [
+     16
+    ]
+   },
+   {
+    "title": "qRFC stuck GI queue causes 'Cancellation Date Is Before the Goods Issue Date' in EWM-ERP",
+    "summary": "A Goods Issue queue stuck in ERP, followed by a reversal queued on a later day, produces the error. The workaround is Debug Queue from the qRFC monitor and changing TIMESTAMP_UTC in HEADER_DEADLINES[] inside BAPI_OUTB_DELIVERY_CHANGE. The author states this is a one-off manual intervention, not a standard fix, and does not explain how to prevent the stuck queue.",
+    "why_it_matters": "The reusable lesson is the sequential dependency within a qRFC queue. Changing business data in a production debugger needs approval and document-history checks.",
+    "priority": 2,
+    "refs": [
+     2
+    ]
+   },
+   {
+    "title": "Public Cloud CFO request: how to automate cost allocation without touching the core",
+    "summary": "A discussion post lists four options for automating a monthly allocation that uses external hours-per-project drivers: statistical key figures with standard allocation, key-user tools, a side-by-side extension on SAP BTP with released APIs, or a simpler allocation key. The author leans towards standard and key-user tools first. The checklist is upgrade impact, cost, ownership and audit trail.",
+    "why_it_matters": "It shows the Public Cloud decision order: standard first, then key-user, then side-by-side. Experienced on-premise ABAP developers tend to underestimate this shift.",
+    "priority": 3,
+    "refs": [
+     8
+    ]
+   },
+   {
+    "title": "C4C to Sales & Service Cloud V2 migration series: excerpts contain no lessons",
+    "summary": "Both parts describe a C4C to SSC V2 migration integrated with S/4HANA Private Cloud Edition. The supplied text is only the introduction. It promises a documentation pitfall, non-portable custom logic replaced natively, and a pattern broken by a standard package update, but none of these are included.",
+    "why_it_matters": "The topic is live, but the content cannot be assessed from what was supplied. Read the full articles before using them.",
+    "priority": 3,
+    "refs": [
+     10,
+     11
+    ]
+   }
+  ],
+  "releases": [],
+  "deep_dives": [
+   {
+    "title": "qRFC queue sequencing: why a stuck GI blocks the reversal",
+    "explanation": "In the case described, EWM sends Goods Issue confirmation to ERP via qRFC, and the reversal is queued separately on a later day. If the GI queue entry is stuck in ERP, the reversal fails with 'Cancellation Date Is Before the Goods Issue Date'. Entries in one queue are processed in order, so a failed first entry blocks later ones.\n\nThe post's workaround is to open the failing entry with Debug Queue in the qRFC monitor (SMQ1 for outbound, SMQ2 for inbound). The author then edits `TIMESTAMP_UTC` in the table `HEADER_DEADLINES[]` inside `BAPI_OUTB_DELIVERY_CHANGE` and continues with F8.\n\nThis is a data change made in a debugger. It needs authorisation, approval and a document-history check, and the author says it is not a standard solution. The post does not say how to stop the queue getting stuck, so root-cause analysis of the GI failure is left open.\n\nFor teaching, the useful point is that the order of LUWs within a queue is a functional dependency. Diagnose the first failing entry, not the last one.",
+    "key_concepts": [
+     "qRFC queue ordering",
+     "SMQ1/SMQ2",
+     "Debug Queue",
+     "BAPI_OUTB_DELIVERY_CHANGE",
+     "HEADER_DEADLINES TIMESTAMP_UTC"
+    ],
+    "refs": [
+     2
+    ]
+   },
+   {
+    "title": "Clean-core decision order for a Public Cloud allocation requirement",
+    "explanation": "The discussion post names four options for automating a monthly cost allocation. Allocation drivers (hours per project) come from another system and are currently handled in Excel, costing two days per close.\n\nThe order of preference: first, upload drivers as statistical key figures and use standard allocation. Second, key-user extensibility (custom fields, custom logic, custom reports). Third, a side-by-side extension using released APIs, in-system or on SAP BTP. Fourth, simplify the allocation key with the business so nothing is built.\n\nThe post names no specific apps or APIs. Before approving an extension, check upgrade impact, cost, ownership and audit trail. The post says 'half-yearly' upgrades; verify the cadence against current SAP documentation.\n\nThe point for ABAP developers is that in Public Cloud the question is which extensibility tier fits, not how to code it.",
+    "key_concepts": [
+     "Statistical key figures",
+     "Key-user extensibility",
+     "Released APIs",
+     "Side-by-side on SAP BTP",
+     "Upgrade-safe extension"
+    ],
+    "refs": [
+     8
+    ]
+   }
+  ],
+  "trending_problems": [
+   {
+    "theme": "Integration failures caused by warnings and sequencing",
+    "description": "Two items show integrations failing for process reasons: MDF business-rule warnings block API upserts (ref 16), and a stuck GI queue blocks a later reversal in qRFC (ref 2).",
+    "teaching_tip": "Have students reproduce the failure with a non-privileged user and identify the first failing step, not the last error message.",
+    "refs": [
+     16,
+     2
+    ]
+   },
+   {
+    "theme": "Extensibility choice in Public Cloud",
+    "description": "Developers must choose between standard configuration, key-user tools and side-by-side extensions instead of custom code in the core.",
+    "teaching_tip": "Give a requirement and ask students to rank the tiers and justify with upgrade, cost, ownership and audit criteria.",
+    "refs": [
+     8
+    ]
+   }
+  ],
+  "post_drafts": [
+   {
+    "title": "MDF upsert warnings",
+    "text": "*SuccessFactors OData tip*\n\nYour MDF upsert works in the UI but fails via API?\n\nA business-rule *warning* on the custom object is the likely cause. The UI asks the user to click OK. The API does not.\n\nFix: add\n?warningAcknowledged=true\nto /odata/v2/upsert\n\nUsers with Admin access to MDF OData API skip warnings automatically. So *testing with an admin user hides the problem*.\n\nValidate the data the warning protects before using the flag.\n\nhttps://community.sap.com/t5/human-capital-management-blog-posts-by-members/skipping-mdf-warning-messages-in-odata-api-upserts-with-warningacknowledged/ba-p/14527194"
+   },
+   {
+    "title": "qRFC sequence lesson",
+    "text": "*qRFC: the first failed entry blocks the rest*\n\nEWM to ERP error: 'Cancellation Date Is Before the Goods Issue Date'.\n\nCause: the GI queue is stuck in ERP, and a reversal is queued a day later.\n\nThe author's workaround is to debug the queue and change TIMESTAMP_UTC in HEADER_DEADLINES[] of BAPI_OUTB_DELIVERY_CHANGE.\n\nHe says it is a one-off, not a standard fix. *Find why the GI got stuck first.*\n\nhttps://community.sap.com/t5/supply-chain-management-blog-posts-by-members/quot-cancellation-date-is-before-the-goods-issue-date-error-in-smq2-a/ba-p/14527343"
+   }
+  ],
+  "interview_questions": [
+   {
+    "question": "An OData upsert on a custom MDF object succeeds in the UI but fails for the integration user. What do you check?",
+    "answer": "First check whether a business rule on the MDF object raises a warning. In the UI the user acknowledges it with OK, but the API call fails by default because warningAcknowledged is false. The error message echoes the warning text and says to set the flag. Adding ?warningAcknowledged=true to the upsert URL skips the warning. Check the permissions as well: users with Admin access to MDF OData API skip warnings automatically, so tests under an admin user will not show the failure. Before using the flag, validate the data the warning was meant to protect, and consider whether the rule should be an error instead.",
+    "level": "Mid-level",
+    "refs": [
+     16
+    ]
+   },
+   {
+    "question": "A qRFC queue between EWM and ERP fails with 'Cancellation Date Is Before the Goods Issue Date'. How do you analyse it?",
+    "answer": "Start from the sequential nature of qRFC: entries in a queue are processed in order, so a failed entry blocks later ones. Here a GI queue is stuck in ERP and a reversal was queued on a later day. Look in SMQ1 or SMQ2 for the first failing entry and find why the GI failed. The post shows a workaround: Debug Queue, and change TIMESTAMP_UTC in HEADER_DEADLINES[] in BAPI_OUTB_DELIVERY_CHANGE. That edits business data in a debugger, so it needs approval and a document-history check, and it is not a standard fix. I would prefer fixing the GI failure and reprocessing in order.",
+    "level": "Senior",
+    "refs": [
+     2
+    ]
+   },
+   {
+    "question": "A CFO wants a monthly cost allocation with external driver data in S/4HANA Cloud Public Edition. How do you decide the approach?",
+    "answer": "I would work from the least invasive option. First try uploading the drivers as statistical key figures and using standard allocation. Next, key-user extensibility such as custom fields, logic and reports. Then a side-by-side extension on SAP BTP using released APIs. Also ask whether the business can accept a simpler allocation key, which avoids building anything. Custom code in the core is not allowed in Public Cloud, so the extension must survive upgrades. Before approving anything, check upgrade impact, cost, ownership and audit trail.",
+    "level": "Architect",
+    "refs": [
+     8
+    ]
+   }
+  ],
+  "class_idea": {
+   "title": "Why integrations fail: warnings, queue order and clean-core choices",
+   "why_now": "Today's items show integration failures from MDF warnings (ref 16), qRFC sequencing (ref 2) and the Public Cloud extensibility decision (ref 8).",
+   "outline": [
+    "Why an API call differs from the UI call: warning acknowledgement",
+    "Permission effects on test results: admin vs non-admin",
+    "qRFC basics: queues, LUW order, SMQ1/SMQ2",
+    "Reading the first failing entry versus the last error",
+    "When debugger fixes are acceptable and how to control them",
+    "Public Cloud extensibility tiers and selection criteria"
+   ],
+   "exercise": "In a sandbox, take a stuck qRFC queue example (or a prepared failing queue entry) and in ADT/SAP GUI identify the first failing entry, explain the dependency order, and write a proposed reprocessing plan with no debugger edits. Then rank four extensibility options for the cost allocation case with upgrade, cost, ownership and audit criteria.",
+   "refs": [
+    16,
+    2,
+    8
+   ]
+  },
+  "whatsapp_highlights": "MDF OData upsert fails on warnings? Use ?warningAcknowledged=true (admins bypass it, so test as non-admin) | qRFC: a stuck GI queue blocks a later EWM reversal, so find the first failing entry | Public Cloud CFO request: standard first, key-user tools next, BTP side-by-side last | C4C to SSC V2 series: excerpts lacked the lessons"
+ }
+}

@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-22",
+  "label": "Sunday, 22 November 2026",
+  "headline": "Quiet Sunday with no core ABAP content: MDF OData warning flag, a qRFC debugging workaround, and a Public Cloud extensibility discussion.",
+  "items": 17,
+  "deep": 5
+ },
+ {
   "date": "2026-11-21",
   "label": "Saturday, 21 November 2026",
   "headline": "A thin day: one documentation gap on an uncaught ABAP exception, an ADT-to-BAS Fiori workflow, an EWM BAdI pattern, and two unanswered forum questions.",
