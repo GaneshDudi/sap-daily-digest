@@ -97,5 +97,82 @@
   "feed": "SAP Community discussions",
   "kind": "discussion",
   "text": "Hi everyone, \n Here's a situation I think many teams on SAP S/4HANA Cloud Public Edition will recognize. I'd love to hear how you would handle it. \n The situation \n A company recently went live on SAP S/4HANA Cloud Public Edition . Every month-end, the finance team allocates shared costs (IT, HR, office rent) to departments and projects. \n The allocation is based on numbers from another system , such as hours worked per project. So every month the team: \n downloads the numbers to Excel, \n calculates the percentages by hand, and \n updates the allocation in SAP. \n It takes two days of every close , and mistakes happen when the numbers change at the last minute. \n The CFO asks: \"We moved to the cloud to simplify. Can we build something in SAP to do this automatically?\" \n In Public Cloud we can't simply write custom code in the core, and every half-yearly upgrade has to keep working. So the answer isn't just \"yes, let's develop it.\" \n What would you recommend? \n Use the standard: upload the numbers into SAP as allocation drivers (statistical key figures) and let the standard allocation do the work. \n Key user tools: use the in-app options (custom fields, custom logic, custom reports) to fill the gap without coding. \n Developer or side-by-side extension: build an extension with SAP's released APIs, inside the system or on SAP BTP, that pulls the numbers and runs the allocation automatically. \n Simplify the process: agree with the business on a simpler allocation key, so no extension is needed. \n My questions \n Which option would you choose in Public Cloud, and why? \n What do you check before saying yes to an extension (upgrade impact, cost, who maintains it, audit trail)? \n Have you faced something similar on Public Cloud? What worked for you? \n My first instinct as a finance person is to start with the standard and key user tools , and only build an extension when the business value is clear. But I'm curious how others, especially architects and Public Cloud consultants, see it. \n Looking forward to your ideas!"
+ },
+ {
+  "key": "c99d35e0a1630ca6",
+  "title": "Sydney Stammtisch Recap Nov '26",
+  "link": "https://community.sap.com/t5/sydney-blog-posts/sydney-stammtisch-recap-nov-26/ba-p/14527446",
+  "published": "2026-11-22T00:47:48+00:00",
+  "author": "MikeDoyle",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "The Pumphouse was pumping..."
+ },
+ {
+  "key": "bb8585a052c5d99e",
+  "title": "Migrating from SAP C4C to SAP Sales & Service Cloud V2: Integration Lessons Learned (Part 2 of 2)",
+  "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/migrating-from-sap-c4c-to-sap-sales-amp-service-cloud-v2-integration/ba-p/14527405",
+  "published": "2026-11-21T21:51:23+00:00",
+  "author": "Afonso_JPP",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "The documentation tells you what to configure. It doesn't always tell you what goes wrong. \n Earlier this year, I was part of a team that migrated a customer from SAP Cloud for Customer to SAP Sales and Service Cloud Version 2 (SSC V2), integrated with SAP S/4HANA Private Cloud Edition (PCE). The go-live was a success. The road there was not always straightforward. \n In this two-part series, I share what I wish I'd known before starting — the things that don't appear in any setup guide because they only emerge from actually doing the project: a migration landmine hidden in plain sight in the configuration documentation, custom C4C logic that failed to port across and the simpler native solution that replaced it, and an architectural pattern that worked right up until a standard package update. \n Part 1 covers the foundational setup that applies to any SSC V2 and S/4HANA integration. Part 2 is where it gets specific to migration. \n If you're planning a similar project, or already in the middle of one, I hope this saves you some time."
+ },
+ {
+  "key": "495a66e41c24bdc5",
+  "title": "Migrating from SAP C4C to SAP Sales & Service Cloud V2: Integration Lessons Learned (Part 1 of 2)",
+  "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/migrating-from-sap-c4c-to-sap-sales-amp-service-cloud-v2-integration/ba-p/14512557",
+  "published": "2026-11-21T21:52:57+00:00",
+  "author": "Afonso_JPP",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "The documentation tells you what to configure. It doesn't always tell you what goes wrong. \n Earlier this year, I was part of a team that migrated a customer from SAP Cloud for Customer to SAP Sales and Service Cloud Version 2 (SSC V2), integrated with SAP S/4HANA Private Cloud Edition (PCE). The go-live was a success. The road there was not always straightforward. \n In this two-part series, I share what I wish I'd known before starting — the things that don't appear in any setup guide because they only emerge from actually doing the project: a migration landmine hidden in plain sight in the configuration documentation, custom C4C logic that failed to port across and the simpler native solution that replaced it, and an architectural pattern that worked right up until a standard package update. \n Part 1 covers the foundational setup that applies to any SSC V2 and S/4HANA integration. Part 2 is where it gets specific to migration. \n If you're planning a similar project, or already in the middle of one, I hope this saves you some time."
+ },
+ {
+  "key": "09e4a7b67165752e",
+  "title": "Free Joule Studio Certification - Essential skill",
+  "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/free-joule-studio-certification-essential-skill/ba-p/14527397",
+  "published": "2026-11-21T21:10:15+00:00",
+  "author": "vineet_gupta3",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Free SAP Joule studio certification offer from SAP is way more than another SAP certification. It is a sure shot way for all SAP resources to truly understand SAP AI strategy. By getting hands on experience on a working SAP Joule studio setup, it really grounds your knowledge on how SAP is infusing AI into its products. Don't miss this one...."
+ },
+ {
+  "key": "c7bfa4f4d82fe334",
+  "title": "Payroll Posting from ECP to S4/HANA",
+  "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-members/payroll-posting-from-ecp-to-s4-hana/ba-p/14527390",
+  "published": "2026-11-21T20:21:59+00:00",
+  "author": "Srismart_10-09-2001",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Introduction: \n Payroll processing is a critical business function that requires accurate integration between Human Capital Management (HCM) and Finance. In an SAP landscape where Employee Central Payroll (ECP) handles payroll processing and SAP S/4HANA manages financial accounting, seamless integration between these systems is essential for ensuring accurate and timely financial postings. \n Payroll posting from SAP ECP to SAP S/4HANA enables organizations to transfer payroll results, including employee salaries, deductions, employer contributions, and other payroll components, into the appropriate General Ledger (GL) accounts. This integration helps maintain financial accuracy, improve transparency, and streamline reconciliation between payroll and finance. \n In this blog, we will explore the payroll posting process from SAP ECP to SAP S/4HANA, including the key configurations, integration steps, and important considerations involved in ensuring successful payroll posting. \n Scenario: \n Payroll can be performed in three different landscapes such as ECC, S/4HANA and ECP. Data integration flow depends on the system we run Payroll. In our case the Payroll is being performed in ECP. When I run payroll and post the document to finance, the document is not successfully transferred. \n System Architecture and Data Flow: \n\n ECP System Behavior: \n When I run payroll successfully and triggered live payroll posting. The documents got generated without any errors. \n I have released all the sub documents and posted the main document. In ECP the document got transferred Successfully. But in Finance the document was not posted. \n\n System Process: \n In ECP system once the live payroll run is performed, simulation posting run is done to check for posting related errors. once the simulation posting is successful, live posting is performed after putting the control record in Exit mode. After posting document got generated, release the child documents/ sub documents and post the main document. \n Once posting is done and the status is being changes to document transferred, then IDOC will be generated and posted to the S/4 System connected to it via RFC Connection setup. \n Analysis: \n If the document is posted and not received in the receiver system then check for IDOC errors if any and check the status of IDOC. \n In our case the IDOC status in ECP system is Data Passed to Port in ECP System. \n\n Solution: \n Check for the Connection and IDOC status in S/4 system. \n T.codes to be used: WE02, SM58 \n\n Conclusion: \n Payroll posting from SAP ECP to SAP S/4HANA plays an important role in connecting payroll operations with financial accounting. With the right configuration of wage types, symbolic accounts, GL account assignments, and integration settings, organizations can ensure that payroll results are accurately reflected in their financial records. A well-established posting process not only minimizes manual intervention and reconciliation efforts but also improves data consistency, financial transparency, and operational efficiency. By understanding the end-to-end integration process and addressing configuration dependencies, SAP consultants can ensure a smooth and reliable payroll-to-finance integration."
+ },
+ {
+  "key": "890c117885c1ec43",
+  "title": "sap analytics cloud - data action - breakpoint issue",
+  "link": "https://community.sap.com/t5/financial-management-q-a/sap-analytics-cloud-data-action-breakpoint-issue/qaq-p/14527476",
+  "published": "2026-11-22T00:48:23+00:00",
+  "author": "MaheshKosuri",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi \n I am facing issue in data action break point. Data action simply running in backend and finishing its job without stopping at breakback point. I have maintained only one trace , break back point at DATA \n I have cleared all browser cache, \n Any one faced similar issue and appreciate your inputs \n regards \n Mahesh"
+ },
+ {
+  "key": "466f32c25ec3cb34",
+  "title": "locking Issue in MDG CR Activation",
+  "link": "https://community.sap.com/t5/technology-q-a/locking-issue-in-mdg-cr-activation/qaq-p/14527402",
+  "published": "2026-11-21T21:26:21+00:00",
+  "author": "karthik_subramanian",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi Experts, \n I have below scenario in MDG Customer and it would be great if you can help on this. Thanks. \n User A has started creating the CR via CHANGE PROCESS in MDG UI and when activating the CR...then this ***NEW***(account site id) been generated with new( NUMBER GENERATE ) value and updated in MDG UI screen. \n Issue is only in production system at sometimes, this ***NEW***(account site id) not generated with new value and not loaded in screen. \n via SLG1 mechanism, observed that new value been generated in background but not loaded in the CR...because of lock issue. \n Further we checked the respective workflow log and observed that there is some lock issue as screen below for reference. \n It would be great if you can give hints on this case to overcome this lock issue...Thanks. \n On Tech side, we are generating this NEW id in the service badi during activation step and writing in the screen via GOV API. Is there any additional care to be taken on this ? \n NOTE : This locking issue happens only in production box and not other environments. \n in MDG UI below : Field : Account site id \n\n Lock Message via SWIA: \n\n Regards, \n Karthik S"
  }
 ]
