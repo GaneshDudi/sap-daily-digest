@@ -75,5 +75,16 @@
   "feed": "SAP Community questions",
   "kind": "question",
   "text": "Hi \n I am facing issue in data action break point. Data action simply running in backend and finishing its job without stopping at breakback point. I have maintained only one trace , break back point at DATA \n I have cleared all browser cache, \n Any one faced similar issue and appreciate your inputs \n regards \n Mahesh"
+ },
+ {
+  "key": "b6451b1f957a5605",
+  "title": "My Tabular Foundation Models learning Journey : Why Do We Need Foundation Models for Tabular Data?",
+  "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/my-tabular-foundation-models-learning-journey-why-do-we-need-foundation/ba-p/14527620",
+  "published": "2026-11-22T21:58:56+00:00",
+  "author": "Marla-Ellinger",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Over the past year, I've been following my curiosity and exploring the world of Tabular Foundation Models (TFMs) . What started as a simple question turned into a whole learning journey that taught me a lot and raised even more questions along the way. 😅 And that's exactly why I wanted to start this blog series: to share what I've learned, what I've discovered along the way, and why I find this emerging area of deep learning so fascinating. Hopefully, it will spark your curiosity too! 😊"
  }
 ]
