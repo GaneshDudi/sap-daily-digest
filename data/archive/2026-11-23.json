@@ -1,0 +1,1334 @@
+{
+ "items": [
+  {
+   "key": "5550596cacc1fd6c",
+   "title": "SAP EWM- Receiving Material in Different Packaging for Same UOM",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/sap-ewm-receiving-material-in-different-packaging-for-same-uom/ba-p/14527109",
+   "published": "2026-11-22T09:11:48+00:00",
+   "author": "Vedant_Gunde",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Business Scenario: \n Same material is procured from multiple vendors in different packaging sizes, and it shares the same Unit of Measure (UOM). Because standard system configuration does not allow multiple conversion entries for the same UOM on a single material master, (Eg. 1 CAR = 4 EA and 1 CAR = 6 EA), we need a solution to receive and manage different vendor-specific packaging types for the same material. \n Configuration: \n SCM EWM > EWM > Goods Receipt Process > Inbound Delivery >Define Document Types for Inbound Delivery Process \n Master Data: \n - Create Product master (/SCWM/MAT1) \n\n - Create Packaging Specification (/SCWM/PACKSPEC) \n 2 Packaging specifications are created with Condition type 0IBD is maintained with 2 different Ship from party (Vendor). In level Target quantity is maintained as per packaging supplied by vendor. \n Vendor 1 supply material in packing of 4 EA in one Carton. \n\n Vendor 2 supply material in packing of 6 EA in one Carton. \n Testing \n Create Inbound delivery with Supplier 1 \n Delivery replicated to EWM \n For Supplier 1 from the Packspec (2000066) is determined and hence 12 HUs are created. \n Create Inbound delivery with Supplier 2 \n Delivery replicated to EWM \n For Supplier 2 from the Packspec (2000070) is determined and hence 8 HUs are created. \n Conclusion: Using Packaging specification, condition type > condition record we can receive different packaging for Same UOM."
+  },
+  {
+   "key": "60feb7c3d3a55c66",
+   "title": "I have access for Learning Hub(LH), but unable to access stay certified",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/i-have-access-for-learning-hub-lh-but-unable-to-access-stay-certified/qaq-p/14526163",
+   "published": "2026-11-20T15:57:08+00:00",
+   "author": "Vishw2026",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello All, \n I am able to access Learning hub from my end, every half yearly basis SAP Release delta exam for certification active purpose, but I was unable to access stay certified due to credentials missing \n Error Message :Can’t see your certifications? Complete your SAP Universal ID setup Your SAP Universal ID might be missing a secondary email address. This additional email is required for account recovery purposes and to manage your certifications effectively. Please add at least one additional email address by visiting the Universal ID account manager . Note: Secondary email ID added but still issue persists"
+  },
+  {
+   "key": "d90198eabb24c4da",
+   "title": "Automated Employment Decision Tool (AEDT) laws in United States: early lessons for AEDTs providers",
+   "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/automated-employment-decision-tool-aedt-laws-in-united-states-early-lessons/ba-p/14527595",
+   "published": "2026-11-22T17:31:29+00:00",
+   "author": "jiaoyan",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The emerging AEDT regulatory framework places distinct but interdependent obligations on AEDT providers and employers that deploy AEDT systems. While employers generally bear the direct legal responsibility for providing notices, conducting or obtaining bias audits, maintaining human oversight, and ensuring nondiscriminatory use, providers play a critical enabling role by supplying the technical information, documentation, configuration options, and data-access capabilities necessary for employers to comply. This article identifies key principals for AEDT Cloud Service provisioning, which include, for instances, transparency, auditability, explainability, and customer compliance support."
+  },
+  {
+   "key": "e0feef4d1e5341f0",
+   "title": "How buyers find suppliers on SAP Business Network, and how to show up",
+   "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/how-buyers-find-suppliers-on-sap-business-network-and-how-to-show-up/ba-p/14527227",
+   "published": "2026-11-22T14:00:00+00:00",
+   "author": "amandalaldin81",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Every time a buyer runs a search or posts an RFI, the platform checks supplier profiles against the request, whether or not profiles are current and accurate. The same few fields decide who is actually shown to the buyer. \n That means a profile can look finished and still never appear in search results or RFI matches. The good news is that the fields doing the work are few, and you can change them today. \n Two ways buyers find you, one set of fields \n The first is active search : a buyer filters by category, region, or other criteria, and the platform returns a ranked list of matching suppliers. The second is SAP Business Network Discovery matching . A buyer posts an RFI describing what they need, and the platform matches the posting to suppliers whose profiles fit the requirements. \n Your commodity categories and your ship-to or service locations are the primary fields the platform uses to judge relevance in both. A gap in either one doesn't just limit your search visibility. It can also mean you never get matched to a buyer opportunity you could have won. \n You can respond to all public sector RFIs and up to three private sector RFIs with no subscription, so better matching pays off right away. \n Product and commodity categories \n Search and RFI matching are both category-driven. Categories use UNSPSC, a standard coding system that organizes products and services from broad families down to specific commodities. Buyers don't need to know the codes. They search by keyword, and the platform maps those words to categories behind the scenes. \n This means that specificity is what gets you matched . If your categories are missing or sit at the broadest level, searches and RFIs in the subcategories you actually serve may pass you by. A supplier of precision-machined components and a general manufacturer don't belong under the same code, and buyers looking for one are rarely looking for the other. \n Review your categories in the portal and update them to match the products and services you really offer. \n Ship-to and service locations \n Buyers often narrow their search results by region, and RFIs specify where the buyer is sourcing from. The ship-to or service location field tells the platform which regions you can serve. \n Many profiles are still set to \"Global\" or left blank. This can mean a buyer filtering for a specific region doesn't see you, and an RFI for your region doesn't reach you. \n Log in to your account , open the profile settings, and compare the listed locations with where you actually do business. If you serve specific regions, list them. \n Description and showcase content \n Matching gets a buyer to your profile. What happens next is a different test, whether they arrived through search or clicked through from an RFI match. As Kyle Milan put it in the B2B Exchange series , buyers arrive with zero trust and decide quickly whether to stay. They are scanning for relevance, credibility, and a clear sense of what you do . \n Think of the profile as a storefront, not a form. A strong description names what you make or provide, the industries you serve, your size or capacity, and what sets you apart. A paragraph about company values rarely does that work. If you have certifications or customer references, keep them current and easy to find. \n\n A sample supplier profile as buyers see it, with categories, ship-to locations, showcase files and verification badge in view. \n Verification \n Verified suppliers appear 4× as often in buyer search results compared to non-verified suppliers in the same category (SAP internal measurement, 2026). The badge works like a trust signal, similar to a Google Business Profile or LinkedIn verification mark. It appears in search results and on your profile, and tells buyers your business has been confirmed as legitimate before they even click through. \n Verification is a paid benefit of the promote subscription, and if getting in front of more buyers is the goal, it's worth prioritizing. \n Small adjustments make a real difference \n You don't need to rebuild your profile, you just need to close a couple of gaps that have a strong effect on your visibility to potential buyers. If you have 15 minutes today, check two things: \n Commodity categories are specific to what you sell. \n Ship-to and service locations match where you actually do business. \n Each one changes how the platform sees you when a buyer searches or posts an RFI. It's also worth reviewing the rest of the profile from a buyer's perspective and updating anything that's out of date. \n If you want to take things further, the promote subscription builds on what you already have. It removes the cap on private sector RFI responses and gives you priority placement in search, so the profile work you've done goes further. A Company Showcase section is included too, and promote suppliers appear over 3× more often in buyer search results (SAP internal measurement, 2026). New subscribers can use code DEC26 at checkout for 25% off the first year, valid through December 31, 2026."
+  },
+  {
+   "key": "957cd95cb58305b4",
+   "title": "the sales price for the end cosumer of distributor",
+   "link": "https://community.sap.com/t5/supply-chain-management-q-a/the-sales-price-for-the-end-cosumer-of-distributor/qaq-p/14527545",
+   "published": "2026-11-22T13:02:58+00:00",
+   "author": "omega-ou",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi All, \n I have maintained the sales price for specific end consumers of distributors in the sales price. \n When I create a sales order, the sold-to party is the distributor. How can I fill in the end consumer in the sales order , so that the system can obtain the price list for that end consumer?"
+  },
+  {
+   "key": "f17df36f6fe950a7",
+   "title": "set a sales order surcharge automatically when the total value is below the minimun value",
+   "link": "https://community.sap.com/t5/supply-chain-management-q-a/set-a-sales-order-surcharge-automatically-when-the-total-value-is-below-the/qaq-p/14527544",
+   "published": "2026-11-22T12:52:50+00:00",
+   "author": "omega-ou",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi All, \n In the sales order , when the total value of the sales order is below the minimun value , we need to add a surcharge automatically . \n 1. In the set condition types for pricicing in sales , I have add a new condition type Z01 . \n 2. In the set pricing procedures , I have add the condition type Z01 ot the procedure. \n 3. In the APP - manage price -sales , I add a condition record , the total minimun value is 500 EUR , when the total value is below the minimun value , we need to add a surcharge 25 EUR automatically. \n 4. But I find that the system all the S ales Document Item add this surcharge . \n I want to the minimun value is to the total value of the S ales order , not the S ales Document Item."
+  },
+  {
+   "key": "174ea053a206ae62",
+   "title": "sap analytics cloud - data action - tracing point issue",
+   "link": "https://community.sap.com/t5/financial-management-q-a/sap-analytics-cloud-data-action-tracing-point-issue/qaq-p/14527476",
+   "published": "2026-11-22T16:26:00+00:00",
+   "author": "MaheshKosuri",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi \n I am facing issue in data action break point. Data action simply running in backend and finishing its job without stopping at breakback point. I have maintained only one trace , break back point at DATA \n I have cleared all browser cache, \n Any one faced similar issue and appreciate your inputs \n regards \n Mahesh"
+  },
+  {
+   "key": "b6451b1f957a5605",
+   "title": "My Tabular Foundation Models learning Journey : Why Do We Need Foundation Models for Tabular Data?",
+   "link": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/my-tabular-foundation-models-learning-journey-why-do-we-need-foundation/ba-p/14527620",
+   "published": "2026-11-22T21:58:56+00:00",
+   "author": "Marla-Ellinger",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Over the past year, I've been following my curiosity and exploring the world of Tabular Foundation Models (TFMs) . What started as a simple question turned into a whole learning journey that taught me a lot and raised even more questions along the way. 😅 And that's exactly why I wanted to start this blog series: to share what I've learned, what I've discovered along the way, and why I find this emerging area of deep learning so fascinating. Hopefully, it will spark your curiosity too! 😊"
+  },
+  {
+   "key": "398446cb4ddf9254",
+   "title": "The Road to the New Table Experience — What's Coming and What It Means for You",
+   "link": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/the-road-to-the-new-table-experience-what-s-coming-and-what-it-means-for/ba-p/14527749",
+   "published": "2026-11-23T08:48:20+00:00",
+   "author": "AnnaBurkhardt",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP Analytics Cloud is transitioning stories and composites to the new table build experience. This post covers where we are today, what happens next, what it means for your existing content and what benefits the new experience brings."
+  },
+  {
+   "key": "c94e2f7fe3fb67f3",
+   "title": "Sending SMS from SAP through Netgsm with one ABAP report",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/sending-sms-from-sap-through-netgsm-with-one-abap-report/ba-p/14526602",
+   "published": "2026-11-23T08:44:18+00:00",
+   "author": "Cheditte",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "An open-source ABAP report that sends SMS from SAP through Netgsm: one copy-paste program, credentials only in SM59, and a free preview before any paid send. Tested on A4H."
+  },
+  {
+   "key": "67b049c631361e6e",
+   "title": "From Specifications to Terraform: My SAP TechEd Takeaways on AI and Platform Automation",
+   "link": "https://community.sap.com/t5/community-corner-blog-posts/from-specifications-to-terraform-my-sap-teched-takeaways-on-ai-and-platform/ba-p/14521053",
+   "published": "2026-11-23T09:09:16+00:00",
+   "author": "lechnerc77",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Getting started with Terraform can be a hurdle. You know how you want to set up your SAP BTP account and which services you need, but turning that into your first lines of code takes some work. \n\n That was one of the topics I discussed in my interview with Moshe Naveh from the SAP Community team. We talked about my SAP TechEd session, how AI helps with platform automation, and how I use it in my daily work—including making more pull requests for my development team to review. 🙂 \n\n Click here to watch the whole interview: \n\n A bit about me—and Terraform \n\n I’m Christian Lechner, a product manager at SAP working in platform automation. I’m responsible for the SAP BTP CLI and our Terraform providers, supporting the administrators who work with SAP Business Technology Platform (SAP BTP). \n\n If you’re new to Terraform, the basic idea is straightforward: you define the infrastructure resources you want in code, and Terraform takes care of provisioning them. Instead of setting everything up through clicks in a cockpit, you describe your setup as infrastructure as code. \n\n Start with what you need \n\n In my SAP TechEd session, we showed a guided approach to generating Terraform code with AI. The starting point is your specifications: your governance requirements, how you want to set up your account, and which services you need. \n\n From there, an AI agent, supported by the skills we provide, helps translate those requirements into Terraform code. \n\n For me, the biggest benefit is lowering the entry barrier. Getting those first lines of Terraform written becomes much easier when you can begin by describing what you want. \n\n Of course, you still need to understand Terraform. That knowledge matters when you work with the generated code. \n\n You can explore the project in our GitHub repository: IaC Spec Kit for SAP Business AI Platform . \n\n Three takeaways from the handson session \n\n The first step gets easier. You can describe your requirements and let the agent help you turn them into an initial Terraform implementation. \n\n Spec-driven development is iterative. The name might sound a bit like waterfall, but you can revisit your specifications and go through the flow again whenever you learn something or your requirements change. \n\n The right agent skills and Model Context Protocol (MCP) tools can speed up development. Giving the agent the right support makes a difference in what you can accomplish. \n\n There’s also more we want to do in this area, including support for brownfield scenarios—working with existing setups. That’s further down the road. \n\n And of course here is the obligatory selfie after successfully ending the session with all the rock stars that supported during the session: \n\n Where I’d recommend starting \n\n When Moshe asked how someone new to the topic should get started, my answer had two parts: \n\n Learn the Terraform basics. The free SAP Learning course Getting Started with Terraform on SAP BTP guides you through your first steps. It helps you become familiar with the concepts behind the code. \n\n Get familiar with your AI tools. Whether you use Codex, Claude, or another tool, explore how to work with it and tailor it to your needs. Understanding the available options is part of getting useful results. \n\n Both sides matter: knowing what you want to build and understanding the tools that help you build it. \n\n How AI helps in my daily work \n\n As a product manager, I use AI as a sparring partner. It helps me reflect on ideas, discuss questions, and explore things I haven’t looked into before. \n\n It also helps me write Terraform code for enablement work. I’m not an administrator, so I don’t write Terraform every day. I often know roughly what the code should look like, but I don’t remember the exact syntax. Being able to describe what I need saves me from looking up every statement. \n\n And then there are the pull requests. \n\n As I joked with Moshe, my development team hates me for this: I can now contribute code more often. Our work is open source and available on GitHub. I can point the AI toward the relevant parts of the code, describe an additional feature, and get help with the tedious tasks. In many cases, the result is already quite decent and needs some fine-tuning. \n\n That makes it easier for me to contribute alongside my other responsibilities. \n\n Let’s continue the conversation \n\n Thanks, Moshe, for the chat and the chance to share what we’re working on! \n\n If you want to exchange on Terraform in general, on SAP BTP or using the spec-driven let me know (easiest via LinkedIn). Happy to hear about your feedback and expereinces."
+  },
+  {
+   "key": "1f1b927ea93501b4",
+   "title": "WHAT’S COMING to SAP Engagement Cloud - Nov 2026",
+   "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/what-s-coming-to-sap-engagement-cloud-nov-2026/ba-p/14527756",
+   "published": "2026-11-23T08:08:24+00:00",
+   "author": "katharina_wintere0a9fe",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Get an early look at the latest innovations coming to the platform, from enhanced personalization and AI-powered recommendations to streamlined governance and data management."
+  },
+  {
+   "key": "9ea7a27d00aa3ccf",
+   "title": "Your students learned supply chain theory. But can they apply their knowledge in practice?",
+   "link": "https://community.sap.com/t5/sap-university-alliances-program-blog-posts/your-students-learned-supply-chain-theory-but-can-they-apply-their/ba-p/14526259",
+   "published": "2026-11-23T08:25:36+00:00",
+   "author": "PhilipT",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "What happens when supply chain theory meets AI-powered planning? \n A new SAP Integrated Business Planning (IBP) case study lets students find out firsthand by comparing classical ARIMA forecasting with machine learning using Gradient Boosting. Discover how SAP University Alliances is helping educators bring real-world demand planning, AI, and enterprise technology into the classroom."
+  },
+  {
+   "key": "1388b792346ebf51",
+   "title": "Functional Document: Display Change Documents (Report RSSCD100)",
+   "link": "https://community.sap.com/t5/financial-management-blog-posts-by-members/functional-document-display-change-documents-report-rsscd100/ba-p/14527726",
+   "published": "2026-11-23T07:05:35+00:00",
+   "author": "ESAITEJA",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "1. Purpose and business need \n This document explains how to find who changed what, when and from which transaction in SAP, using the standard change-document report RSSCD100. It is used to support audit and SOX/internal-control reviews, investigate unexpected data (for example a vendor bank or payment-term change), and analyses the root cause of posting or reporting differences."
+  },
+  {
+   "key": "e1b1dff4d9e01545",
+   "title": "从每日重复操作开始：SAP Cloud ERP 中值得关注的 AI 小场景",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/%E4%BB%8E%E6%AF%8F%E6%97%A5%E9%87%8D%E5%A4%8D%E6%93%8D%E4%BD%9C%E5%BC%80%E5%A7%8B-sap-cloud-erp-%E4%B8%AD%E5%80%BC%E5%BE%97%E5%85%B3%E6%B3%A8%E7%9A%84-ai-%E5%B0%8F%E5%9C%BA%E6%99%AF/ba-p/14527701",
+   "published": "2026-11-23T06:08:44+00:00",
+   "author": "Helen_Han",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "查找一组订单、照着邮件改几个字段、整理一段业务进展、弄懂一条报错—— 这类小事每天都在发生。每次多花的几分钟，单看不多，累积起来就占用了本可用于跟进客户、处理业务的时间。 \n SAP Cloud ERP 提供的 AI 辅助功能，可以嵌入到这些具体环节中，帮助你减少重复操作。下面从五个熟悉的场景出发，看看哪些工作值得优先尝试。 \n 找信息时，把筛选条件说出来 \n AI-assisted Easy Filter \n 每天打开销售订单列表，你可能都要重复设置几个条件：只看未完成的订单、限定金额范围，再筛出存在交货冻结的记录。这些条件分散在不同字段里，往往还没开始查找，就要先花时间调整筛选器。 \n 在支持的 SAP Fiori elements 和 Web Dynpro ABAP 应用中，AI-assisted Easy Filter 让你可以用自然语言表达筛选要求。例如，你可以直接描述想看“未完成、净值超过 3,000 欧元且交货被冻结的销售订单”，系统会把这段话转换成筛选条件，并列出相应记录。你可以逐项检查生成的条件，也可以切回传统筛选方式继续调整。 \n 对于需要反复查询同一类业务数据的用户来说，这种方式省去了逐个寻找、逐项设置筛选字段的操作，让注意力更快回到需要跟进的订单上。 \n\n 图：把订单状态、金额和交货冻结要求转换成筛选条件。 \n 官方 Demo 入口 \n 更新数据时，减少逐个字段的填写 \n AI-assisted Easy Fill \n 客户发来一封邮件，要求调整订单日期和其他业务信息。接下来，你要读懂邮件里的要求，找到对应字段，再把新值一个个填进去。这类操作本身并不复杂，忙起来却容易漏掉其中一项。 \n 在支持的 SAP Fiori elements 应用中，AI-assisted Easy Fill 能根据自然语言指令，为多个字段生成填写建议。你可以直接描述要改什么，也可以把邮件里的相关内容粘贴进来；在支持的表格中，还能用指令直接添加行。 \n 生成结果后，先核对系统识别了哪些字段、建议的新值是否正确，再按需要修改并确认。例如，把交货日期改为指定日期时，可以对照原值和新值检查，然后再完成应用中的保存操作。业务判断仍由你掌握，重复录入的环节则被简化。 \n\n 图：描述交货日期变更的要求，对照原值和建议的新值后再确认。 \n 官方 Demo 入口 \n 回复进展时，先生成一份业务摘要 \n AI-assisted Smart Summarization \n 同事问起某张订单的情况，你通常得打开详情、浏览相关信息，再把日期、金额和状态整理成一段话。信息明明都在系统里，重新组织一遍却仍要花时间。 \n AI-assisted Smart Summarization 可为支持的 SAP Fiori elements 对象页面生成摘要。系统默认选中所有字段，你可以取消不需要的，但至少要保留一个。确认后，系统会整理相关内容；你可以在编辑器里调整文字和格式，核对关键信息，再复制到邮件或聊天工具中。 \n 在订单跟进、交接和协作中，这相当于先拿到一份可以继续编辑的沟通草稿。需要进一步判断时，仍要回到原始业务数据查看细节。 \n\n 图：把订单信息整理成可编辑的摘要，核对后复制分享。 \n 官方 Demo 入口 \n 遇到报错时，先看懂问题和处理建议 \n AI-assisted Error Explanation \n 在对象页面上操作时，一旦遇到错误或警告提示，你未必清楚问题出在哪里、该检查什么。尤其是面对不熟悉的业务字段，弄懂报错往往比修改数据本身更费时间。 \n 在支持的 SAP Fiori elements 和 Web Dynpro ABAP 应用中，AI-assisted Error Explanation 可以解释错误或警告，并给出处理建议。打开消息弹窗、选中想了解的问题，系统就会给出更详细的说明，帮你判断该检查输入内容、补充资料，还是联系负责的同事。 \n 这些建议只是排查的起点，实际修改仍需结合业务数据和权限进行。如需他人协助，可以把解释内容连同具体问题一并转给对方，省去反复说明背景的时间。 \n\n 图：查看错误说明与处理建议，帮助确定下一步该检查什么。 \n 官方 Demo 入口 \n 准备打印输出时，用自然语言调整本地化表单 \n Form Extension in Localization as a Self-Service \n 日常工作中也少不了收款收据这类打印输出。当表单需要补充信息、调整字段位置或更改纸张方向时，负责模板的关键用户得先把手上的业务要求落实到具体版式中，之后业务人员才能反复使用。 \n Form Extension in Localization as a Self-Service（表单本地化扩展的自助服务功能）借助 Manage Localized Form Templates 应用，辅助扩展本地化表单。你可以用自然语言描述对版式和内容的调整要求，再查看生成的预览。例如，在支持的收据模板中要求添加银行账号字段并将其左对齐，或调整纸张大小和方向。 \n 这项能力主要面向负责表单的人员，帮他们准备和维护模板。在确认生成结果之前，需要检查字段是否正确、数据是否对应、版式是否符合业务要求，并在正式投入使用前验证实际输出。适用范围取决于所支持的本地化表单和数据源；模板调整完成后，日常打印即可用上符合需求的表单。 \n\n 图：输入表单字段和纸张设置的要求，在预览中检查打印版式。 \n 官方 Demo 入口"
+  },
+  {
+   "key": "605f2c15192b569d",
+   "title": "SAP EWM - Customer Specific HU Picking Using Packaging Specification and BAdI",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/sap-ewm-customer-specific-hu-picking-using-packaging-specification-and-badi/ba-p/14527517",
+   "published": "2026-11-23T05:54:36+00:00",
+   "author": "Vedant_Gunde",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Business Scenario: \n In SAP EWM outbound, when a warehouse task is created, the system picks from the available HUs it finds in stock. One pack size is easy, but what if the same material is stored in different pack sizes and specific customers expect specific ones, in standard SAP system there is no way to pick the right HU for a specific customer. \n Consider a material, Coke Case, that we receive from two vendors: \n Vendor 1 sends it in cartons of 4. \n Vendor 2 sends it in cartons of 6. \n Note: Below blog can be referred to check, How to receive material in different pack sizes from different vendors \n SAP EWM- Receiving Material in Different Packaging... - SAP Community \n On the outbound side, the customers differ: \n Customer 1 orders it in cartons of 4. \n Customer 2 orders it in cartons of 6. \n To handle this, we can maintain the customer's packaging requirement in the Packaging Specification , using outbound condition records (condition type 0OBD) with the ship-to party. The system therefore already knows which packaging belongs to which customer. \n In standard during warehouse task creation, it does not check which packaging is maintained for the ship-to party of the delivery, so it proposes all the HUs of all pack sizes, and thus customer who ordered packs of 6 can end up with a pack of 4. This leads to wrong shipments, manual corrections in the warehouse, and unhappy customers. \n In this blog I show how to close this gap. Using the packaging specification condition records and a BAdI, we filter the available quants during warehouse task creation, so that only the HUs matching the customer's packaging are proposed. \n The Solution: \n Implement BAdI /SCWM/EX_CORE_RMS_DETERMINE , method DETERMINE, which lets us filter the available quants before the warehouse task is created and thus can be used to find the right pack size for each customer. \n Master Data: \n Create Material Master (/SCWM/MAT1) \n Create Packaging Specification (/SCWM/PACKSPEC) \n Customer 1 order material in packing of 4 EA in one Carton. \n Customer 2 order material in packing of 6 EA in one Carton. \n Development: \n Implement BADI /SCWM/EX_CORE_RMS_DETERMINE. \n METHOD /scwm/if_ex_core_rms_determine~determine.\n\n CONSTANTS: lc_lgnum TYPE /scwm/lgnum VALUE 'V001',\n lc_rdoccat TYPE /scdl/dl_doccat VALUE 'PDO',\n lc_cond_typ TYPE kschl VALUE '0OBD',\n lc_stprt TYPE /scdl/dl_party_role VALUE 'STPRT'. \"<<< VERIFY type\n\n TYPES: BEGIN OF ty_hu_ps,\n huident TYPE /scwm/huhdr-huident,\n ps_guid TYPE /scwm/huhdr-ps_guid,\n END OF ty_hu_ps.\n\n DATA: lv_shipto TYPE /scdl/dl_partyno,\n lr_ps_match TYPE RANGE OF /scwm/de_guid_ps,\n lt_hu_ps TYPE SORTED TABLE OF ty_hu_ps WITH UNIQUE KEY huident,\n lt_qmat_final LIKE it_qmat,\n lv_ts TYPE timestamp.\n\n CLEAR: et_qmat_cus, ev_set.\n\n \" 1. Entry checks - only V001 and PDO\n IF is_ltap-lgnum <> lc_lgnum\n OR is_ltap-rdoccat <> lc_rdoccat\n OR it_qmat IS INITIAL.\n RETURN.\n ENDIF.\n\n \" 2. Ship-to party from the delivery header (query method)\n TRY.\n DATA(lo_dlv) = /scwm/cl_dlv_management_prd=>get_instance( ).\n\n lo_dlv->query(\n EXPORTING\n it_selection = VALUE #( ( fieldname = /scdl/if_dl_logfname_c=>sc_docid_h\n sign = 'I'\n option = 'EQ'\n low = is_ltap-rdocid ) )\n is_read_options = VALUE #( )\n is_include_data = VALUE #( head_partyloc = abap_true ) \"<<< VERIFY flag name\n IMPORTING\n et_headers = DATA(lt_headers) ).\n CATCH /scdl/cx_delivery.\n RETURN.\n ENDTRY.\n\n LOOP AT lt_headers ASSIGNING FIELD-SYMBOL(<ls_head>).\n LOOP AT <ls_head>-partyloc ASSIGNING FIELD-SYMBOL(<ls_party>) \"<<< VERIFY component\n WHERE party_role = lc_stprt. \"<<< VERIFY field (PARTYTYPE?)\n lv_shipto = <ls_party>-partyno.\n EXIT.\n ENDLOOP.\n IF lv_shipto IS NOT INITIAL.\n EXIT.\n ENDIF.\n ENDLOOP.\n IF lv_shipto IS INITIAL.\n RETURN.\n ENDIF.\n\n \" 3. 0OBD condition records for this material, valid now\n GET TIME STAMP FIELD lv_ts.\n SELECT ps_guid, pak_ship_to\n FROM /1cn/cpssapobd03\n WHERE kschl = @LC _cond_typ\n AND pak_matid = @IS _ltap-matid\n AND timestamp_from <= @LV _ts\n AND timestamp_to >= @LV _ts\n INTO TABLE @DATA (lt_cond).\n IF sy-subrc <> 0.\n RETURN.\n ENDIF.\n\n \" 4. Keep packspecs whose ship-to = delivery ship-to\n DATA(lv_shipto_cmp) = |{ lv_shipto ALPHA = IN }|.\n LOOP AT lt_cond ASSIGNING FIELD-SYMBOL(<ls_cond>).\n IF |{ <ls_cond>-pak_ship_to ALPHA = IN }| = lv_shipto_cmp.\n APPEND VALUE #( sign = 'I' option = 'EQ' low = <ls_cond>-ps_guid ) TO lr_ps_match.\n ENDIF.\n ENDLOOP.\n IF lr_ps_match IS INITIAL.\n RETURN. \" no ship-to specific rule -> standard\n ENDIF.\n\n \" 5. Packspec GUID of every HU in IT_QMAT\n DATA(lt_qmat_hu) = it_qmat.\n DELETE lt_qmat_hu WHERE huident IS INITIAL.\n SORT lt_qmat_hu BY huident.\n DELETE ADJACENT DUPLICATES FROM lt_qmat_hu COMPARING huident.\n\n IF lt_qmat_hu IS NOT INITIAL.\n SELECT huident, ps_guid\n FROM /scwm/huhdr\n FOR ALL ENTRIES IN @LT _qmat_hu\n WHERE lgnum = @IS _ltap-lgnum\n AND huident = @LT _qmat_hu-huident\n INTO TABLE @LT _hu_ps.\n ENDIF.\n\n \" 6. Keep only quants whose HU packspec matches\n LOOP AT it_qmat ASSIGNING FIELD-SYMBOL(<ls_qmat>).\n READ TABLE lt_hu_ps ASSIGNING FIELD-SYMBOL(<ls_hu_ps>)\n WITH TABLE KEY huident = <ls_qmat>-huident.\n IF sy-subrc = 0 AND <ls_hu_ps>-ps_guid IN lr_ps_match.\n APPEND <ls_qmat> TO lt_qmat_final.\n ENDIF.\n ENDLOOP.\n\n \" 7. Nothing matched -> don't starve the WT\n IF lt_qmat_final IS INITIAL.\n RETURN.\n ENDIF.\n\n et_qmat_cus = lt_qmat_final.\n ev_set = abap_true.\n\nENDMETHOD. \n Testing: \n Create outbound delivery \n\n Case 1: Create Pick Warehouse task for delivery. \n\n When the warehouse task was created, the system followed FIFO and picked a partial quantity from an already packed HU. This should not happen. We always want to dispatch full cases, in the pack size the customer requires. \n Case 2: Create Pick Warehouse task for delivery when BADI is active. \n Delivery for Customer A \n\n While picking we can see all the pallets with different pack sizes available to pick as per FIFO \n Create warehouse task for the delivery We can observe, even though we have enough stock available but still HUs picked for a specific customer as per condition record maintained in Packspec. \n Delivery for Customer B \n\n We can observe here even though enough stock available, but only HUs relevant to customer in a outbound delivery is evaluated and picked accordingly, \n Conclusion: With standard packaging specification data and a BAdI enhancement, EWM can now pick the right pack size for each customer. No change to the picking strategy is needed, and wrong shipments caused by mixed pack sizes are avoided."
+  },
+  {
+   "key": "26a4cdaf38ede5e8",
+   "title": "Evaluated Receipt Settlement (ERS) in SAP S/4HANA Cloud Public Edition — End-to-End Process Guide",
+   "link": "https://community.sap.com/t5/blog-posts-about-sap-websites/evaluated-receipt-settlement-ers-in-sap-s-4hana-cloud-public-edition-end-to/ba-p/14527691",
+   "published": "2026-11-23T05:52:33+00:00",
+   "author": "Angieee",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "1. What Is Evaluated Receipt Settlement (ERS)? \n Evaluated Receipt Settlement (ERS) is an automated invoice settlement mechanism in which the supplier does not submit an invoice. Instead, the buyer's system generates and posts the invoice document automatically, based on the confirmed goods receipt and the agreed price in the purchase order. \n The core principles of this model are: \n No supplier invoice required — the buyer initiates settlement based on verified GR data and pre-agreed PO pricing. This eliminates invoice discrepancies and manual matching effort. \n Settlement is GR-driven — once goods are received and confirmed, the system has everything it needs: quantity, price, tax code, and vendor details. No external invoice document is needed. \n Periodic or on-demand execution — ERS can be triggered immediately after a goods receipt or run as a scheduled batch job at regular intervals, making it ideal for high-frequency procurement. \n Prerequisite: mutual agreement and accurate master data — ERS only works well when price agreements are clearly reflected in the PO and goods movements are posted promptly and accurately. \n ERS is especially well-suited for scenarios with stable, long-term supplier relationships and pre-agreed pricing — such as replenishment of trading goods, components, or raw materials from trusted vendors — where the overhead of invoice exchange adds no value. \n The SAP scope item covering this process is 2LH — Automated Invoice Settlement . \n 2. Business Roles and SAP Fiori Applications \n\n Business Role \n SAP Fiori Application \n\n Purchaser (SAP_BR_PURCHASER) \n Manage Purchase Orders (F0842A) \n\n Warehouse Clerk (SAP_BR_WAREHOUSE_CLERK) \n Post Goods Receipt for Purchasing Document (F0843) \n\n Accounts Payable Accountant (SAP_BR_AP_ACCOUNTANT) \n Schedule Supplier Invoice Jobs – Advanced (F1683) \n Create Evaluated Receipt Settlement (MRRL) \n 3. Prerequisites \n Before the ERS process can run, the following conditions must all be met. If any one is missing, the ERS run will skip the relevant PO line without generating an invoice. \n 3.1 ERS Indicator Set on the Business Partner (Supplier) \n App: Maintain Business Partner (BP) \n The ERS indicator must be enabled in the supplier master. Open the business partner with the Supplier business role (FLVN01) , navigate to the Purchasing section, and select the indicator under: \n Purchasing Data → Additional Purchasing Data → Evaluated Receipt Settlement (ERS) \n This flag signals that the supplier has agreed to the ERS arrangement — no paper invoice will be issued; the buyer's system settles automatically. \n 3.2 ERS Indicator Set on the Purchase Order Item \n The ERS indicator must also be set at the individual purchase order item level. The navigation path depends on the app used: \n Create Purchase Order – Advanced: select the indicator on the Invoice tab of the PO item. \n Manage Purchase Orders (F0842A): select the indicator on the Process Control tab of the PO item. \n If the supplier master already carries the ERS flag (see 3.1), this indicator is typically proposed automatically when a new PO is created for that supplier. \n 3.3 Goods-Receipt-Based Invoice Verification Set on the PO Item \n The Goods-Receipt-Based Invoice Verification (GR-Based IV) indicator must be selected for the PO item. This links the invoice posting to a specific GR document line, which is the foundational mechanism ERS relies on. Without this flag, the ERS run will not generate an invoice for the PO line. \n 3.4 Goods Receipt Must Reference a Purchase Order \n The goods receipt used as the ERS trigger must be posted against a purchase order (not a free GR or standalone delivery). ERS only processes GR documents that carry a PO reference. \n 3.5 Tax Code Maintained in the PO Item \n A tax code must be maintained in the purchase order item (e.g., V1 for 19% input tax in Germany). ERS cannot create an invoice document without a valid tax code, as the tax amount must be calculable at the time of automatic posting. \n 3.6 Order Price Must Not Be an Estimated Price \n The net order price in the PO item must be a confirmed, binding price — not flagged as an estimated price. ERS uses the PO price directly as the invoice price. If the price is marked as estimated, the system will not process the settlement for that line. \n 4. End-to-End Process Walkthrough \n Step 1: Create Purchase Order \n App: Manage Purchase Orders (F0842A) \n Create a standard purchase order against the ERS-enabled supplier. After entering the item, navigate to the Invoice tab of the purchase order item and confirm the following flags are set correctly: \n\n Indicator \n Expected Value \n\n Goods-Receipt-Based Invoice Verification \n ✓ Selected \n\n Evaluated Receipt Settlement \n ✓ Selected \n The Evaluated Receipt Settlement: Yes indicator is the key control field. It marks this PO line as eligible for ERS — meaning no manual invoice will be received from the supplier; the system will generate it automatically upon GR posting and ERS execution. \n The Goods-Receipt-Based Invoice Verification flag is equally important. It links the subsequent invoice posting to a specific goods receipt line, which is the foundational mechanism ERS relies on. \n Step 2: Post Goods Receipt \n App: Post Goods Receipt for Purchasing Document (F0843) \n Enter the purchase order number. The system automatically populates the goods receipt details from the PO. Confirm the delivered quantity and choose Post. \n The system generates a Material Document (movement type 101). This GR document serves as the trigger for ERS in the next step. \n Step 3: Execute Evaluated Receipt Settlement \n This is the core step of the ERS process. Two execution options are available depending on whether you need a scheduled/batch approach or an immediate ad-hoc run. \n Option A: Scheduled Execution via Application Job \n App: Schedule Supplier Invoice Jobs – Advanced (F1683) \n This is the recommended approach for high-volume or periodic settlement scenarios, as the job can be configured to run automatically at regular intervals. \n 3A.1 — Create Application Job \n Choose Create → the New Job screen opens. \n 3A.2 — Select ERS Job Template \n In the Template Selection section, select the job template: Evaluated Receipt Settlement (ERS) \n 3A.3 — Configure Scheduling and Parameters \n In Scheduling Options, check Start Immediately (or configure a recurrence schedule — daily, weekly, etc. — for periodic settlement). \n 3A.4 — Execute the ERS Job and Review Results \n After the job status changes to Finished, choose Results. The log displays the generated Invoice Document number and the corresponding FI Document number. \n Option B: Manual Execution via MRRL \n App: Create Evaluated Receipt Settlement (MRRL) \n For immediate, ad-hoc settlement — for example, to process a single goods receipt on demand without setting up a job — the AP Accountant can use the Create Evaluated Receipt Settlement (MRRL) app directly. \n Enter the selection criteria (Company Code, Supplier, Plant, GR document number, etc.) and choose Execute. The system processes all matching GR lines that meet the ERS prerequisites and immediately generates the corresponding invoice documents. \n This option is functionally equivalent to running the ERS job in Option A, but executes synchronously in the foreground and is better suited for one-off or low-volume scenarios. \n Regardless of which option is used, the system creates and posts a Logistics Invoice Verification document on behalf of the supplier, based on the GR quantity and the PO price — without any manual invoice input. \n 5. How to Cancel a Supplier Invoice Created by ERS \n Why Manual Cancellation Does Not Work \n When a user attempts to cancel an ERS-created invoice directly from the app Supplier Invoices List or Create Supplier Invoice - Advanced (MIRO), the system issues error message: M8414 : \"Invoice doc. &1/&2 was created via evaluated receipt settlement.\" \n This message is configurable. Via SSCUI 102091 – Define Message Types for Area M8, the message type for M8 414 can be changed from Error to Warning. However, this approach is not recommended. Because even if the message is configured as a warning and the invoice is manually cancelled via Create Supplier Invoice – Advanced (MIRO), the PO line is then no longer eligible for automatic ERS settlement — any subsequent invoice must be posted manually via MIRO. The integrity of the automated settlement flow is permanently broken for that PO line. \n Correct Cancellation Process \n The correct approach to cancel an ERS invoice is to reverse the original goods receipt document. When ERS detects a reversed GR, it automatically posts a corresponding cancellation invoice. The process is as follows: \n Step 5.1 — Enable GR Reversal Despite Existing Invoice \n By SAP standard, once an invoice document has been posted against a GR, the system does not allow the GR to be reversed. Since ERS creates the invoice automatically after GR posting, this restriction is always present in an ERS scenario. \n To unlock GR reversal, navigate to SSCUI 106043 – Allow Reversal of GR Despite Invoices and enable the flag: RevGR desp. IR (Reverse GR Despite Invoice Receipt). \n This configuration change allows the warehouse clerk to cancel the GR even though an invoice has already been posted against it. \n Step 5.2 — Reverse the Goods Receipt Document \n App: Post Goods Receipt for Purchasing Document (F0843) \n Locate and cancel the original goods receipt material document. The system posts a reversal material document (movement type 102), negating the original GR entry. \n Step 5.3 — Re-run ERS to Post Cancellation Invoice \n App: Schedule Supplier Invoice Jobs – Advanced (F1683) \n Run the ERS job again using the same parameters as in Step 3, referencing the reversed GR document. The system detects the reversal and automatically posts a cancellation invoice (reversal of the original ERS invoice). \n If the goods are re-delivered afterwards: post a new goods receipt (Step 2) and re-run the ERS job (Step 3). The system will generate a new invoice document based on the pricing conditions valid at that time. \n 6. Full Process Overview \n Create Purchase Order \n → ERS flag = Yes | GR-Based IV = Selected \n ↓ \n Post Goods Receipt → Material Document (Mvt. Type 101) \n ↓ \n Execute ERS Job (Schedule Supplier Invoice Jobs – Advanced) \n → System automatically generates Invoice + FI Document \n ─── If Cancellation Is Required ─────────────────────────── \n Configure SSCUI 106043 → Enable \"RevGR desp. IR\" \n ↓ \n Reverse GR Document (Mvt. Type 102) \n ↓ \n Re-run ERS Job → System posts Cancellation Invoice \n ↓ \n (If goods re-delivered) Post new GR → Re-run ERS \n → New Invoice created with current pricing"
+  },
+  {
+   "key": "2ff3fe30000645bc",
+   "title": "December Expert-guided Implementation Sessions: Get Hands-On with Joule, Agentic AI, and SAP Build",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/december-expert-guided-implementation-sessions-get-hands-on-with-joule/ba-p/14527665",
+   "published": "2026-11-23T04:33:49+00:00",
+   "author": "CarolZhang",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "If you've been meaning to get started with Joule or take your SAP AI and automation skills further, December is a good time to do it. SAP Enterprise Support is offering a set of Expert Guided Implementation (EGI) sessions this month, covering activation, strategy, agentic development, process automation, and pro-code application development. \n EGIs are multi-day remote sessions where you work through a defined activity with experienced SAP service engineers. They combine expert guidance, live demonstrations, and practical exercises — giving you the opportunity to ask questions and build hands-on skills directly applicable to your implementation. \n ❗ Note: Access to EGI sessions require a one-time registration to SAP Learning. \n Here's what's on offer: \n EGI: Process Automation though SAP Build \n This session introduces process automation using SAP Build Process Automation. We start with an overview of the platform's automation capabilities, then move into a hands-on walkthrough where you will learn to build workflows, configure decision management, and set up task automation — using a real business scenario: automating the approval of sales orders with no-code tooling. \n For full details, read the session abstract here. \n EMEA Region: December 7-11, 2026 \n APJ Region (Chinese): December 14-18, 2026 \n NA Region: December 14-18, 2026 \n Choose the timing and language that suits you and register here . \n\n EGI: Pro-code cloud application programming development through SAP Build and AI \n In this Live Session, you will gain the knowledge of cloud application programming development in SAP HANA Cloud. After the completion of the session, you will have the knowledge of CAP CDS development and design in SAP HANA Cloud utilizing pro-code development using SAP Build Code with Joule. \n For full details, read the session abstract here. \n LA Region (Spanish): December 7-11, 2026 \n LA Region (Portuguese): December 14-18, 2026 \n Choose the timing and language that suits you and register here . \n\n EGI: Architecting Innovative Solutions at Scale Using Agentic AI \n This live session is designed for architects and developers who want to build and deploy AI agents on SAP BTP using Joule and AI Core. You will learn how to design and architect intelligent agents, applying concepts such as agent orchestration, context-aware retrieval, secure BTP integration patterns, and scalable deployment practices. \n By the end of the session, you will understand agent design patterns, how to integrate Joule and AI Core for conversational and autonomous workflows, and how to monitor, secure, and operationalise agents for enterprise-scale deployment. \n For full details, read the session abstract here . \n NA Region: December 7-10, 2026 | Register \n\n EGI: Activating Joule: The Pre-Requisites \n This live session walks you through the technical foundation required to activate Joule. You will gain a clear understanding of Joule's capabilities, reference architecture, and supported deployment scenarios — and learn why SAP Cloud Identity Services (IAS/IPS) and SAP BTP are required components for a successful activation. \n The session covers core platform services, identity management, and integration prerequisites. By the end, your team will be ready to run the Joule Booster with all prerequisites in place for a compliant and efficient activation. \n For full details, read the session abstract here. \n NA Region: November 30 - December 1, 2026 \n EMEA Region: December 7-8, 2026 \n APJ Region (Chinese): December 8-9, 2026 \n Choose the timing and language that suits you and register here . \n\n EGI: Unlocking AI: Joule and SAP Business AI from Strategy to Activation \n This live, hands-on session is designed for teams looking to move from AI awareness to active adoption. Through expert guidance, live demonstrations, and practical exercises, you will explore how Joule and SAP Business AI capabilities work across your SAP landscape — and what it takes to put them into practice. \n The session covers key Business AI scenarios that are ready to activate, helping your team understand what AI can do in your specific context and what steps are needed to get started. \n For full details, read the session abstract here . \n LA Region (Spanish): December 2-4, 2026 \n APJ Region (Chinese): December 8-10, 2026 \n NA Region (Chinese): December 14-16, 2026 \n Choose the timing and language that suits you and register here . \n\n EGI: Support to Activate Joule in SAP S/4HANA Cloud, Private Edition (PCE) \n This live session guides you through the prerequisites for activating Joule with SAP S/4HANA Cloud, Private Edition (PCE) — including SAP Cloud Identity Services — and how to fulfill them. By the end of the session, your team will have a clear, actionable understanding of what is needed to complete the activation successfully. \n For full details, read the session abstract here. \n APJ Region: December 1-2, 2026 \n NA Region: December 7-8, 2026 \n Choose the timing and language that suits you and register here . \n\n Enhance Your SAP Experience with Value Maps \n Beyond Expert-guided Implementation sessions, SAP Enterprise Support offers additional resources to help you drive innovation. Value maps on SAP Community bring together guidance, recommended actions, and supporting resources to help you decide what to focus on next - all included in your SAP cloud subscription. \n Watch our short demo video , then head over to our page to explore our range of topics and request a call with a topic expert for guidance tailored to your goals. \n About the author: \n Carol Zhang is a Topic Expert for SAP Enterprise Support value maps. With more than 20 years of experience at SAP and a background spanning roles in SAP Service and Support organization, she is passionate about helping customers succeed businesses accelerate the adoption of SAP Business AI Platform tools and services through SAP Enterprise Support offerings."
+  },
+  {
+   "key": "e049edd4f4d2ffd8",
+   "title": "Enterprise Search Models in Quality Management in SAP S/4HANA Cloud Public Edition 2608",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/enterprise-search-models-in-quality-management-in-sap-s-4hana-cloud-public/ba-p/14527274",
+   "published": "2026-11-21T09:45:17+00:00",
+   "author": "siddhant_dutta",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Introduction — The Challenge of Finding QM Data Quickly \n Quality Management professionals — whether consultants, quality engineers, or quality technicians — routinely need to locate specific QM objects across a complex landscape of inspection lots, certificate receipts, defects, quality tasks, and master inspection data. Until now, finding these objects required navigating through multiple dedicated SAP Fiori apps, each with its own filter criteria and search capabilities. For a quality technician tracking down a specific certificate receipt during a goods receipt, or a quality engineer searching for open defects linked to a supplier complaint, this multi-app navigation consumed valuable time and introduced unnecessary friction into daily workflows. \n With the SAP S/4HANA Cloud Public Edition 2608.1 release, SAP introduces Enterprise Search Models for Quality Management — a targeted enhancement that brings QM business objects directly into the unified Enterprise Search experience on the SAP Fiori launchpad. This means quality professionals can now find QM objects instantly from the launchpad header bar, without first navigating to a specific app. \n This blog post provides an advanced, step-by-step guide on what the feature delivers , how to enable it , how to use each search model , and why it matters for your quality operations. A dedicated reference section at the end consolidates all official SAP documentation links for your convenience. \n 1. What Is Enterprise Search in SAP S/4HANA Cloud Public Edition? \n Before diving into the QM-specific enhancements, it is important to understand the broader Enterprise Search framework. \n Enterprise Search is the central search capability of SAP S/4HANA Cloud Public Edition. It provides unified, comprehensive, and secure real-time access to enterprise data, enabling users to search for structured data (business objects) and directly access associated applications and actions — all from a single search bar embedded in the SAP Fiori launchpad header ( SAP Help — Enterprise Search Architecture ). \n Key characteristics of Enterprise Search include: \n Unified access: A single search bar in the Fiori launchpad shell bar searches across all enabled business objects (purchase orders, materials, cost centers, etc.) and apps. \n Security-aware results: Search results respect the user's authorization profile — users only see objects they are permitted to access. \n Relevance-ranked results: Results are ranked by relevance using SAP HANA embedded search technology. \n Auto-suggestions and wildcards: The search supports auto-suggestions, wildcard matching, and phrase matching for efficient information retrieval. \n Extensible by key users: Key users can view, activate, and manage SAP-delivered search models, as well as create custom search models from CDS views using the Manage Search Models app. \n Enterprise Search is included with the base SAP S/4HANA Cloud Public Edition subscription and does not require a separate license ( SAP Discovery Center — Enterprise Search ). \n Further Reading: \n Enterprise Search Architecture and Configuration — SAP Help \n Searching from the SAP Fiori Launchpad — SAP Help \n SAP Discovery Center — Enterprise Search AI Feature \n SAP Fiori Design Guidelines — Enterprise Search \n 2. What Are Enterprise Search Models in Quality Management? \n With the 2608.1 release, SAP delivers predefined Enterprise Search models for the following QM business objects ( What's New in SAP S/4HANA Cloud Public Edition 2608.1 — PDF , Section 8.1.1): \n Search Model Description \n 1 Certificate Receipts Search for quality certificate receipts by plant, material, supplier, purchase order, batch, inspection lot, and more. \n 2 Quality Tasks Search for quality tasks by task code, status, processor, planned end date, defect reference, and follow-up actions. \n 3 Quality Notification Activities Search for quality notification activities by notification type, status, and related attributes. \n 4 Defects Search for defects by detailed description and associated attributes. \n 5 Inspection Methods Search for inspection methods by detailed description. \n 6 Master Inspection Characteristics Search for master inspection characteristics by detailed description. \n These search models are delivered by SAP as part of the standard product — they do not require custom development. Once activated, they appear as selectable categories in the Enterprise Search dropdown on the Fiori launchpad. \n What This Means in Practice \n Previously, to find a specific certificate receipt, a user had to: \n Navigate to the Manage Certificate Receipts app (F3233). \n Apply filters manually within the app. \n Scroll through results to find the target record. \n Now, with the Enterprise Search model, the user simply: \n Clicks the search icon in the Fiori launchpad header bar. \n Selects Certificate Receipts from the dropdown. \n Types a search term (e.g., material number, supplier name). \n Navigates directly to the matching record in the Manage Certificate Receipts app. \n This same pattern applies to all six QM search models listed above. \n Further Reading: \n What's New in SAP S/4HANA Cloud Public Edition 2608.1 (HFC4) — PDF, Section 8.1.1 \n What's New Viewer — 2608.1 (HFC4) Online \n Feature Scope Description — SAP S/4HANA Cloud Public Edition 2608 \n 3. How to Enable Enterprise Search Models for Quality Management \n Enabling the QM Enterprise Search models involves a combination of feature activation , search model management , and role/catalog assignment . Below is the step-by-step procedure. \n 3.1 Prerequisites \n Before activating the QM search models, ensure the following: \n Business Role: The user performing the activation must have a business role that includes the Configuration Expert — Business Process Configuration (SAP_BR_BPC_EXPERT) role template. \n Business Catalog for Search Model Management: The business catalog SAP_CORE_BC_EXT_ESH_PC must be assigned to the relevant business role. (Note: The older catalog SAP_CORE_BC_EXT_ESH is deprecated.) This catalog provides access to the Manage Search Models app ( SAP Help — Manage Search Models ). \n QM-Specific Business Catalogs: End users who will consume the search results need the appropriate QM business catalogs assigned to their roles. For example, to search for Certificate Receipts, the user needs the catalog SAP_QM_BC_INCG_QLTY_CERT (QM — Manage Incoming Quality Certificates). \n 3.2 Step-by-Step Activation \n Step 1: Navigate to Feature Activation \n Log on to the SAP Fiori launchpad as a Configuration Expert — Business Process Configuration (SAP_BR_BPC_EXPERT). \n Open the Manage Your Solution app. \n Navigate to Configure Your Solution . \n Search for Activate Features and open the configuration activity. \n Locate the relevant QM Enterprise Search feature(s) and activate them. \n ( SAP Help — Feature Activation Process ) \n Step 2: Verify and Manage Search Models \n Open the Manage Search Models app on the Fiori launchpad. \n On the Delivered by SAP tab, filter by application area or component to find the QM-related search models (e.g., Certificate Receipts, Quality Tasks). \n Verify the Activation Status of each model. If a model shows as Inactive , select it and activate it. \n Optionally, you can edit SAP-delivered search models to customize which fields are displayed and in which order. Save your changes as a draft or publish directly to the catalog. \n ( SAP Help — Delivered by SAP Search Models ) \n Step 3: Transport to Production \n If you are working in a quality (Q) system, the activated and optionally customized search models must be transported to the production system: \n After saving and activating the search model, navigate to Custom Catalog Extension . \n Add the catalog and publish the search model to the selection catalog. \n Use the Export Software Collection and Import Collection apps in Transport Management to move the search model to the production system. \n The transporting user needs a business role with authorization for these Transport Management apps. \n ( SAP Help — Transport Search Models ) \n Step 4: Assign QM Business Catalogs to End-User Roles \n Ensure that end users who need to search for QM objects have the appropriate QM business catalogs assigned to their business roles. For example: \n Search Model Required Business Catalog \n Certificate Receipts SAP_QM_BC_INCG_QLTY_CERT \n Quality Tasks Relevant QM catalogs for Nonconformance Management or Problem-Solving Processes \n Quality Notification Activities Relevant QM notification catalogs \n Defects Relevant Nonconformance Management catalogs \n Inspection Methods Relevant Quality Planning catalogs \n Master Inspection Characteristics Relevant Quality Planning catalogs \n Further Reading: \n Manage Search Models — Delivered by SAP \n Creating a Custom Search Model (Video Guide) \n Transporting Search Models to Production \n What's New — Feature Activation for 2608.1 (HFC4) \n Apps for Quality Management (QM) — SAP Help \n 4. Deep Dive: Each QM Search Model in Detail \n This section provides field-level details for each of the QM search models, including which attributes are searchable, which app the search navigates to, and a practical usage scenario. \n 4.1 Certificate Receipts \n The Certificate Receipts model is a predefined search for quality certificate receipts — records that document the receipt of quality certificates from suppliers for purchased materials. \n Searchable Fields: \n Certificate Receipt number \n Plant \n Material \n Supplier \n Goods Receipt Posting Date \n Certificate Type \n Purchasing Document / Item \n Batch \n Inspection Lot \n Navigates To: Manage Certificate Receipts app (F3233) \n Practical Scenario: During a goods receipt process, a quality technician needs to verify whether a specific supplier has provided the required quality certificate for a batch of raw material. Instead of opening the Manage Certificate Receipts app and manually filtering, the technician clicks the search icon in the launchpad, selects \"Certificate Receipts,\" types the supplier name or purchase order number, and immediately locates the relevant certificate receipt record. \n ( SAP Help — Searching for a Certificate Receipt ) \n 4.2 Quality Tasks \n The Quality Tasks model is a predefined search for quality tasks — activities created in the context of defect processing or problem-solving processes within Nonconformance Management. \n Searchable Fields: \n Quality Task and Task Text (note: for technical reasons, internal quality task IDs prefixed with \"$\" may be displayed) \n Task Code and Code Text \n Task Status \n Processor \n Planned End Date \n Defect reference \n Follow-up Action \n Related Code Groups \n Navigates To: Process Quality Tasks app \n Practical Scenario: A quality engineer is conducting a supplier audit and needs to quickly find all open quality tasks assigned to a specific processor. By selecting \"Quality Tasks\" in Enterprise Search and entering the processor's name, the engineer gets an instant overview of all relevant tasks — with direct navigation to each task for further processing. \n ( SAP Help — Searching for Quality Tasks ) \n 4.3 Quality Notification Activities \n The Quality Notification Activities model provides a predefined search for notification activities — tasks within quality notifications that describe the planning and organizational aspect of notification processing. \n Searchable Fields: \n Notification Activity \n Notification Type \n Status \n Related notification attributes \n Navigates To: Quality notification processing apps \n Practical Scenario: A quality manager reviewing notification turnaround times can search for specific notification activities by type and status to quickly identify bottlenecks in the complaint resolution process. \n ( SAP Help — Searching for Quality Notification Activities ) \n 4.4 Defects \n The Defects search model enables searching for defects recorded in Nonconformance Management. With the 2608.1 release, the search capability is enhanced to in"
+  },
+  {
+   "key": "04ed3120461ad0b0",
+   "title": "S/4HANA Cloud Public Edition 2602 - Serial Number Creation for Child Orders in Collective Orders",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/s-4hana-cloud-public-edition-2602-serial-number-creation-for-child-orders/qaq-p/14527729",
+   "published": "2026-11-23T07:07:23+00:00",
+   "author": "Reserve",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello SAP Community, \n We are working on SAP S/4HANA Cloud Public Edition 2602 and have a requirement for automatic serial number creation in manufacturing. \n Business scenario: \n When a production order is released, we would like to automatically create serial numbers based on a defined rule.. We have successfully implemented this for the parent production order using BAdI LOSN_CBO_SERIAL_NUMBER_INT . \n However, for collective orders, there is a parent-child order relationship. Currently, serial numbers can be created for the parent order, but we also need to create serial numbers for the child order. \n For example: \n Parent order has two serial numbers: 0001 and 0002 \n For parent serial number 0001 , the corresponding child serial numbers should be: \n 0001-01 \n 0001-02 \n\n When we attempt to maintain serial numbers for the child order, we receive the following message: \n \"Serial Numbers cannot be maintained\" \n\n Current issue: \n We have not been able to identify a BAdI or other extensibility point that supports serial number creation or assignment for the child production order in a collective order. \n We would appreciate guidance on the following: \n Is serial number creation for child production orders in a collective order supported in SAP S/4HANA Cloud Public Edition 2602? \n Is there a released BAdI, API, or other extensibility point that can support this requirement? \n If this is not currently supported, is there an alternative recommended approach for implementing this requirement? \n Thank you in advance for your guidance."
+  },
+  {
+   "key": "cd1654da55ea13e6",
+   "title": "Amortization of Purchase orders created with Enhanced Limit",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/amortization-of-purchase-orders-created-with-enhanced-limit/qaq-p/14527719",
+   "published": "2026-11-23T06:58:12+00:00",
+   "author": "nitintelstra",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi, \n We want to invoice / or follow amortization process for purchase orders created with Enhanced limit \"E\". \n We tried in the system with direct invoice method and using the app \"Manage service entry - lean services\" its nor working. \n Further we have checked the notes - \n\n 3704761 \n\n 3667561 \n\n 3839530 \n but none of the above are helping"
+  },
+  {
+   "key": "0854357f31e1cdc4",
+   "title": "Stock disposal from inventory",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/stock-disposal-from-inventory/qaq-p/14527718",
+   "published": "2026-11-23T06:57:00+00:00",
+   "author": "GururajanAtenneco",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Users accidentally uploaded initial stock into inventory management for Plant 2168 and storage Location 9000 in 2024. \n However these materials are not available in decentralized warehouse 268 which is assigned to storage location 9000. \n Now we want to dispose these IM stocks. However, when we are tying to scrap materials using 551 moment type system creating OBD. \n Could you please suggest what is the way forward. \n For example Material SXCPAM6242 Plant 9000. \n We have stock of 8 EA in 9000 SL."
+  },
+  {
+   "key": "9c280d98664af0c4",
+   "title": "Time Off request validation on previous day leave request",
+   "link": "https://community.sap.com/t5/human-capital-management-q-a/time-off-request-validation-on-previous-day-leave-request/qaq-p/14527704",
+   "published": "2026-11-23T06:24:31+00:00",
+   "author": "ArunSuresh3",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Experts \n We have a requirement on Time Off initiation validation, \n when an user is applying for Child Care Leave, the UI should validate whether the previous day is end date of Maternity leave request. \n If previous day is end date of Maternity leave then child care leave will be submitted, else UI should restricts the leave submission. \n Example:- Maternity Leave request \n Start Date:- 01/01/2026 \n End Date:- 31/10/2026 \n Child care Leave Request \n Start Date:- 01/11/2026, greater than 0st Nov is not allowed \n I tried configuring with Get Absence In Days For Period Based On Working Days For Time Types () >1 function, but it didn't work as expected. Looking forward for your input on the query. \n\n Thanks & Regards \n Arun"
+  },
+  {
+   "key": "f235a53a7d12bd84",
+   "title": "Auto RFQ creation with reference to PR for specific document type.",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/auto-rfq-creation-with-reference-to-pr-for-specific-document-type/qaq-p/14527689",
+   "published": "2026-11-23T05:42:11+00:00",
+   "author": "TDSADAA",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "As per the requirement by Procurement, it is needed to have Auto creation for RFQ with reference to PR, in addition to specific document types for which we are creating the program with support of technical team, However while defining the Bapi to read PR and create RFQ through program, it has been found that system is not supporting following BAPI and while search on that no such BAPI found. resulting the requirement could not be addressed. \n Hence request you to please provide either standard BAPI/ BADI to create such program or please provide standard solution for this requirement. \n regards \n Tarundeep Singh"
+  },
+  {
+   "key": "051b68122520d069",
+   "title": "SAP BTP Trial – Cloud Integration deployment fails with ErrorPersistingArtifact.",
+   "link": "https://community.sap.com/t5/technology-q-a/sap-btp-trial-cloud-integration-deployment-fails-with/qaq-p/14527683",
+   "published": "2026-11-23T05:02:37+00:00",
+   "author": "m_sridevi68be4d",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello SAP Community, \n I am facing a deployment issue in SAP Integration Suite (Cloud Integration) using my SAP BTP Trial account. \n I created an integration flow, but deployment fails with the following error: \n Error Details: \n \"The artifact can't be deployed due to an internal issue. Try again after some time. If the issue still persists, please contact SAP.\" \n Troubleshooting already performed: \n\n Refreshed the browser and retried saving. \n\n Retried deployment. \n\n Created a second integration flow named TestFlow. \n\n The second integration flow also failed with the same ErrorPersistingArtifact error. \n The Monitor page shows: \n\n Status: Error \n\n Message: The Integration Flow is not operational. \n Since multiple integration flows are experiencing the same issue, I would like to know whether this could be related to an SAP BTP Trial tenant or deployment service issue. \n Could someone help me identify the root cause and suggest a solution? \n Thank you!"
+  },
+  {
+   "key": "1ee0be217b72ad39",
+   "title": "Joule Studio practice system (C_JSD certification): HTTP 500 error on file storage, nothing visible",
+   "link": "https://community.sap.com/t5/technology-q-a/joule-studio-practice-system-c-jsd-certification-http-500-error-on-file/qaq-p/14527674",
+   "published": "2026-11-23T04:00:04+00:00",
+   "author": "Wejdane_RIAHI12",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello, \n I am preparing for the SAP Certified – Joule Studio Developer (C_JSD) certification. I activated the Hands-on Practice for Joule Studio Developer system on SAP Learning to complete the two required tasks before the Yoodli assessment. The practice system is available for only 24 hours. \n Since activation, I have had a persistent HTTP 500 Internal Server Error, and I cannot see any of my work in the Solution Progress panel: \n - no intent summary, \n - no requirements (PRD), \n - no specifications, \n - no solution artifacts, \n - no test results or Preview testing. \n In the chat, Joule confirms that everything was created and saved (intent, PRD, specification, agent code; 126 tests passed). However, nothing appears in the UI. Joule describes the problem as: \n ▎ \"The platform's file storage service is currently down — it returns a 500 Internal Server Error every time a file is saved through the solution panel. Files written to disk ✅ — the work is there. Files appearing in the left panel ❌ — the sync service is broken. This is a platform-side issue, not a project issue.\" \n What I have already tried: \n - refreshing the page and logging in again; \n - clearing the browser cache and cookies; \n - setting Chrome to English with zoom at 100%, and allowing pop-ups and cookies for the SAP domains; \n - [add anything else you tried]. \n Details: \n - Group number / user: [e.g. C00XX] \n - Practice system activated on: [date and time, with time zone] \n - Access expires on: [date and time] \n - Browser: Google Chrome [version], Windows 11 \n - Network: home network, no VPN \n Impact: without the Solution Progress panel, I cannot show my agent, intent, requirements or tests during the Yoodli roleplay. The 24-hour access window is almost over. Even if the service is restored, there is not enough time left to complete both tasks and take the assessment. \n Request: \n 1. How can I fix the file storage / sync issue on my practice system? \n 2. How can I extend or reset my practice system access (or the voucher) so I can complete the two tasks and the assessment? \n Thank you very much for your help. \n Best regards,"
+  },
+  {
+   "key": "8b69c43089b135ee",
+   "title": "SAC Advanced Trial: Unable to save a model created from an Excel file",
+   "link": "https://community.sap.com/t5/technology-q-a/sac-advanced-trial-unable-to-save-a-model-created-from-an-excel-file/qaq-p/14527673",
+   "published": "2026-11-23T03:57:00+00:00",
+   "author": "carlo_caceres",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "I’m using the SAP Analytics Cloud Advanced Trial. In the Modeler section, I created a model by importing an .xlsx file. When I try to save the model, the screen remains on the loading indicator, and the save does not complete. \n Expected result: The model saves successfully and appears in my files. \n Actual result: The save process appears to get stuck on the loading screen. \n I’ve attached a screenshot showing the model and its dimensions. Could you please help me identify why the model is not saving and how to resolve the issue?"
+  },
+  {
+   "key": "e1bb26402a6cf5b4",
+   "title": "Deactivation of availability check for sales order in S/4HANA Cloud Public Edition",
+   "link": "https://community.sap.com/t5/financial-management-q-a/deactivation-of-availability-check-for-sales-order-in-s-4hana-cloud-public/qaq-p/14527660",
+   "published": "2026-11-23T02:54:53+00:00",
+   "author": "xuqi_fangaf39f1",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear SAP Support Team, \n We need to deactivate the availability check for sales orders. However, we found that the configuration for sales order item categories and schedule line categories is not available in the public cloud edition. Could you please advise how we can achieve this requirement?"
+  },
+  {
+   "key": "592029985ccac5a7",
+   "title": "BTP trial: Integration Cell activation stays \"In Progress\" at 51% (two regions, no error)",
+   "link": "https://community.sap.com/t5/technology-q-a/btp-trial-integration-cell-activation-stays-quot-in-progress-quot-at-51-two/qaq-p/14527658",
+   "published": "2026-11-23T02:35:15+00:00",
+   "author": "paravastup",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "I'm following the \"Build and Govern MCP Servers with SAP Integration Suite\" tutorial on an SAP BTP trial. Integration Cell activation never finishes. \n Setup (same in each attempt): \n Integration Suite subscribed on the trial plan. \n Build Integration Scenarios and Manage APIs activated, with Developer Hub. Cloud Integration, API Modelling and Developer Hub all show Active. \n Role collections assigned: Integration_Provisioner, PI_Administrator, PI_Business_Expert, PI_Integration_Developer, APIManagement.SelfService.Administrator, APIPortal.Administrator, AuthGroup.API.Admin, AuthGroup.API.ApplicationDeveloper, AuthGroup.Content.Admin and AuthGroup.SelfService.Admin. \n What happens: Settings > Runtimes > Integration Cell > Activate shows \"Integration Cell provisioning is in progress and may take up to 30 minutes.\" After about 2 minutes the bar reaches 51% and stops there, with a warning icon at the end of the bar. No error message is shown. \n Attempts: \n Singapore - Azure (ap21): stuck at 51% for more than 24 hours. \n US East (VA) - AWS (us10): I unsubscribed the first subaccount and subscribed in this one. It has been stuck at 51% for more than 3 hours, the same pattern as attempt 1. \n Because of this, the Add menu in my integration package offers no \"MCP Server\" artifact. \n KBA 3769634 lists the trial plan and both regions (US10 and AP21) as supported for Integration Cell. The capabilities status shows IC as PENDING at 51%, with empty error fields and no update since about 30 seconds after activation. The warning icon on the progress bar shows no message or error code. \n Questions: \n Is Integration Cell activation currently working on the trial landscape? \n Is there a prerequisite I'm missing (for example a booster step, a Process Integration Runtime instance, or an entitlement)? \n Is there a way to retry or deactivate a stuck activation?"
+  },
+  {
+   "key": "980acb890aac2cf5",
+   "title": "Error al Suscribirse a BPA en cuentra trial",
+   "link": "https://community.sap.com/t5/technology-q-a/error-al-suscribirse-a-bpa-en-cuentra-trial/qaq-p/14527650",
+   "published": "2026-11-23T01:32:15+00:00",
+   "author": "Kenny_Mercedes",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "No se ha podido suscribir a SAP Build Process Automation. Vuelva a intentarlo. Si el problema persiste, publique una pregunta en SAP Community. Aplicación: SAP Build Process Automation ID de suscripción: 4ebf5777-bbdc-4f64-aa11-8e2e7af050cd Plan: free Operación: Suscripción Estado de operación: Suscripción fallida Tiempo: 22 nov 2026, 20:13:46"
+  },
+  {
+   "key": "b29370da5135d340",
+   "title": "SAC Advanced Trial: Unable to save a model created from a CSV or Excel file",
+   "link": "https://community.sap.com/t5/technology-q-a/sac-advanced-trial-unable-to-save-a-model-created-from-a-csv-or-excel-file/qaq-p/14527647",
+   "published": "2026-11-23T01:17:06+00:00",
+   "author": "carlo_caceres",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "I’m using the SAP Analytics Cloud Advanced Trial. In the Modeler section, I created a model by importing a .csv or .xlsx file. When I try to save the model, the screen remains on the loading indicator, and the save does not complete. \n Expected result: The model saves successfully and appears in my files. \n Actual result: The save process appears to get stuck on the loading screen. \n I’ve attached a screenshot showing the model and its dimensions. Could you please help me identify why the model is not saving and how to resolve the issue?"
+  },
+  {
+   "key": "bcce4a543aeb1dec",
+   "title": "Joule Studio File Storage — HTTP 500 Error Blocking Certification (EU10, Free Tier)",
+   "link": "https://community.sap.com/t5/technology-q-a/joule-studio-file-storage-http-500-error-blocking-certification-eu10-free/qaq-p/14527641",
+   "published": "2026-11-23T00:16:59+00:00",
+   "author": "mari_saito",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Environment: \n Platform: SAP Joule Studio / SAP Build Code \n Region: EU10 \n Tenant ID: 747535457 \n Tier: Free (certification environment, valid until end of 2026) \n Support Portal: lso-ssrv-app.cfapps.eu10-004.hana.ondemand.com \n Issue: The file storage service is returning HTTP 500 Internal Server Error on every file write attempt inside Joule Studio. Even writing a single word to a test file fails. This has been ongoing for around 18 hours. \n Impact: I am currently attempting a timed certification exam and a significant portion of my certification attempt window has already been consumed entirely by this platform issue — through no fault of my own. The AI coding assistant inside Joule Studio cannot save any files. The solution progress window shows no steps completed. All development work is completely blocked. This is affecting all solutions within the tenant — creating new solutions does not resolve the issue. \n Error: API 500: Internal Server Error on every write_file call \n What I have tried: \n Created multiple new solutions — same error on all \n Restarted the sandbox — no improvement \n Waited 18+ hours — still not resolved \n Requests: \n Please investigate and restart the file storage service for tenant 747535457 on EU10. \n Since a significant portion of my certification attempt window was lost due to this platform issue, I would like to know: can I be granted a fresh 24-hour certification attempt? This is critical as the failure was caused entirely by the platform, not by my performance."
+  },
+  {
+   "key": "75db92bf6df5380c",
+   "title": "SAP Concur Tool Not Working (Again)",
+   "link": "https://community.sap.com/t5/spend-management-q-a/sap-concur-tool-not-working-again/qaq-p/14527599",
+   "published": "2026-11-22T17:53:00+00:00",
+   "author": "Balikpapan5",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello. Just wondering why the SAP Concur app doesn't load even after the correct password that has just been reset and the appropriate username have been used along with the proper use of an authenticator, but instead proceeds to just return to the sign in page (even after accepting the authenticator token). \n Honestly I don't understand why employees get stuck with having to use this poor product that is laden down with passwords and authentification tokens and still fails to work and seems to repeatedly have this problem of getting stuck on the sign in page. Is this the best that SAP can do?"
+  },
+  {
+   "key": "0dbb8bf4f90b546c",
+   "title": "SAP B1: Auto-fill UoM fields in Item Master Data based on selected Item Group (without selecting UoM",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/sap-b1-auto-fill-uom-fields-in-item-master-data-based-on-selected-item/qaq-p/14527564",
+   "published": "2026-11-22T16:45:15+00:00",
+   "author": "Mukhesh-123_",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi All, \n SAP B1 Version: ____ (SQL / HANA) \n Requirement: \n In our company, item codes start with a prefix based on the Item Group: \n 861xxxxx, 862xxxxxx, 863xxxxxx, 864xxxxxxx, 865xxxxxx. \n At present, while creating an item in Item Master Data, the user selects \n the Item Group and then fills the UoM details manually, referring to an \n Excel sheet. \n We want the following: \n 1. When the user selects an Item Group in Item Master Data, the UoM \n fields (Inventory UoM, Sales UoM, Purchasing UoM) should be filled \n automatically, using the same UoMs that were used earlier for items \n of that Item Group. \n 2. The user should not select the UoM Group in Item Master Data. \n 3. We do not want to define or select UoM inside the Item Group setup \n (Administration > Setup > Inventory > Item Groups). \n 4. The user should not be able to enter or change the UoM manually. \n Example: \n Item Group Item Code Series UoM to be auto-filled \n Group A 861xxxxx KG \n Group B 862xxxxxx NOS \n What I have checked: \n - The Item Groups setup has no field for UoM. \n - Formatted Search does not work for the Item Group combo box. \n - Form Settings can make the UoM fields read-only, but they do not \n get filled automatically. \n - Copy From with a template item works, but it is a manual process. \n Questions: \n 1. Is there any standard configuration in SAP B1 to auto-fill UoM \n fields based on the Item Group? \n 2. If not, what is the recommended approach? For example, a UI API \n add-on handling the Item Group combo select event on the Item Master \n Data form (Form 150), with the Item Group to UoM mapping stored in a \n User Defined Table. \n 3. Can the UoM fields be locked for users while the add-on fills them \n programmatically? \n 4. Can someone share sample code or the correct item UIDs for these \n fields on Form 150? \n Thank you in advance."
+  },
+  {
+   "key": "2ec9a929961dedb4",
+   "title": "Can we transfer only S/4HANA's Proforma Invoice alone (SD0C) to SAP GTS 11.0",
+   "link": "https://community.sap.com/t5/financial-management-q-a/can-we-transfer-only-s-4hana-s-proforma-invoice-alone-sd0c-to-sap-gts-11-0/qaq-p/14527547",
+   "published": "2026-11-22T13:41:00+00:00",
+   "author": "Alex_IN",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear All, \n Can we transfer only S/4HANA's Proforma Invoice alone (SD0c) to SAP GTS 11.0 without transfering Intra stock transfer document (UB) SD0A, Outbound Delivery (SD0B) documents. \n Regards, Alex."
+  },
+  {
+   "key": "b6fa229de5b39ff3",
+   "title": "SAP B1 Backup Service not working after installing HANA 2.0 SPS08 Rev89 – creates empty \"PF=\" folder",
+   "link": "https://community.sap.com/t5/technology-q-a/sap-b1-backup-service-not-working-after-installing-hana-2-0-sps08-rev89/qaq-p/14527506",
+   "published": "2026-11-22T11:51:21+00:00",
+   "author": "SUNILPATIL19",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi everyone, \n We reinstalled our production SAP Business One server and now the SAP B1 Backup Service is not working. Everything else works fine. \n Our system: \n - SAP Business One 10.0 FP2408 PL16, version for SAP HANA \n - SAP HANA 2.0 SPS08 Rev89.02 (before the reinstall: HANA 2.0 SPS05 Rev59) \n - SUSE Linux Enterprise Server 15 SP5 \n What happens: \n - When we start a database or company backup from the SLD Control Center, it fails with \"Could not create the folder for the backup\". \n - No backup file is created. \n - Instead of the normal backup folder, the system creates an empty folder named \"PF=\". \n - Before the reinstall, the same backup ran every night without any problem. \n What we already tried: \n - Gave full rights to the backup folder – same error. \n - Used the old backup folder that worked before – same error. \n - Reinstalled the SAP B1 server components – same error. \n Our understanding: \n From HANA 2.0 SPS08, HANA registers its services on Linux in a new way (SAP Note 3189534). We think our B1 version (FP2408) is older than this change, so the Backup Service cannot read the database name and creates the wrong \"PF=\" folder. \n We also noticed that HANA SPS08 for B1 was released only with SAP Business One 10.0 SP 2511 and later. \n Our questions: \n 1. Has anyone seen this \"PF=\" folder issue? \n 2. Is the only fix to upgrade SAP Business One to a version that supports HANA SPS08 (SP 2511 or later)? \n 3. Is there any workaround until we upgrade? \n We have also opened an SAP incident and will share the solution here. \n Thank you! \n Best regards, \n Sunil Patil \n Certified SAP Business One Consultant"
+  },
+  {
+   "key": "0ab0a6e3990cafd4",
+   "title": "C_CPI_2601 practical exam: Confirm Completion did not respond and result shows Failed without a scor",
+   "link": "https://community.sap.com/t5/technology-q-a/c-cpi-2601-practical-exam-confirm-completion-did-not-respond-and-result/qaq-p/14527480",
+   "published": "2026-11-22T01:00:21+00:00",
+   "author": "zavaskij",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi everyone, \n I took the SAP Integration Developer practical exam (C_CPI_2601) on November 20, 2026 . I completed the exam tasks and returned to the exam page to submit my work. While there was still time left, I clicked Confirm Completion several times. The button did not respond, and I never saw a message confirming that my submission had been received. \n When I checked My Learning → My Certifications the next day, the result showed Failed . \n Screenshot 1 — Result in My Certifications \n\n I then clicked View details . The dialog showed Status: Failed and Latest exam taken: C_CPI_2601 . There was no score, score report, or explanation of why the attempt was marked as failed. \n Screenshot 2 — View details shows the exam code and status, with no score \n\n I opened a case with SAP Certification Support. It is currently marked In Progress , and I’m still waiting for an update. I’d like to find out whether my submission was recorded and graded, and whether the issue with Confirm Completion affected the result. \n Has anyone experienced this recently, especially with C_CPI_2601? If your result showed Failed without a score after a submission issue, was SAP able to confirm what happened, provide a score report, or restore your attempt? \n Thanks, \n Jeferson"
+  },
+  {
+   "key": "8fa18fbe4d61af24",
+   "title": "The instructions PDF C_JSD_EN_2610 is not available for download",
+   "link": "https://community.sap.com/t5/technology-q-a/the-instructions-pdf-c-jsd-en-2610-is-not-available-for-download/qaq-p/14527412",
+   "published": "2026-11-21T23:15:39+00:00",
+   "author": "kareem_morsi",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "HI there i just activated my practice system for Hands-on Practice for Joule Studio Developer and the joule studio launches correctly no problem but when i try to download the PDF file for the practice tasks it says that the file is not available and i made sure that it is not a problem from my machine and i traced every API call and i got the error in json format: \n {\n \"success\": false,\n \"error\": \"File body not found\"\n} \n that indicates that it is a server side issue also the practice system is just joule studio there's nothing more to it \n am i doing something wrong?"
+  },
+  {
+   "key": "f6bcccb7379b4fc4",
+   "title": "FG quality hold timing in the warehouse",
+   "link": "https://community.sap.com/t5/supply-chain-management-q-a/fg-quality-hold-timing-in-the-warehouse/qaq-p/14527407",
+   "published": "2026-11-21T22:04:26+00:00",
+   "author": "mns19801809",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Finished goods receipted and stays in warehouse or get shipped to other warehouse in Q2 status ( Quality hold) . This is not available for ATP. But its must be taken into account for supply planning purpose. Each FG has own lead time for quality hold clearance( 2 days to 10 days). Quality clearance executed by changing status from Q2 status to F2 status which then become available for ATP. \n\n So, stock on hand key figure only takes f2 status. \n Then quality hold FG as separate key figure indicates Q2 status qty. \n How to automatically indicate in after certain days, this Q2 status will become F2 status for each product?"
+  },
+  {
+   "key": "8b3e099f5f457b59",
+   "title": "How to model MRP area in SAPIBP1?",
+   "link": "https://community.sap.com/t5/supply-chain-management-q-a/how-to-model-mrp-area-in-sapibp1/qaq-p/14527406",
+   "published": "2026-11-21T21:52:51+00:00",
+   "author": "mns19801809",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "How to model Type 01, Type 02, Type 03 MRP areas in SAPIBP1? for supply planning purpose? \n\n FG forecast is done at plant level. There are materials kept in at certain MRP area and also, get shipped to third party and quantities tracked in S4 via Type03 MRP area. How this can be modelled in SAPIBP1?"
+  },
+  {
+   "key": "c8623d7658f65328",
+   "title": "Tariff condition type",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/tariff-condition-type/qaq-p/14527382",
+   "published": "2026-11-21T18:47:31+00:00",
+   "author": "Reneemon2",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "We created a new \"Tariff\" condition type for purchasing side. It posts fine except instead of debit posting to our Tariff expense account it is posting to PPV instead. Below shows how we would like it to show at Goods receipt posting. Is there standard configuration in SAP to handle this without customization. We have set up in M/06 as accrual. Set up with account key and accrual key in M/08. Then assigned GL accounts to both keys in OBYC. \n\n (good) Dr F.G acct \n (good) Cr A/P Trade \n (wrong) Dr Tariff Expense (posting to PPV instead) \n (good) Cr A/P Tariff"
+  },
+  {
+   "key": "dcd7edcc3839b2be",
+   "title": "**Subject:** Technical Issue in Joule Studio (C_JST / C_JSD) Case ID 5000460528",
+   "link": "https://community.sap.com/t5/technology-q-a/subject-technical-issue-in-joule-studio-c-jst-c-jsd-case-id-5000460528/qaq-p/14527310",
+   "published": "2026-11-21T11:50:48+00:00",
+   "author": "PRANJEET-SAHA_6",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Subject: Technical Issue in Joule Studio (C_JST / C_JSD) – Central Console Unresponsive During 24-Hour Practice Window Hello SAP Team and Community, I am experiencing a technical issue in the Joule Studio environment ( C_JST ) while preparing for my free exam attempt for SAP Certified – Joule Studio Developer (C_JSD) . Issue Details: \n Symptom: Documents are generated and visible in the left-hand file tree, but the central console does not load / remains completely unresponsive , preventing me from completing the practical tasks. \n Troubleshooting Tried: Hard browser refresh ( Ctrl + Shift + R ), clearing cache, and testing in an Incognito window with extensions disabled—the central pane still fails to render. \n Timing Impact: My 24-hour practice system window runs over the weekend and expires on Sunday. Because SAP Certification Support operates Monday–Friday, I have paused my attempt so I do not lose my single complimentary exam attempt due to this unresponsive environment. Support Ticket Reference: \n SAP Learning Help Center Case Number: [Insert Your Ticket/Case Number] \n Attachments Provided in Ticket: Full-screen timestamped screenshots and browser DevTools console error logs. Could an SAP moderator please help flag this for Monday's support queue so my C_JST practice environment and free C_JSD exam eligibility can be reset once the technical issue is resolved? Thank you!"
+  },
+  {
+   "key": "dbb6fb270e3db34d",
+   "title": "SAP LEARNING",
+   "link": "https://community.sap.com/t5/financial-management-q-a/sap-learning/qaq-p/14527304",
+   "published": "2026-11-21T11:25:11+00:00",
+   "author": "Pavan4SAP",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Happy to share that I have successfully completed the SAP course \"Customizing Financial Posting Control – Intermediate Level.\""
+  },
+  {
+   "key": "d41e5339f33bea71",
+   "title": "How to Restrict Manual Discount Conditions Editing in VF02 While Keeping Packing Charges Editable.",
+   "link": "https://community.sap.com/t5/supply-chain-management-q-a/how-to-restrict-manual-discount-conditions-editing-in-vf02-while-keeping/qaq-p/14527281",
+   "published": "2026-11-21T10:02:28+00:00",
+   "author": "Vamankumar_7997",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "We are using SAP S/4HANA 1709 and have a requirement to restrict the modification and insertion of selected manual pricing conditions at the billing document level, while allowing specific conditions to remain editable. \n Most of our invoices are generated through delivery-related billing using copy control configuration (VTFL) and pricing type (G). \n Currently, users can modify existing manual pricing conditions and insert new manual conditions in VF02 before releasing the billing document to accounting. \n We want to control this behaviour selectively for individual condition types. \n\n Discount conditions should be transferred from the sales order to the billing document but should not be editable in VF02. Packing charge conditions should remain editable in VF02."
+  },
+  {
+   "key": "abcfe9bc6057c53d",
+   "title": "Please can you guide us how we can create global accounts associated with your u and Unable tser.",
+   "link": "https://community.sap.com/t5/technology-q-a/please-can-you-guide-us-how-we-can-create-global-accounts-associated-with/qaq-p/14527269",
+   "published": "2026-11-21T09:35:13+00:00",
+   "author": "alwosaby",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "We are attempting to register for a trial account; however, we are consistently encountering an issue when requesting the authentication code. \n The following error message appears: \n \"We did not send you a code because you are not allowed to request phone calls. Please contact your system administrator.\" \n Could you please investigate this issue, identify the reason for this restriction, and advise us on the necessary steps to resolve it? \n We would appreciate your assistance in enabling the required verification method so that we can successfully complete the trial account registration. \n Thank you for your support. We look forward to your response."
+  },
+  {
+   "key": "37a350d09eef6395",
+   "title": "A New Journey with SAP Community – Excited to Connect, Learn and Share!\"",
+   "link": "https://community.sap.com/t5/welcome-corner-discussions/a-new-journey-with-sap-community-excited-to-connect-learn-and-share-quot/m-p/14527375#M10826",
+   "published": "2026-11-21T18:09:47+00:00",
+   "author": "_Samitha-2018_",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "Happy to Be Part of the SAP Community! \n I'm happy to be a part of this amazing community of SAP professionals, developers, consultants, and learners! \n As an SAP ABAP Analyst, I'm continuously exploring and learning different areas of SAP, particularly ABAP development, OData services, SAP Fiori, Web Dynpro, BTP, CDS/RAP and the evolving S/4HANA ecosystem. \n I believe that learning becomes more meaningful when we share knowledge, exchange ideas, discuss real-time challenges, and learn from each other's experiences. \n Looking forward to contributing through technical discussions, sharing my learnings, and connecting with fellow SAP enthusiasts. \n Excited to learn, share, and grow together! 🚀 \n #SAPCommunity #SAPABAP #SAPDevelopment #S4HANA"
+  },
+  {
+   "key": "585ff9cdb5c1185a",
+   "title": "SAP Build code subscription failed",
+   "link": "https://community.sap.com/t5/tooling-sap-build-forum/sap-build-code-subscription-failed/m-p/14527352#M122",
+   "published": "2026-11-21T15:10:28+00:00",
+   "author": "rammeshokumar2279",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": ""
+  },
+  {
+   "key": "549c09d6065b8dfe",
+   "title": "SAP S/4HANA Embedded EWM: Inbound delivery 180004782 fails distribution.",
+   "link": "https://community.sap.com/t5/supply-chain-management-learning-group-discussions/sap-s-4hana-embedded-ewm-inbound-delivery-180004782-fails-distribution/m-p/14527308#M13",
+   "published": "2026-11-21T11:44:24+00:00",
+   "author": "mahdi-tahmasebi",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "H ello guys , \n I'm new to EWM. But unfortunately, I faced a hard point. \n I received some tips from ChristianSpeed , but I still have this error. \n After consulting with ChatGPT, Gemini, and Copilot, I asked them for a brief report that follows: \n Issue \n SAP S/4HANA Embedded EWM: Inbound delivery 180004782 fails distribution. \n Error: No recipient could be determined for object BUS2015 method SAVEREPLICA (filter object WHSE_NO ). \n Checks Performed \n\n RFC KDACLNT310 : Connection successful. \n\n Logical System, Business System, WE20, SCU: Verified. \n\n Warehouse mapping: EWM → 0001 . \n\n BUS2015.SaveReplica : Exists and released. \n\n BD64 : Distribution model EWM-10 DIS exists but has no entries. \n\n Warehouse EWM : EWM-enabled, immediate distribution. \n\n Distribution model generation: Sender cannot be the same as receiver . \n\n SALE / BD59 : No conclusive findings regarding WHSE_NO . \n Current Status \n Unresolved. Recipient determination fails; root cause not confirmed. \n Recommended Next Investigation \n Verify SAP-standard recipient determination for Embedded EWM , specifically BUS2015.SaveReplica , WHSE_NO filtering, and whether ALE distribution is required in this architecture."
+  },
+  {
+   "key": "3c8a9b9f372d1f65",
+   "title": "Sustaining a SAP Training Program through a Traditional Education Model in Ghanaian Universities:",
+   "link": "https://community.sap.com/t5/sap-university-alliances-program-forum/sustaining-a-sap-training-program-through-a-traditional-education-model-in/m-p/14527268#M119",
+   "published": "2026-11-21T09:28:48+00:00",
+   "author": "vduah",
+   "tags": [],
+   "feed": "SAP Community discussions",
+   "kind": "discussion",
+   "text": "The demand for digital transformation and ERP talent in West Africa is growing rapidly, yet a persistent skills gap limits local enterprise adoption. While SAP University Alliances (SAP UA) and initiatives such as Enterprise Systems Education for Africa (ESEFA) have successfully introduced SAP curricula into African higher education, sustaining these programs beyond initial donor- or vendor-subsidized pilot phases remains a critical challenge. \n Traditional Ghanaian universities operate under rigid accreditation cycles, constrained IT budgets, high faculty mobility, and exam-driven pedagogical models. Without an adapted institutional model, SAP training risks remaining an isolated extracurricular activity rather than an embedded, self-sustaining pillar of mainstream degree programs. \n I am currently writing my dissertation which investigates how Ghanaian universities can transition from externally driven SAP pilot initiatives to self-sustaining, curriculum-integrated ERP education models. Specifically, the study aims to: \n Identify Structural Bottlenecks: Analyze institutional, financial, technical (UCC hosting/connectivity), and pedagogical barriers affecting SAP program continuity in Ghana. \n Evaluate Stakeholder Dynamics: Examine the interplay between university leadership, faculty champions, students, and local SAP ecosystem partners (employers). \n Design a Sustainability Framework: Develop a practical operational and financial model for embedding SAP training into traditional university structures without compromising academic standards. And more importantly how to best prepare graduates for the Job Market!. \n Any suggestions would be highly appreciated."
+  },
+  {
+   "key": "f91cefb017053507",
+   "title": "Interview with Sindhu Gangadharan: “I Want People to Say ‘That Idea Started in India'”",
+   "link": "https://news.sap.com/2026/11/interview-sindhu-gangadharan-sap-labs-india/",
+   "published": "2026-11-23T05:15:00+00:00",
+   "author": "Andrea Diederichs",
+   "tags": [
+    "Corporate",
+    "India",
+    "SAP Labs Network"
+   ],
+   "feed": "SAP News Center",
+   "kind": "news",
+   "text": "SAP Labs India has traveled a long way in 28 years. What began as a satellite operation in the late 1990s is today SAP’s largest R&D hub outside its German headquarters—and increasingly the place where some of the company’s key product work is taking shape. Here, Sindhu Gangadharan, managing director of SAP Labs India and head of Customer Industry Solutions, speaks about customers, innovation, and campus life. \n\n When you look at SAP Labs India today, what strikes you most? \n Photo courtesy of SAP Labs India \n\n Gangadharan: You have to go back to understand how far we’ve come. When I joined SAP in the late 1990s, India was seen as an extended workbench, a place where certain parts of work simply got executed. Fast forward to today and that story has completely changed. SAP Labs India is not just SAP’s largest R&D hub outside headquarters; it’s where we define significant parts of product strategy, drive AI innovation, and build technologies that millions of users rely on every day. \n\n What also struck me when I returned here after 18 years at headquarters—and this genuinely surprised me—is that SAP Labs India is the only SAP location, including Walldorf, where you have the entire breadth of our product portfolio under one roof. That makes it a natural base for customer co-innovation, especially in an era where working closely with customers isn’t a nice-to-have, it’s a strategic requirement. But if you ask what strikes me most? It’s the talent. At SAP Labs India, we have the privilege of working with some of the brightest minds in the industry, building the next generation of enterprise technology. \n\n Can you point to specific products where that contribution is visible? \n\n Joule is probably the most prominent example. A significant part of Joule, including the user experience and parts of the underlying engine, was developed here in India. \n\n And it’s not a standalone effort. Across areas such as SAP S/4HANA, SAP SuccessFactors, procurement, supply chain, and customer experience, teams in India are helping build AI capabilities that support SAP’s vision for the Autonomous Enterprise. \n SAP Labs India: where innovation meets impact, and ideas turn into intelligent enterprise solutions for the world \n\n Learn more \n\n In agentic AI, we are building agents across key business functions, from finance to procurement to supply chain. And SAP Document AI, which won a Hasso Plattner Founders’ Award, had its core innovation rooted here. That product helps remove manual work across hundreds of workflows in hundreds of languages. The team was global, but a significant part of it was sitting right here. \n\n What are customers asking for right now? \n\n One thing comes up consistently, no matter where in the world I’m having the conversation: they want AI that delivers real outcomes. Not experimentation. Measurable business value. \n\n I was recently with the CIO of a large manufacturing company. The conversation wasn’t about piloting AI, it was about predicting equipment failures, improving production planning, and reducing downtime across plants. \n\n The other consistent message is about speed. The days of “show me your two-year roadmap” are over. Now that customers are in the cloud, the patience for long transformation programs no longer exists. They want to deploy AI and see value in weeks to months, not years. That is where SAP is very well positioned: by bringing together our business data, process expertise, and application portfolio. \n\n You opened the SAP Labs India Innovation Park last year. How important is the new campus? \n\n To us, it’s more than an office. The SAP Labs India Innovation Park reflects how SAP is evolving in an AI-first world, where product and engineering teams need to work much more closely with customers. The campus was designed from day one to enable exactly that. \n\n Bengaluru is the only location where we have two SAP Experience Centers. You walk in and experience SAP’s AI-powered solutions in the context of real business scenarios: not slides, not demos, but actual working technology. And then there’s the S-Markt, our autonomous, AI-powered retail store. The first is in Walldorf; the second is right here in Bengaluru. When the CEO of IKEA visited with his team, they watched our employees do their daily shopping. He asked me if staff actually use it at scale. Every day, I told him. That’s when it stops being a proof of concept and becomes proof of reality. \n\n The location also helps. It is close to customers, partners, Bengaluru’s technology ecosystem, and the airport, making collaboration much easier. And for talent, it creates a very strong sense of purpose: people can work on real customer problems, interact directly with customers, and see the impact of what they build. \n\n SAP Labs India Innovation Park at a glance \n\n Location: Near Bengaluru International Airport; SAP’s second campus in Bengaluru \n\n Scale: Designed to house more than 15,000 professionals, making it one of SAP’s largest campuses worldwide \n\n Investment: €194 million across all phases \n\n Role: Supports SAP Labs India’s position as SAP’s largest R&D hub outside Germany \n\n Focus areas: Enterprise AI, product engineering, customer innovation, and mission-critical services at scale \n\n Campus features: Includes SAP Experience Center capabilities and SAP’s autonomous, AI-powered S.Markt, bringing live business scenarios and SAP technology closer to customers and employees \n\n What does Indian talent bring that’s distinctive? \n\n Look at the structural shift that’s happened across the industry. India today hosts 1,800 global capability centers employing more than two million tech professionals. These centers are increasingly focused on AI, product engineering, and core R&D, not just traditional back-office work. \n\n SAP is part of that same evolution. What makes it work? I’d call it a combination of strong engineering depth with a can-do attitude and a genuine hunger to learn. When we ran our Learning Fest on campus recently with a strong AI curriculum and business AI tracks, it was packed. That spirit of wanting to be on top of the latest and greatest, that continuous learning mindset, that’s the secret sauce. Our colleagues are not just writing code; they are taking ownership, leadership, and accountability. That’s a meaningful evolution. \n\n Fortune India recently ranked you among the most powerful women “for driving AI-led innovation.” What does that recognition mean to you personally? \n\n First of all, I am deeply honored. But I genuinely see it as a reflection of something much bigger than me. It recognizes the incredible work happening at this location, SAP’s long-term commitment to India, and the innovation ecosystem our teams have built together. \n\n My name may be on that list, but this recognition is for SAP, for SAP Labs India, and for the remarkable people I have the privilege to work with every day: engineers, product managers, designers, researchers, and customer-facing teams. Innovation is never the work of one individual. \n\n Where do you want SAP Labs India to be in 10 years? \n\n I would like SAP Labs India to be known not just as a large engineering hub, but as the place where the future of the Autonomous Enterprise was built. For me, impact is not determined by size, but the outcomes we create. \n\n My aspiration is that our teams are deeply embedded in SAP’s product strategy—helping define road maps and influence the global innovation agenda. I want that to become the norm, not something we point to as an exception. \n\n If, years from now, people look at SAP’s biggest breakthroughs and say, “That idea started at SAP Labs India,” then I think we will have achieved something meaningful. \n\n Subscribe to the SAP News Center for the latest SAP news each week \n\n Sign up now"
+  }
+ ],
+ "triage": {
+  "0": {
+   "i": 0,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Shows an EWM workaround for receiving the same material in different pack sizes sharing one UOM, without multiple conversion entries."
+  },
+  "1": {
+   "i": 1,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Learning Hub user cannot access Stay Certified because SAP Universal ID lacks a secondary email; an account issue."
+  },
+  "2": {
+   "i": 2,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Overview of US AEDT laws and obligations for AI hiring-tool providers; HR compliance, not development."
+  },
+  "3": {
+   "i": 3,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Tips for SAP Business Network suppliers to fill profile fields so they appear in buyer searches and RFI matches."
+  },
+  "4": {
+   "i": 4,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks how to get end-consumer-specific prices applied when the sold-to party is a distributor; pricing configuration question."
+  },
+  "5": {
+   "i": 5,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks how to automatically add a surcharge condition when order value falls below a minimum, via pricing condition and procedure setup."
+  },
+  "6": {
+   "i": 6,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "SAC data action breakpoint does not pause execution; user asks for troubleshooting ideas after clearing browser cache."
+  },
+  "7": {
+   "i": 7,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Personal learning blog on Tabular Foundation Models and why tabular data needs them; general ML, not developer tooling."
+  },
+  "8": {
+   "i": 8,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "SAC is migrating stories and composites to the new table build; covers timeline and impact on existing content."
+  },
+  "9": {
+   "i": 9,
+   "category": "ABAP & Clean Code",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Open-source ABAP report sends SMS via Netgsm, keeping credentials in SM59 and offering a free preview before paid sends; tested on A4H."
+  },
+  "10": {
+   "i": 10,
+   "category": "Developer Tools & DevOps",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Introduces Terraform for automating SAP BTP account and service setup, with AI and platform automation takeaways from TechEd."
+  },
+  "11": {
+   "i": 11,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Marketing preview of upcoming SAP Engagement Cloud features: personalization, AI recommendations and governance."
+  },
+  "12": {
+   "i": 12,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Promotes an SAP IBP university case study comparing ARIMA and gradient boosting forecasting for supply chain education."
+  },
+  "13": {
+   "i": 13,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Functional document on using report RSSCD100 to display change documents for audit and root-cause analysis."
+  },
+  "14": {
+   "i": 14,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Chinese article on AI assistance in SAP Cloud ERP for end users, such as Easy Filter; not developer tooling."
+  },
+  "15": {
+   "i": 15,
+   "category": "S/4HANA Development & Extensibility",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Uses a BAdI with packaging specifications to customize EWM HU picking so specific customers get specific pack sizes, beyond standard logic."
+  },
+  "16": {
+   "i": 16,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "End-to-end guide to Evaluated Receipt Settlement in S/4HANA Cloud Public Edition, from goods receipt and PO price to invoice posting."
+  },
+  "17": {
+   "i": 17,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Promotes December Expert Guided Implementation sessions on Joule, agentic AI and SAP Build; event promotion."
+  },
+  "18": {
+   "i": 18,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Describes QM enterprise search models in S/4HANA Cloud Public Edition 2608 for finding inspection lots, defects and certificates."
+  },
+  "19": {
+   "i": 19,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks how to auto-create serial numbers for child orders in collective production orders on S/4HANA Cloud Public Edition 2602."
+  },
+  "20": {
+   "i": 20,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks how to invoice or amortize purchase orders with enhanced limit; standard service-entry apps and listed notes did not help."
+  },
+  "21": {
+   "i": 21,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks how to dispose of initial stock in a storage location not linked to a decentralized warehouse; scrapping with movement type fails."
+  },
+  "22": {
+   "i": 22,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks how to validate Child Care Leave against the prior Maternity leave end date in the Time Off UI; HR business rule question."
+  },
+  "23": {
+   "i": 23,
+   "category": "ABAP & Clean Code",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Asks which BAPI can create RFQs referencing purchase requisitions for selected document types, since the chosen BAPI does not support it."
+  },
+  "24": {
+   "i": 24,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Cloud Integration iFlow deployment fails with ErrorPersistingArtifact on a BTP trial; asks for help with an internal deployment error."
+  },
+  "25": {
+   "i": 25,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "Joule Studio practice system returns HTTP 500 on file storage writes, blocking required build tasks for C_JSD preparation."
+  },
+  "26": {
+   "i": 26,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "SAC Advanced Trial: model import from Excel hangs on save and never completes; asks for help with the save failure."
+  },
+  "27": {
+   "i": 27,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks how to deactivate sales order availability check in S/4HANA Cloud Public Edition, since item and schedule category settings are not exposed."
+  },
+  "28": {
+   "i": 28,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "Integration Cell activation stalls at 51% on a BTP trial while following the MCP server tutorial; asks for help with stuck provisioning."
+  },
+  "29": {
+   "i": 29,
+   "category": "BTP & ABAP Cloud",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Spanish-language error when subscribing to SAP Build Process Automation trial; account subscription failure, not development."
+  },
+  "30": {
+   "i": 30,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Duplicate of the SAC Advanced Trial save issue: model from CSV or Excel stays on loading indicator and never saves."
+  },
+  "31": {
+   "i": 31,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "Joule Studio File Storage returns HTTP 500 on every write in the EU10 free certification tenant, blocking C_JSD practice tasks."
+  },
+  "32": {
+   "i": 32,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "SAP Concur app returns to sign-in after correct credentials and authenticator; login problem, not development."
+  },
+  "33": {
+   "i": 33,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "SAP Business One: asks how to auto-fill UoM fields in item master based on the selected item group prefix."
+  },
+  "34": {
+   "i": 34,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks whether only the S/4HANA proforma invoice (SD0C) can be transferred to SAP GTS 11.0 without other document types."
+  },
+  "35": {
+   "i": 35,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "SAP B1 backup service fails after HANA 2.0 SPS08 reinstall, creating an empty PF= folder; Linux and HANA admin troubleshooting."
+  },
+  "36": {
+   "i": 36,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "C_CPI_2601 exam taker reports Confirm Completion did not respond and the attempt shows Failed without a score; certification issue."
+  },
+  "37": {
+   "i": 37,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "C_JSD practice system instructions PDF cannot be downloaded; certification access issue rather than development work."
+  },
+  "38": {
+   "i": 38,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks how to model quality-hold lead times for finished goods in supply planning when Q2 stock is not available for ATP."
+  },
+  "39": {
+   "i": 39,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks how to model MRP area types 01, 02 and 03 in SAP IBP for supply planning of forecasts and third-party shipments."
+  },
+  "40": {
+   "i": 40,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Tariff condition posts to PPV instead of the tariff expense account at goods receipt; asks for standard configuration to fix it."
+  },
+  "41": {
+   "i": 41,
+   "category": "AI & Joule",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "Joule Studio C_JST central console is unresponsive during the 24-hour practice window; support case for a developer environment issue."
+  },
+  "42": {
+   "i": 42,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Announces completion of an SAP Learning course on customizing financial posting control; course achievement post."
+  },
+  "43": {
+   "i": 43,
+   "category": "ABAP & Clean Code",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "S/4HANA 1709 billing: asks how to block manual edits to discount conditions in VF02 while keeping packing charges editable, via enhancements."
+  },
+  "44": {
+   "i": 44,
+   "category": "BTP & ABAP Cloud",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Trial account registration fails because phone-based authentication codes are blocked for the user; asks for admin help with sign-up."
+  },
+  "45": {
+   "i": 45,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Introduction post from an SAP ABAP analyst joining the community; no technical content."
+  },
+  "46": {
+   "i": 46,
+   "category": "BTP & ABAP Cloud",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Post titled 'SAP Build code subscription failed' with no body; a subscription issue with no development content."
+  },
+  "47": {
+   "i": 47,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "New EWM user asks why inbound delivery fails distribution with a 'no recipient' error; likely a distribution configuration issue."
+  },
+  "48": {
+   "i": 48,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Discusses sustaining SAP training programs in Ghanaian universities through traditional education models; academic and policy topic."
+  },
+  "49": {
+   "i": 49,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Interview with SAP Labs India's managing director on the R&D hub's growth; corporate news, not technical."
+  }
+ },
+ "deep": {
+  "9": {
+   "summary": "The post announces an open-source ABAP report that sends SMS through the Netgsm provider from a single copy-paste program. Per the post, credentials are kept only in SM59, and the report offers a free preview before any paid send. It says the report was tested on A4H. The post contains no code, no object names, no release or support-pack details, and no explanation of how the provider's HTTP interface is called.",
+   "key_points": [
+    "Single copy-paste ABAP program for sending SMS via Netgsm",
+    "Credentials are stored only in SM59, per the post",
+    "A free preview mode runs before any paid SMS send",
+    "Tested on A4H, with no release or SP level given",
+    "Open-source distribution, but no repository link appears in the text"
+   ],
+   "technical_details": [
+    "SM59 used for credential storage (RFC destination, per the post's wording)",
+    "Test system: A4H",
+    "No code, class names, or HTTP endpoint shown in the post"
+   ],
+   "why_it_matters": "Useful as a pattern for sending outbound SMS from ABAP without middleware, and the preview-before-send guard is a sensible cost control. But the post is a bare announcement, so its value depends on the source code, which the post does not show.",
+   "is_release_or_announcement": true,
+   "developer_problem": "",
+   "teaching_angle": "Use as a discussion on keeping third-party API credentials out of source code (SM59 destinations vs hard-coded values) and on building a dry-run or preview step before any billable external call. Students should read the actual code before trusting it.",
+   "quality": 2
+  },
+  "10": {
+   "summary": "This is an interview recap by Christian Lechner, a product manager for the SAP BTP CLI and Terraform providers, about generating Terraform code for SAP BTP with an AI agent and spec-driven development. It mainly covers the TechEd session, his advice to learn Terraform basics first, and how he uses AI for enablement work and open-source pull requests. Technical content is light: the post names a GitHub project and a learning course but gives no code, provider versions, or concrete workflow steps.",
+   "key_points": [
+    "Spec-driven approach: requirements in, Terraform code out via an AI agent",
+    "Agent skills and MCP tools are presented as what speeds up the work",
+    "Spec-driven development is iterative; brownfield support is future work",
+    "Advice: learn Terraform basics first, then get familiar with AI tools (Codex, Claude)",
+    "Author uses AI to contribute open-source pull requests to the team's repo"
+   ],
+   "technical_details": [
+    "SAP BTP CLI and Terraform providers (author's area of responsibility)",
+    "IaC Spec Kit for SAP Business AI Platform (GitHub project named in the post)",
+    "Model Context Protocol (MCP) tools and agent skills",
+    "SAP Learning course: Getting Started with Terraform on SAP BTP"
+   ],
+   "why_it_matters": "It points to a learning path and a GitHub project for BTP infrastructure as code. For an ABAP-focused reader it is mostly context rather than something to apply directly.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Useful as a short reading on where BTP platform automation is heading and on how spec-first prompting of coding agents works. Pair with the linked SAP Learning course and the GitHub repo for a hands-on exercise.",
+   "quality": 2
+  },
+  "15": {
+   "summary": "The post describes a customer-specific warehouse task (WT) fix in SAP EWM outbound. It uses the packaging specification condition type 0OBD, maintained per ship-to party, and the BAdI /SCWM/EX_CORE_RMS_DETERMINE to filter the candidate quants so that only HUs with the customer's pack size are proposed. The sample code is a useful starting point but has copy-paste artefacts and several fields marked VERIFY, and the test results are incomplete.",
+   "key_points": [
+    "Problem: standard WT creation proposes HUs of all pack sizes, ignoring the ship-to's packaging spec",
+    "Approach: read the ship-to from the delivery header, find matching 0OBD packspecs, then keep only quants whose HU packspec matches",
+    "Filtering happens through the DETERMINE method of the EWM BAdI by returning et_qmat_cus and setting ev_set",
+    "Several lines are marked VERIFY (party role type, head_partyloc flag, party_role field), so the code is not confirmed working",
+    "If nothing matches, the method returns without setting ev_set, so standard behaviour applies; the post does not say whether that is intended",
+    "Test case 2 result is cut off, so the final behaviour is not fully shown"
+   ],
+   "technical_details": [
+    "BAdI /SCWM/EX_CORE_RMS_DETERMINE, method /SCWM/IF_EX_CORE_RMS_DETERMINE~DETERMINE (parameters used: is_ltap, it_qmat, et_qmat_cus, ev_set)",
+    "Condition type 0OBD with pak_ship_to and pak_matid, validity by timestamp_from/timestamp_to via GET TIME STAMP FIELD",
+    "Table /1CN/CPSSAPOBD03 read directly (non-standard name, not explained in the post)",
+    "/SCWM/HUHDR fields huident and ps_guid, read with FOR ALL ENTRIES, in a SORTED table with unique key",
+    "Delivery query via /SCWM/CL_DLV_MANAGEMENT_PRD=>GET_INSTANCE( )->QUERY with is_include_data-head_partyloc",
+    "Master data transactions: /SCWM/MAT1 (material), /SCWM/PACKSPEC (packaging specification)",
+    "Copy-paste artefacts such as '@LC _cond_typ', '@IS _ltap-matid', '@LT _qmat_hu' must be fixed before the code compiles"
+   ],
+   "why_it_matters": "It addresses a real gap in EWM outbound (wrong pack size shipped to a customer) using existing packaging-spec master data rather than custom tables. It is one of the more concrete EWM customer-specific examples and shows how the BAdI can steer quant selection.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Good case study for EWM BAdI design: how to pick a filter-style BAdI, use FOR ALL ENTRIES safely with sorted tables, and decide the fallback when no rule matches. Ask students whether an empty match should fall back to standard FIFO or block the task, and what that means for the reported problem.",
+   "quality": 3
+  },
+  "23": {
+   "summary": "A user asks for a standard BAdI or BAPI that would let a custom program read a purchase requisition and create a request for quotation (RFQ) automatically, restricted to specific document types. The user says the BAPI they searched for does not exist in their system, so the requirement is stuck. The post names no BAPI, no release, and no document types, and it has no answer.",
+   "key_points": [
+    "Procurement wants automatic RFQ creation referencing a PR, limited to specific RFQ document types",
+    "The user's custom program needs a BAPI or BADI for this, and none was found",
+    "No BAPI or BADI names are given, so it is unclear what was searched",
+    "No release, support package, or customizing context is provided",
+    "The thread has no reply, so no standard solution is confirmed"
+   ],
+   "technical_details": [
+    "Requirement: PR to RFQ creation, document type restricted",
+    "Unknown: which BAPI/function module names were searched",
+    "Possible areas to check: purchasing BAdIs in the BAdI builder (SE18/SE19), the BAPI Explorer for RFQ and PR objects, and the standard RFQ-from-PR transactions in MM"
+   ],
+   "why_it_matters": "Creating RFQs from PRs in bulk is a common procurement request. Confirming whether a standard BAPI exists, or whether a custom solution is needed, saves a lot of wasted development time.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Create RFQs automatically from purchase requisitions for specific RFQ document types, programmatically, using a standard BAPI or BADI.",
+   "teaching_angle": "Good interview-prep question on how to find standard APIs: search the BAPI Explorer by business object, check BAdIs for the purchasing process, and when no standard interface exists, decide between a custom wrapper and a process change. Ask the student to list the search steps before proposing a solution.",
+   "quality": 2
+  },
+  "24": {
+   "summary": "A user on an SAP BTP trial account reports that Cloud Integration deployments fail with the message 'ErrorPersistingArtifact', both for the original iFlow and for a new test iFlow. The Monitor page shows the flow as 'not operational'. The user asks whether the trial tenant or the deployment service is at fault. The post gives no tenant region, timestamps, message IDs, or logs, and has no answer.",
+   "key_points": [
+    "Deployment of multiple integration flows fails with ErrorPersistingArtifact on a trial tenant",
+    "Refreshing, retrying, and creating a second iFlow did not help",
+    "Monitor shows status Error and 'The Integration Flow is not operational'",
+    "No region, timestamp, tenant ID, or logs are provided",
+    "No answer is recorded in the thread"
+   ],
+   "technical_details": [
+    "SAP Integration Suite, Cloud Integration capability on a BTP trial account",
+    "Error: ErrorPersistingArtifact (internal artifact persistence failure)",
+    "Monitor status: Error; message 'The Integration Flow is not operational'"
+   ],
+   "why_it_matters": "Trial-tenant deployment failures block learners and trainers, and the post shows a common triage gap: no diagnostic data is included. The reply should separate a tenant-entitlement problem from a platform-wide outage.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Cloud Integration iFlows fail to deploy on a BTP trial tenant with ErrorPersistingArtifact, and the user does not know whether the cause is the trial tenant or a service problem.",
+   "teaching_angle": "Use as a triage exercise: check the Integration Suite entitlement and trial validity, retry after a wait, try a minimal iFlow, and collect the tenant, region, timestamp, and error details before raising an incident with SAP support.",
+   "quality": 2
+  },
+  "25": {
+   "summary": "A learner preparing for the SAP Certified Joule Studio Developer (C_JSD) exam reports that the Hands-on Practice system returns HTTP 500 errors on file save, so work created through the chat does not appear in the Solution Progress panel. The post quotes the Joule chat's explanation that the platform's file storage is down, but that is an unverified self-diagnosis, not an SAP statement. The template placeholders (group number, activation time, browser version, expiry) are unfilled, and the post asks for an access extension or reset.",
+   "key_points": [
+    "Practice system returns HTTP 500 on file save; panels show no intent, requirements, specs, or test results",
+    "The chat reports files written to disk but not synced to the left panel",
+    "The 24-hour access window is nearly over, with the Yoodli assessment still ahead",
+    "Template placeholders (group, timestamps, browser version, extra steps tried) are unfilled",
+    "Asks for a fix to the file storage issue and for an extension or reset of access or the voucher"
+   ],
+   "technical_details": [
+    "Joule Studio practice system on SAP Learning",
+    "Solution Progress panel and the left-panel file sync (as described by the user)",
+    "HTTP 500 Internal Server Error on save",
+    "Two requested actions: fix the sync issue, and extend or reset access or the voucher"
+   ],
+   "why_it_matters": "Practice-environment outages can block certification candidates on a fixed time window. The support request is missing the details needed to act on it, and the user should not rely on the chat's self-diagnosis.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Work done on the Joule Studio practice system is not shown in the UI because of a 500 error on file save, and access expires in 24 hours.",
+   "teaching_angle": "Useful as a lesson in bug-report hygiene for support tickets: include group ID, activation and expiry timestamps with time zone, browser and version, HAR or console logs, and screenshots. It also shows that an AI assistant's explanation of a platform fault is a hypothesis to verify, not a root cause.",
+   "quality": 2
+  },
+  "28": {
+   "summary": "The author is following the SAP tutorial on building and governing MCP servers with SAP Integration Suite on a BTP trial. Integration Cell activation under Settings > Runtimes stalls at 51% with a warning icon and no error message, in both the Singapore (ap21) and US East (us10) regions. They unsubscribed and resubscribed in a second region, and the same pattern persisted, so the MCP Server artifact is missing from the Add menu. They cite KBA 3769634 as listing the trial plan and both regions as supported.",
+   "key_points": [
+    "Integration Cell activation stays in progress at 51% for more than 24 hours in ap21 and more than 3 hours in us10, with no error text.",
+    "The capabilities status shows IC as PENDING with empty error fields, and nothing has changed since about 30 seconds after activation.",
+    "Cloud Integration, API Modelling and Developer Hub are all shown as Active, and ten role collections are assigned, including PI_Administrator, Integration_Provisioner and the AuthGroup.* roles.",
+    "Without Integration Cell, the MCP Server artifact does not appear in the integration package's Add menu.",
+    "The author asks three things: whether activation works on the trial landscape, whether a prerequisite is missing, and how to retry or deactivate a stuck activation.",
+    "The post has no replies or resolution in the text provided."
+   ],
+   "technical_details": [
+    "SAP Integration Suite trial on BTP, regions ap21 (Azure, Singapore) and us10 (AWS, US East VA)",
+    "Settings > Runtimes > Integration Cell > Activate; progress bar stuck at 51% with warning icon",
+    "Capabilities status view: IC = PENDING, empty error fields",
+    "Services: Cloud Integration, API Modelling, Developer Hub (Active); Build Integration Scenarios and Manage APIs activated",
+    "Role collections: Integration_Provisioner, PI_Administrator, PI_Business_Expert, PI_Integration_Developer, APIManagement.SelfService.Administrator, APIPortal.Administrator, AuthGroup.API.Admin, AuthGroup.API.ApplicationDeveloper, AuthGroup.Content.Admin, AuthGroup.SelfService.Admin",
+    "Reference: KBA 3769634 (cited by the author as the supported-regions and plan list)"
+   ],
+   "why_it_matters": "Integration Cell gates the MCP Server artifact, so a stuck activation blocks the whole tutorial path. The report is well structured: it gives per-region timings, the status view state, and the role setup, which makes it easier for support to diagnose. Still, the post does not show a support incident or a BTP status-page check, so the cause is unresolved.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Integration Cell activation on a BTP trial stays at 51% with no error, so the MCP Server artifact cannot be created.",
+   "teaching_angle": "Use this as a provisioning troubleshooting case. Have trainees read the capabilities/status view, separate a platform-side stall from a missing role or entitlement, match the region and plan against the KBA, and decide when to open an incident on the BTP support component. Point out that the post proves neither a prerequisite gap nor a platform outage.",
+   "quality": 3
+  },
+  "31": {
+   "summary": "The author reports that the file storage service in SAP Joule Studio / SAP Build Code (EU10, free certification tenant) returns HTTP 500 on every write, including a one-word test file. They say this has lasted about 18 hours, that creating new solutions and restarting the sandbox did not help, and that it cut into a timed certification attempt. They ask support to restart the service and to grant a fresh 24-hour certification attempt.",
+   "key_points": [
+    "Every write_file call returns API 500 Internal Server Error, even for a single-word test file.",
+    "The issue is tenant-wide: new solutions show the same failure, and restarting the sandbox did not help.",
+    "The author reports about 18 hours of failures and a lost part of a timed certification window.",
+    "The request is twofold: restart the file storage service for the tenant, and grant a new 24-hour exam attempt.",
+    "No logs, request IDs, timestamps or error payloads beyond the 500 message are given.",
+    "The post is an escalation to the community, not a technical question with a solution path."
+   ],
+   "technical_details": [
+    "Platform: SAP Joule Studio / SAP Build Code, region EU10",
+    "Tier: free certification environment, stated as valid until end of 2026",
+    "Failing operation: write_file in the AI assistant's file storage",
+    "Error: API 500 Internal Server Error",
+    "Attempted workarounds: new solutions, sandbox restart"
+   ],
+   "why_it_matters": "It shows a real operational risk for certification candidates on time-limited sandboxes. The technical content is thin, and it has nothing to do with ABAP or S/4HANA development. Its value is as a reminder that certification issues go through the certification support channel, not a community thread, and that the post contains no diagnostic data a platform team could act on.",
+   "is_release_or_announcement": false,
+   "developer_problem": "File writes in Joule Studio return HTTP 500 for the whole tenant, which blocks development during a timed certification attempt.",
+   "teaching_angle": "Weak as a technical case. It can be used to teach how to report a platform fault: include timestamps, request IDs, exact error payloads, reproduction steps and whether the problem is tenant-wide, and route it to the right support channel. It is also a clear example of a request that mixes an incident with a policy request for an exam retry.",
+   "quality": 2
+  },
+  "41": {
+   "summary": "The author is preparing for the SAP Certified Joule Studio Developer (C_JSD) exam in the Joule Studio environment (C_JST). The central console does not render, although generated files show in the file tree, and a hard refresh, cache clearing and an incognito window did not help. They paused the 24-hour practice window to avoid losing their exam attempt, and they ask a community moderator to flag the issue for Monday support.",
+   "key_points": [
+    "The central console stays unresponsive while files appear in the left-hand file tree.",
+    "Troubleshooting covered a hard refresh (Ctrl+Shift+R), clearing cache and an incognito session with extensions disabled.",
+    "The author has paused the practice window because SAP Certification Support only works Monday to Friday.",
+    "The subject line gives Case ID 5000460528, but the body still contains the placeholder '[Insert Your Ticket/Case Number]'.",
+    "The author attaches screenshots and DevTools console logs to the ticket, but they are not included in the post.",
+    "The request asks a community moderator to escalate and to reset the exam eligibility."
+   ],
+   "technical_details": [
+    "Environment: Joule Studio, C_JST practice environment",
+    "Target exam: SAP Certified – Joule Studio Developer (C_JSD)",
+    "Symptom: central pane fails to render; DevTools console errors reported but not quoted",
+    "Workarounds tried: Ctrl+Shift+R, cache clear, incognito with extensions disabled",
+    "Timing: 24-hour practice window spanning the weekend"
+   ],
+   "why_it_matters": "The post is a support escalation, not a technical question, and a community forum cannot reset exam eligibility. The body also has a placeholder left in and no console error text, so the report is hard to act on. Its useful point is the mismatch between a weekend practice window and a Monday-to-Friday support queue.",
+   "is_release_or_announcement": false,
+   "developer_problem": "The central console in Joule Studio does not render during a certification practice window, which blocks the practical tasks.",
+   "teaching_angle": "Use it as a negative example of a support request: the case number is in the subject but not the body, the DevTools errors are described but not pasted, and the ask is for an exam reset. Teach trainees to paste the exact console error text and the ticket number into the report and to route exam-policy questions to certification support.",
+   "quality": 1
+  },
+  "43": {
+   "summary": "The author runs S/4HANA 1709 and wants to stop users from changing or adding certain manual pricing conditions in VF02 before billing is released to accounting. The billing documents come from delivery-related copy control (VTFL) with pricing type G. Discount conditions copied from the sales order should be locked, and packing charge conditions should stay editable. The post asks how to control this per condition type, and it does not include an answer.",
+   "key_points": [
+    "Release is S/4HANA 1709, and billing is delivery-related using copy control VTFL with pricing type G.",
+    "Users can currently change existing manual conditions and insert new ones in VF02 before accounting release.",
+    "Discount conditions copied from the sales order must be non-editable in VF02.",
+    "Packing charge conditions must stay editable in VF02.",
+    "The control must be selective per condition type, not blanket for the whole billing document.",
+    "The post gives no configuration, enhancement or BAdI detail that the author has already tried."
+   ],
+   "technical_details": [
+    "SAP S/4HANA 1709 (on-premise, pre-2020 release)",
+    "Transaction VF02 (change billing document), VTFL (copy control delivery to billing)",
+    "Pricing type G as set in the copy control",
+    "Scope: manual condition types in the billing pricing procedure (discount vs packing charge)",
+    "Requirement: per-condition-type control of change and insert"
+   ],
+   "why_it_matters": "This is a realistic pricing-control requirement in SD billing. The post is clearly scoped, but it does not name the condition types, the pricing procedure or any enhancement attempted, so no concrete fix can be confirmed from it. Any suggestion should be checked against the 1709 pricing configuration.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How to make selected manual condition types in billing (VF02) non-editable while keeping others editable, for delivery-based invoices on S/4HANA 1709.",
+   "teaching_angle": "Good interview or lab prompt. Ask trainees to list the places where manual pricing changes in billing can be controlled: the condition type's manual-entry setting, the pricing procedure step control, copy control pricing type, and billing-side enhancements or BAdIs. Have them check each against S/4HANA 1709 before choosing one, and note the trade-off of each.",
+   "quality": 3
+  }
+ },
+ "digest": {
+  "headline": "A thin day: one EWM BAdI case study with unverified code, an SD billing pricing question, and many BTP trial and Joule Studio outage reports.",
+  "overview": "The only substantial technical item is an EWM post (15) that filters warehouse task quants through the BAdI /SCWM/EX_CORE_RMS_DETERMINE, using packaging specification condition type 0OBD per ship-to party. Its code still has VERIFY markers and copy-paste artefacts, and the test results are cut off. Two ERP questions (23, 43) ask for standard ways to create RFQs from PRs and to lock manual conditions in VF02. Neither has an answer.\n\nThe rest is operational noise: BTP trial Integration Suite failures (24, 28), three Joule Studio certification reports (25, 31, 41), an SMS report announcement with no code (9), and a Terraform/AI TechEd recap (10). For ABAP trainers the value is in the EWM BAdI pattern and the two open requirements as discussion cases. The support reports are mainly examples of how to write a bug report.",
+  "top_stories": [
+   {
+    "title": "EWM: forcing customer-specific HU pack sizes in warehouse task creation via BAdI",
+    "summary": "The post filters candidate quants in /SCWM/IF_EX_CORE_RMS_DETERMINE~DETERMINE. It reads the ship-to from the delivery header and finds 0OBD packaging specs for that party. It then keeps only quants whose HU packspec matches and returns them in et_qmat_cus with ev_set. If nothing matches, the method returns without setting ev_set, so standard behaviour applies. Several lines are marked VERIFY and the second test result is cut off.",
+    "why_it_matters": "It is a concrete filter-BAdI pattern built on existing packspec master data instead of custom tables. The fallback decision and the unverified code mean it should be treated as a design sketch, not a working solution.",
+    "priority": 1,
+    "refs": [
+     15
+    ]
+   },
+   {
+    "title": "VF02: lock discount conditions but keep packing charges editable (S/4HANA 1709)",
+    "summary": "Billing is delivery-related with VTFL copy control and pricing type G. Users can change existing manual conditions and add new ones before accounting release. The author wants discounts copied from the sales order locked and packing charges left editable, per condition type. The post gives no answer and no approach already tried.",
+    "why_it_matters": "This is a common SD requirement. The possible control points are the condition type's manual-entry setting, pricing procedure step control, copy control pricing type and billing enhancements. Each needs checking on 1709, which the post does not do.",
+    "priority": 2,
+    "refs": [
+     43
+    ]
+   },
+   {
+    "title": "Procurement: auto-create RFQ from a purchase requisition for specific document types",
+    "summary": "A user wants a standard BAPI or BAdI so a custom program can create RFQs from PRs, limited to certain document types. The BAPI they searched for does not exist in their system. No names, release or replies are given.",
+    "why_it_matters": "It shows a typical API-discovery problem: confirm whether a standard interface exists before writing a custom wrapper.",
+    "priority": 3,
+    "refs": [
+     23
+    ]
+   },
+   {
+    "title": "BTP trial Integration Suite failures: Integration Cell stuck at 51% and ErrorPersistingArtifact",
+    "summary": "One user's Integration Cell activation stays at 51% in ap21 and us10 with no error, so the MCP Server artifact is missing. Another gets ErrorPersistingArtifact on every Cloud Integration deployment. Neither post has a reply or diagnostic data such as timestamps or message IDs.",
+    "why_it_matters": "Trainers using trial tenants for integration labs should have a fallback. Neither post proves whether the cause is the platform or the tenant.",
+    "priority": 3,
+    "refs": [
+     24,
+     28
+    ]
+   },
+   {
+    "title": "Joule Studio certification sandbox reports HTTP 500 and rendering faults",
+    "summary": "Three posts describe file writes failing with HTTP 500 or a console that does not render in the practice environment. The authors ask for resets or exam retries. The posts lack logs and request IDs, and one leaves a ticket placeholder unfilled.",
+    "why_it_matters": "These are support matters, not technical questions. Exam eligibility must go through certification support, not the community forum.",
+    "priority": 3,
+    "refs": [
+     25,
+     31,
+     41
+    ]
+   }
+  ],
+  "releases": [
+   {
+    "title": "Open-source ABAP report for sending SMS via Netgsm",
+    "summary": "A single copy-paste report that sends SMS through Netgsm. Per the post, credentials are held only in SM59 and a free preview runs before any paid send. It was tested on A4H. The post shows no code or repository link, so review the source before use.",
+    "refs": [
+     9
+    ]
+   },
+   {
+    "title": "IaC Spec Kit for SAP Business AI Platform (Terraform with AI agents)",
+    "summary": "A TechEd recap on generating Terraform for SAP BTP with an AI agent using spec-driven development. It names a GitHub project and a learning course but gives no code or versions. It is of limited relevance to ABAP work.",
+    "refs": [
+     10
+    ]
+   }
+  ],
+  "deep_dives": [
+   {
+    "title": "Filter-style BAdI in EWM: steering quant selection with /SCWM/EX_CORE_RMS_DETERMINE",
+    "explanation": "The post implements `/SCWM/IF_EX_CORE_RMS_DETERMINE~DETERMINE` to restrict which quants the warehouse task creation may use. The inputs are `is_ltap` and `it_qmat`. The output is `et_qmat_cus`, flagged with `ev_set`. The logic reads the ship-to party from the outbound delivery via `/SCWM/CL_DLV_MANAGEMENT_PRD=>GET_INSTANCE( )->QUERY` with `is_include_data-head_partyloc`. It then finds packaging specifications under condition type `0OBD`, using `pak_ship_to` and `pak_matid`, with validity checked against a `GET TIME STAMP FIELD` value.\n\nThe HU side reads `/SCWM/HUHDR` (`huident`, `ps_guid`) with `FOR ALL ENTRIES` into a sorted table with a unique key. Only quants whose HU packspec matches the customer's spec are returned. Lookups in a sorted table are efficient, but `FOR ALL ENTRIES` needs a guard for an empty driver table. Without it, the select reads everything. It also removes duplicates, which can hide rows if the selected fields are not unique.\n\nThe key design point is the fallback. When nothing matches, the method returns without setting `ev_set`, so standard behaviour applies. That means a customer could still receive the wrong pack size, which is the original problem. Decide explicitly whether to fall back to standard selection or to block the task, and log it either way.\n\nCaveats from the post: the code has `VERIFY` markers on party role type, the `head_partyloc` flag and `party_role`, plus artefacts like `@LC _cond_typ` that stop it compiling. It reads the non-standard table `/1CN/CPSSAPOBD03` directly. Packspec content tables are generated and can differ between systems, so a released API is safer where one exists. Treat the post as a sketch.",
+    "key_concepts": [
+     "/SCWM/EX_CORE_RMS_DETERMINE",
+     "Packaging specification condition 0OBD",
+     "FOR ALL ENTRIES with empty-table guard",
+     "Sorted table with unique key",
+     "Fallback to standard when ev_set is not set",
+     "Avoiding direct reads of generated tables"
+    ],
+    "refs": [
+     15
+    ]
+   },
+   {
+    "title": "Controlling manual pricing conditions in billing (VF02): where to look",
+    "explanation": "The question (S/4HANA 1709, delivery-related billing with VTFL, pricing type G) asks for per-condition-type control: discounts locked, packing charges editable. The post names no mechanism, so the following are control points to check, not a confirmed solution.\n\nThe first place is the condition type definition, where the manual-entry setting limits whether a condition can be entered or changed by hand. The second is the pricing procedure, where step control for the condition type can affect changes. Third, the pricing type in VTFL decides how pricing is carried from the order into billing (G in this case), and it applies to the whole item, so it cannot separate discounts from packing charges. The fourth is an enhancement in billing or pricing that rejects changes for named condition types.\n\nBecause the requirement is per condition type, configuration alone may not be enough. If one condition type serves both purposes, it may need splitting. Test each option on 1709 before choosing, and check side effects on delivery-related billing, such as re-pricing when the document is saved.",
+    "key_concepts": [
+     "Manual condition control in billing",
+     "Copy control VTFL pricing type G",
+     "Pricing procedure step control",
+     "Per condition type enhancement as fallback"
+    ],
+    "refs": [
+     43
+    ]
+   },
+   {
+    "title": "Finding the right standard API: PR to RFQ creation",
+    "explanation": "The question (ref 23) reports that the BAPI the user expected does not exist and that no BAdI was found. It does not name what was searched, so the problem is a search method, not a known gap.\n\nA sound order of work is to search the BAPI Explorer by business object for the purchase requisition and RFQ objects, and then check function modules and classes the standard RFQ-from-PR transaction uses. Next, look for purchasing BAdIs in SE18 and SE19 that fit the process. Only if no suitable interface exists should you consider a custom wrapper, and verify what the standard transaction does internally and whether it can be called in the background.\n\nDocument type restriction is a filter in your own program: read the PR, select the allowed types, and then create the RFQ. State the release and the PR item types in the question, since availability of interfaces depends on both.",
+    "key_concepts": [
+     "BAPI Explorer",
+     "SE18/SE19 BAdI search",
+     "Wrapper vs standard API",
+     "Document type filter in custom program"
+    ],
+    "refs": [
+     23
+    ]
+   }
+  ],
+  "trending_problems": [
+   {
+    "theme": "BTP trial provisioning stalls",
+    "description": "Integration Cell stuck at 51% in two regions, and ErrorPersistingArtifact on iFlow deployment. Neither post includes tenant, timestamp or logs.",
+    "teaching_tip": "Teach triage: read the capabilities status, check entitlement and the supported-regions KBA, retry with a minimal artifact, then open an incident with full data.",
+    "refs": [
+     24,
+     28
+    ]
+   },
+   {
+    "theme": "Joule Studio certification sandbox faults",
+    "description": "HTTP 500 on file writes and a console that does not render, with requests for exam resets. Placeholders were left unfilled in two reports.",
+    "teaching_tip": "Use these as bug-report examples: exact error text, timestamps with time zone, request IDs, and the correct support channel.",
+    "refs": [
+     25,
+     31,
+     41
+    ]
+   },
+   {
+    "theme": "Standard API or configuration discovery in ERP",
+    "description": "Users ask whether a BAPI exists for RFQ from PR, and how to lock only some manual conditions in VF02.",
+    "teaching_tip": "Have students list search and configuration steps before proposing custom code.",
+    "refs": [
+     23,
+     43
+    ]
+   }
+  ],
+  "post_drafts": [
+   {
+    "title": "EWM BAdI for customer pack sizes",
+    "text": "*EWM: wrong HU pack size proposed for a customer?*\n\nA community post filters quants in BAdI `/SCWM/EX_CORE_RMS_DETERMINE`.\n\nIt uses packaging spec condition 0OBD per ship-to and keeps only HUs matching that spec.\n\n*Design question:* if nothing matches, the code returns without setting ev_set, so standard picking runs. The wrong pack size can still ship.\n\nAlso, the sample still has VERIFY markers and copy-paste errors. Treat it as a sketch, not production code.\n\nhttps://community.sap.com/t5/supply-chain-management-blog-posts-by-members/sap-ewm-customer-specific-hu-picking-using-packaging-specification-and-badi/ba-p/14527517"
+   },
+   {
+    "title": "VF02: lock some manual conditions only",
+    "text": "*Open question for SD folks:*\n\nS/4HANA 1709, delivery-based billing (VTFL, pricing type G).\nRequirement: discount conditions locked in VF02, packing charges still editable.\n\nPlaces to check:\n- manual-entry setting of the condition type\n- pricing procedure step control\n- copy control pricing type\n- a billing enhancement per condition type\n\nHow have you solved it?\n\nhttps://community.sap.com/t5/supply-chain-management-q-a/how-to-restrict-manual-discount-conditions-editing-in-vf02-while-keeping/qaq-p/14527281"
+   },
+   {
+    "title": "Bug reports that get answers",
+    "text": "*Today's lesson from BTP trial and Joule Studio posts:*\n\nSeveral reports say only 'HTTP 500' or 'stuck at 51%'.\n\nInclude:\n- region and tenant\n- timestamps with time zone\n- exact error text and request IDs\n- what you already tried\n\nAnd don't trust a chatbot's explanation of an outage. Verify it.\n\nExample: https://community.sap.com/t5/technology-q-a/btp-trial-integration-cell-activation-stays-quot-in-progress-quot-at-51-two/qaq-p/14527658"
+   }
+  ],
+  "interview_questions": [
+   {
+    "question": "You implement a filter-style BAdI that restricts candidate records, and no rule matches. How do you decide the fallback behaviour?",
+    "answer": "First, find what the business wants when no rule matches: standard behaviour, or a hard stop. In the EWM example (ref 15), an unset ev_set means standard picking applies, so a wrong pack size can still go out. If the rule is a compliance requirement, raise a message or block creation. If it is a preference, fall back and write an application log entry so exceptions can be reviewed. Document the choice and test the no-match case explicitly. Silent fallback hides defects, which is why it should be a conscious decision.",
+    "level": "Senior",
+    "refs": [
+     15
+    ]
+   },
+   {
+    "question": "What are the risks of FOR ALL ENTRIES in a BAdI that runs during warehouse task creation, and how do you reduce them?",
+    "answer": "If the driver table is empty, FOR ALL ENTRIES selects all rows without the WHERE condition on it, so guard with an IS NOT INITIAL check. It also removes duplicate rows from the result, so include enough key fields to keep rows distinct. Large driver tables are split into several database statements, which costs time in a performance-sensitive process. Sort or sort-and-dedupe the driver table first. Put results in a sorted or hashed table with a suitable key for lookups. Where possible, use a join or a CDS view instead. Also avoid reading generated tables such as /1CN/ ones directly if a released API exists (ref 15).",
+    "level": "Mid-level",
+    "refs": [
+     15
+    ]
+   },
+   {
+    "question": "A user needs to create RFQs from purchase requisitions programmatically and cannot find a BAPI. How do you proceed?",
+    "answer": "Start by searching the BAPI Explorer by business object for the PR and the RFQ, and check released APIs for your release. Then trace what the standard RFQ-from-PR transaction calls and whether it offers a reusable function module or class. Search purchasing BAdIs in SE18/SE19 for hooks that fit the process. If no suitable interface exists, build a wrapper that reads the PR, filters the allowed document types, and calls the most stable available API. Isolate it behind your own class so it can be replaced when SAP provides a supported API. Document the release, since availability differs between versions (ref 23).",
+    "level": "Senior",
+    "refs": [
+     23
+    ]
+   }
+  ],
+  "class_idea": {
+   "title": "Designing safe filter BAdIs: the EWM pack-size case",
+   "why_now": "Today's EWM post (15) shows a filter BAdI with unverified code, a direct read of a generated table, and an unclear fallback when no rule matches.",
+   "outline": [
+    "What filter-style BAdIs do and how SAP uses output flags such as ev_set",
+    "Reading the BAdI interface: importing and exporting parameters",
+    "Packaging specification condition 0OBD and ship-to data",
+    "FOR ALL ENTRIES: empty-table guard, duplicates, sorted tables",
+    "Direct reads of generated tables vs released APIs",
+    "Fallback design: standard behaviour vs block, with logging",
+    "Unit test strategy for match, no match and mixed cases",
+    "Reviewing community code: finding VERIFY markers and artefacts before use"
+   ],
+   "exercise": "Give students a cleaned skeleton of a DETERMINE-style method with a mock quant table. In ADT, they implement the filter with a sorted table and a guarded FOR ALL ENTRIES, add an application log entry for the no-match case, and write ABAP Unit tests for match, no match and empty input.",
+   "refs": [
+    15
+   ]
+  },
+  "whatsapp_highlights": "EWM BAdI /SCWM/EX_CORE_RMS_DETERMINE for customer HU pack sizes (0OBD) – check the fallback | VF02: lock discount conditions, keep packing charges editable (1709) – open question | RFQ from PR: no BAPI found, how to search | BTP trial Integration Cell stuck at 51%; Joule Studio HTTP 500 reports"
+ }
+}
