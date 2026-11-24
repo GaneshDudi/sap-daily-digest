@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-24",
+  "label": "Tuesday, 24 November 2026",
+  "headline": "A light day for core ABAP: FOR ALL ENTRIES versus CTEs, a CDS-versus-SE16N stale data claim, AL11 background file failures, plus Joule A2A migration and principal propagation posts.",
+  "items": 115,
+  "deep": 30
+ },
+ {
   "date": "2026-11-23",
   "label": "Monday, 23 November 2026",
   "headline": "A thin day: one EWM BAdI case study with unverified code, an SD billing pricing question, and many BTP trial and Joule Studio outage reports.",
