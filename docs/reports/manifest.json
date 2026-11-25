@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-25",
+  "label": "Wednesday, 25 November 2026",
+  "headline": "A thin day for core ABAP: ADT install failures, a HANA OOM in KSII, and AI tooling setup dominate, with few confirmed answers.",
+  "items": 90,
+  "deep": 28
+ },
+ {
   "date": "2026-11-24",
   "label": "Tuesday, 24 November 2026",
   "headline": "A light day for core ABAP: FOR ALL ENTRIES versus CTEs, a CDS-versus-SE16N stale data claim, AL11 background file failures, plus Joule A2A migration and principal propagation posts.",
