@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-26",
+  "label": "Thursday, 26 November 2026",
+  "headline": "Thin day for core ABAP: a RAP authority-check unit test, an ADT save error, an EML dump, and a BTP certificate outage lesson.",
+  "items": 105,
+  "deep": 26
+ },
+ {
   "date": "2026-11-25",
   "label": "Wednesday, 25 November 2026",
   "headline": "A thin day for core ABAP: ADT install failures, a HANA OOM in KSII, and AI tooling setup dominate, with few confirmed answers.",
