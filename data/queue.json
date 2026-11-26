@@ -1,1 +1,247 @@
-[]
+[
+ {
+  "key": "8553c6f0def46d87",
+  "title": "Simplificação do Ciclo Contributivo (SCC) – Portugal - a Solução",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/simplifica%C3%A7%C3%A3o-do-ciclo-contributivo-scc-portugal-a-solu%C3%A7%C3%A3o/ba-p/14529713",
+  "published": "2026-11-26T14:54:51+00:00",
+  "author": "Anabela_Lucio",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "🇬🇧 English \n Portugal's SCC reform is live. Find all SAP notes, documentation links, and webinar recordings to implement the new Social Security Contribution Cycle Simplification in one place. \n 🇵🇹 Português \n A reforma SCC em Portugal já está em vigor. Encontre todas as SAP Notes, links de documentação e gravações de webinars para implementar a nova Simplificação do Ciclo Contributivo num único lugar."
+ },
+ {
+  "key": "1ea40aa154a7854a",
+  "title": "New Course Launch: Positioning Autonomous Unified Commerce",
+  "link": "https://community.sap.com/t5/customer-experience-learning-group-blog-posts/new-course-launch-positioning-autonomous-unified-commerce/ba-p/14530260",
+  "published": "2026-11-26T14:46:05+00:00",
+  "author": "CKaratzas",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "New Course Launch: Positioning Autonomous Unified Commerce \n I'm Charis from the CX Solution & Product Learning team, and I am excited to announce the launch of our latest course, Positioning Autonomous Unified Commerce , now available on learning.sap.com ! \n 🌟 About This Course \n The commerce landscape is changing fast. Agentic AI is reshaping buyer demand, and execution — not just discovery or conversion — has become the new competitive frontier. This course introduces SAP Autonomous Unified Commerce: SAP's vision for moving beyond connected systems toward a fully autonomous execution engine that makes real-time decisions across pricing, inventory, and fulfillment, while continuously learning from outcomes. \n In just 22 minutes, you will gain the language and understanding needed to position this solution confidently — whether you are speaking with customers, partners, or internal stakeholders. \n 📝 Course Details \n Level Beginner \n Duration 22 min \n Units 1 \n Achievement Leads to Achievement \n Access Free on learning.sap.com \n 🎓 Learning Objectives \n By the end of this course, you will be able to: \n Identify the key challenges facing modern commerce teams in the age of agentic AI, and explain why execution has become the critical competitive differentiator \n Explain how SAP Autonomous Unified Commerce addresses those challenges through connected AI agents built on a shared foundation of customer, product, and operational data \n Describe how Experience Agents, Execution Agents, and Optimization Agents work together to drive trust, loyalty, and profitability across the full commerce lifecycle \n 📚 What's Inside? \n Unit 1 — Orchestrating Commerce Execution with SAP Autonomous Unified Commerce: This unit covers the full picture of SAP Autonomous Unified Commerce — from the execution challenges commerce teams face today, to the AI agent framework SAP has built to address them. You will explore how Experience Agents, Execution Agents, and Optimization Agents work together across the commerce lifecycle, and how Joule-powered assistants bring autonomous decisions to the surface for commerce teams. \n 👥 Who Is This For? \n This course is designed for sales and presales professionals, consultants, and partners looking to position SAP Autonomous Unified Commerce with customers. It is equally valuable for commerce practitioners and digital commerce managers who want to understand how SAP's AI agent framework supports autonomous, end-to-end commerce execution. No prior technical knowledge is required. \n 🏅 Earn a Knowledge Badge \n Course completion rewards learners with a digital knowledge badge, demonstrating their skills in SAP Commerce Cloud customer support and order management—perfect for sharing achievements both internally and on professional networks. \n Start Learning Today \n You can find the course here: Positioning Autonomous Unified Commerce \n We hope you enjoy the course! If you have any questions or feedback, feel free to share them in the comments below. \n 📢 Spread the Word! Help us share this exciting update with partners, colleagues, and other stakeholders. \n 📝 We Value Your Feedback After completing the certification, please take a moment to share your feedback. Your insights help us continuously improve the learning experience. Two easy ways to share feedback! \n Click “ Share Feedback ” to submit your thoughts. \n\n In the “ Notification Center ” under “ Learning ” you can select the congratulatory email after completing course or learning journey and click “Feedback” to share your thoughts."
+ },
+ {
+  "key": "ece28d3849385752",
+  "title": "CAP Highlights from TechEd 2026 and Devtoberfest 2026 – a Recap",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/cap-highlights-from-teched-2026-and-devtoberfest-2026-a-recap/ba-p/14530249",
+  "published": "2026-11-26T14:41:04+00:00",
+  "author": "BirgitS",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "The SAP Cloud Application Programming Model (CAP) was represented at SAP TechEd 2026 and Devtoberfest 2026 with a wide variety of interesting sessions. This blog post takes a closer look at the CAP highlights from each event."
+ },
+ {
+  "key": "9dcea0528caa631f",
+  "title": "LGM Knowledge Snippet: Automatic Carrier Determination for Freight Orders",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/lgm-knowledge-snippet-automatic-carrier-determination-for-freight-orders/ba-p/14526244",
+  "published": "2026-11-26T13:16:06+00:00",
+  "author": "philippdrayss",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "This post covers the automatic carrier determination flow for Full Truck Load (FTL) shipping. It explains what triggers it, what data the business rule receives, how the status flows from NOT_STARTED to CARRIER_ASSIGNED or FAILURE, and what happens when a carrier rejects the order."
+ },
+ {
+  "key": "daee4f5a76a70f17",
+  "title": "SAP Inside Track Paraguay – Asunción 2026: Novedades de SAP Business One 10.0 FP 2608",
+  "link": "https://community.sap.com/t5/asunci%C3%B3n-blog-posts/sap-inside-track-paraguay-asunci%C3%B3n-2026-novedades-de-sap-business-one-10-0/ba-p/14529764",
+  "published": "2026-11-26T13:28:09+00:00",
+  "author": "Zamichiei",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "En muchas empresas de Paraguay, SAP Business One es el corazón de la operación: ventas, compras, stock y tesorería pasan por ahí todos los días. Por eso la charla de Yecsant Carolina Santamaría , de SSC – Software Consulting , era una de las más esperadas del SAP Inside Track Asunción 2026. \n Con Mejoras y novedades de SAP Business One V.10 FP 2608 , Yecsant hizo un recorrido práctico por el último Feature Pack. Pero no se quedó en la lista de novedades: el hilo de toda la charla fue cómo pasar de \"hay una función nueva\" a \"resolvimos un problema del negocio\"."
+ },
+ {
+  "key": "0ce2145c8bb1ad01",
+  "title": "Why $top is not a filter",
+  "link": "https://community.sap.com/t5/integration-blog-posts/why-top-is-not-a-filter/ba-p/14529654",
+  "published": "2026-11-26T12:47:14+00:00",
+  "author": "stefanchristian_boehm",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "When using an SAP S/4HANA Read API from the Business Accelerator Hub a common mistake is to use $top as a filter that can lead to long response times are even time outs and out of memory results. This blog explains why this is the case and what should be done instead."
+ },
+ {
+  "key": "a1cb897dfb91ec36",
+  "title": "Introducing Ad Hoc Tasks: A Faster Way to Drive Investigation and Remediation of Compliance Issues",
+  "link": "https://community.sap.com/t5/financial-management-blog-posts-by-sap/introducing-ad-hoc-tasks-a-faster-way-to-drive-investigation-and/ba-p/14529694",
+  "published": "2026-11-26T12:36:14+00:00",
+  "author": "BettinaS",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "As a compliance specialist, the new ad hoc task feature in SAP Risk and Assurance Management gives you a faster, more flexible way to manage issues and drive investigation and remediation."
+ },
+ {
+  "key": "abeb2b61fc8d6937",
+  "title": "No ABAP Cloud Developer Trial? A classic program through the ABAP Cloud checks on S/4HANA 2023",
+  "link": "https://community.sap.com/t5/abap-blog-posts/no-abap-cloud-developer-trial-a-classic-program-through-the-abap-cloud/ba-p/14530101",
+  "published": "2026-11-26T12:22:23+00:00",
+  "author": "AlexandrePassarelli",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "The trial can't be downloaded anymore and its licenses can't be extended. If you still have access to an S/4HANA development system, the ABAP Cloud rules are already in it. I wrote the kind of program we all practiced on and ran the ABAP Cloud readiness check: 23 findings. Rewritten the ABAP Cloud way: 0 findings, and it runs."
+ },
+ {
+  "key": "93faffd1a776470d",
+  "title": "Relembre a palestra: Além do Go-Live, a camada da adoção digital #SITCWB2026",
+  "link": "https://community.sap.com/t5/curitiba-blog-posts/relembre-a-palestra-al%C3%A9m-do-go-live-a-camada-da-ado%C3%A7%C3%A3o-digital-sitcwb2026/ba-p/14522523",
+  "published": "2026-11-26T12:00:00+00:00",
+  "author": "AdrianoCWB",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "No dia 7 de novembro, no Auditório Gregor Mendel da PUCPR, Rodrigo Cordeiro, Head de Transformação de Negócios na Numen, apresentou no SAP Inside Track Curitiba 2026 a palestra \"Além do Go-Live: Maximizando a Adoção Digital e o ROI com WalkMe\". \n Sobre a palestra \n Toda transformação SAP tem duas histórias: a do projeto (escopo, orçamento, go-live no prazo) e a do uso real (seis meses depois, parte da equipe ainda usa planilha paralela). Rodrigo mostrou que o gap entre as duas é a distância entre o sistema estar certo e a pessoa saber o que fazer com ele no momento exato. \n Segundo dados do WalkMe citados na palestra, US$ 104 milhões foram desperdiçados em 2024 com tecnologia subutilizada, cada colaborador perde 51 dias por ano com fricção digital e 70% das iniciativas de transformação não geram o valor planejado. \n SAP BTM e a camada de adoção \n O SAP BTM integra três camadas: processos (SAP Signavio), arquitetura (SAP LeanIX) e adoção (WalkMe), que foi o foco da palestra. O WalkMe é uma plataforma de adoção digital que fica sobre a aplicação, sem alterar o código, para identificar onde a pessoa trava e guiá-la na hora. Foi adquirido pela SAP em setembro de 2024 e se apoia em três pilares: dados, ação e experiência. \n WalkMe e Joule: rivais ou parceiros? \n A resposta foi que não é um ou outro. A Joule responde \"o que eu preciso fazer?\" a partir de uma pergunta do usuário. O WalkMe responde \"como faço isso nesta tela?\", de forma proativa e contextual. Na ideia da palestra, a Joule é o cérebro e o WalkMe é a camada de experiência. \n Três lentes e o Learning Arc \n Consultor: garantir que o usuário saiba operar no dia 1 é entrega, escopo e diferencial. \n Usuário: a ajuda aparece quando ele trava, e não em um treinamento genérico feito meses antes. \n Líder: a métrica de sucesso deixa de ser \"foi ao ar\" e passa a ser \"está sendo usado direito\". \n Learning Arc: treinamento dentro da aplicação, com simulações em modo Demo, Practice e Test, e medição de conclusão e de quedas em quiz. \n Para levar \n Go-live não é a linha de chegada, é o começo do uso real. \n Adoção digital é uma entrega do projeto, não um detalhe. \n Meça o uso, não a presença no treinamento. \n Sobre o palestrante \n Rodrigo Cordeiro, Head de Transformação de Negócios na Numen e professor de pós-graduação em arquitetura funcional, com nove certificações SAP. \n Assista à palestra no YouTube (de 1:20 a 40:19 do vídeo): https://youtu.be/6kfJHxQN140?t=80 \n Veja todas as palestras no post índice: https://community.sap.com/t5/curitiba-blog-posts/sap-inside-track-curitiba-2026-relembre-as-palestras-sitcwb/ba-p/14522453 \n #SITCWB2026 #SAPCommunity #SAPCommunityCWB #SAPBTM #WalkMe"
+ },
+ {
+  "key": "c3d913e6761f8524",
+  "title": "Beyond the Forecast: як перетворити прогноз на реальну бізнес-перевагу",
+  "link": "https://community.sap.com/t5/kyiv-blog-posts/beyond-the-forecast-%D1%8F%D0%BA-%D0%BF%D0%B5%D1%80%D0%B5%D1%82%D0%B2%D0%BE%D1%80%D0%B8%D1%82%D0%B8-%D0%BF%D1%80%D0%BE%D0%B3%D0%BD%D0%BE%D0%B7-%D0%BD%D0%B0-%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D1%83-%D0%B1%D1%96%D0%B7%D0%BD%D0%B5%D1%81-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%B0%D0%B3%D1%83/ba-p/14530077",
+  "published": "2026-11-26T11:42:16+00:00",
+  "author": "Anastasiia_Zhukova",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Точність прогнозу — це важливо. Але питання не лише в тому, наскільки він точний, а й в тому, що компанія робить з цими даними далі."
+ },
+ {
+  "key": "b616c9a908d8618b",
+  "title": "Configure Navigation of Billable Maintenance Order to the Manage Maintenance Orders Fiori App",
+  "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/configure-navigation-of-billable-maintenance-order-to-the-manage/ba-p/14529954",
+  "published": "2026-11-26T15:37:30+00:00",
+  "author": "SINGHARYA0",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "In SAP S/4HANA Service Management, billable maintenance order links across the service transactions can be redirected from the existing SAP GUI target to the Manage Maintenance Orders SAP Fiori app."
+ },
+ {
+  "key": "8121271ee83178d9",
+  "title": "SAP Business Data Cloud: Transforming Enterprise Data into Intelligent Business Decisions",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-business-data-cloud-transforming-enterprise-data-into-intelligent/ba-p/14529979",
+  "published": "2026-11-26T10:04:08+00:00",
+  "author": "sraji2486",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Introduction \n Organizations today use different applications to manage their business operations. Finance, procurement, sales, human resources, and other departments generate large amounts of data every day. Although this information is valuable, it is often stored across different systems, making it difficult to get a complete view of business performance. \n For example, an organization may use SAP S/4HANA for finance and procurement, SAP SuccessFactors for employee information, and SAP Analytics Cloud (SAC) for reporting. When management needs a consolidated report, data from these systems must be connected, prepared, and presented in a meaningful way. \n This is where SAP Business Data Cloud (SAP BDC) comes into the picture. \n SAP Business Data Cloud is a cloud-based solution that brings together SAP and non-SAP data, analytics, planning, and AI capabilities. It helps organizations make better use of their existing data while maintaining its business meaning. \n In this blog, let's explore SAP Business Data Cloud, its key components, how it works, and how it can be used in practical business scenarios. \n What is SAP Business Data Cloud? \n SAP Business Data Cloud is a fully managed cloud solution designed to connect and manage business data from different sources. \n It brings together existing SAP technologies such as SAP Datasphere, SAP Analytics Cloud, and SAP Business Warehouse, along with SAP Databricks and other capabilities. \n The main idea behind SAP BDC is to make business data available for different purposes without repeatedly creating the same data models and business logic. \n For example, finance teams can use financial data for reporting, while procurement teams can use purchasing information to analyze supplier performance. Both teams can work with trusted business data while meeting their individual requirements. \n One important point is that SAP Business Data Cloud is not simply another reporting tool or a replacement for SAP Datasphere. It provides a broader environment that connects data management, analytics, planning, and AI. \n Key Components of SAP Business Data Cloud \n SAP Business Data Cloud brings together different technologies, with each component supporting a specific business requirement. \n SAP Datasphere \n SAP Datasphere helps organizations connect data from different systems, create data models, and maintain business context. It allows developers to prepare and share data for analytical requirements. \n SAP Analytics Cloud \n SAP Analytics Cloud supports dashboards, reporting, data visualization, and enterprise planning. Business users can use it to analyze performance and monitor important KPIs. \n SAP Business Warehouse \n SAP BW supports existing enterprise data warehouse requirements. Organizations can continue using their existing BW investments while exploring modernization options through SAP BDC. \n SAP Databricks \n SAP Databricks provides capabilities for data engineering, machine learning, data science, and AI. It helps organizations perform advanced analysis using SAP and non-SAP data. \n SAP HANA Cloud \n SAP HANA Cloud provides database and data processing capabilities. It also supports application development and advanced analytical requirements. \n SAP Master Data Governance \n SAP Master Data Governance helps organizations maintain consistent and reliable master data across business applications. \n These components work together to provide a connected data and analytics environment. Organizations can select the capabilities based on their requirements and existing technology landscape. \n Understanding Data Products \n One of the important concepts in SAP Business Data Cloud is data products. \n In simple terms, a data product is a prepared collection of business data that can be reused by different teams and applications. \n In traditional data environments, developers often extract individual tables and create separate models for every reporting requirement. This can result in repeated development work and inconsistent calculations. \n Data products help reduce this effort by providing structured information with business meaning, metadata, and documentation. \n For example, consider a finance data product containing general ledger information, company codes, financial documents, and cost centre details. \n Instead of preparing the same information separately for multiple reports, different teams can use the available data product for their requirements. \n SAP also provides ready-to-use data products from supported SAP applications, which can help organizations reduce the time required to prepare data. \n The main benefits are reusability, consistency, better data management, and easier access to trusted business information. \n Practical Example: Building an Enterprise Analytics Solution \n Let's consider a company that wants to create a consolidated management dashboard using finance, procurement, and HR information. \n The company currently uses: \n\n SAP S/4HANA for finance and procurement. \n\n SAP SuccessFactors for HR. \n\n SAP Datasphere for data integration and modelling. \n\n SAP Analytics Cloud for dashboards and reporting. \n The requirement is to bring the required information together and provide management with a single view of business performance. \n The implementation can be approached in the following way. \n Step 1: Identify the source systems \n First, identify the systems and data required for reporting. \n For example, finance information may include actual expenses, GL balances, and cost centres. Procurement may require purchase orders, supplier details, and invoice information. HR may require employee details and department information. \n Understanding the source systems and business requirements is important before starting the integration. \n Step 2: Integrate the required data \n The next step is to make the required information available through SAP BDC. \n Depending on the source system and requirement, organizations can use available SAP data products, data federation, replication, and supported integration methods. \n For example, finance and procurement information can be obtained from SAP S/4HANA, while employee information can be obtained from SAP SuccessFactors. \n The integration approach should be selected based on data volume, refresh frequency, and business requirements. \n Step 3: Create data models using SAP Datasphere \n Once the data is available, SAP Datasphere can be used to prepare the required business models. \n For example, finance information can be connected with cost centre and company code details to calculate department-wise expenditure. \n Similarly, procurement information can be organized to analyze supplier performance and purchasing activities. \n These models help maintain common business definitions and make information available for different reporting requirements. \n Step 4: Develop dashboards using SAP Analytics Cloud \n After preparing the data models, SAP Analytics Cloud can be used to develop dashboards. \n A management dashboard may include: \n\n Total revenue and expenses. \n\n Actual versus budget. \n\n Department-wise expenditure. \n\n Purchase order details. \n\n Supplier performance. \n\n Employee headcount. \n Management can use these dashboards to understand business performance without checking multiple applications separately. \n For example, finance managers can compare actual expenses against budget, while procurement managers can review purchasing trends. \n Step 5: Explore AI and advanced analytics \n Once the organization has a reliable data foundation, it can explore machine learning and AI capabilities. \n For example, historical procurement information can be analyzed to identify unusual purchasing patterns or predict future requirements. \n SAP Databricks can support data engineering and machine learning activities, while SAP's AI capabilities can help users work with business information more effectively. \n This example shows how different SAP technologies can work together to support an end-to-end analytics requirement. \n Zero-Copy Data Sharing \n Another important capability of SAP Business Data Cloud is zero-copy data sharing. \n In traditional data environments, information is often copied from one platform to another before it can be used for reporting or advanced analysis. This can increase storage requirements and create additional data maintenance activities. \n SAP Business Data Cloud Connect supports sharing data and metadata between SAP BDC and supported external platforms without creating additional physical copies for supported scenarios. \n For example, an organization using SAP Databricks for machine learning can access shared SAP business data for advanced analysis. \n This helps reduce unnecessary data movement and allows organizations to make better use of their existing data platforms. \n However, zero-copy does not mean that every integration is completely free from data movement. The actual approach depends on the supported platform and integration requirements. \n SAP BW Modernization \n Many organizations have been using SAP Business Warehouse for several years. These environments contain important business data, reports, queries, and transformation logic. \n Replacing the entire BW environment can be expensive and time-consuming. \n SAP Business Data Cloud provides modernization options that allow organizations to continue using existing BW investments while gradually adopting cloud-based capabilities. \n For example, an organization using SAP BW for financial reporting can review its existing data models and identify which data assets can be reused through supported SAP BDC integration capabilities. \n This allows organizations to modernize their data environment step by step instead of replacing everything immediately. \n The main objective is to protect existing investments while taking advantage of newer data and analytics capabilities. \n Industry Applications \n SAP Business Data Cloud can support different industries because most organizations depend on information from multiple business systems. \n Some practical examples include: \n Manufacturing: Combining production, inventory, procurement, and financial information to improve operational visibility. \n Banking: Connecting customer, transaction, and financial information to support risk analysis. \n Retail: Combining sales, inventory, and customer information to understand demand and improve planning. \n Healthcare: Connecting financial and operational information to improve resource management. \n Oil and Gas: Combining maintenance, procurement, workforce, and financial information to understand operational costs. \n For example, an oil and gas company may want to analyze maintenance expenditure across different operational locations. By combining maintenance, procurement, and finance information, management can compare costs and identify areas that require further investigation. \n These use cases show how connected business data can support better decisions across different departments. \n Challenges and Best Practices \n Although SAP Business Data Cloud provides several capabilities, organizations should consider a few important points before implementation. \n Data quality: Incorrect or incomplete source data can affect reporting results. Source data should be validated before creating analytical models. \n Security: Finance, HR, and operational information may have different access requirements. Appropriate roles and authorizations should be maintained. \n Integration: The integration approach should be selected based on the source system, data volume, and required refresh frequency. \n Performance: Data models, joins, and refresh schedules should be reviewed to maintain good reporting performance. \n Skills and knowledge: Implementation teams should understand the relevant SAP technologies, including Datasphere, Analytics Cloud, data integration, and security. \n It is also better to start with a small business use case, such as finance"
+ },
+ {
+  "key": "3185d863160c898a",
+  "title": "Cumulocity Streaming Analytics Meets SAP APM: Automated Follow-Up Actions",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/cumulocity-streaming-analytics-meets-sap-apm-automated-follow-up-actions/ba-p/14494569",
+  "published": "2026-11-26T10:02:15+00:00",
+  "author": "michel_seifner",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Detecting an IoT event in real time is only half the battle — taking immediate enterprise action is what prevents downtime . In this post, we show how to connect Cumulocity Streaming Analytics directly to SAP Asset Performance Management (APM) . Learn how to bridge sub-second telemetry anomaly detection with APM’s action execution engine to automatically raise alerts, notify maintenance teams, and create S/4HANA notifications without custom middleware ."
+ },
+ {
+  "key": "85ad21e1fd21f210",
+  "title": "Connecting SAP ECC 6.0 during a Cloud ERP (public cloud) Transition: Four Approaches Compared",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/connecting-sap-ecc-6-0-during-a-cloud-erp-public-cloud-transition-four/ba-p/14528913",
+  "published": "2026-11-26T09:52:09+00:00",
+  "author": "Simon_Z",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "When helping a customer transition from SAP ECC 6.0 to SAP Cloud ERP (S/4HANA public cloud), one of the first architectural questions is very simple: how does the cloud-side tooling actually connect to the ECC on-premise system? This blog focuses exclusively on the live, system-to-system connectivity options: how the cloud-side tooling connects directly to the ECC system."
+ },
+ {
+  "key": "596d0798587b0d28",
+  "title": "Where to download the Package Tool (ContentPackageTool.zip)",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/where-to-download-the-package-tool-contentpackagetool-zip/qaq-p/14530178",
+  "published": "2026-11-26T13:56:08+00:00",
+  "author": "JerushaLala",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi All, \n I was trying to download the package tool from Note 3300159. I need this to import calc views into SAP B1 to use in the Excel report and Interactive Analysis. However the .exe is not on the note to download. Where else can this be downloaded? \n Thank you, \n Jerusha"
+ },
+ {
+  "key": "3924830d16fdc1d6",
+  "title": "Issue When Creating Outbound Delivery from Sales Order",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/issue-when-creating-outbound-delivery-from-sales-order/qaq-p/14530025",
+  "published": "2026-11-26T10:38:52+00:00",
+  "author": "may_thitsaoo",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear SAP Support, \n We are facing an issue when creating an outbound delivery using the Create Outbound Delivery from Sales Order application. \n Issue Description: \n Open the \"Create Outbound Delivery from Sales Order\" application. \n Enter or select the relevant Sales Order ID. \n The system displays the following error message: \n \"An item with no delivery quantity is not permitted. Item will be deleted.\" \n As a result, we are unable to proceed with creating the outbound delivery. \n Could you please help us investigate the root cause of this issue and advise how we can successfully create the outbound delivery from the sales order? \n We would also appreciate your guidance on any prerequisites or configuration settings that need to be checked to resolve this issue. \n Thank you for your support. \n Best regards, \n Hninn"
+ },
+ {
+  "key": "8916bd86019cffb1",
+  "title": "Discrepancy in formatting and Styling option in SAC story : EDIT vs VIEW",
+  "link": "https://community.sap.com/t5/technology-q-a/discrepancy-in-formatting-and-styling-option-in-sac-story-edit-vs-view/qaq-p/14530024",
+  "published": "2026-11-26T10:37:54+00:00",
+  "author": "SEEMI",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "There is discrepancy in Formatting and styling applications between SAC story in EDIT vs VIEW mode. \n Even if no changes done to story, Star marked is seen on story (changes done automatically). \n Can anyone answer, how this can happen? \n Also, this case is only for some reports, while other reports seem to be working fine"
+ },
+ {
+  "key": "a62dee772207e045",
+  "title": "Sales Order and Invoice Gross Profit Base Price far from Moving Average Item Cost",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/sales-order-and-invoice-gross-profit-base-price-far-from-moving-average/qaq-p/14530014",
+  "published": "2026-11-26T10:25:53+00:00",
+  "author": "kedalenechong",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi All \n Any clue why Sales Order and Invoice Gross Profit Base Price far from Moving Average Item Cost? \n We are not able to simulate when randomly creating new Sales Order and Invoice for same item. \n User claimed they did not manuall edit Gross Profit Base Price as the field is not visible in their Form Settings \n\n Kedalene Chong"
+ },
+ {
+  "key": "41afd49028498fa7",
+  "title": "Material Ledger Activity Update 2 → 1 (CON2): Benefit vs. Loss of Multilevel Actual Activity Prices",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/material-ledger-activity-update-2-1-con2-benefit-vs-loss-of-multilevel/qaq-p/14529917",
+  "published": "2026-11-26T08:37:48+00:00",
+  "author": "Jiecang2024",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Dear SAP experts, \n Our users want to see actual activity prices at production order level for cost analysis. We understand that this requires changing the Material Ledger \"Activity Update\" setting from 2 to 1 and using CON2. The same note states that after the switch, actual activity prices are no longer reflected in the multilevel (material) view and appear only at production order level.( https://me.sap.com/notes/2240562/E ) \n\n We would like to understand whether this trade-off is worthwhile before deciding on a switch in production. \n Planned test approach: Copy production data to a test system after a period has been closed and settled. \n Switch from 2 to 1 and activate CON2 at the period boundary (previous period closed, new period without postings). \n Post a few new production orders in the new period, and run price determination, CON2 and settlement. \n Compare CKM3, cost component split and order variances before and after the switch. \n We are aware that switching within an open period is not supported, so we only intend to test at a period boundary. \n Questions \n 1. Benefit: After the switch, what exactly is available at order level that is not available with setting 2 (for example, actual activity prices and activity price differences by order)? Are there any standard reports for this analysis (for example, CKM3 or the cost component split)? \n 2. Loss at material level: Which information is no longer available in the multilevel view after the switch? Does this affect material price determination, inventory valuation, or the actual cost component split of finished and semi-finished goods? \n Risks: What are the known risks and side effects of the switch, especially for in-process orders, orders spanning the switch period, and TECO orders with errors in COFC or historical goods movement errors (for example, CO688)? \n 3. Prerequisites: Is it mandatory that no open production orders exist at the time of the switch? If some orders cannot be closed, what is the impact? \n 4. Reversibility: Can the setting be switched back from 1 to 2 later? If yes, under which conditions? \n 5.Recommendation: Does SAP recommend this switch only to meet the requirement of order-level actual activity prices? Is there an alternative that provides order-level analysis without losing the multilevel view? \n 6. Testing: Is our test approach (copy after period close, switch at the period boundary) sufficient, or is there an SAP-recommended procedure or checklist for validating the switch? \n Thank you in advance for your guidance. \n Best regards"
+ },
+ {
+  "key": "d2b363fc7412afc8",
+  "title": "STO pricing on storage location level",
+  "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/sto-pricing-on-storage-location-level/qaq-p/14529909",
+  "published": "2026-11-26T08:32:28+00:00",
+  "author": "Kristian2",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi, Experts. \n\n I have a challenge with pricing an STOs (and F8 pro forma later on) where the requirements from the business differ based on which storage location the goods are sent from. The customs value of the order changes because of the nature of the goods when sent from the different locations. \n\n My problem is that the badi PRCG_DOC_ITEM_CONDITION_AMOUNT only imports SUPPLIER and PLANT as useful parameters, while I would need SLOC or Shipping Condition to distinguish my two scenarios. \n\n I also cannot do a select statement as the order is not yet saved when pricing occurs, and the custom fields that this badi imports are from SD.. \n Any ideas on how to solve this? \n PS: This is in SAP Public Cloud. \n\n Thanks in advance, \n\n Kristian"
+ },
+ {
+  "key": "793d097ea4e7e9ce",
+  "title": "Excited to Join SAP Community – Connecting, Collaborating & Sharing Knowledge!",
+  "link": "https://community.sap.com/t5/welcome-corner-discussions/excited-to-join-sap-community-connecting-collaborating-amp-sharing/m-p/14529892#M10834",
+  "published": "2026-11-26T08:13:09+00:00",
+  "author": "DhanushKumar",
+  "tags": [],
+  "feed": "SAP Community discussions",
+  "kind": "discussion",
+  "text": "Hi Everyone! \n I'm Dhanush Kumar, currently based in Riyadh, Saudi Arabia, and working as a Senior Analyst at Kaar Tech. I have around 4 years of experience in SAP, primarily working with SAP Materials Management (MM), SAP Supplier Relationship Management (SRM), and SAP Ariba. \n My expertise includes end-to-end Procurement and Purchase-to-Pay (P2P) processes, SAP MM configuration, supplier collaboration, strategic sourcing, and MM–FI and MM–SD integrations. \n I'm excited to join the SAP Community to connect with fellow professionals, exchange knowledge, share practical experiences, and learn about the latest developments in SAP technologies. \n Looking forward to engaging in insightful discussions and being part of this wonderful community!"
+ },
+ {
+  "key": "55be6d575cf2c1fd",
+  "title": "SAP and planqc Bring Quantum Computing into Business Processes",
+  "link": "https://news.sap.com/2026/11/sap-planqc-bring-quantum-computing-business-processes/",
+  "published": "2026-11-26T12:30:00+00:00",
+  "author": "SAP News",
+  "tags": [
+   "Technology",
+   "Quantum computing"
+  ],
+  "feed": "SAP News Center",
+  "kind": "news",
+  "text": "MUNICH — SAP SE (NYSE: SAP) is stepping up its quantum computing activities and expanding its collaboration with Munich-based quantum computer manufacturer planqc. \n Innovation at SAP helps organizations turn technology into an engine for business innovation \n\n Learn more \n\n At Quantum Day Munich, which is being run by SAP, the two companies are demonstrating for the first time how a planqc neutral-atom quantum computer can be integrated into an SAP software environment. SAP is also showcasing its first quantum agents and establishing a dedicated quantum team in Munich. Starting in 2027, the companies plan to test initial business scenarios on actual planqc quantum hardware. \n\n SAP sees the potential for quantum computing to reach performance levels relevant to SAP software applications before the end of this decade. The company is, therefore, exploring how quantum computing can complement classical optimization, simulation and AI. Munich offers a dense ecosystem of leading research institutions, specialized suppliers, startups and industry partners. \n\n “Quantum computing opens up new ways to solve complex problems. We see neutral-atom quantum computers in particular as a promising approach to scalable quantum computing,” said Dr. Carsten Polenz, Global Head of Quantum, SAP. “What matters now is embedding this computing power into business processes and making it accessible to customers. With planqc, we can develop directly on real quantum hardware and shorten the path to real-world business applications.” \n\n The technical foundation is a cloud interface connecting the SAP software landscape with planqc’s quantum computing environment. The hybrid architecture combines classical solvers, quantum simulators and real quantum hardware. At today’s Quantum Day Munich, SAP and planqc are demonstrating for the first time how this works successfully in a real-world application scenario. In optimizing the loading of a delivery vehicle, an optimization task is transferred from an SAP software logistics process to the planqc environment and computed on a quantum simulator. The resulting loading plan is then fed back into the SAP software process. In the future, such scenarios are expected to run directly on a neutral-atom quantum computer. \n\n On the same technological foundation, SAP is developing its first quantum agents. They are designed to capture business objectives and constraints and orchestrate appropriate solution methods. Users should, therefore, be able to address business problems without having to program quantum hardware themselves or develop specialized quantum expertise. The focus is on the business decision, not the underlying computing technology. \n\n “Europe has a strong research base and essential parts of the technology supply chain for quantum computers,” said Dr. Alexander Glätzle, co-founder and CEO of planqc. “The challenge now is to turn these strengths into competitive products and real-world applications. With SAP, we are bringing our neutral-atom quantum computers to where companies manage complex business processes. This allows companies to build expertise and develop real-world use cases while the technology matures, rather than waiting until powerful quantum computers become available.” \n\n Visit the SAP News Center . Get SAP news via LinkedIn and Bluesky . \n\n Media Contact: \n Katrin Pommer, +49(0) 151 18 96 84 93, katrin.pommer@sap.com , CET \n SAP Press Room ; press@sap.com \n Sign up for our newsletter to receive weekly news, stories and highlights from the SAP News Center \n\n Subscribe here \n\n This press release was created with the assistance of artificial intelligence and has been reviewed by the editorial team. \n\n This document contains forward-looking statements, which are predictions, projections, or other statements about future events. These statements are based on current expectations, forecasts, and assumptions that are subject to risks and uncertainties that could cause actual results and outcomes to materially differ. Additional information regarding these risks and uncertainties may be found in our filings with the Securities and Exchange Commission, including but not limited to the risk factors section of SAP’s 2025 Annual Report on Form 20-F. \n © 2026 SAP SE. All rights reserved. \n SAP and other SAP products and services mentioned herein as well as their respective logos are trademarks or registered trademarks of SAP SE in Germany and other countries. Please see https://www.sap.com/copyright for additional trademark information and notices."
+ }
+]
