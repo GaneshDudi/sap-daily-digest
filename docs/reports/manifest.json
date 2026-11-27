@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-27",
+  "label": "Friday, 27 November 2026",
+  "headline": "Thin day: ABAP Cloud practice without the trial, async SOAP error alerting in S/4HANA Cloud, and unanswered BAdI and destination-header questions.",
+  "items": 73,
+  "deep": 16
+ },
+ {
   "date": "2026-11-26",
   "label": "Thursday, 26 November 2026",
   "headline": "Thin day for core ABAP: a RAP authority-check unit test, an ADT save error, an EML dump, and a BTP certificate outage lesson.",
