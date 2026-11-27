@@ -297,5 +297,170 @@
   "feed": "SAP News Center",
   "kind": "news",
   "text": "As enterprises accelerate their agentic AI investments, a significant question is emerging: Are they prepared to trust AI agents to make decisions and take actions on their behalf? \n A cloud-native layer that unifies SAP and non-SAP data into trusted, multidomain views \n\n Explore SAP Reltio \n\n This was a major topic of discussion during Reltio’s inaugural Agentic Executive Leadership Program, which brought together 22 senior executives from different industries, including financial services, life sciences, manufacturing, and consumer goods, for three working sessions in October 2026. \n\n The findings, detailed in a new whitepaper, Trusted Before Autonomous , suggest that the biggest obstacles to enterprise AI adoption involve the quality of the data, business context, governance, and the human oversight supporting it all. \n\n Authored by Kash Mehdi, vice president and field CTO at Reltio, an SAP company, the whitepaper identifies four priorities for organizations seeking to move AI agents from experimentation into production. \n\n Business context makes the difference \n\n One of the program’s most revealing demonstrations illustrated how quickly business context can influence AI-generated results. \n\n When a customer-success agent was asked to identify renewal accounts requiring attention, an agent operating with company-specific business definitions identified 13 accounts, complete with performance indicators and recommended actions. Without those definitions, the same question produced 23 accounts based on the agent’s own assumptions. The context-aware agent also consumed approximately 25% fewer tokens because it understood where to find relevant information. \n\n For SAP customers managing complex enterprise environments, business information frequently spans ERP, CRM, service, and third-party systems. That’s why AI agents must understand the underlying data and the relationships, definitions, and business rules that give it meaning. \n\n Another demonstration showed an agent assembling 35 entities and 55 relationships across multiple enterprise systems to develop recommendations ahead of an executive meeting. \n\n It’s another reminder that access to enterprise data alone does not guarantee intelligent decision-making. Agents still need the context to interpret that information correctly. \n\n Governance must precede autonomy \n\n Even though enterprise leaders are eager to expand AI capabilities, the program revealed considerable caution about allowing agents to operate independently. \n\n When asked what conditions must exist before an agent takes action, 69% of participants prioritized having a named human accountable for mistakes. An equal percentage emphasized establishing boundaries that agents cannot cross. Another 62% wanted organizations to define what constitutes an incorrect action before deployment. \n\n It’s not hard to see why. An inaccurate report can be reviewed, challenged, or ignored. An autonomous agent, however, can execute an incorrect decision directly within a business workflow. \n\n To address these risks, the whitepaper introduces a five-stage autonomy framework, progressing from observation and human-approved recommendations to limited autonomous actions and exception-based reporting. The framework recommends keeping high-consequence decisions under human approval while allowing greater autonomy for lower-risk, reversible activities. \n\n Closing the gap between recommendations and results \n\n Even when AI systems generate useful recommendations, organizations may struggle to translate them into measurable business outcomes. \n\n An example involving a pharmaceutical company’s go-to-market operations underscore this struggle. Its AI system generated approximately 38,000 recommendations monthly, with reviewers rating 86% as good. Yet only five percent were executed, and outcomes were reported for just one percent. This disconnect highlights a roadblock that cannot be solved with more technology. \n\n Organizations need employees who can evaluate recommendations, integrate them into existing workflows, monitor results, and intervene when necessary. Thankfully, the whitepaper identifies three essential organizational capabilities that can help: inquiry, oversight, and integration. \n\n Together, these capabilities help employees determine whether AI is solving the right problem, recognize when intervention is required, and establish repeatable processes for turning recommendations into action. \n\n Keeping enterprise context current \n\n Another challenge is ensuring that the business context supporting AI remains accurate as organizations evolve. \n\n One pharmaceutical executive described an environment containing 30 to 40 data lakes and a project involving 300 million documents. Given this environment, even simple questions about sales or customers can produce different answers depending on departmental definitions and underlying systems. Mergers, acquisitions, organizational changes, and evolving business rules introduce additional complexity. \n\n The whitepaper recommends continuously gathering, governing, curating, distributing, and retiring business context so that AI agents operate with relevant, current information. \n\n A practical road map for the first 100 days \n\n Rather than encouraging organizations to pursue enterprise-wide autonomy immediately, the program outlines a measured 100-day implementation strategy: \n\n The first 30 days focus on selecting a use case, establishing baseline performance, and assigning ownership. \n\n The next 30 introduce controlled experimentation, human approvals, and tested safeguards. \n\n Days 61 through 90 emphasize measuring outcomes against the original baseline, while the final phase documents lessons learned and determines whether the organization is ready to expand. \n\n For SAP customers exploring agentic AI, the path to Autonomous Enterprise operations doesn’t begin with giving agents more freedom, but with establishing the trusted data, business context, governance, and human capabilities required to make that freedom productive. \n Sign up to get SAP news, stories, and highlights delivered directly to your inbox each week \n\n Subscribe to our newsletter"
+ },
+ {
+  "key": "8f723c661a9c8066",
+  "title": "Mapping SAP Cloud ALM Event Situations to Dynamic ServiceNow Incident Priority",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/mapping-sap-cloud-alm-event-situations-to-dynamic-servicenow-incident/ba-p/14531065",
+  "published": "2026-11-27T20:37:52+00:00",
+  "author": "shasankgupta024",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "A rule-based approach using eventName, impact and urgency, with a safe default"
+ },
+ {
+  "key": "4ccef0b5ea82b192",
+  "title": "SAP Inside Track Paraguay – Asunción 2026 | Business Transformation… nos entregaron un Blueprint",
+  "link": "https://community.sap.com/t5/asunci%C3%B3n-blog-posts/sap-inside-track-paraguay-asunci%C3%B3n-2026-business-transformation-nos/ba-p/14531046",
+  "published": "2026-11-27T18:27:07+00:00",
+  "author": "Zamichiei",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Esteban Hartzstein, de Tebyon Consulting, nos habló en el SAP Inside Track Paraguay – Asunción 2026 de gestión de proyectos SAP. Participó de forma remota y avisó desde el arranque que no iba a hablar de temas técnicos, y que su charla podía \"pisarle los callos\" a más de uno. \n El punto de partida: muchas empresas hoy tienen que decidir cómo pasar de su ERP a S/4HANA dentro de una transformación de negocio, con fechas como 2027 y 2031 cada vez más cerca. Y ahí aparecen la metodología SAP Activate y las herramientas de soporte. Su frase para abrir: \"Me hablaron de Business Transformation, pero estamos haciendo un Blueprint como si estuviéramos en el año 2000, y estamos en 2026\"."
+ },
+ {
+  "key": "004704433c62d5bd",
+  "title": "Understanding and Managing Delta Subscriptions in SAP Analytics Cloud",
+  "link": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/understanding-and-managing-delta-subscriptions-in-sap-analytics-cloud/ba-p/14530959",
+  "published": "2026-11-27T17:35:46+00:00",
+  "author": "jamiePower",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "This is the first article in a series exploring the capabilities and offerings of the Data Export API and its Delta feature. \n Discover how Delta Subscriptions in the SAP Analytics Cloud Data Export API enable efficient data replication by exporting only changed planning records instead of full datasets. This blog explains the core concepts of delta tracking, subscriptions, and subscription chains, and demonstrates how to create, manage, and consume delta data through both the SAP Analytics Cloud interface and the API. Learn best practices for reducing data volumes, improving performance, and keeping downstream systems synchronized with SAP Analytics Cloud."
+ },
+ {
+  "key": "8e1f51511eaf3414",
+  "title": "SAP Inside Track Paraguay – Asunción 2026 | Las PyMEs y su ciberseguridad",
+  "link": "https://community.sap.com/t5/asunci%C3%B3n-blog-posts/sap-inside-track-paraguay-asunci%C3%B3n-2026-las-pymes-y-su-ciberseguridad/ba-p/14531017",
+  "published": "2026-11-27T17:13:01+00:00",
+  "author": "Zamichiei",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Alberto Padín, de Platinum Ciberseguridad, nos habló en el SAP Inside Track Paraguay – Asunción 2026 de la ciberseguridad de las PyMEs. Arrancó con un caso reciente, el fraude a un banco, y una pregunta: ¿qué hubiese pasado si en lugar de un fraude hubiese sido un ciberataque y los delincuentes se hubiesen quedado con el dinero de todos? \n Su respuesta: la culpa no es de la gente por invertir o trabajar con un banco, pero sí tenemos responsabilidad cuando no entendemos el riesgo que asumimos con nuestras decisiones y con nuestra información."
+ },
+ {
+  "key": "0f0890af2f612b5c",
+  "title": "Procurement Is Being Reinvented. Are Your Students Ready?",
+  "link": "https://community.sap.com/t5/sap-university-alliances-program-blog-posts/procurement-is-being-reinvented-are-your-students-ready/ba-p/14530140",
+  "published": "2026-11-27T17:00:23+00:00",
+  "author": "PhilipT",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": ""
+ },
+ {
+  "key": "7f4f263af19f726a",
+  "title": "KHIVE Mesh: Industry-Specific SAP BAIP Powered Connected Intelligence Framework",
+  "link": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/khive-mesh-industry-specific-sap-baip-powered-connected-intelligence/ba-p/14530459",
+  "published": "2026-11-27T16:55:51+00:00",
+  "author": "kcjayaraman-SAPArchitect",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "KHIVE Mesh is a conceptual framework for closing that gap. It connects small, specialized AI models, called KHIVE cells, into an industry-specific mesh that orchestrates decisions across SAP and non-SAP applications, and across company boundaries. \n This post sets out the concept, applies it to energy, real estate and consumer retail, and explains how it runs on SAP BAIP alongside Joule. It is a design proposal that we are taking into pilots, so treat the examples as target scenarios, not measured results."
+ },
+ {
+  "key": "80118104b24c43c4",
+  "title": "From Application Server to SAP Fiori: Secure File Downloads with RAP ODataV4 & Authorization Control",
+  "link": "https://community.sap.com/t5/abap-blog-posts/from-application-server-to-sap-fiori-secure-file-downloads-with-rap-odatav4/ba-p/14530926",
+  "published": "2026-11-27T15:57:51+00:00",
+  "author": "shasankgupta024",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Learn how to securely expose existing SAP AL11 application-server files through a SAP Fiori application using SAPUI5, RAP OData V4, and backend authorization. This article covers configuration-driven folder mapping, replaceable organizational authorization, Edm.Stream downloads, filename and file-size validation, and protection against direct URL and path-traversal attempts."
+ },
+ {
+  "key": "7e3123009995d4e1",
+  "title": "New E-Learning Course: Deploying the Unified SAP Signavio Process Intelligence for Administrators",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/new-e-learning-course-deploying-the-unified-sap-signavio-process/ba-p/14530878",
+  "published": "2026-11-27T15:28:24+00:00",
+  "author": "RodEdang",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Hello SAP Community, \n We are pleased to announce the availability of our new e-learning course, “Deploying the Unified SAP Signavio Process Intelligence for Administrators.” The course is designed to help administrators, consultants, and business users build the practical knowledge needed to deploy and configure SAP Signavio Process Intelligence and accelerate business process transformation. Through this course, you will learn how to: \n Set up SAP Signavio Process Intelligence and prepare workspaces for process mining. \n Manage users with SAP Cloud Identity Services . \n Understand and configure SAP-defined Business Content (Onboard and complete the initial setup in SAP BTP ). \n Integrate on-premise systems and data sources . \n Implement Plug and Gain Value Accelerators to help reduce implementation time and costs. \n Who should take this course? The course is particularly relevant for: \n Administrators responsible for deploying and configuring SAP Signavio Process Intelligence \n Consultants supporting SAP Signavio implementations and business process transformation initiatives \n Business users who want to better understand the technical foundation behind data sources configuration for custom process mining and SAP-defined Business Content \n Get Started \n 🏁 Deploying the Unified SAP Signavio Process Intelligence for Administrators \n 👉 [ Access the e-learning course ] \n 📌 Note : Access to this course requires a one-time registration to SAP Learning . \n E-Learning or EGI? Deploying the Unified SAP Signavio Process Intelligence for Administrators e-learning complements our live EGI sessions, letting you learn at your own pace, use tutorial resources, and deepen your understanding of SAP Signavio Process Intelligence. For a comprehensive learning experience, we recommend combining the e-learning resources with our Expert-Guided Implementation (EGI) sessions . These live webinars let you engage directly with experts and ask questions to strengthen your knowledge and skills in SAP Signavio Process Intelligence. \n Enhance your SAP Experience with Value Maps Beyond SAP Signavio, SAP Enterprise Support value maps on SAP Community provide guidance, recommended actions, and supporting resources to help you decide what to focus on next—all included in your SAP cloud subscription. ​ \n 👉 Watch our short demo video , then head over to our page - explore our range of topics and request a call with a topic expert for guidance tailored to your goals."
+ },
+ {
+  "key": "6f01b5992337f59c",
+  "title": "Recording and slide deck of SAP on IBM i November webcast available for download",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/recording-and-slide-deck-of-sap-on-ibm-i-november-webcast-available-for/ba-p/14530819",
+  "published": "2026-11-27T12:53:01+00:00",
+  "author": "christian_bartels",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Did you miss the SAP on IBM i Webcast on November 19, 2026? Here you can find the link to download the slides and the recording."
+ },
+ {
+  "key": "0b230e866d013818",
+  "title": "Authentication supported in integraton of SAP Digital Manufacturing and SAP S/4HANA Cloud",
+  "link": "https://community.sap.com/t5/technology-q-a/authentication-supported-in-integraton-of-sap-digital-manufacturing-and-sap/qaq-p/14531067",
+  "published": "2026-11-27T20:35:44+00:00",
+  "author": "SumitKundu",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hi, \n In the SAP help documentation for technical integration of SAP Digital Manufacturing and SAP S/4HANA Public Cloud, it only mentions about ' User Name and Password' as the Authentication Method . Is it the only method supported or other methods e.g., OAuth 2.0 or certifcate based authentication is also supported? \n Best regards, \n Sumit"
+ },
+ {
+  "key": "4dd034572a4013d0",
+  "title": "SAP Solution Manager 7.2 - Same object required in two different ChaRMs",
+  "link": "https://community.sap.com/t5/technology-q-a/sap-solution-manager-7-2-same-object-required-in-two-different-charms/qaq-p/14531024",
+  "published": "2026-11-27T17:37:07+00:00",
+  "author": "ronaldo_aparecido",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello everyone, \n I'm new to SAP Solution Manager 7.2 and would appreciate some guidance regarding a ChaRM transport management scenario. \n I have an object, Include ZINFE0003_XXX , that is currently assigned to ChaRM 6XX0000473 . However, another enhancement request, which is scheduled to be transported before mine, also requires changes to the same object, but under a different ChaRM (6XX0000888) . \n My questions are: \n Is it possible to temporarily remove this object from ChaRM 6XX0000473 ? \n Can it then be assigned to ChaRM 6XX0000888 ? \n Can the required changes be implemented through a different transport request? \n And afterwards, can everything be synchronized again without causing inconsistencies in the ChaRM transport tracking process? \n If this is possible, could someone please provide the recommended procedure or a step-by-step guide? \n Environment: SAP Solution Manager 7.2 \n Thank you in advance for your help and guidance. \n Best regards, \n Ronaldo Alves"
+ },
+ {
+  "key": "45cae625330c6cf6",
+  "title": "OAuth2SAMLBearerAssertion Authentication Failure When Calling SuccessFactors API from SAP BPA",
+  "link": "https://community.sap.com/t5/technology-q-a/oauth2samlbearerassertion-authentication-failure-when-calling/qaq-p/14530994",
+  "published": "2026-11-27T16:24:30+00:00",
+  "author": "Swetha__Balusamy",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "We are trying to invoke the SAP SuccessFactors Review Route Maps API from SAP Build Process Automation using a SuccessFactors destination configured in SAP BTP. \n The workflow is triggered from a component card in SAP Build Work Zone. Principal propagation is configured for the integration, with the intention of propagating the authenticated user's identity through the workflow to SuccessFactors. \n However, the SAP Build Process Automation action fails during execution with the following error: \n Action 'b313ac37-70dd-45a1-a118-5b1d29844b85' failed with the following error:\n\nError thrown from action runtime library:\nFailed to execute action Review Route Maps with form data id:\n\nFailed to build headers. The destination tried to provide authorization tokens but failed in all cases. This is most likely due to misconfiguration.\n\nOriginal error messages:\nRetrieval of OAuthToken failed due to:\nCannot determine user to propagate for OAuth2SAMLBearerAssertion destination.\n\nEither provide user_token JWT token\n(https://docs.cloudfoundry.org/api/uaa/version/4.7.1/index.html#user-token-grant)\nwhen retrieving the destination or configure it with SystemUser."
+ },
+ {
+  "key": "272af74a916c730b",
+  "title": "SAP auto-closing cases after ~20 days, even when waiting for a response from SAP????",
+  "link": "https://community.sap.com/t5/technology-q-a/sap-auto-closing-cases-after-20-days-even-when-waiting-for-a-response-from/qaq-p/14530879",
+  "published": "2026-11-27T14:46:45+00:00",
+  "author": "sladebe",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "My SAP case 1463178/2026 (\"Does the \"update statistics hashing\" need to be set to \"partial\" to use the \"partial_hashing\" with update statistics?\") was auto-closed after 22 days even though the last message was from a \"SAP Agent\" saying essentially, \"let me check and get back to you\" \n The auto-closed case also has a message saying: \n \"Please note that this case cannot be reopened. For further details please see KBAs 1929454 & 2537073 \" \n That's pretty poor customer service."
+ },
+ {
+  "key": "f4e4812a9dcb1059",
+  "title": "Cloud ALM: is a connected SAP system required to use it for internal project management only?",
+  "link": "https://community.sap.com/t5/technology-q-a/cloud-alm-is-a-connected-sap-system-required-to-use-it-for-internal-project/qaq-p/14530853",
+  "published": "2026-11-27T14:09:43+00:00",
+  "author": "MaximoSanchez",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello, \n We provisioned an SAP Cloud ALM tenant on 25.11.2026 from SAP for Me (\"Start Provisioning\"). It will be used only internally, to manage our own projects (project and task management, no customer involved). \n\n - System name: SAP Cloud ALM - 1247561 (SID: SCP) \n Our question: \n Is it necessary to have any SAP system connected to the Cloud ALM tenant (S/4HANA, SuccessFactors, etc.) in order to use it for internal project management? From the documentation we understand that no connected system is needed for this use case, and that a system is only required for monitoring/operations scenarios. We would like SAP to confirm this, and to tell us if any capability of the Implementation scope (projects, tasks, requirements, etc.) depends on a connected system. \n Thank you in advance."
+ },
+ {
+  "key": "e69220e817cc100b",
+  "title": "Ratings Showing as Drop-down List Instead of Star for Performance Potential Summary Section",
+  "link": "https://community.sap.com/t5/human-capital-management-q-a/ratings-showing-as-drop-down-list-instead-of-star-for-performance-potential/qaq-p/14530793",
+  "published": "2026-11-27T12:18:19+00:00",
+  "author": "petre_manvelishvili",
+  "tags": [],
+  "feed": "SAP Community questions",
+  "kind": "question",
+  "text": "Hello all, \n Need to know if it's possible to configure rating as a drop-down list instead of Star in Performance Potential Summary Section?"
  }
 ]
