@@ -243,5 +243,49 @@
   "feed": "SAP News Center",
   "kind": "news",
   "text": "MUNICH — SAP SE (NYSE: SAP) is stepping up its quantum computing activities and expanding its collaboration with Munich-based quantum computer manufacturer planqc. \n Innovation at SAP helps organizations turn technology into an engine for business innovation \n\n Learn more \n\n At Quantum Day Munich, which is being run by SAP, the two companies are demonstrating for the first time how a planqc neutral-atom quantum computer can be integrated into an SAP software environment. SAP is also showcasing its first quantum agents and establishing a dedicated quantum team in Munich. Starting in 2027, the companies plan to test initial business scenarios on actual planqc quantum hardware. \n\n SAP sees the potential for quantum computing to reach performance levels relevant to SAP software applications before the end of this decade. The company is, therefore, exploring how quantum computing can complement classical optimization, simulation and AI. Munich offers a dense ecosystem of leading research institutions, specialized suppliers, startups and industry partners. \n\n “Quantum computing opens up new ways to solve complex problems. We see neutral-atom quantum computers in particular as a promising approach to scalable quantum computing,” said Dr. Carsten Polenz, Global Head of Quantum, SAP. “What matters now is embedding this computing power into business processes and making it accessible to customers. With planqc, we can develop directly on real quantum hardware and shorten the path to real-world business applications.” \n\n The technical foundation is a cloud interface connecting the SAP software landscape with planqc’s quantum computing environment. The hybrid architecture combines classical solvers, quantum simulators and real quantum hardware. At today’s Quantum Day Munich, SAP and planqc are demonstrating for the first time how this works successfully in a real-world application scenario. In optimizing the loading of a delivery vehicle, an optimization task is transferred from an SAP software logistics process to the planqc environment and computed on a quantum simulator. The resulting loading plan is then fed back into the SAP software process. In the future, such scenarios are expected to run directly on a neutral-atom quantum computer. \n\n On the same technological foundation, SAP is developing its first quantum agents. They are designed to capture business objectives and constraints and orchestrate appropriate solution methods. Users should, therefore, be able to address business problems without having to program quantum hardware themselves or develop specialized quantum expertise. The focus is on the business decision, not the underlying computing technology. \n\n “Europe has a strong research base and essential parts of the technology supply chain for quantum computers,” said Dr. Alexander Glätzle, co-founder and CEO of planqc. “The challenge now is to turn these strengths into competitive products and real-world applications. With SAP, we are bringing our neutral-atom quantum computers to where companies manage complex business processes. This allows companies to build expertise and develop real-world use cases while the technology matures, rather than waiting until powerful quantum computers become available.” \n\n Visit the SAP News Center . Get SAP news via LinkedIn and Bluesky . \n\n Media Contact: \n Katrin Pommer, +49(0) 151 18 96 84 93, katrin.pommer@sap.com , CET \n SAP Press Room ; press@sap.com \n Sign up for our newsletter to receive weekly news, stories and highlights from the SAP News Center \n\n Subscribe here \n\n This press release was created with the assistance of artificial intelligence and has been reviewed by the editorial team. \n\n This document contains forward-looking statements, which are predictions, projections, or other statements about future events. These statements are based on current expectations, forecasts, and assumptions that are subject to risks and uncertainties that could cause actual results and outcomes to materially differ. Additional information regarding these risks and uncertainties may be found in our filings with the Securities and Exchange Commission, including but not limited to the risk factors section of SAP’s 2025 Annual Report on Form 20-F. \n © 2026 SAP SE. All rights reserved. \n SAP and other SAP products and services mentioned herein as well as their respective logos are trademarks or registered trademarks of SAP SE in Germany and other countries. Please see https://www.sap.com/copyright for additional trademark information and notices."
+ },
+ {
+  "key": "dbda5fe97b90d356",
+  "title": "What's New in 2026: From Migration Tooling to Modernization and Content Migration Agent",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/what-s-new-in-2026-from-migration-tooling-to-modernization-and-content/ba-p/14530248",
+  "published": "2026-11-26T22:29:31+00:00",
+  "author": "Amruta_Kamble",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "What's New in 2026: From Migration Tooling to Modernization and Content Migration Agent"
+ },
+ {
+  "key": "bbbf3d21192f489d",
+  "title": "How to set a default view to all users in Transportation Cockpit",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/how-to-set-a-default-view-to-all-users-in-transportation-cockpit/ba-p/14530394",
+  "published": "2026-11-26T19:47:17+00:00",
+  "author": "Coracini35",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "In this blog I will describe how it is possible to create a view for a quadrant of the Transportation Cockpit and set it as the default for all users, replacing the Standard View."
+ },
+ {
+  "key": "23ab04f87f014aa0",
+  "title": "SAP trial environments current availability",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-trial-environments-current-availability/ba-p/14530369",
+  "published": "2026-11-26T18:36:56+00:00",
+  "author": "qmacro",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Dear SAP Trials community \n SAP’s trial environments and related services are temporarily offline. The team will be restoring access, and an update on availability will be provided as soon as possible. \n We will keep you posted on updates."
+ },
+ {
+  "key": "9b5efe22d870e6ff",
+  "title": "Accelerating Purchase Order Approvals with AI-Assisted Reminders in Joule",
+  "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/accelerating-purchase-order-approvals-with-ai-assisted-reminders-in-joule/ba-p/14530368",
+  "published": "2026-11-26T18:29:17+00:00",
+  "author": "rajesh_chinnakonda",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Waiting for a purchase order to clear approval is one of the most common sources of friction in procurement — approvers are busy, emails get buried, and purchasers are left chasing status manually. With SAP S/4HANA Cloud Public Edition, Joule now lets purchasers identify pending approvers and send professional, context-aware reminder emails in seconds, with one-click Microsoft Outlook integration, all without leaving the Joule workspace."
  }
 ]
