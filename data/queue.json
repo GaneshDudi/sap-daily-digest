@@ -462,5 +462,27 @@
   "feed": "SAP Community questions",
   "kind": "question",
   "text": "Hello all, \n Need to know if it's possible to configure rating as a drop-down list instead of Star in Performance Potential Summary Section?"
+ },
+ {
+  "key": "a6e73c3047e5ffc7",
+  "title": "Production Connector as OPC UA Server: Simplifying Shop Floor Integration",
+  "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/production-connector-as-opc-ua-server-simplifying-shop-floor-integration/ba-p/14528771",
+  "published": "2026-11-27T22:09:32+00:00",
+  "author": "Frank_Rambo",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "With the release 2611 of SAP Digital Manufacturing, the Production Connector gains a capability that customers and partners have been eagerly awaiting: it can now act as an OPC UA Server. Automation sequences can be exposed as OPC UA methods — giving shop floor assets a standardized, reliable way to trigger business logic without the complexity of tag-based subscriptions. \n This closes a significant feature gap between the Production Connector and its predecessor, SAP Plant Connectivity (PCo), and opens the door to more scalable, maintainable shop floor automation."
+ },
+ {
+  "key": "e4675673e29f5e75",
+  "title": "Understanding document storage and processing in inbound emails",
+  "link": "https://community.sap.com/t5/technology-blog-posts-by-members/understanding-document-storage-and-processing-in-inbound-emails/ba-p/14530746",
+  "published": "2026-11-27T21:48:40+00:00",
+  "author": "VikasSingh2",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Mail into SAP through Cloud Integration is not fire and forget. SAP stores every attachment on the document server before it answers the Mail receiver adapter. A slow document server makes the adapter time out."
  }
 ]
