@@ -1,1 +1,35 @@
-[]
+[
+ {
+  "key": "5f669a4fa47fd088",
+  "title": "Mass Data Run for SAP Sales & Service Cloud V2 — Built the Clean Core Way",
+  "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/mass-data-run-for-sap-sales-amp-service-cloud-v2-built-the-clean-core-way/ba-p/14531174",
+  "published": "2026-11-28T15:26:53+00:00",
+  "author": "elam_bharathy_kuppusamy",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Mass Data Run Out was one of the most-used admin features in SAP Cloud for Customer — and is not part of SSC V2's core — by design. This post documents a BTP extension that brings it back: configurable business objects, customer-specific action APIs, scheduled batch execution, and record-level failure logging. Built clean core."
+ },
+ {
+  "key": "d4bae7483384bcd5",
+  "title": "SAP CDP and Maxxing: Integrating Loyalty and Customer Data on SAP BTP",
+  "link": "https://community.sap.com/t5/crm-and-cx-blog-posts-by-sap/sap-cdp-and-maxxing-integrating-loyalty-and-customer-data-on-sap-btp/ba-p/14531170",
+  "published": "2026-11-28T14:03:37+00:00",
+  "author": "elam_bharathy_kuppusamy",
+  "tags": [],
+  "feed": "SAP Community blog posts",
+  "kind": "blog",
+  "text": "Loyalty platforms know what customers buy. Customer data platforms know who they are. This post documents a real-world bidirectional integration between Maxxing and SAP Customer Data Platform, built on SAP BTP Cloud Integration — covering what flows, how the middleware was designed, and what to watch out for if you face the same requirement."
+ },
+ {
+  "key": "224e9232b9fd37f7",
+  "title": "it's a first (for me)",
+  "link": "https://community.sap.com/t5/coffee-corner-discussions/it-s-a-first-for-me/m-p/14531157#M3475",
+  "published": "2026-11-28T13:28:37+00:00",
+  "author": "greg_not_so",
+  "tags": [],
+  "feed": "SAP Community discussions",
+  "kind": "discussion",
+  "text": "Oh (it will be back but...): \n Sign In \n SAP BTP Trial (Our trial environment is temporarily offline)"
+ }
+]
