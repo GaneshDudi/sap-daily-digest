@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-11-28",
+  "label": "Saturday, 28 November 2026",
+  "headline": "A quiet Saturday: one RAP OData V4 file-download security post stands out, while the rest is integration material and unanswered Q&A.",
+  "items": 45,
+  "deep": 9
+ },
+ {
   "date": "2026-11-27",
   "label": "Friday, 27 November 2026",
   "headline": "Thin day: ABAP Cloud practice without the trial, async SOAP error alerting in S/4HANA Cloud, and unanswered BAdI and destination-header questions.",

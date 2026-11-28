@@ -1,0 +1,1209 @@
+{
+ "items": [
+  {
+   "key": "17f9da65004482ca",
+   "title": "Relembre a palestra: O sistema você implanta, a mudança você constrói #SITCWB2026",
+   "link": "https://community.sap.com/t5/curitiba-blog-posts/relembre-a-palestra-o-sistema-voc%C3%AA-implanta-a-mudan%C3%A7a-voc%C3%AA-constr%C3%B3i/ba-p/14522525",
+   "published": "2026-11-27T12:00:00+00:00",
+   "author": "AdrianoCWB",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "No dia 7 de novembro, no Auditório Gregor Mendel da PUCPR, Jean Henrique Machado, Founder da JEMOW, apresentou no SAP Inside Track Curitiba 2026 a palestra \"Gestão de mudança como competência organizacional (O sistema você implanta, a mudança você constrói)\". \n O vão da adoção \n Jean abriu com uma ideia simples: o go-live é o começo da mudança, não o fim. A curva técnica (desenho, desenvolvimento, entrega) chega pronta ao go-live, mas a curva humana (envolvimento, adoção, uso) não, porque gente não muda na velocidade de um cronograma. O espaço entre as duas é onde o benefício do projeto se perde. \n Por que o ritmo importa \n Segundo a Accenture, o ritmo das mudanças que afetam as empresas aumentou 183% entre 2019 e 2023, e 75% dos líderes admitem que a capacitação das equipes não acompanha as mudanças impulsionadas por IA. Para o Brasil, ele lembrou que em 2027 a mesma pessoa vai absorver a reforma tributária (CBS no lugar de PIS e Cofins) e a nova jornada de trabalho, ao mesmo tempo. \n Também citou que, segundo a APA, quem passa por mudanças recentes tem 2,5 vezes mais estresse prolongado e 3 vezes mais intenção de buscar outro emprego. \n Não é resistência, é falta de energia \n Pesquisa da Gartner citada na palestra mostra que a disposição dos colaboradores em apoiar mudanças caiu de 74% para 43% enquanto as mudanças por pessoa foram de 2 para 10 por ano. Muitas vezes o que chamamos de resistência é exaustão. \n E quando há resistência de fato, ninguém resiste ao novo, resiste ao que perde. Jean usou o modelo SCARF, de David Rock: status, certeza, autonomia, pertencimento e justiça. \n Como aplicar na prática \n Defina o sucesso em comportamento antes do go-live: expectativa, materialização e sustentação. \n Prepare o gestor direto: ele é o canal número 1 da mudança, entre quem decide e quem usa. \n Meça adoção por velocidade, utilização plena, proficiência e sustentação. Se você não mede adoção, você mede esperança. \n Passe de projeto para competência: usuário treinado vira pessoa capaz, go-live realizado vira adoção real. \n Para levar \n Antes de perguntar como vencer a resistência, pergunte o que a pessoa está perdendo. \n Mudança não desce pela hierarquia por gravidade. \n Se a mudança agora é contínua, gestão de mudança tem que ser uma competência permanente da organização. \n Sobre o palestrante \n Jean Henrique Machado, Founder da JEMOW, com 18 anos em desenvolvimento humano e 5 em gestão de mudança. \n Assista à palestra no YouTube: https://youtu.be/VOQZl1Tc6Hw \n Veja todas as palestras no post índice: https://community.sap.com/t5/curitiba-blog-posts/sap-inside-track-curitiba-2026-relembre-as-palestras-sitcwb/ba-p/14522453 \n #SITCWB2026 #SAPCommunity #SAPCommunityCWB #GestaoDeMudanca #JEMOW"
+  },
+  {
+   "key": "b9777b367df57ead",
+   "title": "From Pipeline to Proposal: How AI Powers the Opportunity-to-Quote Stage in SAP",
+   "link": "https://community.sap.com/t5/customer-experience-learning-group-blog-posts/from-pipeline-to-proposal-how-ai-powers-the-opportunity-to-quote-stage-in/ba-p/14528738",
+   "published": "2026-11-27T11:57:46+00:00",
+   "author": "Parisa_Mahdavi",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The gap between identifying an opportunity and delivering a compelling quote is where deals are won or lost. Sales representatives need to know which deals are worth pursuing, what to say when they get in the room, and how to guide buyers to the right products quickly. SAP Sales Cloud Version 2 and SAP Commerce Cloud address each of these challenges through a set of AI capabilities that work across the entire Opportunity-to-Quote stage. \n This post walks through each capability — what it does, how it works, and the business value it delivers. \n SAP Sales Cloud Version 2 — Smarter Selling at Every Step \n Predictive Opportunity Scoring — Focus on the Deals That Will Actually Close \n Pipeline inflation is one of the most persistent problems in B2B sales. Only around 40% of forecasted opportunities are actually closed — meaning sales teams routinely spend time and resources on deals that will not convert. Without a reliable signal to separate high-probability deals from low-probability ones, prioritization becomes guesswork. \n Predictive Opportunity Scoring , delivered through Deal Intelligence in SAP Sales Cloud Version 2, solves this by assigning each opportunity a data-driven win score — updated daily — giving sales representatives and managers a consistent, objective basis for prioritization. \n How It Works \n The feature uses machine learning trained on your organization's historical opportunity data. The model identifies patterns from past won and lost deals and applies them to active opportunities to generate a unique win score per opportunity. Sales representatives can hover over the score to see the top influential factors — the specific attributes that most impacted the score, such as deal size, sales stage, or engagement level. \n Two Model Options \n SAP Sales Cloud Version 2 offers two model options to accommodate different levels of data maturity: \n Model How It Works Key Factors Available? \n Native Model Trained on your own historical data ✅ Yes \n SAP-RPT Model Foundation model — no training data required ❌ Win score only \n The SAP-RPT Model (Relational Pretrained Transformer) is particularly valuable for new implementations or organizations with limited historical datasets. However, it is not available by default — customers must raise a support case via the CEC-CRM-ML component to gain access. \n Business Text Intelligence — Never Miss a Critical Follow-Up \n Sales representatives capture a great deal of important information in free-text notes — customer commitments, next steps, follow-up requests. In practice, these notes are often reviewed once and then forgotten. \n Business Text Intelligence uses Natural Language Understanding (NLU) to read these notes and automatically surface appointment recommendations, ensuring that critical next steps are acted on rather than overlooked. \n For example, a note reading \"Customer asked us to follow up next week with a revised proposal\" would trigger a recommended action to schedule a follow-up appointment — directly within the opportunity or lead record. \n Beyond its standalone value, Business Text Intelligence is a required prerequisite for enabling Post-Meeting Brief . Administrators must activate the NLP Classification, Business Text Intelligence, and Business Entity Recognition models before Post-Meeting Brief can be configured. \n Pre-Meeting Brief — Walk Into Every Meeting Fully Prepared \n Preparation time before a customer meeting is limited. Sales representatives often need to search across multiple records — opportunities, cases, previous emails, interaction histories — to get a complete picture before they walk into a conversation. The Pre-Meeting Brief eliminates that effort. \n Available in the General tab of Appointments and Visits, the Pre-Meeting Brief automatically aggregates the following context in a single view: \n Deal and Lead Updates — recent changes to linked transactions, so there are no surprises during the meeting \n Past Interaction Insights — a summarized history of previous customer interactions, including sentiment analysis, providing context on the relationship tone \n Account Insights — third-party buying intent signals from Bombora , helping sellers align their conversation with what the customer is actively researching \n Critical Cases — open support issues from SAP Service Cloud Version 2, so sellers are aware of active customer concerns before the conversation begins \n Pending Recommended Actions — outstanding actions identified by Business Text Intelligence from previous notes, ensuring commitments made in past interactions are visible and followed up \n Post-Meeting Brief — Turn Every Conversation Into Actionable Intelligence \n While the Pre-Meeting Brief prepares sellers before a conversation, the Post-Meeting Brief captures what happened during it. \n The Post-Meeting Brief becomes available only after an appointment is marked as Completed and was conducted via Microsoft Teams . Rather than pulling from existing CRM data, it analyzes the actual meeting transcript to generate its insights, surfacing: \n An overview with sentiment analysis of the conversation \n Attendees, topics, and keywords extracted from the discussion \n Recommended actions such as follow-up tasks or meetings \n These recommended actions feed directly back into the Pre-Meeting Brief of the next appointment with the same customer — appearing as Pending Recommended Actions and ensuring continuity across the entire sales engagement cycle. \n Intelligent Selling Services — Real-Time Personalization That Starts Immediately \n Unlike static, rules-based recommendation engines, ISS operates as a real-time personalization platform that learns and adapts with every customer interaction. Personalization begins immediately — even for first-time visitors — and becomes increasingly precise as the system gathers more behavioral signals. \n The engine continuously optimizes for two goals simultaneously: customer relevance and business impact . This dual optimization distinguishes ISS from simpler recommendation tools. \n ISS delivers recommendations tailored to every stage of the customer journey: \n Trending Products and Personalized Products — engage customers from the first click, based on real-time activity and browse history \n Complementary Products and Replenishment Products — draw on completed order data to identify what customers buy together and when they are likely to re-purchase \n Recently Viewed Products and Related Products — help customers rediscover or explore alternatives to products they are already considering \n Related Products — Crowd Behavior That Works From Session One \n The Related Products feature surfaces alternative products linked to the item a customer is currently viewing — driven by crowd behavior analysis rather than manual product linking or category rules. \n The underlying model uses collaborative filtering at the crowd level : it analyzes what other customers viewed when interacting with the same product, then predicts the current user's next likely click and surfaces those products accordingly. \n Because it draws on collective behavior rather than individual history, it is effective even for anonymous or first-time visitors — a significant advantage in both B2B and B2C commerce scenarios. It is one of the most immediately deployable recommendation types, working from session one with no prior user data required. \n Complementary Products — What Goes Together \n The Complementary Products feature analyzes past purchase transactions to identify which products are most frequently bought together. This is a basket analysis model anchored to completed orders , not browsing behavior — making it more accurate than view-based association. \n Recommendations appear on the Product Page and Cart Page — two high-intent moments when surfacing the right complementary item increases average order value and helps the customer complete their purchase. \n Replenishment Products — The Right Product at the Right Time \n The Replenishment Products feature goes a step further by incorporating time as a key variable . Using deep learning on historical transaction data, the model learns not just what a customer buys, but when they are likely to need it again. \n The system applies intelligent suppression — withholding a recommendation until the timing is appropriate, so the experience feels natural rather than intrusive. For example, if a customer buys a particular product once a week, the recommendation appears only after a few days have passed since their last order containing that product. \n Replenishment recommendations appear on the Order Details and Order List pages — meeting customers at the moment they are reviewing past purchases, which is particularly effective in B2B scenarios where repeat procurement is common. \n The feature directly supports three measurable business outcomes: \n Customer Lifetime Value — through ongoing repeat purchases \n Customer Retention Rate — through timely, relevant prompts \n Repeat Customer Rate — by reducing friction in the re-purchase journey \n SAP Commerce Cloud AI — Summary \n Capability Core Technology Primary Business Outcome \n Product Recommendations (ISS) Real-time ML personalization Improve product discovery and drive conversion \n Related Products Crowd-level collaborative filtering Reduce browse abandonment, surface relevant alternatives \n Replenishment Products Deep learning with temporal analysis Increase repeat purchase rate and customer retention \n The Bigger Picture \n In the Opportunity-to-Quote stage, every minute a seller spends searching for context, chasing notes, or waiting for a buyer to find the right product is a minute the deal is not progressing. The capabilities covered here directly reduce that friction: \n SAP Sales Cloud Version 2 ensures sellers know which opportunities to prioritize, what to follow up on, and how to show up to every conversation prepared. SAP Commerce Cloud ensures buyers find the right products quickly — transforming the storefront from a passive catalog into an active, intelligent selling tool that shortens the path from product discovery to quote request. \n Together, they create a connected, AI-powered layer across one of the most critical stages in the Lead-to-Cash journey."
+  },
+  {
+   "key": "7818b8c824666c72",
+   "title": "AI Agents in Action: How SAP CX AI Toolkit Powers the Quote-to-Order Stage",
+   "link": "https://community.sap.com/t5/customer-experience-learning-group-blog-posts/ai-agents-in-action-how-sap-cx-ai-toolkit-powers-the-quote-to-order-stage/ba-p/14528768",
+   "published": "2026-11-27T11:57:45+00:00",
+   "author": "Parisa_Mahdavi",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The Quote-to-Order stage is where customer intent becomes a transaction — and where service quality directly impacts conversion. Customers have questions about orders, delivery timelines, and product specifications. Cases arrive that need to be triaged, routed, and resolved. Knowledge gets captured in case notes and email threads that no one ever finds again. SAP addresses each of these challenges through four purpose-built AI agents, all built and managed within the SAP CX AI Toolkit . \n This post walks through each agent — what it does, how it works, and the value it delivers at this critical stage of the sales cycle. \n The Platform: SAP CX AI Toolkit \n Before exploring the individual agents, it helps to understand where they live. All four agents are built and managed through the SAP CX AI Toolkit , a cloud-native platform that brings generative AI capabilities to SAP Customer Experience applications. \n At its core is the AI Agent Builder , where administrators configure agent templates, define data sources and triggers, write instructions, and map outputs back to SAP Sales Cloud Version 2 records. Every agent follows the same pattern: listen for a trigger, process input using LLM models and configured enterprise data, write the result back into the relevant business object. \n What makes this architecture particularly powerful is agent-to-agent collaboration . When a task falls outside one agent's scope, it transfers the conversation seamlessly to another agent better equipped to handle it. A Digital Service Agent handling an order cancellation request, for example, can hand off directly to an Order Processing Agent — with full context — so the right agent always handles the right task. \n These handoffs are managed through a structured system using templates, priority queues, and routing logic, allowing a chain of agents to work together in an orchestrated manner — each contributing its specialized capability to resolve complex customer scenarios end-to-end. This autonomous execution is what distinguishes AI agents from traditional AI tools that require a user to initiate every action manually. \n Q&A Agent — Immediate Answers From Enterprise Data \n During the Quote-to-Order stage, customers regularly have questions: order status, delivery timelines, product specifications. Finding answers typically means searching through multiple systems or waiting for a human agent to research and respond. \n The Q&A Agent eliminates that wait. When a question is submitted, the agent interprets the intent, searches the configured enterprise data sources — knowledge bases, historical tickets, case records — and returns a grounded answer with source references, automatically. \n Administrators configure it through the AI Agent Builder by selecting the Q&A Agent template, defining which data sources to query, specifying the types of questions the agent should handle, and mapping the generated answer back to the relevant SAP Sales Cloud field. \n The result is immediate, consistent responses without manual research — at the exact moment in the sales cycle when customers need fast, accurate answers to move forward with their order. \n Prerequisites: The SAP CX AI Toolkit must be integrated with SAP Cloud for Customer or SAP Sales Cloud and SAP Service Cloud Version 2, and Intelligent Q&A access must be enabled for the relevant data sources before the agent can be created. \n Service Classification Agent — Smarter Triage From the Moment a Case Arrives \n When a customer submits a support case — by email, chat, or web form — someone needs to determine what the issue is, how urgent it is, and who should handle it. At high volumes, manual triage is slow and produces inconsistent results when different agents interpret similar cases differently. \n The Service Classification Agent automates this process entirely. It reads the incoming case content, identifies issue type and priority using generative AI — not just keyword matching — and automatically updates category, priority, and team assignment fields. \n Consider a practical example: a customer writes, \"Our order from last week arrived with damaged packaging, and two items are missing.\" The agent analyzes the text, categorizes the case as a fulfillment and quality issue, sets the appropriate priority, and routes it to the logistics team — before a human agent has even seen it. \n For order-related service requests, this speed matters. Fulfillment issues that sit unassigned while customers wait can escalate quickly. The Service Classification Agent applies the same classification logic to every incoming case, reducing the time between case creation and first response and ensuring consistent routing from the moment a case is created. \n Digital Service Agent — Self-Service That Actually Resolves \n Not every customer issue requires a human agent. Routine inquiries — warranty questions, troubleshooting steps, order status — can and should be resolved without creating a case at all. \n The Digital Service Agent is a customer-facing AI that provides conversational self-service, drawing on business knowledge configured in the SAP CX AI Toolkit: FAQs, policy documents, product manuals, and support articles uploaded via Azure Blob Storage. For order-related inquiries such as order status checks, it can be combined with the Shopping Agent , which provides sub-agents for order status retrieval and other transactional capabilities. \n When a question is too complex for self-service, the agent initiates a seamless handoff to a human agent in SAP Service Cloud Version 2 — transferring the full conversation context so the customer never has to repeat themselves. \n The business case is straightforward: fewer routine cases reach the human service team, customers get immediate answers without waiting in a queue, and human agents can focus on complex cases that genuinely require human judgment and expertise. \n How the Four Agents Work Together \n Agent What It Does Key Integration \n Q&A Agent Answers natural language questions from enterprise data Knowledge bases, cases, tickets \n Service Classification Agent Classifies, prioritizes, and routes incoming cases automatically Service categories, team assignment \n Digital Service Agent Provides conversational self-service with human handoff Customer-facing channels, knowledge base \n Knowledge Base Article Generation Agent Generates draft articles from resolved cases Case notes, emails, interaction history \n These four agents form a connected system. The Service Classification Agent ensures cases reach the right team. The Q&A Agent helps agents find answers quickly. The Digital Service Agent resolves routine issues before they become cases. The Knowledge Base Article Generation Agent captures solutions so they can be reused across all channels — including by the other agents. \n The Bigger Picture \n The Quote-to-Order stage demands speed, consistency, and accuracy. A delayed response to a case, an unanswered question, or a missed follow-up can slow or stop a transaction entirely. The four agents in the SAP CX AI Toolkit address each of these risks — not as isolated tools, but as a coordinated system that handles triage, self-service, knowledge retrieval, and documentation autonomously. \n For organizations running SAP Customer Experience, this represents a meaningful shift: from AI that assists humans with individual tasks, to AI agents that execute multi-step workflows end-to-end — freeing human teams to focus on the interactions that genuinely require their expertise."
+  },
+  {
+   "key": "b6070e6cafe9ebf1",
+   "title": "Closing the Loop: How AI Powers the Order-to-Cash Stage in SAP, Part 1",
+   "link": "https://community.sap.com/t5/customer-experience-learning-group-blog-posts/closing-the-loop-how-ai-powers-the-order-to-cash-stage-in-sap-part-1/ba-p/14528777",
+   "published": "2026-11-27T11:57:43+00:00",
+   "author": "Parisa_Mahdavi",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "SAP Cloud ERP — Automation and Intelligence Across the Sales Fulfillment Cycle \n The Order-to-Cash stage is where sales execution meets operational reality. Orders need to be created accurately, fulfillment needs to be monitored, and issues need to be resolved before they escalate into customer problems. Part 1 of this series explores how SAP Cloud ERP embeds AI directly into the sales fulfillment cycle — automating data entry, scoring financial risk, and giving sales teams real-time visibility into every order through Joule. \n Sales Order Automatic Completion — Eliminating the Data Entry Bottleneck \n Incomplete sales orders are one of the most common sources of fulfillment delays. Missing fields slow down processing, trigger rejections, and require manual follow-up — consuming time that sales representatives could spend on higher-value activities. \n Sales Order Automatic Completion removes this friction through AI-powered recommendations that fill in missing fields in real time. The system analyzes historical sales document item data from the past year, identifies patterns in customer-specific preferences, and intelligently predicts missing or incorrect details — not just filling gaps, but enriching the data with contextually accurate information. \n The key benefits are concrete and measurable: \n Intelligent Data Enrichment : Analyzes historical data to predict missing or incorrect details, ensuring completed orders are accurate and aligned with each customer's specific preferences. Accuracy improves as more data is processed. \n Efficiency and Time Saving : Delivers a 25% reduction in manual effort by providing AI-powered recommendations for missing fields, freeing sales teams to focus on nurturing customer relationships and increasing productivity. \n Reduction of Errors and Rejections : Minimizes order errors, reduces rejections, and eliminates the need for rework — saving time and resources. \n Adaptability and Learning : The AI continuously learns from user interactions and evolving data, becoming increasingly accurate with every engagement. \n AI-Assisted Behavioral Insights for Contract Accounting — Identifying Risk Before It Becomes a Problem \n In accounts receivable and contract accounting, the ability to identify high-risk customers early — before outstanding balances escalate — is a significant operational advantage. Behavioral Insights for Contract Accounting delivers this through machine learning-powered risk scoring and predictive analysis. \n The solution analyzes customer behavior across multiple scenarios to generate risk scores and insights, enabling financial users to identify high-risk accounts quickly, optimize collection strategies based on customer-specific behavioral patterns, and support proactive, data-driven decision-making to reduce outstanding debt. \n This capability requires two solutions working together: \n SAP Behavioral Insights — provides customer behavior analysis, risk scoring, and an expanded overview of events for efficient, reliable analysis \n Intelligent Scenario Lifecycle Management (ISLM) — a self-service framework for managing the lifecycle of machine learning scenarios, from training models to generating inference results \n Two Implementation Approaches \n SAP Cloud ERP supports two approaches for deploying machine learning scenarios: \n Approach Description Best For \n Embedded ML tools run on the same system as SAP Cloud ERP; uses APL (for business analysts) and PAL (for data scientists) Organizations preferring tight integration \n Side-by-Side SAP Cloud ERP and ML infrastructure run in separate stacks Organizations requiring flexibility, scalability, or external ML services \n The business outcomes are measurable: reductions in days sales outstanding (DSO) , uncollectible accounts receivable write-offs, and customer billing, credit, and collections costs. \n Sales Order Fulfillment Monitoring — Joule as Your Fulfillment Co-Pilot \n Even well-entered orders can encounter blocking issues during fulfillment — credit holds, delivery blocks, billing problems, trade compliance flags. Finding and resolving these issues manually requires navigating multiple applications and cross-referencing documents. Joule , embedded directly within the SAP Cloud ERP environment, changes this. \n Sales representatives can use Joule to check whether a sales order's fulfillment is on track, identify blocking issues across all fulfillment phases, and navigate directly to the relevant application to resolve them — all through natural language queries. \n Joule analyzes and resolves fulfillment issues across four phases : \n Order Processing \n Incomplete Data : Identifies missing mandatory information at header and item levels, including item count \n Credit Block : Highlights financial risks, displaying credit utilization, risk class, and credit limit details \n Trade Compliance : Checks embargo status, legal control status, and screening status — only abnormal statuses are displayed \n Supply Processing \n Purchase & Quantity Confirmation : Tracks unconfirmed quantities and purchasing confirmation statuses (not confirmed or partially confirmed) \n Delivery Processing \n Delivery Block : Details specific block reasons, whether at header or item level, and the count of items affected \n Delivery Creation : Flags items that are overdue or due later, indicating partial or no delivery \n Billing \n Billing Block : Lists block reasons and affected item counts that are preventing invoice generation \n Beyond detecting issues, Joule summarizes findings, groups them into issue categories, provides concise diagnoses with handling suggestions, and routes users directly to the most relevant application view — eliminating manual app searches entirely. \n Sales Order Status Check — Natural Language Transparency Across the Full Order Lifecycle \n Sales teams need real-time visibility into order status without spending time navigating multiple systems. Joule's Sales Order Status Check delivers this through plain-English queries submitted directly within SAP Cloud ERP. \n Sales representatives can ask about a specific order's status, and Joule detects issues such as incomplete data, delivery blocks, and billing blocks — summarizing findings, grouping them into issue categories, and providing handling suggestions. From each issue card, Joule routes directly to the most relevant application view, where users can edit the order, address missing fields, and remove blocks before saving changes to enable fulfillment. \n This capability delivers measurable outcomes: faster, more intuitive resolution of sales order issues, improved staff productivity, and reduced customer cancellations due to delayed fulfillment. \n\n The four SAP Cloud ERP capabilities covered in Part 1 address the Order-to-Cash stage from two directions: preventing problems before they occur (Automatic Completion, Behavioral Insights) and resolving them quickly when they do (Fulfillment Monitoring, Status Check with Joule). Together, they reduce manual effort, improve data accuracy, and keep the fulfillment cycle moving. \n Part 2 covers how SAP Service Cloud Version 2 completes the picture — equipping service teams with the AI-powered context, knowledge retrieval, and summarization capabilities they need to handle every customer interaction with speed and precision."
+  },
+  {
+   "key": "fa40c5110db171f5",
+   "title": "New live session: Stay Certified - SAP Customer Data Platform",
+   "link": "https://community.sap.com/t5/customer-experience-learning-group-blog-posts/new-live-session-stay-certified-sap-customer-data-platform/ba-p/14530144",
+   "published": "2026-11-27T11:57:42+00:00",
+   "author": "Amine_Barouni82",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Are you holding the C_C4H63 certification and want to stay ahead of the latest SAP Customer Data Platform changes? Join our upcoming live session and get everything you need to prepare for your stay-certified assessment. \n\n Stay Certified - SAP Customer Data Platform \n https://learning.sap.com/live-sessions/stay-certified-sap-customer-data-platform \n\n SAP Customer Data Platform is continuously evolving, and staying certified means keeping pace with the latest enhancements. This expert-led session walks you through the major platform updates since the last release cycle, giving you the focused knowledge and confidence needed to pass the C_C4H63 stay-certified assessment. \n\n What You'll Learn \n In this session, our experts will walk you through: \n New platform capabilities including multi-value segments and lookalike audiences for extended reach using profile similarity \n Sources and Destinations updates, including improvements to configuration package transport and custom connector export \n Customer exploration enhancements such as hour-level time granularity in exploration conditions \n Administration updates including SAP Cloud ALM and SAP Cloud Logging as CDP log shipping destinations \n\n Who Should Join? \n Developers building or integrating applications that rely on SAP Customer Data Platform capabilities and APIs. \n Consultants supporting organizations to implement and maintain SAP Customer Data Platform solutions. \n Architects designing customer data architectures and integration patterns using SAP Customer Data Platform. \n Anyone eager to deepen their understanding of the latest SAP Customer Data Platform enhancements. \n\n Session Details \n 📅 Date: December 3, 2026 \n ⏰ Time: 16:00 CET (Europe/Berlin) \n ⏳ Duration: 45 minutes \n 🔗 Register now: Stay Certified - SAP Customer Data Platform \n https://learning.sap.com/live-sessions/stay-certified-sap-customer-data-platform \n\n Don't miss this opportunity to validate your expertise and keep your SAP Customer Data Platform certification current. Register today and we look forward to seeing you there!"
+  },
+  {
+   "key": "85a0e56f42e9927b",
+   "title": "Get Certified: SAP Certified Implementation Consultant – SAP Customer Data Platform",
+   "link": "https://community.sap.com/t5/customer-experience-learning-group-blog-posts/get-certified-sap-certified-implementation-consultant-sap-customer-data/ba-p/14530156",
+   "published": "2026-11-27T11:57:41+00:00",
+   "author": "Amine_Barouni82",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Are you ready to take your SAP Customer Data Platform expertise to the next level and earn an industry-recognized certification? Join our upcoming live session and get the expert guidance you need to confidently attempt the C_C4H63 exam. \n\n Get Certified: SAP Certified Implementation Consultant – SAP Customer Data Platform \n https://learning.sap.com/live-sessions/get-certified-sap-certified-implementation-consultant-sap-customer-data-platform \n\n The C_C4H63 certification validates that you possess the fundamental knowledge and core skills required as an SAP Customer Data Platform implementation consultant. This expert-led session is part of the SAP Get Certified series — a focused preparation experience that walks you through the most relevant certification topics, the exam format, and practical tips to help you succeed. \n\n What You'll Learn \n\n In this session, our experts will walk you through: \n The format, scope, and structure of the C_C4H63 certification exam and what to expect on exam day \n Core SAP Customer Data Platform concepts, including console navigation, Customer Schema configuration, and merging rules \n Data ingestion setup using built-in source applications, Connector Studio, and profile and activity schemas \n Data activation configuration, including connecting to destination systems and leveraging Audiences, CX Flows, and Journeys for downstream customer engagement \n\n Who Should Join? \n Developers building or integrating applications that rely on SAP Customer Data Platform capabilities and APIs. \n Consultants working with organizations to implement SAP Customer Data Platform as part of their CX solutions. \n Administrators responsible for managing and configuring SAP Customer Data Platform environments. \n Anyone eager to deepen their understanding of SAP Customer Data Platform certification preparation. \n\n Session Details \n 📅 Date: December 14, 2026 \n ⏰ Time: 15:00 CET (Europe/Berlin) \n ⏳ Duration: 4 hours 45 minutes \n 🔗 Register now: Get Certified: SAP Certified Implementation Consultant – SAP Customer Data Platform \n https://learning.sap.com/live-sessions/get-certified-sap-certified-implementation-consultant-sap-customer-data-platform \n\n Don't miss this opportunity to validate your SAP Customer Data Platform skills with an expert-led certification prep session. Register today and take the next step toward your C_C4H63 certification. We look forward to seeing you there!"
+  },
+  {
+   "key": "d979048941c2059b",
+   "title": "New live session: Data Unification in SAP Customer Data Platform in Under 30 Minutes",
+   "link": "https://community.sap.com/t5/customer-experience-learning-group-blog-posts/new-live-session-data-unification-in-sap-customer-data-platform-in-under-30/ba-p/14530161",
+   "published": "2026-11-27T11:57:40+00:00",
+   "author": "Amine_Barouni82",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Are you struggling to build a unified view of your customers from fragmented data sources? Join our upcoming live session and discover how to implement data unification in SAP Customer Data Platform — fast. \n\n Data Unification in SAP Customer Data Platform in Under 30 Minutes \n https://learning.sap.com/live-sessions/data-unification-in-sap-customer-data-platform-in-under-30-minutes \n\n Customer data fragmentation is one of the biggest obstacles to delivering consistent, personalised experiences. This session cuts through the complexity with a hands-on, step-by-step demo that takes you from raw data sources to a unified customer profile in under 30 minutes — covering the full implementation of three core SAP Customer Data Platform features. \n\n What You'll Learn \n\n In this session, our experts will walk you through: \n Profile & Activity Schemas – how to structure your customer data efficiently to support a unified profile model \n Data Privacy – how to build compliance and security into your SAP Customer Data Platform configuration \n Data Ingestion – how to seamlessly bring data from multiple sources into a single, coherent customer view \n End-to-end implementation – how all three capabilities work together so you can replicate this setup with confidence in your own environment \n\n Who Should Join? \n Developers building or extending applications that rely on SAP Customer Data Platform APIs and data pipelines. \n Data scientists leveraging SAP Customer Data Platform to build unified data models and derive actionable customer insights. \n Data analysts working with SAP Customer Data Platform data to generate reports and customer intelligence. \n Consultants supporting organisations in implementing and configuring SAP Customer Data Platform solutions. \n Architects designing customer data architectures and integration patterns using SAP Customer Data Platform. \n Administrators responsible for managing and maintaining SAP Customer Data Platform environments. \n Anyone eager to deepen their understanding of data unification in SAP Customer Data Platform. \n\n Session Details \n 📅 Date: 08 December 2026 \n ⏰ Time: 15:00 CET (Europe/Berlin) \n ⏳ Duration: 45 minutes \n 🔗 Register now: Data Unification in SAP Customer Data Platform in Under 30 Minutes \n https://learning.sap.com/live-sessions/data-unification-in-sap-customer-data-platform-in-under-30-minutes \n\n Don't miss this opportunity to get hands-on guidance from SAP experts and walk away ready to implement data unification in SAP Customer Data Platform. We look forward to seeing you there!"
+  },
+  {
+   "key": "69688a72c799f41b",
+   "title": "New live session: Insights in SAP Customer Data Platform in under 30 minutes",
+   "link": "https://community.sap.com/t5/customer-experience-learning-group-blog-posts/new-live-session-insights-in-sap-customer-data-platform-in-under-30-minutes/ba-p/14530182",
+   "published": "2026-11-27T11:57:39+00:00",
+   "author": "Amine_Barouni82",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Want to unlock the full analytical power of SAP Customer Data Platform in just 45 minutes? Join our upcoming live session and discover how to turn your customer data into actionable insights. \n\n Insights in SAP Customer Data Platform in under 30 minutes \n https://learning.sap.com/live-sessions/insights-in-sap-customer-data-platform-in-under-30-minutes \n\n Customer data is only as valuable as the insights you can extract from it. This focused, demo-driven session walks you through SAP Customer Data Platform's core insights features — from analytics and search to explorations, indicators, and segments. Whether you're new to the platform or deepening your expertise, this session gives you the practical foundation to get more out of your customer data. \n\n What You'll Learn \n\n In this session, our experts will walk you through: \n Analytics – Turn raw customer data into meaningful, actionable insights \n Search – Find and surface the customer data you need faster \n Explorations – Dig deeper into customer behavior with flexible exploration tools \n Indicators – Define and track key performance metrics across your customer base \n Segments – Create targeted customer groups to drive personalized engagement \n\n Who Should Join? \n Developers building applications that integrate with SAP Customer Data Platform's insights, analytics, and segmentation features. \n Data scientists leveraging SAP Customer Data Platform to generate and analyze customer behavioral insights and indicators. \n Data analysts using SAP Customer Data Platform to explore, search, and visualize customer data for business reporting. \n Solution architects designing insight-driven customer data architectures using SAP Customer Data Platform. \n Anyone eager to deepen their understanding of insights in SAP Customer Data Platform. \n\n Session Details \n 📅 Date: December 9, 2026 \n ⏰ Time: 15:00 CET (Europe/Berlin) \n ⏳ Duration: 45 minutes \n 🔗 Register now: Insights in SAP Customer Data Platform in under 30 minutes \n https://learning.sap.com/live-sessions/insights-in-sap-customer-data-platform-in-under-30-minutes \n\n Don't miss this opportunity to get hands-on with SAP Customer Data Platform's insights capabilities in a concise, expert-led demo. Register today and see how your data can work smarter for you. We look forward to seeing you there!"
+  },
+  {
+   "key": "93a7a00cb3ab69f7",
+   "title": "New live session: Activation in SAP Customer Data Platform in Under 30 Minutes",
+   "link": "https://community.sap.com/t5/customer-experience-learning-group-blog-posts/new-live-session-activation-in-sap-customer-data-platform-in-under-30/ba-p/14530237",
+   "published": "2026-11-27T11:57:37+00:00",
+   "author": "Amine_Barouni82",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Are you ready to unlock the full activation power of SAP Customer Data Platform? Join our upcoming live session and discover how to activate your customer data with confidence — step by step — in under 30 minutes. \n\n Activation in SAP Customer Data Platform in Under 30 Minutes \n https://learning.sap.com/live-sessions/activation-in-sap-customer-data-platform-in-under-30-minutes \n\n Activating customer data is at the heart of delivering personalized, real-time customer experiences. In this exclusive live session, our experts guide you through a step-by-step demo of SAP Customer Data Platform’s core activation capabilities — from segmenting audiences to orchestrating CX Flows — all within 30 minutes. \n\n What You’ll Learn \n\n In this session, our experts will walk you through: \n Audiences: Discover how to segment and target the right customers to drive precise, impactful marketing campaigns. \n CX Journeys: Build seamless, personalized customer experiences that connect touchpoints across the customer lifecycle. \n CX Flows: Design and implement CX Flows to activate customers individually according to predefined triggers and business rules. \n Actions: Configure Actions to push data to destination applications and enable real-time customer engagement across channels. \n\n Who Should Join? \n Developers building or integrating applications that leverage SAP Customer Data Platform activation capabilities such as CX Flows and Actions. \n Data scientists leveraging SAP Customer Data Platform to build and optimize audience segments and derive actionable customer insights. \n Data analysts using SAP Customer Data Platform to explore customer data and evaluate activation performance across campaigns. \n Consultants working with organizations to implement SAP Customer Data Platform activation scenarios including Audiences, CX Journeys, and CX Flows. \n Architects designing customer data activation architectures and integration patterns using SAP Customer Data Platform. \n Anyone eager to deepen their understanding of data activation in SAP Customer Data Platform. \n\n Session Details \n 📅 Date: December 10, 2026 \n ⏰ Time: 15:00 CET (Europe/Berlin) \n ⏳ Duration: 45 minutes \n 🔗 Register now: Activation in SAP Customer Data Platform in Under 30 Minutes \n https://learning.sap.com/live-sessions/activation-in-sap-customer-data-platform-in-under-30-minutes \n\n Don’t miss this opportunity to see SAP Customer Data Platform activation in action — register today and start building smarter, more personalized customer experiences. We look forward to seeing you there!"
+  },
+  {
+   "key": "578ed55870673867",
+   "title": "New live session: Ingesting SAP S/4HANA Master Data into SAP Customer Data Platform",
+   "link": "https://community.sap.com/t5/customer-experience-learning-group-blog-posts/new-live-session-ingesting-sap-s-4hana-master-data-into-sap-customer-data/ba-p/14530251",
+   "published": "2026-11-27T11:57:35+00:00",
+   "author": "Amine_Barouni82",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Are you looking to unlock the full potential of your SAP S/4HANA master data by connecting it to SAP Customer Data Platform? Join our upcoming live session and discover how to set up and execute the full integration end-to-end. \n\n Ingesting SAP S/4HANA Master Data into SAP Customer Data Platform \n https://learning.sap.com/live-sessions/ingesting-sap-s-4hana-master-data-into-sap-customer-data-platform \n\n In today's data-driven landscape, seamlessly connecting your ERP master data with your customer data platform is key to building a true 360° customer view. This session provides a practical, end-to-end demonstration of ingesting SAP S/4HANA master data into SAP Customer Data Platform — covering the full integration setup, execution, and real-world B2B and B2C sample scenarios. \n\n What You'll Learn \n\n In this session, our experts will walk you through: \n Describing the SAP S/4HANA and SAP Customer Data Platform integration endpoints \n Ingesting sample SAP S/4HANA master data into SAP Customer Data Platform \n Generating SAP Customer Data Platform insights from ingested master data \n Activating SAP S/4HANA master data for B2C and B2B scenarios using customer data profiles, accounts, and activities \n\n Who Should Join? \n Consultants working with organizations to implement and configure SAP S/4HANA and SAP Customer Data Platform integration solutions. \n Anyone eager to deepen their understanding of ingesting SAP S/4HANA master data into SAP Customer Data Platform. \n\n Session Details \n 📅 Date: December 14, 2026 \n ⏰ Time: 15:00 CET (Europe/Berlin) \n ⏳ Duration: 1 hour 30 minutes \n 🔗 Register now: Ingesting SAP S/4HANA Master Data into SAP Customer Data Platform \n https://learning.sap.com/live-sessions/ingesting-sap-s-4hana-master-data-into-sap-customer-data-platform \n\n Don't miss this opportunity to gain hands-on knowledge and practical insights into integrating your SAP S/4HANA master data with SAP Customer Data Platform. Register today and take the next step in your SAP Customer Data Platform learning journey. We look forward to seeing you there!"
+  },
+  {
+   "key": "fb041e0d5888cb23",
+   "title": "Autonomous Regulated Manufacturing Comes to Life",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/autonomous-regulated-manufacturing-comes-to-life/ba-p/14530687",
+   "published": "2026-11-27T11:23:09+00:00",
+   "author": "Aladdin_Mandishah",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Autonomous Regulated Manufacturing is moving from vision to practice: AI assistants coordinate specialized agents, with people in charge, so therapies and devices reach patients without avoidable delay."
+  },
+  {
+   "key": "0272920a5ad2fd4f",
+   "title": "Maintaining Classification Code Mapping in Core Data Management for Next Gen SAP Ariba Buying",
+   "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/maintaining-classification-code-mapping-in-core-data-management-for-next/ba-p/14530738",
+   "published": "2026-11-27T11:19:02+00:00",
+   "author": "DDINESH",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Introduction \n Classification Code Mapping enables automatic material group determination in Next Gen SAP Ariba Buying. By mapping commodity codes to material groups, the system can automatically assign the correct material group when buyers select items from catalogs or create purchase requests. This guide explains what Classification Code Mapping is, why it's required, and provides a step-by-step walkthrough for uploading and configuring mappings using Core Data Management (CDM). \n What is Classification Code Mapping? \n Classification Code Mapping defines the relationship between commodity codes (classification codes) and material groups in your ERP system. This mapping entity allows SAP Ariba Buying to automatically determine the appropriate material group when a purchase request line item is created. \n How Mapping Works \n When a buyer selects an item with a commodity code, the system: \n Looks for an exact match in the mapping table \n If no exact match, traverses parent codes in the hierarchy until a match is found \n If no hierarchical match, checks for wildcard pattern matches \n If still no match, uses the default fallback (asterisk entry) \n Mapping Types \n\n Type \n Example \n Description \n\n Exact \n IT-HW-001 \n Maps a specific commodity code directly to a material group \n\n Hierarchical \n (automatic) \n System traverses parent codes until a match is found \n\n Wildcard \n IT-HW* \n Matches any code starting with the prefix \n\n Default \n * \n Fallback when no other mapping matches (required) \n Why is Classification Code Mapping Required? \n\n Purpose \n Benefit \n\n Automatic Material Group Determination \n Eliminates manual entry of material groups on purchase requests \n\n ERP Integration \n Ensures correct material group flows to SAP S/4HANA for posting \n\n GL Account Assignment \n Material group drives general ledger account determination \n\n Data Consistency \n Standardizes material group assignment across all procurement documents \n\n Process Efficiency \n Reduces errors and speeds up requisition creation \n\n Compliance \n Ensures proper categorization for spend reporting and audits \n Key Configuration Points - Critical for Success \n This section addresses the most common configuration mistakes that cause mappings to fail. Read this carefully before uploading any data. \n To Source System - The #1 Cause of Mapping Failures \n The To Source System value in your mapping MUST exactly match the Data Source value in the Product Group (Material Group) entity. \n How to find your To Source System value: \n Open Core Data Management \n Navigate to Product Group (Material Group) entity \n Look at the Data Source column \n Copy this value EXACTLY - this is your To Source System \n Example: \n In Product Group entity: \n ┌─────────────────┬─────────────┬──────────────┐ \n │ Material Group │ Description │ Data Source │ \n ├─────────────────┼─────────────┼──────────────┤ \n │ L001 │ IT Hardware │ S4HC │ \n │ L002 │ Software │ S4HC │ \n │ A001 │ Services │ S4HC │ \n └─────────────────┴─────────────┴──────────────┘ \n\n Your To Source System = S4HC \n What goes wrong with mismatched To Source System: \n ❌ Mapping file has: To Source System = \"ERP_SYSTEM\" \n Product Group has: Data Source = \"S4HC\" \n Result: Material group NOT determined - system can't find the material group \n\n ✅ Mapping file has: To Source System = \"S4HC\" \n Product Group has: Data Source = \"S4HC\" \n Result: Material group determined correctly \n Domain Name Must Match Classification Codes \n The From Domain in your mapping must EXACTLY match the Product Classification Domain in your classification codes: \n\n If Classification Codes have \n Then Mapping must have \n\n Product Classification Domain = custom \n From Domain = custom \n\n Product Classification Domain = unspsc \n From Domain = unspsc \n\n Product Classification Domain = UNSPSC \n From Domain = UNSPSC \n Case sensitivity matters! custom ≠ Custom ≠ CUSTOM \n Default Fallback Entry is REQUIRED \n You MUST include an asterisk (*) entry as the default fallback. Without it, any commodity code that doesn't match will result in NO material group being assigned. \n Example of required default entry: \n\n From Source System \n From Domain \n From Version \n From Classification \n To Source System \n To Domain \n To Version \n To Classification \n\n COMMON \n custom \n 0 \n ***** \n S4HC \n ProductGroup \n L001 \n From Source System is Always \"COMMON\" \n Unlike To Source System (which varies by ERP), the From Source System should always be COMMON for classification code mappings. \n To Domain is Always \"ProductGroup\" \n The To Domain field must always be ProductGroup (exactly as shown, with capital P and G). \n How to Upload Classification Code Mapping \n Data Preparation \n Before uploading mappings, download the sample template from Core Data Management (CDM) by clicking Download Sample on the Product Classification Code Mapping entity. \n Template Structure \n The upload template contains one sheet: \n\n Sheet \n Purpose \n\n ProductClassificationCodeMap \n Mapping data between classification codes and material groups \n Field Definitions \n\n Field Name \n Data Type \n Mandatory \n Description \n\n From Source System \n String \n Yes \n Always use \"COMMON\" \n\n From Domain \n String \n Yes \n Must match your classification code domain exactly \n\n From Version \n String \n Yes \n Must match your classification code version \n\n From Classification \n String \n Yes \n Commodity code, wildcard pattern, or * for default \n\n To Source System \n String \n Yes \n CRITICAL: Must match Data Source in Product Group entity \n\n To Domain \n String \n Yes \n Always use \"ProductGroup\" \n\n To Version \n String \n No \n Leave blank \n\n To Classification \n String \n Yes \n Material group code from your ERP system \n Real Example: Filled Excel Template \n Here's a complete example showing how to fill the mapping sheet. This example uses the custom classification codes from the Classification Codes blog. \n Scenario: \n Classification domain: custom \n ERP System ID (Data Source): S4HC \n Material Groups: L001 (General), L002 (IT Hardware), L003 (IT Software), A001 (Services) \n ProductClassificationCodeMap Sheet \n From Source System From Domain From Version From Classification To Source System To Domain To Version To Classification \n COMMON custom 0 * S4HC ProductGroup L001 \n COMMON custom 0 IT-HW S4HC ProductGroup L002 \n COMMON custom 0 IT-HW-001 S4HC ProductGroup L002 \n COMMON custom 0 IT-HW-002 S4HC ProductGroup L002 \n COMMON custom 0 IT-HW-003 S4HC ProductGroup L002 \n COMMON custom 0 IT-SW* S4HC ProductGroup L003 \n COMMON custom 0 SVC S4HC ProductGroup A001 \n COMMON custom 0 SVC-001 S4HC ProductGroup A001 \n COMMON custom 0 SVC-002 S4HC ProductGroup A001 \n Key points in this example: \n Row 1 (*) : Default fallback - any code without a specific mapping gets material group L001 \n Rows 2-5 (IT-HW...) : Exact mappings for IT Hardware codes → L002 \n Row 6 (IT-SW) *: Wildcard mapping - ALL codes starting with \"IT-SW\" → L003 (covers IT-SW-001, IT-SW-002, etc.) \n Rows 7-9 (SVC...) : Exact mappings for Services codes → A001 \n Notice: \n From Domain = custom matches the classification codes domain exactly \n From Version = 0 matches the classification codes version exactly \n To Source System = S4HC matches the Data Source in Product Group entity \n To Domain = ProductGroup (always this value) \n How This Example Resolves Material Groups \n\n User Selects Code \n Resolution Path \n Material Group \n\n IT-HW-001 \n Exact match found \n L002 \n\n IT-HW-999 \n No exact match → parent IT-HW found \n L002 \n\n IT-SW-001 \n Wildcard IT-SW* matches \n L003 \n\n IT-SW-999 \n Wildcard IT-SW* matches \n L003 \n\n SVC-001 \n Exact match found \n A001 \n\n UNKNOWN \n No match → default (*) \n L001 \n Upload Procedure \n Prerequisites \n Configure required integration and assign necessary business roles, business catalogs, and user roles to manage data in the connected ERP system \n Assign the user group \"cap - Manager\" which provides: \n View-only access to the core data entities list and file upload logs \n Upload access for all allowed entities \n Download access for allowed 'common' entities \n Ensure material groups are available in the Product Group (Material Group) entity \n Upload classification codes to the Product Classification Codes entity first \n Steps to Upload Classification Code Mapping \n Identify Target ERP System ID \n Open Core Data Management \n Navigate to Product Group (Material Group) entity \n Note the value in the Data Source column \n This is your To Source System value - copy it exactly \n Prepare Mapping Data \n [ ] From Source System = COMMON (for all rows) \n [ ] From Domain matches classification codes domain exactly \n [ ] From Version matches classification codes version exactly \n [ ] To Source System matches Data Source from Product Group entity \n [ ] To Domain = ProductGroup (for all rows) \n [ ] Default (*) entry exists \n Download the sample template from the Product Classification Code Mapping entity \n Fill in the mapping data using the example above as reference \n Checklist before upload: \n Access Core Data Management \n Open the Master Data File Upload tile on the SAP Fiori launchpad \n Upload Product Classification Code Mapping \n Open the Product Classification Code Mapping entity \n Upload the mapping file \n Select Common as the business system ID in the Source System field \n Review the uploaded information after completion \n Verify Mappings \n Check that all mappings are loaded correctly \n Verify the default (*) entry exists \n Confirm To Source System values match your ERP system \n Common Mistakes and How to Avoid Them \n\n Mistake \n Symptom \n How to Fix \n\n Wrong To Source System \n Material group shows blank on PR \n Get exact value from Product Group entity Data Source column \n\n Case mismatch in From Domain \n Mapping not found \n Copy domain name from classification codes \n\n Missing default (*) entry \n Some PRs have no material group \n Add a row with From Classification = * \n\n To Domain spelled wrong \n All mappings fail \n Use exactly \"ProductGroup\" (capital P, capital G) \n\n From Version doesn't match \n Mapping not found \n Match version from classification codes \n\n Using ERP system name instead of ID \n Mapping fails \n Use technical ID (e.g., S4HC), not name \n Troubleshooting Guide \n Material Group Not Determined \n Check in this order: \n To Source System matches? \n Open Product Group entity → Check Data Source column \n Compare with To Source System in your mapping \n Must be IDENTICAL \n Domain matches? \n Open Product Classification Code entity → Check domain value \n Compare with From Domain in your mapping \n Must be IDENTICAL (case-sensitive) \n Version matches? \n Compare From Version in mapping with Version in classification codes \n Default entry exists? \n Check mapping has a row with From Classification = * \n Wrong Material Group Assigned \n Check the mapping priority: \n Exact match takes priority over wildcard \n Wildcard takes priority over hierarchical \n Hierarchical takes priority over default \n If getting unexpected results, check for conflicting mappings. \n Verification Checklist \n After uploading, verify these items: \n [ ] Mappings visible in Product Classification Code Mapping entity \n [ ] To Source System matches Data Source in Product Group entity \n [ ] From Domain matches classification codes domain \n [ ] Default (*) entry exists \n [ ] Create a test requisition and verify material group is auto-populated \n [ ] Test with codes at different levels to verify hierarchy resolution \n Demo Video: Click Here \n Related Resources \n Maintaining Classification Codes in Core Data Management \n Default Commodity Code Domain \n Maintaining Commodity Code with Material Groups Using Core Data Management \n About Mapping Commodity Codes with Material Groups"
+  },
+  {
+   "key": "7df64e9f6ca773c3",
+   "title": "Text Propagation from Forwarding Order to Freight Order in SAP TM",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-members/text-propagation-from-forwarding-order-to-freight-order-in-sap-tm/ba-p/14529712",
+   "published": "2026-11-27T11:01:52+00:00",
+   "author": "ajaybnh",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "How to configure BOPF text types and text schemas in SAP TM so texts entered on a Forwarding Order propagate to the Freight Order."
+  },
+  {
+   "key": "e286b75c930f2feb",
+   "title": "Purchasing Assistant",
+   "link": "https://community.sap.com/t5/spend-management-blog-posts-by-sap/purchasing-assistant/ba-p/14530126",
+   "published": "2026-11-27T10:50:22+00:00",
+   "author": "Ashokatsap",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The SAP Purchasing Assistant brings AI agents directly into your procurement workflow — consolidating demand, recommending optimal suppliers, monitoring purchase orders in real time, and keeping your team focused on strategic decisions."
+  },
+  {
+   "key": "56f6e9cc623aaca0",
+   "title": "SAP S/4HANA Cloud Public Edition: Best Practices for Creating an Effective SAP Support Case",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-s-4hana-cloud-public-edition-best-practices-for-creating-an-effective/ba-p/14530707",
+   "published": "2026-11-27T10:37:02+00:00",
+   "author": "Shreyas_A_Yadav",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Are your SAP Support cases taking longer than expected to resolve? Providing the right information when creating a support case can significantly improve the efficiency of troubleshooting and reduce unnecessary follow-ups. \n This article shares practical guidelines and best practices for creating effective support cases for SAP S/4HANA Cloud Public Edition and SAP Central Business Configuration (CBC), covering system access, reproduction steps, business impact, case priorities, and the information required for faster resolution."
+  },
+  {
+   "key": "4f383af32ba03323",
+   "title": "Selecting the Latest Modified Business Trip Record from Historical MDF Data Using SAP CPI",
+   "link": "https://community.sap.com/t5/human-capital-management-blog-posts-by-members/selecting-the-latest-modified-business-trip-record-from-historical-mdf-data/ba-p/14514206",
+   "published": "2026-11-27T10:27:47+00:00",
+   "author": "Nithyasri_V_G",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "When integrating SAP SuccessFactors MDF data with SAP Integration Suite, retrieving historical records and identifying the latest modified record can be challenging. In this blog, I explain an approach to retrieving historical Business Trip Request records and selecting the latest modified record for each externalCode using lastModifiedDateTime in SAP Cloud Integration."
+  },
+  {
+   "key": "02993dfc6fdfe7db",
+   "title": "Profitability Reporting for EPM Projects: How Attribution Works and Substitution Keeps it Manageable",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/profitability-reporting-for-epm-projects-how-attribution-works-and/ba-p/14530697",
+   "published": "2026-11-27T10:18:49+00:00",
+   "author": "BirgitOe",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "When you post costs to an EPPM project with revenue in SAP S/4HANA Cloud, how does the system know which customer, product, and sales organization to put on that posting so it shows up correctly in margin reporting? The answer is attributed profitability segment derivation, and understanding it is the key to getting drillable margin reports from day one. \n This blog explains how the derivation works for EPPM projects, why it is more complex than for CPM customer projects, and what determines your reporting quality in practice. It covers the Multiple Sales Order Items Scenario flag and the effect of its YES/NO setting on how characteristics are derived; the role of the project master profitability segment as the most reliable anchor regardless of your sales order structure; and how the substitution mechanism turns a labor-intensive multi-field manual entry into a single-field lookup. Making project master maintenance sustainable at scale. \n We hope this blog helps you get the most out of profitability reporting and that you find at least one thing you can apply directly in your project. Happy reading! \n Stefan Walz and Birgit Oettinger"
+  },
+  {
+   "key": "1b15fba12eaa9c80",
+   "title": "SAP S/4HANA 2025 Upgrade: Why Your Review Booklets May Not Be Working",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/sap-s-4hana-2025-upgrade-why-your-review-booklets-may-not-be-working/ba-p/14530621",
+   "published": "2026-11-27T11:41:00+00:00",
+   "author": "HenrikeGroetecke",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "If you have upgraded to SAP S/4HANA 2025 and your review booklets are not behaving as expected, there is a good chance you have encountered a known setup requirement that is easy to overlook. This post walks you through who is affected, which scenarios require a manual activation step, and exactly what you need to do to get your review booklets working correctly."
+  },
+  {
+   "key": "4f19fea0dbe9c2e7",
+   "title": "RFC Call Monitoring and Runtime Alert Configuration in SAP Cloud ALM",
+   "link": "https://community.sap.com/t5/technology-q-a/rfc-call-monitoring-and-runtime-alert-configuration-in-sap-cloud-alm/qaq-p/14530703",
+   "published": "2026-11-27T10:28:46+00:00",
+   "author": "ak32",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Team, \n Is there an option in SAP Cloud ALM to configure alerts for RFC calls and runtime errors in the S/4HANA system? \n Regards \n Arumugakrishnan"
+  },
+  {
+   "key": "683c614565eddd41",
+   "title": "Total weight shown as 0 in sales order after item is rejection",
+   "link": "https://community.sap.com/t5/supply-chain-management-q-a/total-weight-shown-as-0-in-sales-order-after-item-is-rejection/qaq-p/14530664",
+   "published": "2026-11-27T10:01:57+00:00",
+   "author": "BHAGWAN_G",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Dear Team, \n I have found one issue related to Sales Order \"Total weight\", \n once we enter the Reason for Rejection in sales order \"Total weight\" has automatically reduced. \n I have already gone through the SAP note 3398603 - Total weight shown as 0 in sales order after item is rejected. \n I need alternate solution for this. please support"
+  },
+  {
+   "key": "8ab868bdea02bde6",
+   "title": "hide an attachment Field for a specific country",
+   "link": "https://community.sap.com/t5/human-capital-management-q-a/hide-an-attachment-field-for-a-specific-country/qaq-p/14530610",
+   "published": "2026-11-27T09:14:08+00:00",
+   "author": "H_OUMI",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello Dear Community , \n in the configuration of my client, in the portlet dirver licence for france , when i select the country FRA - the field attachment disapear, we don't have the same configuration for the other countries \n when looking on the config - In the UI country Field in found this rule , that i can't find on the Config BR . i believe the issue came from her \n How can in find this rules ? THANK's"
+  },
+  {
+   "key": "a84f99b249fbb5b0",
+   "title": "Project authorization via partner functions in S/4",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/project-authorization-via-partner-functions-in-s-4/qaq-p/14530580",
+   "published": "2026-11-27T09:02:31+00:00",
+   "author": "Shasha0604",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi Expert, \n We implemented the package TWPS -Project authorization via partner functions more than 20 years ago in our system. We are planning migrating from ECC to S/4 now. May I check with you if the functionality in this package is compatible for S/4? When migrating should we treat it the same as other SAP standard delivered package? \n Any special considerations here? \n Please kindly advise. \n Thank you so much"
+  },
+  {
+   "key": "7e4057de09d50f25",
+   "title": "SO Header weight automatically get change when apply Reason of Rejection",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/so-header-weight-automatically-get-change-when-apply-reason-of-rejection/qaq-p/14530571",
+   "published": "2026-11-27T08:42:22+00:00",
+   "author": "BHAGWAN_G",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello team , \n Please note , it has been observed that when we create Sales order and do partial delivery and apply Reason of rejection then Total weight showing in SO Header level it become 0 . \n Eg. SO - 12496186"
+  },
+  {
+   "key": "ae12eb3706fdd02e",
+   "title": "Purchase requisition workflow template does not exist",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-q-a/purchase-requisition-workflow-template-does-not-exist/qaq-p/14530541",
+   "published": "2026-11-27T07:53:38+00:00",
+   "author": "Esperanza",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Good morning, \n We would like to send an email as part of the purchase order workflow. We have looked at the outgoing management template forms, but amongst the templates previously provided, we cannot find the ones mentioned in note 3304179 and : \n MMPUR_PO_WFL_APPROVAL_EMAIL \n MMPUR_CTR_WFL_APPROVED_EMAIL \n MMPUR_CTR_WFL_REJECTED_EMAIL \n Nor is there any template specifically for purchase order requests. \n Could you please advise us on how to do this? \n Kind regards"
+  },
+  {
+   "key": "a555527617eb90fa",
+   "title": "Mastering CBAM Compliance: What SAP’s Latest Release Means for Declarants",
+   "link": "https://news.sap.com/2026/11/mastering-cbam-compliance-what-latest-sap-release-means-for-declarants/",
+   "published": "2026-11-27T11:15:00+00:00",
+   "author": "Gunther Rothermel",
+   "tags": [
+    "Financial management",
+    "Solutions",
+    "Sustainability",
+    "Technology",
+    "SAP Green Ledger",
+    "SAP Sustainability Footprint Management"
+   ],
+   "feed": "SAP News Center",
+   "kind": "news",
+   "text": "Under the EU’s Carbon Border Adjustment Mechanism (CBAM), importers of steel, aluminum, cement, fertilizers, electricity, and hydrogen into the EU now face direct legal and financial accountability for the embedded emissions in those products. \n Calculate the cost of carbon emissions \n\n Learn how \n\n To help them manage it, the latest release of SAP Sustainability Footprint Management delivers a CBAM compliance engine for declarants, complemented by SAP Green Ledger for liability and asset management. \n\n The urgency is concrete. Starting in February 2027, companies importing goods into the EU will need to buy CBAM certificates, with prices linked to the EU Emissions Trading System and currently ranging between €75 and €82 per ton of CO₂ . The first annual reporting deadline is September 30, 2027, covering all imports made since January 1, 2026. This means businesses have less than a year to ensure their often manual and fragmented compliance processes are ready. \n\n In practical terms, carbon is now a priced input for importers, one that directly affects margins, cash flow, and sourcing decisions. The question is whether companies manage that exposure through scalable, auditable processes or continue piecing it together in spreadsheets. \n\n Inside the October release \n\n The October release of SAP Sustainability Footprint Management builds out the CBAM compliance and declaration workflow from raw import data to EU registry-ready output. \n\n These existing apps in SAP Sustainability Footprint Management have been extended with CBAM capabilities: \n\n Manage footprint inventory scope now supports adding and managing a dedicated CBAM scope. \n\n Import master data extends to CBAM-relevant business objects, including business partner information tied to non-EU suppliers. \n\n Manage location enables upload and management of supplier locations, a critical foundation for actual supplier emission factors. \n\n Import business transactions introduces a new transaction type for customs import declarations, the foundational data that drives CBAM calculations. \n\n To further streamline CBAM compliance, three new apps handle the core compliance workflow: \n\n View default CBAM emission factors provides access to SAP-maintained content including the EU’s default emission factors, benchmarks, and markups that apply when supplier-specific data is not available. This matters financially. Default values carry a 10% markup in 2026, rising to 20% in 2027 and 30% from 2028. \n\n Manage actual CBAM emission factors is where that penalty gets addressed. Declarants can upload supplier-provided emission factors and use them in place of defaults, directly reducing their certificate obligations and cost exposure. \n\n Manage CBAM reports is the calculation and reporting engine. In a single run, it computes embedded emissions, certificates to surrender, and indicative cost based on date of import at scale. EU registry-ready CBAM declarations are generated instantly with full data traceability, documented calculations, and change logs to support auditability. \n\n Beyond the core applications, the release includes built-in dashboards that surface emissions, certificate requirements, and cost exposure across suppliers and products. And the analytics layer gives companies visibility into where their embedded emissions sit. This intelligence supports not just compliance, but targeted supplier engagement and decarbonization strategy. \n\n From emissions to the balance sheet \n\n CBAM creates a new class of financial liability. Every ton of embedded CO₂ in imported goods translates into certificates that must be purchased and surrendered, priced weekly against the EU ETS auction rate. Under both IFRS and U.S. GAAP, provisions must be recognized now for the liabilities arising from CBAM obligations—covering reported emissions and the resulting requirement to surrender carbon certificates, even though cash doesn’t move until certificate purchases begin in February. \n\n The recent integration between SAP Sustainability Footprint Management and SAP Green Ledger for CBAM connects the compliance engine to financial accounting. SAP Green Ledger manages the liability and certificate asset life cycle—from initial exposure recognition through settlement preparation—and creates the entry point for further financial process integration: liability forecasting, margin analysis and simulation, and product costing (planned for 2027). As CBAM expands to cover more products and free allowances phase out, the cost impact will grow. SAP Green Ledger gives finance teams the visibility to protect margins and steer business decisions. \n\n SAP Sustainability Footprint Management quantifies the embedded emissions. SAP Green Ledger turns that into a number your CFO can act on. Together, these solutions help finance teams treat CBAM the same way they do any other managed obligation: planned, measured, settled. \n\n What comes next \n\n In Q1 2027, SAP Sustainability Footprint Management will source customs data directly from SAP Global Trade Services. File upload and API integration are already available now for sourcing customs data from SAP and non-SAP sources. \n\n The broader CBAM picture only intensifies from here. Free allowances under the EU ETS, the mechanism that historically shielded European producers from the full cost of carbon, are being phased out between now and 2034. As those allowances decline, the effective cost of CBAM certificates rises will rise. Also, the scope of covered goods will expand with roughly 180 downstream steel and aluminium products in 2028, with glass, ceramics, chemicals, plastics, and oil refining expected after 2030. \n\n Companies that build their compliance processes on scalable, auditable foundations now will be positioned to absorb those expansions. Companies that do not will find themselves re-engineering under pressure each time the scope widens. \n\n CBAM is not a one-time filing. It compounds in cost and complexity each year. \n\n SAP’s CBAM solution for declarants is available now. To learn more, visit the Sustainable Finance area of sap.com , explore what the CBAM definitive regime means for you, and calculate your CBAM costs using this calculator . \n\n Gunther Rothermel is chief product officer for SAP Sustainability. \n Sign up for our newsletter to receive weekly news, stories, and highlights from the SAP News Center \n\n Subscribe here"
+  },
+  {
+   "key": "1746fcd0527d2240",
+   "title": "Building Your First Agentic Use Case: New Whitepaper Offers a Road Map for Enterprise AI",
+   "link": "https://news.sap.com/2026/11/build-first-agentic-use-case-new-whitepaper-road-map-enterprise-ai/",
+   "published": "2026-11-27T10:15:00+00:00",
+   "author": "Tim Clark",
+   "tags": [
+    "Artificial Intelligence",
+    "Technology",
+    "Agentic AI",
+    "Master data management",
+    "SAP Reltio"
+   ],
+   "feed": "SAP News Center",
+   "kind": "news",
+   "text": "As enterprises accelerate their agentic AI investments, a significant question is emerging: Are they prepared to trust AI agents to make decisions and take actions on their behalf? \n A cloud-native layer that unifies SAP and non-SAP data into trusted, multidomain views \n\n Explore SAP Reltio \n\n This was a major topic of discussion during Reltio’s inaugural Agentic Executive Leadership Program, which brought together 22 senior executives from different industries, including financial services, life sciences, manufacturing, and consumer goods, for three working sessions in October 2026. \n\n The findings, detailed in a new whitepaper, Trusted Before Autonomous , suggest that the biggest obstacles to enterprise AI adoption involve the quality of the data, business context, governance, and the human oversight supporting it all. \n\n Authored by Kash Mehdi, vice president and field CTO at Reltio, an SAP company, the whitepaper identifies four priorities for organizations seeking to move AI agents from experimentation into production. \n\n Business context makes the difference \n\n One of the program’s most revealing demonstrations illustrated how quickly business context can influence AI-generated results. \n\n When a customer-success agent was asked to identify renewal accounts requiring attention, an agent operating with company-specific business definitions identified 13 accounts, complete with performance indicators and recommended actions. Without those definitions, the same question produced 23 accounts based on the agent’s own assumptions. The context-aware agent also consumed approximately 25% fewer tokens because it understood where to find relevant information. \n\n For SAP customers managing complex enterprise environments, business information frequently spans ERP, CRM, service, and third-party systems. That’s why AI agents must understand the underlying data and the relationships, definitions, and business rules that give it meaning. \n\n Another demonstration showed an agent assembling 35 entities and 55 relationships across multiple enterprise systems to develop recommendations ahead of an executive meeting. \n\n It’s another reminder that access to enterprise data alone does not guarantee intelligent decision-making. Agents still need the context to interpret that information correctly. \n\n Governance must precede autonomy \n\n Even though enterprise leaders are eager to expand AI capabilities, the program revealed considerable caution about allowing agents to operate independently. \n\n When asked what conditions must exist before an agent takes action, 69% of participants prioritized having a named human accountable for mistakes. An equal percentage emphasized establishing boundaries that agents cannot cross. Another 62% wanted organizations to define what constitutes an incorrect action before deployment. \n\n It’s not hard to see why. An inaccurate report can be reviewed, challenged, or ignored. An autonomous agent, however, can execute an incorrect decision directly within a business workflow. \n\n To address these risks, the whitepaper introduces a five-stage autonomy framework, progressing from observation and human-approved recommendations to limited autonomous actions and exception-based reporting. The framework recommends keeping high-consequence decisions under human approval while allowing greater autonomy for lower-risk, reversible activities. \n\n Closing the gap between recommendations and results \n\n Even when AI systems generate useful recommendations, organizations may struggle to translate them into measurable business outcomes. \n\n An example involving a pharmaceutical company’s go-to-market operations underscore this struggle. Its AI system generated approximately 38,000 recommendations monthly, with reviewers rating 86% as good. Yet only five percent were executed, and outcomes were reported for just one percent. This disconnect highlights a roadblock that cannot be solved with more technology. \n\n Organizations need employees who can evaluate recommendations, integrate them into existing workflows, monitor results, and intervene when necessary. Thankfully, the whitepaper identifies three essential organizational capabilities that can help: inquiry, oversight, and integration. \n\n Together, these capabilities help employees determine whether AI is solving the right problem, recognize when intervention is required, and establish repeatable processes for turning recommendations into action. \n\n Keeping enterprise context current \n\n Another challenge is ensuring that the business context supporting AI remains accurate as organizations evolve. \n\n One pharmaceutical executive described an environment containing 30 to 40 data lakes and a project involving 300 million documents. Given this environment, even simple questions about sales or customers can produce different answers depending on departmental definitions and underlying systems. Mergers, acquisitions, organizational changes, and evolving business rules introduce additional complexity. \n\n The whitepaper recommends continuously gathering, governing, curating, distributing, and retiring business context so that AI agents operate with relevant, current information. \n\n A practical road map for the first 100 days \n\n Rather than encouraging organizations to pursue enterprise-wide autonomy immediately, the program outlines a measured 100-day implementation strategy: \n\n The first 30 days focus on selecting a use case, establishing baseline performance, and assigning ownership. \n\n The next 30 introduce controlled experimentation, human approvals, and tested safeguards. \n\n Days 61 through 90 emphasize measuring outcomes against the original baseline, while the final phase documents lessons learned and determines whether the organization is ready to expand. \n\n For SAP customers exploring agentic AI, the path to Autonomous Enterprise operations doesn’t begin with giving agents more freedom, but with establishing the trusted data, business context, governance, and human capabilities required to make that freedom productive. \n Sign up to get SAP news, stories, and highlights delivered directly to your inbox each week \n\n Subscribe to our newsletter"
+  },
+  {
+   "key": "8f723c661a9c8066",
+   "title": "Mapping SAP Cloud ALM Event Situations to Dynamic ServiceNow Incident Priority",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/mapping-sap-cloud-alm-event-situations-to-dynamic-servicenow-incident/ba-p/14531065",
+   "published": "2026-11-27T20:37:52+00:00",
+   "author": "shasankgupta024",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "A rule-based approach using eventName, impact and urgency, with a safe default"
+  },
+  {
+   "key": "4ccef0b5ea82b192",
+   "title": "SAP Inside Track Paraguay – Asunción 2026 | Business Transformation… nos entregaron un Blueprint",
+   "link": "https://community.sap.com/t5/asunci%C3%B3n-blog-posts/sap-inside-track-paraguay-asunci%C3%B3n-2026-business-transformation-nos/ba-p/14531046",
+   "published": "2026-11-27T18:27:07+00:00",
+   "author": "Zamichiei",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Esteban Hartzstein, de Tebyon Consulting, nos habló en el SAP Inside Track Paraguay – Asunción 2026 de gestión de proyectos SAP. Participó de forma remota y avisó desde el arranque que no iba a hablar de temas técnicos, y que su charla podía \"pisarle los callos\" a más de uno. \n El punto de partida: muchas empresas hoy tienen que decidir cómo pasar de su ERP a S/4HANA dentro de una transformación de negocio, con fechas como 2027 y 2031 cada vez más cerca. Y ahí aparecen la metodología SAP Activate y las herramientas de soporte. Su frase para abrir: \"Me hablaron de Business Transformation, pero estamos haciendo un Blueprint como si estuviéramos en el año 2000, y estamos en 2026\"."
+  },
+  {
+   "key": "004704433c62d5bd",
+   "title": "Understanding and Managing Delta Subscriptions in SAP Analytics Cloud",
+   "link": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/understanding-and-managing-delta-subscriptions-in-sap-analytics-cloud/ba-p/14530959",
+   "published": "2026-11-27T17:35:46+00:00",
+   "author": "jamiePower",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "This is the first article in a series exploring the capabilities and offerings of the Data Export API and its Delta feature. \n Discover how Delta Subscriptions in the SAP Analytics Cloud Data Export API enable efficient data replication by exporting only changed planning records instead of full datasets. This blog explains the core concepts of delta tracking, subscriptions, and subscription chains, and demonstrates how to create, manage, and consume delta data through both the SAP Analytics Cloud interface and the API. Learn best practices for reducing data volumes, improving performance, and keeping downstream systems synchronized with SAP Analytics Cloud."
+  },
+  {
+   "key": "8e1f51511eaf3414",
+   "title": "SAP Inside Track Paraguay – Asunción 2026 | Las PyMEs y su ciberseguridad",
+   "link": "https://community.sap.com/t5/asunci%C3%B3n-blog-posts/sap-inside-track-paraguay-asunci%C3%B3n-2026-las-pymes-y-su-ciberseguridad/ba-p/14531017",
+   "published": "2026-11-27T17:13:01+00:00",
+   "author": "Zamichiei",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Alberto Padín, de Platinum Ciberseguridad, nos habló en el SAP Inside Track Paraguay – Asunción 2026 de la ciberseguridad de las PyMEs. Arrancó con un caso reciente, el fraude a un banco, y una pregunta: ¿qué hubiese pasado si en lugar de un fraude hubiese sido un ciberataque y los delincuentes se hubiesen quedado con el dinero de todos? \n Su respuesta: la culpa no es de la gente por invertir o trabajar con un banco, pero sí tenemos responsabilidad cuando no entendemos el riesgo que asumimos con nuestras decisiones y con nuestra información."
+  },
+  {
+   "key": "0f0890af2f612b5c",
+   "title": "Procurement Is Being Reinvented. Are Your Students Ready?",
+   "link": "https://community.sap.com/t5/sap-university-alliances-program-blog-posts/procurement-is-being-reinvented-are-your-students-ready/ba-p/14530140",
+   "published": "2026-11-27T17:00:23+00:00",
+   "author": "PhilipT",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": ""
+  },
+  {
+   "key": "7f4f263af19f726a",
+   "title": "KHIVE Mesh: Industry-Specific SAP BAIP Powered Connected Intelligence Framework",
+   "link": "https://community.sap.com/t5/data-and-ai-professionals-blog-posts/khive-mesh-industry-specific-sap-baip-powered-connected-intelligence/ba-p/14530459",
+   "published": "2026-11-27T16:55:51+00:00",
+   "author": "kcjayaraman-SAPArchitect",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "KHIVE Mesh is a conceptual framework for closing that gap. It connects small, specialized AI models, called KHIVE cells, into an industry-specific mesh that orchestrates decisions across SAP and non-SAP applications, and across company boundaries. \n This post sets out the concept, applies it to energy, real estate and consumer retail, and explains how it runs on SAP BAIP alongside Joule. It is a design proposal that we are taking into pilots, so treat the examples as target scenarios, not measured results."
+  },
+  {
+   "key": "80118104b24c43c4",
+   "title": "From Application Server to SAP Fiori: Secure File Downloads with RAP ODataV4 & Authorization Control",
+   "link": "https://community.sap.com/t5/abap-blog-posts/from-application-server-to-sap-fiori-secure-file-downloads-with-rap-odatav4/ba-p/14530926",
+   "published": "2026-11-27T15:57:51+00:00",
+   "author": "shasankgupta024",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Learn how to securely expose existing SAP AL11 application-server files through a SAP Fiori application using SAPUI5, RAP OData V4, and backend authorization. This article covers configuration-driven folder mapping, replaceable organizational authorization, Edm.Stream downloads, filename and file-size validation, and protection against direct URL and path-traversal attempts."
+  },
+  {
+   "key": "7e3123009995d4e1",
+   "title": "New E-Learning Course: Deploying the Unified SAP Signavio Process Intelligence for Administrators",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/new-e-learning-course-deploying-the-unified-sap-signavio-process/ba-p/14530878",
+   "published": "2026-11-27T15:28:24+00:00",
+   "author": "RodEdang",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Hello SAP Community, \n We are pleased to announce the availability of our new e-learning course, “Deploying the Unified SAP Signavio Process Intelligence for Administrators.” The course is designed to help administrators, consultants, and business users build the practical knowledge needed to deploy and configure SAP Signavio Process Intelligence and accelerate business process transformation. Through this course, you will learn how to: \n Set up SAP Signavio Process Intelligence and prepare workspaces for process mining. \n Manage users with SAP Cloud Identity Services . \n Understand and configure SAP-defined Business Content (Onboard and complete the initial setup in SAP BTP ). \n Integrate on-premise systems and data sources . \n Implement Plug and Gain Value Accelerators to help reduce implementation time and costs. \n Who should take this course? The course is particularly relevant for: \n Administrators responsible for deploying and configuring SAP Signavio Process Intelligence \n Consultants supporting SAP Signavio implementations and business process transformation initiatives \n Business users who want to better understand the technical foundation behind data sources configuration for custom process mining and SAP-defined Business Content \n Get Started \n 🏁 Deploying the Unified SAP Signavio Process Intelligence for Administrators \n 👉 [ Access the e-learning course ] \n 📌 Note : Access to this course requires a one-time registration to SAP Learning . \n E-Learning or EGI? Deploying the Unified SAP Signavio Process Intelligence for Administrators e-learning complements our live EGI sessions, letting you learn at your own pace, use tutorial resources, and deepen your understanding of SAP Signavio Process Intelligence. For a comprehensive learning experience, we recommend combining the e-learning resources with our Expert-Guided Implementation (EGI) sessions . These live webinars let you engage directly with experts and ask questions to strengthen your knowledge and skills in SAP Signavio Process Intelligence. \n Enhance your SAP Experience with Value Maps Beyond SAP Signavio, SAP Enterprise Support value maps on SAP Community provide guidance, recommended actions, and supporting resources to help you decide what to focus on next—all included in your SAP cloud subscription. ​ \n 👉 Watch our short demo video , then head over to our page - explore our range of topics and request a call with a topic expert for guidance tailored to your goals."
+  },
+  {
+   "key": "6f01b5992337f59c",
+   "title": "Recording and slide deck of SAP on IBM i November webcast available for download",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-sap/recording-and-slide-deck-of-sap-on-ibm-i-november-webcast-available-for/ba-p/14530819",
+   "published": "2026-11-27T12:53:01+00:00",
+   "author": "christian_bartels",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Did you miss the SAP on IBM i Webcast on November 19, 2026? Here you can find the link to download the slides and the recording."
+  },
+  {
+   "key": "0b230e866d013818",
+   "title": "Authentication supported in integraton of SAP Digital Manufacturing and SAP S/4HANA Cloud",
+   "link": "https://community.sap.com/t5/technology-q-a/authentication-supported-in-integraton-of-sap-digital-manufacturing-and-sap/qaq-p/14531067",
+   "published": "2026-11-27T20:35:44+00:00",
+   "author": "SumitKundu",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hi, \n In the SAP help documentation for technical integration of SAP Digital Manufacturing and SAP S/4HANA Public Cloud, it only mentions about ' User Name and Password' as the Authentication Method . Is it the only method supported or other methods e.g., OAuth 2.0 or certifcate based authentication is also supported? \n Best regards, \n Sumit"
+  },
+  {
+   "key": "4dd034572a4013d0",
+   "title": "SAP Solution Manager 7.2 - Same object required in two different ChaRMs",
+   "link": "https://community.sap.com/t5/technology-q-a/sap-solution-manager-7-2-same-object-required-in-two-different-charms/qaq-p/14531024",
+   "published": "2026-11-27T17:37:07+00:00",
+   "author": "ronaldo_aparecido",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello everyone, \n I'm new to SAP Solution Manager 7.2 and would appreciate some guidance regarding a ChaRM transport management scenario. \n I have an object, Include ZINFE0003_XXX , that is currently assigned to ChaRM 6XX0000473 . However, another enhancement request, which is scheduled to be transported before mine, also requires changes to the same object, but under a different ChaRM (6XX0000888) . \n My questions are: \n Is it possible to temporarily remove this object from ChaRM 6XX0000473 ? \n Can it then be assigned to ChaRM 6XX0000888 ? \n Can the required changes be implemented through a different transport request? \n And afterwards, can everything be synchronized again without causing inconsistencies in the ChaRM transport tracking process? \n If this is possible, could someone please provide the recommended procedure or a step-by-step guide? \n Environment: SAP Solution Manager 7.2 \n Thank you in advance for your help and guidance. \n Best regards, \n Ronaldo Alves"
+  },
+  {
+   "key": "45cae625330c6cf6",
+   "title": "OAuth2SAMLBearerAssertion Authentication Failure When Calling SuccessFactors API from SAP BPA",
+   "link": "https://community.sap.com/t5/technology-q-a/oauth2samlbearerassertion-authentication-failure-when-calling/qaq-p/14530994",
+   "published": "2026-11-27T16:24:30+00:00",
+   "author": "Swetha__Balusamy",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "We are trying to invoke the SAP SuccessFactors Review Route Maps API from SAP Build Process Automation using a SuccessFactors destination configured in SAP BTP. \n The workflow is triggered from a component card in SAP Build Work Zone. Principal propagation is configured for the integration, with the intention of propagating the authenticated user's identity through the workflow to SuccessFactors. \n However, the SAP Build Process Automation action fails during execution with the following error: \n Action 'b313ac37-70dd-45a1-a118-5b1d29844b85' failed with the following error:\n\nError thrown from action runtime library:\nFailed to execute action Review Route Maps with form data id:\n\nFailed to build headers. The destination tried to provide authorization tokens but failed in all cases. This is most likely due to misconfiguration.\n\nOriginal error messages:\nRetrieval of OAuthToken failed due to:\nCannot determine user to propagate for OAuth2SAMLBearerAssertion destination.\n\nEither provide user_token JWT token\n(https://docs.cloudfoundry.org/api/uaa/version/4.7.1/index.html#user-token-grant)\nwhen retrieving the destination or configure it with SystemUser."
+  },
+  {
+   "key": "272af74a916c730b",
+   "title": "SAP auto-closing cases after ~20 days, even when waiting for a response from SAP????",
+   "link": "https://community.sap.com/t5/technology-q-a/sap-auto-closing-cases-after-20-days-even-when-waiting-for-a-response-from/qaq-p/14530879",
+   "published": "2026-11-27T14:46:45+00:00",
+   "author": "sladebe",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "My SAP case 1463178/2026 (\"Does the \"update statistics hashing\" need to be set to \"partial\" to use the \"partial_hashing\" with update statistics?\") was auto-closed after 22 days even though the last message was from a \"SAP Agent\" saying essentially, \"let me check and get back to you\" \n The auto-closed case also has a message saying: \n \"Please note that this case cannot be reopened. For further details please see KBAs 1929454 & 2537073 \" \n That's pretty poor customer service."
+  },
+  {
+   "key": "f4e4812a9dcb1059",
+   "title": "Cloud ALM: is a connected SAP system required to use it for internal project management only?",
+   "link": "https://community.sap.com/t5/technology-q-a/cloud-alm-is-a-connected-sap-system-required-to-use-it-for-internal-project/qaq-p/14530853",
+   "published": "2026-11-27T14:09:43+00:00",
+   "author": "MaximoSanchez",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello, \n We provisioned an SAP Cloud ALM tenant on 25.11.2026 from SAP for Me (\"Start Provisioning\"). It will be used only internally, to manage our own projects (project and task management, no customer involved). \n\n - System name: SAP Cloud ALM - 1247561 (SID: SCP) \n Our question: \n Is it necessary to have any SAP system connected to the Cloud ALM tenant (S/4HANA, SuccessFactors, etc.) in order to use it for internal project management? From the documentation we understand that no connected system is needed for this use case, and that a system is only required for monitoring/operations scenarios. We would like SAP to confirm this, and to tell us if any capability of the Implementation scope (projects, tasks, requirements, etc.) depends on a connected system. \n Thank you in advance."
+  },
+  {
+   "key": "e69220e817cc100b",
+   "title": "Ratings Showing as Drop-down List Instead of Star for Performance Potential Summary Section",
+   "link": "https://community.sap.com/t5/human-capital-management-q-a/ratings-showing-as-drop-down-list-instead-of-star-for-performance-potential/qaq-p/14530793",
+   "published": "2026-11-27T12:18:19+00:00",
+   "author": "petre_manvelishvili",
+   "tags": [],
+   "feed": "SAP Community questions",
+   "kind": "question",
+   "text": "Hello all, \n Need to know if it's possible to configure rating as a drop-down list instead of Star in Performance Potential Summary Section?"
+  },
+  {
+   "key": "a6e73c3047e5ffc7",
+   "title": "Production Connector as OPC UA Server: Simplifying Shop Floor Integration",
+   "link": "https://community.sap.com/t5/supply-chain-management-blog-posts-by-sap/production-connector-as-opc-ua-server-simplifying-shop-floor-integration/ba-p/14528771",
+   "published": "2026-11-27T22:09:32+00:00",
+   "author": "Frank_Rambo",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "With the release 2611 of SAP Digital Manufacturing, the Production Connector gains a capability that customers and partners have been eagerly awaiting: it can now act as an OPC UA Server. Automation sequences can be exposed as OPC UA methods — giving shop floor assets a standardized, reliable way to trigger business logic without the complexity of tag-based subscriptions. \n This closes a significant feature gap between the Production Connector and its predecessor, SAP Plant Connectivity (PCo), and opens the door to more scalable, maintainable shop floor automation."
+  },
+  {
+   "key": "e4675673e29f5e75",
+   "title": "Understanding document storage and processing in inbound emails",
+   "link": "https://community.sap.com/t5/technology-blog-posts-by-members/understanding-document-storage-and-processing-in-inbound-emails/ba-p/14530746",
+   "published": "2026-11-27T21:48:40+00:00",
+   "author": "VikasSingh2",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Mail into SAP through Cloud Integration is not fire and forget. SAP stores every attachment on the document server before it answers the Mail receiver adapter. A slow document server makes the adapter time out."
+  },
+  {
+   "key": "43288075b5181197",
+   "title": "Retroactive billable maintenance in Service with Advanced Execution",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/retroactive-billable-maintenance-in-service-with-advanced-execution/ba-p/14530631",
+   "published": "2026-11-28T08:32:36+00:00",
+   "author": "Abhishek_Ramesh",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "The Billable maintenance process always had a limitation, wherein the maintenance order can converted to a billable maintenance order only before the order has been released. Once the maintenance order is released, then there was no capability to convert the order or charge the costs in standard. \n However, it is a very common situation in certain industries, that the decision to charge the cost is sometimes very late in the process. The execution of the maintenance work itself is mostly urgent. However, due to legal processes, insurance claims or simply because the decision requires a detailed inspection, sometimes the decision to charge a customer is made after the maintenance work has been completed. This capability was not at all available in the previous releases. This is resolved with the latest release of Service with Advanced Execution."
+  },
+  {
+   "key": "90c6d35245ba533a",
+   "title": "How to Configure Purchase Order Workflow and Email Notification in SAP S/4HANA Public Cloud system",
+   "link": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/how-to-configure-purchase-order-workflow-and-email-notification-in-sap-s/ba-p/14531122",
+   "published": "2026-11-28T08:02:08+00:00",
+   "author": "Daisy_Zhang",
+   "tags": [],
+   "feed": "SAP Community blog posts",
+   "kind": "blog",
+   "text": "Flexible workflow allows you to define purchase order approval processes that reflect your business requirements. You can also configure email notifications so that approvers and purchasers stay informed throughout the process. \n This blog explains workflow configuration and email notifications for regular purchase orders, using workflow scenario \" WS00800238\" ."
+  }
+ ],
+ "triage": {
+  "0": {
+   "i": 0,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Portuguese recap of an SAP Inside Track Curitiba talk on change management; event content with no technical value."
+  },
+  "1": {
+   "i": 1,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Marketing overview of AI across SAP Sales Cloud and Commerce for opportunity-to-quote; business-level, not developer content."
+  },
+  "2": {
+   "i": 2,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Business-level overview of SAP CX AI Toolkit agents for quote-to-order service cases; not developer-focused."
+  },
+  "3": {
+   "i": 3,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Business-level overview of AI in SAP Cloud ERP order-to-cash fulfillment; marketing-style, no developer detail."
+  },
+  "4": {
+   "i": 4,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Promo for a live session on staying certified in SAP Customer Data Platform."
+  },
+  "5": {
+   "i": 5,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Promo for a live session preparing for the C_C4H63 SAP Customer Data Platform certification exam."
+  },
+  "6": {
+   "i": 6,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Promo for a live session on data unification in SAP Customer Data Platform."
+  },
+  "7": {
+   "i": 7,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Promo for a live session on insights in SAP Customer Data Platform."
+  },
+  "8": {
+   "i": 8,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Promo for a live session on activation in SAP Customer Data Platform."
+  },
+  "9": {
+   "i": 9,
+   "category": "Analytics & Data",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Promo for a live session on ingesting S/4HANA master data into SAP CDP; setup-focused, not a developer how-to."
+  },
+  "10": {
+   "i": 10,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Marketing piece on autonomous regulated manufacturing with AI agents; no technical content."
+  },
+  "11": {
+   "i": 11,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Ariba Buying classification code mapping for automatic material group determination; configuration, not development."
+  },
+  "12": {
+   "i": 12,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Configuring BOPF text types and text schemas so forwarding order texts propagate to freight orders in SAP TM; configuration-focused."
+  },
+  "13": {
+   "i": 13,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Marketing overview of SAP Purchasing Assistant AI agents in procurement; no developer content."
+  },
+  "14": {
+   "i": 14,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Best practices for writing effective support cases for S/4HANA Cloud Public Edition; support process, not technical build."
+  },
+  "15": {
+   "i": 15,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "CPI approach to fetching historical SuccessFactors MDF Business Trip records and selecting the latest by lastModifiedDateTime."
+  },
+  "16": {
+   "i": 16,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "How EPPM cost postings derive attributed profitability segments for margin reporting in S/4HANA Cloud; functional logic."
+  },
+  "17": {
+   "i": 17,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Setup activation needed for review booklets after an S/4HANA 2025 upgrade; functional configuration."
+  },
+  "18": {
+   "i": 18,
+   "category": "Security & Basis",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks whether SAP Cloud ALM can alert on RFC calls and runtime errors; operations monitoring rather than development."
+  },
+  "19": {
+   "i": 19,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Sales order total weight drops to 0 when a rejection reason is applied; asks for an alternative to note 3398603."
+  },
+  "20": {
+   "i": 20,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Question on hiding an attachment field for France in a driver licence portlet; country-rule configuration issue."
+  },
+  "21": {
+   "i": 21,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks whether TWPS partner-function project authorization carries over from ECC to S/4HANA during migration; migration planning."
+  },
+  "22": {
+   "i": 22,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Duplicate of the sales order total-weight-zero issue after applying a rejection reason on partial delivery."
+  },
+  "23": {
+   "i": 23,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Missing purchase requisition workflow email templates referenced in note 3304179; workflow template configuration question."
+  },
+  "24": {
+   "i": 24,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "News on SAP Green Ledger CBAM reporting capabilities for declarants; regulatory and sustainability business content."
+  },
+  "25": {
+   "i": 25,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Marketing whitepaper on a first agentic AI use case with SAP Reltio master data management; no developer content."
+  },
+  "26": {
+   "i": 26,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Rule-based mapping of Cloud ALM event situations to ServiceNow incident priority using eventName, impact, urgency and a safe default."
+  },
+  "27": {
+   "i": 27,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Recap of an SAP Inside Track Paraguay talk on project management blueprints; event content."
+  },
+  "28": {
+   "i": 28,
+   "category": "Analytics & Data",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Explains delta subscriptions in the SAC Data Export API that export only changed planning records for efficient replication."
+  },
+  "29": {
+   "i": 29,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Recap of an SAP Inside Track Paraguay talk on SME cybersecurity; event content."
+  },
+  "30": {
+   "i": 30,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Empty-excerpt promo about procurement education and students; no technical content."
+  },
+  "31": {
+   "i": 31,
+   "category": "AI & Joule",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Conceptual KHIVE Mesh framework linking small AI models across SAP and non-SAP apps; not a developer how-to."
+  },
+  "32": {
+   "i": 32,
+   "category": "RAP",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Secure AL11 file downloads via Fiori using RAP OData V4, Edm.Stream, filename validation and backend authorization checks; deep how-to."
+  },
+  "33": {
+   "i": 33,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Announcement of an e-learning course on deploying SAP Signavio Process Intelligence for administrators; training promo."
+  },
+  "34": {
+   "i": 34,
+   "category": "Community, Events & Careers",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Recording and slides from the SAP on IBM i November webcast; event material."
+  },
+  "35": {
+   "i": 35,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Asks which authentication methods (basic, OAuth 2.0, certificates) SAP Digital Manufacturing supports when integrating with S/4HANA Cloud."
+  },
+  "36": {
+   "i": 36,
+   "category": "Developer Tools & DevOps",
+   "in_scope": true,
+   "importance": 2,
+   "one_liner": "Solution Manager 7.2 ChaRM question on one include assigned to two change requests with conflicting transport order."
+  },
+  "37": {
+   "i": 37,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "Debugging OAuth2SAMLBearerAssertion failure when BPA calls SuccessFactors API via BTP destination with principal propagation."
+  },
+  "38": {
+   "i": 38,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Complaint that SAP auto-closed a HANA support case after 22 days while awaiting reply; support process issue."
+  },
+  "39": {
+   "i": 39,
+   "category": "Other",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Asks whether a Cloud ALM tenant needs a connected SAP system when used only for internal project management."
+  },
+  "40": {
+   "i": 40,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 1,
+   "one_liner": "Asks whether SuccessFactors performance potential ratings can display as a dropdown instead of stars; HR configuration."
+  },
+  "41": {
+   "i": 41,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 3,
+   "one_liner": "SAP Digital Manufacturing 2611 lets Production Connector expose automation sequences as OPC UA methods for shop floor integration."
+  },
+  "42": {
+   "i": 42,
+   "category": "OData, APIs & Integration",
+   "in_scope": true,
+   "importance": 4,
+   "one_liner": "Explains how Cloud Integration stores inbound mail attachments on the document server and why slow storage causes adapter timeouts."
+  },
+  "43": {
+   "i": 43,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Converting released maintenance orders to billable retroactively in Service with Advanced Execution; functional process."
+  },
+  "44": {
+   "i": 44,
+   "category": "Functional & Business Processes",
+   "in_scope": false,
+   "importance": 2,
+   "one_liner": "Configuring purchase order workflow and email notifications in S/4HANA Public Cloud; configuration guide, not development."
+  }
+ },
+ "deep": {
+  "32": {
+   "summary": "The post describes a pattern for exposing existing AL11 application-server files through a SAP Fiori app built on SAPUI5 and RAP OData V4. The stated scope covers configuration-driven folder mapping, a replaceable organisational authorisation check, Edm.Stream-based downloads, filename and file-size validation, and protection against direct URL access and path traversal. Only the abstract was provided, so the implementation details are not visible here.",
+   "key_points": [
+    "Exposes files already on the application server (AL11 folders) through a Fiori app, without moving them to another store.",
+    "Folder mapping is driven by configuration rather than hard-coded paths.",
+    "Authorisation is a replaceable component, so each organisation can plug in its own rules.",
+    "Downloads use Edm.Stream in a RAP OData V4 service.",
+    "Filename and file-size validation, plus defences against direct URL use and path traversal, are part of the design."
+   ],
+   "technical_details": [
+    "RAP OData V4 service with an Edm.Stream property for file content",
+    "SAPUI5 Fiori front end",
+    "AL11 application-server directories as the file source",
+    "Backend authorisation check (the post says it is replaceable)",
+    "Input validation on filename and file size",
+    "Path-traversal protection (e.g. rejecting ../ sequences and resolving only inside mapped folders)"
+   ],
+   "why_it_matters": "File download from the application server is a common requirement and a common security hole. A RAP-based approach that combines Edm.Stream, backend authorisation and path validation is the right shape for it, but the abstract alone does not show whether the traversal and authorisation checks are robust.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Good case study for a RAP OData V4 class covering Edm.Stream (media content and streaming) and security: ask trainees to list every point where a malicious filename could enter and how each check blocks it. Compare the replaceable authorisation design with CDS access control (DCL) and behavior-level authorisation.",
+   "quality": 3
+  },
+  "42": {
+   "summary": "The post explains that mail sent into SAP through Cloud Integration is not fire-and-forget. Each attachment is written to the document server before the Mail receiver adapter returns a response. The author's conclusion is that a slow document server can make the adapter time out. Only the short abstract was provided, so the post's measurements and fixes are not visible.",
+   "key_points": [
+    "The Mail receiver adapter stores each attachment on the document server before it responds.",
+    "The adapter's response therefore depends on document server performance.",
+    "A slow document server can cause adapter timeouts.",
+    "Inbound mail processing is not a fire-and-forget operation."
+   ],
+   "technical_details": [
+    "SAP Cloud Integration (CPI / Integration Suite)",
+    "Mail receiver adapter",
+    "Attachment storage on the document server",
+    "Adapter timeout as the failure symptom"
+   ],
+   "why_it_matters": "Integration developers often assume mail processing is asynchronous and cheap. If attachment storage sits on the synchronous path, large attachments or a slow document server can cause timeouts and retries that are hard to diagnose.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use it in a CPI troubleshooting session: trace where message processing time goes, then discuss timeout settings, retry behaviour and attachment size limits. Ask trainees to check the claim against the current adapter documentation before relying on it.",
+   "quality": 3
+  },
+  "15": {
+   "summary": "The post addresses retrieving historical Business Trip Request records from SuccessFactors MDF objects through SAP Integration Suite. It describes choosing the latest modified record for each externalCode, using lastModifiedDateTime in SAP Cloud Integration. The abstract does not show the query, the script or the mapping logic, so the technique cannot be judged from this text.",
+   "key_points": [
+    "Goal: get historical MDF records for Business Trip Request and keep the latest version per externalCode.",
+    "Selection key is lastModifiedDateTime.",
+    "Implementation is in SAP Cloud Integration.",
+    "Source system is SAP SuccessFactors MDF."
+   ],
+   "technical_details": [
+    "SAP SuccessFactors MDF (Business Trip Request entity)",
+    "externalCode as the business key",
+    "lastModifiedDateTime as the ordering field",
+    "SAP Cloud Integration (iFlow logic, not specified in the abstract)"
+   ],
+   "why_it_matters": "MDF history queries return several versions of a record, and picking the right one is a common integration task. The abstract points at a real problem but gives no evidence of how the solution works.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How do I pick the most recent historical MDF record per externalCode from SuccessFactors when integrating via SAP Cloud Integration?",
+   "teaching_angle": "Good exercise for deduplication logic in CPI: given a set of versioned records, group by externalCode and keep the max lastModifiedDateTime. Ask trainees to consider timestamp format and time zones, and what happens when two versions share the same timestamp.",
+   "quality": 2
+  },
+  "26": {
+   "summary": "The post proposes a rule-based mapping from SAP Cloud ALM event situations to ServiceNow incident priority. The rules use eventName, impact and urgency, and fall back to a safe default when no rule matches. The text is a single line, so the rule table, the implementation (iFlow, script or ServiceNow side) and the priority values are not visible.",
+   "key_points": [
+    "Maps Cloud ALM event situations to ServiceNow incident priority.",
+    "Rule inputs are eventName, impact and urgency.",
+    "A default value is used when no rule applies.",
+    "Priority is set dynamically rather than fixed."
+   ],
+   "technical_details": [
+    "SAP Cloud ALM event situations (eventName, impact, urgency fields)",
+    "ServiceNow incident priority",
+    "Default-priority fallback (value not stated)",
+    "Mapping implementation not specified in the text"
+   ],
+   "why_it_matters": "Alert-to-ticket integrations often send every event with the same priority, which floods the service desk. A rule table keyed on impact and urgency is a sound approach, but the post gives too little to judge its completeness.",
+   "is_release_or_announcement": false,
+   "developer_problem": "How do I set the ServiceNow incident priority dynamically from Cloud ALM event data instead of using one fixed value?",
+   "teaching_angle": "Use it to teach decision-table design: ask trainees to write the rule set as a table, choose a safe default, and decide what to do when an input value is missing or unexpected. Compare with ServiceNow's own impact × urgency priority matrix.",
+   "quality": 2
+  },
+  "28": {
+   "summary": "The post is the first in a series on the SAP Analytics Cloud Data Export API and its Delta feature. It explains delta tracking, subscriptions and subscription chains, and says delta subscriptions export only changed planning records rather than full datasets. It also says the post shows how to create, manage and consume delta data through the SAC interface and the API. The abstract gives no endpoints, payloads or code, so the API mechanics are not visible.",
+   "key_points": [
+    "Delta subscriptions export only changed planning records, not full datasets.",
+    "Core concepts are delta tracking, subscriptions and subscription chains.",
+    "Subscriptions can be created and managed both in the SAC UI and through the API.",
+    "The post is part one of a series on the Data Export API."
+   ],
+   "technical_details": [
+    "SAP Analytics Cloud Data Export API",
+    "Delta feature for planning data",
+    "Delta subscriptions and subscription chains",
+    "Creation and management through the SAC interface and the API (endpoints not in the text)"
+   ],
+   "why_it_matters": "Full extracts from SAC planning models are expensive to replicate. Delta-based replication is the right model for keeping downstream systems in sync, but the abstract does not show how subscription chains behave when a link is missed or reset.",
+   "is_release_or_announcement": false,
+   "developer_problem": "",
+   "teaching_angle": "Use it as an introduction to change-data-capture patterns in SaaS APIs. Ask trainees to compare full-extract and delta replication, and to design how a consumer should recover if it misses a delta.",
+   "quality": 3
+  },
+  "41": {
+   "summary": "The post announces that, from SAP Digital Manufacturing release 2611, the Production Connector can act as an OPC UA Server. Automation sequences can be exposed as OPC UA methods, so shop-floor assets can trigger business logic by calling methods rather than by using tag-based subscriptions. The author presents this as closing a feature gap with the predecessor, SAP Plant Connectivity (PCo). No configuration steps or code are shown in the abstract.",
+   "key_points": [
+    "Release 2611 of SAP Digital Manufacturing adds OPC UA Server capability to the Production Connector.",
+    "Automation sequences are exposed as OPC UA methods.",
+    "Calling methods is presented as an alternative to tag-based subscriptions.",
+    "The author positions this as closing a gap with SAP Plant Connectivity (PCo)."
+   ],
+   "technical_details": [
+    "SAP Digital Manufacturing release 2611",
+    "SAP Digital Manufacturing Production Connector",
+    "OPC UA Server role",
+    "OPC UA methods mapped from automation sequences",
+    "Predecessor: SAP Plant Connectivity (PCo)"
+   ],
+   "why_it_matters": "Method-based triggering is a cleaner contract than polling or subscribing to tags for many shop-floor events. It matters to integrators who currently use PCo for the same scenario and need to plan a migration.",
+   "is_release_or_announcement": true,
+   "developer_problem": "",
+   "teaching_angle": "Use it in an industrial integration class to compare OPC UA methods with OPC UA variable subscriptions and PLC tags. Ask trainees what should be a method and what should remain a data variable, and how to handle authorisation and error reporting for method calls.",
+   "quality": 3
+  },
+  "35": {
+   "summary": "The author asks whether SAP Digital Manufacturing's technical integration with SAP S/4HANA Public Cloud supports only User Name and Password authentication, as the help documentation mentions, or whether OAuth 2.0 or certificate-based authentication is also supported. The post contains no answer, no quoted documentation section, and no version information.",
+   "key_points": [
+    "The question is about the authentication method for SAP Digital Manufacturing to S/4HANA Public Cloud integration.",
+    "The author reports that the help documentation mentions only User Name and Password.",
+    "The author asks whether OAuth 2.0 or certificate-based authentication is also supported.",
+    "The post gives no answer, no product version, and no link to the specific help page."
+   ],
+   "technical_details": [
+    "Product pair: SAP Digital Manufacturing and SAP S/4HANA Public Cloud.",
+    "Documented method as reported by the author: User Name and Password.",
+    "Alternatives asked about: OAuth 2.0 and certificate-based authentication."
+   ],
+   "why_it_matters": "Authentication choice determines the integration's security model and how credentials are managed. Teams often need to know whether a technical user with password is the only option before designing around it.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Determine whether the SAP Digital Manufacturing to S/4HANA Public Cloud integration supports authentication methods beyond User Name and Password, specifically OAuth 2.0 or certificate-based authentication.",
+   "teaching_angle": "Use it as a prompt to teach how to verify integration capabilities: check the current product help for the exact supported authentication list for the release in question, compare it with the S/4HANA Public Cloud communication arrangement and communication user setup, and record the answer with the document version. The post itself is not a source for the answer.",
+   "quality": 2
+  },
+  "37": {
+   "summary": "The author is calling a SuccessFactors API (Review Route Maps) from an SAP Build Process Automation action. The call uses a SuccessFactors destination on SAP BTP with principal propagation, and the workflow is started from a component card in SAP Build Work Zone. The action fails with 'Cannot determine user to propagate for OAuth2SAMLBearerAssertion destination', and the error text itself lists two remedies: pass a user_token JWT when retrieving the destination, or configure the destination with SystemUser. The post has no reply, so the root cause is not stated.",
+   "key_points": [
+    "Failing step: a BPA action calling the SuccessFactors Review Route Maps API through a BTP destination.",
+    "Auth type: OAuth2SAMLBearerAssertion with principal propagation intended.",
+    "Trigger path: Work Zone component card starts the workflow.",
+    "Error: the runtime could not determine a user to propagate.",
+    "The error text suggests two fixes: supply a user_token JWT, or set the destination to SystemUser.",
+    "No resolution or accepted answer is included in the post."
+   ],
+   "technical_details": [
+    "Action ID in error: b313ac37-70dd-45a1-a118-5b1d29844b85.",
+    "Error source: action runtime library, 'Failed to build headers'.",
+    "Destination auth type: OAuth2SAMLBearerAssertion.",
+    "Remedy 1: provide a user_token JWT (UAA user-token grant) when retrieving the destination.",
+    "Remedy 2: configure the destination with SystemUser.",
+    "Components: SAP Build Process Automation, SAP Build Work Zone, SAP BTP destination service, SuccessFactors API."
+   ],
+   "why_it_matters": "Principal propagation only works when the runtime has a user identity to pass along. If the workflow runs without a user token, for example because it was started without the user's context or runs as a technical process, the destination fails. Choosing between a user token and SystemUser also changes which identity SuccessFactors sees, which affects authorisation.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Make an OAuth2SAMLBearerAssertion SuccessFactors destination work from a BPA workflow that needs to propagate the logged-in user, when the runtime reports that no user can be determined.",
+   "teaching_angle": "Good case study for principal propagation. Walk through the chain: Work Zone user to BPA trigger to the BTP destination to the SAML assertion to SuccessFactors. Ask students which link drops the user context. Then compare the two remedies in the error message (user_token vs SystemUser) and discuss when each is correct. Note that I have inferred the causes here; the post does not state them, so verify against current BPA and destination service documentation.",
+   "quality": 3
+  },
+  "36": {
+   "summary": "The author is new to SAP Solution Manager 7.2 ChaRM and needs to change the same include, ZINFE0003_XXX, which is assigned to change request 6XX0000473, while another change request 6XX0000888 needs changes to the same object and will be transported first. The author asks whether the object can be removed from the first change request and added to the second, whether a separate transport can be used, and how to resynchronise ChaRM tracking afterwards. The post gives no answer and does not describe the current transport state.",
+   "key_points": [
+    "Object: include ZINFE0003_XXX.",
+    "Two change requests (ChaRM) need changes to the same object: 6XX0000473 and 6XX0000888.",
+    "The second request is scheduled to transport earlier than the author's.",
+    "Questions: can the object be removed and reassigned, can a separate transport be used, and can ChaRM tracking be resynchronised.",
+    "No reply or procedure is included in the post."
+   ],
+   "technical_details": [
+    "System: SAP Solution Manager 7.2 with ChaRM.",
+    "Object type: ABAP include, ZINFE0003_XXX.",
+    "Change request IDs: 6XX0000473 and 6XX0000888.",
+    "The post does not state the transport request numbers, the ChaRM transaction used, or the landscape (dev, QA, prod)."
+   ],
+   "why_it_matters": "Two change requests touching the same repository object is a common conflict in enhancement-heavy projects. Removing an object from a change request to reassign it can break the transport chain and leave the object's versions out of sync. The safer answer is usually a sequencing or merge decision, not a manual reassignment.",
+   "is_release_or_announcement": false,
+   "developer_problem": "Make changes to the same ABAP include under two different ChaRM change requests, with the second transport going first, without breaking ChaRM transport tracking.",
+   "teaching_angle": "Use this for a change management discussion: how change requests bind transports, why an object should not be moved between change requests after work has started, and what sequencing options exist, such as ordering transports, merging the changes into one request, or rebasing the second change on the first. Stress that the post offers no procedure and that any step-by-step answer needs checking against the project's ChaRM configuration and SAP documentation.",
+   "quality": 2
+  }
+ },
+ "digest": {
+  "headline": "A quiet Saturday: one RAP OData V4 file-download security post stands out, while the rest is integration material and unanswered Q&A.",
+  "overview": "Only one of today's nine items touches the core ABAP stack. It is a RAP OData V4 pattern for serving AL11 files to Fiori through Edm.Stream, with configurable folder mapping, a replaceable authorisation check, filename and size validation, and path-traversal protection (ref 32). Only the abstract was available, so the code is not visible.\n\nThe remaining items are integration and Q&A posts. They cover Cloud Integration mail attachment timeouts (42), MDF latest-record selection (15), Cloud ALM to ServiceNow priority mapping (26), SAC delta subscriptions (28), and an OPC UA server feature in Digital Manufacturing 2611 (41). Three questions have no answers: a principal propagation failure in BPA (37), authentication options for Digital Manufacturing (35), and a ChaRM conflict on one include (36). Most items are abstracts only, so treat them as pointers and verify against SAP documentation.",
+  "top_stories": [
+   {
+    "title": "RAP OData V4 pattern for secure AL11 file downloads in Fiori",
+    "summary": "The post shows how to expose application-server files through a Fiori app on a RAP OData V4 service. Downloads use Edm.Stream. Folder mapping comes from configuration, and the authorisation check can be replaced per organisation. The design also includes filename and file-size validation, and protection against direct URL access and path traversal. Only the abstract was provided.",
+    "why_it_matters": "File access on the application server is a common requirement and a common security hole. The shape described (stream property, backend authorisation, path validation inside mapped folders) is the right one, but the abstract does not show whether the checks are robust.",
+    "priority": 1,
+    "refs": [
+     32
+    ]
+   },
+   {
+    "title": "Cloud Integration Mail receiver stores attachments synchronously",
+    "summary": "The author says the Mail receiver adapter writes each attachment to the document server before it returns a response. A slow document server can therefore make the adapter time out. Only the abstract was provided, with no measurements or fixes.",
+    "why_it_matters": "Mail handling is often assumed to be asynchronous. If attachment storage is on the synchronous path, large attachments or a slow document server can cause timeouts and retries that are hard to diagnose.",
+    "priority": 2,
+    "refs": [
+     42
+    ]
+   },
+   {
+    "title": "Unanswered: OAuth2SAMLBearerAssertion fails in BPA calling SuccessFactors",
+    "summary": "A BPA action calls the SuccessFactors Review Route Maps API through a BTP destination using OAuth2SAMLBearerAssertion. It fails with 'Cannot determine user to propagate'. The error text itself offers two remedies: pass a user_token JWT when retrieving the destination, or configure the destination with SystemUser. The post has no reply.",
+    "why_it_matters": "Principal propagation needs a user identity at runtime. The choice between user token and SystemUser also changes which identity SuccessFactors sees, so it affects authorisation. The causes are not confirmed in the post.",
+    "priority": 2,
+    "refs": [
+     37
+    ]
+   },
+   {
+    "title": "Digital Manufacturing 2611: Production Connector as OPC UA Server",
+    "summary": "From release 2611 the Production Connector can act as an OPC UA Server. Automation sequences are exposed as OPC UA methods, so shop-floor assets can trigger logic by method call instead of tag subscriptions. The author presents it as closing a gap with SAP Plant Connectivity (PCo).",
+    "why_it_matters": "Method calls are a cleaner contract than tag polling for many events, and PCo users get a migration path to plan around.",
+    "priority": 3,
+    "refs": [
+     41
+    ]
+   },
+   {
+    "title": "Two ChaRM change requests need the same include",
+    "summary": "A new ChaRM user in Solution Manager 7.2 needs to change include ZINFE0003_XXX, which sits in change request 6XX0000473. Another request, 6XX0000888, needs the same object and will be transported first. The user asks about removing and reassigning the object, using a separate transport, and resynchronising tracking. No answer was posted.",
+    "why_it_matters": "Moving objects between change requests mid-work can break the transport chain and leave object versions out of sync. Sequencing or merging is usually safer, but the post gives no procedure to confirm that.",
+    "priority": 3,
+    "refs": [
+     36
+    ]
+   }
+  ],
+  "releases": [
+   {
+    "title": "SAP Digital Manufacturing 2611: Production Connector OPC UA Server",
+    "summary": "The Production Connector can act as an OPC UA Server and expose automation sequences as OPC UA methods. The post gives no configuration steps.",
+    "refs": [
+     41
+    ]
+   }
+  ],
+  "deep_dives": [
+   {
+    "title": "Designing a secure file download with RAP OData V4 and Edm.Stream",
+    "explanation": "The post (ref 32) describes serving AL11 application-server files through a RAP OData V4 service that returns content as Edm.Stream. Only the abstract is available, so the code below is my own sketch of the pattern and not taken from the post. It is meant for discussion.\n\nIn RAP, a stream is normally modelled as a media property: an `xstring` content field annotated with `@Semantics.largeObject` (mimeType, fileName, contentDispositionPreference), plus a MIME type field. Reading the file means `OPEN DATASET ... FOR INPUT IN BINARY MODE` on a path your code builds. That is where the security risk lies.\n\nThe controls the post lists map to concrete checks. First, never accept a path from the client. Accept a key such as a logical folder ID and a file name. Resolve the folder from a configuration table. Second, validate the file name against a whitelist (no `/`, `\\`, `..`, or control characters), then check that the resolved path still begins with the mapped directory. Third, check the file size before reading into an `xstring`, because large files exhaust memory. Fourth, call the authorisation check before opening the file. The post says this check is replaceable, so it would sit behind an interface.\n\nIn the ABAP standard, logical file names (transaction FILE, `FILE_VALIDATE_NAME`) are the usual way to constrain paths. The post does not say whether it uses them, so ask this when reviewing. Also ask whether DCL or a behaviour-level authorisation covers the entity, or only a custom class does.",
+    "key_concepts": [
+     "Edm.Stream and @Semantics.largeObject in RAP",
+     "Path traversal validation",
+     "Configuration-driven folder mapping",
+     "Replaceable authorisation interface",
+     "OPEN DATASET in binary mode",
+     "File size limits before xstring read"
+    ],
+    "refs": [
+     32
+    ]
+   },
+   {
+    "title": "Principal propagation in BTP destinations: reading the OAuth2SAMLBearerAssertion error",
+    "explanation": "The question (ref 37) reports the error 'Cannot determine user to propagate for OAuth2SAMLBearerAssertion destination' from a BPA action calling SuccessFactors. The error text lists two remedies: provide a user_token JWT when retrieving the destination, or configure the destination with SystemUser.\n\nWith OAuth2SAMLBearerAssertion, the destination service builds a SAML assertion for a specific user and exchanges it for a token at the target system. It needs a user identity as input. If the call comes from a runtime that has no user JWT, such as a process started in a technical context, the service cannot build the assertion.\n\nThe post does not give the root cause. My inference is that the workflow runs without the Work Zone user's token, but this is unconfirmed. To narrow it down, check whether the process is triggered with the user's context, and whether the BPA action receives a user token at all.\n\nThe two remedies differ in meaning. A user_token keeps the real user, so SuccessFactors applies that user's permissions. SystemUser maps every call to one configured identity, which is simpler but loses per-user authorisation and audit. Choose based on the requirement, and verify against current BPA and destination service documentation.",
+    "key_concepts": [
+     "OAuth2SAMLBearerAssertion",
+     "Principal propagation",
+     "user_token JWT",
+     "SystemUser destination option",
+     "BTP destination service"
+    ],
+    "refs": [
+     37
+    ]
+   },
+   {
+    "title": "Two change requests, one include: a ChaRM sequencing problem",
+    "explanation": "The post (ref 36) describes include ZINFE0003_XXX assigned to change request 6XX0000473, while 6XX0000888 needs the same object and will be transported first. The author asks whether to remove the object and reassign it, use a separate transport, or resynchronise tracking. There is no reply.\n\nThe underlying issue is that an ABAP object is locked by one open task or request at a time. ChaRM ties transports to change requests, so moving an object by hand can desynchronise the tracking. That risk is general. The post does not give the system landscape or transport state, so I cannot say which option is safe here.\n\nThe usual options are ordering the transports so the first one carries the older version and the second builds on it, or merging both changes into one request. Reassigning after work has started is the riskiest. Before acting, check the version history of the include and the status of both transports.\n\nThis is a good example to teach, but any step-by-step advice has to be checked against the project's ChaRM configuration and SAP documentation.",
+    "key_concepts": [
+     "ChaRM change requests",
+     "Object locking in transport requests",
+     "Transport sequencing",
+     "Version management"
+    ],
+    "refs": [
+     36
+    ]
+   }
+  ],
+  "trending_problems": [
+   {
+    "theme": "Principal propagation and destination authentication",
+    "description": "Two questions concern integration authentication: a BPA to SuccessFactors failure due to no user to propagate (37), and whether Digital Manufacturing to S/4HANA Public Cloud supports more than User Name and Password (35). Neither has an answer yet.",
+    "teaching_tip": "Draw the identity chain and ask where the user context is lost. Check supported authentication in current product help and record the document version.",
+    "refs": [
+     37,
+     35
+    ]
+   },
+   {
+    "theme": "Shared objects across change requests",
+    "description": "One ABAP include is needed in two ChaRM change requests with a different transport order than the work order.",
+    "teaching_tip": "Teach transport sequencing and object locks before reassigning objects. Show how to compare versions across requests.",
+    "refs": [
+     36
+    ]
+   },
+   {
+    "theme": "Hidden synchronous dependencies in integration",
+    "description": "Mail attachments are stored on the document server before the adapter answers, so a slow store causes timeouts.",
+    "teaching_tip": "Trace where time goes in a message flow, and check timeout settings against current adapter documentation.",
+    "refs": [
+     42
+    ]
+   }
+  ],
+  "post_drafts": [
+   {
+    "title": "Secure file downloads with RAP",
+    "text": "*Serving AL11 files through Fiori? The risk is the path, not the stream.*\n\nA community post describes a RAP OData V4 pattern:\n- Edm.Stream for the content\n- folder mapping from configuration\n- replaceable authorisation check\n- filename and size validation\n- path traversal protection\n\n*My takeaway:* never take a path from the client. Take a key, resolve the folder yourself, validate the name, then authorise.\n\nOnly the abstract is public in the digest I read, so check the code before copying it.\n\nhttps://community.sap.com/t5/abap-blog-posts/from-application-server-to-sap-fiori-secure-file-downloads-with-rap-odatav4/ba-p/14530926"
+   },
+   {
+    "title": "Mail adapter timeouts",
+    "text": "*Inbound mail in Cloud Integration is not fire-and-forget.*\n\nAccording to a community post, the Mail receiver adapter stores each attachment on the document server *before* it responds.\n\nSo a slow document server can cause adapter timeouts.\n\n*Check:* attachment sizes, document server performance, timeout settings.\n\nVerify against the current adapter documentation. The post is only an abstract.\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/understanding-document-storage-and-processing-in-inbound-emails/ba-p/14530746"
+   },
+   {
+    "title": "Principal propagation error",
+    "text": "*Error: 'Cannot determine user to propagate for OAuth2SAMLBearerAssertion destination'*\n\nSeen when a BPA action calls SuccessFactors through a BTP destination.\n\nThe error itself lists two options:\n1. pass a user_token JWT\n2. use SystemUser on the destination\n\n*Difference:* option 1 keeps the real user's authorisations. Option 2 uses one identity for every call.\n\nThe question has no answer yet, so the cause is not confirmed.\n\nhttps://community.sap.com/t5/technology-q-a/oauth2samlbearerassertion-authentication-failure-when-calling/qaq-p/14530994"
+   }
+  ],
+  "interview_questions": [
+   {
+    "question": "You must expose files from AL11 through a RAP OData V4 service. How do you design it to prevent path traversal and unauthorised access?",
+    "answer": "I would model the content as a stream property using a largeObject annotation and return it as Edm.Stream. The client never sends a path. It sends a logical folder key and a file name. The backend resolves the folder from a configuration table. I validate the file name against a whitelist and reject separators and '..'. After building the full path I confirm it still lies inside the mapped directory. Logical file names with FILE_VALIDATE_NAME are an option for this. I check authorisation before OPEN DATASET, and check the file size before reading it into an xstring so memory is not exhausted. Direct access to the file outside the service must also be blocked at the OS and AL11 level.",
+    "level": "Senior",
+    "refs": [
+     32
+    ]
+   },
+   {
+    "question": "A BTP destination using OAuth2SAMLBearerAssertion fails with 'Cannot determine user to propagate'. What do you check and what are your options?",
+    "answer": "This authentication type needs a user identity to build the SAML assertion. The error means the runtime did not receive one. First I check whether the calling process runs in the user's context or in a technical context, and whether a user JWT reaches the destination lookup. The error text offers two remedies. One is to pass a user_token JWT when retrieving the destination, which keeps per-user authorisation in the target system. The other is to configure SystemUser, which uses a single identity and loses user-level audit and permissions. I choose based on the authorisation requirement. I would confirm details in the current BPA and destination service documentation, because the cause in the original post is not confirmed.",
+    "level": "Senior",
+    "refs": [
+     37
+    ]
+   },
+   {
+    "question": "Two ChaRM change requests need changes to the same include, and the later-started one must go to production first. How do you approach it?",
+    "answer": "I would not start by removing the object from one request and adding it to the other, because that can desynchronise ChaRM tracking from the transports. First I check the status of both requests and transports and the version history of the include. Then I look at the sequencing options. One is to release the transports in an order where the later change builds on the earlier version. Another is to merge both changes into one change request. A third is to rebase the second change on the first. The decision depends on the landscape and project ChaRM settings, so I would confirm it with the change manager and SAP documentation. The aim is that no transport overwrites a newer version of the object.",
+    "level": "Mid-level",
+    "refs": [
+     36
+    ]
+   }
+  ],
+  "class_idea": {
+   "title": "Secure file access in RAP: Edm.Stream, path validation and authorisation",
+   "why_now": "A community post describes a RAP OData V4 pattern for AL11 file downloads with configurable folders, replaceable authorisation and traversal protection (ref 32). It is a good case for reviewing security in custom RAP services.",
+   "outline": [
+    "Media properties in RAP: largeObject annotations, MIME type, file name",
+    "Why clients must never send paths",
+    "Whitelist validation of file names and logical file names",
+    "Confining the resolved path to a mapped folder",
+    "Size limits before reading into xstring",
+    "Authorisation: DCL versus a custom check class behind an interface",
+    "Testing with ABAP Unit: malicious inputs",
+    "Reviewing the post's design for gaps"
+   ],
+   "exercise": "In ADT, build a small RAP service that returns a file from a configured directory as a stream. Write a validation class and ABAP Unit tests with inputs like '../etc/passwd', encoded separators, empty names and oversize files. Every malicious input must be rejected before OPEN DATASET.",
+   "refs": [
+    32
+   ]
+  },
+  "whatsapp_highlights": "RAP OData V4 pattern for secure AL11 file downloads (Edm.Stream, path traversal checks) | CPI Mail adapter stores attachments synchronously, so a slow document server can cause timeouts | Unanswered: OAuth2SAMLBearerAssertion 'cannot determine user to propagate' in BPA | Digital Manufacturing 2611: Production Connector as OPC UA Server"
+ }
+}
